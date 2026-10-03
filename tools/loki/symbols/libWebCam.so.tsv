@@ -1,0 +1,581 @@
+addr	mangled	demangled
+0001337c	_init	_init
+000140c4	CreateCommand__20cSC3CmdWebCamFactoryUiUiPPv	cSC3CmdWebCamFactory::CreateCommand(unsigned int, unsigned int, void **)
+00014270	__13cSC3CmdWebCam	cSC3CmdWebCam::cSC3CmdWebCam(void)
+000142b0	Execute__13cSC3CmdWebCam	cSC3CmdWebCam::Execute(void)
+0001a9a4	CheckPotentialCellForBlackness__13cSC3CmdWebCamiiP22cISC3CitySpriteCellMapP16cIGZGimexFactoryR7cRZRect	cSC3CmdWebCam::CheckPotentialCellForBlackness(int, int, cISC3CitySpriteCellMap *, cIGZGimexFactory *, cRZRect &)
+0001aa50	__16cSC3CmdWinWebCam	cSC3CmdWinWebCam::cSC3CmdWinWebCam(void)
+0001aa90	Execute__16cSC3CmdWinWebCam	cSC3CmdWinWebCam::Execute(void)
+0001ab88	_._20cSC3CmdWebCamFactory	cSC3CmdWebCamFactory::~cSC3CmdWebCamFactory(void)
+0001abc4	__15cSC3PublishCity	cSC3PublishCity::cSC3PublishCity(void)
+0001b518	_._15cSC3PublishCity	cSC3PublishCity::~cSC3PublishCity(void)
+0001b9ec	Init__15cSC3PublishCity	cSC3PublishCity::Init(void)
+0001ba6c	Shutdown__15cSC3PublishCity	cSC3PublishCity::Shutdown(void)
+0001bb24	QueryInterface__15cSC3PublishCityUiPPv	cSC3PublishCity::QueryInterface(unsigned int, void **)
+0001bb70	AddRef__15cSC3PublishCity	cSC3PublishCity::AddRef(void)
+0001bbb4	Release__15cSC3PublishCity	cSC3PublishCity::Release(void)
+0001bc20	Execute__15cSC3PublishCityUi	cSC3PublishCity::Execute(unsigned int)
+0001bc54	Init__15cSC3PublishCityP9cISC3CityP13cIGZDBSegment	cSC3PublishCity::Init(cISC3City *, cIGZDBSegment *)
+0001bf10	Save__15cSC3PublishCityP9cISC3CityP13cIGZDBSegment	cSC3PublishCity::Save(cISC3City *, cIGZDBSegment *)
+0001c778	SerialReadThumbnail__15cSC3PublishCityP10cIGZBufferP18cIGZDBSerialRecord	cSC3PublishCity::SerialReadThumbnail(cIGZBuffer *, cIGZDBSerialRecord *)
+0001c8b0	SerialWriteThumbnail__15cSC3PublishCityP10cIGZBufferP18cIGZDBSerialRecord	cSC3PublishCity::SerialWriteThumbnail(cIGZBuffer *, cIGZDBSerialRecord *)
+0001c9f0	ProduceThumbnailFile__15cSC3PublishCityUi	cSC3PublishCity::ProduceThumbnailFile(unsigned int)
+0001cf00	GetCityThumbnail__15cSC3PublishCityPP10cIGZBufferUi	cSC3PublishCity::GetCityThumbnail(cIGZBuffer **, unsigned int)
+0001d994	HighResImage__15cSC3PublishCityPP10cIGZBufferi	cSC3PublishCity::HighResImage(cIGZBuffer **, int)
+0001e738	Filter__15cSC3PublishCityUcUcUcUcUcUci	cSC3PublishCity::Filter(unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char, int)
+0001eb3c	GetStatistics__15cSC3PublishCity	cSC3PublishCity::GetStatistics(void)
+0001f01c	ProduceStatisticsFile__15cSC3PublishCity	cSC3PublishCity::ProduceStatisticsFile(void)
+00020cf8	ProduceSaveGameFile__15cSC3PublishCity	cSC3PublishCity::ProduceSaveGameFile(void)
+000212d4	CombineFiles__15cSC3PublishCity	cSC3PublishCity::CombineFiles(void)
+000227c8	SaveCityImageAsBackground__15cSC3PublishCity	cSC3PublishCity::SaveCityImageAsBackground(void)
+000228b0	ImageFilterRescale__15cSC3PublishCityUiUiR10cIGZBufferd	cSC3PublishCity::ImageFilterRescale(unsigned int, unsigned int, cIGZBuffer &, double)
+00023ba4	BicubicFilter__15cSC3PublishCityd	cSC3PublishCity::BicubicFilter(double)
+00023bec	Clamp__15cSC3PublishCityddd	cSC3PublishCity::Clamp(double, double, double)
+00023c20	Ceiling__15cSC3PublishCityd	cSC3PublishCity::Ceiling(double)
+00023cc0	Floor__15cSC3PublishCityd	cSC3PublishCity::Floor(double)
+00023d34	__13cSC3WinWebCam	cSC3WinWebCam::cSC3WinWebCam(void)
+00023d78	_._13cSC3WinWebCam	cSC3WinWebCam::~cSC3WinWebCam(void)
+00023dcc	Init__13cSC3WinWebCam	cSC3WinWebCam::Init(void)
+00026f04	Shutdown__13cSC3WinWebCam	cSC3WinWebCam::Shutdown(void)
+00026f74	GZPaint__13cSC3WinWebCam	cSC3WinWebCam::GZPaint(void)
+00026fa0	GZOnCommand__13cSC3WinWebCamUiUi	cSC3WinWebCam::GZOnCommand(unsigned int, unsigned int)
+00027580	ControlsStaticFeedback__13cSC3WinWebCamUiUiPv	cSC3WinWebCam::ControlsStaticFeedback(unsigned int, unsigned int, void *)
+000275b8	ControlsFeedback__13cSC3WinWebCamUiUiPv	cSC3WinWebCam::ControlsFeedback(unsigned int, unsigned int, void *)
+00027864	__14cWebCamManager	cWebCamManager::cWebCamManager(void)
+000278a0	_._14cWebCamManager	cWebCamManager::~cWebCamManager(void)
+000278d8	Init__14cWebCamManager	cWebCamManager::Init(void)
+00027b60	Shutdown__14cWebCamManager	cWebCamManager::Shutdown(void)
+00027bd4	DoMessage__14cWebCamManagerR10cGZMessage	cWebCamManager::DoMessage(cGZMessage &)
+00027fd0	AddRef__14cWebCamManager	cWebCamManager::AddRef(void)
+0002800c	Release__14cWebCamManager	cWebCamManager::Release(void)
+000280e8	RZGetCOMDllDirector_WebCam__Fv	RZGetCOMDllDirector_WebCam(void)
+0002820c	QueryInterface__14cWebCamManagerUiPPv	cWebCamManager::QueryInterface(unsigned int, void **)
+000282b4	GZCOM__Fv	GZCOM(void)
+000282e4	GZDllGetGZCOMDirector	GZDllGetGZCOMDirector
+00028304	__17cRZCOMDllDirector	cRZCOMDllDirector::cRZCOMDllDirector(void)
+00028594	_._17cRZCOMDllDirector	cRZCOMDllDirector::~cRZCOMDllDirector(void)
+000286d0	QueryInterface__17cRZCOMDllDirectorUiPPv	cRZCOMDllDirector::QueryInterface(unsigned int, void **)
+00028734	FrameWork__17cRZCOMDllDirector	cRZCOMDllDirector::FrameWork(void)
+00028744	AddRef__17cRZCOMDllDirector	cRZCOMDllDirector::AddRef(void)
+00028758	Release__17cRZCOMDllDirector	cRZCOMDllDirector::Release(void)
+00028780	RemoveRef__17cRZCOMDllDirector	cRZCOMDllDirector::RemoveRef(void)
+00028798	RefCount__17cRZCOMDllDirector	cRZCOMDllDirector::RefCount(void)
+000287ac	InitializeCOM__17cRZCOMDllDirectorP7cIGZCOMR10cIGZString	cRZCOMDllDirector::InitializeCOM(cIGZCOM *, cIGZString &)
+00028a90	OnStart__17cRZCOMDllDirectorP7cIGZCOM	cRZCOMDllDirector::OnStart(cIGZCOM *)
+00028d00	GetClassObject__17cRZCOMDllDirectorUiUiPPv	cRZCOMDllDirector::GetClassObject(unsigned int, unsigned int, void **)
+00028e34	EnumClassObjects__17cRZCOMDllDirectorPFUiUiPv_vPv	cRZCOMDllDirector::EnumClassObjects(void (*)(unsigned int, unsigned int, void *), void *)
+00028f10	ModuleName__17cRZCOMDllDirectorR10cIGZString	cRZCOMDllDirector::ModuleName(cIGZString &)
+00028f44	AddDirector__17cRZCOMDllDirectorP17cRZCOMDllDirector	cRZCOMDllDirector::AddDirector(cRZCOMDllDirector *)
+00028fec	CanUnloadNow__17cRZCOMDllDirector	cRZCOMDllDirector::CanUnloadNow(void)
+0002904c	AddCls__17cRZCOMDllDirectorUiPFv_P11cIGZUnknownUi	cRZCOMDllDirector::AddCls(unsigned int, cIGZUnknown *(*)(void), unsigned int)
+000290a0	AppRegister__17cRZCOMDllDirectorP12cIGZRegistry	cRZCOMDllDirector::AppRegister(cIGZRegistry *)
+00029100	PreFrameWorkInit__17cRZCOMDllDirector	cRZCOMDllDirector::PreFrameWorkInit(void)
+0002910c	PreAppInit__17cRZCOMDllDirector	cRZCOMDllDirector::PreAppInit(void)
+00029118	PostAppInit__17cRZCOMDllDirector	cRZCOMDllDirector::PostAppInit(void)
+00029124	PreAppShutdown__17cRZCOMDllDirector	cRZCOMDllDirector::PreAppShutdown(void)
+00029130	PostAppShutdown__17cRZCOMDllDirector	cRZCOMDllDirector::PostAppShutdown(void)
+0002913c	PostSystemServiceShutdown__17cRZCOMDllDirector	cRZCOMDllDirector::PostSystemServiceShutdown(void)
+00029148	AbortiveQuit__17cRZCOMDllDirector	cRZCOMDllDirector::AbortiveQuit(void)
+00029154	OnInstall__17cRZCOMDllDirector	cRZCOMDllDirector::OnInstall(void)
+00029160	GZCOM__17cRZCOMDllDirector	cRZCOMDllDirector::GZCOM(void)
+00029170	OnUnload__17cRZCOMDllDirector	cRZCOMDllDirector::OnUnload(void)
+00029180	__out_of_range__FPCc	__out_of_range(char const *)
+000293e8	__length_error__FPCc	__length_error(char const *)
+00029648	__11logic_errorRCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0	logic_error::logic_error(basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &)
+000296a4	what__C11logic_error	logic_error::what(void) const
+000296cc	__12domain_errorRCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0	domain_error::domain_error(basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &)
+0002972c	__16invalid_argumentRCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0	invalid_argument::invalid_argument(basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &)
+0002978c	__12length_errorRCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0	length_error::length_error(basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &)
+000297ec	__12out_of_rangeRCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0	out_of_range::out_of_range(basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &)
+0002984c	__13runtime_errorRCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0	runtime_error::runtime_error(basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &)
+000298ac	what__C13runtime_error	runtime_error::what(void) const
+000298d0	__13runtime_error	runtime_error::runtime_error(void)
+00029934	__11range_errorRCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0	range_error::range_error(basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &)
+0002998c	__14overflow_errorRCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0	overflow_error::overflow_error(basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &)
+000299ec	__15underflow_errorRCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0	underflow_error::underflow_error(basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &)
+00029a50	__7istreamiP9streambufP7ostream	istream::istream(int, streambuf *, ostream *)
+00029b04	skip_ws__FP9streambuf	skip_ws(streambuf *)
+00029b38	get__7istreamRc	istream::get(char &)
+00029c18	peek__7istream	istream::peek(void)
+00029c74	ignore__7istreamii	istream::ignore(int, int)
+00029d6c	read__7istreamPci	istream::read(char *, int)
+00029e44	sync__7istream	istream::sync(void)
+00029e84	seekg__7istreamx	istream::seekg(long long)
+00029ebc	seekg__7istreamxQ23ios8seek_dir	istream::seekg(long long, ios::seek_dir)
+00029efc	tellg__7istream	istream::tellg(void)
+00029f3c	__rs__7istreamRc	istream::operator>>(char &)
+0002a024	__rs__7istreamPc	istream::operator>>(char *)
+0002a440	__rs__7istreamRs	istream::operator>>(short &)
+0002a484	__rs__7istreamRUs	istream::operator>>(unsigned short &)
+0002a4c8	__rs__7istreamRi	istream::operator>>(int &)
+0002a508	__rs__7istreamRUi	istream::operator>>(unsigned int &)
+0002a548	__rs__7istreamRl	istream::operator>>(long &)
+0002a588	__rs__7istreamRUl	istream::operator>>(unsigned long &)
+0002a5c8	__rs__7istreamRx	istream::operator>>(long long &)
+0002a610	__rs__7istreamRUx	istream::operator>>(unsigned long long &)
+0002a658	__rs__7istreamRb	istream::operator>>(bool &)
+0002a6a4	__rs__7istreamRr	istream::operator>>(long double &)
+0002a778	__rs__7istreamRd	istream::operator>>(double &)
+0002a848	__rs__7istreamRf	istream::operator>>(float &)
+0002a918	__rs__7istreamP9streambuf	istream::operator>>(streambuf *)
+0002aa1c	__ls__7ostreamc	ostream::operator<<(char)
+0002ad8c	__ls__7ostreami	ostream::operator<<(int)
+0002ae38	__ls__7ostreamUi	ostream::operator<<(unsigned int)
+0002aec8	__ls__7ostreaml	ostream::operator<<(long)
+0002af74	__ls__7ostreamUl	ostream::operator<<(unsigned long)
+0002b004	__ls__7ostreamx	ostream::operator<<(long long)
+0002b0b8	__ls__7ostreamUx	ostream::operator<<(unsigned long long)
+0002b148	__ls__7ostreamd	ostream::operator<<(double)
+0002b2f8	__ls__7ostreamr	ostream::operator<<(long double)
+0002b4ac	__ls__7ostreamPCc	ostream::operator<<(char const *)
+0002b638	__ls__7ostreamP9streambuf	ostream::operator<<(streambuf *)
+0002b750	__7ostreamiP9streambufP7ostream	ostream::ostream(int, streambuf *, ostream *)
+0002b7fc	seekp__7ostreamx	ostream::seekp(long long)
+0002b834	seekp__7ostreamxQ23ios8seek_dir	ostream::seekp(long long, ios::seek_dir)
+0002b874	tellp__7ostream	ostream::tellp(void)
+0002b8b4	flush__7ostream	ostream::flush(void)
+0002b8e4	flush__FR7ostream	flush(ostream &)
+0002b8fc	ws__FR7istream	ws(istream &)
+0002b9d8	_skip_ws__7istream	istream::_skip_ws(void)
+0002ba20	ends__FR7ostream	ends(ostream &)
+0002ba44	endl__FR7ostream	endl(ostream &)
+0002ba70	lock__FR7istream	lock(istream &)
+0002ba90	unlock__FR7istream	unlock(istream &)
+0002bab0	lock__FR7ostream	lock(ostream &)
+0002bad0	unlock__FR7ostream	unlock(ostream &)
+0002baf0	write__7ostreamPCci	ostream::write(char const *, int)
+0002bbc4	do_osfx__7ostream	ostream::do_osfx(void)
+0002bc10	__8iostreamiP9streambufP7ostream	iostream::iostream(int, streambuf *, ostream *)
+0002bcd4	close__3ios	ios::close(void)
+0002bd18	skip__7istreami	istream::skip(int)
+0002bd40	__7ostreami	ostream::ostream(int)
+0002bda0	opfx__7ostream	ostream::opfx(void)
+0002bde4	osfx__7ostream	ostream::osfx(void)
+0002be18	put__7ostreamc	ostream::put(char)
+0002be40	put__7ostreamUc	ostream::put(unsigned char)
+0002be68	put__7ostreamSc	ostream::put(signed char)
+0002be90	write__7ostreamPCUci	ostream::write(unsigned char const *, int)
+0002beb0	write__7ostreamPCSci	ostream::write(signed char const *, int)
+0002bed0	write__7ostreamPCvi	ostream::write(void const *, int)
+0002bef0	__ls__7ostreamUc	ostream::operator<<(unsigned char)
+0002bf0c	__ls__7ostreamSc	ostream::operator<<(signed char)
+0002bf28	__ls__7ostreamPCUc	ostream::operator<<(unsigned char const *)
+0002bf44	__ls__7ostreamPCSc	ostream::operator<<(signed char const *)
+0002bf60	__ls__7ostreams	ostream::operator<<(short)
+0002bf7c	__ls__7ostreamUs	ostream::operator<<(unsigned short)
+0002bf98	__ls__7ostreamb	ostream::operator<<(bool)
+0002bfb4	__ls__7ostreamf	ostream::operator<<(float)
+0002bfd4	__ls__7ostreamPFR7ostream_R7ostream	ostream::operator<<(ostream &(*)(ostream &))
+0002bfec	__ls__7ostreamPFR3ios_R3ios	ostream::operator<<(ios &(*)(ios &))
+0002c00c	ostreambuf__C7ostream	ostream::ostreambuf(void) const
+0002c01c	__7istreami	istream::istream(int)
+0002c084	get__7istreamPUcic	istream::get(unsigned char *, int, char)
+0002c0a8	get__7istreamRUc	istream::get(unsigned char &)
+0002c0c4	getline__7istreamPUcic	istream::getline(unsigned char *, int, char)
+0002c0e8	get__7istreamRSc	istream::get(signed char &)
+0002c104	get__7istreamPScic	istream::get(signed char *, int, char)
+0002c128	getline__7istreamPScic	istream::getline(signed char *, int, char)
+0002c14c	read__7istreamPUci	istream::read(unsigned char *, int)
+0002c16c	read__7istreamPSci	istream::read(signed char *, int)
+0002c18c	read__7istreamPvi	istream::read(void *, int)
+0002c1ac	ipfx__7istreami	istream::ipfx(int)
+0002c230	ipfx0__7istream	istream::ipfx0(void)
+0002c294	ipfx1__7istream	istream::ipfx1(void)
+0002c2e8	isfx__7istream	istream::isfx(void)
+0002c304	get__7istream	istream::get(void)
+0002c388	gcount__7istream	istream::gcount(void)
+0002c398	putback__7istreamc	istream::putback(char)
+0002c3d0	unget__7istream	istream::unget(void)
+0002c404	unget__7istreamc	istream::unget(char)
+0002c43c	istreambuf__C7istream	istream::istreambuf(void) const
+0002c44c	__rs__7istreamPUc	istream::operator>>(unsigned char *)
+0002c468	__rs__7istreamPSc	istream::operator>>(signed char *)
+0002c484	__rs__7istreamRUc	istream::operator>>(unsigned char &)
+0002c4a0	__rs__7istreamRSc	istream::operator>>(signed char &)
+0002c4bc	__rs__7istreamPFR3ios_R3ios	istream::operator>>(ios &(*)(ios &))
+0002c4dc	__rs__7istreamPFR7istream_R7istream	istream::operator>>(istream &(*)(istream &))
+0002c4f4	__8iostreami	iostream::iostream(int)
+0002c574	__as__22_IO_istream_withassignR22_IO_istream_withassign	_IO_istream_withassign::operator=(_IO_istream_withassign &)
+0002c590	__as__22_IO_ostream_withassignR22_IO_ostream_withassign	_IO_ostream_withassign::operator=(_IO_ostream_withassign &)
+0002c5ac	dec__FR3ios	dec(ios &)
+0002c5c4	hex__FR3ios	hex(ios &)
+0002c5dc	oct__FR3ios	oct(ios &)
+0002c600	getline__7istreamPcic	istream::getline(char *, int, char)
+0002c76c	get__7istreamPcic	istream::get(char *, int, char)
+0002c878	_sb_readline__FP9streambufRlc	_sb_readline(streambuf *, long &, char)
+0002c994	gets__7istreamPPcc	istream::gets(char **, char)
+0002caa0	scan__7istreamPCce	istream::scan(char const *,...)
+0002cb78	vscan__7istreamPCcPv	istream::vscan(char const *, void *)
+0002cc48	vscan__9streambufPCcPvP3ios	streambuf::vscan(char const *, void *, ios *)
+0002cc84	scan__9streambufPCce	streambuf::scan(char const *,...)
+0002cca4	sync_with_stdio__3iosi	ios::sync_with_stdio(int)
+0002ccb0	_un_link__9streambuf	streambuf::_un_link(void)
+0002ccc8	_link_in__9streambuf	streambuf::_link_in(void)
+0002cce0	switch_to_get_mode__9streambuf	streambuf::switch_to_get_mode(void)
+0002ccf8	free_backup_area__9streambuf	streambuf::free_backup_area(void)
+0002cd10	__overflow__FP9streambufi	__overflow(streambuf *, int)
+0002cd30	underflow__9streambuf	streambuf::underflow(void)
+0002cd3c	uflow__9streambuf	streambuf::uflow(void)
+0002cd54	overflow__9streambufi	streambuf::overflow(int)
+0002cd60	xsputn__9streambufPCci	streambuf::xsputn(char const *, int)
+0002cd80	xsgetn__9streambufPci	streambuf::xsgetn(char *, int)
+0002cda0	ignore__9streambufi	streambuf::ignore(int)
+0002cdf0	sync__9streambuf	streambuf::sync(void)
+0002cdfc	pbackfail__9streambufi	streambuf::pbackfail(int)
+0002ce18	setbuf__9streambufPci	streambuf::setbuf(char *, int)
+0002ceb8	seekpos__9streambufxi	streambuf::seekpos(long long, int)
+0002cee8	sseekpos__9streambufxi	streambuf::sseekpos(long long, int)
+0002cf08	setb__9streambufPcT1i	streambuf::setb(char *, char *, int)
+0002cf2c	doallocate__9streambuf	streambuf::doallocate(void)
+0002cf44	doallocbuf__9streambuf	streambuf::doallocbuf(void)
+0002cf5c	__9streambufi	streambuf::streambuf(int)
+0002cf98	_._9streambuf	streambuf::~streambuf(void)
+0002cff8	seekoff__9streambufxQ23ios8seek_diri	streambuf::seekoff(long long, ios::seek_dir, int)
+0002d00c	sseekoff__9streambufxQ23ios8seek_diri	streambuf::sseekoff(long long, ios::seek_dir, int)
+0002d034	sputbackc__9streambufc	streambuf::sputbackc(char)
+0002d050	sungetc__9streambuf	streambuf::sungetc(void)
+0002d068	get_column__9streambuf	streambuf::get_column(void)
+0002d09c	set_column__9streambufi	streambuf::set_column(int)
+0002d0b0	flush_all__9streambuf	streambuf::flush_all(void)
+0002d0c0	flush_all_linebuffered__9streambuf	streambuf::flush_all_linebuffered(void)
+0002d0d0	sys_stat__9streambufPv	streambuf::sys_stat(void *)
+0002d0ec	sys_read__9streambufPci	streambuf::sys_read(char *, int)
+0002d0f8	sys_write__9streambufPCci	streambuf::sys_write(char const *, int)
+0002d104	sys_seek__9streambufxQ23ios8seek_dir	streambuf::sys_seek(long long, ios::seek_dir)
+0002d118	sys_close__9streambuf	streambuf::sys_close(void)
+0002d124	showmanyc__9streambuf	streambuf::showmanyc(void)
+0002d130	imbue__9streambufPv	streambuf::imbue(void *)
+0002d138	__12streammarkerP9streambuf	streammarker::streammarker(streambuf *)
+0002d158	_._12streammarker	streammarker::~streammarker(void)
+0002d18c	delta__12streammarkerR12streammarker	streammarker::delta(streammarker &)
+0002d1a8	delta__12streammarker	streammarker::delta(void)
+0002d1c0	seekmark__9streambufR12streammarkeri	streambuf::seekmark(streammarker &, int)
+0002d1e0	unsave_markers__9streambuf	streambuf::unsave_markers(void)
+0002d1f8	readable__3ios	ios::readable(void)
+0002d210	writable__3ios	ios::writable(void)
+0002d228	is_open__3ios	ios::is_open(void)
+0002d24c	tie__C3ios	ios::tie(void) const
+0002d25c	tie__3iosP7ostream	ios::tie(ostream *)
+0002d274	fill__C3ios	ios::fill(void) const
+0002d284	fill__3iosw	ios::fill(wchar_t)
+0002d29c	flags__C3ios	ios::flags(void) const
+0002d2ac	flags__3iosUl	ios::flags(unsigned long)
+0002d2c4	precision__C3ios	ios::precision(void) const
+0002d2d4	precision__3iosi	ios::precision(int)
+0002d2ec	setf__3iosUl	ios::setf(unsigned long)
+0002d304	setf__3iosUlUl	ios::setf(unsigned long, unsigned long)
+0002d328	unsetf__3iosUl	ios::unsetf(unsigned long)
+0002d344	width__C3ios	ios::width(void) const
+0002d354	width__3iosi	ios::width(int)
+0002d36c	_throw_failure__C3ios	ios::_throw_failure(void) const
+0002d374	clear__3iosi	ios::clear(int)
+0002d390	set__3iosi	ios::set(int)
+0002d3a0	setstate__3iosi	ios::setstate(int)
+0002d3b0	good__C3ios	ios::good(void) const
+0002d3c4	eof__C3ios	ios::eof(void) const
+0002d3d8	fail__C3ios	ios::fail(void) const
+0002d3ec	bad__C3ios	ios::bad(void) const
+0002d400	rdstate__C3ios	ios::rdstate(void) const
+0002d410	__opPv__C3ios	ios::operator void *(void) const
+0002d42c	__nt__C3ios	ios::operator!(void) const
+0002d440	exceptions__C3ios	ios::exceptions(void) const
+0002d450	exceptions__3iosi	ios::exceptions(int)
+0002d460	rdbuf__C3ios	ios::rdbuf(void) const
+0002d46c	rdbuf__3iosP9streambuf	ios::rdbuf(streambuf *)
+0002d48c	sync_with_stdio__3ios	ios::sync_with_stdio(void)
+0002d4a0	unset__3ios11state_value	ios::unset(state_value)
+0002d4b4	__Q23ios4Init	ios::Init::Init(void)
+0002d4c0	set_offset__12streammarkeri	streammarker::set_offset(int)
+0002d4d0	saving__12streammarker	streammarker::saving(void)
+0002d4dc	_vtable__9streambuf	streambuf::_vtable(void)
+0002d4ec	xchain__9streambuf	streambuf::xchain(void)
+0002d4fc	gptr__C9streambuf	streambuf::gptr(void) const
+0002d518	pptr__C9streambuf	streambuf::pptr(void) const
+0002d528	egptr__C9streambuf	streambuf::egptr(void) const
+0002d548	epptr__C9streambuf	streambuf::epptr(void) const
+0002d558	pbase__C9streambuf	streambuf::pbase(void) const
+0002d568	eback__C9streambuf	streambuf::eback(void) const
+0002d588	base__C9streambuf	streambuf::base(void) const
+0002d598	ebuf__C9streambuf	streambuf::ebuf(void) const
+0002d5a8	blen__C9streambuf	streambuf::blen(void) const
+0002d5bc	xput_char__9streambufc	streambuf::xput_char(char)
+0002d5d4	xflags__9streambuf	streambuf::xflags(void)
+0002d5e0	xflags__9streambufi	streambuf::xflags(int)
+0002d5f4	xsetflags__9streambufi	streambuf::xsetflags(int)
+0002d604	xsetflags__9streambufii	streambuf::xsetflags(int, int)
+0002d620	gbump__9streambufi	streambuf::gbump(int)
+0002d63c	pbump__9streambufi	streambuf::pbump(int)
+0002d650	setp__9streambufPcT1	streambuf::setp(char *, char *)
+0002d66c	setg__9streambufPcN21	streambuf::setg(char *, char *, char *)
+0002d6a0	shortbuf__9streambuf	streambuf::shortbuf(void)
+0002d6b0	in_backup__9streambuf	streambuf::in_backup(void)
+0002d6c4	Gbase__9streambuf	streambuf::Gbase(void)
+0002d6dc	eGptr__9streambuf	streambuf::eGptr(void)
+0002d6f8	Bbase__9streambuf	streambuf::Bbase(void)
+0002d718	Bptr__9streambuf	streambuf::Bptr(void)
+0002d728	eBptr__9streambuf	streambuf::eBptr(void)
+0002d748	Nbase__9streambuf	streambuf::Nbase(void)
+0002d758	eNptr__9streambuf	streambuf::eNptr(void)
+0002d768	have_backup__9streambuf	streambuf::have_backup(void)
+0002d77c	have_markers__9streambuf	streambuf::have_markers(void)
+0002d790	put_mode__9streambuf	streambuf::put_mode(void)
+0002d7a4	pubseekoff__9streambufxQ23ios8seek_diri	streambuf::pubseekoff(long long, ios::seek_dir, int)
+0002d7cc	pubseekpos__9streambufxi	streambuf::pubseekpos(long long, int)
+0002d7ec	unbuffered__9streambuf	streambuf::unbuffered(void)
+0002d800	linebuffered__9streambuf	streambuf::linebuffered(void)
+0002d814	unbuffered__9streambufi	streambuf::unbuffered(int)
+0002d82c	linebuffered__9streambufi	streambuf::linebuffered(int)
+0002d848	allocate__9streambuf	streambuf::allocate(void)
+0002d874	allocbuf__9streambuf	streambuf::allocbuf(void)
+0002d890	in_avail__9streambuf	streambuf::in_avail(void)
+0002d8a4	out_waiting__9streambuf	streambuf::out_waiting(void)
+0002d8b8	sputn__9streambufPCci	streambuf::sputn(char const *, int)
+0002d8e0	padn__9streambufci	streambuf::padn(char, int)
+0002d900	sgetn__9streambufPci	streambuf::sgetn(char *, int)
+0002d920	sputc__9streambufi	streambuf::sputc(int)
+0002d93c	sbumpc__9streambuf	streambuf::sbumpc(void)
+0002d954	sgetc__9streambuf	streambuf::sgetc(void)
+0002d96c	snextc__9streambuf	streambuf::snextc(void)
+0002d9a4	stossc__9streambuf	streambuf::stossc(void)
+0002d9bc	is_open__C7filebuf	filebuf::is_open(void) const
+0002d9d0	fd__C7filebuf	filebuf::fd(void) const
+0002d9ec	is_reading__7filebuf	filebuf::is_reading(void)
+0002da20	cur_ptr__7filebuf	filebuf::cur_ptr(void)
+0002da60	file_ptr__7filebuf	filebuf::file_ptr(void)
+0002da78	init__3iosP9streambufP7ostream	ios::init(streambuf *, ostream *)
+0002dac8	__3iosP9streambufP7ostream	ios::ios(streambuf *, ostream *)
+0002db1c	_._3ios	ios::~ios(void)
+0002db60	init__7filebuf	filebuf::init(void)
+0002db78	__7filebuf	filebuf::filebuf(void)
+0002dbd8	__7filebufi	filebuf::filebuf(int)
+0002dc3c	__7filebufiPci	filebuf::filebuf(int, char *, int)
+0002dcbc	_._7filebuf	filebuf::~filebuf(void)
+0002dd18	open__7filebufPCcii	filebuf::open(char const *, int, int)
+0002ddc8	open__7filebufPCcT1	filebuf::open(char const *, char const *)
+0002dde8	attach__7filebufi	filebuf::attach(int)
+0002de04	setbuf__7filebufPci	filebuf::setbuf(char *, int)
+0002de24	doallocate__7filebuf	filebuf::doallocate(void)
+0002de3c	overflow__7filebufi	filebuf::overflow(int)
+0002de58	underflow__7filebuf	filebuf::underflow(void)
+0002de70	sync__7filebuf	filebuf::sync(void)
+0002de88	seekoff__7filebufxQ23ios8seek_diri	filebuf::seekoff(long long, ios::seek_dir, int)
+0002deb0	close__7filebuf	filebuf::close(void)
+0002ded4	sys_read__7filebufPci	filebuf::sys_read(char *, int)
+0002def4	sys_seek__7filebufxQ23ios8seek_dir	filebuf::sys_seek(long long, ios::seek_dir)
+0002df14	sys_write__7filebufPCci	filebuf::sys_write(char const *, int)
+0002df34	sys_stat__7filebufPv	filebuf::sys_stat(void *)
+0002df50	sys_close__7filebuf	filebuf::sys_close(void)
+0002df68	xsputn__7filebufPCci	filebuf::xsputn(char const *, int)
+0002df88	xsgetn__7filebufPci	filebuf::xsgetn(char *, int)
+0002dfb0	__as__22_IO_istream_withassignR7istream	_IO_istream_withassign::operator=(istream &)
+0002e014	__as__22_IO_ostream_withassignR7ostream	_IO_ostream_withassign::operator=(ostream &)
+0002e074	__default_terminate	__default_terminate
+0002e090	__terminate	__terminate
+0002e0b8	__throw_type_match	__throw_type_match
+0002e0ec	__empty	__empty
+0002e148	__get_eh_context	__get_eh_context
+0002e16c	__get_eh_info	__get_eh_info
+0002e21c	__get_dynamic_handler_chain	__get_dynamic_handler_chain
+0002e244	__sjthrow	__sjthrow
+0002e354	__sjpopnthrow	__sjpopnthrow
+0002e44c	__eh_rtime_match	__eh_rtime_match
+0002e4a4	__get_eh_table_version	__get_eh_table_version
+0002e4b4	__get_eh_table_language	__get_eh_table_language
+0002e758	__unwinding_cleanup	__unwinding_cleanup
+0002eac8	__throw	__throw
+0002eb88	__rethrow	__rethrow
+0002ec54	__pure_virtual	__pure_virtual
+0002ec90	__udivdi3	__udivdi3
+0002edb0	__umoddi3	__umoddi3
+0002ef44	terminate__Fv	terminate(void)
+0002ef64	__default_unexpected__Fv	__default_unexpected(void)
+0002ef80	set_terminate__FPFv_v	set_terminate(void (*)(void))
+0002efa8	set_unexpected__FPFv_v	set_unexpected(void (*)(void))
+0002efd4	unexpected__Fv	unexpected(void)
+0002eff4	__cp_exception_info	__cp_exception_info
+0002f01c	__cp_eh_info	__cp_eh_info
+0002f040	__start_cp_handler	__start_cp_handler
+0002f06c	__eh_alloc	__eh_alloc
+0002f0a4	__eh_free	__eh_free
+0002f0d0	__cplus_type_matcher	__cplus_type_matcher
+0002f13c	__cp_push_exception	__cp_push_exception
+0002f1b0	__cp_pop_exception	__cp_pop_exception
+0002f260	__uncatch_exception	__uncatch_exception
+0002f290	__check_eh_spec	__check_eh_spec
+0002f464	__throw_bad_cast	__throw_bad_cast
+0002f508	__throw_bad_typeid	__throw_bad_typeid
+0002f5a8	uncaught_exception__Fv	uncaught_exception(void)
+0002f5dc	what__C9exception	exception::what(void) const
+0002f604	__9exception	exception::exception(void)
+0002f62c	_._9exception	exception::~exception(void)
+0002f664	__13bad_exception	bad_exception::bad_exception(void)
+0002f694	_._13bad_exception	bad_exception::~bad_exception(void)
+00030154	__register_frame_info	__register_frame_info
+000301a0	__register_frame	__register_frame
+000301d8	__register_frame_info_table	__register_frame_info_table
+00030220	__register_frame_table	__register_frame_table
+00030258	__deregister_frame_info	__deregister_frame_info
+000302c0	__deregister_frame	__deregister_frame
+000302f4	__frame_state_for	__frame_state_for
+00030574	__builtin_delete	__builtin_delete
+00030614	__builtin_new	__builtin_new
+00030774	__builtin_vec_delete	__builtin_vec_delete
+00030814	__builtin_vec_new	__builtin_vec_new
+000308c4	_._9type_info	type_info::~type_info(void)
+000308fc	__eq__C9type_infoRC9type_info	type_info::operator==(type_info const &) const
+00030940	__rtti_class	__rtti_class
+0003098c	__rtti_si	__rtti_si
+000309d4	__rtti_user	__rtti_user
+00030a0c	dcast__C16__user_type_infoRC9type_infoiPvPC9type_infoT3	__user_type_info::dcast(type_info const &, int, void *, type_info const *, void *) const
+00030a44	dcast__C14__si_type_infoRC9type_infoiPvPC9type_infoT3	__si_type_info::dcast(type_info const &, int, void *, type_info const *, void *) const
+00030aa4	dcast__C17__class_type_infoRC9type_infoiPvPC9type_infoT3	__class_type_info::dcast(type_info const &, int, void *, type_info const *, void *) const
+00030bf4	__9type_infoPCc	type_info::type_info(char const *)
+00030c1c	name__C9type_info	type_info::name(void) const
+00030c2c	__ne__C9type_infoRC9type_info	type_info::operator!=(type_info const &) const
+00030c5c	__8bad_cast	bad_cast::bad_cast(void)
+00030c8c	_._8bad_cast	bad_cast::~bad_cast(void)
+00030ccc	__10bad_typeid	bad_typeid::bad_typeid(void)
+00030cfc	_._10bad_typeid	bad_typeid::~bad_typeid(void)
+00030d3c	__16__user_type_infoPCc	__user_type_info::__user_type_info(char const *)
+00030d70	__14__si_type_infoPCcRC16__user_type_info	__si_type_info::__si_type_info(char const *, __user_type_info const &)
+00030db8	__17__class_type_infoPCcPCQ217__class_type_info9base_infoUi	__class_type_info::__class_type_info(char const *, __class_type_info::base_info const *, unsigned int)
+00030e14	before__C9type_infoRC9type_info	type_info::before(type_info const &) const
+00030e48	__throw_type_match_rtti	__throw_type_match_rtti
+000312e0	__is_pointer__FPv	__is_pointer(void *)
+00031334	__rtti_ptr	__rtti_ptr
+00031370	__rtti_attr	__rtti_attr
+000313b4	__rtti_func	__rtti_func
+000313ec	__rtti_ptmf	__rtti_ptmf
+00031424	__rtti_ptmd	__rtti_ptmd
+0003145c	__rtti_array	__rtti_array
+00031494	__dynamic_cast	__dynamic_cast
+000314e8	__tfv	void type_info function
+00031530	__tfx	long long type_info function
+00031578	__tfl	long type_info function
+000315c0	__tfi	int type_info function
+00031608	__tfs	short type_info function
+00031650	__tfb	bool type_info function
+00031698	__tfc	char type_info function
+000316e0	__tfw	wchar_t type_info function
+00031728	__tfr	long double type_info function
+00031770	__tfd	double type_info function
+000317b8	__tff	float type_info function
+00031800	__tfUi	unsigned int type_info function
+00031848	__tfUl	unsigned long type_info function
+00031890	__tfUx	unsigned long long type_info function
+000318d8	__tfUs	unsigned short type_info function
+00031920	__tfUc	unsigned char type_info function
+00031968	__tfSc	signed char type_info function
+000319b0	set_new_handler__FPFv_v	set_new_handler(void (*)(void))
+000319d8	what__C9bad_alloc	bad_alloc::what(void) const
+000319f8	__nw__FUiPv	operator new(unsigned int, void *)
+00031a14	__vn__FUiPv	operator new [](unsigned int, void *)
+00031aa0	lexicographical_compare__H2ZPCScZPCSc_X01X01X11X11_b	bool lexicographical_compare<signed char const *, signed char const *>(signed char const *, signed char const *, signed char const *, signed char const *)
+00031af0	__lexicographical_compare_3way__H2ZPCScZPCSc_X01X01X11X11_i	int __lexicographical_compare_3way<signed char const *, signed char const *>(signed char const *, signed char const *, signed char const *, signed char const *)
+00031b50	__lower_bound__H3ZPCUlZUlZi_X01X01RCX11PX21_X01	unsigned long const * __lower_bound<unsigned long const *, unsigned long, int>(unsigned long const *, unsigned long const *, unsigned long const &, int *)
+00031ba4	_S_oom_malloc__t23__malloc_alloc_template1i0Ui	__malloc_alloc_template<0>::_S_oom_malloc(unsigned int)
+00031c24	_S_chunk_alloc__t24__default_alloc_template2b1i0UiRi	__default_alloc_template<true, 0>::_S_chunk_alloc(unsigned int, int &)
+00031d94	_S_refill__t24__default_alloc_template2b1i0Ui	__default_alloc_template<true, 0>::_S_refill(unsigned int)
+00031e24	clone__Q2t12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0_3Rep	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >::Rep::clone(void)
+00031f94	alloc__t12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0Uib	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >::alloc(unsigned int, bool)
+000321d4	replace__t12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0UiUiUic	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >::replace(unsigned int, unsigned int, unsigned int, char)
+00032514	replace__t12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0UiUiPCcUi	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >::replace(unsigned int, unsigned int, char const *, unsigned int)
+00032854	replace__t12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0UiUiRCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0UiUi	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >::replace(unsigned int, unsigned int, basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &, unsigned int, unsigned int)
+000329a4	replace__H1ZPCc_t12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0PcT1X00X00_Rt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > & basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >::replace<char const *>(char *, char *, char const *, char const *)
+00032d04	compare__Ct12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0RCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0UiUi	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >::compare(basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &, unsigned int, unsigned int) const
+00032d9c	__thunk_4__._16cSC3CmdWinWebCam	virtual function thunk (delta:-4) for cSC3CmdWinWebCam::~cSC3CmdWinWebCam(void)
+00032db8	__thunk_4_Release__14cRZGameCommand	virtual function thunk (delta:-4) for cRZGameCommand::Release(void)
+00032dd4	__thunk_4_AddRef__14cRZGameCommand	virtual function thunk (delta:-4) for cRZGameCommand::AddRef(void)
+00032df0	__thunk_4__._13cSC3CmdWebCam	virtual function thunk (delta:-4) for cSC3CmdWebCam::~cSC3CmdWebCam(void)
+00032e14	VSprintf__6cRZStdPCce	cRZStd::VSprintf(char const *,...)
+00032ed4	GetDepthFromColorType__18cGZBufferColorTypeQ218cGZBufferColorType10eColorType	cGZBufferColorType::GetDepthFromColorType(cGZBufferColorType::eColorType)
+00032f6c	_._13cSC3CmdWebCam	cSC3CmdWebCam::~cSC3CmdWebCam(void)
+00032fac	_._16cSC3CmdWinWebCam	cSC3CmdWinWebCam::~cSC3CmdWinWebCam(void)
+00032fe8	GetDirectorID__C18cWebCamCOMDirector	cWebCamCOMDirector::GetDirectorID(void) const
+00032ff8	_._18cWebCamCOMDirector	cWebCamCOMDirector::~cWebCamCOMDirector(void)
+00033054	CreateCmdFactory__18cWebCamCOMDirector	cWebCamCOMDirector::CreateCmdFactory(void)
+000330d4	CreatecSC3PublishCity__18cWebCamCOMDirector	cWebCamCOMDirector::CreatecSC3PublishCity(void)
+00033144	AppRegister__18cWebCamCOMDirectorP12cIGZRegistry	cWebCamCOMDirector::AppRegister(cIGZRegistry *)
+00033674	_M_erase__t8_Rb_tree5Zt4pair2ZCUiZUiZt4pair2ZCt4pair2ZCUiZUiZPFv_P11cIGZUnknownZt10_Select1st1Zt4pair2ZCt4pair2ZCUiZUiZPFv_P11cIGZUnknownZt4less1Zt4pair2ZCUiZUiZt9allocator1ZPFv_P11cIGZUnknownPt13_Rb_tree_node1Zt4pair2ZCt4pair2ZCUiZUiZPFv_P11cIGZUnknown	_Rb_tree<pair<unsigned int const, unsigned int>, pair<pair<unsigned int const, unsigned int> const, cIGZUnknown *(*)(void)>, _Select1st<pair<pair<unsigned int const, unsigned int> const, cIGZUnknown *(*)(void)> >, less<pair<unsigned int const, unsigned int> >, allocator<cIGZUnknown *(*)(void)> >::_M_erase(_Rb_tree_node<pair<pair<unsigned int const, unsigned int> const, cIGZUnknown *(*)(void)> > *)
+000336f4	_M_insert_aux__t6vector2ZP17cRZCOMDllDirectorZt9allocator1ZP17cRZCOMDllDirectorPP17cRZCOMDllDirectorRCP17cRZCOMDllDirector	vector<cRZCOMDllDirector *, allocator<cRZCOMDllDirector *> >::_M_insert_aux(cRZCOMDllDirector **, cRZCOMDllDirector *const &)
+00033a34	_M_insert__t8_Rb_tree5Zt4pair2ZCUiZUiZt4pair2ZCt4pair2ZCUiZUiZPFv_P11cIGZUnknownZt10_Select1st1Zt4pair2ZCt4pair2ZCUiZUiZPFv_P11cIGZUnknownZt4less1Zt4pair2ZCUiZUiZt9allocator1ZPFv_P11cIGZUnknownP18_Rb_tree_node_baseT1RCt4pair2ZCt4pair2ZCUiZUiZPFv_P11cIGZUnknown	_Rb_tree<pair<unsigned int const, unsigned int>, pair<pair<unsigned int const, unsigned int> const, cIGZUnknown *(*)(void)>, _Select1st<pair<pair<unsigned int const, unsigned int> const, cIGZUnknown *(*)(void)> >, less<pair<unsigned int const, unsigned int> >, allocator<cIGZUnknown *(*)(void)> >::_M_insert(_Rb_tree_node_base *, _Rb_tree_node_base *, pair<pair<unsigned int const, unsigned int> const, cIGZUnknown *(*)(void)> const &)
+00033e64	insert_unique__t8_Rb_tree5Zt4pair2ZCUiZUiZt4pair2ZCt4pair2ZCUiZUiZPFv_P11cIGZUnknownZt10_Select1st1Zt4pair2ZCt4pair2ZCUiZUiZPFv_P11cIGZUnknownZt4less1Zt4pair2ZCUiZUiZt9allocator1ZPFv_P11cIGZUnknownRCt4pair2ZCt4pair2ZCUiZUiZPFv_P11cIGZUnknown	_Rb_tree<pair<unsigned int const, unsigned int>, pair<pair<unsigned int const, unsigned int> const, cIGZUnknown *(*)(void)>, _Select1st<pair<pair<unsigned int const, unsigned int> const, cIGZUnknown *(*)(void)> >, less<pair<unsigned int const, unsigned int> >, allocator<cIGZUnknown *(*)(void)> >::insert_unique(pair<pair<unsigned int const, unsigned int> const, cIGZUnknown *(*)(void)> const &)
+00033fd4	__thunk_4_QueryInterface__17cRZCOMDllDirectorUiPPv	virtual function thunk (delta:-4) for cRZCOMDllDirector::QueryInterface(unsigned int, void **)
+00033ff0	__thunk_4_AddRef__17cRZCOMDllDirector	virtual function thunk (delta:-4) for cRZCOMDllDirector::AddRef(void)
+0003400c	__thunk_4_Release__17cRZCOMDllDirector	virtual function thunk (delta:-4) for cRZCOMDllDirector::Release(void)
+00034028	__thunk_4_PreFrameWorkInit__17cRZCOMDllDirector	virtual function thunk (delta:-4) for cRZCOMDllDirector::PreFrameWorkInit(void)
+00034044	__thunk_4_PreAppInit__17cRZCOMDllDirector	virtual function thunk (delta:-4) for cRZCOMDllDirector::PreAppInit(void)
+00034060	__thunk_4_PostAppInit__17cRZCOMDllDirector	virtual function thunk (delta:-4) for cRZCOMDllDirector::PostAppInit(void)
+0003407c	__thunk_4_PreAppShutdown__17cRZCOMDllDirector	virtual function thunk (delta:-4) for cRZCOMDllDirector::PreAppShutdown(void)
+00034098	__thunk_4_PostAppShutdown__17cRZCOMDllDirector	virtual function thunk (delta:-4) for cRZCOMDllDirector::PostAppShutdown(void)
+000340b4	__thunk_4_PostSystemServiceShutdown__17cRZCOMDllDirector	virtual function thunk (delta:-4) for cRZCOMDllDirector::PostSystemServiceShutdown(void)
+000340d0	__thunk_4_AbortiveQuit__17cRZCOMDllDirector	virtual function thunk (delta:-4) for cRZCOMDllDirector::AbortiveQuit(void)
+000340ec	__thunk_4_OnInstall__17cRZCOMDllDirector	virtual function thunk (delta:-4) for cRZCOMDllDirector::OnInstall(void)
+0003410c	_._t3map4Zt4pair2ZCUiZUiZPFv_P11cIGZUnknownZt4less1Zt4pair2ZCUiZUiZt9allocator1ZPFv_P11cIGZUnknown	map<pair<unsigned int const, unsigned int>, cIGZUnknown *(*)(void), less<pair<unsigned int const, unsigned int> >, allocator<cIGZUnknown *(*)(void)> >::~map(void)
+000341b0	_._11logic_error	logic_error::~logic_error(void)
+00034260	__11logic_errorRC11logic_error	logic_error::logic_error(logic_error const &)
+000342bc	__tf11logic_error	logic_error type_info function
+000342f4	_._12domain_error	domain_error::~domain_error(void)
+00034310	__tf12domain_error	domain_error type_info function
+00034368	_._16invalid_argument	invalid_argument::~invalid_argument(void)
+00034384	__tf16invalid_argument	invalid_argument type_info function
+000343dc	_._12length_error	length_error::~length_error(void)
+000343f8	__tf12length_error	length_error type_info function
+00034450	_._12out_of_range	out_of_range::~out_of_range(void)
+0003446c	__tf12out_of_range	out_of_range type_info function
+000344d0	_._13runtime_error	runtime_error::~runtime_error(void)
+00034574	__tf13runtime_error	runtime_error type_info function
+000345ac	_._11range_error	range_error::~range_error(void)
+000345c8	__tf11range_error	range_error type_info function
+00034620	_._14overflow_error	overflow_error::~overflow_error(void)
+0003463c	__tf14overflow_error	overflow_error type_info function
+00034694	_._15underflow_error	underflow_error::~underflow_error(void)
+000346b0	__tf15underflow_error	underflow_error type_info function
+00034708	__thunk_4__._22_IO_ostream_withassign	virtual function thunk (delta:-4) for _IO_ostream_withassign::~_IO_ostream_withassign(void)
+00034714	__thunk_8__._22_IO_istream_withassign	virtual function thunk (delta:-8) for _IO_istream_withassign::~_IO_istream_withassign(void)
+00034720	__thunk_12__._8iostream	virtual function thunk (delta:-12) for iostream::~iostream(void)
+0003472c	__thunk_8__._7istream	virtual function thunk (delta:-8) for istream::~istream(void)
+00034738	__thunk_4__._7ostream	virtual function thunk (delta:-4) for ostream::~ostream(void)
+00034744	_._8iostream	iostream::~iostream(void)
+000347a8	_._7ostream	ostream::~ostream(void)
+000347fc	__tf7ostream	ostream type_info function
+00034834	_._7istream	istream::~istream(void)
+00034888	__tf7istream	istream type_info function
+000348c0	__tf8iostream	iostream type_info function
+0003493c	_._22_IO_istream_withassign	_IO_istream_withassign::~_IO_istream_withassign(void)
+00034998	__tf22_IO_istream_withassign	_IO_istream_withassign type_info function
+000349f0	_._22_IO_ostream_withassign	_IO_ostream_withassign::~_IO_ostream_withassign(void)
+00034a4c	__tf22_IO_ostream_withassign	_IO_ostream_withassign type_info function
+00034aa4	__tf3ios	ios type_info function
+00034adc	__tf9streambuf	streambuf type_info function
+00034b14	__tf7filebuf	filebuf type_info function
+00034b6c	__tf11_ios_fields	_ios_fields type_info function
+00034b98	__tf8_IO_FILE	_IO_FILE type_info function
+00034bc8	__tf9exception	exception type_info function
+00034c08	__tf13bad_exception	bad_exception type_info function
+00034c74	__tf9type_info	type_info type_info function
+00034cb4	__tf8bad_cast	bad_cast type_info function
+00034d00	__tf10bad_typeid	bad_typeid type_info function
+00034d4c	_._16__user_type_info	__user_type_info::~__user_type_info(void)
+00034d7c	__tf16__user_type_info	__user_type_info type_info function
+00034de8	_._14__si_type_info	__si_type_info::~__si_type_info(void)
+00034e18	__tf14__si_type_info	__si_type_info type_info function
+00034eb4	_._17__class_type_info	__class_type_info::~__class_type_info(void)
+00034ee4	__tf17__class_type_info	__class_type_info type_info function
+00034f80	_._19__pointer_type_info	__pointer_type_info::~__pointer_type_info(void)
+00034fb0	__tf19__pointer_type_info	__pointer_type_info type_info function
+00034ffc	_._16__attr_type_info	__attr_type_info::~__attr_type_info(void)
+0003502c	__tf16__attr_type_info	__attr_type_info type_info function
+00035078	_._19__builtin_type_info	__builtin_type_info::~__builtin_type_info(void)
+000350a8	__tf19__builtin_type_info	__builtin_type_info type_info function
+000350f4	_._16__func_type_info	__func_type_info::~__func_type_info(void)
+00035124	__tf16__func_type_info	__func_type_info type_info function
+00035170	_._16__ptmf_type_info	__ptmf_type_info::~__ptmf_type_info(void)
+000351a0	__tf16__ptmf_type_info	__ptmf_type_info type_info function
+000351ec	_._16__ptmd_type_info	__ptmd_type_info::~__ptmd_type_info(void)
+0003521c	__tf16__ptmd_type_info	__ptmd_type_info type_info function
+00035268	_._17__array_type_info	__array_type_info::~__array_type_info(void)
+00035298	__tf17__array_type_info	__array_type_info type_info function
+000352e4	_._9bad_alloc	bad_alloc::~bad_alloc(void)
+0003531c	__tf9bad_alloc	bad_alloc type_info function
+00035364	_fini	_fini

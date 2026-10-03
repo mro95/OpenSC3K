@@ -1,0 +1,196 @@
+rva	demangled	mangled	source	method
+001020	cSC3BuildingIncinerator::cSC3BuildingIncinerator(void)	__23cSC3BuildingIncinerator	libSimEco.so	tokens:39.8
+0013b3	virtual function thunk (delta:-44) for cSC3BuildingIncinerator::GetUnusedGarbageCapacity(void)	__thunk_44_GetUnusedGarbageCapacity__23cSC3BuildingIncinerator	libSimEco.so	vtable:__vt_23cSC3BuildingIncinerator.24cISC3BuildingIncinerator
+0013c6	cRZCOMDllDirector::OnUnload(void)	OnUnload__17cRZCOMDllDirector	libSimEco.so	vtable:__vt_14cSECOMDirector
+0013fc	virtual function thunk (delta:-44) for cSC3BuildingIncinerator::SetMaxLifeSpan(unsigned int)	__thunk_44_SetMaxLifeSpan__23cSC3BuildingIncineratorUi	libSimEco.so	vtable:__vt_23cSC3BuildingIncinerator.24cISC3BuildingIncinerator
+001408	virtual function thunk (delta:-44) for cSC3BuildingIncinerator::GetMaxLifeSpan(void)	__thunk_44_GetMaxLifeSpan__23cSC3BuildingIncinerator	libSimEco.so	vtable:__vt_23cSC3BuildingIncinerator.24cISC3BuildingIncinerator
+00140e	virtual function thunk (delta:-44) for cSC3BuildingIncinerator::SetDeclineAge(unsigned int)	__thunk_44_SetDeclineAge__23cSC3BuildingIncineratorUi	libSimEco.so	vtable:__vt_23cSC3BuildingIncinerator.24cISC3BuildingIncinerator
+00141a	virtual function thunk (delta:-44) for cSC3BuildingIncinerator::GetDeclineAge(void)	__thunk_44_GetDeclineAge__23cSC3BuildingIncinerator	libSimEco.so	vtable:__vt_23cSC3BuildingIncinerator.24cISC3BuildingIncinerator
+001420	virtual function thunk (delta:-44) for cSC3BuildingIncinerator::Kill(void)	__thunk_44_Kill__23cSC3BuildingIncinerator	libSimEco.so	vtable:__vt_23cSC3BuildingIncinerator.24cISC3BuildingIncinerator
+001582	virtual function thunk (delta:-44) for cSC3BuildingIncinerator::GetAge(void)	__thunk_44_GetAge__23cSC3BuildingIncinerator	libSimEco.so	vtable:__vt_23cSC3BuildingIncinerator.24cISC3BuildingIncinerator
+0015d9	virtual function thunk (delta:-44) for cSC3BuildingIncinerator::IsAging(void)	__thunk_44_IsAging__23cSC3BuildingIncinerator	libSimEco.so	vtable:__vt_23cSC3BuildingIncinerator.24cISC3BuildingIncinerator
+0022ff	virtual function thunk (delta:-44) for cSC3BuildingIncinerator::GetDailyGarbageCapacity(void)	__thunk_44_GetDailyGarbageCapacity__23cSC3BuildingIncinerator	libSimEco.so	vtable:__vt_23cSC3BuildingIncinerator.24cISC3BuildingIncinerator
+002303	virtual function thunk (delta:-44) for cSC3BuildingIncinerator::SetDailyGarbageCapacityUsage(unsigned int)	__thunk_44_SetDailyGarbageCapacityUsage__23cSC3BuildingIncineratorUi	libSimEco.so	vtable:__vt_23cSC3BuildingIncinerator.24cISC3BuildingIncinerator
+00230d	virtual function thunk (delta:-4) for cSC3BuildingIncinerator::MinimumExecutionInterval(void)	__thunk_4_MinimumExecutionInterval__23cSC3BuildingIncinerator	libSimEco.so	vtable:__vt_23cSC3BuildingIncinerator.14cISC3CityAgent
+00231b	cSC3BuildingIncinerator::Simulate(int)	Simulate__23cSC3BuildingIncineratori	libSimEco.so	vtable-thunk:__vt_23cSC3BuildingIncinerator.14cISC3CityAgent
+002482	virtual function thunk (delta:-44) for cSC3BuildingIncinerator::AsISC3Building(void)	__thunk_44_AsISC3Building__23cSC3BuildingIncinerator	libSimEco.so	vtable:__vt_23cSC3BuildingIncinerator.24cISC3BuildingIncinerator
+002486	cSC3BuildingIncinerator::AsISC3Occupant(void)	AsISC3Occupant__23cSC3BuildingIncinerator	libSimEco.so	vtable-thunk:__vt_23cSC3BuildingIncinerator.24cISC3BuildingIncinerator
+002497	cSC3BuildingIncinerator::QueryInterface(unsigned int, void **)	QueryInterface__23cSC3BuildingIncineratorUiPPv	libSimEco.so	tokens:12.8
+002e07	virtual function thunk (delta:-4) for cSC3BuildingIncinerator::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__23cSC3BuildingIncineratorUiPPv	libSimEco.so	vtable:__vt_23cSC3BuildingIncinerator.14cISC3CityAgent
+002e0f	virtual function thunk (delta:-4) for cSC3BuildingIncinerator::Release(void)	__thunk_4_Release__23cSC3BuildingIncinerator	libSimEco.so	vtable:__vt_23cSC3BuildingIncinerator.14cISC3CityAgent
+002e17	virtual function thunk (delta:-4) for cSC3BuildingIncinerator::Simulate(int)	__thunk_4_Simulate__23cSC3BuildingIncineratori	libSimEco.so	vtable:__vt_23cSC3BuildingIncinerator.14cISC3CityAgent
+002e1f	virtual function thunk (delta:-8) for cSC3BuildingIncinerator::QueryInterface(unsigned int, void **)	__thunk_8_QueryInterface__23cSC3BuildingIncineratorUiPPv	libSimEco.so	caller
+002e37	virtual function thunk (delta:-44) for cSC3BuildingIncinerator::QueryInterface(unsigned int, void **)	__thunk_44_QueryInterface__23cSC3BuildingIncineratorUiPPv	libSimEco.so	vtable:__vt_23cSC3BuildingIncinerator.24cISC3BuildingIncinerator
+002e3f	virtual function thunk (delta:-44) for cSC3BuildingIncinerator::AddRef(void)	__thunk_44_AddRef__23cSC3BuildingIncinerator	libSimEco.so	vtable:__vt_23cSC3BuildingIncinerator.24cISC3BuildingIncinerator
+002e47	virtual function thunk (delta:-44) for cSC3BuildingIncinerator::Release(void)	__thunk_44_Release__23cSC3BuildingIncinerator	libSimEco.so	vtable:__vt_23cSC3BuildingIncinerator.24cISC3BuildingIncinerator
+002e4f	virtual function thunk (delta:-44) for cSC3BuildingIncinerator::AsISC3Occupant(void)	__thunk_44_AsISC3Occupant__23cSC3BuildingIncinerator	libSimEco.so	vtable:__vt_23cSC3BuildingIncinerator.24cISC3BuildingIncinerator
+002f96	virtual function thunk (delta:-44) for cSC3BuildingRecyclingCenter::GetPercentReduction(void)	__thunk_44_GetPercentReduction__27cSC3BuildingRecyclingCenter	libSimEco.so	vtable:__vt_27cSC3BuildingRecyclingCenter.28cISC3BuildingRecyclingCenter
+00302b	cSC3BuildingRecyclingCenter::cSC3BuildingRecyclingCenter(void)	__27cSC3BuildingRecyclingCenter	libSimEco.so	tokens:48.6
+003468	virtual function thunk (delta:-44) for cSC3BuildingRecyclingCenter::SetMaxLifeSpan(unsigned int)	__thunk_44_SetMaxLifeSpan__27cSC3BuildingRecyclingCenterUi	libSimEco.so	vtable:__vt_27cSC3BuildingRecyclingCenter.28cISC3BuildingRecyclingCenter
+003474	virtual function thunk (delta:-44) for cSC3BuildingRecyclingCenter::GetMaxLifeSpan(void)	__thunk_44_GetMaxLifeSpan__27cSC3BuildingRecyclingCenter	libSimEco.so	vtable:__vt_27cSC3BuildingRecyclingCenter.28cISC3BuildingRecyclingCenter
+00347a	virtual function thunk (delta:-44) for cSC3BuildingRecyclingCenter::SetDeclineAge(unsigned int)	__thunk_44_SetDeclineAge__27cSC3BuildingRecyclingCenterUi	libSimEco.so	vtable:__vt_27cSC3BuildingRecyclingCenter.28cISC3BuildingRecyclingCenter
+003486	virtual function thunk (delta:-44) for cSC3BuildingRecyclingCenter::GetDeclineAge(void)	__thunk_44_GetDeclineAge__27cSC3BuildingRecyclingCenter	libSimEco.so	vtable:__vt_27cSC3BuildingRecyclingCenter.28cISC3BuildingRecyclingCenter
+00348c	virtual function thunk (delta:-44) for cSC3BuildingRecyclingCenter::Kill(void)	__thunk_44_Kill__27cSC3BuildingRecyclingCenter	libSimEco.so	vtable:__vt_27cSC3BuildingRecyclingCenter.28cISC3BuildingRecyclingCenter
+003491	virtual function thunk (delta:-44) for cSC3BuildingRecyclingCenter::IsDead(void)	__thunk_44_IsDead__27cSC3BuildingRecyclingCenter	libSimEco.so	vtable:__vt_27cSC3BuildingRecyclingCenter.28cISC3BuildingRecyclingCenter
+0035a0	virtual function thunk (delta:-44) for cSC3BuildingRecyclingCenter::GetAge(void)	__thunk_44_GetAge__27cSC3BuildingRecyclingCenter	libSimEco.so	vtable:__vt_27cSC3BuildingRecyclingCenter.28cISC3BuildingRecyclingCenter
+00411a	cSC3BuildingRecyclingCenter::Simulate(int)	Simulate__27cSC3BuildingRecyclingCenteri	libSimEco.so	vtable-thunk:__vt_27cSC3BuildingRecyclingCenter.14cISC3CityAgent
+0042b6	cSC3BuildingRecyclingCenter::QueryInterface(unsigned int, void **)	QueryInterface__27cSC3BuildingRecyclingCenterUiPPv	libSimEco.so	tokens:12.8
+0042f6	virtual function thunk (delta:-4) for cSC3BuildingRecyclingCenter::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__27cSC3BuildingRecyclingCenterUiPPv	libSimEco.so	vtable:__vt_27cSC3BuildingRecyclingCenter.14cISC3CityAgent
+0042fe	virtual function thunk (delta:-4) for cSC3BuildingIncinerator::AddRef(void)	__thunk_4_AddRef__23cSC3BuildingIncinerator	libSimEco.so	vtable:__vt_23cSC3BuildingIncinerator.14cISC3CityAgent
+004306	virtual function thunk (delta:-4) for cSC3BuildingRecyclingCenter::Simulate(int)	__thunk_4_Simulate__27cSC3BuildingRecyclingCenteri	libSimEco.so	vtable:__vt_27cSC3BuildingRecyclingCenter.14cISC3CityAgent
+00430e	virtual function thunk (delta:-8) for cSC3BuildingRecyclingCenter::QueryInterface(unsigned int, void **)	__thunk_8_QueryInterface__27cSC3BuildingRecyclingCenterUiPPv	libSimEco.so	caller
+004336	virtual function thunk (delta:-44) for cSC3BuildingRecyclingCenter::QueryInterface(unsigned int, void **)	__thunk_44_QueryInterface__27cSC3BuildingRecyclingCenterUiPPv	libSimEco.so	vtable:__vt_27cSC3BuildingRecyclingCenter.28cISC3BuildingRecyclingCenter
+00465d	cSC3CityCellMapSized<short>::QueryInterface(unsigned int, void **)	QueryInterface__t20cSC3CityCellMapSized1ZsUiPPv	libSimEco.so	tokens:13.4
+0046bb	cSC3PollutionLayer::StaticInit(cISC3CityDefinition *)	StaticInit__18cSC3PollutionLayerP19cISC3CityDefinition	libSimEco.so	tokens:227.6
+005807	virtual function thunk (delta:-32) for cSC3PollutionLayer::StaticShutdown(void)	__thunk_32_StaticShutdown__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.14cISC3CityLayer
+006abb	virtual function thunk (delta:-32) for cSC3PollutionLayer::Save(cISC3City *, cIGZDBSegment *)	__thunk_32_Save__18cSC3PollutionLayerP9cISC3CityP13cIGZDBSegment	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.14cISC3CityLayer
+0073c7	cSC3PollutionLayer::Shutdown(void)	Shutdown__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer
+007627	virtual function thunk (delta:-32) for cSC3PollutionLayer::SimulationEnd(void)	__thunk_32_SimulationEnd__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.14cISC3CityLayer
+007680	cSC3PollutionLayer::SimulationBegin(void)	SimulationBegin__18cSC3PollutionLayer	libSimEco.so	vtable-thunk:__vt_18cSC3PollutionLayer.14cISC3CityLayer
+007a9e	cSC3PollutionLayer::EndOfCycle(void)	EndOfCycle__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer
+007b5d	cSC3PollutionLayer::EndOfMonth(void)	EndOfMonth__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer
+00817f	cSC3PollutionLayer::QueryInterface(unsigned int, void **)	QueryInterface__18cSC3PollutionLayerUiPPv	libSimEco.so	tokens:29.4
+00821a	virtual function thunk (delta:-36) for cSC3PollutionLayer::Simulate(int)	__thunk_36_Simulate__18cSC3PollutionLayeri	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.14cISC3CityAgent
+008245	virtual function thunk (delta:-36) for cSC3PollutionLayer::MinimumExecutionInterval(void)	__thunk_36_MinimumExecutionInterval__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.14cISC3CityAgent
+008249	cSC3PollutionLayer::doDailySim(void)	doDailySim__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer
+008d84	cSC3PollutionLayer::GetManipulator(cISC3CityAgentType const &, cISC3CityLayerManipulator **, int &)	GetManipulator__18cSC3PollutionLayerRC18cISC3CityAgentTypePP25cISC3CityLayerManipulatorRi	libSimEco.so	vtable-thunk:__vt_18cSC3PollutionLayer.14cISC3CityLayer
+008d90	virtual function thunk (delta:-28) for cSC3PollutionLayer::IsSaltWater(unsigned int, unsigned int) const	__thunk_28_IsSaltWater__C18cSC3PollutionLayerUiUi	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+008db8	virtual function thunk (delta:-28) for cSC3PollutionLayer::IsRadioactive(unsigned int, unsigned int) const	__thunk_28_IsRadioactive__C18cSC3PollutionLayerUiUi	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+008ddd	virtual function thunk (delta:-28) for cSC3PollutionLayer::GetAirValue(unsigned int, unsigned int, unsigned int &) const	__thunk_28_GetAirValue__C18cSC3PollutionLayerUiUiRUi	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+008e0d	virtual function thunk (delta:-28) for cSC3PollutionLayer::GetWaterValue(unsigned int, unsigned int, unsigned int &) const	__thunk_28_GetWaterValue__C18cSC3PollutionLayerUiUiRUi	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+008e3a	virtual function thunk (delta:-28) for cSC3PollutionLayer::GetGarbageValue(unsigned int, unsigned int, unsigned int &) const	__thunk_28_GetGarbageValue__C18cSC3PollutionLayerUiUiRUi	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+008e67	virtual function thunk (delta:-28) for cSC3PollutionLayer::IsAirPolluted(unsigned int, unsigned int) const	__thunk_28_IsAirPolluted__C18cSC3PollutionLayerUiUi	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+008e89	virtual function thunk (delta:-28) for cSC3PollutionLayer::IsWaterPolluted(unsigned int, unsigned int) const	__thunk_28_IsWaterPolluted__C18cSC3PollutionLayerUiUi	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+008eab	virtual function thunk (delta:-28) for cSC3PollutionLayer::IsGarbageAccumulated(unsigned int, unsigned int) const	__thunk_28_IsGarbageAccumulated__C18cSC3PollutionLayerUiUi	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+008ecd	cSC3PollutionLayer::SetIsSaltWater(unsigned int, unsigned int, bool)	SetIsSaltWater__18cSC3PollutionLayerUiUib	libSimEco.so	tokens:7.5
+008f65	cSC3PollutionLayer::SetIsRadioactive(unsigned int, unsigned int, bool)	SetIsRadioactive__18cSC3PollutionLayerUiUib	libSimEco.so	tokens:7.5
+008ffd	cSC3PollutionLayer::SetAirValue(unsigned int, unsigned int, unsigned int)	SetAirValue__18cSC3PollutionLayerUiUiUi	libSimEco.so	tokens:14.9
+0090aa	virtual function thunk (delta:-28) for cSC3PollutionLayer::SetWaterValue(unsigned int, unsigned int, unsigned int)	__thunk_28_SetWaterValue__18cSC3PollutionLayerUiUiUi	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+009151	virtual function thunk (delta:-28) for cSC3PollutionLayer::SetGarbageValue(unsigned int, unsigned int, unsigned int)	__thunk_28_SetGarbageValue__18cSC3PollutionLayerUiUiUi	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+0091a5	virtual function thunk (delta:-28) for cSC3PollutionLayer::GetTotalGarbageProducedLastMonth(void)	__thunk_28_GetTotalGarbageProducedLastMonth__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+0091ec	virtual function thunk (delta:-28) for cSC3PollutionLayer::GetTotalGarbageImportedLastMonth(void)	__thunk_28_GetTotalGarbageImportedLastMonth__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+009233	virtual function thunk (delta:-28) for cSC3PollutionLayer::GetTotalGarbageExportedLastMonth(void)	__thunk_28_GetTotalGarbageExportedLastMonth__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+00927a	virtual function thunk (delta:-28) for cSC3PollutionLayer::GetTotalGarbageRecycledLastMonth(void)	__thunk_28_GetTotalGarbageRecycledLastMonth__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+0092c1	virtual function thunk (delta:-28) for cSC3PollutionLayer::GetTotalGarbageIncineratedLastMonth(void)	__thunk_28_GetTotalGarbageIncineratedLastMonth__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+009308	virtual function thunk (delta:-28) for cSC3PollutionLayer::GetTotalGarbageConvertedToEnergyLastMonth(void)	__thunk_28_GetTotalGarbageConvertedToEnergyLastMonth__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+00934f	virtual function thunk (delta:-28) for cSC3PollutionLayer::GetTotalGarbageLandfilledLastMonth(void)	__thunk_28_GetTotalGarbageLandfilledLastMonth__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+009396	virtual function thunk (delta:-28) for cSC3PollutionLayer::GetGarbageBuildingCapacity(unsigned int)	__thunk_28_GetGarbageBuildingCapacity__18cSC3PollutionLayerUi	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+0093ba	virtual function thunk (delta:-28) for cSC3PollutionLayer::GetAvailableLandfillCapacity(void)	__thunk_28_GetAvailableLandfillCapacity__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+0093c5	virtual function thunk (delta:-28) for cSC3PollutionLayer::IsActiveLandfill(unsigned int, unsigned int)	__thunk_28_IsActiveLandfill__18cSC3PollutionLayerUiUi	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+0093ec	virtual function thunk (delta:-28) for cSC3PollutionLayer::SetIsActiveLandfill(unsigned int, unsigned int, bool)	__thunk_28_SetIsActiveLandfill__18cSC3PollutionLayerUiUib	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+0095e7	cSC3PollutionLayer::OccupantInserted(unsigned int, cISC3Occupant *)	OccupantInserted__18cSC3PollutionLayerUiP13cISC3Occupant	libSimEco.so	vtable-thunk:__vt_18cSC3PollutionLayer.23cISC3CityChangeReceiver
+00a032	cSC3PollutionLayer::doPollutionEaterChange(cISC3Occupant *, cSC3PollutionLayer::tChangeType, unsigned int)	doPollutionEaterChange__18cSC3PollutionLayerP13cISC3OccupantQ218cSC3PollutionLayer11tChangeTypeUi	libSimEco.so	tokens:46.1
+00a307	virtual function thunk (delta:-40) for cSC3PollutionLayer::OccupantInserted(unsigned int, cISC3Occupant *)	__thunk_40_OccupantInserted__18cSC3PollutionLayerUiP13cISC3Occupant	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.23cISC3CityChangeReceiver
+00a318	virtual function thunk (delta:-40) for cSC3PollutionLayer::OccupantRemoved(unsigned int, cISC3Occupant *)	__thunk_40_OccupantRemoved__18cSC3PollutionLayerUiP13cISC3Occupant	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.23cISC3CityChangeReceiver
+00a329	virtual function thunk (delta:-40) for cSC3PollutionLayer::OccupantChanged(unsigned int, cISC3Occupant *, int, void *)	__thunk_40_OccupantChanged__18cSC3PollutionLayerUiP13cISC3OccupantiPv	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.23cISC3CityChangeReceiver
+00a6b7	virtual function thunk (delta:-28) for cSC3PollutionLayer::IsGarbageUncollected(void)	__thunk_28_IsGarbageUncollected__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+00a6be	virtual function thunk (delta:-28) for cSC3PollutionLayer::GetTotalGarbageUncollected(void)	__thunk_28_GetTotalGarbageUncollected__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+00a6c5	virtual function thunk (delta:-28) for cSC3PollutionLayer::GetAverageAirValue(void) const	__thunk_28_GetAverageAirValue__C18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+00a6cc	virtual function thunk (delta:-28) for cSC3PollutionLayer::GetAverageWaterValue(void) const	__thunk_28_GetAverageWaterValue__C18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+00a6d3	virtual function thunk (delta:-28) for cSC3PollutionLayer::GetAverageGarbageValue(void) const	__thunk_28_GetAverageGarbageValue__C18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+00a6db	virtual function thunk (delta:-28) for cSC3PollutionLayer::GetMaxExpectedAirValue(void) const	__thunk_28_GetMaxExpectedAirValue__C18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+00a6e1	virtual function thunk (delta:-28) for cSC3PollutionLayer::GetMaxExpectedWaterValue(void) const	__thunk_28_GetMaxExpectedWaterValue__C18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+00a6e7	virtual function thunk (delta:-28) for cSC3PollutionLayer::GetMaxExpectedGarbageValue(void) const	__thunk_28_GetMaxExpectedGarbageValue__C18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+00a719	virtual function thunk (delta:-28) for cSC3PollutionLayer::GetTotalLandfillCapacity(void)	__thunk_28_GetTotalLandfillCapacity__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+00a726	virtual function thunk (delta:-28) for cSC3PollutionLayer::GetDailyIncineratorCapacity(void)	__thunk_28_GetDailyIncineratorCapacity__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+00a72d	virtual function thunk (delta:-28) for cSC3PollutionLayer::GetDailyWasteToEnergyCapacity(void)	__thunk_28_GetDailyWasteToEnergyCapacity__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+00a739	cSC3PollutionLayer::GetRecyclingCenterEffect(void)	GetRecyclingCenterEffect__18cSC3PollutionLayer	libSimEco.so	tokens:18.8
+00a75d	virtual function thunk (delta:-28) for cSC3PollutionLayer::GetTotalGarbageProduced(void)	__thunk_28_GetTotalGarbageProduced__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+00a76a	virtual function thunk (delta:-28) for cSC3PollutionLayer::GetTotalGarbageImported(void)	__thunk_28_GetTotalGarbageImported__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+00a777	virtual function thunk (delta:-28) for cSC3PollutionLayer::GetTotalGarbageExported(void)	__thunk_28_GetTotalGarbageExported__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+00a784	virtual function thunk (delta:-28) for cSC3PollutionLayer::GetTotalGarbageRecycled(void)	__thunk_28_GetTotalGarbageRecycled__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+00a7aa	virtual function thunk (delta:-28) for cSC3PollutionLayer::GetTotalGarbageIncinerated(void)	__thunk_28_GetTotalGarbageIncinerated__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+00a7b7	virtual function thunk (delta:-28) for cSC3PollutionLayer::GetTotalGarbageConvertedToEnergy(void)	__thunk_28_GetTotalGarbageConvertedToEnergy__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+00a7d2	virtual function thunk (delta:-28) for cSC3PollutionLayer::GetTotalGarbageLandfilled(void)	__thunk_28_GetTotalGarbageLandfilled__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+00a7ea	virtual function thunk (delta:-28) for cSC3PollutionLayer::GarbagePutInLandfill(unsigned int)	__thunk_28_GarbagePutInLandfill__18cSC3PollutionLayerUi	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+00a7fd	virtual function thunk (delta:-28) for cSC3PollutionLayer::GetAgingWaterTreatmentCount(void)	__thunk_28_GetAgingWaterTreatmentCount__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+00a804	virtual function thunk (delta:-28) for cSC3PollutionLayer::GetAgingIncineratorCount(void)	__thunk_28_GetAgingIncineratorCount__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+00a869	virtual function thunk (delta:-28) for cSC3PollutionLayer::GetAgingRecyclingCenterCount(void)	__thunk_28_GetAgingRecyclingCenterCount__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+00a870	virtual function thunk (delta:-28) for cSC3PollutionLayer::GetGarbageScalingFactor(void)	__thunk_28_GetGarbageScalingFactor__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+00a881	cSC3PollutionLayer::GetLayerType(void)	GetLayerType__18cSC3PollutionLayer	libSimEco.so	tokens:7.5
+00a887	virtual function thunk (delta:-36) for cSC3PollutionLayer::TypeId(void) const	__thunk_36_TypeId__C18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.14cISC3CityAgent
+00a8ae	cSC3PollutionLayer::Init(cISC3City *, unsigned int const &)	Init__18cSC3PollutionLayerP9cISC3CityRCUi	libSimEco.so	vtable:__vt_18cSC3PollutionLayer
+00a90e	cSC3PollutionLayer::SerialWrite(cIGZDBSerialRecord &) const	SerialWrite__C18cSC3PollutionLayerR18cIGZDBSerialRecord	libSimEco.so	vtable:__vt_18cSC3PollutionLayer
+00a955	virtual function thunk (delta:-36) for cSC3PollutionLayer::SetAgentType(cISC3CityAgentType *)	__thunk_36_SetAgentType__18cSC3PollutionLayerP18cISC3CityAgentType	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.14cISC3CityAgent
+00a95a	virtual function thunk (delta:-40) for cSC3PollutionLayer::OccupantMoved(unsigned int, cISC3Occupant *, cSC3CityCoord const &)	__thunk_40_OccupantMoved__18cSC3PollutionLayerUiP13cISC3OccupantRC13cSC3CityCoord	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.23cISC3CityChangeReceiver
+00a9bd	cSC3PollutionLayer::~cSC3PollutionLayer(void)	_._18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer
+00afae	cSC3PollutionLayer::AddRef(void)	AddRef__18cSC3PollutionLayer	libSimEco.so	vtable-thunk:__vt_18cSC3PollutionLayer.14cISC3CityAgent
+00b042	cSC3CityCellMapSized<short>::Shutdown(void)	Shutdown__t20cSC3CityCellMapSized1Zs	libSimEco.so	vtable:__vt_t20cSC3CityCellMapSized1Zs
+00b064	cSC3PollutionLayer::SetAllCells(unsigned int const &)	SetAllCells__18cSC3PollutionLayerRCUi	libSimEco.so	vtable:__vt_18cSC3PollutionLayer
+00b0be	cSC3PollutionLayer::SerialRead(cIGZDBSerialRecord &)	SerialRead__18cSC3PollutionLayerR18cIGZDBSerialRecord	libSimEco.so	vtable:__vt_18cSC3PollutionLayer
+00b151	cSC3PollutionLayer::CellCountX(void) const	CellCountX__C18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer
+00b155	cSC3PollutionLayer::CellCountZ(void) const	CellCountZ__C18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer
+00b159	cSC3PollutionLayer::GetValueSint32(unsigned int, unsigned int, int &) const	GetValueSint32__C18cSC3PollutionLayerUiUiRi	libSimEco.so	vtable:__vt_18cSC3PollutionLayer
+00b558	cSC3PollutionLayer::Release(void)	Release__18cSC3PollutionLayer	libSimEco.so	vtable-thunk:__vt_18cSC3PollutionLayer.14cISC3CityAgent
+00b588	cSC3CityCellMapSized<short>::Init(cISC3City *, short const &)	Init__t20cSC3CityCellMapSized1ZsP9cISC3CityRCs	libSimEco.so	vtable:__vt_t20cSC3CityCellMapSized1Zs
+00b605	cSC3CityCellMapSized<short>::GetValueSint32(unsigned int, unsigned int, int &) const	GetValueSint32__Ct20cSC3CityCellMapSized1ZsUiUiRi	libSimEco.so	vtable:__vt_t20cSC3CityCellMapSized1Zs
+00b62e	cSC3CityCellMapSized<short>::GetValue(unsigned int, unsigned int, short &) const	GetValue__Ct20cSC3CityCellMapSized1ZsUiUiRs	libSimEco.so	vtable:__vt_t20cSC3CityCellMapSized1Zs
+00b6b0	cSC3CityCellMapSized<short>::SetAllCells(short const &)	SetAllCells__t20cSC3CityCellMapSized1ZsRCs	libSimEco.so	vtable:__vt_t20cSC3CityCellMapSized1Zs
+00b70f	cSC3PollutionLayer::ValidRect(unsigned int, unsigned int, unsigned int, unsigned int) const	ValidRect__C18cSC3PollutionLayerUiUiUiUi	libSimEco.so	vtable:__vt_18cSC3PollutionLayer
+00b72d	cSC3CityCellMapSized<short>::SerialRead(cIGZDBSerialRecord &)	SerialRead__t20cSC3CityCellMapSized1ZsR18cIGZDBSerialRecord	libSimEco.so	vtable:__vt_t20cSC3CityCellMapSized1Zs
+00b73c	cSC3CityCellMapSized<short>::SerialWrite(cIGZDBSerialRecord &) const	SerialWrite__Ct20cSC3CityCellMapSized1ZsR18cIGZDBSerialRecord	libSimEco.so	vtable:__vt_t20cSC3CityCellMapSized1Zs
+00b990	cSC3CityCellMapSized<short>::~cSC3CityCellMapSized(void)	_._t20cSC3CityCellMapSized1Zs	libSimEco.so	vtable:__vt_t20cSC3CityCellMapSized1Zs
+00c3be	virtual function thunk (delta:-28) for cSC3PollutionLayer::QueryInterface(unsigned int, void **)	__thunk_28_QueryInterface__18cSC3PollutionLayerUiPPv	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+00c3c6	virtual function thunk (delta:-28) for cSC3PollutionLayer::AddRef(void)	__thunk_28_AddRef__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+00c3ce	virtual function thunk (delta:-28) for cSC3PollutionLayer::Release(void)	__thunk_28_Release__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+00c3d6	virtual function thunk (delta:-28) for cSC3PollutionLayer::CellCountX(void) const	__thunk_28_CellCountX__C18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+00c3de	virtual function thunk (delta:-28) for cSC3PollutionLayer::CellCountZ(void) const	__thunk_28_CellCountZ__C18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+00c3f6	virtual function thunk (delta:-28) for cSC3PollutionLayer::ValidRect(unsigned int, unsigned int, unsigned int, unsigned int) const	__thunk_28_ValidRect__C18cSC3PollutionLayerUiUiUiUi	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+00c3fe	virtual function thunk (delta:-28) for cSC3PollutionLayer::SerialRead(cIGZDBSerialRecord &)	__thunk_28_SerialRead__18cSC3PollutionLayerR18cIGZDBSerialRecord	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+00c406	virtual function thunk (delta:-28) for cSC3PollutionLayer::SerialWrite(cIGZDBSerialRecord &) const	__thunk_28_SerialWrite__C18cSC3PollutionLayerR18cIGZDBSerialRecord	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+00c40e	virtual function thunk (delta:-28) for cSC3PollutionLayer::Init(cISC3City *, unsigned int const &)	__thunk_28_Init__18cSC3PollutionLayerP9cISC3CityRCUi	libSimEco.so	caller
+00c416	virtual function thunk (delta:-28) for cSC3PollutionLayer::Shutdown(void)	__thunk_28_Shutdown__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+00c41e	virtual function thunk (delta:-28) for cSC3PollutionLayer::GetValueSint32(unsigned int, unsigned int, int &) const	__thunk_28_GetValueSint32__C18cSC3PollutionLayerUiUiRi	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+00c42e	virtual function thunk (delta:-28) for cSC3PollutionLayer::SetAllCells(unsigned int const &)	__thunk_28_SetAllCells__18cSC3PollutionLayerRCUi	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.19cISC3PollutionLayer
+00c43e	virtual function thunk (delta:-32) for cSC3PollutionLayer::QueryInterface(unsigned int, void **)	__thunk_32_QueryInterface__18cSC3PollutionLayerUiPPv	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.14cISC3CityLayer
+00c446	virtual function thunk (delta:-32) for cSC3PollutionLayer::AddRef(void)	__thunk_32_AddRef__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.14cISC3CityLayer
+00c44e	virtual function thunk (delta:-32) for cSC3PollutionLayer::Release(void)	__thunk_32_Release__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.14cISC3CityLayer
+00c45e	virtual function thunk (delta:-32) for cSC3PollutionLayer::SimulationBegin(void)	__thunk_32_SimulationBegin__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.14cISC3CityLayer
+00c466	virtual function thunk (delta:-32) for cSC3PollutionLayer::Shutdown(void)	__thunk_32_Shutdown__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.14cISC3CityLayer
+00c46e	virtual function thunk (delta:-32) for cSC3PollutionLayer::GetManipulator(cISC3CityAgentType const &, cISC3CityLayerManipulator **, int &)	__thunk_32_GetManipulator__18cSC3PollutionLayerRC18cISC3CityAgentTypePP25cISC3CityLayerManipulatorRi	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.14cISC3CityLayer
+00c476	virtual function thunk (delta:-36) for cSC3PollutionLayer::QueryInterface(unsigned int, void **)	__thunk_36_QueryInterface__18cSC3PollutionLayerUiPPv	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.14cISC3CityAgent
+00c47e	virtual function thunk (delta:-36) for cSC3PollutionLayer::AddRef(void)	__thunk_36_AddRef__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.14cISC3CityAgent
+00c486	virtual function thunk (delta:-36) for cSC3PollutionLayer::Release(void)	__thunk_36_Release__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.14cISC3CityAgent
+00c48e	virtual function thunk (delta:-36) for cSC3PollutionLayer::DebugClassTag(cIGZString &)	__thunk_36_DebugClassTag__18cSC3PollutionLayerR10cIGZString	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.14cISC3CityAgent
+00c496	virtual function thunk (delta:-40) for cSC3PollutionLayer::QueryInterface(unsigned int, void **)	__thunk_40_QueryInterface__18cSC3PollutionLayerUiPPv	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.23cISC3CityChangeReceiver
+00c49e	virtual function thunk (delta:-40) for cSC3PollutionLayer::AddRef(void)	__thunk_40_AddRef__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.23cISC3CityChangeReceiver
+00c4a6	virtual function thunk (delta:-40) for cSC3PollutionLayer::Release(void)	__thunk_40_Release__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.23cISC3CityChangeReceiver
+00c4ae	virtual function thunk (delta:-44) for cSC3PollutionLayer::QueryInterface(unsigned int, void **)	__thunk_44_QueryInterface__18cSC3PollutionLayerUiPPv	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.20cISC3QueryInfoString
+00c4b6	virtual function thunk (delta:-44) for cSC3PollutionLayer::AddRef(void)	__thunk_44_AddRef__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.20cISC3QueryInfoString
+00c4be	virtual function thunk (delta:-44) for cSC3PollutionLayer::Release(void)	__thunk_44_Release__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.20cISC3QueryInfoString
+00c4c6	virtual function thunk (delta:-48) for cSC3PollutionLayer::QueryInterface(unsigned int, void **)	__thunk_48_QueryInterface__18cSC3PollutionLayerUiPPv	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.21cISC3MapSpriteFactory
+00c4ce	virtual function thunk (delta:-48) for cSC3PollutionLayer::AddRef(void)	__thunk_48_AddRef__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.21cISC3MapSpriteFactory
+00c4d6	virtual function thunk (delta:-48) for cSC3PollutionLayer::Release(void)	__thunk_48_Release__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.21cISC3MapSpriteFactory
+00c4de	cSC3PollutionLayer::DoQueryInfo(cGZMessage &, cIGZUnknown *)	DoQueryInfo__18cSC3PollutionLayerR10cGZMessageP11cIGZUnknown	libSimEco.so	tokens:29.4
+00c54a	cSC3PollutionLayer::on_window_create(cGZMessage &, cIGZUnknown *)	on_window_create__18cSC3PollutionLayerR10cGZMessageP11cIGZUnknown	libSimEco.so	tokens:55.7
+00c75e	virtual function thunk (delta:-44) for cSC3PollutionLayer::GetInfoStrings(unsigned int, unsigned int, unsigned int, unsigned int, unsigned int &, cIGZString &, cIGZString &)	__thunk_44_GetInfoStrings__18cSC3PollutionLayerUiUiUiUiRUiR10cIGZStringT6	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.20cISC3QueryInfoString
+00c763	cSC3PollutionLayer::DoStandardQueryViewInfo(cGZMessage &, cISC3WinQueryListView *)	DoStandardQueryViewInfo__18cSC3PollutionLayerR10cGZMessageP21cISC3WinQueryListView	libSimEco.so	tokens:27.1
+00e09c	virtual function thunk (delta:-48) for cSC3PollutionLayer::GetMapSpriteCount(void)	__thunk_48_GetMapSpriteCount__18cSC3PollutionLayer	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.21cISC3MapSpriteFactory
+00e0a0	virtual function thunk (delta:-48) for cSC3PollutionLayer::GetSpriteIdFromIndex(unsigned int, unsigned int &)	__thunk_48_GetSpriteIdFromIndex__18cSC3PollutionLayerUiRUi	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.21cISC3MapSpriteFactory
+00e0e7	virtual function thunk (delta:-48) for cSC3PollutionLayer::CreateMapSprite(unsigned int, unsigned int, void **)	__thunk_48_CreateMapSprite__18cSC3PollutionLayerUiUiPPv	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.21cISC3MapSpriteFactory
+00e23d	virtual function thunk (delta:-44) for cSC3BuildingRecyclingCenter::GetPopServed(void)	__thunk_44_GetPopServed__27cSC3BuildingRecyclingCenter	libSimEco.so	vtable:__vt_27cSC3BuildingRecyclingCenter.28cISC3BuildingRecyclingCenter
+00e523	cSC3CityCellMapSized<short>::AddRef(void)	AddRef__t20cSC3CityCellMapSized1Zs	libSimEco.so	vtable-thunk:__vt_t20cSC3CityCellMapSized1Zs
+00e54e	RZGetCOMDllDirector_SimEco(void)	RZGetCOMDllDirector_SimEco__Fv	libSimEco.so	tokens:21.3
+00e5bd	cSECOMDirector::GetDirectorID(void) const	GetDirectorID__C14cSECOMDirector	libSimEco.so	tokens:7.5
+00e5c3	cSECOMDirector::AppRegister(cIGZRegistry *)	AppRegister__14cSECOMDirectorP12cIGZRegistry	libSimEco.so	vtable:__vt_14cSECOMDirector
+00e606	cSECOMDirector::CreatecSC3BuildingIncinerator(void)	CreatecSC3BuildingIncinerator__14cSECOMDirector	libSimEco.so	caller
+00e66a	cSECOMDirector::~cSECOMDirector(void)	_._14cSECOMDirector	libSimEco.so	vtable:__vt_14cSECOMDirector
+00e6a2	virtual function thunk (delta:-4) for cRZCOMDllDirector::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__17cRZCOMDllDirectorUiPPv	libSimEco.so	caller
+0121e9	cRZCOMDllDirector::OnStart(cIGZCOM *)	OnStart__17cRZCOMDllDirectorP7cIGZCOM	libSimEco.so	tokens:14.9
+01244a	cRZCOMDllDirector::QueryInterface(unsigned int, void **)	QueryInterface__17cRZCOMDllDirectorUiPPv	libSimEco.so	tokens:14.9
+01248b	cRZCOMDllDirector::FrameWork(void)	FrameWork__17cRZCOMDllDirector	libSimEco.so	vtable:__vt_14cSECOMDirector
+012494	cRZCOMDllDirector::RemoveRef(void)	RemoveRef__17cRZCOMDllDirector	libSimEco.so	vtable:__vt_14cSECOMDirector
+0124a3	cRZCOMDllDirector::RefCount(void)	RefCount__17cRZCOMDllDirector	libSimEco.so	vtable:__vt_14cSECOMDirector
+0124a7	cRZCOMDllDirector::InitializeCOM(cIGZCOM *, cIGZString &)	InitializeCOM__17cRZCOMDllDirectorP7cIGZCOMR10cIGZString	libSimEco.so	vtable:__vt_14cSECOMDirector
+012575	cRZCOMDllDirector::GetClassObject(unsigned int, unsigned int, void **)	GetClassObject__17cRZCOMDllDirectorUiUiPPv	libSimEco.so	vtable:__vt_14cSECOMDirector
+0125f6	cRZCOMDllDirector::EnumClassObjects(void (*)(unsigned int, unsigned int, void *), void *)	EnumClassObjects__17cRZCOMDllDirectorPFUiUiPv_vPv	libSimEco.so	vtable:__vt_14cSECOMDirector
+01264a	cRZCOMDllDirector::ModuleName(cIGZString &)	ModuleName__17cRZCOMDllDirectorR10cIGZString	libSimEco.so	vtable:__vt_14cSECOMDirector
+01265e	cRZCOMDllDirector::AddDirector(cRZCOMDllDirector *)	AddDirector__17cRZCOMDllDirectorP17cRZCOMDllDirector	libSimEco.so	vtable:__vt_14cSECOMDirector
+0126a8	cRZCOMDllDirector::CanUnloadNow(void)	CanUnloadNow__17cRZCOMDllDirector	libSimEco.so	vtable:__vt_14cSECOMDirector
+01272c	cRZCOMDllDirector::GZCOM(void)	GZCOM__17cRZCOMDllDirector	libSimEco.so	vtable:__vt_14cSECOMDirector
+012dec	virtual function thunk (delta:-44) for cSC3BuildingIncinerator::IsDead(void)	__thunk_44_IsDead__23cSC3BuildingIncinerator	libSimEco.so	vtable:__vt_23cSC3BuildingIncinerator.24cISC3BuildingIncinerator
+0139ea	cSC3BuildingIncinerator::AddRef(void)	AddRef__23cSC3BuildingIncinerator	libSimEco.so	vtable-thunk:__vt_23cSC3BuildingIncinerator.14cISC3CityAgent
+0139f2	cSC3BuildingIncinerator::Release(void)	Release__23cSC3BuildingIncinerator	libSimEco.so	vtable-thunk:__vt_23cSC3BuildingIncinerator.24cISC3BuildingIncinerator
+013e17	cSC3BuildingIncinerator::MinimumExecutionInterval(void)	MinimumExecutionInterval__23cSC3BuildingIncinerator	libSimEco.so	vtable-thunk:__vt_23cSC3BuildingIncinerator.14cISC3CityAgent
+014e9b	virtual function thunk (delta:-44) for cSC3PollutionLayer::GetInfoStringCount(unsigned int)	__thunk_44_GetInfoStringCount__18cSC3PollutionLayerUi	libSimEco.so	vtable:__vt_18cSC3PollutionLayer.20cISC3QueryInfoString
+01589a	cSC3PollutionLayer::DoDebugQueryViewInfo(cGZMessage &, cISC3WinQueryListView *)	DoDebugQueryViewInfo__18cSC3PollutionLayerR10cGZMessageP21cISC3WinQueryListView	libSimEco.so	callee

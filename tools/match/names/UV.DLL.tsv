@@ -1,0 +1,5 @@
+rva	demangled	mangled	source	method
+00cd70	cGZWinOptGrp::SetValue(unsigned int)	SetValue__12cGZWinOptGrpUi	sc3u_demo.x86	callee
+00cdd0	virtual function thunk (delta:-156) for cGZWinOptGrp::SetValue(unsigned int)	__thunk_156_SetValue__12cGZWinOptGrpUi	sc3u_demo.x86	tokens:9.3
+00cf60	virtual function thunk (delta:-156) for cGZWinOptGrp::ClearFontColor(cIGZWinOptGrp::tOptGrpFontColorIdx)	__thunk_156_ClearFontColor__12cGZWinOptGrpQ213cIGZWinOptGrp19tOptGrpFontColorIdx	sc3u_demo.x86	tokens:9.3
+0101b0	cGZBufferPrimaryAndBackSurfaceSDL::cGZBufferPrimaryAndBackSurfaceSDL(void)	__33cGZBufferPrimaryAndBackSurfaceSDL	sc3u_demo.x86	tokens:9.3

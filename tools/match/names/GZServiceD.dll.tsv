@@ -1,0 +1,21 @@
+rva	demangled	mangled	source	method
+001099	RZGetCOMDllDirector_GZServiceD(void)	RZGetCOMDllDirector_GZServiceD__Fv	libGZServiceD.so	caller
+001127	cRZCOMDllDirector::OnUnload(void)	OnUnload__17cRZCOMDllDirector	libGZServiceD.so	vtable:__vt_21cGZServiceCOMDirector
+00112a	cGZServiceCOMDirector::GetDirectorID(void) const	GetDirectorID__C21cGZServiceCOMDirector	libGZServiceD.so	tokens:6.8
+001130	cGZServiceCOMDirector::OnStart(cIGZCOM *)	OnStart__21cGZServiceCOMDirectorP7cIGZCOM	libGZServiceD.so	vtable:__vt_21cGZServiceCOMDirector
+00131d	virtual function thunk (delta:-4) for cRZCOMDllDirector::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__17cRZCOMDllDirectorUiPPv	libGZServiceD.so	caller
+001432	cRZCOMDllDirector::QueryInterface(unsigned int, void **)	QueryInterface__17cRZCOMDllDirectorUiPPv	libGZServiceD.so	tokens:13.5
+001473	cRZCOMDllDirector::FrameWork(void)	FrameWork__17cRZCOMDllDirector	libGZServiceD.so	vtable:__vt_21cGZServiceCOMDirector
+00147c	cRZCOMDllDirector::RemoveRef(void)	RemoveRef__17cRZCOMDllDirector	libGZServiceD.so	vtable:__vt_21cGZServiceCOMDirector
+00148b	cRZCOMDllDirector::RefCount(void)	RefCount__17cRZCOMDllDirector	libGZServiceD.so	vtable:__vt_21cGZServiceCOMDirector
+00148f	cRZCOMDllDirector::InitializeCOM(cIGZCOM *, cIGZString &)	InitializeCOM__17cRZCOMDllDirectorP7cIGZCOMR10cIGZString	libGZServiceD.so	vtable:__vt_21cGZServiceCOMDirector
+00155d	cRZCOMDllDirector::GetClassObject(unsigned int, unsigned int, void **)	GetClassObject__17cRZCOMDllDirectorUiUiPPv	libGZServiceD.so	vtable:__vt_21cGZServiceCOMDirector
+0015de	cRZCOMDllDirector::EnumClassObjects(void (*)(unsigned int, unsigned int, void *), void *)	EnumClassObjects__17cRZCOMDllDirectorPFUiUiPv_vPv	libGZServiceD.so	vtable:__vt_21cGZServiceCOMDirector
+001632	cRZCOMDllDirector::ModuleName(cIGZString &)	ModuleName__17cRZCOMDllDirectorR10cIGZString	libGZServiceD.so	vtable:__vt_21cGZServiceCOMDirector
+001646	cRZCOMDllDirector::AddDirector(cRZCOMDllDirector *)	AddDirector__17cRZCOMDllDirectorP17cRZCOMDllDirector	libGZServiceD.so	vtable:__vt_21cGZServiceCOMDirector
+001690	cRZCOMDllDirector::CanUnloadNow(void)	CanUnloadNow__17cRZCOMDllDirector	libGZServiceD.so	vtable:__vt_21cGZServiceCOMDirector
+0016e7	cRZCOMDllDirector::AppRegister(cIGZRegistry *)	AppRegister__17cRZCOMDllDirectorP12cIGZRegistry	libGZServiceD.so	vtable:__vt_21cGZServiceCOMDirector
+001714	cRZCOMDllDirector::GZCOM(void)	GZCOM__17cRZCOMDllDirector	libGZServiceD.so	vtable:__vt_21cGZServiceCOMDirector
+001783	cRZCOMDllDirector::OnStart(cIGZCOM *)	OnStart__17cRZCOMDllDirectorP7cIGZCOM	libGZServiceD.so	tokens:13.5
+002669	__pure_virtual	__pure_virtual	libGZServiceD.so	vtable:__vt_17cRZCOMDllDirector
+0026df	cGZServiceCOMDirector::~cGZServiceCOMDirector(void)	_._21cGZServiceCOMDirector	libGZServiceD.so	vtable:__vt_21cGZServiceCOMDirector

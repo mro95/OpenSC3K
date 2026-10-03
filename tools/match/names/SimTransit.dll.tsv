@@ -1,0 +1,82 @@
+rva	demangled	mangled	source	method
+0010d1	RZGetCOMDllDirector_SimTransit(void)	RZGetCOMDllDirector_SimTransit__Fv	libSimTransit.so	tokens:36.2
+001164	cSTCOMDirector::GetDirectorID(void) const	GetDirectorID__C14cSTCOMDirector	libSimTransit.so	tokens:7.2
+00116a	cSTCOMDirector::AppRegister(cIGZRegistry *)	AppRegister__14cSTCOMDirectorP12cIGZRegistry	libSimTransit.so	vtable:__vt_14cSTCOMDirector
+00126c	cSTCOMDirector::~cSTCOMDirector(void)	_._14cSTCOMDirector	libSimTransit.so	vtable:__vt_14cSTCOMDirector
+0012a4	virtual function thunk (delta:-4) for cRZCOMDllDirector::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__17cRZCOMDllDirectorUiPPv	libSimTransit.so	caller
+0012bc	cRZCOMDllDirector::OnUnload(void)	OnUnload__17cRZCOMDllDirector	libSimTransit.so	vtable:__vt_14cSTCOMDirector
+0014d0	cSTTrafficLayer::GetTotalCityRoadUpkeep(void)	GetTotalCityRoadUpkeep__15cSTTrafficLayer	libSimTransit.so	vtable:__vt_15cSTTrafficLayer
+0014d7	cSTTrafficLayer::GetTotalCityRailUpkeep(void)	GetTotalCityRailUpkeep__15cSTTrafficLayer	libSimTransit.so	vtable:__vt_15cSTTrafficLayer
+0014de	cSTTrafficLayer::GetTransitEfficiency(void)	GetTransitEfficiency__15cSTTrafficLayer	libSimTransit.so	vtable:__vt_15cSTTrafficLayer
+0014e5	cSTTrafficLayer::GetRoadEfficiency(void)	GetRoadEfficiency__15cSTTrafficLayer	libSimTransit.so	vtable:__vt_15cSTTrafficLayer
+0014ec	cSTTrafficLayer::GetLastMonthlyIncome(void)	GetLastMonthlyIncome__15cSTTrafficLayer	libSimTransit.so	vtable:__vt_15cSTTrafficLayer
+0014f7	cSTTrafficLayer::GetCurrentMonthlyIncome(void)	GetCurrentMonthlyIncome__15cSTTrafficLayer	libSimTransit.so	vtable:__vt_15cSTTrafficLayer
+001502	cSTTrafficLayer::IsOnStrike(void)	IsOnStrike__15cSTTrafficLayer	libSimTransit.so	vtable:__vt_15cSTTrafficLayer
+00150f	cSTTrafficLayer::GetPercentTripsFailed(void)	GetPercentTripsFailed__15cSTTrafficLayer	libSimTransit.so	vtable:__vt_15cSTTrafficLayer
+001516	cSTTrafficLayer::GetAverageMassTransitTrafficDensity(void)	GetAverageMassTransitTrafficDensity__15cSTTrafficLayer	libSimTransit.so	vtable:__vt_15cSTTrafficLayer
+00151d	cSTTrafficLayer::GetAverageRoadHighwayTrafficDensity(void)	GetAverageRoadHighwayTrafficDensity__15cSTTrafficLayer	libSimTransit.so	vtable:__vt_15cSTTrafficLayer
+001524	cSTTrafficLayer::GetMaxDistanceToTransit(void)	GetMaxDistanceToTransit__15cSTTrafficLayer	libSimTransit.so	vtable:__vt_15cSTTrafficLayer
+00152a	cSTTrafficLayer::~cSTTrafficLayer(void)	_._15cSTTrafficLayer	libSimTransit.so	vtable:__vt_15cSTTrafficLayer
+0015a7	cSTTrafficLayer::GetLayerType(void)	GetLayerType__15cSTTrafficLayer	libSimTransit.so	vtable:__vt_15cSTTrafficLayer
+0015ad	cSTTrafficLayer::GetDefaultTripLength(void)	GetDefaultTripLength__15cSTTrafficLayer	libSimTransit.so	vtable:__vt_15cSTTrafficLayer
+0015b1	cSTTrafficLayer::LoadINI(void)	LoadINI__15cSTTrafficLayer	libSimTransit.so	tokens:381.0
+003ae8	cSTTrafficLayer::StaticInit(cISC3CityDefinition *)	StaticInit__15cSTTrafficLayerP19cISC3CityDefinition	libSimTransit.so	vtable:__vt_15cSTTrafficLayer
+003ca6	cSTTrafficLayer::StaticShutdown(void)	StaticShutdown__15cSTTrafficLayer	libSimTransit.so	vtable:__vt_15cSTTrafficLayer
+003d93	cSTTrafficLayer::SimulationBegin(void)	SimulationBegin__15cSTTrafficLayer	libSimTransit.so	tokens:80.3
+003eee	cSTTrafficLayer::Init(cISC3City *)	Init__15cSTTrafficLayerP9cISC3City	libSimTransit.so	tokens:27.2
+004c8d	cSTTrafficLayer::Save(cISC3City *, cIGZDBSegment *)	Save__15cSTTrafficLayerP9cISC3CityP13cIGZDBSegment	libSimTransit.so	vtable:__vt_15cSTTrafficLayer
+004f1e	cSTTrafficLayer::Shutdown(void)	Shutdown__15cSTTrafficLayer	libSimTransit.so	vtable:__vt_15cSTTrafficLayer
+0051fc	cSTTrafficLayer::QueryInterface(unsigned int, void **)	QueryInterface__15cSTTrafficLayerUiPPv	libSimTransit.so	tokens:19.5
+005237	cSTTrafficLayer::Release(void)	Release__15cSTTrafficLayer	libSimTransit.so	vtable:__vt_15cSTTrafficLayer
+00526c	cSTTrafficLayer::AddRef(void)	AddRef__15cSTTrafficLayer	libSimTransit.so	vtable:__vt_15cSTTrafficLayer
+005283	cSTTrafficLayer::GetManipulator(cISC3CityAgentType const &, cISC3CityLayerManipulator **, int &)	GetManipulator__15cSTTrafficLayerRC18cISC3CityAgentTypePP25cISC3CityLayerManipulatorRi	libSimTransit.so	tokens:7.2
+005830	cSTTrafficLayer::DoMessage(cGZMessage &)	DoMessage__15cSTTrafficLayerR10cGZMessage	libSimTransit.so	tokens:51.7
+005eb1	cSTTrafficLayer::OccupantRemoved(unsigned int, cISC3Occupant *)	OccupantRemoved__15cSTTrafficLayerUiP13cISC3Occupant	libSimTransit.so	tokens:84.1
+006965	cSTTrafficLayer::GetTripSuccess(unsigned int, unsigned int)	GetTripSuccess__15cSTTrafficLayerUiUi	libSimTransit.so	vtable:__vt_15cSTTrafficLayer
+0069b4	cSTTrafficLayer::HasTripSucceededFromAnyCell(unsigned int, unsigned int, unsigned int, unsigned int)	HasTripSucceededFromAnyCell__15cSTTrafficLayerUiUiUiUi	libSimTransit.so	vtable:__vt_15cSTTrafficLayer
+006bdd	cSTTrafficLayer::GetValueSint32(unsigned int, unsigned int, int &, unsigned char) const	GetValueSint32__C15cSTTrafficLayerUiUiRiUc	libSimTransit.so	vtable:__vt_15cSTTrafficLayer
+006c18	cSTTrafficLayer::GetTotalTrafficDensityInRect(unsigned int, unsigned int, unsigned int, unsigned int, unsigned int &, unsigned int &, unsigned char) const	GetTotalTrafficDensityInRect__C15cSTTrafficLayerUiUiUiUiRUiT5Uc	libSimTransit.so	vtable:__vt_15cSTTrafficLayer
+0070d0	cSTTrafficLayer::EvaluateTripData(cSTTrafficLayer::cTripData &, int, unsigned int, bool, bool, bool, bool)	EvaluateTripData__15cSTTrafficLayerRQ215cSTTrafficLayer9cTripDataiUibN34	libSimTransit.so	tokens:36.2
+008485	cSTTrafficLayer::StepTrip(cSTTrafficLayer::cTripData &, cSTTrafficLayer::cTripData &, unsigned int, bool, bool, bool)	StepTrip__15cSTTrafficLayerRQ215cSTTrafficLayer9cTripDataT1UibN24	libSimTransit.so	tokens:93.7
+008968	cSTTrafficLayer::ChanceOfStrike(void)	ChanceOfStrike__15cSTTrafficLayer	libSimTransit.so	vtable:__vt_15cSTTrafficLayer
+0089a3	cSTTrafficLayer::EndStrike(void)	EndStrike__15cSTTrafficLayer	libSimTransit.so	vtable:__vt_15cSTTrafficLayer
+0089ea	cSTTrafficLayer::GetStrikingTransitBuildings(cISC3Occupant **, unsigned int, unsigned int &)	GetStrikingTransitBuildings__15cSTTrafficLayerPP13cISC3OccupantUiRUi	libSimTransit.so	vtable:__vt_15cSTTrafficLayer
+008cc1	cSTTrafficLayer::IsNearTransport(sIGZPointXZUint32 const &, unsigned int)	IsNearTransport__15cSTTrafficLayerRC17sIGZPointXZUint32Ui	libSimTransit.so	vtable:__vt_15cSTTrafficLayer
+008d4b	cSTTrafficLayer::SetFundingPercentageRoad(unsigned char)	SetFundingPercentageRoad__15cSTTrafficLayerUc	libSimTransit.so	vtable:__vt_15cSTTrafficLayer
+008dbd	cSTTrafficLayer::SetFundingPercentageRail(unsigned char)	SetFundingPercentageRail__15cSTTrafficLayerUc	libSimTransit.so	vtable:__vt_15cSTTrafficLayer
+008fb9	cSTTrafficLayer::DamageRoads(void)	DamageRoads__15cSTTrafficLayer	libSimTransit.so	tokens:14.5
+0090b0	cSTTrafficLayer::TripHilighting(bool)	TripHilighting__15cSTTrafficLayerb	libSimTransit.so	vtable:__vt_15cSTTrafficLayer
+0090ba	cSTTrafficLayer::IsTripHilighting(void)	IsTripHilighting__15cSTTrafficLayer	libSimTransit.so	vtable:__vt_15cSTTrafficLayer
+0091aa	cSTTrafficLayer::ClearTraffic(void)	ClearTraffic__15cSTTrafficLayer	libSimTransit.so	vtable:__vt_15cSTTrafficLayer
+009242	cSTTrafficLayerMonthlyAlgo::Apply(cISC3CityAgent &)	Apply__26cSTTrafficLayerMonthlyAlgoR14cISC3CityAgent	libSimTransit.so	vtable:__vt_26cSTTrafficLayerMonthlyAlgo
+00978f	cSTTrafficLayerMonthlyAlgo::~cSTTrafficLayerMonthlyAlgo(void)	_._26cSTTrafficLayerMonthlyAlgo	libSimTransit.so	vtable:__vt_26cSTTrafficLayerMonthlyAlgo
+0097b9	cSTBuildingTrafficMonthly::Apply(cISC3CityAgent &)	Apply__25cSTBuildingTrafficMonthlyR14cISC3CityAgent	libSimTransit.so	tokens:12.6
+009b09	cSTBuildingTrafficMonthly::QueryInterface(unsigned int, void **)	QueryInterface__25cSTBuildingTrafficMonthlyUiPPv	libSimTransit.so	vtable:__vt_25cSTBuildingTrafficMonthly
+009b36	cSTBuildingTrafficMonthly::Release(void)	Release__25cSTBuildingTrafficMonthly	libSimTransit.so	vtable:__vt_25cSTBuildingTrafficMonthly
+009b55	cSTBuildingTrafficMonthly::AddRef(void)	AddRef__25cSTBuildingTrafficMonthly	libSimTransit.so	vtable:__vt_25cSTBuildingTrafficMonthly
+009bbf	cSTBuildingTrafficMonthly::IsLockingCity(void)	IsLockingCity__25cSTBuildingTrafficMonthly	libSimTransit.so	vtable:__vt_25cSTBuildingTrafficMonthly
+009bc2	cSTBuildingTrafficMonthly::~cSTBuildingTrafficMonthly(void)	_._25cSTBuildingTrafficMonthly	libSimTransit.so	vtable:__vt_25cSTBuildingTrafficMonthly
+009f3f	cSTTrafficLayer::GetInfoStringCount(void)	GetInfoStringCount__15cSTTrafficLayer	libSimTransit.so	callee
+00af86	virtual function thunk (delta:-4) for cSTTrafficLayer::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__15cSTTrafficLayerUiPPv	libSimTransit.so	caller
+00af8e	virtual function thunk (delta:-4) for cSTTrafficLayer::AddRef(void)	__thunk_4_AddRef__15cSTTrafficLayer	libSimTransit.so	caller
+00af96	virtual function thunk (delta:-4) for cSTTrafficLayer::Release(void)	__thunk_4_Release__15cSTTrafficLayer	libSimTransit.so	caller
+00af9e	cSTTrafficLayer::DoQueryInfo(cGZMessage &, cIGZUnknown *)	DoQueryInfo__15cSTTrafficLayerR10cGZMessageP11cIGZUnknown	libSimTransit.so	tokens:43.0
+00b033	cSTTrafficLayer::on_window_create(cGZMessage &, cIGZUnknown *)	on_window_create__15cSTTrafficLayerR10cGZMessageP11cIGZUnknown	libSimTransit.so	tokens:33.9
+00b1a7	cSTTrafficLayer::DoStandardQueryViewInfo(cGZMessage &, cISC3WinQueryListView *)	DoStandardQueryViewInfo__15cSTTrafficLayerR10cGZMessageP21cISC3WinQueryListView	libSimTransit.so	caller
+00b2b9	cSTTrafficLayer::DoDebugQueryViewInfo(cGZMessage &, cISC3WinQueryListView *)	DoDebugQueryViewInfo__15cSTTrafficLayerR10cGZMessageP21cISC3WinQueryListView	libSimTransit.so	callee
+00b2c2	cSTTrafficLayer::GetInfoStrings(unsigned int, unsigned int, cIGZString &, cIGZString &, unsigned int, bool *)	GetInfoStrings__15cSTTrafficLayerUiUiR10cIGZStringT3UiPb	libSimTransit.so	tokens:50.8
+00c9b1	cSC3TransitBuilding::QueryInterface(unsigned int, void **)	QueryInterface__19cSC3TransitBuildingUiPPv	libSimTransit.so	tokens:13.4
+00cc18	cSC3TransitBuilding::DoStandardQueryViewInfo(cGZMessage &, cISC3WinQueryListView *)	DoStandardQueryViewInfo__19cSC3TransitBuildingR10cGZMessageP21cISC3WinQueryListView	libSimTransit.so	tokens:7.2
+00e011	cRZCOMDllDirector::QueryInterface(unsigned int, void **)	QueryInterface__17cRZCOMDllDirectorUiPPv	libSimTransit.so	tokens:14.5
+00e052	cRZCOMDllDirector::FrameWork(void)	FrameWork__17cRZCOMDllDirector	libSimTransit.so	vtable:__vt_14cSTCOMDirector
+00e05b	cRZCOMDllDirector::RemoveRef(void)	RemoveRef__17cRZCOMDllDirector	libSimTransit.so	vtable:__vt_14cSTCOMDirector
+00e06a	cRZCOMDllDirector::RefCount(void)	RefCount__17cRZCOMDllDirector	libSimTransit.so	vtable:__vt_14cSTCOMDirector
+00e06e	cRZCOMDllDirector::InitializeCOM(cIGZCOM *, cIGZString &)	InitializeCOM__17cRZCOMDllDirectorP7cIGZCOMR10cIGZString	libSimTransit.so	vtable:__vt_14cSTCOMDirector
+00e13c	cRZCOMDllDirector::GetClassObject(unsigned int, unsigned int, void **)	GetClassObject__17cRZCOMDllDirectorUiUiPPv	libSimTransit.so	vtable:__vt_14cSTCOMDirector
+00e1bd	cRZCOMDllDirector::EnumClassObjects(void (*)(unsigned int, unsigned int, void *), void *)	EnumClassObjects__17cRZCOMDllDirectorPFUiUiPv_vPv	libSimTransit.so	vtable:__vt_14cSTCOMDirector
+00e211	cRZCOMDllDirector::ModuleName(cIGZString &)	ModuleName__17cRZCOMDllDirectorR10cIGZString	libSimTransit.so	vtable:__vt_14cSTCOMDirector
+00e225	cRZCOMDllDirector::AddDirector(cRZCOMDllDirector *)	AddDirector__17cRZCOMDllDirectorP17cRZCOMDllDirector	libSimTransit.so	vtable:__vt_14cSTCOMDirector
+00e26f	cRZCOMDllDirector::CanUnloadNow(void)	CanUnloadNow__17cRZCOMDllDirector	libSimTransit.so	vtable:__vt_14cSTCOMDirector
+00e2f3	cRZCOMDllDirector::GZCOM(void)	GZCOM__17cRZCOMDllDirector	libSimTransit.so	vtable:__vt_14cSTCOMDirector
+00e362	cRZCOMDllDirector::OnStart(cIGZCOM *)	OnStart__17cRZCOMDllDirectorP7cIGZCOM	libSimTransit.so	tokens:14.5
+016966	cSTTrafficLayer::DebugClassTag(cIGZString &)	DebugClassTag__15cSTTrafficLayerR10cIGZString	libSimTransit.so	vtable:__vt_15cSTTrafficLayer

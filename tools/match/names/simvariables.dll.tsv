@@ -1,0 +1,36 @@
+rva	demangled	mangled	source	method
+0010d2	cSC3VariableMgr::cSC3VariableMgr(void)	__15cSC3VariableMgr	libSimVariables.so	tokens:6.7
+0012df	cSC3VariableMgr::GetCurrentDatabase(void)	GetCurrentDatabase__15cSC3VariableMgr	libSimVariables.so	vtable:__vt_15cSC3VariableMgr
+0012e3	virtual function thunk (delta:-12) for cSC3VariableMgr::~cSC3VariableMgr(void)	__thunk_12__._15cSC3VariableMgr	libSimVariables.so	caller
+001303	cSC3VariableMgr::~cSC3VariableMgr(void)	_._15cSC3VariableMgr	libSimVariables.so	vtable-user:__vt_15cSC3VariableMgr
+001397	cSC3VariableMgr::QueryInterface(unsigned int, void **)	QueryInterface__15cSC3VariableMgrUiPPv	libSimVariables.so	tokens:6.7
+0013cb	cSC3VariableMgr::AddRef(void)	AddRef__15cSC3VariableMgr	libSimVariables.so	vtable:__vt_15cSC3VariableMgr
+0013d3	cSC3VariableMgr::Release(void)	Release__15cSC3VariableMgr	libSimVariables.so	vtable:__vt_15cSC3VariableMgr
+0013db	cSC3VariableMgr::GetServicePriority(void)	GetServicePriority__15cSC3VariableMgr	libSimVariables.so	vtable:__vt_15cSC3VariableMgr
+0013de	cSC3VariableMgr::Init(void)	Init__15cSC3VariableMgr	libSimVariables.so	tokens:18.9
+0014d8	cSC3VariableMgr::DoMessage(cGZMessage &)	DoMessage__15cSC3VariableMgrR10cGZMessage	libSimVariables.so	tokens:25.6
+001590	cSC3VariableMgr::AsIGZSystemService(void)	AsIGZSystemService__15cSC3VariableMgr	libSimVariables.so	vtable:__vt_15cSC3VariableMgr
+00159c	cSC3VariableMgr::IsVariableInDatabase(unsigned int)	IsVariableInDatabase__15cSC3VariableMgrUi	libSimVariables.so	vtable:__vt_15cSC3VariableMgr
+0015bc	cSC3VariableMgr::GetVariableValue(unsigned int, cRZVariant &)	GetVariableValue__15cSC3VariableMgrUiR10cRZVariant	libSimVariables.so	vtable:__vt_15cSC3VariableMgr
+0015e9	cSC3VariableMgr::LoadDatabase(cIGZString &)	LoadDatabase__15cSC3VariableMgrR10cIGZString	libSimVariables.so	tokens:13.3
+00176c	cSC3VariableMgr::add_enumerated_variable(cRZString const &, cRZString const &, void *)	add_enumerated_variable__15cSC3VariableMgrRC9cRZStringT1Pv	libSimVariables.so	caller
+0017cb	cSC3VariableMgr::add_variable(unsigned int, cRZVariant const &)	add_variable__15cSC3VariableMgrUiRC10cRZVariant	libSimVariables.so	tokens:6.7
+002ab2	RZGetCOMDllDirector_SimVariables(void)	RZGetCOMDllDirector_SimVariables__Fv	libSimVariables.so	tokens:12.6
+002b0e	cRZCOMDllDirector::OnUnload(void)	OnUnload__17cRZCOMDllDirector	libSimVariables.so	vtable:__vt_24cSimVariablesCOMDirector
+002b11	cSimVariablesCOMDirector::GetDirectorID(void) const	GetDirectorID__C24cSimVariablesCOMDirector	libSimVariables.so	tokens:6.7
+002b81	cSimVariablesCOMDirector::AppRegister(cIGZRegistry *)	AppRegister__24cSimVariablesCOMDirectorP12cIGZRegistry	libSimVariables.so	tokens:26.7
+002d63	cSimVariablesCOMDirector::OnStart(cIGZCOM *)	OnStart__24cSimVariablesCOMDirectorP7cIGZCOM	libSimVariables.so	vtable:__vt_24cSimVariablesCOMDirector
+002e2f	cSimVariablesCOMDirector::~cSimVariablesCOMDirector(void)	_._24cSimVariablesCOMDirector	libSimVariables.so	vtable:__vt_24cSimVariablesCOMDirector
+002e67	virtual function thunk (delta:-4) for cRZCOMDllDirector::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__17cRZCOMDllDirectorUiPPv	libSimVariables.so	caller
+0069d7	cRZCOMDllDirector::OnStart(cIGZCOM *)	OnStart__17cRZCOMDllDirectorP7cIGZCOM	libSimVariables.so	tokens:13.3
+006b2a	cRZCOMDllDirector::QueryInterface(unsigned int, void **)	QueryInterface__17cRZCOMDllDirectorUiPPv	libSimVariables.so	tokens:13.3
+006b6b	cRZCOMDllDirector::FrameWork(void)	FrameWork__17cRZCOMDllDirector	libSimVariables.so	vtable:__vt_24cSimVariablesCOMDirector
+006b74	cRZCOMDllDirector::RemoveRef(void)	RemoveRef__17cRZCOMDllDirector	libSimVariables.so	vtable:__vt_24cSimVariablesCOMDirector
+006b83	cRZCOMDllDirector::RefCount(void)	RefCount__17cRZCOMDllDirector	libSimVariables.so	vtable:__vt_24cSimVariablesCOMDirector
+006b87	cRZCOMDllDirector::InitializeCOM(cIGZCOM *, cIGZString &)	InitializeCOM__17cRZCOMDllDirectorP7cIGZCOMR10cIGZString	libSimVariables.so	vtable:__vt_24cSimVariablesCOMDirector
+006c55	cRZCOMDllDirector::GetClassObject(unsigned int, unsigned int, void **)	GetClassObject__17cRZCOMDllDirectorUiUiPPv	libSimVariables.so	vtable:__vt_24cSimVariablesCOMDirector
+006cd6	cRZCOMDllDirector::EnumClassObjects(void (*)(unsigned int, unsigned int, void *), void *)	EnumClassObjects__17cRZCOMDllDirectorPFUiUiPv_vPv	libSimVariables.so	vtable:__vt_24cSimVariablesCOMDirector
+006d2a	cRZCOMDllDirector::ModuleName(cIGZString &)	ModuleName__17cRZCOMDllDirectorR10cIGZString	libSimVariables.so	vtable:__vt_24cSimVariablesCOMDirector
+006d3e	cRZCOMDllDirector::AddDirector(cRZCOMDllDirector *)	AddDirector__17cRZCOMDllDirectorP17cRZCOMDllDirector	libSimVariables.so	vtable:__vt_24cSimVariablesCOMDirector
+006d88	cRZCOMDllDirector::CanUnloadNow(void)	CanUnloadNow__17cRZCOMDllDirector	libSimVariables.so	vtable:__vt_24cSimVariablesCOMDirector
+006e0c	cRZCOMDllDirector::GZCOM(void)	GZCOM__17cRZCOMDllDirector	libSimVariables.so	vtable:__vt_24cSimVariablesCOMDirector

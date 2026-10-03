@@ -1,0 +1,116 @@
+rva	demangled	mangled	source	method
+001a5d	cSC3CityToolRaiseDirt::ExecuteOnMouseUp(cSC3CityCoord const &)	ExecuteOnMouseUp__21cSC3CityToolRaiseDirtRC13cSC3CityCoord	libSimDirt.so	vtable:__vt_21cSC3CityToolRaiseDirt
+001cec	cSC3CityToolRaiseDirt::ExecuteOnMouseDrag(cSC3CityCoord const &)	ExecuteOnMouseDrag__21cSC3CityToolRaiseDirtRC13cSC3CityCoord	libSimDirt.so	vtable:__vt_21cSC3CityToolRaiseDirt
+001f04	cSC3CityToolRaiseDirt::ExecuteOnMouseMove(cSC3CityCoord const &)	ExecuteOnMouseMove__21cSC3CityToolRaiseDirtRC13cSC3CityCoord	libSimDirt.so	vtable:__vt_21cSC3CityToolRaiseDirt
+001fbb	cSC3CityToolRaiseDirt::CVActiveCursor(unsigned int &)	CVActiveCursor__21cSC3CityToolRaiseDirtRUi	libSimDirt.so	tokens:7.3
+001fca	cSC3CityToolLevelDirt::CVOnDeactivate(void)	CVOnDeactivate__21cSC3CityToolLevelDirt	libSimDirt.so	vtable:__vt_21cSC3CityToolLevelDirt
+001fe8	cSC3CityToolLowerDirt::QueryInterface(unsigned int, void **)	QueryInterface__21cSC3CityToolLowerDirtUiPPv	libSimDirt.so	vtable:__vt_21cSC3CityToolLowerDirt
+002014	cSC3CityToolLowerDirt::AddRef(void)	AddRef__21cSC3CityToolLowerDirt	libSimDirt.so	vtable:__vt_21cSC3CityToolLowerDirt
+00201c	cSC3CityToolLowerDirt::Release(void)	Release__21cSC3CityToolLowerDirt	libSimDirt.so	vtable:__vt_21cSC3CityToolLowerDirt
+0020a3	cSC3CityToolRaiseDirt::~cSC3CityToolRaiseDirt(void)	_._21cSC3CityToolRaiseDirt	libSimDirt.so	vtable:__vt_21cSC3CityToolRaiseDirt
+002200	cSC3CityToolLowerDirt::ExecuteOnMouseUp(cSC3CityCoord const &)	ExecuteOnMouseUp__21cSC3CityToolLowerDirtRC13cSC3CityCoord	libSimDirt.so	vtable:__vt_21cSC3CityToolLowerDirt
+00248f	cSC3CityToolLowerDirt::ExecuteOnMouseDrag(cSC3CityCoord const &)	ExecuteOnMouseDrag__21cSC3CityToolLowerDirtRC13cSC3CityCoord	libSimDirt.so	vtable:__vt_21cSC3CityToolLowerDirt
+0026a7	cSC3CityToolLowerDirt::ExecuteOnMouseMove(cSC3CityCoord const &)	ExecuteOnMouseMove__21cSC3CityToolLowerDirtRC13cSC3CityCoord	libSimDirt.so	vtable:__vt_21cSC3CityToolLowerDirt
+00275e	cSC3CityToolLowerDirt::ExecuteCellDraw(cSC3CityCoord const &, cSC3CityBounds &)	ExecuteCellDraw__21cSC3CityToolLowerDirtRC13cSC3CityCoordR14cSC3CityBounds	libSimDirt.so	vtable:__vt_21cSC3CityToolLowerDirt
+002790	cSC3CityToolLowerDirt::CVActiveCursor(unsigned int &)	CVActiveCursor__21cSC3CityToolLowerDirtRUi	libSimDirt.so	tokens:7.3
+00279f	cSC3CityToolLevelDirt::CVIsValidHandlerByView(int, unsigned int) const	CVIsValidHandlerByView__C21cSC3CityToolLevelDirtiUi	libSimDirt.so	vtable:__vt_21cSC3CityToolLevelDirt
+0027a4	cSC3CityToolLowerDirt::DoMessage(cGZMessage &)	DoMessage__21cSC3CityToolLowerDirtR10cGZMessage	libSimDirt.so	vtable:__vt_21cSC3CityToolLowerDirt
+0027e9	cSC3CityToolLowerDirt::CVOnActivate(void)	CVOnActivate__21cSC3CityToolLowerDirt	libSimDirt.so	vtable:__vt_21cSC3CityToolLowerDirt
+0028ba	cSC3CityToolLowerDirt::~cSC3CityToolLowerDirt(void)	_._21cSC3CityToolLowerDirt	libSimDirt.so	vtable:__vt_21cSC3CityToolLowerDirt
+002976	virtual function thunk (delta:-112) for cSC3CityToolLevelDirt::Execute(void)	__thunk_112_Execute__21cSC3CityToolLevelDirt	libSimDirt.so	vtable:__vt_21cSC3CityToolLevelDirt.14cRZGameCommand
+002a17	cSC3CityToolLevelDirt::ExecuteOnMouseUp(cSC3CityBounds const &)	ExecuteOnMouseUp__21cSC3CityToolLevelDirtRC14cSC3CityBounds	libSimDirt.so	vtable:__vt_21cSC3CityToolLevelDirt
+002c7d	cSC3CityToolLevelDirt::ExecuteOnMouseDrag(cSC3CityBounds const &)	ExecuteOnMouseDrag__21cSC3CityToolLevelDirtRC14cSC3CityBounds	libSimDirt.so	vtable:__vt_21cSC3CityToolLevelDirt
+002dcf	cSC3CityToolLevelDirt::ExecuteOnMouseMove(cSC3CityCoord const &)	ExecuteOnMouseMove__21cSC3CityToolLevelDirtRC13cSC3CityCoord	libSimDirt.so	vtable:__vt_21cSC3CityToolLevelDirt
+002e95	cSC3CityToolLevelDirt::ExecuteRectDraw(cSC3CityBounds const &, cSC3CityBounds &)	ExecuteRectDraw__21cSC3CityToolLevelDirtRC14cSC3CityBoundsR14cSC3CityBounds	libSimDirt.so	vtable:__vt_21cSC3CityToolLevelDirt
+002ec7	cSC3CityToolLevelDirt::CVActiveCursor(unsigned int &)	CVActiveCursor__21cSC3CityToolLevelDirtRUi	libSimDirt.so	tokens:7.3
+002ed6	cSC3CityToolLevelDirt::DoMessage(cGZMessage &)	DoMessage__21cSC3CityToolLevelDirtR10cGZMessage	libSimDirt.so	vtable:__vt_21cSC3CityToolLevelDirt
+002f1b	cSC3CityToolLevelDirt::CVOnActivate(void)	CVOnActivate__21cSC3CityToolLevelDirt	libSimDirt.so	vtable:__vt_21cSC3CityToolLevelDirt
+002f6d	cSC3CityToolLevelDirt::QueryInterface(unsigned int, void **)	QueryInterface__21cSC3CityToolLevelDirtUiPPv	libSimDirt.so	vtable:__vt_21cSC3CityToolLevelDirt
+002f99	cSC3CityToolLevelDirt::AddRef(void)	AddRef__21cSC3CityToolLevelDirt	libSimDirt.so	vtable:__vt_21cSC3CityToolLevelDirt
+002fa1	cSC3CityToolLevelDirt::Release(void)	Release__21cSC3CityToolLevelDirt	libSimDirt.so	vtable:__vt_21cSC3CityToolLevelDirt
+003022	cSC3CityToolLevelDirt::~cSC3CityToolLevelDirt(void)	_._21cSC3CityToolLevelDirt	libSimDirt.so	vtable:__vt_21cSC3CityToolLevelDirt
+0030cc	cSC3CityToolPlaceWater::Execute(void)	Execute__22cSC3CityToolPlaceWater	libSimDirt.so	tokens:7.3
+003205	cSC3CityToolPlaceWater::CVActiveCursor(unsigned int &)	CVActiveCursor__22cSC3CityToolPlaceWaterRUi	libSimDirt.so	tokens:7.3
+003902	virtual function thunk (delta:-112) for cSC3CityToolLevelDirt::QueryInterface(unsigned int, void **)	__thunk_112_QueryInterface__21cSC3CityToolLevelDirtUiPPv	libSimDirt.so	caller
+00390a	virtual function thunk (delta:-112) for cSC3CityToolLevelDirt::AddRef(void)	__thunk_112_AddRef__21cSC3CityToolLevelDirt	libSimDirt.so	vtable:__vt_21cSC3CityToolLevelDirt.14cRZGameCommand
+003912	virtual function thunk (delta:-112) for cSC3CityToolLevelDirt::Release(void)	__thunk_112_Release__21cSC3CityToolLevelDirt	libSimDirt.so	vtable:__vt_21cSC3CityToolLevelDirt.14cRZGameCommand
+00391a	virtual function thunk (delta:-116) for cSC3CityToolLevelDirt::~cSC3CityToolLevelDirt(void)	__thunk_116__._21cSC3CityToolLevelDirt	libSimDirt.so	caller
+003922	virtual function thunk (delta:-116) for cSC3CityToolLevelDirt::Release(void)	__thunk_116_Release__21cSC3CityToolLevelDirt	libSimDirt.so	vtable:__vt_21cSC3CityToolLevelDirt.11cRZRefCount
+00392a	virtual function thunk (delta:-116) for cSC3CityToolLevelDirt::AddRef(void)	__thunk_116_AddRef__21cSC3CityToolLevelDirt	libSimDirt.so	vtable:__vt_21cSC3CityToolLevelDirt.11cRZRefCount
+00393a	virtual function thunk (delta:-92) for cSC3CityToolRaiseDirt::Release(void)	__thunk_92_Release__21cSC3CityToolRaiseDirt	libSimDirt.so	vtable:__vt_21cSC3CityToolRaiseDirt.11cRZRefCount
+003942	virtual function thunk (delta:-92) for cSC3CityToolRaiseDirt::AddRef(void)	__thunk_92_AddRef__21cSC3CityToolRaiseDirt	libSimDirt.so	vtable:__vt_21cSC3CityToolRaiseDirt.11cRZRefCount
+00394a	virtual function thunk (delta:-88) for cSC3CityToolPlaceWater::QueryInterface(unsigned int, void **)	__thunk_88_QueryInterface__22cSC3CityToolPlaceWaterUiPPv	libSimDirt.so	vtable:__vt_22cSC3CityToolPlaceWater.14cRZGameCommand
+003952	virtual function thunk (delta:-88) for cSC3CityToolPlaceWater::AddRef(void)	__thunk_88_AddRef__22cSC3CityToolPlaceWater	libSimDirt.so	vtable:__vt_22cSC3CityToolPlaceWater.14cRZGameCommand
+00395a	virtual function thunk (delta:-88) for cSC3CityToolPlaceWater::Release(void)	__thunk_88_Release__22cSC3CityToolPlaceWater	libSimDirt.so	vtable:__vt_22cSC3CityToolPlaceWater.14cRZGameCommand
+003962	virtual function thunk (delta:-92) for cSC3CityToolRaiseDirt::~cSC3CityToolRaiseDirt(void)	__thunk_92__._21cSC3CityToolRaiseDirt	libSimDirt.so	caller
+004420	cSC3DirtBag::Init(cISC3City *, cISC2Importer *)	Init__11cSC3DirtBagP9cISC3CityP13cISC2Importer	libSimDirt.so	tokens:14.6
+004d90	cSC3DirtBag::Save(cISC3City *, cIGZDBSegment *)	Save__11cSC3DirtBagP9cISC3CityP13cIGZDBSegment	libSimDirt.so	tokens:26.6
+005500	cSC3DirtBag::DoMessage(cGZMessage &)	DoMessage__11cSC3DirtBagR10cGZMessage	libSimDirt.so	tokens:93.0
+006370	cSC3DirtBag::notifyCellUpdate(unsigned int, unsigned int, unsigned int, unsigned int, bool)	notifyCellUpdate__11cSC3DirtBagUiUiUiUib	libSimDirt.so	tokens:7.3
+007dc0	cSC3ConvexContour::CreateRoadOutline(cISC3DirtBag const *, cISC3EnumCityViewSelection *, unsigned int &, unsigned int &)	CreateRoadOutline__17cSC3ConvexContourPC12cISC3DirtBagP26cISC3EnumCityViewSelectionRUiT3	libSimDirt.so	tokens:7.3
+008be0	cSC3ConvexContour::CreateHighwayOutline(cISC3DirtBag const *, cISC3EnumCityViewSelection *, unsigned int &, unsigned int &)	CreateHighwayOutline__17cSC3ConvexContourPC12cISC3DirtBagP26cISC3EnumCityViewSelectionRUiT3	libSimDirt.so	tokens:7.3
+00ebe0	cSC3DirtBag::QueryInterface(unsigned int, void **)	QueryInterface__11cSC3DirtBagUiPPv	libSimDirt.so	tokens:27.6
+00ec70	cSC3DirtBag::AddRef(void)	AddRef__11cSC3DirtBag	libSimDirt.so	vtable-thunk:__vt_11cSC3DirtBag.21cISC3MapSpriteFactory
+00ec90	cSC3DirtBag::Release(void)	Release__11cSC3DirtBag	libSimDirt.so	vtable-thunk:__vt_11cSC3DirtBag.21cISC3MapSpriteFactory
+00ecd0	cSC3DirtBag::RegisterCheats(void)	RegisterCheats__11cSC3DirtBag	libSimDirt.so	tokens:69.3
+00f710	virtual function thunk (delta:-4) for cSC3DirtBag::~cSC3DirtBag(void)	__thunk_4__._11cSC3DirtBag	libSimDirt.so	vtable:__vt_11cSC3DirtBag.20cSC3CityChangeSender
+00f830	cRZLock::~cRZLock(void)	_._7cRZLock	libSimDirt.so	vtable:__vt_7cRZLock
+011210	virtual function thunk (delta:-4) for cSC3DirtBag::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__11cSC3DirtBagUiPPv	libSimDirt.so	caller
+011220	virtual function thunk (delta:-4) for cSC3DirtBag::AddRef(void)	__thunk_4_AddRef__11cSC3DirtBag	libSimDirt.so	caller
+011230	virtual function thunk (delta:-4) for cSC3DirtBag::Release(void)	__thunk_4_Release__11cSC3DirtBag	libSimDirt.so	caller
+011240	virtual function thunk (delta:-32) for cSC3DirtBag::QueryInterface(unsigned int, void **)	__thunk_32_QueryInterface__11cSC3DirtBagUiPPv	libSimDirt.so	vtable:__vt_11cSC3DirtBag.21cISC3MapSpriteFactory
+011250	virtual function thunk (delta:-32) for cSC3DirtBag::AddRef(void)	__thunk_32_AddRef__11cSC3DirtBag	libSimDirt.so	vtable:__vt_11cSC3DirtBag.21cISC3MapSpriteFactory
+011260	virtual function thunk (delta:-32) for cSC3DirtBag::Release(void)	__thunk_32_Release__11cSC3DirtBag	libSimDirt.so	vtable:__vt_11cSC3DirtBag.21cISC3MapSpriteFactory
+01127d	cSC3DirtBag::DoQueryInfo(cGZMessage &, cIGZUnknown *)	DoQueryInfo__11cSC3DirtBagR10cGZMessageP11cIGZUnknown	libSimDirt.so	tokens:42.3
+0113cd	cSC3DirtBag::DoStandardQueryViewInfo(cGZMessage &, cISC3WinQueryListView *)	DoStandardQueryViewInfo__11cSC3DirtBagR10cGZMessageP21cISC3WinQueryListView	libSimDirt.so	caller
+0114b7	cSC3DirtBag::DoDebugQueryViewInfo(cGZMessage &, cISC3WinQueryListView *)	DoDebugQueryViewInfo__11cSC3DirtBagR10cGZMessageP21cISC3WinQueryListView	libSimDirt.so	callee
+0114bc	cSC3DirtBag::GetInfoStrings(unsigned int, unsigned int, cIGZString &, cIGZString &, unsigned int)	GetInfoStrings__11cSC3DirtBagUiUiR10cIGZStringT3Ui	libSimDirt.so	tokens:7.3
+011a06	virtual function thunk (delta:-32) for cSC3DirtBag::GetMapSpriteCount(void)	__thunk_32_GetMapSpriteCount__11cSC3DirtBag	libSimDirt.so	vtable:__vt_11cSC3DirtBag.21cISC3MapSpriteFactory
+011a0a	virtual function thunk (delta:-32) for cSC3DirtBag::GetSpriteIdFromIndex(unsigned int, unsigned int &)	__thunk_32_GetSpriteIdFromIndex__11cSC3DirtBagUiRUi	libSimDirt.so	vtable:__vt_11cSC3DirtBag.21cISC3MapSpriteFactory
+011a24	virtual function thunk (delta:-32) for cSC3DirtBag::CreateMapSprite(unsigned int, unsigned int, void **)	__thunk_32_CreateMapSprite__11cSC3DirtBagUiUiPPv	libSimDirt.so	vtable:__vt_11cSC3DirtBag.21cISC3MapSpriteFactory
+016833	cSC3DirtClodFactory::DoMessage(cGZMessage &)	DoMessage__19cSC3DirtClodFactoryR10cGZMessage	libSimDirt.so	caller
+016c45	cSC3DirtClodFactory::SetAltitudePalette(unsigned int)	SetAltitudePalette__19cSC3DirtClodFactoryUi	libSimDirt.so	tokens:7.3
+0171dd	cSC3DirtClodFactory::AddRef(void)	AddRef__19cSC3DirtClodFactory	libSimDirt.so	vtable:__vt_19cSC3DirtClodFactory
+0171ef	cSC3DirtClodFactory::Release(void)	Release__19cSC3DirtClodFactory	libSimDirt.so	vtable:__vt_19cSC3DirtClodFactory
+017223	cSC3DirtClodFactory::QueryInterface(unsigned int, void **)	QueryInterface__19cSC3DirtClodFactoryUiPPv	libSimDirt.so	vtable:__vt_19cSC3DirtClodFactory
+017375	cSC3DirtGenerator::SetDifficulty(int)	SetDifficulty__17cSC3DirtGeneratori	libSimDirt.so	vtable:__vt_17cSC3DirtGenerator
+01737f	cSC3DirtGenerator::~cSC3DirtGenerator(void)	_._17cSC3DirtGenerator	libSimDirt.so	vtable:__vt_17cSC3DirtGenerator
+0173a6	cSC3DirtGenerator::QueryInterface(unsigned int, void **)	QueryInterface__17cSC3DirtGeneratorUiPPv	libSimDirt.so	vtable:__vt_17cSC3DirtGenerator
+0173cb	cSC3DirtGenerator::AddRef(void)	AddRef__17cSC3DirtGenerator	libSimDirt.so	vtable:__vt_17cSC3DirtGenerator
+0173e2	cSC3DirtGenerator::Release(void)	Release__17cSC3DirtGenerator	libSimDirt.so	vtable:__vt_17cSC3DirtGenerator
+017412	cSC3DirtGenerator::IsReady(void) const	IsReady__C17cSC3DirtGenerator	libSimDirt.so	vtable:__vt_17cSC3DirtGenerator
+01742c	cSC3DirtGenerator::Init(unsigned int, unsigned int)	Init__17cSC3DirtGeneratorUiUi	libSimDirt.so	vtable:__vt_17cSC3DirtGenerator
+0175a2	cSC3DirtGenerator::Shutdown(void)	Shutdown__17cSC3DirtGenerator	libSimDirt.so	vtable:__vt_17cSC3DirtGenerator
+0175eb	cSC3DirtGenerator::GenerateAltFromBMP8(cIGZString const *, unsigned char)	GenerateAltFromBMP8__17cSC3DirtGeneratorPC10cIGZStringUc	libSimDirt.so	vtable:__vt_17cSC3DirtGenerator
+01763a	cSC3DirtGenerator::GenerateAltFromBMP24(cIGZString const *)	GenerateAltFromBMP24__17cSC3DirtGeneratorPC10cIGZString	libSimDirt.so	vtable:__vt_17cSC3DirtGenerator
+017683	cSC3DirtGenerator::ReflectMap(cISC3DirtBag *)	ReflectMap__17cSC3DirtGeneratorP12cISC3DirtBag	libSimDirt.so	vtable:__vt_17cSC3DirtGenerator
+017c2d	cSC3DirtGenerator::GenerateRandom(int, unsigned char, unsigned char, unsigned char, unsigned char)	GenerateRandom__17cSC3DirtGeneratoriUcUcUcUc	libSimDirt.so	vtable:__vt_17cSC3DirtGenerator
+018c30	void Bezier2D4Controls<cRZPoint>(cRZPoint &, cRZPoint &, cRZPoint &, cRZPoint &, cRZPoint *, int)	Bezier2D4Controls__H1Z8cRZPoint_RX01N30PX01i_v	libSimDirt.so	tokens:14.6
+018d91	cSC3NeighborMapGen::~cSC3NeighborMapGen(void)	_._18cSC3NeighborMapGen	libSimDirt.so	vtable:__vt_18cSC3NeighborMapGen
+018db8	cSC3NeighborMapGen::QueryInterface(unsigned int, void **)	QueryInterface__18cSC3NeighborMapGenUiPPv	libSimDirt.so	tokens:7.3
+018ddd	cSC3NeighborMapGen::AddRef(void)	AddRef__18cSC3NeighborMapGen	libSimDirt.so	vtable:__vt_18cSC3NeighborMapGen
+018df4	cSC3NeighborMapGen::Release(void)	Release__18cSC3NeighborMapGen	libSimDirt.so	vtable:__vt_18cSC3NeighborMapGen
+018e24	cSC3NeighborMapGen::Init(cISC3DirtBag *)	Init__18cSC3NeighborMapGenP12cISC3DirtBag	libSimDirt.so	vtable:__vt_18cSC3NeighborMapGen
+018f42	cSC3NeighborMapGen::Shutdown(void)	Shutdown__18cSC3NeighborMapGen	libSimDirt.so	vtable:__vt_18cSC3NeighborMapGen
+018f79	cSC3NeighborMapGen::DrawMap(cIGZBuffer *)	DrawMap__18cSC3NeighborMapGenP10cIGZBuffer	libSimDirt.so	vtable:__vt_18cSC3NeighborMapGen
+019789	RZGetCOMDllDirector_SimDirt(void)	RZGetCOMDllDirector_SimDirt__Fv	libSimDirt.so	tokens:28.4
+01980a	cSDBCOMDirector::GetDirectorID(void) const	GetDirectorID__C15cSDBCOMDirector	libSimDirt.so	tokens:7.3
+019810	cSDBCOMDirector::AppRegister(cIGZRegistry *)	AppRegister__15cSDBCOMDirectorP12cIGZRegistry	libSimDirt.so	tokens:14.6
+0199d6	cSDBCOMDirector::~cSDBCOMDirector(void)	_._15cSDBCOMDirector	libSimDirt.so	vtable:__vt_15cSDBCOMDirector
+019a0e	virtual function thunk (delta:-4) for cRZCOMDllDirector::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__17cRZCOMDllDirectorUiPPv	libSimDirt.so	caller
+019a26	cRZCOMDllDirector::OnUnload(void)	OnUnload__17cRZCOMDllDirector	libSimDirt.so	vtable:__vt_15cSDBCOMDirector
+019bbd	cRZCOMDllDirector::OnStart(cIGZCOM *)	OnStart__17cRZCOMDllDirectorP7cIGZCOM	libSimDirt.so	tokens:14.6
+019ee4	cSC3CityToolRaiseDirt::AddRef(void)	AddRef__21cSC3CityToolRaiseDirt	libSimDirt.so	vtable-thunk:__vt_21cSC3CityToolRaiseDirt
+01ad6a	virtual function thunk (delta:-88) for cSC3CityToolRaiseDirt::AddRef(void)	__thunk_88_AddRef__21cSC3CityToolRaiseDirt	libSimDirt.so	caller
+01b183	cRZCOMDllDirector::QueryInterface(unsigned int, void **)	QueryInterface__17cRZCOMDllDirectorUiPPv	libSimDirt.so	tokens:14.6
+01b1c4	cRZCOMDllDirector::FrameWork(void)	FrameWork__17cRZCOMDllDirector	libSimDirt.so	vtable:__vt_15cSDBCOMDirector
+01b1d4	cRZCOMDllDirector::RemoveRef(void)	RemoveRef__17cRZCOMDllDirector	libSimDirt.so	vtable:__vt_15cSDBCOMDirector
+01b1e3	cRZCOMDllDirector::RefCount(void)	RefCount__17cRZCOMDllDirector	libSimDirt.so	vtable:__vt_15cSDBCOMDirector
+01b1e7	cRZCOMDllDirector::InitializeCOM(cIGZCOM *, cIGZString &)	InitializeCOM__17cRZCOMDllDirectorP7cIGZCOMR10cIGZString	libSimDirt.so	vtable:__vt_15cSDBCOMDirector
+01b2b5	cRZCOMDllDirector::GetClassObject(unsigned int, unsigned int, void **)	GetClassObject__17cRZCOMDllDirectorUiUiPPv	libSimDirt.so	vtable:__vt_15cSDBCOMDirector
+01b336	cRZCOMDllDirector::EnumClassObjects(void (*)(unsigned int, unsigned int, void *), void *)	EnumClassObjects__17cRZCOMDllDirectorPFUiUiPv_vPv	libSimDirt.so	vtable:__vt_15cSDBCOMDirector
+01b38a	cRZCOMDllDirector::ModuleName(cIGZString &)	ModuleName__17cRZCOMDllDirectorR10cIGZString	libSimDirt.so	vtable:__vt_15cSDBCOMDirector
+01b39e	cRZCOMDllDirector::AddDirector(cRZCOMDllDirector *)	AddDirector__17cRZCOMDllDirectorP17cRZCOMDllDirector	libSimDirt.so	vtable:__vt_15cSDBCOMDirector
+01b3e8	cRZCOMDllDirector::CanUnloadNow(void)	CanUnloadNow__17cRZCOMDllDirector	libSimDirt.so	vtable:__vt_15cSDBCOMDirector
+01b46c	virtual function thunk (delta:-4) for cRZCOMDllDirector::OnInstall(void)	__thunk_4_OnInstall__17cRZCOMDllDirector	libSimDirt.so	vtable:__vt_17cRZCOMDllDirector.18cIGZFrameWorkHooks
+01b46f	cRZCOMDllDirector::GZCOM(void)	GZCOM__17cRZCOMDllDirector	libSimDirt.so	vtable:__vt_15cSDBCOMDirector

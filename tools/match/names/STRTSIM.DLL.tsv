@@ -1,0 +1,311 @@
+rva	demangled	mangled	source	method
+00131a	cSSStrtSimOccupant::DoQueryInfo(cGZMessage &, cIGZUnknown *)	DoQueryInfo__18cSSStrtSimOccupantR10cGZMessageP11cIGZUnknown	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+00131f	cSSStrtSimOccupant::IsInCity(void) const	IsInCity__C18cSSStrtSimOccupant	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+001327	cSSStrtSimOccupant::MajorType(void) const	MajorType__C18cSSStrtSimOccupant	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+00132a	virtual function thunk (delta:-28) for cSSVehicle::GetLayerFlags32(void) const	__thunk_28_GetLayerFlags32__C10cSSVehicle	libStrtSim.so	vtable:__vt_10cSSVehicle.19cISC3CitySpriteInst
+00132d	cSSStrtSimOccupant::AnimType(void) const	AnimType__C18cSSStrtSimOccupant	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+001330	cSSStrtSimOccupant::CanSimRemove(void) const	CanSimRemove__C18cSSStrtSimOccupant	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+001333	virtual function thunk (delta:-28) for cSSVehicle::GetRotationOffset(unsigned char &) const	__thunk_28_GetRotationOffset__C10cSSVehicleRUc	libStrtSim.so	vtable:__vt_10cSSVehicle.19cISC3CitySpriteInst
+001336	cSSStrtSimOccupant::GetOrientation(unsigned short &, unsigned short &, unsigned short &) const	GetOrientation__C18cSSStrtSimOccupantRUsN21	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+001339	cSSStrtSimOccupant::GetLocationInAnimCellCoords(unsigned int &, unsigned int &) const	GetLocationInAnimCellCoords__C18cSSStrtSimOccupantRUiT1	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+00134e	virtual function thunk (delta:-24) for cSSVehicle::IsAirVehicle(void)	__thunk_24_IsAirVehicle__10cSSVehicle	libStrtSim.so	vtable:__vt_10cSSVehicle.11cISSVehicle
+001351	cSSStrtSimOccupant::SetAltAnimCells(unsigned short)	SetAltAnimCells__18cSSStrtSimOccupantUs	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+00135c	cSSStrtSimOccupant::SetLocationInAnimCoords(unsigned int, unsigned int)	SetLocationInAnimCoords__18cSSStrtSimOccupantUiUi	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+00136d	cSSStrtSimOccupant::SetLocation(cSC3CityCoord const &)	SetLocation__18cSSStrtSimOccupantRC13cSC3CityCoord	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+001385	cSSStrtSimOccupant::GetSubTypeData(unsigned int)	GetSubTypeData__18cSSStrtSimOccupantUi	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+00138a	cSSStrtSimOccupant::SerialRead(cISC3City *, cIGZDBSerialRecord &)	SerialRead__18cSSStrtSimOccupantP9cISC3CityR18cIGZDBSerialRecord	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+0013d5	cSSStrtSimOccupant::GetOccLayerFlag(void)	GetOccLayerFlag__18cSSStrtSimOccupant	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+0013d9	cSSStrtSimOccupant::GetMemUse(void) const	GetMemUse__C18cSSStrtSimOccupant	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+0013dd	virtual function thunk (delta:-24) for cSSVehicle::IsVisible(void)	__thunk_24_IsVisible__10cSSVehicle	libStrtSim.so	vtable:__vt_10cSSVehicle.11cISSVehicle
+0013e1	virtual function thunk (delta:-24) for cSSVehicle::SetVehicleAhead(cISSVehicle *)	__thunk_24_SetVehicleAhead__10cSSVehicleP11cISSVehicle	libStrtSim.so	vtable:__vt_10cSSVehicle.11cISSVehicle
+0013ee	virtual function thunk (delta:-24) for cSSVehicle::FollowingVehicleDisappeared(cISSVehicle *)	__thunk_24_FollowingVehicleDisappeared__10cSSVehicleP11cISSVehicle	libStrtSim.so	vtable:__vt_10cSSVehicle.11cISSVehicle
+0013f8	virtual function thunk (delta:-24) for cSSVehicle::VehicleAheadLeftPath(cISSVehicle *)	__thunk_24_VehicleAheadLeftPath__10cSSVehicleP11cISSVehicle	libStrtSim.so	vtable:__vt_10cSSVehicle.11cISSVehicle
+001402	cSSStrtSimOccupant::GetName(cIGZString &)	GetName__18cSSStrtSimOccupantR10cIGZString	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+001407	virtual function thunk (delta:-28) for cSSVehicle::Init(cISC3CitySpriteAttrib *)	__thunk_28_Init__10cSSVehicleP21cISC3CitySpriteAttrib	libStrtSim.so	vtable:__vt_10cSSVehicle.19cISC3CitySpriteInst
+00140c	virtual function thunk (delta:-28) for cSSVehicle::SetHilite(unsigned int)	__thunk_28_SetHilite__10cSSVehicleUi	libStrtSim.so	vtable:__vt_10cSSVehicle.19cISC3CitySpriteInst
+00141f	cSSVehicle::GetGeomFlag(void)	GetGeomFlag__10cSSVehicle	libStrtSim.so	vtable-thunk:__vt_10cSSVehicle.19cISC3CitySpriteInst
+001423	cSSVehicle::IsGeomFlag(unsigned int)	IsGeomFlag__10cSSVehicleUi	libStrtSim.so	vtable-thunk:__vt_10cSSVehicle.19cISC3CitySpriteInst
+001436	cSSVehicle::SetGeomFlag(unsigned int)	SetGeomFlag__10cSSVehicleUi	libStrtSim.so	vtable-thunk:__vt_10cSSVehicle.19cISC3CitySpriteInst
+001442	cSSVehicle::ClearGeomFlag(unsigned int)	ClearGeomFlag__10cSSVehicleUi	libStrtSim.so	vtable-thunk:__vt_10cSSVehicle.19cISC3CitySpriteInst
+00161c	cSSAeroplane::DisasterFightingRoutineUpdateFn(unsigned int, cSSVehicle::tExecStatus, bool)	DisasterFightingRoutineUpdateFn__12cSSAeroplaneUiQ210cSSVehicle11tExecStatusb	libStrtSim.so	tokens:15.0
+001b2f	cSSStrtSimLayer::RevokeDispatchedHelicopter(cISC3Occupant *)	RevokeDispatchedHelicopter__15cSSStrtSimLayerP13cISC3Occupant	libStrtSim.so	vtable-thunk:__vt_15cSSStrtSimLayer
+001c84	cSSAeroplane::MakeArrivingPlane(int, unsigned int)	MakeArrivingPlane__12cSSAeroplaneiUi	libStrtSim.so	tokens:8.1
+002336	cSSAeroplane::StaticInit(void)	StaticInit__12cSSAeroplane	libStrtSim.so	tokens:47.5
+00321c	virtual function thunk (delta:-24) for cSSVehicle::QueryInterface(unsigned int, void **)	__thunk_24_QueryInterface__10cSSVehicleUiPPv	libStrtSim.so	vtable:__vt_10cSSVehicle.11cISSVehicle
+003224	virtual function thunk (delta:-24) for cSSVehicle::AddRef(void)	__thunk_24_AddRef__10cSSVehicle	libStrtSim.so	vtable:__vt_10cSSVehicle.11cISSVehicle
+00322c	virtual function thunk (delta:-24) for cSSVehicle::Release(void)	__thunk_24_Release__10cSSVehicle	libStrtSim.so	vtable:__vt_10cSSVehicle.11cISSVehicle
+003234	virtual function thunk (delta:-24) for cSSVehicle::GetLocationInCellCoords(unsigned int &, unsigned int &) const	__thunk_24_GetLocationInCellCoords__C10cSSVehicleRUiT1	libStrtSim.so	vtable:__vt_10cSSVehicle.11cISSVehicle
+00323c	virtual function thunk (delta:-28) for cSSVehicle::QueryInterface(unsigned int, void **)	__thunk_28_QueryInterface__10cSSVehicleUiPPv	libStrtSim.so	vtable:__vt_10cSSVehicle.19cISC3CitySpriteInst
+003244	virtual function thunk (delta:-28) for cSSVehicle::AddRef(void)	__thunk_28_AddRef__10cSSVehicle	libStrtSim.so	vtable:__vt_10cSSVehicle.19cISC3CitySpriteInst
+00324c	virtual function thunk (delta:-28) for cSSVehicle::Release(void)	__thunk_28_Release__10cSSVehicle	libStrtSim.so	vtable:__vt_10cSSVehicle.19cISC3CitySpriteInst
+003254	virtual function thunk (delta:-28) for cSSVehicle::Tick(unsigned int)	__thunk_28_Tick__10cSSVehicleUi	libStrtSim.so	vtable:__vt_10cSSVehicle.19cISC3CitySpriteInst
+00325c	virtual function thunk (delta:-28) for cSSVehicle::IsGeomFlag(unsigned int)	__thunk_28_IsGeomFlag__10cSSVehicleUi	libStrtSim.so	vtable:__vt_10cSSVehicle.19cISC3CitySpriteInst
+003264	virtual function thunk (delta:-28) for cSSVehicle::SetGeomFlag(unsigned int)	__thunk_28_SetGeomFlag__10cSSVehicleUi	libStrtSim.so	vtable:__vt_10cSSVehicle.19cISC3CitySpriteInst
+00326c	virtual function thunk (delta:-28) for cSSVehicle::ClearGeomFlag(unsigned int)	__thunk_28_ClearGeomFlag__10cSSVehicleUi	libStrtSim.so	vtable:__vt_10cSSVehicle.19cISC3CitySpriteInst
+003274	virtual function thunk (delta:-28) for cSSVehicle::GetGeomFlag(void)	__thunk_28_GetGeomFlag__10cSSVehicle	libStrtSim.so	vtable:__vt_10cSSVehicle.19cISC3CitySpriteInst
+0036dc	cSSAirTrafficManager::EvaluateRunwayConfig(void)	EvaluateRunwayConfig__20cSSAirTrafficManager	libStrtSim.so	tokens:37.3
+003a36	cSSStrikeCrowdProducer::NeedVehicleDisappear(cISSVehicle *, unsigned short &)	NeedVehicleDisappear__22cSSStrikeCrowdProducerP11cISSVehicleRUs	libStrtSim.so	vtable:__vt_22cSSStrikeCrowdProducer
+003a3b	cSSAirTrafficManager::PlaceInitialPlanes(void)	PlaceInitialPlanes__20cSSAirTrafficManager	libStrtSim.so	caller
+003cc2	cSSAirTrafficManager::Tick(unsigned int)	Tick__20cSSAirTrafficManagerUi	libStrtSim.so	tokens:15.6
+004cea	cSSRiotCrowd::AddRef(void)	AddRef__12cSSRiotCrowd	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+004ea3	virtual function thunk (delta:-352) for cSSBoat::EnableWake(bool)	__thunk_352_EnableWake__7cSSBoatb	libStrtSim.so	vtable:__vt_7cSSBoat.8cISSBoat
+004ebb	virtual function thunk (delta:-24) for cSSBoat::ChangePosition(cSC3CityCoord &)	__thunk_24_ChangePosition__7cSSBoatR13cSC3CityCoord	libStrtSim.so	vtable:__vt_7cSSBoat.11cISSVehicle
+004f9b	cSSBoat::~cSSBoat(void)	_._7cSSBoat	libStrtSim.so	vtable:__vt_7cSSBoat
+005116	cSSBoat::ExecuteCurrentUpdateFn(unsigned int, cSSVehicle::tExecStatus, bool)	ExecuteCurrentUpdateFn__7cSSBoatUiQ210cSSVehicle11tExecStatusb	libStrtSim.so	vtable:__vt_7cSSBoat
+00564b	cSSBoat::QueryInterface(unsigned int, void **)	QueryInterface__7cSSBoatUiPPv	libStrtSim.so	tokens:8.1
+005687	virtual function thunk (delta:-24) for cSSBoat::SetOrientation(unsigned char)	__thunk_24_SetOrientation__7cSSBoatUc	libStrtSim.so	vtable:__vt_7cSSBoat.11cISSVehicle
+0056ae	cSSBoat::Shutdown(void)	Shutdown__7cSSBoat	libStrtSim.so	vtable:__vt_7cSSBoat
+005709	cSSBoat::SubTypeInfo(void) const	SubTypeInfo__C7cSSBoat	libStrtSim.so	vtable:__vt_7cSSBoat
+00570c	cSSBoat::Tick(unsigned int)	Tick__7cSSBoatUi	libStrtSim.so	vtable:__vt_7cSSBoat
+005789	virtual function thunk (delta:-348) for cSSBoat::VehicleDisappears(cISSVehicle *)	__thunk_348_VehicleDisappears__7cSSBoatP11cISSVehicle	libStrtSim.so	vtable:__vt_7cSSBoat.19cISSVehicleProducer
+0057a9	virtual function thunk (delta:-24) for cSSBoat::QueryInterface(unsigned int, void **)	__thunk_24_QueryInterface__7cSSBoatUiPPv	libStrtSim.so	vtable:__vt_7cSSBoat.11cISSVehicle
+0057b1	virtual function thunk (delta:-28) for cSSBoat::QueryInterface(unsigned int, void **)	__thunk_28_QueryInterface__7cSSBoatUiPPv	libStrtSim.so	vtable:__vt_7cSSBoat.19cISC3CitySpriteInst
+0057b9	virtual function thunk (delta:-28) for cSSBoat::Tick(unsigned int)	__thunk_28_Tick__7cSSBoatUi	libStrtSim.so	vtable:__vt_7cSSBoat.19cISC3CitySpriteInst
+0057c1	virtual function thunk (delta:-348) for cSSBoat::QueryInterface(unsigned int, void **)	__thunk_348_QueryInterface__7cSSBoatUiPPv	libStrtSim.so	vtable:__vt_7cSSBoat.19cISSVehicleProducer
+0057cc	virtual function thunk (delta:-348) for cSSBoat::Shutdown(void)	__thunk_348_Shutdown__7cSSBoat	libStrtSim.so	vtable:__vt_7cSSBoat.19cISSVehicleProducer
+0057d7	virtual function thunk (delta:-352) for cSSBoat::QueryInterface(unsigned int, void **)	__thunk_352_QueryInterface__7cSSBoatUiPPv	libStrtSim.so	vtable:__vt_7cSSBoat.8cISSBoat
+0059c2	cSSOccFilterAutomata::QueryInterface(unsigned int, void **)	QueryInterface__20cSSOccFilterAutomataUiPPv	libStrtSim.so	tokens:8.1
+006066	cSSBoatProducer::StaticInit(void)	StaticInit__15cSSBoatProducer	libStrtSim.so	tokens:45.3
+006643	RZGetCOMDllDirector_StrtSim(void)	RZGetCOMDllDirector_StrtSim__Fv	libStrtSim.so	tokens:105.2
+006766	cSSCOMDirector::GetDirectorID(void) const	GetDirectorID__C14cSSCOMDirector	libStrtSim.so	tokens:8.1
+006bd1	virtual function thunk (delta:-4) for cRZCOMDllDirector::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__17cRZCOMDllDirectorUiPPv	libStrtSim.so	caller
+00767c	cSSVehicleProducer::QueryInterface(unsigned int, void **)	QueryInterface__18cSSVehicleProducerUiPPv	libStrtSim.so	vtable:__vt_18cSSVehicleProducer
+007b32	cSSParadeBlock::CallScriptFunction(cSSStrtSimScript::tInstruction *)	CallScriptFunction__14cSSParadeBlockPQ216cSSStrtSimScript12tInstruction	libStrtSim.so	vtable:__vt_14cSSParadeBlock
+007bad	virtual function thunk (delta:-348) for cSSParadeBlock::IsBored(void)	__thunk_348_IsBored__14cSSParadeBlock	libStrtSim.so	vtable:__vt_14cSSParadeBlock.15cISSParadeBlock
+007bb1	virtual function thunk (delta:-348) for cSSParadeBlock::GetOrientation(void)	__thunk_348_GetOrientation__14cSSParadeBlock	libStrtSim.so	vtable:__vt_14cSSParadeBlock.15cISSParadeBlock
+007bb8	cSSParadeBlock::~cSSParadeBlock(void)	_._14cSSParadeBlock	libStrtSim.so	vtable:__vt_14cSSParadeBlock
+007c2a	virtual function thunk (delta:-348) for cSSParadeBlock::Disburse(void)	__thunk_348_Disburse__14cSSParadeBlock	libStrtSim.so	vtable:__vt_14cSSParadeBlock.15cISSParadeBlock
+007d17	virtual function thunk (delta:-28) for cSSParadeBlock::GetAllSpans(int, int, cRZRect &) const	__thunk_28_GetAllSpans__C14cSSParadeBlockiiR7cRZRect	libStrtSim.so	vtable:__vt_14cSSParadeBlock.19cISC3CitySpriteInst
+007d65	cSSParadeBlock::ExecuteCurrentUpdateFn(unsigned int, cSSVehicle::tExecStatus, bool)	ExecuteCurrentUpdateFn__14cSSParadeBlockUiQ210cSSVehicle11tExecStatusb	libStrtSim.so	vtable:__vt_14cSSParadeBlock
+007db0	cSSParadeBlock::GetGeomFlag(void)	GetGeomFlag__14cSSParadeBlock	libStrtSim.so	vtable:__vt_14cSSParadeBlock
+007db6	virtual function thunk (delta:-348) for cSSParadeBlock::GetLocation(unsigned int &, unsigned int &)	__thunk_348_GetLocation__14cSSParadeBlockRUiT1	libStrtSim.so	vtable:__vt_14cSSParadeBlock.15cISSParadeBlock
+007dd7	virtual function thunk (delta:-348) for cSSParadeBlock::GetLocationMicro(int &, int &, int &)	__thunk_348_GetLocationMicro__14cSSParadeBlockRiN21	libStrtSim.so	vtable:__vt_14cSSParadeBlock.15cISSParadeBlock
+007dfe	cSSParadeBlock::LeaveLastPath(void)	LeaveLastPath__14cSSParadeBlock	libStrtSim.so	vtable:__vt_14cSSParadeBlock
+007e4c	cSSParadeBlock::MakeCurrentPath(cISSVehiclePath *)	MakeCurrentPath__14cSSParadeBlockP15cISSVehiclePath	libStrtSim.so	vtable:__vt_14cSSParadeBlock
+0080f3	cSSParadeBlock::QueryInterface(unsigned int, void **)	QueryInterface__14cSSParadeBlockUiPPv	libStrtSim.so	tokens:8.1
+0082b6	virtual function thunk (delta:-348) for cSSParadeBlock::SetAssociatedParadeInstance(cISC3EventParadeInstance *)	__thunk_348_SetAssociatedParadeInstance__14cSSParadeBlockP24cISC3EventParadeInstance	libStrtSim.so	vtable:__vt_14cSSParadeBlock.15cISSParadeBlock
+0082c7	cSSParadeBlock::Shutdown(void)	Shutdown__14cSSParadeBlock	libStrtSim.so	vtable:__vt_14cSSParadeBlock
+00837c	cSSParadeBlock::SubTypeInfo(void) const	SubTypeInfo__C14cSSParadeBlock	libStrtSim.so	vtable:__vt_14cSSParadeBlock
+00837f	cSSParadeBlock::Tick(unsigned int)	Tick__14cSSParadeBlockUi	libStrtSim.so	vtable:__vt_14cSSParadeBlock
+0083c3	cSSParadeBlock::SelectPath(cISC3Occupant *)	SelectPath__14cSSParadeBlockP13cISC3Occupant	libStrtSim.so	vtable:__vt_14cSSParadeBlock
+008478	cSSParadeBlock::SelectAnEdge(tVPathGraphNode *, int, int)	SelectAnEdge__14cSSParadeBlockP15tVPathGraphNodeii	libStrtSim.so	vtable:__vt_14cSSParadeBlock
+0084d3	virtual function thunk (delta:-24) for cSSParadeBlock::ChangePosition(cSC3CityCoord &)	__thunk_24_ChangePosition__14cSSParadeBlockR13cSC3CityCoord	libStrtSim.so	vtable:__vt_14cSSParadeBlock.11cISSVehicle
+00852c	virtual function thunk (delta:-24) for cSSParadeBlock::SetOrientation(unsigned char)	__thunk_24_SetOrientation__14cSSParadeBlockUc	libStrtSim.so	vtable:__vt_14cSSParadeBlock.11cISSVehicle
+00853d	virtual function thunk (delta:-24) for cSSParadeBlock::QueryInterface(unsigned int, void **)	__thunk_24_QueryInterface__14cSSParadeBlockUiPPv	libStrtSim.so	vtable:__vt_14cSSParadeBlock.11cISSVehicle
+008545	virtual function thunk (delta:-28) for cSSParadeBlock::QueryInterface(unsigned int, void **)	__thunk_28_QueryInterface__14cSSParadeBlockUiPPv	libStrtSim.so	vtable:__vt_14cSSParadeBlock.19cISC3CitySpriteInst
+00854d	virtual function thunk (delta:-28) for cSSParadeBlock::Tick(unsigned int)	__thunk_28_Tick__14cSSParadeBlockUi	libStrtSim.so	vtable:__vt_14cSSParadeBlock.19cISC3CitySpriteInst
+008555	virtual function thunk (delta:-28) for cSSParadeBlock::GetGeomFlag(void)	__thunk_28_GetGeomFlag__14cSSParadeBlock	libStrtSim.so	vtable:__vt_14cSSParadeBlock.19cISC3CitySpriteInst
+00855d	virtual function thunk (delta:-348) for cSSParadeBlock::QueryInterface(unsigned int, void **)	__thunk_348_QueryInterface__14cSSParadeBlockUiPPv	libStrtSim.so	vtable:__vt_14cSSParadeBlock.15cISSParadeBlock
+008dc6	cSSPeopleProducer::ChangeLocation(unsigned int, unsigned int)	ChangeLocation__17cSSPeopleProducerUiUi	libStrtSim.so	vtable:__vt_17cSSPeopleProducer
+008f65	cSSPeopleProducer::Init(cISSPeopleProducerAttrib *, unsigned int, unsigned int)	Init__17cSSPeopleProducerP24cISSPeopleProducerAttribUiUi	libStrtSim.so	vtable:__vt_17cSSPeopleProducer
+008fae	cSSPeopleProducer::PersonDisappears(cISSPerson *)	PersonDisappears__17cSSPeopleProducerP10cISSPerson	libStrtSim.so	vtable:__vt_17cSSPeopleProducer
+0092b7	cSSPeopleProducer::QueryInterface(unsigned int, void **)	QueryInterface__17cSSPeopleProducerUiPPv	libStrtSim.so	tokens:8.1
+00934f	cSSPeopleProducer::Release(void)	Release__17cSSPeopleProducer	libStrtSim.so	vtable:__vt_17cSSPeopleProducer
+0094b2	cSSPeopleProducer::Shutdown(void)	Shutdown__17cSSPeopleProducer	libStrtSim.so	vtable:__vt_17cSSPeopleProducer
+009525	cSSPeopleProducer::SpreadSpectators(unsigned int, unsigned int, unsigned int)	SpreadSpectators__17cSSPeopleProducerUiUiUi	libStrtSim.so	vtable:__vt_17cSSPeopleProducer
+0095d8	cSSPeopleProducerAttrib::~cSSPeopleProducerAttrib(void)	_._23cSSPeopleProducerAttrib	libStrtSim.so	vtable:__vt_23cSSPeopleProducerAttrib
+009649	virtual function thunk (delta:-20) for cSSPeopleProducerAttrib::GetMode(unsigned int)	__thunk_20_GetMode__23cSSPeopleProducerAttribUi	libStrtSim.so	vtable:__vt_23cSSPeopleProducerAttrib.24cISSPeopleProducerAttrib
+00966d	virtual function thunk (delta:-20) for cSSPeopleProducerAttrib::GetNumberOfModes(void)	__thunk_20_GetNumberOfModes__23cSSPeopleProducerAttrib	libStrtSim.so	vtable:__vt_23cSSPeopleProducerAttrib.24cISSPeopleProducerAttrib
+00967b	virtual function thunk (delta:-20) for cSSPeopleProducerAttrib::GetModeSelectionMethod(void)	__thunk_20_GetModeSelectionMethod__23cSSPeopleProducerAttrib	libStrtSim.so	vtable:__vt_23cSSPeopleProducerAttrib.24cISSPeopleProducerAttrib
+009689	cSSPeopleProducerAttrib::QueryInterface(unsigned int, void **)	QueryInterface__23cSSPeopleProducerAttribUiPPv	libStrtSim.so	tokens:16.3
+0096cd	cSSPeopleProducerAttrib::SerialRead(cIGZDBSerialRecord &)	SerialRead__23cSSPeopleProducerAttribR18cIGZDBSerialRecord	libStrtSim.so	tokens:16.3
+00972e	cSSPeopleProducerAttrib::SerialReadBinary(cIGZDBSerialRecord &)	SerialReadBinary__23cSSPeopleProducerAttribR18cIGZDBSerialRecord	libStrtSim.so	tokens:8.1
+009b35	cSSPeopleProducerAttrib::SerialReadText(cIGZDBSerialRecord &)	SerialReadText__23cSSPeopleProducerAttribR18cIGZDBSerialRecord	libStrtSim.so	tokens:24.4
+009f22	virtual function thunk (delta:-24) for cSSPeopleProducerAttrib::SerialWrite(cIGZDBSerialRecord &)	__thunk_24_SerialWrite__23cSSPeopleProducerAttribR18cIGZDBSerialRecord	libStrtSim.so	vtable:__vt_23cSSPeopleProducerAttrib.24cIGZSerializableResource
+00a661	virtual function thunk (delta:-20) for cSSPeopleProducerAttrib::QueryInterface(unsigned int, void **)	__thunk_20_QueryInterface__23cSSPeopleProducerAttribUiPPv	libStrtSim.so	vtable:__vt_23cSSPeopleProducerAttrib.24cISSPeopleProducerAttrib
+00a669	virtual function thunk (delta:-20) for cSSPeopleProducerAttrib::Release(void)	__thunk_20_Release__23cSSPeopleProducerAttrib	libStrtSim.so	vtable:__vt_23cSSPeopleProducerAttrib.24cISSPeopleProducerAttrib
+00a671	virtual function thunk (delta:-24) for cSSPeopleProducerAttrib::QueryInterface(unsigned int, void **)	__thunk_24_QueryInterface__23cSSPeopleProducerAttribUiPPv	libStrtSim.so	vtable:__vt_23cSSPeopleProducerAttrib.24cIGZSerializableResource
+00a679	virtual function thunk (delta:-24) for cSSPeopleProducerAttrib::AddRef(void)	__thunk_24_AddRef__23cSSPeopleProducerAttrib	libStrtSim.so	vtable:__vt_23cSSPeopleProducerAttrib.24cIGZSerializableResource
+00a681	virtual function thunk (delta:-24) for cSSPeopleProducerAttrib::Release(void)	__thunk_24_Release__23cSSPeopleProducerAttrib	libStrtSim.so	vtable:__vt_23cSSPeopleProducerAttrib.24cIGZSerializableResource
+00a978	cSSPeopleStraightPath::GetEndOrientation(void)	GetEndOrientation__21cSSPeopleStraightPath	libStrtSim.so	vtable:__vt_21cSSPeopleStraightPath
+00a97c	cSSPeopleStraightPath::GetEndCell(unsigned int &, unsigned int &)	GetEndCell__21cSSPeopleStraightPathRUiT1	libStrtSim.so	vtable:__vt_21cSSPeopleStraightPath
+00a997	cSSPeopleStraightPath::GetNextPoint(int &, int &, int &)	GetNextPoint__21cSSPeopleStraightPathRiN21	libStrtSim.so	vtable:__vt_21cSSPeopleStraightPath
+00a9e9	cSSPeopleStraightPath::GetStartPoint(int &, int &, int &)	GetStartPoint__21cSSPeopleStraightPathRiN21	libStrtSim.so	vtable:__vt_21cSSPeopleStraightPath
+00aa07	cSSPeopleStraightPath::Rewind(void)	Rewind__21cSSPeopleStraightPath	libStrtSim.so	vtable:__vt_21cSSPeopleStraightPath
+00aa0c	cSSPeopleStraightPath::~cSSPeopleStraightPath(void)	_._21cSSPeopleStraightPath	libStrtSim.so	vtable:__vt_21cSSPeopleStraightPath
+00ab8e	virtual function thunk (delta:-28) for cSSPerson::SetHilite(unsigned int)	__thunk_28_SetHilite__9cSSPersonUi	libStrtSim.so	vtable:__vt_9cSSPerson.19cISC3CitySpriteInst
+00aba6	cSSPerson::IsGeomFlag(unsigned int)	IsGeomFlag__9cSSPersonUi	libStrtSim.so	vtable:__vt_9cSSPerson
+00abbb	cSSPerson::~cSSPerson(void)	_._9cSSPerson	libStrtSim.so	vtable:__vt_9cSSPerson
+00ac7e	cSSPerson::GetW(int, int) const	GetW__C9cSSPersonii	libStrtSim.so	callee
+00acb5	virtual function thunk (delta:-28) for cSSPerson::Draw(cIGZBuffer *, int, int, int, int, cRZRect *) const	__thunk_28_Draw__C9cSSPersonP10cIGZBufferiiiiP7cRZRect	libStrtSim.so	vtable:__vt_9cSSPerson.19cISC3CitySpriteInst
+00ae45	virtual function thunk (delta:-28) for cSSPerson::GetAllSpans(int, int, cRZRect &) const	__thunk_28_GetAllSpans__C9cSSPersoniiR7cRZRect	libStrtSim.so	vtable:__vt_9cSSPerson.19cISC3CitySpriteInst
+00ae74	virtual function thunk (delta:-28) for cSSPerson::GetAreaFromPt(int, int, cRZRect &, int, int) const	__thunk_28_GetAreaFromPt__C9cSSPersoniiR7cRZRectii	libStrtSim.so	vtable:__vt_9cSSPerson.19cISC3CitySpriteInst
+00aeaa	cSSPerson::GetGeomFlag(void)	GetGeomFlag__9cSSPerson	libStrtSim.so	tokens:8.1
+00aeb0	virtual function thunk (delta:-28) for cSSPerson::GetH(int, int) const	__thunk_28_GetH__C9cSSPersonii	libStrtSim.so	vtable:__vt_9cSSPerson.19cISC3CitySpriteInst
+00aedb	virtual function thunk (delta:-28) for cSSPerson::GetW(int, int) const	__thunk_28_GetW__C9cSSPersonii	libStrtSim.so	vtable:__vt_9cSSPerson.19cISC3CitySpriteInst
+00b0f9	virtual function thunk (delta:-28) for cSSPerson::IsPixelOpaque(int, int, int, int) const	__thunk_28_IsPixelOpaque__C9cSSPersoniiii	libStrtSim.so	vtable:__vt_9cSSPerson.19cISC3CitySpriteInst
+00b9ca	virtual function thunk (delta:-24) for cSSPerson::PlaceOnTransitTile(cISC3Occupant *)	__thunk_24_PlaceOnTransitTile__9cSSPersonP13cISC3Occupant	libStrtSim.so	vtable:__vt_9cSSPerson.10cISSPerson
+00bc2c	cSSPerson::QueryInterface(unsigned int, void **)	QueryInterface__9cSSPersonUiPPv	libStrtSim.so	tokens:15.6
+00bf7f	cSSPerson::Shutdown(void)	Shutdown__9cSSPerson	libStrtSim.so	vtable:__vt_9cSSPerson
+00c0ef	cSSVehicle::SpiralMotionUpdateFn(unsigned int, cSSVehicle::tExecStatus, bool)	SpiralMotionUpdateFn__10cSSVehicleUiQ210cSSVehicle11tExecStatusb	libStrtSim.so	tokens:31.3
+00c45d	cSSPerson::SubTypeInfo(void) const	SubTypeInfo__C9cSSPerson	libStrtSim.so	vtable:__vt_9cSSPerson
+00c460	cSSPerson::Tick(unsigned int)	Tick__9cSSPersonUi	libStrtSim.so	vtable:__vt_9cSSPerson
+00c519	virtual function thunk (delta:-28) for cSSPerson::Unprepare(int, int)	__thunk_28_Unprepare__9cSSPersonii	libStrtSim.so	vtable:__vt_9cSSPerson.19cISC3CitySpriteInst
+00c608	virtual function thunk (delta:-24) for cSSPerson::QueryInterface(unsigned int, void **)	__thunk_24_QueryInterface__9cSSPersonUiPPv	libStrtSim.so	vtable:__vt_9cSSPerson.10cISSPerson
+00c610	virtual function thunk (delta:-28) for cSSPerson::QueryInterface(unsigned int, void **)	__thunk_28_QueryInterface__9cSSPersonUiPPv	libStrtSim.so	vtable:__vt_9cSSPerson.19cISC3CitySpriteInst
+00c618	virtual function thunk (delta:-28) for cSSPerson::Tick(unsigned int)	__thunk_28_Tick__9cSSPersonUi	libStrtSim.so	vtable:__vt_9cSSPerson.19cISC3CitySpriteInst
+00c620	virtual function thunk (delta:-28) for cSSPerson::IsGeomFlag(unsigned int)	__thunk_28_IsGeomFlag__9cSSPersonUi	libStrtSim.so	vtable:__vt_9cSSPerson.19cISC3CitySpriteInst
+00c628	virtual function thunk (delta:-28) for cSSPerson::SetGeomFlag(unsigned int)	__thunk_28_SetGeomFlag__9cSSPersonUi	libStrtSim.so	vtable:__vt_9cSSPerson.19cISC3CitySpriteInst
+00c630	virtual function thunk (delta:-28) for cSSPerson::GetGeomFlag(void)	__thunk_28_GetGeomFlag__9cSSPerson	libStrtSim.so	vtable:__vt_9cSSPerson.19cISC3CitySpriteInst
+00cbf6	cSSPPathGraphAttrib::Init(void)	Init__19cSSPPathGraphAttrib	libStrtSim.so	tokens:16.3
+00e453	cSSRiotCrowd::CallScriptFunction(cSSStrtSimScript::tInstruction *)	CallScriptFunction__12cSSRiotCrowdPQ216cSSStrtSimScript12tInstruction	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+00e4c8	cSSRiotCrowd::~cSSRiotCrowd(void)	_._12cSSRiotCrowd	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+00e53f	cSSRiotCrowd::DoMessage(cGZMessage &)	DoMessage__12cSSRiotCrowdR10cGZMessage	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+00e676	cSSRiotCrowd::ExecuteCurrentUpdateFn(unsigned int, cSSVehicle::tExecStatus, bool)	ExecuteCurrentUpdateFn__12cSSRiotCrowdUiQ210cSSVehicle11tExecStatusb	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+00e6c1	cSSRiotCrowd::LeaveLastPath(void)	LeaveLastPath__12cSSRiotCrowd	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+00e72c	cSSRiotCrowd::MakeCurrentPath(cISSVehiclePath *)	MakeCurrentPath__12cSSRiotCrowdP15cISSVehiclePath	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+00e843	cSSRiotCrowd::QueryInterface(unsigned int, void **)	QueryInterface__12cSSRiotCrowdUiPPv	libStrtSim.so	tokens:8.1
+00ea10	cSSRiotCrowd::Shutdown(void)	Shutdown__12cSSRiotCrowd	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+00ead7	cSSRiotCrowd::SubTypeInfo(void) const	SubTypeInfo__C12cSSRiotCrowd	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+00eada	cSSRiotCrowd::ThrowFireBall(void)	ThrowFireBall__12cSSRiotCrowd	libStrtSim.so	tokens:32.6
+00ec49	cSSRiotCrowd::Tick(unsigned int)	Tick__12cSSRiotCrowdUi	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+00ecd0	virtual function thunk (delta:-28) for cSSRiotCrowd::Tick(unsigned int)	__thunk_28_Tick__12cSSRiotCrowdUi	libStrtSim.so	caller
+00ece3	virtual function thunk (delta:-348) for cSSParadeBlock::Release(void)	__thunk_348_Release__14cSSParadeBlock	libStrtSim.so	vtable:__vt_14cSSParadeBlock.15cISSParadeBlock
+00ee9c	cSSShip::~cSSShip(void)	_._7cSSShip	libStrtSim.so	vtable:__vt_7cSSShip
+00eeb8	virtual function thunk (delta:-348) for cSSShip::Shutdown(void)	__thunk_348_Shutdown__7cSSShip	libStrtSim.so	caller
+00f017	cSSShip::EvaluateBSplinePoint(int &, int &)	EvaluateBSplinePoint__7cSSShipRiT1	libStrtSim.so	tokens:48.9
+00f0da	cSSShip::ExecuteCurrentUpdateFn(unsigned int, cSSVehicle::tExecStatus, bool)	ExecuteCurrentUpdateFn__7cSSShipUiQ210cSSVehicle11tExecStatusb	libStrtSim.so	vtable:__vt_7cSSShip
+00f7f2	cSSShip::QueryInterface(unsigned int, void **)	QueryInterface__7cSSShipUiPPv	libStrtSim.so	tokens:8.1
+00f947	cSSShip::Shutdown(void)	Shutdown__7cSSShip	libStrtSim.so	vtable:__vt_7cSSShip
+00fa14	cSSShip::SubTypeInfo(void) const	SubTypeInfo__C7cSSShip	libStrtSim.so	vtable:__vt_7cSSShip
+00fa17	cSSShip::Tick(unsigned int)	Tick__7cSSShipUi	libStrtSim.so	vtable:__vt_7cSSShip
+00fa99	cSSSubwayProducer::VehicleDisappears(cISSVehicle *)	VehicleDisappears__17cSSSubwayProducerP11cISSVehicle	libStrtSim.so	vtable:__vt_17cSSSubwayProducer
+00fae5	virtual function thunk (delta:-24) for cSSParadeBlock::AddRef(void)	__thunk_24_AddRef__14cSSParadeBlock	libStrtSim.so	vtable:__vt_14cSSParadeBlock.11cISSVehicle
+00faed	virtual function thunk (delta:-24) for cSSParadeBlock::Release(void)	__thunk_24_Release__14cSSParadeBlock	libStrtSim.so	vtable:__vt_14cSSParadeBlock.11cISSVehicle
+00fafd	virtual function thunk (delta:-28) for cSSParadeBlock::AddRef(void)	__thunk_28_AddRef__14cSSParadeBlock	libStrtSim.so	vtable:__vt_14cSSParadeBlock.19cISC3CitySpriteInst
+00fb05	virtual function thunk (delta:-28) for cSSParadeBlock::Release(void)	__thunk_28_Release__14cSSParadeBlock	libStrtSim.so	vtable:__vt_14cSSParadeBlock.19cISC3CitySpriteInst
+00fb0d	virtual function thunk (delta:-28) for cSSShip::Tick(unsigned int)	__thunk_28_Tick__7cSSShipUi	libStrtSim.so	caller
+00fb15	cSSSubwayProducer::QueryInterface(unsigned int, void **)	QueryInterface__17cSSSubwayProducerUiPPv	libStrtSim.so	vtable:__vt_17cSSSubwayProducer
+00fb20	virtual function thunk (delta:-348) for cSSParadeBlock::AddRef(void)	__thunk_348_AddRef__14cSSParadeBlock	libStrtSim.so	vtable:__vt_14cSSParadeBlock.15cISSParadeBlock
+00fb2b	cSSSubwayProducer::Shutdown(void)	Shutdown__17cSSSubwayProducer	libStrtSim.so	vtable:__vt_17cSSSubwayProducer
+00fb41	virtual function thunk (delta:-352) for cSSBoat::AddRef(void)	__thunk_352_AddRef__7cSSBoat	libStrtSim.so	vtable:__vt_7cSSBoat.8cISSBoat
+00fb4c	virtual function thunk (delta:-352) for cSSBoat::Release(void)	__thunk_352_Release__7cSSBoat	libStrtSim.so	vtable:__vt_7cSSBoat.8cISSBoat
+00fcf0	cSSShipProducer::CreateAShip(void)	CreateAShip__15cSSShipProducer	libStrtSim.so	tokens:8.1
+010182	cSSShipProducer::StaticInit(void)	StaticInit__15cSSShipProducer	libStrtSim.so	tokens:46.7
+0103ff	cSSRiotCrowd::GetGeomFlag(void)	GetGeomFlag__12cSSRiotCrowd	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+010405	cSSStrikeCrowd::LeaveLastPath(void)	LeaveLastPath__14cSSStrikeCrowd	libStrtSim.so	caller
+010537	virtual function thunk (delta:-28) for cSSRiotCrowd::GetGeomFlag(void)	__thunk_28_GetGeomFlag__12cSSRiotCrowd	libStrtSim.so	caller
+010569	cSSStrikeCrowdProducer::AddRef(void)	AddRef__22cSSStrikeCrowdProducer	libStrtSim.so	vtable:__vt_22cSSStrikeCrowdProducer
+0108d3	cSSStrikeCrowdProducer::CreateAndPlaceCrowdNearOccupant(cISC3Occupant *)	CreateAndPlaceCrowdNearOccupant__22cSSStrikeCrowdProducerP13cISC3Occupant	libStrtSim.so	tokens:8.1
+010c54	cSSStrikeCrowdProducer::cSSStrikeCrowdProducer(void)	__22cSSStrikeCrowdProducer	libStrtSim.so	vtable-user:__vt_22cSSStrikeCrowdProducer
+010cea	cSSStrikeCrowdProducer::~cSSStrikeCrowdProducer(void)	_._22cSSStrikeCrowdProducer	libStrtSim.so	caller
+010dac	cSSStrikeCrowdProducer::DoMessage(cGZMessage &)	DoMessage__22cSSStrikeCrowdProducerR10cGZMessage	libStrtSim.so	caller
+011036	cSSStrikeCrowdProducer::OccupantInserted(cISC3Occupant *)	OccupantInserted__22cSSStrikeCrowdProducerP13cISC3Occupant	libStrtSim.so	tokens:16.3
+0110fc	cSSStrikeCrowdProducer::Release(void)	Release__22cSSStrikeCrowdProducer	libStrtSim.so	vtable:__vt_22cSSStrikeCrowdProducer
+011127	cSSStrikeCrowdProducer::Shutdown(void)	Shutdown__22cSSStrikeCrowdProducer	libStrtSim.so	vtable:__vt_22cSSStrikeCrowdProducer
+0119c0	virtual function thunk (delta:-4) for cSSStrikeCrowdProducer::AddRef(void)	__thunk_4_AddRef__22cSSStrikeCrowdProducer	libStrtSim.so	caller
+0119c8	virtual function thunk (delta:-4) for cSSStrikeCrowdProducer::Release(void)	__thunk_4_Release__22cSSStrikeCrowdProducer	libStrtSim.so	caller
+011de1	virtual function thunk (delta:-28) for cSSPerson::Prepare(int, int, bool)	__thunk_28_Prepare__9cSSPersoniib	libStrtSim.so	vtable:__vt_9cSSPerson.19cISC3CitySpriteInst
+012310	cSSStrtSimLayer::CreateRiotCrowd(void)	CreateRiotCrowd__15cSSStrtSimLayer	libStrtSim.so	vtable:__vt_15cSSStrtSimLayer
+0123a6	cSSStrtSimLayer::CreateParadeBlock(unsigned int)	CreateParadeBlock__15cSSStrtSimLayerUi	libStrtSim.so	vtable:__vt_15cSSStrtSimLayer
+01243d	cSSStrtSimLayer::CreateParadeSpectators(unsigned int, unsigned int, unsigned int)	CreateParadeSpectators__15cSSStrtSimLayerUiUiUi	libStrtSim.so	vtable:__vt_15cSSStrtSimLayer
+01245b	cSSStrtSimLayer::cSSStrtSimLayer(void)	__15cSSStrtSimLayer	libStrtSim.so	vtable-user:__vt_15cSSStrtSimLayer
+0126a8	cSSStrtSimLayer::GetLayerType(void)	GetLayerType__15cSSStrtSimLayer	libStrtSim.so	tokens:8.1
+0126cc	cSSStrtSimLayer::~cSSStrtSimLayer(void)	_._15cSSStrtSimLayer	libStrtSim.so	caller
+012774	cSSStrtSimLayer::DisasterAdd(cISC3DisasterInstance *)	DisasterAdd__15cSSStrtSimLayerP21cISC3DisasterInstance	libStrtSim.so	tokens:16.3
+012c6e	cSSStrtSimLayer::DispatchAirplane(unsigned int, unsigned int)	DispatchAirplane__15cSSStrtSimLayerUiUi	libStrtSim.so	vtable:__vt_15cSSStrtSimLayer
+012e00	cSSStrtSimLayer::RedirectAirplane(cISC3Occupant *, unsigned int, unsigned int)	RedirectAirplane__15cSSStrtSimLayerP13cISC3OccupantUiUi	libStrtSim.so	vtable:__vt_15cSSStrtSimLayer
+012e14	cSSStrtSimLayer::DispatchHelicopter(unsigned int, unsigned int, unsigned int, unsigned int)	DispatchHelicopter__15cSSStrtSimLayerUiUiUiUi	libStrtSim.so	vtable:__vt_15cSSStrtSimLayer
+012e46	cSSStrtSimLayer::DoAnimationTick(unsigned int)	DoAnimationTick__15cSSStrtSimLayerUi	libStrtSim.so	caller
+012f88	cSSStrtSimLayer::DoMessage(cGZMessage &)	DoMessage__15cSSStrtSimLayerR10cGZMessage	libStrtSim.so	vtable:__vt_15cSSStrtSimLayer
+0131ea	cSSStrtSimLayer::GetManipulator(cISC3CityAgentType const &, cISC3CityLayerManipulator **, int &)	GetManipulator__15cSSStrtSimLayerRC18cISC3CityAgentTypePP25cISC3CityLayerManipulatorRi	libStrtSim.so	vtable:__vt_15cSSStrtSimLayer
+013397	cSSStrtSimLayer::GetSSTrBlockAttrib(unsigned int)	GetSSTrBlockAttrib__15cSSStrtSimLayerUi	libStrtSim.so	tokens:16.3
+013a13	cSSStrtSimLayer::DoQueryInfo(cGZMessage &, cIGZUnknown *)	DoQueryInfo__15cSSStrtSimLayerR10cGZMessageP11cIGZUnknown	libStrtSim.so	vtable:__vt_15cSSStrtSimLayer
+014069	cSSStrtSimLayer::QueryInterface(unsigned int, void **)	QueryInterface__15cSSStrtSimLayerUiPPv	libStrtSim.so	tokens:24.4
+01413a	cSSStrtSimLayer::Release(void)	Release__15cSSStrtSimLayer	libStrtSim.so	vtable:__vt_15cSSStrtSimLayer
+014165	cSSStrtSimLayer::RevokeDispatchedAirplane(cISC3Occupant *)	RevokeDispatchedAirplane__15cSSStrtSimLayerP13cISC3Occupant	libStrtSim.so	vtable:__vt_15cSSStrtSimLayer
+014243	cSSStrtSimLayer::SetNumZoomLevelsPeopleAreVisible(int)	SetNumZoomLevelsPeopleAreVisible__15cSSStrtSimLayeri	libStrtSim.so	vtable:__vt_15cSSStrtSimLayer
+014270	cSSStrtSimLayer::SetNumZoomLevelsTrafficVisible(int)	SetNumZoomLevelsTrafficVisible__15cSSStrtSimLayeri	libStrtSim.so	vtable:__vt_15cSSStrtSimLayer
+0142bb	cSSStrtSimLayer::Shutdown(void)	Shutdown__15cSSStrtSimLayer	libStrtSim.so	vtable:__vt_15cSSStrtSimLayer
+0146db	cSSStrtSimLayer::SimulationBegin(void)	SimulationBegin__15cSSStrtSimLayer	libStrtSim.so	vtable:__vt_15cSSStrtSimLayer
+014b28	cSSStrtSimLayer::StaticShutdown(void)	StaticShutdown__15cSSStrtSimLayer	libStrtSim.so	vtable:__vt_15cSSStrtSimLayer
+015599	cSSPeopleProducer::AddRef(void)	AddRef__17cSSPeopleProducer	libStrtSim.so	vtable:__vt_17cSSPeopleProducer
+0155a0	cSSStrtSimLayerManipulator::Apply(cISC3CityAgent &)	Apply__26cSSStrtSimLayerManipulatorR14cISC3CityAgent	libStrtSim.so	vtable:__vt_26cSSStrtSimLayerManipulator
+0155ea	cSSStrtSimLayerManipulator::QueryInterface(unsigned int, void **)	QueryInterface__26cSSStrtSimLayerManipulatorUiPPv	libStrtSim.so	vtable:__vt_26cSSStrtSimLayerManipulator
+015613	cSSStrtSimLayerManipulator::Release(void)	Release__26cSSStrtSimLayerManipulator	libStrtSim.so	vtable:__vt_26cSSStrtSimLayerManipulator
+015fad	cSSStrtSimOccupant::GetAlt(void) const	GetAlt__C18cSSStrtSimOccupant	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+015fb4	cSSStrtSimOccupant::GetAltAnimCells(void) const	GetAltAnimCells__C18cSSStrtSimOccupant	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+015fb9	cSSStrtSimOccupant::GetAltWorldUnits(void) const	GetAltWorldUnits__C18cSSStrtSimOccupant	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+015fc0	cSSStrtSimOccupant::GetLocation(cSC3CityCoord &) const	GetLocation__C18cSSStrtSimOccupantR13cSC3CityCoord	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+015fd8	cSSStrtSimOccupant::GetLocationInCellCoords(unsigned int &, unsigned int &) const	GetLocationInCellCoords__C18cSSStrtSimOccupantRUiT1	libStrtSim.so	vtable:__vt_9cSSPerson
+015ff3	cSSStrtSimOccupant::GetBounds(cSC3CityBounds &) const	GetBounds__C18cSSStrtSimOccupantR14cSC3CityBounds	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+016051	cSSStrtSimOccupant::QueryInterface(unsigned int, void **)	QueryInterface__18cSSStrtSimOccupantUiPPv	libStrtSim.so	tokens:8.1
+01607d	cSSVehicle::Release(void)	Release__10cSSVehicle	libStrtSim.so	vtable-thunk:__vt_10cSSVehicle.19cISC3CitySpriteInst
+0160a0	cSSStrtSimOccupant::GetIsInCityFlag(void) const	GetIsInCityFlag__C18cSSStrtSimOccupant	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+0160a5	cSSStrtSimOccupant::SetIsInCityFlag(unsigned int)	SetIsInCityFlag__18cSSStrtSimOccupantUi	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+0160af	cSSStrtSimOccupant::TestIsInCityFlag(unsigned int) const	TestIsInCityFlag__C18cSSStrtSimOccupantUi	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+0160bc	cSSStrtSimOccupant::ClearIsInCityFlag(unsigned int)	ClearIsInCityFlag__18cSSStrtSimOccupantUi	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+0160d8	cSSStrtSimOccupant::SizeInAnimCellsZ(void) const	SizeInAnimCellsZ__C18cSSStrtSimOccupant	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+0160dc	cSSStrtSimOccupant::SetAlt(unsigned char)	SetAlt__18cSSStrtSimOccupantUc	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+0160e8	cSSStrtSimOccupant::SetLocationInCellCoords(unsigned int, unsigned int)	SetLocationInCellCoords__18cSSStrtSimOccupantUiUi	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+01639d	cSSStrtSimTrBlock::QueryInterface(unsigned int, void **)	QueryInterface__17cSSStrtSimTrBlockUiPPv	libStrtSim.so	tokens:8.1
+016464	cSSStrtSimTrBlock::AllowVehicleEntrance(void)	AllowVehicleEntrance__17cSSStrtSimTrBlock	libStrtSim.so	vtable:__vt_17cSSStrtSimTrBlock
+016469	cSSStrtSimTrBlock::BlockPath(cISSVehiclePath *)	BlockPath__17cSSStrtSimTrBlockP15cISSVehiclePath	libStrtSim.so	vtable:__vt_17cSSStrtSimTrBlock
+016487	cSSStrtSimTrBlock::ContainsVehicles(void)	ContainsVehicles__17cSSStrtSimTrBlock	libStrtSim.so	vtable:__vt_17cSSStrtSimTrBlock
+0164d9	cSSStrtSimTrBlock::DisallowVehicleEntrance(void)	DisallowVehicleEntrance__17cSSStrtSimTrBlock	libStrtSim.so	vtable:__vt_17cSSStrtSimTrBlock
+016520	cSSStrtSimTrBlock::EnterVehicle(cISSVehiclePath *, cISSVehicle *, int, bool)	EnterVehicle__17cSSStrtSimTrBlockP15cISSVehiclePathP11cISSVehicleib	libStrtSim.so	vtable:__vt_17cSSStrtSimTrBlock
+016630	cSSStrtSimTrBlock::Init(cGZResourceKey const &)	Init__17cSSStrtSimTrBlockRC14cGZResourceKey	libStrtSim.so	vtable:__vt_17cSSStrtSimTrBlock
+01669c	cSSStrtSimTrBlock::LastVehicle(signed char)	LastVehicle__17cSSStrtSimTrBlockSc	libStrtSim.so	vtable:__vt_17cSSStrtSimTrBlock
+0166df	cSSStrtSimTrBlock::Release(void)	Release__17cSSStrtSimTrBlock	libStrtSim.so	vtable:__vt_17cSSStrtSimTrBlock
+01670a	cSSStrtSimTrBlock::Shutdown(void)	Shutdown__17cSSStrtSimTrBlock	libStrtSim.so	vtable:__vt_17cSSStrtSimTrBlock
+01673f	cSSStrtSimTrBlock::UnblockPath(cISSVehiclePath *)	UnblockPath__17cSSStrtSimTrBlockP15cISSVehiclePath	libStrtSim.so	vtable:__vt_17cSSStrtSimTrBlock
+01675f	cSSStrtSimTrBlock::VehicleLeftPath(signed char, cISSVehicle *)	VehicleLeftPath__17cSSStrtSimTrBlockScP11cISSVehicle	libStrtSim.so	vtable:__vt_17cSSStrtSimTrBlock
+0167fe	cSSStrtSimTrBlockAttrib::LinesIntersect(cSC3CityCoord const &, cSC3CityCoord const &, cSC3CityCoord const &, cSC3CityCoord const &)	LinesIntersect__23cSSStrtSimTrBlockAttribRC13cSC3CityCoordN31	libStrtSim.so	tokens:16.3
+016c1c	cSSStrtSimTrBlockAttrib::Init(void)	Init__23cSSStrtSimTrBlockAttrib	libStrtSim.so	caller
+017de7	cSSPeopleProducerAttrib::DebugInstanceTag(cIGZString &)	DebugInstanceTag__23cSSPeopleProducerAttribR10cIGZString	libStrtSim.so	vtable:__vt_23cSSPeopleProducerAttrib
+018700	cSSVehicle::CallScriptFunction(cSSStrtSimScript::tInstruction *)	CallScriptFunction__10cSSVehiclePQ216cSSStrtSimScript12tInstruction	libStrtSim.so	vtable:__vt_7cSSBoat
+018750	virtual function thunk (delta:-24) for cSSVehicle::ChangePosition(cSC3CityCoord &)	__thunk_24_ChangePosition__10cSSVehicleR13cSC3CityCoord	libStrtSim.so	vtable:__vt_10cSSVehicle.11cISSVehicle
+0188f0	cSSVehicle::GetBoundingRectInCellCoords(sIGZRectUint32 &) const	GetBoundingRectInCellCoords__C10cSSVehicleR14sIGZRectUint32	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+018930	cSSVehicle::GetBoundingRectInAnimCellCoords(sIGZRectUint32 &) const	GetBoundingRectInAnimCellCoords__C10cSSVehicleR14sIGZRectUint32	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+018a70	virtual function thunk (delta:-24) for cSSVehicle::GetTrueBoundingRect(sIGZPointXZSint32 *) const	__thunk_24_GetTrueBoundingRect__C10cSSVehicleP17sIGZPointXZSint32	libStrtSim.so	vtable:__vt_10cSSVehicle.11cISSVehicle
+018c10	virtual function thunk (delta:-24) for cSSVehicle::GetCenterOfMass(sIGZPointXZSint32 &) const	__thunk_24_GetCenterOfMass__C10cSSVehicleR17sIGZPointXZSint32	libStrtSim.so	vtable:__vt_10cSSVehicle.11cISSVehicle
+019660	cSSVehicle::ComputePitch(void)	ComputePitch__10cSSVehicle	libStrtSim.so	tokens:8.1
+019750	cSSVehicle::cSSVehicle(void)	__10cSSVehicle	libStrtSim.so	tokens:16.3
+019900	virtual function thunk (delta:-24) for cSSVehicle::DistanceToBack(int, cISSVehiclePath *)	__thunk_24_DistanceToBack__10cSSVehicleiP15cISSVehiclePath	libStrtSim.so	vtable:__vt_10cSSVehicle.11cISSVehicle
+0199b0	virtual function thunk (delta:-28) for cSSVehicle::Draw(cIGZBuffer *, cRZRect const &, int, int, cRZRect *) const	__thunk_28_Draw__C10cSSVehicleP10cIGZBufferRC7cRZRectiiP7cRZRect	libStrtSim.so	vtable:__vt_10cSSVehicle.19cISC3CitySpriteInst
+019d40	virtual function thunk (delta:-24) for cSSVehicle::FollowerDisappeared(cISSVehicle *)	__thunk_24_FollowerDisappeared__10cSSVehicleP11cISSVehicle	libStrtSim.so	vtable:__vt_10cSSVehicle.11cISSVehicle
+01a440	cSSVehicle::QueryAltitudeAndComputeSpeedComponents(float, float, int, int, float &, float &)	QueryAltitudeAndComputeSpeedComponents__10cSSVehicleffiiRfT5	libStrtSim.so	tokens:29.3
+01a950	cSSParadeBlock::GetAllSpans(int, int, cRZRect &) const	GetAllSpans__C14cSSParadeBlockiiR7cRZRect	libStrtSim.so	vtable-thunk:__vt_14cSSParadeBlock.19cISC3CitySpriteInst
+01aa10	virtual function thunk (delta:-28) for cSSVehicle::GetAreaFromPt(int, int, cRZRect &, int, int) const	__thunk_28_GetAreaFromPt__C10cSSVehicleiiR7cRZRectii	libStrtSim.so	vtable:__vt_10cSSVehicle.19cISC3CitySpriteInst
+01aa80	virtual function thunk (delta:-28) for cSSVehicle::GetH(int, int) const	__thunk_28_GetH__C10cSSVehicleii	libStrtSim.so	vtable:__vt_14cSSParadeBlock.19cISC3CitySpriteInst
+01ab60	virtual function thunk (delta:-28) for cSSVehicle::GetW(int, int) const	__thunk_28_GetW__C10cSSVehicleii	libStrtSim.so	vtable:__vt_10cSSVehicle.19cISC3CitySpriteInst
+01ae20	virtual function thunk (delta:-24) for cSSVehicle::IsEmergencyVehicle(void)	__thunk_24_IsEmergencyVehicle__10cSSVehicle	libStrtSim.so	vtable:__vt_10cSSVehicle.11cISSVehicle
+01ae30	virtual function thunk (delta:-28) for cSSVehicle::IsPixelOpaque(int, int, int, int) const	__thunk_28_IsPixelOpaque__C10cSSVehicleiiii	libStrtSim.so	vtable:__vt_10cSSVehicle.19cISC3CitySpriteInst
+01aea0	virtual function thunk (delta:-24) for cSSVehicle::LastMovementDist(void)	__thunk_24_LastMovementDist__10cSSVehicle	libStrtSim.so	vtable:__vt_10cSSVehicle.11cISSVehicle
+01aec0	virtual function thunk (delta:-24) for cSSVehicle::LeaderDisappeared(cISSVehicle *)	__thunk_24_LeaderDisappeared__10cSSVehicleP11cISSVehicle	libStrtSim.so	vtable:__vt_10cSSVehicle.11cISSVehicle
+01aed0	virtual function thunk (delta:-24) for cSSVehicle::LeaderEnteredPath(cISSVehiclePath *)	__thunk_24_LeaderEnteredPath__10cSSVehicleP15cISSVehiclePath	libStrtSim.so	vtable:__vt_10cSSVehicle.11cISSVehicle
+01af70	cSSVehicle::LeaveLastPath(void)	LeaveLastPath__10cSSVehicle	libStrtSim.so	vtable:__vt_7cSSBoat
+01b010	virtual function thunk (delta:-24) for cSSVehicle::Width(void) const	__thunk_24_Width__C10cSSVehicle	libStrtSim.so	vtable:__vt_10cSSVehicle.11cISSVehicle
+01b020	virtual function thunk (delta:-24) for cSSVehicle::Length(void) const	__thunk_24_Length__C10cSSVehicle	libStrtSim.so	vtable:__vt_10cSSVehicle.11cISSVehicle
+01b030	cSSVehicle::MakeCurrentPath(cISSVehiclePath *)	MakeCurrentPath__10cSSVehicleP15cISSVehiclePath	libStrtSim.so	vtable:__vt_7cSSBoat
+01c000	virtual function thunk (delta:-28) for cSSVehicle::Prepare(int, int, bool)	__thunk_28_Prepare__10cSSVehicleiib	libStrtSim.so	vtable:__vt_10cSSVehicle.19cISC3CitySpriteInst
+01c210	cSSVehicle::QueryInterface(unsigned int, void **)	QueryInterface__10cSSVehicleUiPPv	libStrtSim.so	tokens:15.6
+01c290	cSSVehicle::SelectAnEdge(tVPathGraphNode *, int, int)	SelectAnEdge__10cSSVehicleP15tVPathGraphNodeii	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+01c510	cSSVehicle::SelectPath(cISC3Occupant *)	SelectPath__10cSSVehicleP13cISC3Occupant	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+01c920	virtual function thunk (delta:-24) for cSSVehicle::SetFollower(cISSVehicle *)	__thunk_24_SetFollower__10cSSVehicleP11cISSVehicle	libStrtSim.so	vtable:__vt_10cSSVehicle.11cISSVehicle
+01c930	virtual function thunk (delta:-24) for cSSVehicle::SetFollowingVehicle(cISSVehicle *)	__thunk_24_SetFollowingVehicle__10cSSVehicleP11cISSVehicle	libStrtSim.so	vtable:__vt_10cSSVehicle.11cISSVehicle
+01c960	virtual function thunk (delta:-24) for cSSVehicle::SetLeader(cISSVehicle *)	__thunk_24_SetLeader__10cSSVehicleP11cISSVehicle	libStrtSim.so	vtable:__vt_10cSSVehicle.11cISSVehicle
+01c970	virtual function thunk (delta:-24) for cSSVehicle::SetOrientation(unsigned char)	__thunk_24_SetOrientation__10cSSVehicleUc	libStrtSim.so	vtable:__vt_10cSSVehicle.11cISSVehicle
+01c990	cSSVehicle::SetProducer(cISSVehicleProducer *)	SetProducer__10cSSVehicleP19cISSVehicleProducer	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+01c9b0	cSSVehicle::SetVisibility(bool)	SetVisibility__10cSSVehicleb	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+01d2c0	cSSVehicle::Tick(unsigned int)	Tick__10cSSVehicleUi	libStrtSim.so	vtable-thunk:__vt_10cSSVehicle.19cISC3CitySpriteInst
+01d410	virtual function thunk (delta:-24) for cSSVehicle::TickFromLeader(void)	__thunk_24_TickFromLeader__10cSSVehicle	libStrtSim.so	vtable:__vt_10cSSVehicle.11cISSVehicle
+01d470	virtual function thunk (delta:-28) for cSSVehicle::Unprepare(int, int)	__thunk_28_Unprepare__10cSSVehicleii	libStrtSim.so	vtable:__vt_10cSSVehicle.19cISC3CitySpriteInst
+01e241	cSSStrtSimOccupant::AnimStart(void)	AnimStart__18cSSStrtSimOccupant	libStrtSim.so	vtable:__vt_12cSSRiotCrowd
+01eec4	cSSVehicleProducer::NeedVehicleDisappear(cISSVehicle *, unsigned short &)	NeedVehicleDisappear__18cSSVehicleProducerP11cISSVehicleRUs	libStrtSim.so	vtable:__vt_18cSSVehicleProducer
+01f229	cSSVehicleProducer::Release(void)	Release__18cSSVehicleProducer	libStrtSim.so	vtable:__vt_18cSSVehicleProducer
+01f3db	cSSVehicleProducer::Shutdown(void)	Shutdown__18cSSVehicleProducer	libStrtSim.so	vtable:__vt_18cSSVehicleProducer
+01f44a	cSSVehicleProducer::Tick(unsigned int)	Tick__18cSSVehicleProducerUi	libStrtSim.so	tokens:16.3
+01f610	cSSVehicleProducer::VehicleDisappears(cISSVehicle *)	VehicleDisappears__18cSSVehicleProducerP11cISSVehicle	libStrtSim.so	vtable:__vt_18cSSVehicleProducer
+01f8b3	cSSVehicleProducerAttrib::~cSSVehicleProducerAttrib(void)	_._24cSSVehicleProducerAttrib	libStrtSim.so	vtable:__vt_24cSSVehicleProducerAttrib
+01f942	virtual function thunk (delta:-20) for cSSPeopleProducerAttrib::GetResKey(cGZResourceKey &) const	__thunk_20_GetResKey__C23cSSPeopleProducerAttribR14cGZResourceKey	libStrtSim.so	vtable:__vt_23cSSPeopleProducerAttrib.24cISSPeopleProducerAttrib
+01f95c	cSSVehicleProducerAttrib::QueryInterface(unsigned int, void **)	QueryInterface__24cSSVehicleProducerAttribUiPPv	libStrtSim.so	tokens:8.1
+01fd71	virtual function thunk (delta:-20) for cSSVehicleProducerAttrib::QueryInterface(unsigned int, void **)	__thunk_20_QueryInterface__24cSSVehicleProducerAttribUiPPv	libStrtSim.so	caller
+01fd79	virtual function thunk (delta:-20) for cSSPeopleProducerAttrib::AddRef(void)	__thunk_20_AddRef__23cSSPeopleProducerAttrib	libStrtSim.so	vtable:__vt_23cSSPeopleProducerAttrib.24cISSPeopleProducerAttrib
+0201d8	cSSVPathGraphAttrib::Init(void)	Init__19cSSVPathGraphAttrib	libStrtSim.so	callee
+021789	cRZCOMDllDirector::OnStart(cIGZCOM *)	OnStart__17cRZCOMDllDirectorP7cIGZCOM	libStrtSim.so	tokens:16.3
+024486	cRZCOMDllDirector::QueryInterface(unsigned int, void **)	QueryInterface__17cRZCOMDllDirectorUiPPv	libStrtSim.so	tokens:16.3
+02476f	cSSStrtSimLayer::SimulationEnd(void)	SimulationEnd__15cSSStrtSimLayer	libStrtSim.so	vtable:__vt_15cSSStrtSimLayer
+025196	cSSStrikeCrowdProducer::VehicleDisappears(cISSVehicle *)	VehicleDisappears__22cSSStrikeCrowdProducerP11cISSVehicle	libStrtSim.so	vtable:__vt_22cSSStrikeCrowdProducer
+0260e4	cSSPeopleProducerAttrib::Release(void)	Release__23cSSPeopleProducerAttrib	libStrtSim.so	vtable-thunk:__vt_23cSSPeopleProducerAttrib.24cIGZSerializableResource
+026c7f	cSSParadeBlock::DoMessage(cGZMessage &)	DoMessage__14cSSParadeBlockR10cGZMessage	libStrtSim.so	vtable:__vt_14cSSParadeBlock

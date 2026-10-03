@@ -1,0 +1,94 @@
+rva	demangled	mangled	source	method
+001000	aboutbmp	aboutbmp	libGimex.so	tokens:27.1
+001be0	cGZGimexLib::GZwclosebmp(GINSTANCE *)	GZwclosebmp__11cGZGimexLibP9GINSTANCE	libGimex.so	vtable-thunk:__vt_11cGZGimexLib
+001bf4	cGZGimexLib::GZwopenjpg(GINSTANCE **, void *, char *, int)	GZwopenjpg__11cGZGimexLibPP9GINSTANCEPvPci	libGimex.so	vtable-thunk:__vt_11cGZGimexLib
+001c2b	writebmp	writebmp	libGimex.so	tokens:31.1
+00235d	aboutgif	aboutgif	libGimex.so	tokens:19.2
+003322	GifPutNetscapeBlock	GifPutNetscapeBlock	libGimex.so	tokens:7.1
+0033bc	EGifPutScreenDesc	EGifPutScreenDesc	libGimex.so	caller
+003b12	writegif	writegif	libGimex.so	caller
+003d3c	cGZGimexFactory::AddRef(void)	AddRef__15cGZGimexFactory	libGimex.so	vtable-thunk:__vt_15cGZGimexFactory
+003d67	RZGetCOMDllDirector_Gimex(void)	RZGetCOMDllDirector_Gimex__Fv	libGimex.so	tokens:14.2
+003dc3	cRZCOMDllDirector::OnUnload(void)	OnUnload__17cRZCOMDllDirector	libGimex.so	vtable:__vt_14cGXCOMDirector
+003dc6	cGXCOMDirector::GetDirectorID(void) const	GetDirectorID__C14cGXCOMDirector	libGimex.so	tokens:7.1
+003e30	cGXCOMDirector::~cGXCOMDirector(void)	_._14cGXCOMDirector	libGimex.so	vtable:__vt_14cGXCOMDirector
+003e68	virtual function thunk (delta:-4) for cRZCOMDllDirector::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__17cRZCOMDllDirectorUiPPv	libGimex.so	caller
+003ee7	cGZGimexFactory::~cGZGimexFactory(void)	_._15cGZGimexFactory	libGimex.so	vtable:__vt_15cGZGimexFactory
+003f0a	cGZGimexFactory::QueryInterface(unsigned int, void **)	QueryInterface__15cGZGimexFactoryUiPPv	libGimex.so	vtable:__vt_15cGZGimexFactory
+003f2c	cGZGimexFactory::Release(void)	Release__15cGZGimexFactory	libGimex.so	vtable:__vt_15cGZGimexFactory
+003f5c	cGZGimexFactory::LoadFromFile(cIGZString const &, cIGZBuffer **, cIGZBuffer::eVRAMRequestType, cGZBufferColorType)	LoadFromFile__15cGZGimexFactoryRC10cIGZStringPP10cIGZBufferQ210cIGZBuffer16eVRAMRequestTypeG18cGZBufferColorType	libGimex.so	vtable:__vt_15cGZGimexFactory
+004520	cGZGimexFactory::GetGimexLib(unsigned int, void **)	GetGimexLib__15cGZGimexFactoryUiPPv	libGimex.so	vtable:__vt_15cGZGimexFactory
+0045b0	cGZGimexFactory::SaveToFile(cIGZString const &, cIGZBuffer &, cRZRect &, unsigned int)	SaveToFile__15cGZGimexFactoryRC10cIGZStringR10cIGZBufferR7cRZRectUi	libGimex.so	tokens:26.3
+0048d1	cGZGimexFactory::IsBlackBuffer(cIGZBuffer &)	IsBlackBuffer__15cGZGimexFactoryR10cIGZBuffer	libGimex.so	vtable:__vt_15cGZGimexFactory
+004902	cGZGimexFactory::IsBlackBufferRect(cIGZBuffer &, cRZRect &)	IsBlackBufferRect__15cGZGimexFactoryR10cIGZBufferR7cRZRect	libGimex.so	vtable:__vt_15cGZGimexFactory
+0049cc	cGZGimexLib::~cGZGimexLib(void)	_._11cGZGimexLib	libGimex.so	vtable:__vt_11cGZGimexLib
+0049ef	cGZGimexLib::QueryInterface(unsigned int, void **)	QueryInterface__11cGZGimexLibUiPPv	libGimex.so	tokens:7.1
+004a14	cGZGimexLib::AddRef(void)	AddRef__11cGZGimexLib	libGimex.so	vtable:__vt_11cGZGimexLib
+004a2b	cGZGimexLib::Release(void)	Release__11cGZGimexLib	libGimex.so	vtable:__vt_11cGZGimexLib
+004a5e	cGZGimexLib::LibraryMajorVersion(void)	LibraryMajorVersion__11cGZGimexLib	libGimex.so	vtable:__vt_11cGZGimexLib
+004a62	cGZGimexLib::LibraryMinorVersion(void)	LibraryMinorVersion__11cGZGimexLib	libGimex.so	vtable:__vt_11cGZGimexLib
+004a6b	cGZGimexLib::GZisgimex(void *)	GZisgimex__11cGZGimexLibPv	libGimex.so	vtable:__vt_11cGZGimexLib
+004a77	cGZGimexLib::GZopengimex(GINSTANCE **, void *, char const *)	GZopengimex__11cGZGimexLibPP9GINSTANCEPvPCc	libGimex.so	vtable:__vt_11cGZGimexLib
+004a8b	cGZGimexLib::GZinfogimex(GINSTANCE *, int)	GZinfogimex__11cGZGimexLibP9GINSTANCEi	libGimex.so	vtable:__vt_11cGZGimexLib
+004a9b	cGZGimexLib::GZreadgimex(GINSTANCE *, GINFO *, char *, int)	GZreadgimex__11cGZGimexLibP9GINSTANCEP5GINFOPci	libGimex.so	vtable:__vt_11cGZGimexLib
+004ab3	cGZGimexLib::GZclosegimex(GINSTANCE *)	GZclosegimex__11cGZGimexLibP9GINSTANCE	libGimex.so	vtable:__vt_11cGZGimexLib
+004abf	cGZGimexLib::GZwopengimex(GINSTANCE **, void *, char const *, int)	GZwopengimex__11cGZGimexLibPP9GINSTANCEPvPCci	libGimex.so	vtable:__vt_11cGZGimexLib
+004ad7	cGZGimexLib::GZwritegimex(GINSTANCE *, GINFO *, char *, int)	GZwritegimex__11cGZGimexLibP9GINSTANCEP5GINFOPci	libGimex.so	vtable:__vt_11cGZGimexLib
+004aef	cGZGimexLib::GZwclosegimex(GINSTANCE *)	GZwclosegimex__11cGZGimexLibP9GINSTANCE	libGimex.so	vtable:__vt_11cGZGimexLib
+004afb	cGZGimexLib::GZgopenstreamgimex(char const *, void *)	GZgopenstreamgimex__11cGZGimexLibPCcPv	libGimex.so	vtable:__vt_11cGZGimexLib
+004b0b	cGZGimexLib::GZgopengimex(char const *, char *)	GZgopengimex__11cGZGimexLibPCcPc	libGimex.so	vtable:__vt_11cGZGimexLib
+004b1b	cGZGimexLib::GZsetgimex(int)	GZsetgimex__11cGZGimexLibi	libGimex.so	vtable:__vt_11cGZGimexLib
+004b2c	cGZGimexLib::GZfindgimex(char *, int *)	GZfindgimex__11cGZGimexLibPcPi	libGimex.so	vtable:__vt_11cGZGimexLib
+004b41	cGZGimexLib::GZgfreebitmap(GBITMAP *)	GZgfreebitmap__11cGZGimexLibP7GBITMAP	libGimex.so	vtable:__vt_11cGZGimexLib
+004b4d	cGZGimexLib::GZEZLoadFrame(char const *, int)	GZEZLoadFrame__11cGZGimexLibPCci	libGimex.so	vtable:__vt_11cGZGimexLib
+004b62	cGZGimexLib::GZisbmp(void *)	GZisbmp__11cGZGimexLibPv	libGimex.so	vtable:__vt_11cGZGimexLib
+004b6e	cGZGimexLib::GZopenbmp(GINSTANCE **, void *, char *)	GZopenbmp__11cGZGimexLibPP9GINSTANCEPvPc	libGimex.so	vtable:__vt_11cGZGimexLib
+004b82	cGZGimexLib::GZinfobmp(GINSTANCE *, int)	GZinfobmp__11cGZGimexLibP9GINSTANCEi	libGimex.so	vtable:__vt_11cGZGimexLib
+004b92	cGZGimexLib::GZreadbmp(GINSTANCE *, GINFO *, char *, int)	GZreadbmp__11cGZGimexLibP9GINSTANCEP5GINFOPci	libGimex.so	vtable:__vt_11cGZGimexLib
+004baa	cGZGimexLib::GZwopenbmp(GINSTANCE **, void *, char *, int)	GZwopenbmp__11cGZGimexLibPP9GINSTANCEPvPci	libGimex.so	vtable:__vt_11cGZGimexLib
+004bc2	cGZGimexLib::GZwritebmp(GINSTANCE *, GINFO *, char *, int)	GZwritebmp__11cGZGimexLibP9GINSTANCEP5GINFOPci	libGimex.so	vtable:__vt_11cGZGimexLib
+004bda	cGZGimexLib::GZaboutgif(void)	GZaboutgif__11cGZGimexLib	libGimex.so	vtable:__vt_11cGZGimexLib
+004be2	cGZGimexLib::GZisjpg(void *)	GZisjpg__11cGZGimexLibPv	libGimex.so	vtable:__vt_11cGZGimexLib
+004bee	cGZGimexLib::GZopenjpg(GINSTANCE **, void *, char *)	GZopenjpg__11cGZGimexLibPP9GINSTANCEPvPc	libGimex.so	vtable:__vt_11cGZGimexLib
+004c02	cGZGimexLib::GZinfojpg(GINSTANCE *, int)	GZinfojpg__11cGZGimexLibP9GINSTANCEi	libGimex.so	vtable:__vt_11cGZGimexLib
+004c12	cGZGimexLib::GZreadjpg(GINSTANCE *, GINFO *, char *, int)	GZreadjpg__11cGZGimexLibP9GINSTANCEP5GINFOPci	libGimex.so	vtable:__vt_11cGZGimexLib
+004c2a	cGZGimexLib::GZwritejpg(GINSTANCE *, GINFO *, char *, int)	GZwritejpg__11cGZGimexLibP9GINSTANCEP5GINFOPci	libGimex.so	vtable:__vt_11cGZGimexLib
+004c42	cGZGimexLib::GZclosebmp(GINSTANCE *)	GZclosebmp__11cGZGimexLibP9GINSTANCE	libGimex.so	vtable:__vt_11cGZGimexLib
+0054a0	gopenstreamgimex	gopenstreamgimex	libGimex.so	tokens:13.5
+0055e9	gopengimex	gopengimex	libGimex.so	tokens:13.1
+005801	setgimex	setgimex	libGimex.so	callee
+005906	EZLoadFrame	EZLoadFrame	libGimex.so	caller
+005a88	gfree	gfree	libGimex.so	tokens:46.5
+005b84	gopen	gopen	libGimex.so	tokens:37.6
+005c8c	gclose	gclose	libGimex.so	callee
+005cb8	gread	gread	libGimex.so	tokens:13.1
+005d59	gwrite	gwrite	libGimex.so	tokens:7.1
+0092b2	jpeg_set_linear_quality	jpeg_set_linear_quality	libGimex.so	tokens:28.1
+009326	jpeg_set_defaults	jpeg_set_defaults	libGimex.so	caller
+0094a1	jpeg_default_colorspace	jpeg_default_colorspace	libGimex.so	callee
+011932	jpeg_fdct_float	jpeg_fdct_float	libGimex.so	tokens:28.5
+01200d	jpeg_idct_float	jpeg_idct_float	libGimex.so	tokens:21.4
+012cac	jpeg_idct_4x4	jpeg_idct_4x4	libGimex.so	tokens:34.9
+012fb6	jpeg_idct_2x2	jpeg_idct_2x2	libGimex.so	tokens:21.4
+0131c3	jpeg_open_backing_store	jpeg_open_backing_store	libGimex.so	tokens:13.8
+0132ce	jpeg_mem_init	jpeg_mem_init	libGimex.so	tokens:7.1
+0132d5	jinit_memory_mgr	jinit_memory_mgr	libGimex.so	tokens:28.5
+013d8f	JPGmarkerparser	JPGmarkerparser	libGimex.so	tokens:12.2
+016445	aboutnil	aboutnil	libGimex.so	tokens:13.1
+0164e8	cGZGimexLib::GZopengif(GINSTANCE **, void *, char *)	GZopengif__11cGZGimexLibPP9GINSTANCEPvPc	libGimex.so	vtable:__vt_11cGZGimexLib
+0164ed	cGZGimexLib::GZinfogif(GINSTANCE *, int)	GZinfogif__11cGZGimexLibP9GINSTANCEi	libGimex.so	vtable:__vt_11cGZGimexLib
+0164f2	cGZGimexLib::GZreadgif(GINSTANCE *, GINFO *, char *, int)	GZreadgif__11cGZGimexLibP9GINSTANCEP5GINFOPci	libGimex.so	vtable:__vt_11cGZGimexLib
+0164f7	cGZGimexLib::GZisgif(void *)	GZisgif__11cGZGimexLibPv	libGimex.so	vtable:__vt_11cGZGimexLib
+0165f9	cRZCOMDllDirector::QueryInterface(unsigned int, void **)	QueryInterface__17cRZCOMDllDirectorUiPPv	libGimex.so	tokens:14.2
+01663a	cRZCOMDllDirector::FrameWork(void)	FrameWork__17cRZCOMDllDirector	libGimex.so	vtable:__vt_14cGXCOMDirector
+01664a	cRZCOMDllDirector::RemoveRef(void)	RemoveRef__17cRZCOMDllDirector	libGimex.so	vtable:__vt_14cGXCOMDirector
+016659	cRZCOMDllDirector::RefCount(void)	RefCount__17cRZCOMDllDirector	libGimex.so	vtable:__vt_14cGXCOMDirector
+01665d	cRZCOMDllDirector::InitializeCOM(cIGZCOM *, cIGZString &)	InitializeCOM__17cRZCOMDllDirectorP7cIGZCOMR10cIGZString	libGimex.so	vtable:__vt_14cGXCOMDirector
+01672b	cRZCOMDllDirector::GetClassObject(unsigned int, unsigned int, void **)	GetClassObject__17cRZCOMDllDirectorUiUiPPv	libGimex.so	vtable:__vt_14cGXCOMDirector
+0167ac	cRZCOMDllDirector::EnumClassObjects(void (*)(unsigned int, unsigned int, void *), void *)	EnumClassObjects__17cRZCOMDllDirectorPFUiUiPv_vPv	libGimex.so	vtable:__vt_14cGXCOMDirector
+016800	cRZCOMDllDirector::ModuleName(cIGZString &)	ModuleName__17cRZCOMDllDirectorR10cIGZString	libGimex.so	vtable:__vt_14cGXCOMDirector
+016814	cRZCOMDllDirector::AddDirector(cRZCOMDllDirector *)	AddDirector__17cRZCOMDllDirectorP17cRZCOMDllDirector	libGimex.so	vtable:__vt_14cGXCOMDirector
+01685e	cRZCOMDllDirector::CanUnloadNow(void)	CanUnloadNow__17cRZCOMDllDirector	libGimex.so	vtable:__vt_14cGXCOMDirector
+0168b5	cRZCOMDllDirector::AppRegister(cIGZRegistry *)	AppRegister__17cRZCOMDllDirectorP12cIGZRegistry	libGimex.so	vtable:__vt_14cGXCOMDirector
+0168e5	cRZCOMDllDirector::GZCOM(void)	GZCOM__17cRZCOMDllDirector	libGimex.so	vtable:__vt_14cGXCOMDirector
+016954	cRZCOMDllDirector::OnStart(cIGZCOM *)	OnStart__17cRZCOMDllDirectorP7cIGZCOM	libGimex.so	tokens:14.2

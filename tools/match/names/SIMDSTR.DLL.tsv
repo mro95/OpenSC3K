@@ -1,0 +1,337 @@
+rva	demangled	mangled	source	method
+0012ca	cSC3EarthquakeDisasterManager::~cSC3EarthquakeDisasterManager(void)	_._29cSC3EarthquakeDisasterManager	libSimDstr.so	vtable:__vt_29cSC3EarthquakeDisasterManager
+001453	virtual function thunk (delta:-20) for cSC3EarthquakeDisasterManager::DoMessage(cGZMessage &)	__thunk_20_DoMessage__29cSC3EarthquakeDisasterManagerR10cGZMessage	libSimDstr.so	vtable:__vt_29cSC3EarthquakeDisasterManager.17cIGZMessageTarget
+0014ec	cSC3EarthquakeDisasterManager::StartEarthquake(float, bool)	StartEarthquake__29cSC3EarthquakeDisasterManagerfb	libSimDstr.so	tokens:15.3
+001626	virtual function thunk (delta:-16) for cSC3EarthquakeDisasterManager::GetDisasterHistory(cISC3DisasterEarthquakeInstance::EarthquakeRecord *, unsigned int &) const	__thunk_16_GetDisasterHistory__C29cSC3EarthquakeDisasterManagerPQ231cISC3DisasterEarthquakeInstance16EarthquakeRecordRUi	libSimDstr.so	vtable:__vt_29cSC3EarthquakeDisasterManager.30cISC3EarthquakeDisasterManager
+001699	virtual function thunk (delta:-16) for cSC3EarthquakeDisasterManager::GetLastDisasterHistory(cISC3DisasterEarthquakeInstance::EarthquakeRecord *) const	__thunk_16_GetLastDisasterHistory__C29cSC3EarthquakeDisasterManagerPQ231cISC3DisasterEarthquakeInstance16EarthquakeRecord	libSimDstr.so	vtable:__vt_29cSC3EarthquakeDisasterManager.30cISC3EarthquakeDisasterManager
+0016c0	cSC3EarthquakeDisasterManager::QueryInterface(unsigned int, void **)	QueryInterface__29cSC3EarthquakeDisasterManagerUiPPv	libSimDstr.so	tokens:8.0
+001704	cSC3EarthquakeDisasterManager::StaticInit(void)	StaticInit__29cSC3EarthquakeDisasterManager	libSimDstr.so	tokens:328.8
+001dea	cSC3EarthquakeDisasterManager::Save(cISC3City *, cIGZDBSegment *)	Save__29cSC3EarthquakeDisasterManagerP9cISC3CityP13cIGZDBSegment	libSimDstr.so	tokens:22.0
+001fa6	virtual function thunk (delta:-12) for cSC3EarthquakeDisasterManager::StopInstance(cISC3DisasterInstance *)	__thunk_12_StopInstance__29cSC3EarthquakeDisasterManagerP21cISC3DisasterInstance	libSimDstr.so	vtable:__vt_29cSC3EarthquakeDisasterManager.20cISC3DisasterManager
+001fb2	virtual function thunk (delta:-12) for cSC3EarthquakeDisasterManager::Tick(void)	__thunk_12_Tick__29cSC3EarthquakeDisasterManager	libSimDstr.so	vtable:__vt_29cSC3EarthquakeDisasterManager.20cISC3DisasterManager
+0023c0	cSC3EarthquakeDisasterInstance::GetDisasterID(void)	GetDisasterID__30cSC3EarthquakeDisasterInstance	libSimDstr.so	vtable:__vt_30cSC3EarthquakeDisasterInstance
+0023c6	cSC3EarthquakeDisasterInstance::Manager(void)	Manager__30cSC3EarthquakeDisasterInstance	libSimDstr.so	vtable:__vt_30cSC3EarthquakeDisasterInstance
+0023d7	virtual function thunk (delta:-4) for cSC3EarthquakeDisasterInstance::GetRichterScale(void) const	__thunk_4_GetRichterScale__C30cSC3EarthquakeDisasterInstance	libSimDstr.so	vtable:__vt_30cSC3EarthquakeDisasterInstance.31cISC3DisasterEarthquakeInstance
+0023f4	virtual function thunk (delta:-4) for cSC3SmiteDisasterInstance::GetSmiteLevel(void) const	__thunk_4_GetSmiteLevel__C25cSC3SmiteDisasterInstance	libSimDstr.so	vtable:__vt_25cSC3SmiteDisasterInstance.26cISC3DisasterSmiteInstance
+0027cb	cSC3EarthquakeDisasterManager::StopInstance(cISC3DisasterInstance *)	StopInstance__29cSC3EarthquakeDisasterManagerP21cISC3DisasterInstance	libSimDstr.so	vtable-thunk:__vt_29cSC3EarthquakeDisasterManager.20cISC3DisasterManager
+0028ad	cSC3EarthquakeDisasterInstance::GetDirectlyAffectedCells(sIGZRectUint32 &)	GetDirectlyAffectedCells__30cSC3EarthquakeDisasterInstanceR14sIGZRectUint32	libSimDstr.so	vtable:__vt_30cSC3EarthquakeDisasterInstance
+002901	cSC3EarthquakeDisasterInstance::GetLocation(unsigned int &, unsigned int &)	GetLocation__30cSC3EarthquakeDisasterInstanceRUiT1	libSimDstr.so	vtable:__vt_30cSC3EarthquakeDisasterInstance
+00291e	virtual function thunk (delta:-4) for cSC3EarthquakeDisasterInstance::GetEpicenterMicro(int &, int &, int &) const	__thunk_4_GetEpicenterMicro__C30cSC3EarthquakeDisasterInstanceRiN21	libSimDstr.so	vtable:__vt_30cSC3EarthquakeDisasterInstance.31cISC3DisasterEarthquakeInstance
+00293c	virtual function thunk (delta:-4) for cSC3EarthquakeDisasterInstance::GetFaultlineMicro(int &, int &, int &, int &, int &, int &) const	__thunk_4_GetFaultlineMicro__C30cSC3EarthquakeDisasterInstanceRiN51	libSimDstr.so	vtable:__vt_30cSC3EarthquakeDisasterInstance.31cISC3DisasterEarthquakeInstance
+002973	cSC3EarthquakeDisasterInstance::IsActive(void)	IsActive__30cSC3EarthquakeDisasterInstance	libSimDstr.so	vtable:__vt_30cSC3EarthquakeDisasterInstance
+00297e	cSC3EarthquakeDisasterInstance::PanicEffect(unsigned int)	PanicEffect__30cSC3EarthquakeDisasterInstanceUi	libSimDstr.so	vtable:__vt_30cSC3EarthquakeDisasterInstance
+002998	cSC3EarthquakeDisasterInstance::PanicRadius(void)	PanicRadius__30cSC3EarthquakeDisasterInstance	libSimDstr.so	vtable:__vt_30cSC3EarthquakeDisasterInstance
+0029a7	virtual function thunk (delta:-4) for cSC3EarthquakeDisasterInstance::GetCurrentEarthquakeRecord(cISC3DisasterEarthquakeInstance::EarthquakeRecord &)	__thunk_4_GetCurrentEarthquakeRecord__30cSC3EarthquakeDisasterInstanceRQ231cISC3DisasterEarthquakeInstance16EarthquakeRecord	libSimDstr.so	vtable:__vt_30cSC3EarthquakeDisasterInstance.31cISC3DisasterEarthquakeInstance
+0029bd	cSC3EarthquakeDisasterInstance::QueryInterface(unsigned int, void **)	QueryInterface__30cSC3EarthquakeDisasterInstanceUiPPv	libSimDstr.so	vtable-thunk:__vt_30cSC3EarthquakeDisasterInstance.31cISC3DisasterEarthquakeInstance
+0029fe	cSC3EarthquakeDisasterInstance::Tick(cISC3DisasterLayer::tTickType)	Tick__30cSC3EarthquakeDisasterInstanceQ218cISC3DisasterLayer9tTickType	libSimDstr.so	vtable:__vt_30cSC3EarthquakeDisasterInstance
+002eb5	virtual function thunk (delta:-8) for cSC3EarthquakeDisasterInstance::DoMessage(cGZMessage &)	__thunk_8_DoMessage__30cSC3EarthquakeDisasterInstanceR10cGZMessage	libSimDstr.so	vtable:__vt_30cSC3EarthquakeDisasterInstance.17cIGZMessageTarget
+002ee6	cSC3EarthquakeDisasterInstance::ModifyTerrain(unsigned int, unsigned int)	ModifyTerrain__30cSC3EarthquakeDisasterInstanceUiUi	libSimDstr.so	tokens:29.3
+00438d	cSC3EarthquakeDisasterInstance::Release(void)	Release__30cSC3EarthquakeDisasterInstance	libSimDstr.so	vtable-thunk:__vt_30cSC3EarthquakeDisasterInstance.31cISC3DisasterEarthquakeInstance
+0043b4	cSC3EarthquakeDisasterInstance::Cost(void)	Cost__30cSC3EarthquakeDisasterInstance	libSimDstr.so	vtable:__vt_30cSC3EarthquakeDisasterInstance
+0043bb	cSC3EarthquakeDisasterInstance::NumberOfOccupantsDamaged(void)	NumberOfOccupantsDamaged__30cSC3EarthquakeDisasterInstance	libSimDstr.so	vtable:__vt_30cSC3EarthquakeDisasterInstance
+004d7a	virtual function thunk (delta:-12) for cSC3EarthquakeDisasterManager::QueryInterface(unsigned int, void **)	__thunk_12_QueryInterface__29cSC3EarthquakeDisasterManagerUiPPv	libSimDstr.so	vtable:__vt_29cSC3EarthquakeDisasterManager.20cISC3DisasterManager
+004d82	virtual function thunk (delta:-16) for cSC3EarthquakeDisasterManager::QueryInterface(unsigned int, void **)	__thunk_16_QueryInterface__29cSC3EarthquakeDisasterManagerUiPPv	libSimDstr.so	vtable:__vt_29cSC3EarthquakeDisasterManager.30cISC3EarthquakeDisasterManager
+004d8a	virtual function thunk (delta:-20) for cSC3EarthquakeDisasterManager::QueryInterface(unsigned int, void **)	__thunk_20_QueryInterface__29cSC3EarthquakeDisasterManagerUiPPv	libSimDstr.so	vtable:__vt_29cSC3EarthquakeDisasterManager.17cIGZMessageTarget
+004d92	virtual function thunk (delta:-4) for cSC3EarthquakeDisasterInstance::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__30cSC3EarthquakeDisasterInstanceUiPPv	libSimDstr.so	vtable:__vt_30cSC3EarthquakeDisasterInstance.31cISC3DisasterEarthquakeInstance
+004d9a	virtual function thunk (delta:-4) for cSC3EarthquakeDisasterInstance::Release(void)	__thunk_4_Release__30cSC3EarthquakeDisasterInstance	libSimDstr.so	vtable:__vt_30cSC3EarthquakeDisasterInstance.31cISC3DisasterEarthquakeInstance
+004da2	virtual function thunk (delta:-8) for cSC3EarthquakeDisasterInstance::QueryInterface(unsigned int, void **)	__thunk_8_QueryInterface__30cSC3EarthquakeDisasterInstanceUiPPv	libSimDstr.so	caller
+004daa	virtual function thunk (delta:-8) for cSC3EarthquakeDisasterInstance::Release(void)	__thunk_8_Release__30cSC3EarthquakeDisasterInstance	libSimDstr.so	caller
+005000	virtual function thunk (delta:-12) for cSC3FireDisasterManager::AttemptDisasterStart(void)	__thunk_12_AttemptDisasterStart__23cSC3FireDisasterManager	libSimDstr.so	vtable:__vt_23cSC3FireDisasterManager.20cISC3DisasterManager
+00528b	cSC3FireDisasterManager::~cSC3FireDisasterManager(void)	_._23cSC3FireDisasterManager	libSimDstr.so	vtable:__vt_23cSC3FireDisasterManager
+005372	cSC3FireDisasterManager::StopInstance(cISC3DisasterInstance *)	StopInstance__23cSC3FireDisasterManagerP21cISC3DisasterInstance	libSimDstr.so	vtable-thunk:__vt_23cSC3FireDisasterManager.20cISC3DisasterManager
+0053fe	virtual function thunk (delta:-20) for cSC3FireDisasterManager::DoMessage(cGZMessage &)	__thunk_20_DoMessage__23cSC3FireDisasterManagerR10cGZMessage	libSimDstr.so	vtable:__vt_23cSC3FireDisasterManager.17cIGZMessageTarget
+0054d8	virtual function thunk (delta:-12) for cSC3FireDisasterManager::Shutdown(void)	__thunk_12_Shutdown__23cSC3FireDisasterManager	libSimDstr.so	vtable:__vt_23cSC3FireDisasterManager.20cISC3DisasterManager
+00564f	cSC3OccTestDefault::QueryInterface(unsigned int, void **)	QueryInterface__18cSC3OccTestDefaultUiPPv	libSimDstr.so	tokens:8.0
+005674	cSC3OccTestDefault::AddRef(void)	AddRef__18cSC3OccTestDefault	libSimDstr.so	vtable:__vt_18cSC3OccTestDefault
+00567b	cSC3OccTestDefault::Release(void)	Release__18cSC3OccTestDefault	libSimDstr.so	vtable:__vt_18cSC3OccTestDefault
+0056be	cSC3OccTestDefault::Test(cISC3Occupant *)	Test__18cSC3OccTestDefaultP13cISC3Occupant	libSimDstr.so	vtable:__vt_18cSC3OccTestDefault
+0056c3	cSC3OccTestDefault::~cSC3OccTestDefault(void)	_._18cSC3OccTestDefault	libSimDstr.so	vtable:__vt_18cSC3OccTestDefault
+0057d0	virtual function thunk (delta:-16) for cSC3FireDisasterManager::IsCellOnFire(unsigned int, unsigned int)	__thunk_16_IsCellOnFire__23cSC3FireDisasterManagerUiUi	libSimDstr.so	vtable:__vt_23cSC3FireDisasterManager.24cISC3FireDisasterManager
+0058d3	cSC3FireDisasterManager::QueryInterface(unsigned int, void **)	QueryInterface__23cSC3FireDisasterManagerUiPPv	libSimDstr.so	tokens:8.0
+005917	virtual function thunk (delta:-12) for cSC3FireDisasterManager::Save(cISC3City *, cIGZDBSegment *)	__thunk_12_Save__23cSC3FireDisasterManagerP9cISC3CityP13cIGZDBSegment	libSimDstr.so	vtable:__vt_23cSC3FireDisasterManager.20cISC3DisasterManager
+005e08	virtual function thunk (delta:-16) for cSC3FireDisasterManager::SetFire(unsigned int, unsigned int)	__thunk_16_SetFire__23cSC3FireDisasterManagerUiUi	libSimDstr.so	vtable:__vt_23cSC3FireDisasterManager.24cISC3FireDisasterManager
+005e1d	cSC3FireDisasterManager::SetFire(unsigned int, unsigned int)	SetFire__23cSC3FireDisasterManagerUiUi	libSimDstr.so	vtable-thunk:__vt_23cSC3FireDisasterManager.24cISC3FireDisasterManager
+005e59	cSC3FireDisasterManager::SetFire(cISC3Occupant *, int)	SetFire__23cSC3FireDisasterManagerP13cISC3Occupanti	libSimDstr.so	caller
+00613e	virtual function thunk (delta:-12) for cSC3FireDisasterManager::StaticInit(void)	__thunk_12_StaticInit__23cSC3FireDisasterManager	libSimDstr.so	vtable:__vt_23cSC3FireDisasterManager.20cISC3DisasterManager
+0064e5	virtual function thunk (delta:-12) for cSC3FireDisasterManager::StopInstance(cISC3DisasterInstance *)	__thunk_12_StopInstance__23cSC3FireDisasterManagerP21cISC3DisasterInstance	libSimDstr.so	vtable:__vt_23cSC3FireDisasterManager.20cISC3DisasterManager
+0064f6	virtual function thunk (delta:-12) for cSC3FireDisasterManager::Tick(void)	__thunk_12_Tick__23cSC3FireDisasterManager	libSimDstr.so	vtable:__vt_23cSC3FireDisasterManager.20cISC3DisasterManager
+0065e4	cSC3FireDisasterInstance::Init(cSC3FireDisasterManager *, cISC3Occupant *, int)	Init__24cSC3FireDisasterInstanceP23cSC3FireDisasterManagerP13cISC3Occupanti	libSimDstr.so	tokens:16.0
+006c17	cSC3FireDisasterManager::DoMessage(cGZMessage &)	DoMessage__23cSC3FireDisasterManagerR10cGZMessage	libSimDstr.so	callee
+006d6e	_Rb_tree<cISC3Occupant *, cISC3Occupant *, _Identity<cISC3Occupant *>, less<cISC3Occupant *>, allocator<cISC3Occupant *> >::insert_unique(cISC3Occupant *const &)	insert_unique__t8_Rb_tree5ZP13cISC3OccupantZP13cISC3OccupantZt9_Identity1ZP13cISC3OccupantZt4less1ZP13cISC3OccupantZt9allocator1ZP13cISC3OccupantRCP13cISC3Occupant	libSimDstr.so	callee
+0070df	cSC3FireDisasterManager::IsCellOnFire(unsigned int, unsigned int)	IsCellOnFire__23cSC3FireDisasterManagerUiUi	libSimDstr.so	callee
+0073b5	virtual function thunk (delta:-12) for cSC3FireDisasterManager::QueryInterface(unsigned int, void **)	__thunk_12_QueryInterface__23cSC3FireDisasterManagerUiPPv	libSimDstr.so	vtable:__vt_23cSC3FireDisasterManager.20cISC3DisasterManager
+0073bd	virtual function thunk (delta:-12) for cSC3FireDisasterManager::AddRef(void)	__thunk_12_AddRef__23cSC3FireDisasterManager	libSimDstr.so	vtable:__vt_23cSC3FireDisasterManager.20cISC3DisasterManager
+0073c5	virtual function thunk (delta:-16) for cSC3FireDisasterManager::QueryInterface(unsigned int, void **)	__thunk_16_QueryInterface__23cSC3FireDisasterManagerUiPPv	libSimDstr.so	vtable:__vt_23cSC3FireDisasterManager.24cISC3FireDisasterManager
+0073cd	virtual function thunk (delta:-16) for cSC3FireDisasterManager::AddRef(void)	__thunk_16_AddRef__23cSC3FireDisasterManager	libSimDstr.so	vtable:__vt_23cSC3FireDisasterManager.24cISC3FireDisasterManager
+0073d5	virtual function thunk (delta:-16) for cSC3FireDisasterManager::Release(void)	__thunk_16_Release__23cSC3FireDisasterManager	libSimDstr.so	vtable:__vt_23cSC3FireDisasterManager.24cISC3FireDisasterManager
+0073dd	virtual function thunk (delta:-20) for cSC3FireDisasterManager::QueryInterface(unsigned int, void **)	__thunk_20_QueryInterface__23cSC3FireDisasterManagerUiPPv	libSimDstr.so	vtable:__vt_23cSC3FireDisasterManager.17cIGZMessageTarget
+007661	cSC3DisasterLayer::AddRef(void)	AddRef__17cSC3DisasterLayer	libSimDstr.so	vtable:__vt_17cSC3DisasterLayer
+0076a2	cSC3DisasterLayer::BeginEmergencyMode(unsigned int)	BeginEmergencyMode__17cSC3DisasterLayerUi	libSimDstr.so	tokens:8.0
+00774c	cSC3DisasterLayer::ComputeSurroundRect(sIGZRectUint32 const &, sIGZRectUint32 &, unsigned int)	ComputeSurroundRect__17cSC3DisasterLayerRC14sIGZRectUint32R14sIGZRectUint32Ui	libSimDstr.so	vtable:__vt_17cSC3DisasterLayer
+0077a7	cSC3DisasterLayer::CreateActiveDisasterIterator(void)	CreateActiveDisasterIterator__17cSC3DisasterLayer	libSimDstr.so	vtable:__vt_17cSC3DisasterLayer
+0077de	cSC3DisasterLayer::CreateDisasterListIterator(void)	CreateDisasterListIterator__17cSC3DisasterLayer	libSimDstr.so	vtable:__vt_17cSC3DisasterLayer
+007815	cSC3DisasterLayer::CreateRadiation(unsigned int, unsigned int)	CreateRadiation__17cSC3DisasterLayerUiUi	libSimDstr.so	vtable:__vt_17cSC3DisasterLayer
+007ade	cSC3DisasterLayer::DisastersEnabled(void)	DisastersEnabled__17cSC3DisasterLayer	libSimDstr.so	vtable:__vt_17cSC3DisasterLayer
+007ae2	cSC3DisasterLayer::GetActiveDisasterCount(void)	GetActiveDisasterCount__17cSC3DisasterLayer	libSimDstr.so	vtable:__vt_17cSC3DisasterLayer
+007ae6	cSC3DisasterLayer::IsSimulationRunning(void)	IsSimulationRunning__17cSC3DisasterLayer	libSimDstr.so	vtable:__vt_17cSC3DisasterLayer
+007aed	virtual function thunk (delta:-4) for cSC3DisasterLayer::GetLayerType(void)	__thunk_4_GetLayerType__17cSC3DisasterLayer	libSimDstr.so	vtable:__vt_17cSC3DisasterLayer.14cISC3CityLayer
+007af3	cSC3DisasterLayer::~cSC3DisasterLayer(void)	_._17cSC3DisasterLayer	libSimDstr.so	vtable:__vt_17cSC3DisasterLayer
+007ba6	cSC3DisasterLayer::DeleteActiveDisasterIterator(cISC3DisasterListIterator *)	DeleteActiveDisasterIterator__17cSC3DisasterLayerP25cISC3DisasterListIterator	libSimDstr.so	vtable:__vt_17cSC3DisasterLayer
+007bb3	cSC3DisasterLayer::DestroyOccupant(cISC3Occupant *, int, unsigned int &)	DestroyOccupant__17cSC3DisasterLayerP13cISC3OccupantiRUi	libSimDstr.so	tokens:30.8
+007dd1	cSC3DisasterLayer::DisableDisasters(void)	DisableDisasters__17cSC3DisasterLayer	libSimDstr.so	callee
+007f3d	cSC3DisasterLayer::DisasterInstanceChange(cISC3DisasterInstance *, tDisasterChangeType)	DisasterInstanceChange__17cSC3DisasterLayerP21cISC3DisasterInstance19tDisasterChangeType	libSimDstr.so	vtable:__vt_17cSC3DisasterLayer
+00819d	virtual function thunk (delta:-4) for cSC3DisasterLayer::DoMessage(cGZMessage &)	__thunk_4_DoMessage__17cSC3DisasterLayerR10cGZMessage	libSimDstr.so	vtable:__vt_17cSC3DisasterLayer.14cISC3CityLayer
+0082da	cSC3DisasterLayer::EnableDisasters(bool)	EnableDisasters__17cSC3DisasterLayerb	libSimDstr.so	vtable:__vt_17cSC3DisasterLayer
+0082f0	cSC3DisasterLayer::EnableDisasters(void)	EnableDisasters__17cSC3DisasterLayer	libSimDstr.so	tokens:14.4
+00837a	cSC3DisasterLayer::EndEmergencyMode(void)	EndEmergencyMode__17cSC3DisasterLayer	libSimDstr.so	tokens:8.0
+0083c1	cSC3DisasterLayer::GetDemolitionCost(cISC3Occupant *)	GetDemolitionCost__17cSC3DisasterLayerP13cISC3Occupant	libSimDstr.so	vtable:__vt_17cSC3DisasterLayer
+008417	cSC3DisasterLayer::GetDisasterManager(unsigned int)	GetDisasterManager__17cSC3DisasterLayerUi	libSimDstr.so	vtable:__vt_17cSC3DisasterLayer
+008442	cSC3DisasterLayer::GetManipulator(cISC3CityAgentType const &, cISC3CityLayerManipulator **, int &)	GetManipulator__17cSC3DisasterLayerRC18cISC3CityAgentTypePP25cISC3CityLayerManipulatorRi	libSimDstr.so	tokens:30.6
+0084b1	cSC3DisasterLayer::GetVariantValue(cRZRect)	GetVariantValue__17cSC3DisasterLayerG7cRZRect	libSimDstr.so	vtable:__vt_17cSC3DisasterLayer
+008b1b	cSC3DisasterLayer::NotifyOnChange(void (*)(cISC3DisasterInstance *, tDisasterChangeType, void *), void *)	NotifyOnChange__17cSC3DisasterLayerPFP21cISC3DisasterInstance19tDisasterChangeTypePv_vPv	libSimDstr.so	vtable:__vt_17cSC3DisasterLayer
+008b8b	cSC3DisasterLayer::PutDestroyedFlora(unsigned int, unsigned int, unsigned int, unsigned int)	PutDestroyedFlora__17cSC3DisasterLayerUiUiUiUi	libSimDstr.so	callee
+008c42	cSC3DisasterLayer::PutDestroyedBuilding(unsigned int, unsigned int, unsigned char, cISC3OccupantAttrib *, int)	PutDestroyedBuilding__17cSC3DisasterLayerUiUiUcP19cISC3OccupantAttribi	libSimDstr.so	tokens:13.3
+008cd6	cSC3DisasterLayer::QueryInterface(unsigned int, void **)	QueryInterface__17cSC3DisasterLayerUiPPv	libSimDstr.so	tokens:14.5
+008dc8	cSC3DisasterLayer::Release(void)	Release__17cSC3DisasterLayer	libSimDstr.so	vtable:__vt_17cSC3DisasterLayer
+008de8	virtual function thunk (delta:-4) for cSC3DisasterLayer::Save(cISC3City *, cIGZDBSegment *)	__thunk_4_Save__17cSC3DisasterLayerP9cISC3CityP13cIGZDBSegment	libSimDstr.so	vtable:__vt_17cSC3DisasterLayer.14cISC3CityLayer
+008f42	virtual function thunk (delta:-4) for cSC3DisasterLayer::Shutdown(void)	__thunk_4_Shutdown__17cSC3DisasterLayer	libSimDstr.so	vtable:__vt_17cSC3DisasterLayer.14cISC3CityLayer
+0091ad	virtual function thunk (delta:-4) for cSC3DisasterLayer::SimulationBegin(void)	__thunk_4_SimulationBegin__17cSC3DisasterLayer	libSimDstr.so	vtable:__vt_17cSC3DisasterLayer.14cISC3CityLayer
+009267	virtual function thunk (delta:-4) for cSC3DisasterLayer::SimulationEnd(void)	__thunk_4_SimulationEnd__17cSC3DisasterLayer	libSimDstr.so	vtable:__vt_17cSC3DisasterLayer.14cISC3CityLayer
+0092d6	virtual function thunk (delta:-4) for cSC3DisasterLayer::StaticInit(cISC3CityDefinition *)	__thunk_4_StaticInit__17cSC3DisasterLayerP19cISC3CityDefinition	libSimDstr.so	vtable:__vt_17cSC3DisasterLayer.14cISC3CityLayer
+00963a	virtual function thunk (delta:-4) for cSC3DisasterLayer::StaticShutdown(void)	__thunk_4_StaticShutdown__17cSC3DisasterLayer	libSimDstr.so	vtable:__vt_17cSC3DisasterLayer.14cISC3CityLayer
+009686	cSC3DisasterLayer::StopNotifyingOnChange(void (*)(cISC3DisasterInstance *, tDisasterChangeType, void *), void *)	StopNotifyingOnChange__17cSC3DisasterLayerPFP21cISC3DisasterInstance19tDisasterChangeTypePv_vPv	libSimDstr.so	vtable:__vt_17cSC3DisasterLayer
+00a08a	virtual function thunk (delta:-4) for cSC3DisasterLayer::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__17cSC3DisasterLayerUiPPv	libSimDstr.so	vtable:__vt_17cSC3DisasterLayer.14cISC3CityLayer
+00a092	virtual function thunk (delta:-4) for cSC3DisasterLayer::AddRef(void)	__thunk_4_AddRef__17cSC3DisasterLayer	libSimDstr.so	vtable:__vt_17cSC3DisasterLayer.14cISC3CityLayer
+00a09a	virtual function thunk (delta:-4) for cSC3DisasterLayer::Release(void)	__thunk_4_Release__17cSC3DisasterLayer	libSimDstr.so	vtable:__vt_17cSC3DisasterLayer.14cISC3CityLayer
+00a0a2	virtual function thunk (delta:-8) for cSC3DisasterLayer::QueryInterface(unsigned int, void **)	__thunk_8_QueryInterface__17cSC3DisasterLayerUiPPv	libSimDstr.so	vtable:__vt_17cSC3DisasterLayer.20cISC3QueryInfoString
+00a0aa	virtual function thunk (delta:-8) for cSC3DisasterLayer::AddRef(void)	__thunk_8_AddRef__17cSC3DisasterLayer	libSimDstr.so	vtable:__vt_17cSC3DisasterLayer.20cISC3QueryInfoString
+00a0b2	virtual function thunk (delta:-8) for cSC3DisasterLayer::Release(void)	__thunk_8_Release__17cSC3DisasterLayer	libSimDstr.so	vtable:__vt_17cSC3DisasterLayer.20cISC3QueryInfoString
+00a0ba	virtual function thunk (delta:-12) for cSC3DisasterLayer::QueryInterface(unsigned int, void **)	__thunk_12_QueryInterface__17cSC3DisasterLayerUiPPv	libSimDstr.so	vtable:__vt_17cSC3DisasterLayer.21cISC3MapSpriteFactory
+00a0c2	virtual function thunk (delta:-12) for cSC3DisasterLayer::AddRef(void)	__thunk_12_AddRef__17cSC3DisasterLayer	libSimDstr.so	vtable:__vt_17cSC3DisasterLayer.21cISC3MapSpriteFactory
+00a0ca	virtual function thunk (delta:-12) for cSC3DisasterLayer::Release(void)	__thunk_12_Release__17cSC3DisasterLayer	libSimDstr.so	vtable:__vt_17cSC3DisasterLayer.21cISC3MapSpriteFactory
+00a0d2	virtual function thunk (delta:-12) for cSC3DisasterLayer::CreateMapSprite(unsigned int, unsigned int, void **)	__thunk_12_CreateMapSprite__17cSC3DisasterLayerUiUiPPv	libSimDstr.so	vtable:__vt_17cSC3DisasterLayer.21cISC3MapSpriteFactory
+00a0d7	virtual function thunk (delta:-12) for cSC3DisasterLayer::GetMapSpriteCount(void)	__thunk_12_GetMapSpriteCount__17cSC3DisasterLayer	libSimDstr.so	vtable:__vt_17cSC3DisasterLayer.21cISC3MapSpriteFactory
+00a0da	virtual function thunk (delta:-4) for cSC3DisasterLayer::DoQueryInfo(cGZMessage &, cIGZUnknown *)	__thunk_4_DoQueryInfo__17cSC3DisasterLayerR10cGZMessageP11cIGZUnknown	libSimDstr.so	vtable:__vt_17cSC3DisasterLayer.14cISC3CityLayer
+00a0df	virtual function thunk (delta:-8) for cSC3DisasterLayer::GetInfoStringCount(unsigned int)	__thunk_8_GetInfoStringCount__17cSC3DisasterLayerUi	libSimDstr.so	vtable:__vt_17cSC3DisasterLayer.20cISC3QueryInfoString
+00a0e4	virtual function thunk (delta:-8) for cSC3DisasterLayer::GetInfoStrings(unsigned int, unsigned int, unsigned int, unsigned int, unsigned int &, cIGZString &, cIGZString &)	__thunk_8_GetInfoStrings__17cSC3DisasterLayerUiUiUiUiRUiR10cIGZStringT6	libSimDstr.so	vtable:__vt_17cSC3DisasterLayer.20cISC3QueryInfoString
+00a3cd	cSC3LocustsDisasterManager::~cSC3LocustsDisasterManager(void)	_._26cSC3LocustsDisasterManager	libSimDstr.so	vtable:__vt_26cSC3LocustsDisasterManager
+00a466	virtual function thunk (delta:-12) for cSC3LocustsDisasterManager::Shutdown(void)	__thunk_12_Shutdown__26cSC3LocustsDisasterManager	libSimDstr.so	vtable:__vt_26cSC3LocustsDisasterManager.20cISC3DisasterManager
+00a68c	cSC3LocustsDisasterManager::DoMessage(cGZMessage &)	DoMessage__26cSC3LocustsDisasterManagerR10cGZMessage	libSimDstr.so	tokens:14.4
+00a763	virtual function thunk (delta:-16) for cSC3LocustsDisasterManager::StartLocustsAttack(bool)	__thunk_16_StartLocustsAttack__26cSC3LocustsDisasterManagerb	libSimDstr.so	vtable:__vt_26cSC3LocustsDisasterManager.27cISC3LocustsDisasterManager
+00a781	virtual function thunk (delta:-12) for cSC3LocustsDisasterManager::AttemptDisasterStart(void)	__thunk_12_AttemptDisasterStart__26cSC3LocustsDisasterManager	libSimDstr.so	vtable:__vt_26cSC3LocustsDisasterManager.20cISC3DisasterManager
+00a99c	virtual function thunk (delta:-16) for cSC3LocustsDisasterManager::GetDisasterHistory(cISC3DisasterLocustsInstance::LocustsVisitationRecord *, unsigned int &) const	__thunk_16_GetDisasterHistory__C26cSC3LocustsDisasterManagerPQ228cISC3DisasterLocustsInstance23LocustsVisitationRecordRUi	libSimDstr.so	vtable:__vt_26cSC3LocustsDisasterManager.27cISC3LocustsDisasterManager
+00aa0a	cSC3LocustsDisasterManager::QueryInterface(unsigned int, void **)	QueryInterface__26cSC3LocustsDisasterManagerUiPPv	libSimDstr.so	tokens:8.0
+00aa59	virtual function thunk (delta:-12) for cSC3LocustsDisasterManager::StaticInit(void)	__thunk_12_StaticInit__26cSC3LocustsDisasterManager	libSimDstr.so	vtable:__vt_26cSC3LocustsDisasterManager.20cISC3DisasterManager
+00b4ed	virtual function thunk (delta:-12) for cSC3LocustsDisasterManager::Save(cISC3City *, cIGZDBSegment *)	__thunk_12_Save__26cSC3LocustsDisasterManagerP9cISC3CityP13cIGZDBSegment	libSimDstr.so	vtable:__vt_26cSC3LocustsDisasterManager.20cISC3DisasterManager
+00b78c	virtual function thunk (delta:-12) for cSC3LocustsDisasterManager::StopInstance(cISC3DisasterInstance *)	__thunk_12_StopInstance__26cSC3LocustsDisasterManagerP21cISC3DisasterInstance	libSimDstr.so	vtable:__vt_26cSC3LocustsDisasterManager.20cISC3DisasterManager
+00b798	virtual function thunk (delta:-12) for cSC3LocustsDisasterManager::Tick(void)	__thunk_12_Tick__26cSC3LocustsDisasterManager	libSimDstr.so	vtable:__vt_26cSC3LocustsDisasterManager.20cISC3DisasterManager
+00b80e	cSC3LocustsDisasterManager::IsTileATargetedCrop(unsigned int, unsigned int)	IsTileATargetedCrop__26cSC3LocustsDisasterManagerUiUi	libSimDstr.so	tokens:22.5
+00bb8b	cSC3LocustsDisasterManager::StopInstance(cISC3DisasterInstance *)	StopInstance__26cSC3LocustsDisasterManagerP21cISC3DisasterInstance	libSimDstr.so	vtable-thunk:__vt_26cSC3LocustsDisasterManager.20cISC3DisasterManager
+00bfd8	cSC3LocustsDisasterInstance::StartAttack(void)	StartAttack__27cSC3LocustsDisasterInstance	libSimDstr.so	tokens:23.1
+00c3dd	cSC3LocustsDisasterInstance::DispatchPlane(unsigned int, unsigned int)	DispatchPlane__27cSC3LocustsDisasterInstanceUiUi	libSimDstr.so	tokens:21.9
+00cd11	virtual function thunk (delta:-12) for cSC3LocustsDisasterManager::QueryInterface(unsigned int, void **)	__thunk_12_QueryInterface__26cSC3LocustsDisasterManagerUiPPv	libSimDstr.so	vtable:__vt_26cSC3LocustsDisasterManager.20cISC3DisasterManager
+00cd19	virtual function thunk (delta:-16) for cSC3LocustsDisasterManager::QueryInterface(unsigned int, void **)	__thunk_16_QueryInterface__26cSC3LocustsDisasterManagerUiPPv	libSimDstr.so	vtable:__vt_26cSC3LocustsDisasterManager.27cISC3LocustsDisasterManager
+00cd21	virtual function thunk (delta:-20) for cSC3LocustsDisasterManager::QueryInterface(unsigned int, void **)	__thunk_20_QueryInterface__26cSC3LocustsDisasterManagerUiPPv	libSimDstr.so	vtable:__vt_26cSC3LocustsDisasterManager.17cIGZMessageTarget
+00cfdd	virtual function thunk (delta:-12) for cSC3RiotDisasterManager::AttemptDisasterStart(void)	__thunk_12_AttemptDisasterStart__23cSC3RiotDisasterManager	libSimDstr.so	vtable:__vt_23cSC3RiotDisasterManager.20cISC3DisasterManager
+00d42f	virtual function thunk (delta:-12) for cSC3RiotDisasterManager::Shutdown(void)	__thunk_12_Shutdown__23cSC3RiotDisasterManager	libSimDstr.so	vtable:__vt_23cSC3RiotDisasterManager.20cISC3DisasterManager
+00d777	virtual function thunk (delta:-12) for cSC3RiotDisasterManager::Save(cISC3City *, cIGZDBSegment *)	__thunk_12_Save__23cSC3RiotDisasterManagerP9cISC3CityP13cIGZDBSegment	libSimDstr.so	vtable:__vt_23cSC3RiotDisasterManager.20cISC3DisasterManager
+00dc3a	virtual function thunk (delta:-12) for cSC3RiotDisasterManager::StaticInit(void)	__thunk_12_StaticInit__23cSC3RiotDisasterManager	libSimDstr.so	vtable:__vt_23cSC3RiotDisasterManager.20cISC3DisasterManager
+00dfae	virtual function thunk (delta:-12) for cSC3RiotDisasterManager::StopInstance(cISC3DisasterInstance *)	__thunk_12_StopInstance__23cSC3RiotDisasterManagerP21cISC3DisasterInstance	libSimDstr.so	vtable:__vt_23cSC3RiotDisasterManager.20cISC3DisasterManager
+00dfc5	cSC3RiotDisasterManager::Tick(void)	Tick__23cSC3RiotDisasterManager	libSimDstr.so	tokens:32.1
+00e26c	cSC3ToxicCloudDisasterInstance::Manager(void)	Manager__30cSC3ToxicCloudDisasterInstance	libSimDstr.so	vtable:__vt_30cSC3ToxicCloudDisasterInstance
+00e7af	cSC3RiotDisasterManager::StopInstance(cISC3DisasterInstance *)	StopInstance__23cSC3RiotDisasterManagerP21cISC3DisasterInstance	libSimDstr.so	vtable-thunk:__vt_23cSC3RiotDisasterManager.20cISC3DisasterManager
+00edf2	virtual function thunk (delta:-12) for cSC3RiotDisasterManager::QueryInterface(unsigned int, void **)	__thunk_12_QueryInterface__23cSC3RiotDisasterManagerUiPPv	libSimDstr.so	vtable:__vt_23cSC3RiotDisasterManager.20cISC3DisasterManager
+00f0e4	cSC3SmiteDisasterManager::~cSC3SmiteDisasterManager(void)	_._24cSC3SmiteDisasterManager	libSimDstr.so	vtable:__vt_24cSC3SmiteDisasterManager
+00f26d	virtual function thunk (delta:-20) for cSC3SmiteDisasterManager::DoMessage(cGZMessage &)	__thunk_20_DoMessage__24cSC3SmiteDisasterManagerR10cGZMessage	libSimDstr.so	vtable:__vt_24cSC3SmiteDisasterManager.17cIGZMessageTarget
+00f2ff	virtual function thunk (delta:-16) for cSC3SmiteDisasterManager::StartSmite(float, bool)	__thunk_16_StartSmite__24cSC3SmiteDisasterManagerfb	libSimDstr.so	vtable:__vt_24cSC3SmiteDisasterManager.25cISC3SmiteDisasterManager
+00f40e	virtual function thunk (delta:-16) for cSC3SmiteDisasterManager::GetDisasterHistory(cISC3DisasterSmiteInstance::SmiteRecord *, unsigned int &) const	__thunk_16_GetDisasterHistory__C24cSC3SmiteDisasterManagerPQ226cISC3DisasterSmiteInstance11SmiteRecordRUi	libSimDstr.so	vtable:__vt_24cSC3SmiteDisasterManager.25cISC3SmiteDisasterManager
+00f479	cSC3SmiteDisasterManager::QueryInterface(unsigned int, void **)	QueryInterface__24cSC3SmiteDisasterManagerUiPPv	libSimDstr.so	tokens:8.0
+00f4bd	cSC3SmiteDisasterManager::StaticInit(void)	StaticInit__24cSC3SmiteDisasterManager	libSimDstr.so	tokens:128.7
+00f8ef	cSC3SmiteDisasterManager::Save(cISC3City *, cIGZDBSegment *)	Save__24cSC3SmiteDisasterManagerP9cISC3CityP13cIGZDBSegment	libSimDstr.so	tokens:22.0
+00faa1	virtual function thunk (delta:-12) for cSC3SmiteDisasterManager::StopInstance(cISC3DisasterInstance *)	__thunk_12_StopInstance__24cSC3SmiteDisasterManagerP21cISC3DisasterInstance	libSimDstr.so	vtable:__vt_24cSC3SmiteDisasterManager.20cISC3DisasterManager
+00faad	virtual function thunk (delta:-12) for cSC3SmiteDisasterManager::Tick(void)	__thunk_12_Tick__24cSC3SmiteDisasterManager	libSimDstr.so	vtable:__vt_24cSC3SmiteDisasterManager.20cISC3DisasterManager
+00fbb6	cSC3SmiteDisasterInstance::GetDisasterID(void)	GetDisasterID__25cSC3SmiteDisasterInstance	libSimDstr.so	vtable:__vt_25cSC3SmiteDisasterInstance
+00fbbc	cSC3SmiteDisasterInstance::Manager(void)	Manager__25cSC3SmiteDisasterInstance	libSimDstr.so	vtable:__vt_25cSC3SmiteDisasterInstance
+00fbca	virtual function thunk (delta:-4) for cSC3SmiteDisasterInstance::GetSmiteScale(void) const	__thunk_4_GetSmiteScale__C25cSC3SmiteDisasterInstance	libSimDstr.so	vtable:__vt_25cSC3SmiteDisasterInstance.26cISC3DisasterSmiteInstance
+00fe25	cSC3SmiteDisasterManager::StopInstance(cISC3DisasterInstance *)	StopInstance__24cSC3SmiteDisasterManagerP21cISC3DisasterInstance	libSimDstr.so	vtable-thunk:__vt_24cSC3SmiteDisasterManager.20cISC3DisasterManager
+00fea7	cSC3SmiteDisasterInstance::GetDirectlyAffectedCells(sIGZRectUint32 &)	GetDirectlyAffectedCells__25cSC3SmiteDisasterInstanceR14sIGZRectUint32	libSimDstr.so	vtable:__vt_25cSC3SmiteDisasterInstance
+00fef9	cSC3SmiteDisasterInstance::GetLocation(unsigned int &, unsigned int &)	GetLocation__25cSC3SmiteDisasterInstanceRUiT1	libSimDstr.so	vtable:__vt_25cSC3SmiteDisasterInstance
+00ff16	virtual function thunk (delta:-4) for cSC3SmiteDisasterInstance::GetEpicenterMicro(int &, int &, int &) const	__thunk_4_GetEpicenterMicro__C25cSC3SmiteDisasterInstanceRiN21	libSimDstr.so	vtable:__vt_25cSC3SmiteDisasterInstance.26cISC3DisasterSmiteInstance
+00ff34	cSC3SmiteDisasterInstance::IsActive(void)	IsActive__25cSC3SmiteDisasterInstance	libSimDstr.so	vtable:__vt_25cSC3SmiteDisasterInstance
+00ff3c	cSC3SmiteDisasterInstance::PanicEffect(unsigned int)	PanicEffect__25cSC3SmiteDisasterInstanceUi	libSimDstr.so	vtable:__vt_25cSC3SmiteDisasterInstance
+00ff53	cSC3SmiteDisasterInstance::PanicRadius(void)	PanicRadius__25cSC3SmiteDisasterInstance	libSimDstr.so	vtable:__vt_25cSC3SmiteDisasterInstance
+00ff5f	virtual function thunk (delta:-4) for cSC3SmiteDisasterInstance::GetCurrentSmiteRecord(cISC3DisasterSmiteInstance::SmiteRecord &)	__thunk_4_GetCurrentSmiteRecord__25cSC3SmiteDisasterInstanceRQ226cISC3DisasterSmiteInstance11SmiteRecord	libSimDstr.so	vtable:__vt_25cSC3SmiteDisasterInstance.26cISC3DisasterSmiteInstance
+00ff72	cSC3SmiteDisasterInstance::QueryInterface(unsigned int, void **)	QueryInterface__25cSC3SmiteDisasterInstanceUiPPv	libSimDstr.so	vtable-thunk:__vt_25cSC3SmiteDisasterInstance.26cISC3DisasterSmiteInstance
+00ffae	cSC3SmiteDisasterInstance::Tick(cISC3DisasterLayer::tTickType)	Tick__25cSC3SmiteDisasterInstanceQ218cISC3DisasterLayer9tTickType	libSimDstr.so	vtable:__vt_25cSC3SmiteDisasterInstance
+0101d2	virtual function thunk (delta:-8) for cSC3SmiteDisasterInstance::DoMessage(cGZMessage &)	__thunk_8_DoMessage__25cSC3SmiteDisasterInstanceR10cGZMessage	libSimDstr.so	vtable:__vt_25cSC3SmiteDisasterInstance.17cIGZMessageTarget
+0101d7	cSC3SmiteDisasterInstance::Release(void)	Release__25cSC3SmiteDisasterInstance	libSimDstr.so	vtable-thunk:__vt_25cSC3SmiteDisasterInstance.26cISC3DisasterSmiteInstance
+0101fe	cSC3SmiteDisasterInstance::NumberOfOccupantsDamaged(void)	NumberOfOccupantsDamaged__25cSC3SmiteDisasterInstance	libSimDstr.so	vtable:__vt_25cSC3SmiteDisasterInstance
+0103e3	virtual function thunk (delta:-12) for cSC3SmiteDisasterManager::QueryInterface(unsigned int, void **)	__thunk_12_QueryInterface__24cSC3SmiteDisasterManagerUiPPv	libSimDstr.so	vtable:__vt_24cSC3SmiteDisasterManager.20cISC3DisasterManager
+0103eb	virtual function thunk (delta:-16) for cSC3SmiteDisasterManager::QueryInterface(unsigned int, void **)	__thunk_16_QueryInterface__24cSC3SmiteDisasterManagerUiPPv	libSimDstr.so	vtable:__vt_24cSC3SmiteDisasterManager.25cISC3SmiteDisasterManager
+0103f3	virtual function thunk (delta:-20) for cSC3SmiteDisasterManager::QueryInterface(unsigned int, void **)	__thunk_20_QueryInterface__24cSC3SmiteDisasterManagerUiPPv	libSimDstr.so	vtable:__vt_24cSC3SmiteDisasterManager.17cIGZMessageTarget
+0103fb	virtual function thunk (delta:-4) for cSC3SmiteDisasterInstance::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__25cSC3SmiteDisasterInstanceUiPPv	libSimDstr.so	vtable:__vt_25cSC3SmiteDisasterInstance.26cISC3DisasterSmiteInstance
+010403	virtual function thunk (delta:-4) for cSC3SmiteDisasterInstance::Release(void)	__thunk_4_Release__25cSC3SmiteDisasterInstance	libSimDstr.so	vtable:__vt_25cSC3SmiteDisasterInstance.26cISC3DisasterSmiteInstance
+01040b	virtual function thunk (delta:-8) for cSC3SmiteDisasterInstance::QueryInterface(unsigned int, void **)	__thunk_8_QueryInterface__25cSC3SmiteDisasterInstanceUiPPv	libSimDstr.so	caller
+010413	virtual function thunk (delta:-8) for cSC3SmiteDisasterInstance::AddRef(void)	__thunk_8_AddRef__25cSC3SmiteDisasterInstance	libSimDstr.so	vtable:__vt_25cSC3SmiteDisasterInstance.17cIGZMessageTarget
+01041b	virtual function thunk (delta:-8) for cSC3SmiteDisasterInstance::Release(void)	__thunk_8_Release__25cSC3SmiteDisasterInstance	libSimDstr.so	caller
+0107a9	virtual function thunk (delta:-16) for cSC3SpaceDebrisDisasterManager::GetLikelihoodOfSpaceDebrisDisaster(void)	__thunk_16_GetLikelihoodOfSpaceDebrisDisaster__30cSC3SpaceDebrisDisasterManager	libSimDstr.so	vtable:__vt_30cSC3SpaceDebrisDisasterManager.31cISC3SpaceDebrisDisasterManager
+0107b5	cSC3SpaceDebrisDisasterManager::~cSC3SpaceDebrisDisasterManager(void)	_._30cSC3SpaceDebrisDisasterManager	libSimDstr.so	vtable:__vt_30cSC3SpaceDebrisDisasterManager
+010848	virtual function thunk (delta:-12) for cSC3SmiteDisasterManager::Shutdown(void)	__thunk_12_Shutdown__24cSC3SmiteDisasterManager	libSimDstr.so	vtable:__vt_24cSC3SmiteDisasterManager.20cISC3DisasterManager
+010a56	virtual function thunk (delta:-20) for cSC3SpaceDebrisDisasterManager::DoMessage(cGZMessage &)	__thunk_20_DoMessage__30cSC3SpaceDebrisDisasterManagerR10cGZMessage	libSimDstr.so	vtable:__vt_30cSC3SpaceDebrisDisasterManager.17cIGZMessageTarget
+010aef	cSC3SpaceDebrisDisasterManager::AttemptDisasterStart(void)	AttemptDisasterStart__30cSC3SpaceDebrisDisasterManager	libSimDstr.so	tokens:32.1
+010b23	cSC3SpaceDebrisDisasterManager::StartSpaceDebris(float, bool)	StartSpaceDebris__30cSC3SpaceDebrisDisasterManagerfb	libSimDstr.so	tokens:30.1
+010c51	virtual function thunk (delta:-16) for cSC3SpaceDebrisDisasterManager::GetDisasterHistory(cISC3DisasterSpaceDebrisInstance::SpaceDebrisRecord *, unsigned int &) const	__thunk_16_GetDisasterHistory__C30cSC3SpaceDebrisDisasterManagerPQ232cISC3DisasterSpaceDebrisInstance17SpaceDebrisRecordRUi	libSimDstr.so	vtable:__vt_30cSC3SpaceDebrisDisasterManager.31cISC3SpaceDebrisDisasterManager
+010cc4	virtual function thunk (delta:-16) for cSC3SpaceDebrisDisasterManager::GetLastDisasterHistory(cISC3DisasterSpaceDebrisInstance::SpaceDebrisRecord *) const	__thunk_16_GetLastDisasterHistory__C30cSC3SpaceDebrisDisasterManagerPQ232cISC3DisasterSpaceDebrisInstance17SpaceDebrisRecord	libSimDstr.so	vtable:__vt_30cSC3SpaceDebrisDisasterManager.31cISC3SpaceDebrisDisasterManager
+010ceb	cSC3SpaceDebrisDisasterManager::QueryInterface(unsigned int, void **)	QueryInterface__30cSC3SpaceDebrisDisasterManagerUiPPv	libSimDstr.so	tokens:8.0
+011158	cSC3SpaceDebrisDisasterManager::Save(cISC3City *, cIGZDBSegment *)	Save__30cSC3SpaceDebrisDisasterManagerP9cISC3CityP13cIGZDBSegment	libSimDstr.so	tokens:22.0
+011320	virtual function thunk (delta:-12) for cSC3SpaceDebrisDisasterManager::Tick(void)	__thunk_12_Tick__30cSC3SpaceDebrisDisasterManager	libSimDstr.so	vtable:__vt_30cSC3SpaceDebrisDisasterManager.20cISC3DisasterManager
+011439	cSC3SpaceDebrisDisasterInstance::GetDisasterID(void)	GetDisasterID__31cSC3SpaceDebrisDisasterInstance	libSimDstr.so	vtable:__vt_31cSC3SpaceDebrisDisasterInstance
+01143f	cSC3WhirlpoolDisasterInstance::Manager(void)	Manager__29cSC3WhirlpoolDisasterInstance	libSimDstr.so	vtable:__vt_29cSC3WhirlpoolDisasterInstance
+01144d	virtual function thunk (delta:-4) for cSC3SpaceDebrisDisasterInstance::GetSpaceDebrisLevel(void) const	__thunk_4_GetSpaceDebrisLevel__C31cSC3SpaceDebrisDisasterInstance	libSimDstr.so	vtable:__vt_31cSC3SpaceDebrisDisasterInstance.32cISC3DisasterSpaceDebrisInstance
+01172d	cSC3SpaceDebrisDisasterInstance::DoSpaceDebrisScaleCalculations(float)	DoSpaceDebrisScaleCalculations__31cSC3SpaceDebrisDisasterInstancef	libSimDstr.so	tokens:20.3
+01177f	cSC3SpaceDebrisDisasterInstance::GetDirectlyAffectedCells(sIGZRectUint32 &)	GetDirectlyAffectedCells__31cSC3SpaceDebrisDisasterInstanceR14sIGZRectUint32	libSimDstr.so	vtable:__vt_31cSC3SpaceDebrisDisasterInstance
+0117b1	cSC3SpaceDebrisDisasterInstance::GetLocation(unsigned int &, unsigned int &)	GetLocation__31cSC3SpaceDebrisDisasterInstanceRUiT1	libSimDstr.so	vtable:__vt_31cSC3SpaceDebrisDisasterInstance
+0117cd	cSC3SpaceDebrisDisasterInstance::IsActive(void)	IsActive__31cSC3SpaceDebrisDisasterInstance	libSimDstr.so	vtable:__vt_31cSC3SpaceDebrisDisasterInstance
+0117d5	cSC3SpaceDebrisDisasterInstance::PanicEffect(unsigned int)	PanicEffect__31cSC3SpaceDebrisDisasterInstanceUi	libSimDstr.so	vtable:__vt_31cSC3SpaceDebrisDisasterInstance
+0117ec	cSC3SpaceDebrisDisasterInstance::PanicRadius(void)	PanicRadius__31cSC3SpaceDebrisDisasterInstance	libSimDstr.so	vtable:__vt_31cSC3SpaceDebrisDisasterInstance
+0117f8	virtual function thunk (delta:-4) for cSC3SpaceDebrisDisasterInstance::GetCurrentSpaceDebrisRecord(cISC3DisasterSpaceDebrisInstance::SpaceDebrisRecord &)	__thunk_4_GetCurrentSpaceDebrisRecord__31cSC3SpaceDebrisDisasterInstanceRQ232cISC3DisasterSpaceDebrisInstance17SpaceDebrisRecord	libSimDstr.so	vtable:__vt_31cSC3SpaceDebrisDisasterInstance.32cISC3DisasterSpaceDebrisInstance
+01180b	cSC3SpaceDebrisDisasterInstance::QueryInterface(unsigned int, void **)	QueryInterface__31cSC3SpaceDebrisDisasterInstanceUiPPv	libSimDstr.so	vtable-thunk:__vt_31cSC3SpaceDebrisDisasterInstance.32cISC3DisasterSpaceDebrisInstance
+011847	cSC3SpaceDebrisDisasterInstance::Tick(cISC3DisasterLayer::tTickType)	Tick__31cSC3SpaceDebrisDisasterInstanceQ218cISC3DisasterLayer9tTickType	libSimDstr.so	vtable:__vt_31cSC3SpaceDebrisDisasterInstance
+011b3f	virtual function thunk (delta:-8) for cSC3SpaceDebrisDisasterInstance::DoMessage(cGZMessage &)	__thunk_8_DoMessage__31cSC3SpaceDebrisDisasterInstanceR10cGZMessage	libSimDstr.so	vtable:__vt_31cSC3SpaceDebrisDisasterInstance.17cIGZMessageTarget
+01224a	cSC3SpaceDebrisDisasterInstance::PlaceTerrainMarredGraphic(int, int, float)	PlaceTerrainMarredGraphic__31cSC3SpaceDebrisDisasterInstanceiif	libSimDstr.so	tokens:24.1
+0127c1	cSC3SpaceDebrisDisasterInstance::AddRef(void)	AddRef__31cSC3SpaceDebrisDisasterInstance	libSimDstr.so	vtable-thunk:__vt_31cSC3SpaceDebrisDisasterInstance.32cISC3DisasterSpaceDebrisInstance
+0127c8	cSC3SpaceDebrisDisasterInstance::Release(void)	Release__31cSC3SpaceDebrisDisasterInstance	libSimDstr.so	vtable-thunk:__vt_31cSC3SpaceDebrisDisasterInstance.32cISC3DisasterSpaceDebrisInstance
+0129b0	virtual function thunk (delta:-12) for cSC3SpaceDebrisDisasterManager::QueryInterface(unsigned int, void **)	__thunk_12_QueryInterface__30cSC3SpaceDebrisDisasterManagerUiPPv	libSimDstr.so	vtable:__vt_30cSC3SpaceDebrisDisasterManager.20cISC3DisasterManager
+0129b8	virtual function thunk (delta:-16) for cSC3SpaceDebrisDisasterManager::QueryInterface(unsigned int, void **)	__thunk_16_QueryInterface__30cSC3SpaceDebrisDisasterManagerUiPPv	libSimDstr.so	vtable:__vt_30cSC3SpaceDebrisDisasterManager.31cISC3SpaceDebrisDisasterManager
+0129c0	virtual function thunk (delta:-20) for cSC3SpaceDebrisDisasterManager::QueryInterface(unsigned int, void **)	__thunk_20_QueryInterface__30cSC3SpaceDebrisDisasterManagerUiPPv	libSimDstr.so	vtable:__vt_30cSC3SpaceDebrisDisasterManager.17cIGZMessageTarget
+0129c8	virtual function thunk (delta:-4) for cSC3SpaceDebrisDisasterInstance::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__31cSC3SpaceDebrisDisasterInstanceUiPPv	libSimDstr.so	vtable:__vt_31cSC3SpaceDebrisDisasterInstance.32cISC3DisasterSpaceDebrisInstance
+0129d0	virtual function thunk (delta:-4) for cSC3SpaceDebrisDisasterInstance::AddRef(void)	__thunk_4_AddRef__31cSC3SpaceDebrisDisasterInstance	libSimDstr.so	vtable:__vt_31cSC3SpaceDebrisDisasterInstance.32cISC3DisasterSpaceDebrisInstance
+0129d8	virtual function thunk (delta:-4) for cSC3SpaceDebrisDisasterInstance::Release(void)	__thunk_4_Release__31cSC3SpaceDebrisDisasterInstance	libSimDstr.so	vtable:__vt_31cSC3SpaceDebrisDisasterInstance.32cISC3DisasterSpaceDebrisInstance
+0129e0	virtual function thunk (delta:-8) for cSC3SpaceDebrisDisasterInstance::QueryInterface(unsigned int, void **)	__thunk_8_QueryInterface__31cSC3SpaceDebrisDisasterInstanceUiPPv	libSimDstr.so	caller
+0129e8	virtual function thunk (delta:-8) for cSC3SpaceDebrisDisasterInstance::AddRef(void)	__thunk_8_AddRef__31cSC3SpaceDebrisDisasterInstance	libSimDstr.so	caller
+0129f0	virtual function thunk (delta:-8) for cSC3SpaceDebrisDisasterInstance::Release(void)	__thunk_8_Release__31cSC3SpaceDebrisDisasterInstance	libSimDstr.so	caller
+012e77	cSC3TornadoDisasterManager::~cSC3TornadoDisasterManager(void)	_._26cSC3TornadoDisasterManager	libSimDstr.so	vtable:__vt_26cSC3TornadoDisasterManager
+012f59	cSC3TornadoDisasterManager::StopInstance(cISC3DisasterInstance *)	StopInstance__26cSC3TornadoDisasterManagerP21cISC3DisasterInstance	libSimDstr.so	vtable-thunk:__vt_26cSC3TornadoDisasterManager.20cISC3DisasterManager
+012ffc	virtual function thunk (delta:-12) for cSC3TornadoDisasterManager::Shutdown(void)	__thunk_12_Shutdown__26cSC3TornadoDisasterManager	libSimDstr.so	vtable:__vt_26cSC3TornadoDisasterManager.20cISC3DisasterManager
+013319	cSC3TornadoDisasterManager::QueryInterface(unsigned int, void **)	QueryInterface__26cSC3TornadoDisasterManagerUiPPv	libSimDstr.so	tokens:8.0
+01335d	virtual function thunk (delta:-12) for cSC3TornadoDisasterManager::Save(cISC3City *, cIGZDBSegment *)	__thunk_12_Save__26cSC3TornadoDisasterManagerP9cISC3CityP13cIGZDBSegment	libSimDstr.so	vtable:__vt_26cSC3TornadoDisasterManager.20cISC3DisasterManager
+013a36	virtual function thunk (delta:-12) for cSC3TornadoDisasterManager::StopInstance(cISC3DisasterInstance *)	__thunk_12_StopInstance__26cSC3TornadoDisasterManagerP21cISC3DisasterInstance	libSimDstr.so	vtable:__vt_26cSC3TornadoDisasterManager.20cISC3DisasterManager
+013a45	virtual function thunk (delta:-12) for cSC3TornadoDisasterManager::Tick(void)	__thunk_12_Tick__26cSC3TornadoDisasterManager	libSimDstr.so	vtable:__vt_26cSC3TornadoDisasterManager.20cISC3DisasterManager
+013a81	cSC3TornadoDisasterInstance::AddRef(void)	AddRef__27cSC3TornadoDisasterInstance	libSimDstr.so	vtable-thunk:__vt_27cSC3TornadoDisasterInstance.28cISC3DisasterTornadoInstance
+013a88	cSC3TornadoDisasterInstance::Cost(void)	Cost__27cSC3TornadoDisasterInstance	libSimDstr.so	vtable:__vt_27cSC3TornadoDisasterInstance
+013b42	cSC3TornadoDisasterInstance::GetDisasterID(void)	GetDisasterID__27cSC3TornadoDisasterInstance	libSimDstr.so	vtable:__vt_27cSC3TornadoDisasterInstance
+013b48	virtual function thunk (delta:-4) for cSC3TornadoDisasterInstance::GetLevel(void)	__thunk_4_GetLevel__27cSC3TornadoDisasterInstance	libSimDstr.so	vtable:__vt_27cSC3TornadoDisasterInstance.28cISC3DisasterTornadoInstance
+013b4c	virtual function thunk (delta:-4) for cSC3TornadoDisasterInstance::GetSpeed(void)	__thunk_4_GetSpeed__27cSC3TornadoDisasterInstance	libSimDstr.so	vtable:__vt_27cSC3TornadoDisasterInstance.28cISC3DisasterTornadoInstance
+013ca8	virtual function thunk (delta:-8) for cSC3TornadoDisasterInstance::DoMessage(cGZMessage &)	__thunk_8_DoMessage__27cSC3TornadoDisasterInstanceR10cGZMessage	libSimDstr.so	vtable:__vt_27cSC3TornadoDisasterInstance.17cIGZMessageTarget
+013dd9	virtual function thunk (delta:-4) for cSC3TornadoDisasterInstance::GetDirection(cRZ3DPointFloat32 &) const	__thunk_4_GetDirection__C27cSC3TornadoDisasterInstanceR17cRZ3DPointFloat32	libSimDstr.so	vtable:__vt_27cSC3TornadoDisasterInstance.28cISC3DisasterTornadoInstance
+013df1	cSC3TornadoDisasterInstance::GetDirectlyAffectedCells(sIGZRectUint32 &)	GetDirectlyAffectedCells__27cSC3TornadoDisasterInstanceR14sIGZRectUint32	libSimDstr.so	vtable:__vt_27cSC3TornadoDisasterInstance
+013e6c	cSC3TornadoDisasterInstance::GetLocation(unsigned int &, unsigned int &)	GetLocation__27cSC3TornadoDisasterInstanceRUiT1	libSimDstr.so	vtable:__vt_27cSC3TornadoDisasterInstance
+013e83	virtual function thunk (delta:-4) for cSC3TornadoDisasterInstance::GetLocationMicro(int &, int &, int &) const	__thunk_4_GetLocationMicro__C27cSC3TornadoDisasterInstanceRiN21	libSimDstr.so	vtable:__vt_27cSC3TornadoDisasterInstance.28cISC3DisasterTornadoInstance
+013ea3	virtual function thunk (delta:-4) for cSC3TornadoDisasterInstance::GetVelocity(cRZ3DPointFloat32 &) const	__thunk_4_GetVelocity__C27cSC3TornadoDisasterInstanceR17cRZ3DPointFloat32	libSimDstr.so	vtable:__vt_27cSC3TornadoDisasterInstance.28cISC3DisasterTornadoInstance
+013fc9	cSC3TornadoDisasterInstance::IsActive(void)	IsActive__27cSC3TornadoDisasterInstance	libSimDstr.so	vtable:__vt_27cSC3TornadoDisasterInstance
+013fd9	cSC3TornadoDisasterInstance::NumberOfOccupantsDamaged(void)	NumberOfOccupantsDamaged__27cSC3TornadoDisasterInstance	libSimDstr.so	vtable:__vt_27cSC3TornadoDisasterInstance
+013fe0	cSC3TornadoDisasterInstance::PanicEffect(unsigned int)	PanicEffect__27cSC3TornadoDisasterInstanceUi	libSimDstr.so	vtable:__vt_27cSC3TornadoDisasterInstance
+013ffc	cSC3TornadoDisasterInstance::PanicRadius(void)	PanicRadius__27cSC3TornadoDisasterInstance	libSimDstr.so	vtable:__vt_27cSC3TornadoDisasterInstance
+01400c	cSC3TornadoDisasterInstance::QueryInterface(unsigned int, void **)	QueryInterface__27cSC3TornadoDisasterInstanceUiPPv	libSimDstr.so	vtable-thunk:__vt_27cSC3TornadoDisasterInstance.28cISC3DisasterTornadoInstance
+014090	cSC3TornadoDisasterInstance::Release(void)	Release__27cSC3TornadoDisasterInstance	libSimDstr.so	vtable-thunk:__vt_27cSC3TornadoDisasterInstance.28cISC3DisasterTornadoInstance
+0142de	cSC3TornadoDisasterInstance::Tick(cISC3DisasterLayer::tTickType)	Tick__27cSC3TornadoDisasterInstanceQ218cISC3DisasterLayer9tTickType	libSimDstr.so	vtable:__vt_27cSC3TornadoDisasterInstance
+01478a	virtual function thunk (delta:-12) for cSC3TornadoDisasterManager::QueryInterface(unsigned int, void **)	__thunk_12_QueryInterface__26cSC3TornadoDisasterManagerUiPPv	libSimDstr.so	vtable:__vt_26cSC3TornadoDisasterManager.20cISC3DisasterManager
+0147a2	virtual function thunk (delta:-4) for cSC3TornadoDisasterInstance::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__27cSC3TornadoDisasterInstanceUiPPv	libSimDstr.so	vtable:__vt_27cSC3TornadoDisasterInstance.28cISC3DisasterTornadoInstance
+0147aa	virtual function thunk (delta:-4) for cSC3TornadoDisasterInstance::AddRef(void)	__thunk_4_AddRef__27cSC3TornadoDisasterInstance	libSimDstr.so	vtable:__vt_27cSC3TornadoDisasterInstance.28cISC3DisasterTornadoInstance
+0147b2	virtual function thunk (delta:-4) for cSC3TornadoDisasterInstance::Release(void)	__thunk_4_Release__27cSC3TornadoDisasterInstance	libSimDstr.so	vtable:__vt_27cSC3TornadoDisasterInstance.28cISC3DisasterTornadoInstance
+0147ba	virtual function thunk (delta:-8) for cSC3TornadoDisasterInstance::QueryInterface(unsigned int, void **)	__thunk_8_QueryInterface__27cSC3TornadoDisasterInstanceUiPPv	libSimDstr.so	vtable:__vt_27cSC3TornadoDisasterInstance.17cIGZMessageTarget
+0147c2	virtual function thunk (delta:-8) for cSC3TornadoDisasterInstance::AddRef(void)	__thunk_8_AddRef__27cSC3TornadoDisasterInstance	libSimDstr.so	caller
+0147ca	virtual function thunk (delta:-8) for cSC3TornadoDisasterInstance::Release(void)	__thunk_8_Release__27cSC3TornadoDisasterInstance	libSimDstr.so	vtable:__vt_27cSC3TornadoDisasterInstance.17cIGZMessageTarget
+0149ee	virtual function thunk (delta:-12) for cSC3ToxicCloudDisasterManager::AttemptDisasterStart(void)	__thunk_12_AttemptDisasterStart__29cSC3ToxicCloudDisasterManager	libSimDstr.so	vtable:__vt_29cSC3ToxicCloudDisasterManager.20cISC3DisasterManager
+014e0c	cSC3ToxicCloudDisasterManager::~cSC3ToxicCloudDisasterManager(void)	_._29cSC3ToxicCloudDisasterManager	libSimDstr.so	vtable:__vt_29cSC3ToxicCloudDisasterManager
+014f5e	cSC3ToxicCloudDisasterManager::StopInstance(cISC3DisasterInstance *)	StopInstance__29cSC3ToxicCloudDisasterManagerP21cISC3DisasterInstance	libSimDstr.so	vtable-thunk:__vt_29cSC3ToxicCloudDisasterManager.20cISC3DisasterManager
+014f80	virtual function thunk (delta:-20) for cSC3ToxicCloudDisasterManager::DoMessage(cGZMessage &)	__thunk_20_DoMessage__29cSC3ToxicCloudDisasterManagerR10cGZMessage	libSimDstr.so	vtable:__vt_29cSC3ToxicCloudDisasterManager.17cIGZMessageTarget
+014fc8	cSC3ToxicCloudDisasterManager::GetLikelihoodOfToxicCloud(void)	GetLikelihoodOfToxicCloud__29cSC3ToxicCloudDisasterManager	libSimDstr.so	tokens:8.0
+0150a9	virtual function thunk (delta:-12) for cSC3ToxicCloudDisasterManager::Shutdown(void)	__thunk_12_Shutdown__29cSC3ToxicCloudDisasterManager	libSimDstr.so	vtable:__vt_29cSC3ToxicCloudDisasterManager.20cISC3DisasterManager
+0153bf	cSC3ToxicCloudDisasterManager::QueryInterface(unsigned int, void **)	QueryInterface__29cSC3ToxicCloudDisasterManagerUiPPv	libSimDstr.so	tokens:8.0
+015403	virtual function thunk (delta:-12) for cSC3ToxicCloudDisasterManager::Save(cISC3City *, cIGZDBSegment *)	__thunk_12_Save__29cSC3ToxicCloudDisasterManagerP9cISC3CityP13cIGZDBSegment	libSimDstr.so	vtable:__vt_29cSC3ToxicCloudDisasterManager.20cISC3DisasterManager
+0156ce	virtual function thunk (delta:-16) for cSC3ToxicCloudDisasterManager::StartToxicCloud(unsigned int, unsigned int, cRZ3DPointFloat32 const &, int, unsigned int, unsigned int, bool)	__thunk_16_StartToxicCloud__29cSC3ToxicCloudDisasterManagerUiUiRC17cRZ3DPointFloat32iUiUib	libSimDstr.so	vtable:__vt_29cSC3ToxicCloudDisasterManager.30cISC3ToxicCloudDisasterManager
+015751	virtual function thunk (delta:-12) for cSC3ToxicCloudDisasterManager::StaticInit(void)	__thunk_12_StaticInit__29cSC3ToxicCloudDisasterManager	libSimDstr.so	vtable:__vt_29cSC3ToxicCloudDisasterManager.20cISC3DisasterManager
+0168ac	virtual function thunk (delta:-12) for cSC3ToxicCloudDisasterManager::StopInstance(cISC3DisasterInstance *)	__thunk_12_StopInstance__29cSC3ToxicCloudDisasterManagerP21cISC3DisasterInstance	libSimDstr.so	vtable:__vt_29cSC3ToxicCloudDisasterManager.20cISC3DisasterManager
+0168bb	virtual function thunk (delta:-12) for cSC3ToxicCloudDisasterManager::Tick(void)	__thunk_12_Tick__29cSC3ToxicCloudDisasterManager	libSimDstr.so	vtable:__vt_29cSC3ToxicCloudDisasterManager.20cISC3DisasterManager
+016a93	cSC3ToxicCloudDisasterInstance::AddRef(void)	AddRef__30cSC3ToxicCloudDisasterInstance	libSimDstr.so	vtable:__vt_30cSC3ToxicCloudDisasterInstance
+016a9a	cSC3ToxicCloudDisasterInstance::Cost(void)	Cost__30cSC3ToxicCloudDisasterInstance	libSimDstr.so	vtable:__vt_30cSC3ToxicCloudDisasterInstance
+016a9e	cSC3ToxicCloudDisasterInstance::CreateCloudDisplay(void)	CreateCloudDisplay__30cSC3ToxicCloudDisasterInstance	libSimDstr.so	tokens:16.0
+016de3	cSC3ToxicCloudDisasterInstance::GetDisasterID(void)	GetDisasterID__30cSC3ToxicCloudDisasterInstance	libSimDstr.so	vtable:__vt_30cSC3ToxicCloudDisasterInstance
+016de9	virtual function thunk (delta:-4) for cSC3ToxicCloudDisasterInstance::IsCellAffected(unsigned int, unsigned int) const	__thunk_4_IsCellAffected__C30cSC3ToxicCloudDisasterInstanceUiUi	libSimDstr.so	vtable:__vt_30cSC3ToxicCloudDisasterInstance.31cISC3ToxicCloudDisasterInstance
+016e5c	cSC3ToxicCloudDisasterInstance::DoMessage(cGZMessage &)	DoMessage__30cSC3ToxicCloudDisasterInstanceR10cGZMessage	libSimDstr.so	tokens:22.7
+016f34	cSC3ToxicCloudDisasterInstance::GetDirectlyAffectedCells(sIGZRectUint32 &)	GetDirectlyAffectedCells__30cSC3ToxicCloudDisasterInstanceR14sIGZRectUint32	libSimDstr.so	vtable:__vt_30cSC3ToxicCloudDisasterInstance
+016f62	cSC3ToxicCloudDisasterInstance::GetLocation(unsigned int &, unsigned int &)	GetLocation__30cSC3ToxicCloudDisasterInstanceRUiT1	libSimDstr.so	vtable:__vt_30cSC3ToxicCloudDisasterInstance
+016f7f	virtual function thunk (delta:-4) for cSC3ToxicCloudDisasterInstance::GetLocationMicro(int &, int &, int &) const	__thunk_4_GetLocationMicro__C30cSC3ToxicCloudDisasterInstanceRiN21	libSimDstr.so	vtable:__vt_30cSC3ToxicCloudDisasterInstance.31cISC3ToxicCloudDisasterInstance
+016f9f	virtual function thunk (delta:-4) for cSC3ToxicCloudDisasterInstance::GetVelocity(cRZ3DPointFloat32 &) const	__thunk_4_GetVelocity__C30cSC3ToxicCloudDisasterInstanceR17cRZ3DPointFloat32	libSimDstr.so	vtable:__vt_30cSC3ToxicCloudDisasterInstance.31cISC3ToxicCloudDisasterInstance
+01708f	cSC3ToxicCloudDisasterInstance::IsActive(void)	IsActive__30cSC3ToxicCloudDisasterInstance	libSimDstr.so	vtable:__vt_30cSC3ToxicCloudDisasterInstance
+0170a3	cSC3ToxicCloudDisasterInstance::NumberOfOccupantsDamaged(void)	NumberOfOccupantsDamaged__30cSC3ToxicCloudDisasterInstance	libSimDstr.so	vtable:__vt_30cSC3ToxicCloudDisasterInstance
+0170a7	cSC3ToxicCloudDisasterInstance::PanicEffect(unsigned int)	PanicEffect__30cSC3ToxicCloudDisasterInstanceUi	libSimDstr.so	vtable:__vt_30cSC3ToxicCloudDisasterInstance
+0170c3	cSC3ToxicCloudDisasterInstance::PanicRadius(void)	PanicRadius__30cSC3ToxicCloudDisasterInstance	libSimDstr.so	vtable:__vt_30cSC3ToxicCloudDisasterInstance
+0170d3	cSC3ToxicCloudDisasterInstance::QueryInterface(unsigned int, void **)	QueryInterface__30cSC3ToxicCloudDisasterInstanceUiPPv	libSimDstr.so	tokens:8.0
+01715c	cSC3ToxicCloudDisasterInstance::Release(void)	Release__30cSC3ToxicCloudDisasterInstance	libSimDstr.so	vtable:__vt_30cSC3ToxicCloudDisasterInstance
+0173f2	cSC3ToxicCloudDisasterInstance::Tick(cISC3DisasterLayer::tTickType)	Tick__30cSC3ToxicCloudDisasterInstanceQ218cISC3DisasterLayer9tTickType	libSimDstr.so	vtable:__vt_30cSC3ToxicCloudDisasterInstance
+017a16	virtual function thunk (delta:-12) for cSC3ToxicCloudDisasterManager::QueryInterface(unsigned int, void **)	__thunk_12_QueryInterface__29cSC3ToxicCloudDisasterManagerUiPPv	libSimDstr.so	vtable:__vt_29cSC3ToxicCloudDisasterManager.20cISC3DisasterManager
+017a1e	virtual function thunk (delta:-16) for cSC3ToxicCloudDisasterManager::QueryInterface(unsigned int, void **)	__thunk_16_QueryInterface__29cSC3ToxicCloudDisasterManagerUiPPv	libSimDstr.so	vtable:__vt_29cSC3ToxicCloudDisasterManager.30cISC3ToxicCloudDisasterManager
+017a26	virtual function thunk (delta:-20) for cSC3ToxicCloudDisasterManager::QueryInterface(unsigned int, void **)	__thunk_20_QueryInterface__29cSC3ToxicCloudDisasterManagerUiPPv	libSimDstr.so	vtable:__vt_29cSC3ToxicCloudDisasterManager.17cIGZMessageTarget
+017a2e	virtual function thunk (delta:-4) for cSC3ToxicCloudDisasterInstance::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__30cSC3ToxicCloudDisasterInstanceUiPPv	libSimDstr.so	vtable:__vt_30cSC3ToxicCloudDisasterInstance.31cISC3ToxicCloudDisasterInstance
+017a36	virtual function thunk (delta:-4) for cSC3ToxicCloudDisasterInstance::AddRef(void)	__thunk_4_AddRef__30cSC3ToxicCloudDisasterInstance	libSimDstr.so	vtable:__vt_30cSC3ToxicCloudDisasterInstance.31cISC3ToxicCloudDisasterInstance
+017a3e	virtual function thunk (delta:-4) for cSC3ToxicCloudDisasterInstance::Release(void)	__thunk_4_Release__30cSC3ToxicCloudDisasterInstance	libSimDstr.so	vtable:__vt_30cSC3ToxicCloudDisasterInstance.31cISC3ToxicCloudDisasterInstance
+017a46	virtual function thunk (delta:-8) for cSC3ToxicCloudDisasterInstance::QueryInterface(unsigned int, void **)	__thunk_8_QueryInterface__30cSC3ToxicCloudDisasterInstanceUiPPv	libSimDstr.so	vtable:__vt_30cSC3ToxicCloudDisasterInstance.17cIGZMessageTarget
+017a4e	virtual function thunk (delta:-8) for cSC3ToxicCloudDisasterInstance::AddRef(void)	__thunk_8_AddRef__30cSC3ToxicCloudDisasterInstance	libSimDstr.so	vtable:__vt_30cSC3ToxicCloudDisasterInstance.17cIGZMessageTarget
+017a56	virtual function thunk (delta:-8) for cSC3ToxicCloudDisasterInstance::Release(void)	__thunk_8_Release__30cSC3ToxicCloudDisasterInstance	libSimDstr.so	vtable:__vt_30cSC3ToxicCloudDisasterInstance.17cIGZMessageTarget
+017d3a	cSC3UFODisasterManager::~cSC3UFODisasterManager(void)	_._22cSC3UFODisasterManager	libSimDstr.so	vtable:__vt_22cSC3UFODisasterManager
+017ff6	cSC3UFODisasterManager::DoMessage(cGZMessage &)	DoMessage__22cSC3UFODisasterManagerR10cGZMessage	libSimDstr.so	tokens:14.4
+0182c7	cSC3UFODisasterManager::QueryInterface(unsigned int, void **)	QueryInterface__22cSC3UFODisasterManagerUiPPv	libSimDstr.so	tokens:8.0
+0191c0	virtual function thunk (delta:-12) for cSC3FireDisasterManager::StaticShutdown(void)	__thunk_12_StaticShutdown__23cSC3FireDisasterManager	libSimDstr.so	vtable:__vt_23cSC3FireDisasterManager.20cISC3DisasterManager
+0193bf	cSC3UFODisasterManager::Save(cISC3City *, cIGZDBSegment *)	Save__22cSC3UFODisasterManagerP9cISC3CityP13cIGZDBSegment	libSimDstr.so	tokens:22.0
+0196b5	cSC3WhirlpoolDisasterInstance::AfflictedOccupant(void)	AfflictedOccupant__29cSC3WhirlpoolDisasterInstance	libSimDstr.so	vtable:__vt_29cSC3WhirlpoolDisasterInstance
+01a26b	cSC3UFODisasterInstance::GetBuildingTargetList(cRZPoint *, unsigned int &)	GetBuildingTargetList__23cSC3UFODisasterInstanceP8cRZPointRUi	libSimDstr.so	tokens:103.9
+01ab55	cSC3UFODisasterInstance::StartAttack(void)	StartAttack__23cSC3UFODisasterInstance	libSimDstr.so	tokens:23.1
+01afaf	cSC3UFODisasterInstance::DoMessage(cGZMessage &)	DoMessage__23cSC3UFODisasterInstanceR10cGZMessage	libSimDstr.so	caller
+01b099	cSC3UFODisasterInstance::MakeCropCircle(int, int)	MakeCropCircle__23cSC3UFODisasterInstanceii	libSimDstr.so	tokens:15.3
+01b19d	cRZLock::~cRZLock(void)	_._7cRZLock	libSimDstr.so	vtable:__vt_7cRZLock
+01be50	cSC3WhirlpoolDisasterManager::~cSC3WhirlpoolDisasterManager(void)	_._28cSC3WhirlpoolDisasterManager	libSimDstr.so	vtable:__vt_28cSC3WhirlpoolDisasterManager
+01bf75	virtual function thunk (delta:-12) for cSC3SmiteDisasterManager::AttemptDisasterStart(void)	__thunk_12_AttemptDisasterStart__24cSC3SmiteDisasterManager	libSimDstr.so	vtable:__vt_24cSC3SmiteDisasterManager.20cISC3DisasterManager
+01c0a5	virtual function thunk (delta:-16) for cSC3SmiteDisasterManager::GetLastDisasterHistory(cISC3DisasterSmiteInstance::SmiteRecord *) const	__thunk_16_GetLastDisasterHistory__C24cSC3SmiteDisasterManagerPQ226cISC3DisasterSmiteInstance11SmiteRecord	libSimDstr.so	vtable:__vt_24cSC3SmiteDisasterManager.25cISC3SmiteDisasterManager
+01c0cc	cSC3WhirlpoolDisasterManager::QueryInterface(unsigned int, void **)	QueryInterface__28cSC3WhirlpoolDisasterManagerUiPPv	libSimDstr.so	tokens:8.0
+01c53f	cSC3WhirlpoolDisasterManager::Save(cISC3City *, cIGZDBSegment *)	Save__28cSC3WhirlpoolDisasterManagerP9cISC3CityP13cIGZDBSegment	libSimDstr.so	tokens:22.0
+01cae3	cSC3WhirlpoolDisasterInstance::GetDisasterID(void)	GetDisasterID__29cSC3WhirlpoolDisasterInstance	libSimDstr.so	vtable:__vt_29cSC3WhirlpoolDisasterInstance
+01cae9	virtual function thunk (delta:-4) for cSC3SpaceDebrisDisasterInstance::GetSpaceDebrisScale(void) const	__thunk_4_GetSpaceDebrisScale__C31cSC3SpaceDebrisDisasterInstance	libSimDstr.so	vtable:__vt_31cSC3SpaceDebrisDisasterInstance.32cISC3DisasterSpaceDebrisInstance
+01cfce	cSC3WhirlpoolDisasterInstance::GetDirectlyAffectedCells(sIGZRectUint32 &)	GetDirectlyAffectedCells__29cSC3WhirlpoolDisasterInstanceR14sIGZRectUint32	libSimDstr.so	vtable:__vt_29cSC3WhirlpoolDisasterInstance
+01d050	cSC3WhirlpoolDisasterInstance::GetLocation(unsigned int &, unsigned int &)	GetLocation__29cSC3WhirlpoolDisasterInstanceRUiT1	libSimDstr.so	vtable:__vt_29cSC3WhirlpoolDisasterInstance
+01d0ce	cSC3WhirlpoolDisasterInstance::IsActive(void)	IsActive__29cSC3WhirlpoolDisasterInstance	libSimDstr.so	vtable:__vt_29cSC3WhirlpoolDisasterInstance
+01d0d9	cSC3WhirlpoolDisasterInstance::PanicEffect(unsigned int)	PanicEffect__29cSC3WhirlpoolDisasterInstanceUi	libSimDstr.so	vtable:__vt_29cSC3WhirlpoolDisasterInstance
+01d0f3	cSC3WhirlpoolDisasterInstance::PanicRadius(void)	PanicRadius__29cSC3WhirlpoolDisasterInstance	libSimDstr.so	vtable:__vt_29cSC3WhirlpoolDisasterInstance
+01d115	cSC3WhirlpoolDisasterInstance::QueryInterface(unsigned int, void **)	QueryInterface__29cSC3WhirlpoolDisasterInstanceUiPPv	libSimDstr.so	tokens:8.0
+01d156	cSC3WhirlpoolDisasterInstance::Tick(cISC3DisasterLayer::tTickType)	Tick__29cSC3WhirlpoolDisasterInstanceQ218cISC3DisasterLayer9tTickType	libSimDstr.so	vtable:__vt_29cSC3WhirlpoolDisasterInstance
+01e275	cSC3WhirlpoolDisasterInstance::AddRef(void)	AddRef__29cSC3WhirlpoolDisasterInstance	libSimDstr.so	vtable:__vt_29cSC3WhirlpoolDisasterInstance
+01e27c	cSC3WhirlpoolDisasterInstance::Release(void)	Release__29cSC3WhirlpoolDisasterInstance	libSimDstr.so	vtable:__vt_29cSC3WhirlpoolDisasterInstance
+01e2a3	cSC3WhirlpoolDisasterInstance::Cost(void)	Cost__29cSC3WhirlpoolDisasterInstance	libSimDstr.so	vtable:__vt_29cSC3WhirlpoolDisasterInstance
+01e2a7	cSC3WhirlpoolDisasterInstance::NumberOfOccupantsDamaged(void)	NumberOfOccupantsDamaged__29cSC3WhirlpoolDisasterInstance	libSimDstr.so	vtable:__vt_29cSC3WhirlpoolDisasterInstance
+01e2ab	MakeWaterAreaList(cISC3DirtBag *, vector<cRZRect, allocator<cRZRect> > &, unsigned int, unsigned int, cRZRect const *)	MakeWaterAreaList__FP12cISC3DirtBagRt6vector2Z7cRZRectZt9allocator1Z7cRZRectUiUiPC7cRZRect	libSimDstr.so	tokens:8.0
+01e943	virtual function thunk (delta:-20) for cSC3FireDisasterManager::AddRef(void)	__thunk_20_AddRef__23cSC3FireDisasterManager	libSimDstr.so	vtable:__vt_23cSC3FireDisasterManager.17cIGZMessageTarget
+01e94b	virtual function thunk (delta:-20) for cSC3FireDisasterManager::Release(void)	__thunk_20_Release__23cSC3FireDisasterManager	libSimDstr.so	vtable:__vt_23cSC3FireDisasterManager.17cIGZMessageTarget
+022623	virtual function thunk (delta:-12) for cSC3FireDisasterManager::Release(void)	__thunk_12_Release__23cSC3FireDisasterManager	libSimDstr.so	vtable:__vt_23cSC3FireDisasterManager.20cISC3DisasterManager
+0227af	cSDICOMDirector::GetDirectorID(void) const	GetDirectorID__C15cSDICOMDirector	libSimDstr.so	tokens:8.0
+022a9d	cSDICOMDirector::~cSDICOMDirector(void)	_._15cSDICOMDirector	libSimDstr.so	vtable:__vt_15cSDICOMDirector
+022ad5	virtual function thunk (delta:-4) for cRZCOMDllDirector::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__17cRZCOMDllDirectorUiPPv	libSimDstr.so	caller
+022add	virtual function thunk (delta:-4) for cSC3SmiteDisasterInstance::AddRef(void)	__thunk_4_AddRef__25cSC3SmiteDisasterInstance	libSimDstr.so	vtable:__vt_25cSC3SmiteDisasterInstance.26cISC3DisasterSmiteInstance
+022aed	cRZCOMDllDirector::OnUnload(void)	OnUnload__17cRZCOMDllDirector	libSimDstr.so	vtable:__vt_15cSDICOMDirector
+022ec3	cSC3SmiteDisasterManager::AttemptDisasterStart(void)	AttemptDisasterStart__24cSC3SmiteDisasterManager	libSimDstr.so	callee
+02301d	cRZCOMDllDirector::OnStart(cIGZCOM *)	OnStart__17cRZCOMDllDirectorP7cIGZCOM	libSimDstr.so	tokens:16.0
+024f84	cRZCOMDllDirector::QueryInterface(unsigned int, void **)	QueryInterface__17cRZCOMDllDirectorUiPPv	libSimDstr.so	tokens:16.0
+024fc5	cRZCOMDllDirector::FrameWork(void)	FrameWork__17cRZCOMDllDirector	libSimDstr.so	vtable:__vt_15cSDICOMDirector
+024fce	cRZCOMDllDirector::RemoveRef(void)	RemoveRef__17cRZCOMDllDirector	libSimDstr.so	vtable:__vt_15cSDICOMDirector
+024fdd	cRZCOMDllDirector::RefCount(void)	RefCount__17cRZCOMDllDirector	libSimDstr.so	vtable:__vt_15cSDICOMDirector
+024fe1	cRZCOMDllDirector::InitializeCOM(cIGZCOM *, cIGZString &)	InitializeCOM__17cRZCOMDllDirectorP7cIGZCOMR10cIGZString	libSimDstr.so	vtable:__vt_15cSDICOMDirector
+0250af	cRZCOMDllDirector::GetClassObject(unsigned int, unsigned int, void **)	GetClassObject__17cRZCOMDllDirectorUiUiPPv	libSimDstr.so	vtable:__vt_15cSDICOMDirector
+025130	cRZCOMDllDirector::EnumClassObjects(void (*)(unsigned int, unsigned int, void *), void *)	EnumClassObjects__17cRZCOMDllDirectorPFUiUiPv_vPv	libSimDstr.so	vtable:__vt_15cSDICOMDirector
+025184	cRZCOMDllDirector::ModuleName(cIGZString &)	ModuleName__17cRZCOMDllDirectorR10cIGZString	libSimDstr.so	vtable:__vt_15cSDICOMDirector
+025198	cRZCOMDllDirector::AddDirector(cRZCOMDllDirector *)	AddDirector__17cRZCOMDllDirectorP17cRZCOMDllDirector	libSimDstr.so	vtable:__vt_15cSDICOMDirector
+0251e2	cRZCOMDllDirector::CanUnloadNow(void)	CanUnloadNow__17cRZCOMDllDirector	libSimDstr.so	vtable:__vt_15cSDICOMDirector
+025239	cRZCOMDllDirector::AppRegister(cIGZRegistry *)	AppRegister__17cRZCOMDllDirectorP12cIGZRegistry	libSimDstr.so	vtable:__vt_15cSDICOMDirector
+025266	cRZCOMDllDirector::GZCOM(void)	GZCOM__17cRZCOMDllDirector	libSimDstr.so	vtable:__vt_15cSDICOMDirector
+02a697	cSC3FireDisasterManager::AddRef(void)	AddRef__23cSC3FireDisasterManager	libSimDstr.so	vtable-thunk:__vt_23cSC3FireDisasterManager.17cIGZMessageTarget
+02a6ae	cSC3FireDisasterManager::Release(void)	Release__23cSC3FireDisasterManager	libSimDstr.so	vtable-thunk:__vt_23cSC3FireDisasterManager.17cIGZMessageTarget
+02f2fb	cSC3DisasterLayer::DeleteDisasterListIterator(cISC3DisasterListIterator *)	DeleteDisasterListIterator__17cSC3DisasterLayerP25cISC3DisasterListIterator	libSimDstr.so	vtable-thunk:__vt_17cSC3DisasterLayer

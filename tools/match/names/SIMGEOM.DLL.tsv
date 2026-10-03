@@ -1,0 +1,439 @@
+rva	demangled	mangled	source	method
+001056	cSC3BuildingFamily::AddRef(void)	AddRef__18cSC3BuildingFamily	libSimGeom.so	vtable:__vt_18cSC3BuildingFamily
+00105e	cSC3BuildingFamily::Release(void)	Release__18cSC3BuildingFamily	libSimGeom.so	vtable:__vt_18cSC3BuildingFamily
+001066	virtual function thunk (delta:-4) for cSC3BuildingFamily::~cSC3BuildingFamily(void)	__thunk_4__._18cSC3BuildingFamily	libSimGeom.so	vtable:__vt_18cSC3BuildingFamily.11cRZResource
+0010fe	cSC3BuildingFamily::GetBuildingList(cISC3BuildingFamily::tFamilyMember *)	GetBuildingList__18cSC3BuildingFamilyPQ219cISC3BuildingFamily13tFamilyMember	libSimGeom.so	vtable:__vt_18cSC3BuildingFamily
+001250	cSC3BuildingFamily::SerialReadText(cIGZDBSerialRecord &)	SerialReadText__18cSC3BuildingFamilyR18cIGZDBSerialRecord	libSimGeom.so	tokens:37.0
+001424	virtual function thunk (delta:-4) for cSC3BuildingFamily::DebugTypeTag(cIGZString &)	__thunk_4_DebugTypeTag__18cSC3BuildingFamilyR10cIGZString	libSimGeom.so	vtable:__vt_18cSC3BuildingFamily.11cRZResource
+001430	cSC3BuildingFamily::QueryInterface(unsigned int, void **)	QueryInterface__18cSC3BuildingFamilyUiPPv	libSimGeom.so	tokens:7.9
+001e28	virtual function thunk (delta:-4) for cSC3BuildingFamily::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__18cSC3BuildingFamilyUiPPv	libSimGeom.so	vtable:__vt_18cSC3BuildingFamily.11cRZResource
+001e30	virtual function thunk (delta:-4) for cSC3BuildingFamily::AddRef(void)	__thunk_4_AddRef__18cSC3BuildingFamily	libSimGeom.so	vtable:__vt_18cSC3BuildingFamily.11cRZResource
+001e38	virtual function thunk (delta:-4) for cSC3BuildingFamily::Release(void)	__thunk_4_Release__18cSC3BuildingFamily	libSimGeom.so	vtable:__vt_18cSC3BuildingFamily.11cRZResource
+002135	virtual function thunk (delta:-324) for cSC3PortAttrib::GetPortType(void)	__thunk_324_GetPortType__14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+00224a	virtual function thunk (delta:-4) for cSC3BuildingLayer::StaticInit(cISC3CityDefinition *)	__thunk_4_StaticInit__17cSC3BuildingLayerP19cISC3CityDefinition	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer.14cISC3CityLayer
+002385	virtual function thunk (delta:-4) for cSC3BuildingLayer::StaticShutdown(void)	__thunk_4_StaticShutdown__17cSC3BuildingLayer	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer.14cISC3CityLayer
+0025e2	virtual function thunk (delta:-4) for cSC3BuildingLayer::Shutdown(void)	__thunk_4_Shutdown__17cSC3BuildingLayer	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer.14cISC3CityLayer
+00271d	cSC3BuildingLayer::Init(cISC3City *, cISC2Importer *)	Init__17cSC3BuildingLayerP9cISC3CityP13cISC2Importer	libSimGeom.so	tokens:29.1
+002cc2	cSC3BuildingLayer::Init(cISC3City *, cIGZDBSegment *)	Init__17cSC3BuildingLayerP9cISC3CityP13cIGZDBSegment	libSimGeom.so	tokens:21.5
+0032ca	virtual function thunk (delta:-4) for cSC3BuildingLayer::Save(cISC3City *, cIGZDBSegment *)	__thunk_4_Save__17cSC3BuildingLayerP9cISC3CityP13cIGZDBSegment	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer.14cISC3CityLayer
+0035a1	virtual function thunk (delta:-32) for cSC3PortLayer::StaticInit(cISC3CityDefinition *)	__thunk_32_StaticInit__13cSC3PortLayerP19cISC3CityDefinition	libSimGeom.so	vtable:__vt_13cSC3PortLayer.14cISC3CityLayer
+0035c3	cSC3BuildingLayer::GetDefaultAttribData(cISC3Building *)	GetDefaultAttribData__17cSC3BuildingLayerP13cISC3Building	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer
+0035d5	cSC3BuildingLayer::GetDefaultSpriteData(cISC3Building *)	GetDefaultSpriteData__17cSC3BuildingLayerP13cISC3Building	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer
+0035e7	virtual function thunk (delta:-4) for cSC3BuildingLayer::GetManipulator(cISC3CityAgentType const &, cISC3CityLayerManipulator **, int &)	__thunk_4_GetManipulator__17cSC3BuildingLayerRC18cISC3CityAgentTypePP25cISC3CityLayerManipulatorRi	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer.14cISC3CityLayer
+0035fd	cSC3BuildingLayer::InsertBuilding(cISC3Building *)	InsertBuilding__17cSC3BuildingLayerP13cISC3Building	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer
+0038ef	cSC3BuildingLayer::IsBuildable(sIGZRectUint32 const &, bool) const	IsBuildable__C17cSC3BuildingLayerRC14sIGZRectUint32b	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer
+0039a8	virtual function thunk (delta:-8) for cSC3BuildingLayer::OccupantInserted(unsigned int, cISC3Occupant *)	__thunk_8_OccupantInserted__17cSC3BuildingLayerUiP13cISC3Occupant	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer.23cISC3CityChangeReceiver
+003adf	virtual function thunk (delta:-8) for cSC3BuildingLayer::OccupantRemoved(unsigned int, cISC3Occupant *)	__thunk_8_OccupantRemoved__17cSC3BuildingLayerUiP13cISC3Occupant	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer.23cISC3CityChangeReceiver
+003c3b	cSC3BuildingLayer::OccupantInserted(unsigned int, cISC3Occupant *)	OccupantInserted__17cSC3BuildingLayerUiP13cISC3Occupant	libSimGeom.so	callee
+003d85	cSC3BuildingLayer::CheckOccupantTracking(unsigned int)	CheckOccupantTracking__17cSC3BuildingLayerUi	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer
+003db1	cSC3BuildingLayer::StartTrackingOccupantCount(unsigned int)	StartTrackingOccupantCount__17cSC3BuildingLayerUi	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer
+003eae	cSC3BuildingLayer::ReadINIOccupantTrackingList(void)	ReadINIOccupantTrackingList__17cSC3BuildingLayer	libSimGeom.so	tokens:21.7
+00414f	cSC3BuildingLayer::RemoveBuilding(cISC3Building *)	RemoveBuilding__17cSC3BuildingLayerP13cISC3Building	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer
+0041c8	cSGDemolitionLayer::GetManipulator(cISC3CityAgentType const &, cISC3CityLayerManipulator **, int &)	GetManipulator__18cSGDemolitionLayerRC18cISC3CityAgentTypePP25cISC3CityLayerManipulatorRi	libSimGeom.so	vtable:__vt_18cSGDemolitionLayer
+004203	virtual function thunk (delta:-8) for cSC3BuildingLayer::CellChangedAll(unsigned int)	__thunk_8_CellChangedAll__17cSC3BuildingLayerUi	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer.23cISC3CityChangeReceiver
+0042d5	cSC3BuildingLayerStaticInfo::Init(cISC3CityDefinition *)	Init__27cSC3BuildingLayerStaticInfoP19cISC3CityDefinition	libSimGeom.so	tokens:21.7
+004c4a	virtual function thunk (delta:-32) for cSC3PortLayer::DoMessage(cGZMessage &)	__thunk_32_DoMessage__13cSC3PortLayerR10cGZMessage	libSimGeom.so	vtable:__vt_13cSC3PortLayer.14cISC3CityLayer
+004c4f	virtual function thunk (delta:-4) for cSC3BuildingLayer::DoQueryInfo(cGZMessage &, cIGZUnknown *)	__thunk_4_DoQueryInfo__17cSC3BuildingLayerR10cGZMessageP11cIGZUnknown	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer.14cISC3CityLayer
+004c54	virtual function thunk (delta:-8) for cSC3BuildingLayer::OccupantMoved(unsigned int, cISC3Occupant *, cSC3CityCoord const &)	__thunk_8_OccupantMoved__17cSC3BuildingLayerUiP13cISC3OccupantRC13cSC3CityCoord	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer.23cISC3CityChangeReceiver
+004c59	virtual function thunk (delta:-8) for cSC3BuildingLayer::OccupantChanged(unsigned int, cISC3Occupant *, int, void *)	__thunk_8_OccupantChanged__17cSC3BuildingLayerUiP13cISC3OccupantiPv	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer.23cISC3CityChangeReceiver
+004c5e	virtual function thunk (delta:-4) for cSC3BuildingLayer::GetLayerType(void)	__thunk_4_GetLayerType__17cSC3BuildingLayer	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer.14cISC3CityLayer
+004c64	cSC3BuildingLayer::GetCityCenter(unsigned int &, unsigned int &)	GetCityCenter__17cSC3BuildingLayerRUiT1	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer
+004c79	cSC3BuildingLayer::GetTotalAreaOfBuildings(void) const	GetTotalAreaOfBuildings__C17cSC3BuildingLayer	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer
+004c80	cSC3BuildingLayer::~cSC3BuildingLayer(void)	_._17cSC3BuildingLayer	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer
+004cb8	cSC3BuildingLayer::QueryInterface(unsigned int, void **)	QueryInterface__17cSC3BuildingLayerUiPPv	libSimGeom.so	tokens:27.7
+004d1d	cSC3BuildingLayer::Release(void)	Release__17cSC3BuildingLayer	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer
+004d86	cSGDemolitionTest::QueryInterface(unsigned int, void **)	QueryInterface__17cSGDemolitionTestUiPPv	libSimGeom.so	vtable:__vt_17cSGDemolitionTest
+0069fd	virtual function thunk (delta:-4) for cSC3BuildingLayer::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__17cSC3BuildingLayerUiPPv	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer.14cISC3CityLayer
+006a05	virtual function thunk (delta:-4) for cSC3BuildingLayer::AddRef(void)	__thunk_4_AddRef__17cSC3BuildingLayer	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer.14cISC3CityLayer
+006a0d	virtual function thunk (delta:-4) for cSC3BuildingLayer::Release(void)	__thunk_4_Release__17cSC3BuildingLayer	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer.14cISC3CityLayer
+006a15	virtual function thunk (delta:-8) for cSC3BuildingLayer::QueryInterface(unsigned int, void **)	__thunk_8_QueryInterface__17cSC3BuildingLayerUiPPv	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer.23cISC3CityChangeReceiver
+006a1d	virtual function thunk (delta:-8) for cSC3BuildingLayer::AddRef(void)	__thunk_8_AddRef__17cSC3BuildingLayer	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer.23cISC3CityChangeReceiver
+006a25	virtual function thunk (delta:-8) for cSC3BuildingLayer::Release(void)	__thunk_8_Release__17cSC3BuildingLayer	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer.23cISC3CityChangeReceiver
+006a2d	virtual function thunk (delta:-12) for cSC3BuildingLayer::QueryInterface(unsigned int, void **)	__thunk_12_QueryInterface__17cSC3BuildingLayerUiPPv	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer.20cISC3OccupantFactory
+006a35	virtual function thunk (delta:-12) for cSC3BuildingLayer::AddRef(void)	__thunk_12_AddRef__17cSC3BuildingLayer	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer.20cISC3OccupantFactory
+006a3d	virtual function thunk (delta:-12) for cSC3BuildingLayer::Release(void)	__thunk_12_Release__17cSC3BuildingLayer	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer.20cISC3OccupantFactory
+006a65	cSC3BuildingLayer::CanPlaceBuilding(cSC3CityCoord const &, cGZResourceKey const &, cSC3CityBounds &, unsigned int &)	CanPlaceBuilding__17cSC3BuildingLayerRC13cSC3CityCoordRC14cGZResourceKeyR14cSC3CityBoundsRUi	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer
+006a82	cSC3BuildingLayer::CanPlaceShorelineBuilding(cSC3CityCoord const &, cGZResourceKey const &, cSC3CityBounds &, unsigned int &)	CanPlaceShorelineBuilding__17cSC3BuildingLayerRC13cSC3CityCoordRC14cGZResourceKeyR14cSC3CityBoundsRUi	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer
+006aa0	cSC3BuildingLayer::CanPlacePlumbingBuilding(cSC3CityCoord const &, cGZResourceKey const &, cSC3CityBounds &, unsigned int &)	CanPlacePlumbingBuilding__17cSC3BuildingLayerRC13cSC3CityCoordRC14cGZResourceKeyR14cSC3CityBoundsRUi	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer
+006abe	cSC3BuildingLayer::CanPlaceSubwayBuilding(cSC3CityCoord const &, cGZResourceKey const &, cSC3CityBounds &, unsigned int &)	CanPlaceSubwayBuilding__17cSC3BuildingLayerRC13cSC3CityCoordRC14cGZResourceKeyR14cSC3CityBoundsRUi	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer
+006adc	cSC3BuildingLayer::CanPlaceMultiBuilding(cSC3CityCoord const &, cGZResourceKey const &, cGZResourceKey const &, cGZResourceKey const &, cGZResourceKey const &, cSC3CityBounds &, unsigned int &)	CanPlaceMultiBuilding__17cSC3BuildingLayerRC13cSC3CityCoordRC14cGZResourceKeyN32R14cSC3CityBoundsRUi	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer
+006b02	cSC3BuildingLayer::PlaceBuilding(cSC3CityCoord const &, cGZResourceKey const &, cSC3CityBounds &, unsigned int &, bool)	PlaceBuilding__17cSC3BuildingLayerRC13cSC3CityCoordRC14cGZResourceKeyR14cSC3CityBoundsRUib	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer
+006b21	cSC3BuildingLayer::PlaceShorlineBuilding(cSC3CityCoord const &, cGZResourceKey const &, cSC3CityBounds &, unsigned int &, bool)	PlaceShorlineBuilding__17cSC3BuildingLayerRC13cSC3CityCoordRC14cGZResourceKeyR14cSC3CityBoundsRUib	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer
+006b40	cSC3BuildingLayer::PlacePlumbingBuilding(cSC3CityCoord const &, cGZResourceKey const &, cSC3CityBounds &, unsigned int &, bool)	PlacePlumbingBuilding__17cSC3BuildingLayerRC13cSC3CityCoordRC14cGZResourceKeyR14cSC3CityBoundsRUib	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer
+006b5f	cSC3BuildingLayer::PlaceSubwayBuilding(cSC3CityCoord const &, cGZResourceKey const &, cSC3CityBounds &, unsigned int &, bool)	PlaceSubwayBuilding__17cSC3BuildingLayerRC13cSC3CityCoordRC14cGZResourceKeyR14cSC3CityBoundsRUib	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer
+006b7e	cSC3BuildingLayer::PlaceMultiBuilding(cSC3CityCoord const &, cGZResourceKey const &, cGZResourceKey const &, cGZResourceKey const &, cGZResourceKey const &, cSC3CityBounds &, unsigned int &, bool)	PlaceMultiBuilding__17cSC3BuildingLayerRC13cSC3CityCoordRC14cGZResourceKeyN32R14cSC3CityBoundsRUib	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer
+007e64	cSC3BuildingLayer::CreatePlacementTool(cGZResourceKey const &, bool, bool, unsigned int, void **)	CreatePlacementTool__17cSC3BuildingLayerRC14cGZResourceKeybT2UiPPv	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer
+00836b	AddTickerMessageLandmark(unsigned int, cISC3Occupant *)	AddTickerMessageLandmark__FUiP13cISC3Occupant	libSimGeom.so	tokens:15.1
+008599	cSC3BuildingLayer::AddTickerMessageByBuilding(cISC3Building *)	AddTickerMessageByBuilding__17cSC3BuildingLayerP13cISC3Building	libSimGeom.so	tokens:134.4
+008e3d	virtual function thunk (delta:-140) for cSC3CityToolDemolish::Execute(void)	__thunk_140_Execute__20cSC3CityToolDemolish	libSimGeom.so	vtable:__vt_20cSC3CityToolDemolish.14cRZGameCommand
+008ee8	cSC3CityToolDemolish::ExecuteOnMouseUp(cSC3CityBounds const &)	ExecuteOnMouseUp__20cSC3CityToolDemolishRC14cSC3CityBounds	libSimGeom.so	vtable:__vt_20cSC3CityToolDemolish
+00904f	cSC3CityToolDemolish::ExecuteOnMouseDrag(cSC3CityBounds const &)	ExecuteOnMouseDrag__20cSC3CityToolDemolishRC14cSC3CityBounds	libSimGeom.so	vtable:__vt_20cSC3CityToolDemolish
+0090c8	cSC3CityToolDemolish::ExecuteOnMouseMove(cSC3CityBounds const &)	ExecuteOnMouseMove__20cSC3CityToolDemolishRC14cSC3CityBounds	libSimGeom.so	vtable:__vt_20cSC3CityToolDemolish
+009139	cSC3CityToolDemolish::ExecuteRectDraw(cSC3CityBounds const &, cSC3CityBounds &)	ExecuteRectDraw__20cSC3CityToolDemolishRC14cSC3CityBoundsR14cSC3CityBounds	libSimGeom.so	vtable:__vt_20cSC3CityToolDemolish
+009168	cSC3CityToolDemolish::CVActiveCursor(unsigned int &)	CVActiveCursor__20cSC3CityToolDemolishRUi	libSimGeom.so	tokens:7.9
+009177	cSC3CityToolDemolish::CVOnActivate(void)	CVOnActivate__20cSC3CityToolDemolish	libSimGeom.so	vtable:__vt_20cSC3CityToolDemolish
+0091c4	cSC3CityToolDemolish::CVOnDeactivate(void)	CVOnDeactivate__20cSC3CityToolDemolish	libSimGeom.so	vtable:__vt_20cSC3CityToolDemolish
+0091e2	cSC3CityToolDemolish::DoMessage(cGZMessage &)	DoMessage__20cSC3CityToolDemolishR10cGZMessage	libSimGeom.so	vtable:__vt_20cSC3CityToolDemolish
+009222	cSC3CityToolDemolish::QueryInterface(unsigned int, void **)	QueryInterface__20cSC3CityToolDemolishUiPPv	libSimGeom.so	vtable:__vt_20cSC3CityToolDemolish
+009251	cSC3CityToolDemolish::AddRef(void)	AddRef__20cSC3CityToolDemolish	libSimGeom.so	vtable:__vt_20cSC3CityToolDemolish
+00925c	cSC3CityToolDemolish::Release(void)	Release__20cSC3CityToolDemolish	libSimGeom.so	vtable:__vt_20cSC3CityToolDemolish
+0092d6	cSC3CityToolDemolish::~cSC3CityToolDemolish(void)	_._20cSC3CityToolDemolish	libSimGeom.so	vtable:__vt_20cSC3CityToolDemolish
+0093b7	virtual function thunk (delta:-140) for cSC3CityToolDemolish::QueryInterface(unsigned int, void **)	__thunk_140_QueryInterface__20cSC3CityToolDemolishUiPPv	libSimGeom.so	caller
+0093c2	virtual function thunk (delta:-140) for cSC3CityToolDemolish::AddRef(void)	__thunk_140_AddRef__20cSC3CityToolDemolish	libSimGeom.so	vtable:__vt_20cSC3CityToolDemolish.14cRZGameCommand
+0093cd	virtual function thunk (delta:-140) for cSC3CityToolDemolish::Release(void)	__thunk_140_Release__20cSC3CityToolDemolish	libSimGeom.so	vtable:__vt_20cSC3CityToolDemolish.14cRZGameCommand
+0093d8	virtual function thunk (delta:-144) for cSC3CityToolDemolish::~cSC3CityToolDemolish(void)	__thunk_144__._20cSC3CityToolDemolish	libSimGeom.so	caller
+0093e3	virtual function thunk (delta:-144) for cSC3CityToolDemolish::Release(void)	__thunk_144_Release__20cSC3CityToolDemolish	libSimGeom.so	vtable:__vt_20cSC3CityToolDemolish.11cRZRefCount
+0093ee	virtual function thunk (delta:-144) for cSC3CityToolDemolish::AddRef(void)	__thunk_144_AddRef__20cSC3CityToolDemolish	libSimGeom.so	vtable:__vt_20cSC3CityToolDemolish.11cRZRefCount
+00a896	cSC3BuildingCmdFactory::CreateCommand(unsigned int, unsigned int, void **)	CreateCommand__22cSC3BuildingCmdFactoryUiUiPPv	libSimGeom.so	tokens:216.4
+00b234	cSC3CityToolQuery::~cSC3CityToolQuery(void)	_._17cSC3CityToolQuery	libSimGeom.so	vtable:__vt_17cSC3CityToolQuery
+00b296	virtual function thunk (delta:-92) for cSC3CityToolQuery::~cSC3CityToolQuery(void)	__thunk_92__._17cSC3CityToolQuery	libSimGeom.so	caller
+00b2a6	virtual function thunk (delta:-88) for cCTPlaceTree::Release(void)	__thunk_88_Release__12cCTPlaceTree	libSimGeom.so	caller
+00b2b6	virtual function thunk (delta:-92) for cSC3CityToolQuery::AddRef(void)	__thunk_92_AddRef__17cSC3CityToolQuery	libSimGeom.so	vtable:__vt_17cSC3CityToolQuery.11cRZRefCount
+00b31d	cCTPlaceTree::~cCTPlaceTree(void)	_._12cCTPlaceTree	libSimGeom.so	vtable:__vt_12cCTPlaceTree
+00b427	cCTPlaceTree::CVActiveCursor(unsigned int &)	CVActiveCursor__12cCTPlaceTreeRUi	libSimGeom.so	tokens:7.9
+00b436	cCTPlaceTree::CVIsValidHandlerByView(int, unsigned int) const	CVIsValidHandlerByView__C12cCTPlaceTreeiUi	libSimGeom.so	vtable:__vt_12cCTPlaceTree
+00b44b	cCTPlaceTree::ExecuteCellDraw(cSC3CityCoord const &, cSC3CityBounds &)	ExecuteCellDraw__12cCTPlaceTreeRC13cSC3CityCoordR14cSC3CityBounds	libSimGeom.so	vtable:__vt_12cCTPlaceTree
+00b47d	cCTPlaceTree::ExecuteOnMouseUp(cSC3CityCoord const &)	ExecuteOnMouseUp__12cCTPlaceTreeRC13cSC3CityCoord	libSimGeom.so	vtable:__vt_12cCTPlaceTree
+00b598	cCTPlaceTree::ExecuteOnMouseDrag(cSC3CityCoord const &)	ExecuteOnMouseDrag__12cCTPlaceTreeRC13cSC3CityCoord	libSimGeom.so	vtable:__vt_12cCTPlaceTree
+00b62e	cCTPlaceTree::ExecuteOnMouseMove(cSC3CityCoord const &)	ExecuteOnMouseMove__12cCTPlaceTreeRC13cSC3CityCoord	libSimGeom.so	vtable:__vt_12cCTPlaceTree
+00b66f	virtual function thunk (delta:-88) for cCTPlaceTree::AddRef(void)	__thunk_88_AddRef__12cCTPlaceTree	libSimGeom.so	caller
+00b677	virtual function thunk (delta:-92) for cCTPlaceTree::~cCTPlaceTree(void)	__thunk_92__._12cCTPlaceTree	libSimGeom.so	caller
+00b67f	virtual function thunk (delta:-92) for cCTPlaceTree::Release(void)	__thunk_92_Release__12cCTPlaceTree	libSimGeom.so	vtable:__vt_12cCTPlaceTree.11cRZRefCount
+00b687	virtual function thunk (delta:-92) for cCTPlaceTree::AddRef(void)	__thunk_92_AddRef__12cCTPlaceTree	libSimGeom.so	vtable:__vt_12cCTPlaceTree.11cRZRefCount
+00b6b4	cSC3CityToolQuery::ExecuteOnMouseUp(cSC3CityCoord const &)	ExecuteOnMouseUp__17cSC3CityToolQueryRC13cSC3CityCoord	libSimGeom.so	vtable:__vt_17cSC3CityToolQuery
+00b86e	cSC3CityToolQuery::ExecuteOccDraw(cSC3CityCoord const &, cSC3CityBounds &)	ExecuteOccDraw__17cSC3CityToolQueryRC13cSC3CityCoordR14cSC3CityBounds	libSimGeom.so	vtable:__vt_17cSC3CityToolQuery
+00b8ad	cSC3CityToolQuery::CVActiveCursor(unsigned int &)	CVActiveCursor__17cSC3CityToolQueryRUi	libSimGeom.so	tokens:7.9
+00b8bc	cSC3CityToolQuery::CVIsValidHandlerByView(int, unsigned int) const	CVIsValidHandlerByView__C17cSC3CityToolQueryiUi	libSimGeom.so	vtable:__vt_17cSC3CityToolQuery
+00b8c1	cCTPlaceTree::AddRef(void)	AddRef__12cCTPlaceTree	libSimGeom.so	vtable:__vt_12cCTPlaceTree
+00b8c9	cCTPlaceTree::Release(void)	Release__12cCTPlaceTree	libSimGeom.so	vtable:__vt_12cCTPlaceTree
+00b9be	cSC3FloraLayer::GetManipulator(cISC3CityAgentType const &, cISC3CityLayerManipulator **, int &)	GetManipulator__14cSC3FloraLayerRC18cISC3CityAgentTypePP25cISC3CityLayerManipulatorRi	libSimGeom.so	vtable:__vt_14cSC3FloraLayer
+00b9ca	cSC3FloraLayer::StaticInit(cISC3CityDefinition *)	StaticInit__14cSC3FloraLayerP19cISC3CityDefinition	libSimGeom.so	vtable:__vt_14cSC3FloraLayer
+00ba7c	cSC3FloraLayer::StaticShutdown(void)	StaticShutdown__14cSC3FloraLayer	libSimGeom.so	vtable:__vt_14cSC3FloraLayer
+00ba96	cSC3FloraLayer::SimulationBegin(void)	SimulationBegin__14cSC3FloraLayer	libSimGeom.so	vtable:__vt_14cSC3FloraLayer
+00beec	cSC3FloraLayer::Save(cISC3City *, cIGZDBSegment *)	Save__14cSC3FloraLayerP9cISC3CityP13cIGZDBSegment	libSimGeom.so	vtable:__vt_14cSC3FloraLayer
+00c134	cSC3FloraLayer::Shutdown(void)	Shutdown__14cSC3FloraLayer	libSimGeom.so	vtable:__vt_14cSC3FloraLayer
+00c17b	cSC3FloraLayer::GetLayerType(void)	GetLayerType__14cSC3FloraLayer	libSimGeom.so	vtable:__vt_14cSC3FloraLayer
+00c181	cSC3FloraLayer::IncreaseFlora(cSC3CityCoord const &)	IncreaseFlora__14cSC3FloraLayerRC13cSC3CityCoord	libSimGeom.so	vtable:__vt_14cSC3FloraLayer
+00c1c0	cSC3FloraLayer::DecreaseFlora(cSC3CityCoord const &)	DecreaseFlora__14cSC3FloraLayerRC13cSC3CityCoord	libSimGeom.so	vtable:__vt_14cSC3FloraLayer
+00c1ff	cSC3FloraLayer::GetFloraDensity(cSC3CityCoord const &, unsigned char &) const	GetFloraDensity__C14cSC3FloraLayerRC13cSC3CityCoordRUc	libSimGeom.so	vtable:__vt_14cSC3FloraLayer
+00c250	cSC3FloraLayer::SetFloraDensity(cSC3CityCoord const &, unsigned char)	SetFloraDensity__14cSC3FloraLayerRC13cSC3CityCoordUc	libSimGeom.so	vtable:__vt_14cSC3FloraLayer
+00c37d	cSC3FloraLayer::EstimateFloraCost(cSC3CityCoord const &, int &)	EstimateFloraCost__14cSC3FloraLayerRC13cSC3CityCoordRi	libSimGeom.so	vtable:__vt_14cSC3FloraLayer
+00c4a7	cSC3FloraLayer::PlaceFlora(cSC3CityCoord const &)	PlaceFlora__14cSC3FloraLayerRC13cSC3CityCoord	libSimGeom.so	vtable:__vt_14cSC3FloraLayer
+00c4e9	cSC3FloraLayer::InsertTrees(cSC3CityCoord const &, int)	InsertTrees__14cSC3FloraLayerRC13cSC3CityCoordi	libSimGeom.so	vtable:__vt_14cSC3FloraLayer
+00c681	cSC3FloraLayer::QueryInterface(unsigned int, void **)	QueryInterface__14cSC3FloraLayerUiPPv	libSimGeom.so	vtable:__vt_14cSC3FloraLayer
+00c6aa	cSC3FloraLayer::AddRef(void)	AddRef__14cSC3FloraLayer	libSimGeom.so	vtable:__vt_14cSC3FloraLayer
+00c6c1	cSC3FloraLayer::Release(void)	Release__14cSC3FloraLayer	libSimGeom.so	vtable:__vt_14cSC3FloraLayer
+00c738	virtual function thunk (delta:-32) for cSC3PortLayer::DoQueryInfo(cGZMessage &, cIGZUnknown *)	__thunk_32_DoQueryInfo__13cSC3PortLayerR10cGZMessageP11cIGZUnknown	libSimGeom.so	vtable:__vt_13cSC3PortLayer.14cISC3CityLayer
+00c73d	cSC3FloraLayer::~cSC3FloraLayer(void)	_._14cSC3FloraLayer	libSimGeom.so	vtable:__vt_14cSC3FloraLayer
+00c882	cSC3FloraLayer::CreateOccupant(int, int, unsigned int, void **)	CreateOccupant__14cSC3FloraLayeriiUiPPv	libSimGeom.so	tokens:20.9
+00c93e	cSC3Flora::Init(cGZResourceKey &)	Init__9cSC3FloraR14cGZResourceKey	libSimGeom.so	vtable:__vt_9cSC3Flora
+00c9c0	cSC3Flora::GetSubTypeData(unsigned int)	GetSubTypeData__9cSC3FloraUi	libSimGeom.so	vtable:__vt_9cSC3Flora
+00c9e7	cSC3Flora::GetFloraDensity(void)	GetFloraDensity__9cSC3Flora	libSimGeom.so	vtable:__vt_9cSC3Flora
+00c9f1	cSC3Flora::GetFloraType(void)	GetFloraType__9cSC3Flora	libSimGeom.so	vtable:__vt_9cSC3Flora
+00c9fb	cSC3Flora::SetFloraDensity(unsigned int)	SetFloraDensity__9cSC3FloraUi	libSimGeom.so	vtable:__vt_9cSC3Flora
+00ca0b	cSC3Flora::SetFloraType(unsigned int)	SetFloraType__9cSC3FloraUi	libSimGeom.so	vtable:__vt_9cSC3Flora
+00ca27	cSC3Flora::QueryInterface(unsigned int, void **)	QueryInterface__9cSC3FloraUiPPv	libSimGeom.so	vtable:__vt_9cSC3Flora
+00ca53	cSC3Flora::AddRef(void)	AddRef__9cSC3Flora	libSimGeom.so	vtable:__vt_9cSC3Flora
+00ca5b	cSC3Flora::Release(void)	Release__9cSC3Flora	libSimGeom.so	vtable:__vt_9cSC3Flora
+00ca63	cSC3Flora::AsISC3Occupant(void)	AsISC3Occupant__9cSC3Flora	libSimGeom.so	vtable:__vt_9cSC3Flora
+00cbbf	cSC3FloraCommandFactory::~cSC3FloraCommandFactory(void)	_._23cSC3FloraCommandFactory	libSimGeom.so	vtable:__vt_23cSC3FloraCommandFactory
+00cbe6	cSC3FloraCommandFactory::QueryInterface(unsigned int, void **)	QueryInterface__23cSC3FloraCommandFactoryUiPPv	libSimGeom.so	vtable:__vt_23cSC3FloraCommandFactory
+00cc08	cSC3BuildingLayer::AddRef(void)	AddRef__17cSC3BuildingLayer	libSimGeom.so	vtable:__vt_17cSC3BuildingLayer
+00cc1f	cSC3FloraCommandFactory::Release(void)	Release__23cSC3FloraCommandFactory	libSimGeom.so	vtable:__vt_23cSC3FloraCommandFactory
+00cc49	cSC3FloraCommandFactory::CreateCommand(unsigned int, unsigned int, void **)	CreateCommand__23cSC3FloraCommandFactoryUiUiPPv	libSimGeom.so	tokens:7.9
+00ccbe	virtual function thunk (delta:-4) for cSC3FloraLayer::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__14cSC3FloraLayerUiPPv	libSimGeom.so	caller
+00ccc6	virtual function thunk (delta:-4) for cSC3FloraLayer::AddRef(void)	__thunk_4_AddRef__14cSC3FloraLayer	libSimGeom.so	vtable:__vt_14cSC3FloraLayer.20cISC3OccupantFactory
+00ccce	virtual function thunk (delta:-4) for cSC3FloraLayer::Release(void)	__thunk_4_Release__14cSC3FloraLayer	libSimGeom.so	caller
+00cce6	virtual function thunk (delta:-4) for cSC3Flora::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__9cSC3FloraUiPPv	libSimGeom.so	caller
+00ccee	virtual function thunk (delta:-4) for cSC3Flora::AddRef(void)	__thunk_4_AddRef__9cSC3Flora	libSimGeom.so	caller
+00ccfe	virtual function thunk (delta:-4) for cSC3Flora::Init(cGZResourceKey &)	__thunk_4_Init__9cSC3FloraR14cGZResourceKey	libSimGeom.so	caller
+00cd06	virtual function thunk (delta:-4) for cSC3Flora::GetSubTypeData(unsigned int)	__thunk_4_GetSubTypeData__9cSC3FloraUi	libSimGeom.so	caller
+00d180	cSC3OccupantManager::QueryInterface(unsigned int, void **)	QueryInterface__19cSC3OccupantManagerUiPPv	libSimGeom.so	vtable:__vt_19cSC3OccupantManager
+00d1f0	cSC3OccupantManager::AddRef(void)	AddRef__19cSC3OccupantManager	libSimGeom.so	vtable:__vt_19cSC3OccupantManager
+00d230	cSC3OccupantManager::Release(void)	Release__19cSC3OccupantManager	libSimGeom.so	vtable:__vt_19cSC3OccupantManager
+00d290	cSC3OccupantManager::Init(cISC3City *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int)	Init__19cSC3OccupantManagerP9cISC3CityUiUiUiUiUi	libSimGeom.so	vtable:__vt_19cSC3OccupantManager
+00d830	cSC3OccupantManager::Shutdown(void)	Shutdown__19cSC3OccupantManager	libSimGeom.so	vtable:__vt_19cSC3OccupantManager
+00d920	cSC3OccupantManager::GetCellsInX(void)	GetCellsInX__19cSC3OccupantManager	libSimGeom.so	vtable:__vt_19cSC3OccupantManager
+00d930	cSC3OccupantManager::GetCellsInZ(void)	GetCellsInZ__19cSC3OccupantManager	libSimGeom.so	vtable:__vt_19cSC3OccupantManager
+00d940	cSC3OccupantManager::GetCellsInY(void)	GetCellsInY__19cSC3OccupantManager	libSimGeom.so	vtable:__vt_19cSC3OccupantManager
+00d950	cSC3OccupantManager::DoMessage(cGZMessage &)	DoMessage__19cSC3OccupantManagerR10cGZMessage	libSimGeom.so	tokens:43.8
+00dcd0	cSC3OccupantManager::RegisterChangeReceiver(cISC3CityChangeReceiver *, unsigned int &, bool)	RegisterChangeReceiver__19cSC3OccupantManagerP23cISC3CityChangeReceiverRUib	libSimGeom.so	vtable:__vt_19cSC3OccupantManager
+00dd60	cSC3OccupantManager::UnregisterChangeReceiver(cISC3CityChangeReceiver *)	UnregisterChangeReceiver__19cSC3OccupantManagerP23cISC3CityChangeReceiver	libSimGeom.so	vtable:__vt_19cSC3OccupantManager
+00de00	cSC3OccupantManager::UnregisterAllChangeReceivers(void)	UnregisterAllChangeReceivers__19cSC3OccupantManager	libSimGeom.so	vtable:__vt_19cSC3OccupantManager
+00df50	cSC3OccupantManager::InsertOccupant(cISC3Occupant *)	InsertOccupant__19cSC3OccupantManagerP13cISC3Occupant	libSimGeom.so	vtable:__vt_19cSC3OccupantManager
+00df90	cSC3OccupantManager::InsertOccupantAtCell(unsigned int, unsigned int, cISC3Occupant *)	InsertOccupantAtCell__19cSC3OccupantManagerUiUiP13cISC3Occupant	libSimGeom.so	vtable:__vt_19cSC3OccupantManager
+00e310	cSC3OccupantManager::RemoveOccupantAtCell(unsigned int, unsigned int)	RemoveOccupantAtCell__19cSC3OccupantManagerUiUi	libSimGeom.so	vtable:__vt_19cSC3OccupantManager
+00e590	cSC3OccupantManager::RemoveShutdownOccupantAtCell(unsigned int, unsigned int)	RemoveShutdownOccupantAtCell__19cSC3OccupantManagerUiUi	libSimGeom.so	vtable:__vt_19cSC3OccupantManager
+00e810	cSC3OccupantManager::RemoveAllOccupants(void)	RemoveAllOccupants__19cSC3OccupantManager	libSimGeom.so	vtable:__vt_19cSC3OccupantManager
+00e860	cSC3OccupantManager::OccupantChanged(cISC3Occupant *, unsigned int)	OccupantChanged__19cSC3OccupantManagerP13cISC3OccupantUi	libSimGeom.so	vtable:__vt_19cSC3OccupantManager
+00e8e0	cSC3OccupantManager::IsEmpty(cSC3CityBounds const &)	IsEmpty__19cSC3OccupantManagerRC14cSC3CityBounds	libSimGeom.so	vtable:__vt_19cSC3OccupantManager
+00e930	cSC3OccupantManager::IsEmptyCell(sIGZRectUint32 const &)	IsEmptyCell__19cSC3OccupantManagerRC14sIGZRectUint32	libSimGeom.so	vtable:__vt_19cSC3OccupantManager
+00ea80	cSC3OccupantManager::IsInBoundsCell(unsigned int, unsigned int)	IsInBoundsCell__19cSC3OccupantManagerUiUi	libSimGeom.so	vtable:__vt_19cSC3OccupantManager
+00eab0	cSC3OccupantManager::GetIterator(cISC3OccManIterator **)	GetIterator__19cSC3OccupantManagerPP19cISC3OccManIterator	libSimGeom.so	vtable:__vt_19cSC3OccupantManager
+00eb50	cSC3OccupantManager::GetOccupants(cISC3OccManIterator **, cSC3CityBounds const *, cISC3OccManIteratorTest *)	GetOccupants__19cSC3OccupantManagerPP19cISC3OccManIteratorPC14cSC3CityBoundsP23cISC3OccManIteratorTest	libSimGeom.so	vtable:__vt_19cSC3OccupantManager
+00eb70	cSC3OccupantManager::GetNeighbors(cISC3OccManIterator **, cISC3Occupant *, cISC3OccManIteratorTest *)	GetNeighbors__19cSC3OccupantManagerPP19cISC3OccManIteratorP13cISC3OccupantP23cISC3OccManIteratorTest	libSimGeom.so	vtable:__vt_19cSC3OccupantManager
+00ec40	cSC3OccupantManager::GetOccupant(cSC3CityCoord const &, cISC3Occupant **)	GetOccupant__19cSC3OccupantManagerRC13cSC3CityCoordPP13cISC3Occupant	libSimGeom.so	vtable:__vt_19cSC3OccupantManager
+00ec60	cSC3OccupantManager::GetOccupantAtCell(unsigned int, unsigned int, cISC3Occupant **)	GetOccupantAtCell__19cSC3OccupantManagerUiUiPP13cISC3Occupant	libSimGeom.so	vtable:__vt_19cSC3OccupantManager
+00ed50	cSC3OccupantManager::GetOccupantsInCell(cSC3CityBounds const &, unsigned int, cISC3Occupant **, unsigned int &, bool (*)(cISC3Occupant *))	GetOccupantsInCell__19cSC3OccupantManagerRC14cSC3CityBoundsUiPP13cISC3OccupantRUiPFP13cISC3Occupant_b	libSimGeom.so	vtable:__vt_19cSC3OccupantManager
+00f070	cSC3OccupantManager::DoesOccupantExistAtLocation(unsigned int, unsigned int)	DoesOccupantExistAtLocation__19cSC3OccupantManagerUiUi	libSimGeom.so	vtable:__vt_19cSC3OccupantManager
+00f0b0	cSC3OccupantManager::GetNeighborsOfOccupant(cISC3Occupant *, unsigned int, cISC3Occupant **, unsigned int &, bool (*)(cISC3Occupant *))	GetNeighborsOfOccupant__19cSC3OccupantManagerP13cISC3OccupantUiPP13cISC3OccupantRUiPFP13cISC3Occupant_b	libSimGeom.so	vtable:__vt_19cSC3OccupantManager
+00fad0	cSC3OccupantManager::ClearAnimatedOccupantList(bool)	ClearAnimatedOccupantList__19cSC3OccupantManagerb	libSimGeom.so	vtable:__vt_19cSC3OccupantManager
+00fc30	virtual function thunk (delta:-4) for cSC3OccupantManager::DoAnimationTick(unsigned int)	__thunk_4_DoAnimationTick__19cSC3OccupantManagerUi	libSimGeom.so	vtable:__vt_19cSC3OccupantManager.22cISC3AnimationTickable
+0101b0	cSC3OccupantManager::SetVisible(bool)	SetVisible__19cSC3OccupantManagerb	libSimGeom.so	vtable:__vt_19cSC3OccupantManager
+0101c0	cSC3OccupantManager::GetSenderId(void) const	GetSenderId__C19cSC3OccupantManager	libSimGeom.so	vtable:__vt_19cSC3OccupantManager
+0101d0	cSC3OccupantManager::GetOccLayer(void) const	GetOccLayer__C19cSC3OccupantManager	libSimGeom.so	vtable:__vt_19cSC3OccupantManager
+0101e0	virtual function thunk (delta:-4) for cSC3OccupantManager::GetAnimationTickPriority(unsigned char &, int &)	__thunk_4_GetAnimationTickPriority__19cSC3OccupantManagerRUcRi	libSimGeom.so	vtable:__vt_19cSC3OccupantManager.22cISC3AnimationTickable
+010200	cSC3OccupantManager::~cSC3OccupantManager(void)	_._19cSC3OccupantManager	libSimGeom.so	vtable:__vt_19cSC3OccupantManager
+010c60	virtual function thunk (delta:-4) for cSC3OccupantManager::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__19cSC3OccupantManagerUiPPv	libSimGeom.so	caller
+010c70	virtual function thunk (delta:-4) for cSC3OccupantManager::AddRef(void)	__thunk_4_AddRef__19cSC3OccupantManager	libSimGeom.so	caller
+010c80	virtual function thunk (delta:-4) for cSC3OccupantManager::Release(void)	__thunk_4_Release__19cSC3OccupantManager	libSimGeom.so	caller
+010c90	virtual function thunk (delta:-8) for cSC3OccupantManager::QueryInterface(unsigned int, void **)	__thunk_8_QueryInterface__19cSC3OccupantManagerUiPPv	libSimGeom.so	vtable:__vt_19cSC3OccupantManager.17cIGZMessageTarget
+010ca0	virtual function thunk (delta:-8) for cSC3OccupantManager::AddRef(void)	__thunk_8_AddRef__19cSC3OccupantManager	libSimGeom.so	vtable:__vt_19cSC3OccupantManager.17cIGZMessageTarget
+010cb0	virtual function thunk (delta:-8) for cSC3OccupantManager::Release(void)	__thunk_8_Release__19cSC3OccupantManager	libSimGeom.so	vtable:__vt_19cSC3OccupantManager.17cIGZMessageTarget
+010cd8	cSC3PortAttrib::AsISC3OccupantAttrib(void)	AsISC3OccupantAttrib__14cSC3PortAttrib	libSimGeom.so	vtable-thunk:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+010ceb	virtual function thunk (delta:-324) for cSC3PortAttrib::AsISC3BuildingAttrib(void)	__thunk_324_AsISC3BuildingAttrib__14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+010cfb	cSC3PortAttrib::QueryInterface(unsigned int, void **)	QueryInterface__14cSC3PortAttribUiPPv	libSimGeom.so	vtable-thunk:__vt_14cSC3PortAttrib.17cISLTokenResource
+010d7d	cSC3PortAttrib::IsGeomFlag(unsigned int)	IsGeomFlag__14cSC3PortAttribUi	libSimGeom.so	vtable-thunk:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+010d89	cSC3PortAttrib::SetGeomFlag(unsigned int)	SetGeomFlag__14cSC3PortAttribUi	libSimGeom.so	vtable-thunk:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+010d95	cSC3PortAttrib::ClearGeomFlag(unsigned int)	ClearGeomFlag__14cSC3PortAttribUi	libSimGeom.so	vtable-thunk:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+010dab	cSC3PortAttrib::SetOccLayerFlag(unsigned char)	SetOccLayerFlag__14cSC3PortAttribUc	libSimGeom.so	vtable-thunk:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+010dda	virtual function thunk (delta:-20) for cSC3PortAttrib::GetSpriteAttrib(void)	__thunk_20_GetSpriteAttrib__14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3OccupantAttrib
+010df5	cSC3PortAttrib::DebugInstanceTag(cIGZString &)	DebugInstanceTag__14cSC3PortAttribR10cIGZString	libSimGeom.so	vtable:__vt_14cSC3PortAttrib
+010e10	cSC3PortAttrib::GetName(cIGZString &)	GetName__14cSC3PortAttribR10cIGZString	libSimGeom.so	vtable-thunk:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+010e1c	virtual function thunk (delta:-24) for cSC3PortAttrib::SetIsTextRecord(bool)	__thunk_24_SetIsTextRecord__14cSC3PortAttribb	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.17cISLTokenResource
+010e2d	cSC3PortAttrib::GetSoundObjectId(int &)	GetSoundObjectId__14cSC3PortAttribRi	libSimGeom.so	vtable-thunk:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+010e39	cSC3PortAttrib::GetSoundKeyA(cGZResourceKey &)	GetSoundKeyA__14cSC3PortAttribR14cGZResourceKey	libSimGeom.so	vtable-thunk:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+010e45	cSC3PortAttrib::GetSoundKeyB(cGZResourceKey &)	GetSoundKeyB__14cSC3PortAttribR14cGZResourceKey	libSimGeom.so	vtable-thunk:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+010e51	cSC3PortAttrib::GetPlopCursorKey(cGZResourceKey &)	GetPlopCursorKey__14cSC3PortAttribR14cGZResourceKey	libSimGeom.so	vtable-thunk:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+010e5d	cSC3PortAttrib::GetQueryDescKey(cGZResourceKey &)	GetQueryDescKey__14cSC3PortAttribR14cGZResourceKey	libSimGeom.so	vtable-thunk:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+010e69	cSC3PortAttrib::GetQueryFormatFlags(unsigned int &)	GetQueryFormatFlags__14cSC3PortAttribRUi	libSimGeom.so	vtable-thunk:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+010e7a	cSC3PortAttrib::SetQueryDialogClass(unsigned int)	SetQueryDialogClass__14cSC3PortAttribUi	libSimGeom.so	vtable-thunk:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+010e86	cSC3PortAttrib::DebugClassTag(cIGZString &)	DebugClassTag__14cSC3PortAttribR10cIGZString	libSimGeom.so	vtable:__vt_14cSC3PortAttrib
+010e92	cSC3PortAttrib::GetNameKey(cGZResourceKey &)	GetNameKey__14cSC3PortAttribR14cGZResourceKey	libSimGeom.so	vtable-thunk:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+010e9e	cSC3PortAttrib::SetOverRideAttrib(cISC3OccAttribOverRide *)	SetOverRideAttrib__14cSC3PortAttribP22cISC3OccAttribOverRide	libSimGeom.so	vtable-thunk:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+010eaf	cSC3PortAttrib::GetArchitectName(cIGZString &)	GetArchitectName__14cSC3PortAttribR10cIGZString	libSimGeom.so	vtable-thunk:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+010ebb	cSC3PortAttrib::GetOccupantGZCLSID(unsigned int &) const	GetOccupantGZCLSID__C14cSC3PortAttribRUi	libSimGeom.so	vtable-thunk:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+010ec7	cSC3PortAttrib::SetOccupantGZCLSID(unsigned int)	SetOccupantGZCLSID__14cSC3PortAttribUi	libSimGeom.so	vtable-thunk:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+010ed8	cSC3PortAttrib::SetPowerConsumption(unsigned char)	SetPowerConsumption__14cSC3PortAttribUc	libSimGeom.so	vtable-thunk:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+010ee9	cSC3PortAttrib::~cSC3PortAttrib(void)	_._14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib
+010f32	virtual function thunk (delta:-24) for cSC3PortAttrib::TokenRead(cISLTokenRecord &)	__thunk_24_TokenRead__14cSC3PortAttribR15cISLTokenRecord	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.17cISLTokenResource
+010f74	cSC3PortAttrib::TokenWrite(cISLTokenRecord &)	TokenWrite__14cSC3PortAttribR15cISLTokenRecord	libSimGeom.so	tokens:22.3
+01107d	virtual function thunk (delta:-20) for cSC3PortAttrib::QueryInterface(unsigned int, void **)	__thunk_20_QueryInterface__14cSC3PortAttribUiPPv	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3OccupantAttrib
+011085	virtual function thunk (delta:-20) for cSC3PortAttrib::AddRef(void)	__thunk_20_AddRef__14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3OccupantAttrib
+01108d	virtual function thunk (delta:-20) for cSC3PortAttrib::Release(void)	__thunk_20_Release__14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3OccupantAttrib
+011095	virtual function thunk (delta:-20) for cSC3PortAttrib::Key(void) const	__thunk_20_Key__C14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3OccupantAttrib
+01109d	virtual function thunk (delta:-20) for cSC3PortAttrib::DebugInstanceTag(cIGZString &)	__thunk_20_DebugInstanceTag__14cSC3PortAttribR10cIGZString	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3OccupantAttrib
+0110a5	virtual function thunk (delta:-20) for cSC3PortAttrib::DebugClassTag(cIGZString &)	__thunk_20_DebugClassTag__14cSC3PortAttribR10cIGZString	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3OccupantAttrib
+0110ad	virtual function thunk (delta:-24) for cSC3PortAttrib::QueryInterface(unsigned int, void **)	__thunk_24_QueryInterface__14cSC3PortAttribUiPPv	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.17cISLTokenResource
+0110b5	virtual function thunk (delta:-24) for cSC3PortAttrib::AddRef(void)	__thunk_24_AddRef__14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.17cISLTokenResource
+0110bd	virtual function thunk (delta:-24) for cSC3PortAttrib::Release(void)	__thunk_24_Release__14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.17cISLTokenResource
+0110c5	virtual function thunk (delta:-308) for cSC3PortAttrib::QueryInterface(unsigned int, void **)	__thunk_308_QueryInterface__14cSC3PortAttribUiPPv	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3BuildingAttrib
+0110d0	virtual function thunk (delta:-308) for cSC3PortAttrib::AddRef(void)	__thunk_308_AddRef__14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3BuildingAttrib
+0110db	virtual function thunk (delta:-308) for cSC3PortAttrib::Release(void)	__thunk_308_Release__14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3BuildingAttrib
+0110e6	virtual function thunk (delta:-308) for cSC3PortAttrib::GetOccupantGZCLSID(unsigned int &) const	__thunk_308_GetOccupantGZCLSID__C14cSC3PortAttribRUi	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3BuildingAttrib
+0110f1	virtual function thunk (delta:-308) for cSC3PortAttrib::SetOccupantGZCLSID(unsigned int)	__thunk_308_SetOccupantGZCLSID__14cSC3PortAttribUi	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3BuildingAttrib
+0110fc	virtual function thunk (delta:-308) for cSC3PortAttrib::Key(void) const	__thunk_308_Key__C14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3BuildingAttrib
+011107	virtual function thunk (delta:-308) for cSC3PortAttrib::IsGeomFlag(unsigned int)	__thunk_308_IsGeomFlag__14cSC3PortAttribUi	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3BuildingAttrib
+011112	virtual function thunk (delta:-308) for cSC3PortAttrib::SetGeomFlag(unsigned int)	__thunk_308_SetGeomFlag__14cSC3PortAttribUi	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3BuildingAttrib
+01111d	virtual function thunk (delta:-308) for cSC3PortAttrib::ClearGeomFlag(unsigned int)	__thunk_308_ClearGeomFlag__14cSC3PortAttribUi	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3BuildingAttrib
+011128	virtual function thunk (delta:-308) for cSC3PortAttrib::GetGeomFlag(void)	__thunk_308_GetGeomFlag__14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3BuildingAttrib
+011133	virtual function thunk (delta:-308) for cSC3PortAttrib::GetOccLayerFlag(void)	__thunk_308_GetOccLayerFlag__14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3BuildingAttrib
+01113e	virtual function thunk (delta:-308) for cSC3PortAttrib::SetOccLayerFlag(unsigned char)	__thunk_308_SetOccLayerFlag__14cSC3PortAttribUc	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3BuildingAttrib
+011149	virtual function thunk (delta:-308) for cSC3PortAttrib::MajorType(void) const	__thunk_308_MajorType__C14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3BuildingAttrib
+011154	virtual function thunk (delta:-308) for cSC3PortAttrib::SubTypeInfo(void) const	__thunk_308_SubTypeInfo__C14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3BuildingAttrib
+01115f	virtual function thunk (delta:-308) for cSC3PortAttrib::GetName(cIGZString &)	__thunk_308_GetName__14cSC3PortAttribR10cIGZString	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3BuildingAttrib
+01116a	virtual function thunk (delta:-308) for cSC3PortAttrib::SizeInCellsX(void)	__thunk_308_SizeInCellsX__14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3BuildingAttrib
+011175	virtual function thunk (delta:-308) for cSC3PortAttrib::SizeInCellsZ(void)	__thunk_308_SizeInCellsZ__14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3BuildingAttrib
+011180	virtual function thunk (delta:-308) for cSC3PortAttrib::SizeInCellsY(void)	__thunk_308_SizeInCellsY__14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3BuildingAttrib
+01118b	virtual function thunk (delta:-308) for cSC3PortAttrib::CityAgentType(void)	__thunk_308_CityAgentType__14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3BuildingAttrib
+011196	virtual function thunk (delta:-308) for cSC3PortAttrib::TypeId(void) const	__thunk_308_TypeId__C14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3BuildingAttrib
+0111b7	virtual function thunk (delta:-308) for cSC3PortAttrib::GetOriginalSpriteAttrib(void)	__thunk_308_GetOriginalSpriteAttrib__14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3BuildingAttrib
+0111c2	virtual function thunk (delta:-308) for cSC3PortAttrib::GetDefaultLayerFlag(void) const	__thunk_308_GetDefaultLayerFlag__C14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3BuildingAttrib
+0111cd	virtual function thunk (delta:-308) for cSC3PortAttrib::SetDefaultLayerFlag(unsigned int)	__thunk_308_SetDefaultLayerFlag__14cSC3PortAttribUi	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3BuildingAttrib
+0111d8	virtual function thunk (delta:-308) for cSC3PortAttrib::GetPeopleProducerAttrib(void)	__thunk_308_GetPeopleProducerAttrib__14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3BuildingAttrib
+0111e3	virtual function thunk (delta:-308) for cSC3PortAttrib::GetVehicleProducerAttrib(void)	__thunk_308_GetVehicleProducerAttrib__14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3BuildingAttrib
+0111ee	virtual function thunk (delta:-308) for cSC3PortAttrib::Flammability(void)	__thunk_308_Flammability__14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3BuildingAttrib
+0111f9	virtual function thunk (delta:-308) for cSC3PortAttrib::GetSoundObjectId(int &)	__thunk_308_GetSoundObjectId__14cSC3PortAttribRi	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3BuildingAttrib
+011204	virtual function thunk (delta:-308) for cSC3PortAttrib::GetSoundKeyA(cGZResourceKey &)	__thunk_308_GetSoundKeyA__14cSC3PortAttribR14cGZResourceKey	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3BuildingAttrib
+01120f	virtual function thunk (delta:-308) for cSC3PortAttrib::GetSoundKeyB(cGZResourceKey &)	__thunk_308_GetSoundKeyB__14cSC3PortAttribR14cGZResourceKey	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3BuildingAttrib
+01121a	virtual function thunk (delta:-308) for cSC3PortAttrib::GetPlopCursorKey(cGZResourceKey &)	__thunk_308_GetPlopCursorKey__14cSC3PortAttribR14cGZResourceKey	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3BuildingAttrib
+011225	virtual function thunk (delta:-308) for cSC3PortAttrib::GetQueryDescKey(cGZResourceKey &)	__thunk_308_GetQueryDescKey__14cSC3PortAttribR14cGZResourceKey	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3BuildingAttrib
+011230	virtual function thunk (delta:-308) for cSC3PortAttrib::GetQueryFormatFlags(unsigned int &)	__thunk_308_GetQueryFormatFlags__14cSC3PortAttribRUi	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3BuildingAttrib
+01123b	virtual function thunk (delta:-308) for cSC3PortAttrib::GetQueryDialogClass(void)	__thunk_308_GetQueryDialogClass__14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3BuildingAttrib
+011246	virtual function thunk (delta:-308) for cSC3PortAttrib::SetQueryDialogClass(unsigned int)	__thunk_308_SetQueryDialogClass__14cSC3PortAttribUi	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3BuildingAttrib
+011251	virtual function thunk (delta:-308) for cSC3PortAttrib::DebugInstanceTag(cIGZString &)	__thunk_308_DebugInstanceTag__14cSC3PortAttribR10cIGZString	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3BuildingAttrib
+01125c	virtual function thunk (delta:-308) for cSC3PortAttrib::DebugClassTag(cIGZString &)	__thunk_308_DebugClassTag__14cSC3PortAttribR10cIGZString	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3BuildingAttrib
+011267	virtual function thunk (delta:-308) for cSC3PortAttrib::GetNameKey(cGZResourceKey &)	__thunk_308_GetNameKey__14cSC3PortAttribR14cGZResourceKey	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3BuildingAttrib
+011272	virtual function thunk (delta:-308) for cSC3PortAttrib::SetOverRideAttrib(cISC3OccAttribOverRide *)	__thunk_308_SetOverRideAttrib__14cSC3PortAttribP22cISC3OccAttribOverRide	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3BuildingAttrib
+01127d	virtual function thunk (delta:-308) for cSC3PortAttrib::GetOverRideAttrib(void)	__thunk_308_GetOverRideAttrib__14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3BuildingAttrib
+011288	virtual function thunk (delta:-308) for cSC3PortAttrib::GetArchitectName(cIGZString &)	__thunk_308_GetArchitectName__14cSC3PortAttribR10cIGZString	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.19cISC3BuildingAttrib
+011293	virtual function thunk (delta:-324) for cSC3PortAttrib::QueryInterface(unsigned int, void **)	__thunk_324_QueryInterface__14cSC3PortAttribUiPPv	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+01129e	virtual function thunk (delta:-324) for cSC3PortAttrib::AddRef(void)	__thunk_324_AddRef__14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+0112a9	virtual function thunk (delta:-324) for cSC3PortAttrib::Release(void)	__thunk_324_Release__14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+0112b4	virtual function thunk (delta:-324) for cSC3PortAttrib::GetOccupantGZCLSID(unsigned int &) const	__thunk_324_GetOccupantGZCLSID__C14cSC3PortAttribRUi	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+0112bf	virtual function thunk (delta:-324) for cSC3PortAttrib::SetOccupantGZCLSID(unsigned int)	__thunk_324_SetOccupantGZCLSID__14cSC3PortAttribUi	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+0112ca	virtual function thunk (delta:-324) for cSC3PortAttrib::Key(void) const	__thunk_324_Key__C14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+0112d5	virtual function thunk (delta:-324) for cSC3PortAttrib::IsGeomFlag(unsigned int)	__thunk_324_IsGeomFlag__14cSC3PortAttribUi	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+0112e0	virtual function thunk (delta:-324) for cSC3PortAttrib::SetGeomFlag(unsigned int)	__thunk_324_SetGeomFlag__14cSC3PortAttribUi	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+0112eb	virtual function thunk (delta:-324) for cSC3PortAttrib::ClearGeomFlag(unsigned int)	__thunk_324_ClearGeomFlag__14cSC3PortAttribUi	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+0112f6	virtual function thunk (delta:-324) for cSC3PortAttrib::GetGeomFlag(void)	__thunk_324_GetGeomFlag__14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+011301	virtual function thunk (delta:-324) for cSC3PortAttrib::GetOccLayerFlag(void)	__thunk_324_GetOccLayerFlag__14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+01130c	virtual function thunk (delta:-324) for cSC3PortAttrib::SetOccLayerFlag(unsigned char)	__thunk_324_SetOccLayerFlag__14cSC3PortAttribUc	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+011317	virtual function thunk (delta:-324) for cSC3PortAttrib::MajorType(void) const	__thunk_324_MajorType__C14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+011322	virtual function thunk (delta:-324) for cSC3PortAttrib::SubTypeInfo(void) const	__thunk_324_SubTypeInfo__C14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+01132d	virtual function thunk (delta:-324) for cSC3PortAttrib::GetName(cIGZString &)	__thunk_324_GetName__14cSC3PortAttribR10cIGZString	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+011338	virtual function thunk (delta:-324) for cSC3PortAttrib::SizeInCellsX(void)	__thunk_324_SizeInCellsX__14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+011343	virtual function thunk (delta:-324) for cSC3PortAttrib::SizeInCellsZ(void)	__thunk_324_SizeInCellsZ__14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+01134e	virtual function thunk (delta:-324) for cSC3PortAttrib::SizeInCellsY(void)	__thunk_324_SizeInCellsY__14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+011359	virtual function thunk (delta:-324) for cSC3PortAttrib::CityAgentType(void)	__thunk_324_CityAgentType__14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+011364	virtual function thunk (delta:-324) for cSC3PortAttrib::TypeId(void) const	__thunk_324_TypeId__C14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+011385	virtual function thunk (delta:-324) for cSC3PortAttrib::GetOriginalSpriteAttrib(void)	__thunk_324_GetOriginalSpriteAttrib__14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+011390	virtual function thunk (delta:-324) for cSC3PortAttrib::GetDefaultLayerFlag(void) const	__thunk_324_GetDefaultLayerFlag__C14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+01139b	virtual function thunk (delta:-324) for cSC3PortAttrib::SetDefaultLayerFlag(unsigned int)	__thunk_324_SetDefaultLayerFlag__14cSC3PortAttribUi	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+0113a6	virtual function thunk (delta:-324) for cSC3PortAttrib::GetPeopleProducerAttrib(void)	__thunk_324_GetPeopleProducerAttrib__14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+0113b1	virtual function thunk (delta:-324) for cSC3PortAttrib::GetVehicleProducerAttrib(void)	__thunk_324_GetVehicleProducerAttrib__14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+0113bc	virtual function thunk (delta:-324) for cSC3PortAttrib::Flammability(void)	__thunk_324_Flammability__14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+0113c7	virtual function thunk (delta:-324) for cSC3PortAttrib::GetSoundObjectId(int &)	__thunk_324_GetSoundObjectId__14cSC3PortAttribRi	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+0113d2	virtual function thunk (delta:-324) for cSC3PortAttrib::GetSoundKeyA(cGZResourceKey &)	__thunk_324_GetSoundKeyA__14cSC3PortAttribR14cGZResourceKey	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+0113dd	virtual function thunk (delta:-324) for cSC3PortAttrib::GetSoundKeyB(cGZResourceKey &)	__thunk_324_GetSoundKeyB__14cSC3PortAttribR14cGZResourceKey	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+0113e8	virtual function thunk (delta:-324) for cSC3PortAttrib::GetPlopCursorKey(cGZResourceKey &)	__thunk_324_GetPlopCursorKey__14cSC3PortAttribR14cGZResourceKey	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+0113f3	virtual function thunk (delta:-324) for cSC3PortAttrib::GetQueryDescKey(cGZResourceKey &)	__thunk_324_GetQueryDescKey__14cSC3PortAttribR14cGZResourceKey	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+0113fe	virtual function thunk (delta:-324) for cSC3PortAttrib::GetQueryFormatFlags(unsigned int &)	__thunk_324_GetQueryFormatFlags__14cSC3PortAttribRUi	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+011409	virtual function thunk (delta:-324) for cSC3PortAttrib::GetQueryDialogClass(void)	__thunk_324_GetQueryDialogClass__14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+011414	virtual function thunk (delta:-324) for cSC3PortAttrib::SetQueryDialogClass(unsigned int)	__thunk_324_SetQueryDialogClass__14cSC3PortAttribUi	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+01141f	virtual function thunk (delta:-324) for cSC3PortAttrib::DebugInstanceTag(cIGZString &)	__thunk_324_DebugInstanceTag__14cSC3PortAttribR10cIGZString	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+01142a	virtual function thunk (delta:-324) for cSC3PortAttrib::DebugClassTag(cIGZString &)	__thunk_324_DebugClassTag__14cSC3PortAttribR10cIGZString	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+011435	virtual function thunk (delta:-324) for cSC3PortAttrib::GetNameKey(cGZResourceKey &)	__thunk_324_GetNameKey__14cSC3PortAttribR14cGZResourceKey	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+011440	virtual function thunk (delta:-324) for cSC3PortAttrib::SetOverRideAttrib(cISC3OccAttribOverRide *)	__thunk_324_SetOverRideAttrib__14cSC3PortAttribP22cISC3OccAttribOverRide	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+01144b	virtual function thunk (delta:-324) for cSC3PortAttrib::GetOverRideAttrib(void)	__thunk_324_GetOverRideAttrib__14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+011456	virtual function thunk (delta:-324) for cSC3PortAttrib::GetArchitectName(cIGZString &)	__thunk_324_GetArchitectName__14cSC3PortAttribR10cIGZString	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+011461	virtual function thunk (delta:-324) for cSC3PortAttrib::AsISC3OccupantAttrib(void)	__thunk_324_AsISC3OccupantAttrib__14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+011469	virtual function thunk (delta:-324) for cSC3PortAttrib::GetPowerConsumption(void)	__thunk_324_GetPowerConsumption__14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+011471	virtual function thunk (delta:-324) for cSC3PortAttrib::SetPowerConsumption(unsigned char)	__thunk_324_SetPowerConsumption__14cSC3PortAttribUc	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+011479	virtual function thunk (delta:-324) for cSC3PortAttrib::GetPlacementInfo(void)	__thunk_324_GetPlacementInfo__14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+011554	virtual function thunk (delta:-32) for cSC3PortLayer::StaticShutdown(void)	__thunk_32_StaticShutdown__13cSC3PortLayer	libSimGeom.so	vtable:__vt_13cSC3PortLayer.14cISC3CityLayer
+011561	virtual function thunk (delta:-32) for cSC3PortLayer::GetLayerType(void)	__thunk_32_GetLayerType__13cSC3PortLayer	libSimGeom.so	vtable:__vt_13cSC3PortLayer.14cISC3CityLayer
+011567	virtual function thunk (delta:-32) for cSC3PortLayer::GetManipulator(cISC3CityAgentType const &, cISC3CityLayerManipulator **, int &)	__thunk_32_GetManipulator__13cSC3PortLayerRC18cISC3CityAgentTypePP25cISC3CityLayerManipulatorRi	libSimGeom.so	vtable:__vt_13cSC3PortLayer.14cISC3CityLayer
+011573	cSC3PortLayer::GetValueSint32(unsigned int, unsigned int, int &) const	GetValueSint32__C13cSC3PortLayerUiUiRi	libSimGeom.so	vtable-thunk:__vt_13cSC3PortLayer.14cISC3PortLayer
+01159c	cSC3PortLayer::SetAllCells(unsigned char const &)	SetAllCells__13cSC3PortLayerRCUc	libSimGeom.so	vtable-thunk:__vt_13cSC3PortLayer.14cISC3PortLayer
+0115df	cSC3PortLayer::SerialRead(cIGZDBSerialRecord &)	SerialRead__13cSC3PortLayerR18cIGZDBSerialRecord	libSimGeom.so	vtable-thunk:__vt_13cSC3PortLayer.14cISC3PortLayer
+0115ee	virtual function thunk (delta:-36) for cSC3PortLayer::OccupantMoved(unsigned int, cISC3Occupant *, cSC3CityCoord const &)	__thunk_36_OccupantMoved__13cSC3PortLayerUiP13cISC3OccupantRC13cSC3CityCoord	libSimGeom.so	vtable:__vt_13cSC3PortLayer.23cISC3CityChangeReceiver
+0115f8	cSC3PortLayer::Init(cISC3City *, unsigned char const &)	Init__13cSC3PortLayerP9cISC3CityRCUc	libSimGeom.so	vtable-thunk:__vt_13cSC3PortLayer.14cISC3PortLayer
+011608	cSC3PortLayer::~cSC3PortLayer(void)	_._13cSC3PortLayer	libSimGeom.so	vtable:__vt_13cSC3PortLayer
+01176e	virtual function thunk (delta:-32) for cSC3PortLayer::Save(cISC3City *, cIGZDBSegment *)	__thunk_32_Save__13cSC3PortLayerP9cISC3CityP13cIGZDBSegment	libSimGeom.so	vtable:__vt_13cSC3PortLayer.14cISC3CityLayer
+011801	virtual function thunk (delta:-28) for cSC3PortLayer::OverlapsRunway(sIGZPointXZUint32 const &, sIGZPointXZUint32 const &)	__thunk_28_OverlapsRunway__13cSC3PortLayerRC17sIGZPointXZUint32T1	libSimGeom.so	vtable:__vt_13cSC3PortLayer.14cISC3PortLayer
+01191b	virtual function thunk (delta:-28) for cSC3PortLayer::OverlapsControlTower(unsigned int, unsigned int)	__thunk_28_OverlapsControlTower__13cSC3PortLayerUiUi	libSimGeom.so	vtable:__vt_13cSC3PortLayer.14cISC3PortLayer
+01199a	virtual function thunk (delta:-28) for cSC3PortLayer::HasRunwayService(unsigned int, unsigned int)	__thunk_28_HasRunwayService__13cSC3PortLayerUiUi	libSimGeom.so	vtable:__vt_13cSC3PortLayer.14cISC3PortLayer
+0119d4	virtual function thunk (delta:-28) for cSC3PortLayer::HasControlTowerService(unsigned int, unsigned int)	__thunk_28_HasControlTowerService__13cSC3PortLayerUiUi	libSimGeom.so	vtable:__vt_13cSC3PortLayer.14cISC3PortLayer
+011a10	virtual function thunk (delta:-28) for cSC3PortLayer::HasPierService(unsigned int, unsigned int)	__thunk_28_HasPierService__13cSC3PortLayerUiUi	libSimGeom.so	vtable:__vt_13cSC3PortLayer.14cISC3PortLayer
+011a4f	virtual function thunk (delta:-28) for cSC3PortLayer::AddRunway(sIGZPointXZUint32 const &, sIGZPointXZUint32 const &)	__thunk_28_AddRunway__13cSC3PortLayerRC17sIGZPointXZUint32T1	libSimGeom.so	vtable:__vt_13cSC3PortLayer.14cISC3PortLayer
+011bc4	virtual function thunk (delta:-28) for cSC3PortLayer::AddControlTower(unsigned int, unsigned int)	__thunk_28_AddControlTower__13cSC3PortLayerUiUi	libSimGeom.so	vtable:__vt_13cSC3PortLayer.14cISC3PortLayer
+011c71	virtual function thunk (delta:-28) for cSC3PortLayer::AddPier(unsigned int, unsigned int)	__thunk_28_AddPier__13cSC3PortLayerUiUi	libSimGeom.so	vtable:__vt_13cSC3PortLayer.14cISC3PortLayer
+011dbe	virtual function thunk (delta:-28) for cSC3PortLayer::RemoveRunway(sIGZPointXZUint32 const &, sIGZPointXZUint32 const &)	__thunk_28_RemoveRunway__13cSC3PortLayerRC17sIGZPointXZUint32T1	libSimGeom.so	vtable:__vt_13cSC3PortLayer.14cISC3PortLayer
+011f12	virtual function thunk (delta:-28) for cSC3PortLayer::RemoveControlTower(unsigned int, unsigned int)	__thunk_28_RemoveControlTower__13cSC3PortLayerUiUi	libSimGeom.so	vtable:__vt_13cSC3PortLayer.14cISC3PortLayer
+011fa9	virtual function thunk (delta:-28) for cSC3PortLayer::RemovePier(unsigned int, unsigned int)	__thunk_28_RemovePier__13cSC3PortLayerUiUi	libSimGeom.so	vtable:__vt_13cSC3PortLayer.14cISC3PortLayer
+01206a	cSC3PortLayer::QueryInterface(unsigned int, void **)	QueryInterface__13cSC3PortLayerUiPPv	libSimGeom.so	vtable-thunk:__vt_13cSC3PortLayer.14cISC3CityLayer
+0120b9	cSC3PortLayer::Shutdown(void)	Shutdown__13cSC3PortLayer	libSimGeom.so	vtable-thunk:__vt_13cSC3PortLayer.14cISC3CityLayer
+0120ff	virtual function thunk (delta:-32) for cSC3PortLayer::SimulationBegin(void)	__thunk_32_SimulationBegin__13cSC3PortLayer	libSimGeom.so	vtable:__vt_13cSC3PortLayer.14cISC3CityLayer
+01212f	cSC3PortLayer::OccupantInserted(unsigned int, cISC3Occupant *)	OccupantInserted__13cSC3PortLayerUiP13cISC3Occupant	libSimGeom.so	vtable-thunk:__vt_13cSC3PortLayer.23cISC3CityChangeReceiver
+012525	virtual function thunk (delta:-36) for cSC3PortLayer::OccupantInserted(unsigned int, cISC3Occupant *)	__thunk_36_OccupantInserted__13cSC3PortLayerUiP13cISC3Occupant	libSimGeom.so	vtable:__vt_13cSC3PortLayer.23cISC3CityChangeReceiver
+012536	virtual function thunk (delta:-36) for cSC3PortLayer::OccupantRemoved(unsigned int, cISC3Occupant *)	__thunk_36_OccupantRemoved__13cSC3PortLayerUiP13cISC3Occupant	libSimGeom.so	vtable:__vt_13cSC3PortLayer.23cISC3CityChangeReceiver
+012547	virtual function thunk (delta:-36) for cSC3PortLayer::OccupantChanged(unsigned int, cISC3Occupant *, int, void *)	__thunk_36_OccupantChanged__13cSC3PortLayerUiP13cISC3OccupantiPv	libSimGeom.so	vtable:__vt_13cSC3PortLayer.23cISC3CityChangeReceiver
+01256a	cSC3PortLayer::Release(void)	Release__13cSC3PortLayer	libSimGeom.so	vtable-thunk:__vt_13cSC3PortLayer.14cISC3CityLayer
+012639	cSC3PortLayer::CellCountX(void) const	CellCountX__C13cSC3PortLayer	libSimGeom.so	vtable-thunk:__vt_13cSC3PortLayer.14cISC3PortLayer
+01263d	cSC3PortLayer::CellCountZ(void) const	CellCountZ__C13cSC3PortLayer	libSimGeom.so	vtable-thunk:__vt_13cSC3PortLayer.14cISC3PortLayer
+012641	cSC3PortLayer::GetValue(unsigned int, unsigned int, unsigned char &) const	GetValue__C13cSC3PortLayerUiUiRUc	libSimGeom.so	vtable-thunk:__vt_13cSC3PortLayer.14cISC3PortLayer
+012724	cSC3PortLayer::ValidRect(unsigned int, unsigned int, unsigned int, unsigned int) const	ValidRect__C13cSC3PortLayerUiUiUiUi	libSimGeom.so	vtable-thunk:__vt_13cSC3PortLayer.14cISC3PortLayer
+012742	cSC3PortLayer::SerialWrite(cIGZDBSerialRecord &) const	SerialWrite__C13cSC3PortLayerR18cIGZDBSerialRecord	libSimGeom.so	vtable-thunk:__vt_13cSC3PortLayer.14cISC3PortLayer
+0127a0	virtual function thunk (delta:-28) for cSC3PortLayer::QueryInterface(unsigned int, void **)	__thunk_28_QueryInterface__13cSC3PortLayerUiPPv	libSimGeom.so	vtable:__vt_13cSC3PortLayer.14cISC3PortLayer
+0127a8	virtual function thunk (delta:-28) for cSC3PortLayer::AddRef(void)	__thunk_28_AddRef__13cSC3PortLayer	libSimGeom.so	vtable:__vt_13cSC3PortLayer.14cISC3PortLayer
+0127b0	virtual function thunk (delta:-28) for cSC3PortLayer::Release(void)	__thunk_28_Release__13cSC3PortLayer	libSimGeom.so	vtable:__vt_13cSC3PortLayer.14cISC3PortLayer
+0127b8	virtual function thunk (delta:-28) for cSC3PortLayer::CellCountX(void) const	__thunk_28_CellCountX__C13cSC3PortLayer	libSimGeom.so	vtable:__vt_13cSC3PortLayer.14cISC3PortLayer
+0127c0	virtual function thunk (delta:-28) for cSC3PortLayer::CellCountZ(void) const	__thunk_28_CellCountZ__C13cSC3PortLayer	libSimGeom.so	vtable:__vt_13cSC3PortLayer.14cISC3PortLayer
+0127c8	virtual function thunk (delta:-28) for cSC3PortLayer::GetValueSint32(unsigned int, unsigned int, int &) const	__thunk_28_GetValueSint32__C13cSC3PortLayerUiUiRi	libSimGeom.so	vtable:__vt_13cSC3PortLayer.14cISC3PortLayer
+0127e0	virtual function thunk (delta:-28) for cSC3PortLayer::ValidRect(unsigned int, unsigned int, unsigned int, unsigned int) const	__thunk_28_ValidRect__C13cSC3PortLayerUiUiUiUi	libSimGeom.so	vtable:__vt_13cSC3PortLayer.14cISC3PortLayer
+0127e8	virtual function thunk (delta:-28) for cSC3PortLayer::SerialRead(cIGZDBSerialRecord &)	__thunk_28_SerialRead__13cSC3PortLayerR18cIGZDBSerialRecord	libSimGeom.so	vtable:__vt_13cSC3PortLayer.14cISC3PortLayer
+0127f0	virtual function thunk (delta:-28) for cSC3PortLayer::SerialWrite(cIGZDBSerialRecord &) const	__thunk_28_SerialWrite__C13cSC3PortLayerR18cIGZDBSerialRecord	libSimGeom.so	vtable:__vt_13cSC3PortLayer.14cISC3PortLayer
+0127f8	virtual function thunk (delta:-28) for cSC3PortLayer::Init(cISC3City *, unsigned char const &)	__thunk_28_Init__13cSC3PortLayerP9cISC3CityRCUc	libSimGeom.so	vtable:__vt_13cSC3PortLayer.14cISC3PortLayer
+012800	virtual function thunk (delta:-28) for cSC3PortLayer::Shutdown(void)	__thunk_28_Shutdown__13cSC3PortLayer	libSimGeom.so	vtable:__vt_13cSC3PortLayer.14cISC3PortLayer
+012808	virtual function thunk (delta:-28) for cSC3PortLayer::GetValue(unsigned int, unsigned int, unsigned char &) const	__thunk_28_GetValue__C13cSC3PortLayerUiUiRUc	libSimGeom.so	vtable:__vt_13cSC3PortLayer.14cISC3PortLayer
+012818	virtual function thunk (delta:-28) for cSC3PortLayer::SetAllCells(unsigned char const &)	__thunk_28_SetAllCells__13cSC3PortLayerRCUc	libSimGeom.so	vtable:__vt_13cSC3PortLayer.14cISC3PortLayer
+012828	virtual function thunk (delta:-32) for cSC3PortLayer::QueryInterface(unsigned int, void **)	__thunk_32_QueryInterface__13cSC3PortLayerUiPPv	libSimGeom.so	vtable:__vt_13cSC3PortLayer.14cISC3CityLayer
+012830	virtual function thunk (delta:-32) for cSC3PortLayer::AddRef(void)	__thunk_32_AddRef__13cSC3PortLayer	libSimGeom.so	vtable:__vt_13cSC3PortLayer.14cISC3CityLayer
+012838	virtual function thunk (delta:-32) for cSC3PortLayer::Release(void)	__thunk_32_Release__13cSC3PortLayer	libSimGeom.so	vtable:__vt_13cSC3PortLayer.14cISC3CityLayer
+012840	virtual function thunk (delta:-32) for cSC3PortLayer::Shutdown(void)	__thunk_32_Shutdown__13cSC3PortLayer	libSimGeom.so	vtable:__vt_13cSC3PortLayer.14cISC3CityLayer
+012848	virtual function thunk (delta:-36) for cSC3PortLayer::QueryInterface(unsigned int, void **)	__thunk_36_QueryInterface__13cSC3PortLayerUiPPv	libSimGeom.so	caller
+012850	virtual function thunk (delta:-36) for cSC3PortLayer::AddRef(void)	__thunk_36_AddRef__13cSC3PortLayer	libSimGeom.so	vtable:__vt_13cSC3PortLayer.23cISC3CityChangeReceiver
+012858	virtual function thunk (delta:-36) for cSC3PortLayer::Release(void)	__thunk_36_Release__13cSC3PortLayer	libSimGeom.so	vtable:__vt_13cSC3PortLayer.23cISC3CityChangeReceiver
+012880	cSC3FloraCommandFactory::AddRef(void)	AddRef__23cSC3FloraCommandFactory	libSimGeom.so	vtable-thunk:__vt_23cSC3FloraCommandFactory
+0128ab	RZGetCOMDllDirector_SimGeom(void)	RZGetCOMDllDirector_SimGeom__Fv	libSimGeom.so	tokens:99.1
+0129e0	cSGCOMDirector::GetDirectorID(void) const	GetDirectorID__C14cSGCOMDirector	libSimGeom.so	tokens:7.9
+012d2b	cSGCOMDirector::~cSGCOMDirector(void)	_._14cSGCOMDirector	libSimGeom.so	vtable:__vt_14cSGCOMDirector
+012e5a	virtual function thunk (delta:-4) for cRZCOMDllDirector::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__17cRZCOMDllDirectorUiPPv	libSimGeom.so	vtable:__vt_17cRZCOMDllDirector.18cIGZFrameWorkHooks
+012e62	virtual function thunk (delta:-4) for cRZCOMDllDirector::AddRef(void)	__thunk_4_AddRef__17cRZCOMDllDirector	libSimGeom.so	vtable:__vt_17cRZCOMDllDirector.18cIGZFrameWorkHooks
+012e6a	virtual function thunk (delta:-4) for cRZCOMDllDirector::Release(void)	__thunk_4_Release__17cRZCOMDllDirector	libSimGeom.so	vtable:__vt_17cRZCOMDllDirector.18cIGZFrameWorkHooks
+012e92	cSGDemolitionLayer::CanDemolishOccupants(cISC3OccupantManager *, cSC3CityBounds const &, cISC3OccManIteratorTest *, cISGDemolitionLayer::tDemolitionPrivilege, unsigned int &, cSC3CityBounds &, cISC3EnumCityViewSelection **)	CanDemolishOccupants__18cSGDemolitionLayerP20cISC3OccupantManagerRC14cSC3CityBoundsP23cISC3OccManIteratorTestQ219cISGDemolitionLayer20tDemolitionPrivilegeRUiR14cSC3CityBoundsPP26cISC3EnumCityViewSelection	libSimGeom.so	vtable:__vt_18cSGDemolitionLayer
+01334d	cSGDemolitionLayer::CanDemolishForBuildingSite(unsigned int, cSC3CityBounds const &, cISGDemolitionLayer::tDemolitionPrivilege, unsigned int &, cSC3CityBounds &, cISC3EnumCityViewSelection **)	CanDemolishForBuildingSite__18cSGDemolitionLayerUiRC14cSC3CityBoundsQ219cISGDemolitionLayer20tDemolitionPrivilegeRUiR14cSC3CityBoundsPP26cISC3EnumCityViewSelection	libSimGeom.so	vtable:__vt_18cSGDemolitionLayer
+0134fb	cSGDemolitionLayer::DemolishOccupants(cISC3OccupantManager *, cSC3CityBounds const &, cISC3OccManIteratorTest *, cISGDemolitionLayer::tDemolitionPrivilege, bool, unsigned int &, cSC3CityBounds &)	DemolishOccupants__18cSGDemolitionLayerP20cISC3OccupantManagerRC14cSC3CityBoundsP23cISC3OccManIteratorTestQ219cISGDemolitionLayer20tDemolitionPrivilegebRUiR14cSC3CityBounds	libSimGeom.so	vtable:__vt_18cSGDemolitionLayer
+013c2a	cSGDemolitionLayer::DemolishForBuildingSite(unsigned int, cSC3CityBounds const &, cISGDemolitionLayer::tDemolitionPrivilege, bool, unsigned int &, cSC3CityBounds &)	DemolishForBuildingSite__18cSGDemolitionLayerUiRC14cSC3CityBoundsQ219cISGDemolitionLayer20tDemolitionPrivilegebRUiR14cSC3CityBounds	libSimGeom.so	vtable:__vt_18cSGDemolitionLayer
+014484	cSGDemolitionLayer::DoQueryInfo(cGZMessage &, cIGZUnknown *)	DoQueryInfo__18cSGDemolitionLayerR10cGZMessageP11cIGZUnknown	libSimGeom.so	vtable:__vt_18cSGDemolitionLayer
+0145cf	cSGDemolitionLayer::Shutdown(void)	Shutdown__18cSGDemolitionLayer	libSimGeom.so	vtable:__vt_18cSGDemolitionLayer
+014670	cSGDemolitionLayer::GetLayerType(void)	GetLayerType__18cSGDemolitionLayer	libSimGeom.so	tokens:7.9
+014676	cSGDemolitionLayer::QueryInterface(unsigned int, void **)	QueryInterface__18cSGDemolitionLayerUiPPv	libSimGeom.so	tokens:20.8
+0146b1	cSGDemolitionLayer::AddRef(void)	AddRef__18cSGDemolitionLayer	libSimGeom.so	vtable:__vt_18cSGDemolitionLayer
+0146c8	cSGDemolitionLayer::Release(void)	Release__18cSGDemolitionLayer	libSimGeom.so	vtable:__vt_18cSGDemolitionLayer
+01472b	cSGDemolitionLayer::~cSGDemolitionLayer(void)	_._18cSGDemolitionLayer	libSimGeom.so	vtable:__vt_18cSGDemolitionLayer
+01474e	cSGDemolitionTest::AddRef(void)	AddRef__17cSGDemolitionTest	libSimGeom.so	vtable:__vt_17cSGDemolitionTest
+014755	cSGDemolitionTest::Release(void)	Release__17cSGDemolitionTest	libSimGeom.so	vtable:__vt_17cSGDemolitionTest
+01476f	cSGDemolitionTest::Test(cISC3Occupant *)	Test__17cSGDemolitionTestP13cISC3Occupant	libSimGeom.so	tokens:15.8
+0147e9	cSGDemolitionTest::~cSGDemolitionTest(void)	_._17cSGDemolitionTest	libSimGeom.so	vtable:__vt_17cSGDemolitionTest
+0152cb	cSC3CityToolQuery::Release(void)	Release__17cSC3CityToolQuery	libSimGeom.so	vtable-thunk:__vt_17cSC3CityToolQuery
+01611e	virtual function thunk (delta:-88) for cSC3CityToolQuery::AddRef(void)	__thunk_88_AddRef__17cSC3CityToolQuery	libSimGeom.so	caller
+01630e	cSC3PortAttrib::Key(void) const	Key__C14cSC3PortAttrib	libSimGeom.so	vtable:__vt_14cSC3PortAttrib
+018592	cRZCOMDllDirector::OnStart(cIGZCOM *)	OnStart__17cRZCOMDllDirectorP7cIGZCOM	libSimGeom.so	tokens:15.8
+019693	cRZCOMDllDirector::QueryInterface(unsigned int, void **)	QueryInterface__17cRZCOMDllDirectorUiPPv	libSimGeom.so	tokens:15.8
+0196d4	cRZCOMDllDirector::FrameWork(void)	FrameWork__17cRZCOMDllDirector	libSimGeom.so	vtable:__vt_14cSGCOMDirector
+0196dd	cRZCOMDllDirector::RemoveRef(void)	RemoveRef__17cRZCOMDllDirector	libSimGeom.so	vtable:__vt_14cSGCOMDirector
+0196ec	cRZCOMDllDirector::RefCount(void)	RefCount__17cRZCOMDllDirector	libSimGeom.so	vtable:__vt_14cSGCOMDirector
+0196f0	cRZCOMDllDirector::InitializeCOM(cIGZCOM *, cIGZString &)	InitializeCOM__17cRZCOMDllDirectorP7cIGZCOMR10cIGZString	libSimGeom.so	vtable:__vt_14cSGCOMDirector
+0197be	cRZCOMDllDirector::GetClassObject(unsigned int, unsigned int, void **)	GetClassObject__17cRZCOMDllDirectorUiUiPPv	libSimGeom.so	vtable:__vt_14cSGCOMDirector
+01983f	cRZCOMDllDirector::EnumClassObjects(void (*)(unsigned int, unsigned int, void *), void *)	EnumClassObjects__17cRZCOMDllDirectorPFUiUiPv_vPv	libSimGeom.so	vtable:__vt_14cSGCOMDirector
+019893	cRZCOMDllDirector::ModuleName(cIGZString &)	ModuleName__17cRZCOMDllDirectorR10cIGZString	libSimGeom.so	vtable:__vt_14cSGCOMDirector
+0198a7	cRZCOMDllDirector::AddDirector(cRZCOMDllDirector *)	AddDirector__17cRZCOMDllDirectorP17cRZCOMDllDirector	libSimGeom.so	vtable:__vt_14cSGCOMDirector
+0198f1	cRZCOMDllDirector::CanUnloadNow(void)	CanUnloadNow__17cRZCOMDllDirector	libSimGeom.so	vtable:__vt_14cSGCOMDirector
+019975	cRZCOMDllDirector::GZCOM(void)	GZCOM__17cRZCOMDllDirector	libSimGeom.so	vtable:__vt_14cSGCOMDirector
+019df1	cSC3BuildingFamily::GetLandUse(void)	GetLandUse__18cSC3BuildingFamily	libSimGeom.so	vtable:__vt_18cSC3BuildingFamily
+01adc4	cSC3BuildingFamily::GetBuildingCount(void)	GetBuildingCount__18cSC3BuildingFamily	libSimGeom.so	vtable:__vt_18cSC3BuildingFamily
+01b405	cSC3PortAttrib::TypeId(void) const	TypeId__C14cSC3PortAttrib	libSimGeom.so	vtable-thunk:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+01ba59	cSC3PortAttrib::Release(void)	Release__14cSC3PortAttrib	libSimGeom.so	vtable-thunk:__vt_14cSC3PortAttrib.17cISLTokenResource
+01ba91	cSC3PortAttrib::AddRef(void)	AddRef__14cSC3PortAttrib	libSimGeom.so	vtable-thunk:__vt_14cSC3PortAttrib.17cISLTokenResource
+01bb2e	cSC3CityToolQuery::AddRef(void)	AddRef__17cSC3CityToolQuery	libSimGeom.so	vtable-thunk:__vt_17cSC3CityToolQuery
+01dd0f	cSC3PortAttrib::GetDefaultLayerFlag(void) const	GetDefaultLayerFlag__C14cSC3PortAttrib	libSimGeom.so	vtable-thunk:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+0226b1	cSC3PortAttrib::GetOccLayerFlag(void)	GetOccLayerFlag__14cSC3PortAttrib	libSimGeom.so	vtable-thunk:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+0226f8	cSC3PortAttrib::SubTypeInfo(void) const	SubTypeInfo__C14cSC3PortAttrib	libSimGeom.so	vtable-thunk:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+022725	cSC3PortAttrib::GetOriginalSpriteAttrib(void)	GetOriginalSpriteAttrib__14cSC3PortAttrib	libSimGeom.so	vtable-thunk:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+0227cd	cSC3PortAttrib::GetPeopleProducerAttrib(void)	GetPeopleProducerAttrib__14cSC3PortAttrib	libSimGeom.so	vtable-thunk:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+0227f0	cSC3PortAttrib::GetVehicleProducerAttrib(void)	GetVehicleProducerAttrib__14cSC3PortAttrib	libSimGeom.so	vtable-thunk:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+02285f	cSC3PortAttrib::SizeInCellsX(void)	SizeInCellsX__14cSC3PortAttrib	libSimGeom.so	vtable-thunk:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+022863	cSC3PortAttrib::SizeInCellsY(void)	SizeInCellsY__14cSC3PortAttrib	libSimGeom.so	vtable-thunk:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+022867	cSC3PortAttrib::CityAgentType(void)	CityAgentType__14cSC3PortAttrib	libSimGeom.so	vtable-thunk:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+02286b	cSC3PortAttrib::Flammability(void)	Flammability__14cSC3PortAttrib	libSimGeom.so	vtable-thunk:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+022f31	cSC3PortAttrib::GetQueryDialogClass(void)	GetQueryDialogClass__14cSC3PortAttrib	libSimGeom.so	vtable-thunk:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+022fea	cSC3PortAttrib::GetOverRideAttrib(void)	GetOverRideAttrib__14cSC3PortAttrib	libSimGeom.so	vtable-thunk:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+023173	cSC3PortAttrib::TokenRead(cISLTokenRecord &)	TokenRead__14cSC3PortAttribR15cISLTokenRecord	libSimGeom.so	callee
+023463	cSC3PortAttrib::GetPowerConsumption(void)	GetPowerConsumption__14cSC3PortAttrib	libSimGeom.so	vtable-thunk:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+023473	cSC3PortAttrib::GetPlacementInfo(void)	GetPlacementInfo__14cSC3PortAttrib	libSimGeom.so	vtable-thunk:__vt_14cSC3PortAttrib.15cISC3PortAttrib
+0234dc	cSC3PortAttrib::SetIsTextRecord(bool)	SetIsTextRecord__14cSC3PortAttribb	libSimGeom.so	vtable-thunk:__vt_14cSC3PortAttrib.17cISLTokenResource
+023635	virtual function thunk (delta:-20) for cSC3PortAttrib::ClearGeomFlag(unsigned int)	__thunk_20_ClearGeomFlag__14cSC3PortAttribUi	libSimGeom.so	caller
+02364b	virtual function thunk (delta:-20) for cSC3PortAttrib::GetOccLayerFlag(void)	__thunk_20_GetOccLayerFlag__14cSC3PortAttrib	libSimGeom.so	caller
+02366c	virtual function thunk (delta:-20) for cSC3PortAttrib::SubTypeInfo(void) const	__thunk_20_SubTypeInfo__C14cSC3PortAttrib	libSimGeom.so	caller
+023682	virtual function thunk (delta:-20) for cSC3PortAttrib::SizeInCellsX(void)	__thunk_20_SizeInCellsX__14cSC3PortAttrib	libSimGeom.so	caller
+023698	virtual function thunk (delta:-20) for cSC3PortAttrib::SizeInCellsY(void)	__thunk_20_SizeInCellsY__14cSC3PortAttrib	libSimGeom.so	caller
+0236a3	virtual function thunk (delta:-20) for cSC3PortAttrib::CityAgentType(void)	__thunk_20_CityAgentType__14cSC3PortAttrib	libSimGeom.so	caller
+0236ae	virtual function thunk (delta:-20) for cSC3PortAttrib::TypeId(void) const	__thunk_20_TypeId__C14cSC3PortAttrib	libSimGeom.so	caller
+0236cf	virtual function thunk (delta:-20) for cSC3PortAttrib::GetOriginalSpriteAttrib(void)	__thunk_20_GetOriginalSpriteAttrib__14cSC3PortAttrib	libSimGeom.so	caller
+0236f0	virtual function thunk (delta:-20) for cSC3PortAttrib::GetPeopleProducerAttrib(void)	__thunk_20_GetPeopleProducerAttrib__14cSC3PortAttrib	libSimGeom.so	caller
+023706	virtual function thunk (delta:-20) for cSC3PortAttrib::Flammability(void)	__thunk_20_Flammability__14cSC3PortAttrib	libSimGeom.so	caller
+023753	virtual function thunk (delta:-20) for cSC3PortAttrib::GetQueryDialogClass(void)	__thunk_20_GetQueryDialogClass__14cSC3PortAttrib	libSimGeom.so	caller
+023795	virtual function thunk (delta:-20) for cSC3PortAttrib::GetOverRideAttrib(void)	__thunk_20_GetOverRideAttrib__14cSC3PortAttrib	libSimGeom.so	caller
+024e4b	virtual function thunk (delta:-32) for cSC3PortLayer::DebugClassTag(cIGZString &)	__thunk_32_DebugClassTag__13cSC3PortLayerR10cIGZString	libSimGeom.so	vtable:__vt_13cSC3PortLayer.14cISC3CityLayer

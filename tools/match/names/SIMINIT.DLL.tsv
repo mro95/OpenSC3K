@@ -1,0 +1,208 @@
+rva	demangled	mangled	source	method
+00106e	cSC2Importer::GetBaseMapSize(unsigned int &, unsigned int &, unsigned int &)	GetBaseMapSize__12cSC2ImporterRUiN21	libSimInit.so	vtable:__vt_12cSC2Importer
+00108e	cSC2Importer::Init(cIGZString const &)	Init__12cSC2ImporterRC10cIGZString	libSimInit.so	vtable:__vt_12cSC2Importer
+00122f	cSC3AgentTypeTree::Shutdown(void)	Shutdown__17cSC3AgentTypeTree	libSimInit.so	vtable:__vt_17cSC3AgentTypeTree
+0012da	cSC3AgentTypeTree::Init(void)	Init__17cSC3AgentTypeTree	libSimInit.so	vtable:__vt_17cSC3AgentTypeTree
+0012f1	cSC3AgentTypeTree::Count(void)	Count__17cSC3AgentTypeTree	libSimInit.so	vtable:__vt_17cSC3AgentTypeTree
+0012f5	cSC3AgentTypeTree::GetNode(unsigned int)	GetNode__17cSC3AgentTypeTreeUi	libSimInit.so	vtable:__vt_17cSC3AgentTypeTree
+001366	cSC2Importer::MapIsPresent(unsigned int)	MapIsPresent__12cSC2ImporterUi	libSimInit.so	vtable:__vt_12cSC2Importer
+001379	cSC2Importer::GetValue(cISC2Importer::tMapID, unsigned int, unsigned int, unsigned char &)	GetValue__12cSC2ImporterQ213cISC2Importer6tMapIDUiUiRUc	libSimInit.so	vtable:__vt_12cSC2Importer
+001679	cSC2Importer::GetMapSize(cISC2Importer::tMapID)	GetMapSize__12cSC2ImporterQ213cISC2Importer6tMapID	libSimInit.so	vtable:__vt_12cSC2Importer
+001741	cSC2Importer::GetMiscValue(unsigned int, int &)	GetMiscValue__12cSC2ImporterUiRi	libSimInit.so	vtable:__vt_12cSC2Importer
+001777	cSC2Importer::GetZoneValue(unsigned int, unsigned int, unsigned char &)	GetZoneValue__12cSC2ImporterUiUiRUc	libSimInit.so	vtable:__vt_12cSC2Importer
+0017ba	cSC2Importer::GetFaceValue(unsigned int, unsigned int, unsigned char &)	GetFaceValue__12cSC2ImporterUiUiRUc	libSimInit.so	tokens:62.0
+001853	cSC2Importer::GetAltValue(unsigned int, unsigned int, unsigned short &)	GetAltValue__12cSC2ImporterUiUiRUs	libSimInit.so	vtable:__vt_12cSC2Importer
+001896	cSC2Importer::GetTerrainAlt(unsigned int, unsigned int, unsigned char &)	GetTerrainAlt__12cSC2ImporterUiUiRUc	libSimInit.so	vtable:__vt_12cSC2Importer
+0018d9	cSC2Importer::GetWaterAlt(unsigned int, unsigned int, unsigned char &)	GetWaterAlt__12cSC2ImporterUiUiRUc	libSimInit.so	vtable:__vt_12cSC2Importer
+001920	cSC2Importer::GetTunnelDepth(unsigned int, unsigned int, unsigned char &)	GetTunnelDepth__12cSC2ImporterUiUiRUc	libSimInit.so	vtable:__vt_12cSC2Importer
+001967	cSC2Importer::GetCityName(unsigned char *)	GetCityName__12cSC2ImporterPUc	libSimInit.so	vtable:__vt_12cSC2Importer
+0019bf	cSC2Importer::GetLabel(unsigned int, unsigned char *)	GetLabel__12cSC2ImporterUiPUc	libSimInit.so	vtable:__vt_12cSC2Importer
+0019db	cSC2Importer::GetMicroRecord(unsigned int, cISC2Importer::tMicroRec &)	GetMicroRecord__12cSC2ImporterUiRQ213cISC2Importer9tMicroRec	libSimInit.so	vtable:__vt_12cSC2Importer
+001a18	cSC2Importer::GetThingRecord(unsigned int, cISC2Importer::tThingRec &)	GetThingRecord__12cSC2ImporterUiRQ213cISC2Importer9tThingRec	libSimInit.so	vtable:__vt_12cSC2Importer
+001a4f	cSC2Importer::GetGraphValue(cISC2Importer::tGraphCategory, unsigned char, unsigned char, unsigned int &)	GetGraphValue__12cSC2ImporterQ213cISC2Importer14tGraphCategoryUcUcRUi	libSimInit.so	vtable:__vt_12cSC2Importer
+001ada	cSC2Importer::blowChunks(cRZFile &)	blowChunks__12cSC2ImporterR7cRZFile	libSimInit.so	tokens:191.4
+0020af	cSC2Importer::getSC2DataSize(cRZFile &, unsigned int &)	getSC2DataSize__12cSC2ImporterR7cRZFileRUi	libSimInit.so	tokens:15.5
+00217e	cSC2Importer::QueryInterface(unsigned int, void **)	QueryInterface__12cSC2ImporterUiPPv	libSimInit.so	vtable:__vt_12cSC2Importer
+0021a0	cSC2Importer::Release(void)	Release__12cSC2Importer	libSimInit.so	vtable:__vt_12cSC2Importer
+002a2b	cSC3AgentTypeTree::CreateAgentTypeCallback(cIGZString const &, cIGZString const &, void *)	CreateAgentTypeCallback__17cSC3AgentTypeTreeRC10cIGZStringT1Pv	libSimInit.so	tokens:15.5
+003119	cSC3AgentTypeTreeIterator::AddRef(void)	AddRef__25cSC3AgentTypeTreeIterator	libSimInit.so	vtable:__vt_25cSC3AgentTypeTreeIterator
+003130	cSC3AgentTypeTreeIterator::Release(void)	Release__25cSC3AgentTypeTreeIterator	libSimInit.so	vtable:__vt_25cSC3AgentTypeTreeIterator
+00315a	cSC3AgentTypeTreeIterator::cSC3AgentTypeTreeIterator(cSC3AgentTypeTree *)	__25cSC3AgentTypeTreeIteratorP17cSC3AgentTypeTree	libSimInit.so	vtable-user:__vt_25cSC3AgentTypeTreeIterator
+003179	cSC3AgentTypeTreeIterator::Rewind(void)	Rewind__25cSC3AgentTypeTreeIterator	libSimInit.so	vtable:__vt_25cSC3AgentTypeTreeIterator
+00318c	cSC3AgentTypeTreeIterator::Next(void)	Next__25cSC3AgentTypeTreeIterator	libSimInit.so	vtable:__vt_25cSC3AgentTypeTreeIterator
+003be7	cSC3CityDefinition::GetAgentTypeTree(void)	GetAgentTypeTree__18cSC3CityDefinition	libSimInit.so	vtable:__vt_18cSC3CityDefinition
+003beb	cSC3CityDefinition::~cSC3CityDefinition(void)	_._18cSC3CityDefinition	libSimInit.so	vtable:__vt_18cSC3CityDefinition
+003c19	cSC3CityDefinition::Init(void)	Init__18cSC3CityDefinition	libSimInit.so	tokens:36.2
+003ca9	cSC3CityDefinition::Shutdown(void)	Shutdown__18cSC3CityDefinition	libSimInit.so	vtable:__vt_18cSC3CityDefinition
+003d08	cSC3CityDefinition::QueryInterface(unsigned int, void **)	QueryInterface__18cSC3CityDefinitionUiPPv	libSimInit.so	tokens:7.7
+003d30	cSC3CityDefinition::AddRef(void)	AddRef__18cSC3CityDefinition	libSimInit.so	vtable:__vt_18cSC3CityDefinition
+003d47	cSC3CityDefinition::Release(void)	Release__18cSC3CityDefinition	libSimInit.so	vtable:__vt_18cSC3CityDefinition
+003d77	cSC3CityDefinition::GetFileType(cIGZString const &)	GetFileType__18cSC3CityDefinitionRC10cIGZString	libSimInit.so	vtable:__vt_18cSC3CityDefinition
+003de2	cSC3CityDefinition::ValidateSC2File(cIGZString const &)	ValidateSC2File__18cSC3CityDefinitionRC10cIGZString	libSimInit.so	tokens:15.5
+003f27	cSC3CityDefinition::ValidateSCXFile(cIGZString const &)	ValidateSCXFile__18cSC3CityDefinitionRC10cIGZString	libSimInit.so	vtable:__vt_18cSC3CityDefinition
+003f87	cSC3CityDefinition::ValidateSC3File(cIGZString const &)	ValidateSC3File__18cSC3CityDefinitionRC10cIGZString	libSimInit.so	vtable:__vt_18cSC3CityDefinition
+004026	cSC3CityDefinition::ValidateSNRFile(cIGZString const &)	ValidateSNRFile__18cSC3CityDefinitionRC10cIGZString	libSimInit.so	vtable:__vt_18cSC3CityDefinition
+0040f5	cSC3CityDefinition::ValidateSCTFile(cIGZString const &)	ValidateSCTFile__18cSC3CityDefinitionRC10cIGZString	libSimInit.so	vtable:__vt_18cSC3CityDefinition
+0042ca	cSC3CityDefinition::ValidateST3File(cIGZString const &)	ValidateST3File__18cSC3CityDefinitionRC10cIGZString	libSimInit.so	vtable:__vt_18cSC3CityDefinition
+004e3b	cSC3NewCityInfo::AddRef(void)	AddRef__15cSC3NewCityInfo	libSimInit.so	vtable:__vt_15cSC3NewCityInfo
+004f9f	cSC3CitySchemeMgr::ClearReplacementSet(void)	ClearReplacementSet__17cSC3CitySchemeMgr	libSimInit.so	vtable:__vt_17cSC3CitySchemeMgr
+004ff9	cSC3CitySchemeMgr::CreateBATBuildingResources(void)	CreateBATBuildingResources__17cSC3CitySchemeMgr	libSimInit.so	tokens:22.5
+0051e3	cSC3CitySchemeMgr::~cSC3CitySchemeMgr(void)	_._17cSC3CitySchemeMgr	libSimInit.so	vtable:__vt_17cSC3CitySchemeMgr
+00533e	cSC3CitySchemeMgr::GetBATBuildingKeys(cGZResourceKey *, unsigned int, unsigned int &)	GetBATBuildingKeys__17cSC3CitySchemeMgrP14cGZResourceKeyUiRUi	libSimInit.so	vtable:__vt_17cSC3CitySchemeMgr
+0053a4	cSC3CitySchemeMgr::GetBATBuildings(void)	GetBATBuildings__17cSC3CitySchemeMgr	libSimInit.so	caller
+005424	cSC3CitySchemeMgr::GetBuildingSetIconKey(unsigned int, cGZResourceKey &)	GetBuildingSetIconKey__17cSC3CitySchemeMgrUiR14cGZResourceKey	libSimInit.so	vtable:__vt_17cSC3CitySchemeMgr
+005450	cSC3CitySchemeMgr::GetBuildingSetIds(unsigned int *, unsigned int, unsigned int &)	GetBuildingSetIds__17cSC3CitySchemeMgrPUiUiRUi	libSimInit.so	vtable:__vt_17cSC3CitySchemeMgr
+0054a8	cSC3CitySchemeMgr::GetCurrentBuildingSet(unsigned int &) const	GetCurrentBuildingSet__C17cSC3CitySchemeMgrRUi	libSimInit.so	vtable:__vt_17cSC3CitySchemeMgr
+0054c0	cSC3CitySchemeMgr::GetCurrentFloraSet(unsigned int &) const	GetCurrentFloraSet__C17cSC3CitySchemeMgrRUi	libSimInit.so	vtable:__vt_17cSC3CitySchemeMgr
+0054d8	cSC3CitySchemeMgr::GetCurrentLandScape(unsigned int &) const	GetCurrentLandScape__C17cSC3CitySchemeMgrRUi	libSimInit.so	vtable:__vt_17cSC3CitySchemeMgr
+0054e6	cSC3CitySchemeMgr::GetDataMapsTerrainPaletteForCurrentLandScape(unsigned int &)	GetDataMapsTerrainPaletteForCurrentLandScape__17cSC3CitySchemeMgrRUi	libSimInit.so	vtable:__vt_17cSC3CitySchemeMgr
+00550a	cSC3CitySchemeMgr::GetDefaultBuildingSet(void) const	GetDefaultBuildingSet__C17cSC3CitySchemeMgr	libSimInit.so	vtable:__vt_17cSC3CitySchemeMgr
+00550e	cSC3CitySchemeMgr::GetDefaultLandScape(void) const	GetDefaultLandScape__C17cSC3CitySchemeMgr	libSimInit.so	vtable:__vt_17cSC3CitySchemeMgr
+005512	cSC3CitySchemeMgr::GetFloraSetIconKey(unsigned int, cGZResourceKey &)	GetFloraSetIconKey__17cSC3CitySchemeMgrUiR14cGZResourceKey	libSimInit.so	vtable:__vt_17cSC3CitySchemeMgr
+00553e	cSC3CitySchemeMgr::GetFloraSetIds(unsigned int *, unsigned int, unsigned int &)	GetFloraSetIds__17cSC3CitySchemeMgrPUiUiRUi	libSimInit.so	vtable:__vt_17cSC3CitySchemeMgr
+0055f5	cSC3CitySchemeMgr::GetLandScapeIconKey(unsigned int, cGZResourceKey &)	GetLandScapeIconKey__17cSC3CitySchemeMgrUiR14cGZResourceKey	libSimInit.so	vtable:__vt_17cSC3CitySchemeMgr
+005621	cSC3CitySchemeMgr::GetLandScapeIds(unsigned int *, unsigned int, unsigned int &)	GetLandScapeIds__17cSC3CitySchemeMgrPUiUiRUi	libSimInit.so	vtable:__vt_17cSC3CitySchemeMgr
+00567c	cSC3CitySchemeMgr::GetLandScapePalette(unsigned int, unsigned int &, unsigned int &)	GetLandScapePalette__17cSC3CitySchemeMgrUiRUiT2	libSimInit.so	vtable:__vt_17cSC3CitySchemeMgr
+0056a4	cSC3CitySchemeMgr::GetNavViewTerrainPaletteForCurrentLandScape(unsigned int &)	GetNavViewTerrainPaletteForCurrentLandScape__17cSC3CitySchemeMgrRUi	libSimInit.so	vtable:__vt_17cSC3CitySchemeMgr
+0056c8	cSC3CitySchemeMgr::GetNumBATBuildings(void)	GetNumBATBuildings__17cSC3CitySchemeMgr	libSimInit.so	vtable:__vt_17cSC3CitySchemeMgr
+0056dd	cSC3CitySchemeMgr::GetNumBuildingSets(void) const	GetNumBuildingSets__C17cSC3CitySchemeMgr	libSimInit.so	vtable:__vt_17cSC3CitySchemeMgr
+0056e7	cSC3CitySchemeMgr::GetNumFloraSets(void) const	GetNumFloraSets__C17cSC3CitySchemeMgr	libSimInit.so	vtable:__vt_17cSC3CitySchemeMgr
+0056f1	cSC3CitySchemeMgr::GetNumLandScapes(void) const	GetNumLandScapes__C17cSC3CitySchemeMgr	libSimInit.so	vtable:__vt_17cSC3CitySchemeMgr
+0056fe	cSC3CitySchemeMgr::GetPluginBuildingMgr(void)	GetPluginBuildingMgr__17cSC3CitySchemeMgr	libSimInit.so	vtable:__vt_17cSC3CitySchemeMgr
+005705	cSC3CitySchemeMgr::GetSoundIdForCurrentBuildingSet(unsigned int &)	GetSoundIdForCurrentBuildingSet__17cSC3CitySchemeMgrRUi	libSimInit.so	vtable:__vt_17cSC3CitySchemeMgr
+005723	cSC3CitySchemeMgr::GetSoundIdForCurrentFloraSet(unsigned int &)	GetSoundIdForCurrentFloraSet__17cSC3CitySchemeMgrRUi	libSimInit.so	vtable:__vt_17cSC3CitySchemeMgr
+005741	cSC3CitySchemeMgr::GetSoundIdForCurrentLandScape(unsigned int &)	GetSoundIdForCurrentLandScape__17cSC3CitySchemeMgrRUi	libSimInit.so	vtable:__vt_17cSC3CitySchemeMgr
+00575f	cSC3CitySchemeMgr::GetUiImageForBuildingSet(unsigned int, unsigned int &, unsigned int &, unsigned int &, unsigned int &)	GetUiImageForBuildingSet__17cSC3CitySchemeMgrUiRUiN32	libSimInit.so	vtable:__vt_17cSC3CitySchemeMgr
+005798	cSC3CitySchemeMgr::GetUiImageForFloraSet(unsigned int, unsigned int &, unsigned int &, unsigned int &, unsigned int &)	GetUiImageForFloraSet__17cSC3CitySchemeMgrUiRUiN32	libSimInit.so	vtable:__vt_17cSC3CitySchemeMgr
+0057d1	cSC3CitySchemeMgr::GetUiImageForLandScape(unsigned int, unsigned int &, unsigned int &)	GetUiImageForLandScape__17cSC3CitySchemeMgrUiRUiT2	libSimInit.so	vtable:__vt_17cSC3CitySchemeMgr
+0057f9	cSC3CitySchemeMgr::ImportReplacementSet(cIGZString &)	ImportReplacementSet__17cSC3CitySchemeMgrR10cIGZString	libSimInit.so	vtable:__vt_17cSC3CitySchemeMgr
+00583e	cSC3CitySchemeMgr::Init(void)	Init__17cSC3CitySchemeMgr	libSimInit.so	tokens:14.1
+005963	cSC3CitySchemeMgr::IsReplaceableBuilding(cISC3OccupantAttrib const *)	IsReplaceableBuilding__17cSC3CitySchemeMgrPC19cISC3OccupantAttrib	libSimInit.so	vtable:__vt_17cSC3CitySchemeMgr
+005995	cSC3CitySchemeMgr::IsRewardBuilding(unsigned int)	IsRewardBuilding__17cSC3CitySchemeMgrUi	libSimInit.so	vtable:__vt_17cSC3CitySchemeMgr
+0059d7	cSC3CitySchemeMgr::LoadBATReplacementSet(cIGZDBSegment *, bool)	LoadBATReplacementSet__17cSC3CitySchemeMgrP13cIGZDBSegmentb	libSimInit.so	vtable:__vt_17cSC3CitySchemeMgr
+005ae2	cSC3CitySchemeMgr::LoadBATSegment(void)	LoadBATSegment__17cSC3CitySchemeMgr	libSimInit.so	vtable:__vt_17cSC3CitySchemeMgr
+005cae	cSC3CitySchemeMgr::QueryInterface(unsigned int, void **)	QueryInterface__17cSC3CitySchemeMgrUiPPv	libSimInit.so	tokens:7.7
+005cd0	cSC3CitySchemeMgr::ReadInfoAboutCitySchemes(void)	ReadInfoAboutCitySchemes__17cSC3CitySchemeMgr	libSimInit.so	tokens:7.7
+005eed	cSC3CitySchemeMgr::ReadRewardBuildingList(void)	ReadRewardBuildingList__17cSC3CitySchemeMgr	libSimInit.so	tokens:7.7
+0062ad	cSC3CitySchemeMgr::Release(void)	Release__17cSC3CitySchemeMgr	libSimInit.so	vtable:__vt_17cSC3CitySchemeMgr
+0062d0	cSC3CitySchemeMgr::ClearBATReplacement(cGZResourceKey const &)	ClearBATReplacement__17cSC3CitySchemeMgrRC14cGZResourceKey	libSimInit.so	vtable:__vt_17cSC3CitySchemeMgr
+006328	cSC3CitySchemeMgr::SaveBATReplacementSet(cIGZDBSegment *)	SaveBATReplacementSet__17cSC3CitySchemeMgrP13cIGZDBSegment	libSimInit.so	vtable:__vt_17cSC3CitySchemeMgr
+00641b	cSC3CitySchemeMgr::SetBuildingSet(unsigned int, cIGZResourceKeyList *&)	SetBuildingSet__17cSC3CitySchemeMgrUiRP19cIGZResourceKeyList	libSimInit.so	tokens:7.7
+006589	cSC3CitySchemeMgr::SetCityScheme(unsigned int, unsigned int, unsigned int, bool)	SetCityScheme__17cSC3CitySchemeMgrUiUiUib	libSimInit.so	tokens:14.4
+006896	cSC3CitySchemeMgr::SetDefaultCityScheme(void)	SetDefaultCityScheme__17cSC3CitySchemeMgr	libSimInit.so	vtable:__vt_17cSC3CitySchemeMgr
+0068a7	cSC3CitySchemeMgr::SetFloraSet(unsigned int, cIGZResourceKeyList *&)	SetFloraSet__17cSC3CitySchemeMgrUiRP19cIGZResourceKeyList	libSimInit.so	tokens:7.7
+006a15	cSC3CitySchemeMgr::Shutdown(void)	Shutdown__17cSC3CitySchemeMgr	libSimInit.so	vtable:__vt_17cSC3CitySchemeMgr
+006a8f	cSC3CitySchemeMgr::UnloadBATSegment(void)	UnloadBATSegment__17cSC3CitySchemeMgr	libSimInit.so	vtable:__vt_17cSC3CitySchemeMgr
+006c35	cSC3CitySchemeMgr::UpdateBATSegment(unsigned int, cIGZString **, unsigned int, cGZResourceKey *)	UpdateBATSegment__17cSC3CitySchemeMgrUiPP10cIGZStringUiP14cGZResourceKey	libSimInit.so	vtable:__vt_17cSC3CitySchemeMgr
+006ec9	cSC3CitySchemeMgr::UpdateDevelopers(void)	UpdateDevelopers__17cSC3CitySchemeMgr	libSimInit.so	tokens:7.7
+006f69	cSC3CitySchemeMgr::UpdateOccupantAttribs(cIGZResourceKeyList *)	UpdateOccupantAttribs__17cSC3CitySchemeMgrP19cIGZResourceKeyList	libSimInit.so	tokens:20.9
+008923	cSC3CmdLoadSaveDialog::cSC3CmdLoadSaveDialog(void)	__21cSC3CmdLoadSaveDialog	libSimInit.so	tokens:23.2
+008b87	cSC3CmdLoadCity::cSC3CmdLoadCity(void)	__15cSC3CmdLoadCity	libSimInit.so	tokens:7.7
+008bd8	virtual function thunk (delta:-4) for cSC3CmdLoadCity::~cSC3CmdLoadCity(void)	__thunk_4__._15cSC3CmdLoadCity	libSimInit.so	vtable:__vt_15cSC3CmdLoadCity.11cRZRefCount
+009f04	cSC3CmdSaveCity::cSC3CmdSaveCity(void)	__15cSC3CmdSaveCity	libSimInit.so	tokens:15.5
+00b4aa	cSC3CmdCloseCity::cSC3CmdCloseCity(void)	__16cSC3CmdCloseCity	libSimInit.so	callee
+00bfd5	cSC3NewCityInfo::SetCityName(cIGZString &)	SetCityName__15cSC3NewCityInfoR10cIGZString	libSimInit.so	vtable:__vt_15cSC3NewCityInfo
+00c02b	cSC3NewCityInfo::SetMayorName(cIGZString &)	SetMayorName__15cSC3NewCityInfoR10cIGZString	libSimInit.so	vtable:__vt_15cSC3NewCityInfo
+00c081	cSC3NewCityInfo::SetFunds(long long)	SetFunds__15cSC3NewCityInfox	libSimInit.so	vtable:__vt_15cSC3NewCityInfo
+00c092	cSC3NewCityInfo::SetFundsAreDebt(bool)	SetFundsAreDebt__15cSC3NewCityInfob	libSimInit.so	vtable:__vt_15cSC3NewCityInfo
+00c09c	cSC3NewCityInfo::SetCitySize(unsigned int)	SetCitySize__15cSC3NewCityInfoUi	libSimInit.so	vtable:__vt_15cSC3NewCityInfo
+00c0ac	cSC3NewCityInfo::SetCityXSize(unsigned int)	SetCityXSize__15cSC3NewCityInfoUi	libSimInit.so	vtable:__vt_15cSC3NewCityInfo
+00c0b6	cSC3NewCityInfo::SetCityYSize(unsigned int)	SetCityYSize__15cSC3NewCityInfoUi	libSimInit.so	vtable:__vt_15cSC3NewCityInfo
+00c0c0	cSC3NewCityInfo::SetCityZSize(unsigned int)	SetCityZSize__15cSC3NewCityInfoUi	libSimInit.so	vtable:__vt_15cSC3NewCityInfo
+00c0ca	cSC3NewCityInfo::SetStartYear(unsigned int)	SetStartYear__15cSC3NewCityInfoUi	libSimInit.so	vtable:__vt_15cSC3NewCityInfo
+00c0d4	cSC3NewCityInfo::SetDifficulty(int)	SetDifficulty__15cSC3NewCityInfoi	libSimInit.so	vtable:__vt_15cSC3NewCityInfo
+00c0de	cSC3NewCityInfo::SetCityType(int)	SetCityType__15cSC3NewCityInfoi	libSimInit.so	vtable:__vt_15cSC3NewCityInfo
+00c0e8	cSC3NewCityInfo::SetAutoBudgetEnabled(bool)	SetAutoBudgetEnabled__15cSC3NewCityInfob	libSimInit.so	vtable:__vt_15cSC3NewCityInfo
+00c0f2	cSC3NewCityInfo::SetDisastersEnabled(bool)	SetDisastersEnabled__15cSC3NewCityInfob	libSimInit.so	vtable:__vt_15cSC3NewCityInfo
+00c0fc	cSC3NewCityInfo::GetCityName(void)	GetCityName__15cSC3NewCityInfo	libSimInit.so	vtable:__vt_15cSC3NewCityInfo
+00c100	cSC3NewCityInfo::GetMayorName(void)	GetMayorName__15cSC3NewCityInfo	libSimInit.so	vtable:__vt_15cSC3NewCityInfo
+00c104	cSC3NewCityInfo::GetFunds(void)	GetFunds__15cSC3NewCityInfo	libSimInit.so	vtable:__vt_15cSC3NewCityInfo
+00c10b	cSC3NewCityInfo::GetFundsAreDebt(void)	GetFundsAreDebt__15cSC3NewCityInfo	libSimInit.so	vtable:__vt_15cSC3NewCityInfo
+00c10f	cSC3NewCityInfo::GetCityXSize(void)	GetCityXSize__15cSC3NewCityInfo	libSimInit.so	vtable:__vt_15cSC3NewCityInfo
+00c113	cSC3NewCityInfo::GetCityYSize(void)	GetCityYSize__15cSC3NewCityInfo	libSimInit.so	vtable:__vt_15cSC3NewCityInfo
+00c117	cSC3NewCityInfo::GetCityZSize(void)	GetCityZSize__15cSC3NewCityInfo	libSimInit.so	vtable:__vt_15cSC3NewCityInfo
+00c11b	cSC3NewCityInfo::GetStartYear(void)	GetStartYear__15cSC3NewCityInfo	libSimInit.so	vtable:__vt_15cSC3NewCityInfo
+00c11f	cSC3NewCityInfo::GetDifficulty(void)	GetDifficulty__15cSC3NewCityInfo	libSimInit.so	vtable:__vt_15cSC3NewCityInfo
+00c123	cSC3NewCityInfo::GetDirtGenerator(void)	GetDirtGenerator__15cSC3NewCityInfo	libSimInit.so	vtable:__vt_15cSC3NewCityInfo
+00c127	cSC3NewCityInfo::GetCityType(void)	GetCityType__15cSC3NewCityInfo	libSimInit.so	vtable:__vt_15cSC3NewCityInfo
+00c12b	cSC3NewCityInfo::IsAutoBudgetEnabled(void)	IsAutoBudgetEnabled__15cSC3NewCityInfo	libSimInit.so	vtable:__vt_15cSC3NewCityInfo
+00c12f	cSC3NewCityInfo::AreDisastersEnabled(void)	AreDisastersEnabled__15cSC3NewCityInfo	libSimInit.so	vtable:__vt_15cSC3NewCityInfo
+00c133	cSC3NewCityInfo::~cSC3NewCityInfo(void)	_._15cSC3NewCityInfo	libSimInit.so	vtable:__vt_15cSC3NewCityInfo
+00c14f	cSC3NewCityInfo::QueryInterface(unsigned int, void **)	QueryInterface__15cSC3NewCityInfoUiPPv	libSimInit.so	vtable:__vt_15cSC3NewCityInfo
+00c175	cSC3NewCityInfo::Release(void)	Release__15cSC3NewCityInfo	libSimInit.so	vtable:__vt_15cSC3NewCityInfo
+00c195	cSC3NewCityInfo::SetDirtGenerator(cISC3DirtGenerator *)	SetDirtGenerator__15cSC3NewCityInfoP18cISC3DirtGenerator	libSimInit.so	vtable:__vt_15cSC3NewCityInfo
+00c26e	cSC3CmdSimInitFactory::CreateCommand(unsigned int, unsigned int, void **)	CreateCommand__21cSC3CmdSimInitFactoryUiUiPPv	libSimInit.so	tokens:36.7
+00c41a	cSC3OccupantAttribCache::AddAttrib(cGZResourceKey const &)	AddAttrib__23cSC3OccupantAttribCacheRC14cGZResourceKey	libSimInit.so	vtable:__vt_23cSC3OccupantAttribCache
+00c584	cSC3OccupantAttribCache::AddAttribs(cIGZResourceKeyList const &)	AddAttribs__23cSC3OccupantAttribCacheRC19cIGZResourceKeyList	libSimInit.so	vtable:__vt_23cSC3OccupantAttribCache
+00c605	cSC3OccupantAttribCache::AddRef(void)	AddRef__23cSC3OccupantAttribCache	libSimInit.so	vtable:__vt_23cSC3OccupantAttribCache
+00c872	cSC3OccupantAttribCache::Count(void)	Count__23cSC3OccupantAttribCache	libSimInit.so	vtable:__vt_23cSC3OccupantAttribCache
+00c889	cSC3OccupantAttribCache::CreateNodeIterator(void)	CreateNodeIterator__23cSC3OccupantAttribCache	libSimInit.so	vtable:__vt_23cSC3OccupantAttribCache
+00c959	cSC3OccupantAttribCache::~cSC3OccupantAttribCache(void)	_._23cSC3OccupantAttribCache	libSimInit.so	vtable:__vt_23cSC3OccupantAttribCache
+00c9ec	cSC3OccupantAttribCache::DeleteNodeIterator(cISC3OccupantAttribCacheIterator *)	DeleteNodeIterator__23cSC3OccupantAttribCacheP32cISC3OccupantAttribCacheIterator	libSimInit.so	vtable:__vt_23cSC3OccupantAttribCache
+00cc66	cSC3OccupantAttribCache::GetBuildingAttrib(cGZResourceKey const &, cISC3BuildingAttrib **)	GetBuildingAttrib__23cSC3OccupantAttribCacheRC14cGZResourceKeyPP19cISC3BuildingAttrib	libSimInit.so	tokens:7.7
+00cc7b	cSC3OccupantAttribCache::GetABuildingOfType(unsigned int, unsigned int, cGZResourceKey &)	GetABuildingOfType__23cSC3OccupantAttribCacheUiUiR14cGZResourceKey	libSimInit.so	vtable:__vt_23cSC3OccupantAttribCache
+00cc9d	cSC3OccupantAttribCache::GetOccupantAttrib(cGZResourceKey const &, cISC3OccupantAttrib **)	GetOccupantAttrib__23cSC3OccupantAttribCacheRC14cGZResourceKeyPP19cISC3OccupantAttrib	libSimInit.so	vtable:__vt_23cSC3OccupantAttribCache
+00ccb2	cSC3OccupantAttribCache::Init(cISC3CityDefinition *)	Init__23cSC3OccupantAttribCacheP19cISC3CityDefinition	libSimInit.so	vtable:__vt_23cSC3OccupantAttribCache
+00cd42	cSC3OccTestDefault::QueryInterface(unsigned int, void **)	QueryInterface__18cSC3OccTestDefaultUiPPv	libSimInit.so	tokens:7.7
+00cd67	cSC3OccTestDefault::AddRef(void)	AddRef__18cSC3OccTestDefault	libSimInit.so	vtable:__vt_18cSC3OccTestDefault
+00cd6e	cSC3OccTestDefault::Release(void)	Release__18cSC3OccTestDefault	libSimInit.so	vtable:__vt_18cSC3OccTestDefault
+00cdf1	cSC3OccTestDefault::Test(cISC3Occupant *)	Test__18cSC3OccTestDefaultP13cISC3Occupant	libSimInit.so	vtable:__vt_18cSC3OccTestDefault
+00cdf6	cSC3OccTestDefault::~cSC3OccTestDefault(void)	_._18cSC3OccTestDefault	libSimInit.so	vtable:__vt_18cSC3OccTestDefault
+00ce13	cSC3OccupantAttribCache::is_attrib_key(cGZResourceKey const &)	is_attrib_key__23cSC3OccupantAttribCacheRC14cGZResourceKey	libSimInit.so	tokens:14.6
+00d150	cSC3OccupantAttribCache::ModifyOccupantAttrib(cGZResourceKey const &, cISC3OccAttribOverRide *)	ModifyOccupantAttrib__23cSC3OccupantAttribCacheRC14cGZResourceKeyP22cISC3OccAttribOverRide	libSimInit.so	vtable:__vt_23cSC3OccupantAttribCache
+00d315	cSC3OccupantAttribCache::PostOccAttribChangedMessage(void)	PostOccAttribChangedMessage__23cSC3OccupantAttribCache	libSimInit.so	tokens:7.7
+00d38c	cSC3OccupantAttribCache::QueryInterface(unsigned int, void **)	QueryInterface__23cSC3OccupantAttribCacheUiPPv	libSimInit.so	vtable:__vt_23cSC3OccupantAttribCache
+00d3b3	cSC3OccupantAttribCache::Release(void)	Release__23cSC3OccupantAttribCache	libSimInit.so	vtable:__vt_23cSC3OccupantAttribCache
+00d569	cSC3OccupantAttribCache::ResetAllModifiedAttribs(void)	ResetAllModifiedAttribs__23cSC3OccupantAttribCache	libSimInit.so	vtable:__vt_23cSC3OccupantAttribCache
+00d5b0	cSC3OccupantAttribCache::Shutdown(void)	Shutdown__23cSC3OccupantAttribCache	libSimInit.so	vtable:__vt_23cSC3OccupantAttribCache
+00d623	cSC3OccupantAttribCacheIterator::cSC3OccupantAttribCacheIterator(cSC3OccupantAttribCache *)	__31cSC3OccupantAttribCacheIteratorP23cSC3OccupantAttribCache	libSimInit.so	vtable-user:__vt_31cSC3OccupantAttribCacheIterator
+00d642	cSC3OccupantAttribCacheIterator::Rewind(void)	Rewind__31cSC3OccupantAttribCacheIterator	libSimInit.so	vtable:__vt_31cSC3OccupantAttribCacheIterator
+00d655	cSC3OccupantAttribCacheIterator::Next(void)	Next__31cSC3OccupantAttribCacheIterator	libSimInit.so	vtable:__vt_31cSC3OccupantAttribCacheIterator
+00d672	cSC3OccupantAttribCacheIterator::QueryInterface(unsigned int, void **)	QueryInterface__31cSC3OccupantAttribCacheIteratorUiPPv	libSimInit.so	vtable:__vt_31cSC3OccupantAttribCacheIterator
+00d68d	cSC3AgentTypeTree::AddRef(void)	AddRef__17cSC3AgentTypeTree	libSimInit.so	vtable:__vt_17cSC3AgentTypeTree
+00d694	cSC3OccupantAttribCacheIterator::Release(void)	Release__31cSC3OccupantAttribCacheIterator	libSimInit.so	vtable:__vt_31cSC3OccupantAttribCacheIterator
+00e8d1	cSC3PluginBuildingMgr::AddPluginBuilding(cRZString const &)	AddPluginBuilding__21cSC3PluginBuildingMgrRC9cRZString	libSimInit.so	tokens:7.7
+00ea13	cSC2Importer::AddRef(void)	AddRef__12cSC2Importer	libSimInit.so	vtable:__vt_12cSC2Importer
+00edfb	cSC3PluginBuildingMgr::RegisterOccupantCallback(cRZString const &, cRZString const &, void *)	RegisterOccupantCallback__21cSC3PluginBuildingMgrRC9cRZStringT1Pv	libSimInit.so	tokens:20.8
+00f5cc	cSC3LoadSaveWindow::~cSC3LoadSaveWindow(void)	_._18cSC3LoadSaveWindow	libSimInit.so	vtable:__vt_18cSC3LoadSaveWindow
+00f718	virtual function thunk (delta:-4) for cSC3LoadSaveWindow::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__18cSC3LoadSaveWindowUiPPv	libSimInit.so	vtable:__vt_18cSC3LoadSaveWindow
+00f73a	virtual function thunk (delta:-4) for cSC3LoadSaveWindow::AddRef(void)	__thunk_4_AddRef__18cSC3LoadSaveWindow	libSimInit.so	vtable:__vt_18cSC3LoadSaveWindow
+00f744	virtual function thunk (delta:-4) for cSC3LoadSaveWindow::Release(void)	__thunk_4_Release__18cSC3LoadSaveWindow	libSimInit.so	vtable:__vt_18cSC3LoadSaveWindow
+00f82a	virtual function thunk (delta:-4) for cSC3LoadSaveWindow::DoWinMsg(cIGZWin *, unsigned int, unsigned int, unsigned int, unsigned int)	__thunk_4_DoWinMsg__18cSC3LoadSaveWindowP7cIGZWinUiUiUiUi	libSimInit.so	vtable:__vt_18cSC3LoadSaveWindow
+01281a	cSC3LoadSaveWindow::add_outlined_text_edit(cIGZWin *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, cIGZString const &)	add_outlined_text_edit__18cSC3LoadSaveWindowP7cIGZWinUiUiUiUiUiRC10cIGZString	libSimInit.so	caller
+01292f	cSC3LoadSaveWindow::add_four_shaded_outline(cIGZWin *, unsigned int, unsigned int, unsigned int, unsigned int)	add_four_shaded_outline__18cSC3LoadSaveWindowP7cIGZWinUiUiUiUi	libSimInit.so	tokens:31.0
+012b83	cSC3LoadSaveWindow::add_image_button(cIGZWin *, unsigned int, unsigned int, unsigned int, unsigned int, char)	add_image_button__18cSC3LoadSaveWindowP7cIGZWinUiUiUiUic	libSimInit.so	tokens:7.7
+01613c	cSC3LoadSaveWindow::UpdateThumbnailInfo(cIGZWin *)	UpdateThumbnailInfo__18cSC3LoadSaveWindowP7cIGZWin	libSimInit.so	caller
+016557	cSC3LoadSaveWindow::GetCityInfo(cRZString &, unsigned int &, long long &, cRZDate &, cRZString &, cRZString &, cIGZBuffer **)	GetCityInfo__18cSC3LoadSaveWindowR9cRZStringRUiRxR7cRZDateT1T1PP10cIGZBuffer	libSimInit.so	tokens:35.9
+017217	RZGetCOMDllDirector_SimInit(void)	RZGetCOMDllDirector_SimInit__Fv	libSimInit.so	tokens:51.2
+0172ce	cRZCOMDllDirector::OnUnload(void)	OnUnload__17cRZCOMDllDirector	libSimInit.so	vtable:__vt_14cSICOMDirector
+0172d1	cSICOMDirector::GetDirectorID(void) const	GetDirectorID__C14cSICOMDirector	libSimInit.so	tokens:7.7
+0172d7	cSICOMDirector::AppRegister(cIGZRegistry *)	AppRegister__14cSICOMDirectorP12cIGZRegistry	libSimInit.so	vtable:__vt_14cSICOMDirector
+01746d	cSICOMDirector::CreatecSC3CmdSimInitFactory(void)	CreatecSC3CmdSimInitFactory__14cSICOMDirector	libSimInit.so	vtable-user:__vt_21cSC3CmdSimInitFactory
+017512	cSICOMDirector::~cSICOMDirector(void)	_._14cSICOMDirector	libSimInit.so	vtable:__vt_14cSICOMDirector
+017540	cSC3CmdSimInitFactory::~cSC3CmdSimInitFactory(void)	_._21cSC3CmdSimInitFactory	libSimInit.so	vtable:__vt_21cSC3CmdSimInitFactory
+01756b	virtual function thunk (delta:-4) for cRZCOMDllDirector::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__17cRZCOMDllDirectorUiPPv	libSimInit.so	vtable:__vt_17cRZCOMDllDirector.18cIGZFrameWorkHooks
+017573	virtual function thunk (delta:-4) for cRZCOMDllDirector::AddRef(void)	__thunk_4_AddRef__17cRZCOMDllDirector	libSimInit.so	vtable:__vt_17cRZCOMDllDirector.18cIGZFrameWorkHooks
+01757b	virtual function thunk (delta:-4) for cRZCOMDllDirector::Release(void)	__thunk_4_Release__17cRZCOMDllDirector	libSimInit.so	vtable:__vt_17cRZCOMDllDirector.18cIGZFrameWorkHooks
+019277	cRZCOMDllDirector::FrameWork(void)	FrameWork__17cRZCOMDllDirector	libSimInit.so	vtable:__vt_14cSICOMDirector
+01b823	cSC3CitySchemeMgr::GetDefaultFloraSet(void) const	GetDefaultFloraSet__C17cSC3CitySchemeMgr	libSimInit.so	vtable:__vt_17cSC3CitySchemeMgr
+01b850	cRZCOMDllDirector::GZCOM(void)	GZCOM__17cRZCOMDllDirector	libSimInit.so	vtable:__vt_14cSICOMDirector
+01db61	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >::replace(unsigned int, unsigned int, unsigned int, char)	replace__t12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0UiUiUic	libSimInit.so	tokens:12.2
+01f775	cSC3AgentTypeTree::QueryInterface(unsigned int, void **)	QueryInterface__17cSC3AgentTypeTreeUiPPv	libSimInit.so	vtable:__vt_17cSC3AgentTypeTree
+01f795	cSC3AgentTypeTree::Release(void)	Release__17cSC3AgentTypeTree	libSimInit.so	vtable:__vt_17cSC3AgentTypeTree
+01f9ac	cSC3AgentTypeTree::CreateNodeIterator(cISC3AgentTypeTreeIterator **)	CreateNodeIterator__17cSC3AgentTypeTreePP26cISC3AgentTypeTreeIterator	libSimInit.so	vtable:__vt_17cSC3AgentTypeTree
+01ff52	cRZCOMDllDirector::QueryInterface(unsigned int, void **)	QueryInterface__17cRZCOMDllDirectorUiPPv	libSimInit.so	tokens:15.5
+01ff9f	cRZCOMDllDirector::RemoveRef(void)	RemoveRef__17cRZCOMDllDirector	libSimInit.so	vtable:__vt_14cSICOMDirector
+01ffae	cRZCOMDllDirector::RefCount(void)	RefCount__17cRZCOMDllDirector	libSimInit.so	vtable:__vt_14cSICOMDirector
+01ffb2	cRZCOMDllDirector::InitializeCOM(cIGZCOM *, cIGZString &)	InitializeCOM__17cRZCOMDllDirectorP7cIGZCOMR10cIGZString	libSimInit.so	vtable:__vt_14cSICOMDirector
+02003b	cRZCOMDllDirector::OnStart(cIGZCOM *)	OnStart__17cRZCOMDllDirectorP7cIGZCOM	libSimInit.so	vtable:__vt_14cSICOMDirector
+020080	cRZCOMDllDirector::GetClassObject(unsigned int, unsigned int, void **)	GetClassObject__17cRZCOMDllDirectorUiUiPPv	libSimInit.so	vtable:__vt_14cSICOMDirector
+020101	cRZCOMDllDirector::EnumClassObjects(void (*)(unsigned int, unsigned int, void *), void *)	EnumClassObjects__17cRZCOMDllDirectorPFUiUiPv_vPv	libSimInit.so	vtable:__vt_14cSICOMDirector
+020155	cRZCOMDllDirector::ModuleName(cIGZString &)	ModuleName__17cRZCOMDllDirectorR10cIGZString	libSimInit.so	vtable:__vt_14cSICOMDirector
+020169	cRZCOMDllDirector::AddDirector(cRZCOMDllDirector *)	AddDirector__17cRZCOMDllDirectorP17cRZCOMDllDirector	libSimInit.so	vtable:__vt_14cSICOMDirector
+0201b3	cRZCOMDllDirector::CanUnloadNow(void)	CanUnloadNow__17cRZCOMDllDirector	libSimInit.so	vtable:__vt_14cSICOMDirector
+020237	virtual function thunk (delta:-4) for cRZCOMDllDirector::PreFrameWorkInit(void)	__thunk_4_PreFrameWorkInit__17cRZCOMDllDirector	libSimInit.so	vtable:__vt_17cRZCOMDllDirector.18cIGZFrameWorkHooks
+022a6e	cSC3CmdLoadCity::~cSC3CmdLoadCity(void)	_._15cSC3CmdLoadCity	libSimInit.so	callee
+023a07	cSC3CityDefinition::GetOccupantAttribCache(void)	GetOccupantAttribCache__18cSC3CityDefinition	libSimInit.so	vtable:__vt_18cSC3CityDefinition
+027e20	cSC3AgentTypeTree::DebugDumpTree(cISC3CityAgentType *)	DebugDumpTree__17cSC3AgentTypeTreeP18cISC3CityAgentType	libSimInit.so	vtable:__vt_17cSC3AgentTypeTree
+02a187	cSC3CityDefinition::RegisterLayer(unsigned int, unsigned int, unsigned int)	RegisterLayer__18cSC3CityDefinitionUiUiUi	libSimInit.so	vtable:__vt_18cSC3CityDefinition

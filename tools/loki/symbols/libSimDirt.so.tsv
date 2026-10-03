@@ -1,0 +1,936 @@
+addr	mangled	demangled
+0001bd7c	_init	_init
+0001d0e0	Bit1_SelectionGrowWriteHoriz__FPUsPUiT1UiUiPiT5	Bit1_SelectionGrowWriteHoriz(unsigned short *, unsigned int *, unsigned int *, unsigned int, unsigned int, int *, int *)
+0001d374	Bit1_SelectionGrowWriteVert__FPUsPUiT1UiUiPiT5	Bit1_SelectionGrowWriteVert(unsigned short *, unsigned int *, unsigned int *, unsigned int, unsigned int, int *, int *)
+0001d5d0	Bit1_GrowDeepWriteHoriz__FPUsPUiT1UiUiPiT5	Bit1_GrowDeepWriteHoriz(unsigned short *, unsigned int *, unsigned int *, unsigned int, unsigned int, int *, int *)
+0001d7f4	Bit1_GrowDeepWriteVert__FPUsPUiT1UiUiPiT5	Bit1_GrowDeepWriteVert(unsigned short *, unsigned int *, unsigned int *, unsigned int, unsigned int, int *, int *)
+0001da34	Seaport_Recompute__FPUsPUiN21Ui	Seaport_Recompute(unsigned short *, unsigned int *, unsigned int *, unsigned int *, unsigned int)
+0001dd24	SeaportSmoothPath__FPUsUiPUiiT2T2	SeaportSmoothPath(unsigned short *, unsigned int, unsigned int *, int, unsigned int *, unsigned int *)
+0001dfec	Bit1_Clear__FPUii	Bit1_Clear(unsigned int *, int)
+0001e020	Bit1_PixelSet__FPUiiii	Bit1_PixelSet(unsigned int *, int, int, int)
+0001e060	Bit1_Mask__FPUiT0i	Bit1_Mask(unsigned int *, unsigned int *, int)
+0001e090	Bit8_ConvertToBit1__FPUiT0i	Bit8_ConvertToBit1(unsigned int *, unsigned int *, int)
+0001e100	SetValues__FPUsUiUiUiUiUi	SetValues(unsigned short *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int)
+0001e14c	DistanceToEdge__FPUsUiUiUi	DistanceToEdge(unsigned short *, unsigned int, unsigned int, unsigned int)
+0001e170	SeaportFindPath__FPUsUiPUiiUiUi	SeaportFindPath(unsigned short *, unsigned int, unsigned int *, int, unsigned int, unsigned int)
+0001e274	Execute__21cSC3CityToolRaiseDirt	cSC3CityToolRaiseDirt::Execute(void)
+0001e394	ExecuteOnMouseUp__21cSC3CityToolRaiseDirtRC13cSC3CityCoord	cSC3CityToolRaiseDirt::ExecuteOnMouseUp(cSC3CityCoord const &)
+0001e85c	ExecuteOnMouseDrag__21cSC3CityToolRaiseDirtRC13cSC3CityCoord	cSC3CityToolRaiseDirt::ExecuteOnMouseDrag(cSC3CityCoord const &)
+0001ec18	ExecuteOnMouseMove__21cSC3CityToolRaiseDirtRC13cSC3CityCoord	cSC3CityToolRaiseDirt::ExecuteOnMouseMove(cSC3CityCoord const &)
+0001ed3c	Execute__21cSC3CityToolLowerDirt	cSC3CityToolLowerDirt::Execute(void)
+0001ee60	ExecuteOnMouseUp__21cSC3CityToolLowerDirtRC13cSC3CityCoord	cSC3CityToolLowerDirt::ExecuteOnMouseUp(cSC3CityCoord const &)
+0001f32c	ExecuteOnMouseDrag__21cSC3CityToolLowerDirtRC13cSC3CityCoord	cSC3CityToolLowerDirt::ExecuteOnMouseDrag(cSC3CityCoord const &)
+0001f6e8	ExecuteOnMouseMove__21cSC3CityToolLowerDirtRC13cSC3CityCoord	cSC3CityToolLowerDirt::ExecuteOnMouseMove(cSC3CityCoord const &)
+0001f80c	Execute__21cSC3CityToolLevelDirt	cSC3CityToolLevelDirt::Execute(void)
+0001f930	ExecuteOnMouseUp__21cSC3CityToolLevelDirtRC14cSC3CityBounds	cSC3CityToolLevelDirt::ExecuteOnMouseUp(cSC3CityBounds const &)
+0001fd74	ExecuteOnMouseDrag__21cSC3CityToolLevelDirtRC14cSC3CityBounds	cSC3CityToolLevelDirt::ExecuteOnMouseDrag(cSC3CityBounds const &)
+0001ff90	ExecuteOnMouseMove__21cSC3CityToolLevelDirtRC13cSC3CityCoord	cSC3CityToolLevelDirt::ExecuteOnMouseMove(cSC3CityCoord const &)
+000200dc	Execute__22cSC3CityToolPlaceWater	cSC3CityToolPlaceWater::Execute(void)
+000202d4	ExecuteOnMouseUp__22cSC3CityToolPlaceWaterRC13cSC3CityCoord	cSC3CityToolPlaceWater::ExecuteOnMouseUp(cSC3CityCoord const &)
+000208e8	ExecuteOnMouseDrag__22cSC3CityToolPlaceWaterRC13cSC3CityCoord	cSC3CityToolPlaceWater::ExecuteOnMouseDrag(cSC3CityCoord const &)
+00020f08	ExecuteOnMouseMove__22cSC3CityToolPlaceWaterRC13cSC3CityCoord	cSC3CityToolPlaceWater::ExecuteOnMouseMove(cSC3CityCoord const &)
+00021384	_._22cSC3CityToolPlaceWater	cSC3CityToolPlaceWater::~cSC3CityToolPlaceWater(void)
+000214a8	ExecuteCellDraw__21cSC3CityToolRaiseDirtRC13cSC3CityCoordR14cSC3CityBounds	cSC3CityToolRaiseDirt::ExecuteCellDraw(cSC3CityCoord const &, cSC3CityBounds &)
+0002150c	CVActiveCursor__21cSC3CityToolRaiseDirtRUi	cSC3CityToolRaiseDirt::CVActiveCursor(unsigned int &)
+00021520	CVIsValidHandlerByView__C21cSC3CityToolRaiseDirtiUi	cSC3CityToolRaiseDirt::CVIsValidHandlerByView(int, unsigned int) const
+0002152c	DoMessage__21cSC3CityToolRaiseDirtR10cGZMessage	cSC3CityToolRaiseDirt::DoMessage(cGZMessage &)
+0002158c	CVOnActivate__21cSC3CityToolRaiseDirt	cSC3CityToolRaiseDirt::CVOnActivate(void)
+0002161c	CVOnDeactivate__21cSC3CityToolRaiseDirt	cSC3CityToolRaiseDirt::CVOnDeactivate(void)
+00021660	QueryInterface__21cSC3CityToolRaiseDirtUiPPv	cSC3CityToolRaiseDirt::QueryInterface(unsigned int, void **)
+000216b0	AddRef__21cSC3CityToolRaiseDirt	cSC3CityToolRaiseDirt::AddRef(void)
+000216dc	Release__21cSC3CityToolRaiseDirt	cSC3CityToolRaiseDirt::Release(void)
+00021708	__21cSC3CityToolRaiseDirt	cSC3CityToolRaiseDirt::cSC3CityToolRaiseDirt(void)
+00021800	_._21cSC3CityToolRaiseDirt	cSC3CityToolRaiseDirt::~cSC3CityToolRaiseDirt(void)
+000218b8	ExecuteCellDraw__21cSC3CityToolLowerDirtRC13cSC3CityCoordR14cSC3CityBounds	cSC3CityToolLowerDirt::ExecuteCellDraw(cSC3CityCoord const &, cSC3CityBounds &)
+0002191c	CVActiveCursor__21cSC3CityToolLowerDirtRUi	cSC3CityToolLowerDirt::CVActiveCursor(unsigned int &)
+00021930	CVIsValidHandlerByView__C21cSC3CityToolLowerDirtiUi	cSC3CityToolLowerDirt::CVIsValidHandlerByView(int, unsigned int) const
+0002193c	DoMessage__21cSC3CityToolLowerDirtR10cGZMessage	cSC3CityToolLowerDirt::DoMessage(cGZMessage &)
+0002199c	CVOnActivate__21cSC3CityToolLowerDirt	cSC3CityToolLowerDirt::CVOnActivate(void)
+00021a2c	CVOnDeactivate__21cSC3CityToolLowerDirt	cSC3CityToolLowerDirt::CVOnDeactivate(void)
+00021a70	QueryInterface__21cSC3CityToolLowerDirtUiPPv	cSC3CityToolLowerDirt::QueryInterface(unsigned int, void **)
+00021ac0	AddRef__21cSC3CityToolLowerDirt	cSC3CityToolLowerDirt::AddRef(void)
+00021aec	Release__21cSC3CityToolLowerDirt	cSC3CityToolLowerDirt::Release(void)
+00021b18	__21cSC3CityToolLowerDirt	cSC3CityToolLowerDirt::cSC3CityToolLowerDirt(void)
+00021c10	_._21cSC3CityToolLowerDirt	cSC3CityToolLowerDirt::~cSC3CityToolLowerDirt(void)
+00021cc8	ExecuteRectDraw__21cSC3CityToolLevelDirtRC14cSC3CityBoundsR14cSC3CityBounds	cSC3CityToolLevelDirt::ExecuteRectDraw(cSC3CityBounds const &, cSC3CityBounds &)
+00021d2c	CVActiveCursor__21cSC3CityToolLevelDirtRUi	cSC3CityToolLevelDirt::CVActiveCursor(unsigned int &)
+00021d40	CVIsValidHandlerByView__C21cSC3CityToolLevelDirtiUi	cSC3CityToolLevelDirt::CVIsValidHandlerByView(int, unsigned int) const
+00021d4c	DoMessage__21cSC3CityToolLevelDirtR10cGZMessage	cSC3CityToolLevelDirt::DoMessage(cGZMessage &)
+00021dac	CVOnActivate__21cSC3CityToolLevelDirt	cSC3CityToolLevelDirt::CVOnActivate(void)
+00021e3c	CVOnDeactivate__21cSC3CityToolLevelDirt	cSC3CityToolLevelDirt::CVOnDeactivate(void)
+00021e80	QueryInterface__21cSC3CityToolLevelDirtUiPPv	cSC3CityToolLevelDirt::QueryInterface(unsigned int, void **)
+00021ed0	AddRef__21cSC3CityToolLevelDirt	cSC3CityToolLevelDirt::AddRef(void)
+00021efc	Release__21cSC3CityToolLevelDirt	cSC3CityToolLevelDirt::Release(void)
+00021f28	__21cSC3CityToolLevelDirt	cSC3CityToolLevelDirt::cSC3CityToolLevelDirt(void)
+00022020	_._21cSC3CityToolLevelDirt	cSC3CityToolLevelDirt::~cSC3CityToolLevelDirt(void)
+000220b8	CVActiveCursor__22cSC3CityToolPlaceWaterRUi	cSC3CityToolPlaceWater::CVActiveCursor(unsigned int &)
+000220cc	CVIsValidHandlerByView__C22cSC3CityToolPlaceWateriUi	cSC3CityToolPlaceWater::CVIsValidHandlerByView(int, unsigned int) const
+000220e0	ExecuteCellDraw__22cSC3CityToolPlaceWaterRC13cSC3CityCoordR14cSC3CityBounds	cSC3CityToolPlaceWater::ExecuteCellDraw(cSC3CityCoord const &, cSC3CityBounds &)
+00022144	QueryInterface__22cSC3CityToolPlaceWaterUiPPv	cSC3CityToolPlaceWater::QueryInterface(unsigned int, void **)
+00022194	AddRef__22cSC3CityToolPlaceWater	cSC3CityToolPlaceWater::AddRef(void)
+000221c0	Release__22cSC3CityToolPlaceWater	cSC3CityToolPlaceWater::Release(void)
+000221ec	__22cSC3CityToolPlaceWater	cSC3CityToolPlaceWater::cSC3CityToolPlaceWater(void)
+00022304	__11cSC3DirtBag	cSC3DirtBag::cSC3DirtBag(void)
+00022500	_._11cSC3DirtBag	cSC3DirtBag::~cSC3DirtBag(void)
+000225c4	Init__11cSC3DirtBagP9cISC3City	cSC3DirtBag::Init(cISC3City *)
+00022e10	Init__11cSC3DirtBagP9cISC3CityP13cISC2Importer	cSC3DirtBag::Init(cISC3City *, cISC2Importer *)
+00023564	Init__11cSC3DirtBagP9cISC3CityP13cIGZDBSegment	cSC3DirtBag::Init(cISC3City *, cIGZDBSegment *)
+00023c20	Save__11cSC3DirtBagP9cISC3CityP13cIGZDBSegment	cSC3DirtBag::Save(cISC3City *, cIGZDBSegment *)
+000242d0	Shutdown__11cSC3DirtBag	cSC3DirtBag::Shutdown(void)
+000244f4	SimulationBegin__11cSC3DirtBag	cSC3DirtBag::SimulationBegin(void)
+00024860	DoMessage__11cSC3DirtBagR10cGZMessage	cSC3DirtBag::DoMessage(cGZMessage &)
+00024eb0	SetVertexAltitude__11cSC3DirtBagUiUiUc	cSC3DirtBag::SetVertexAltitude(unsigned int, unsigned int, unsigned char)
+00025080	SetVertexAltitude__11cSC3DirtBagUiUiUiUiUc	cSC3DirtBag::SetVertexAltitude(unsigned int, unsigned int, unsigned int, unsigned int, unsigned char)
+000252d0	SetWaterTable__11cSC3DirtBagUiUiUiUiUc	cSC3DirtBag::SetWaterTable(unsigned int, unsigned int, unsigned int, unsigned int, unsigned char)
+00025470	SetWaterTable__11cSC3DirtBagUiUiUcb	cSC3DirtBag::SetWaterTable(unsigned int, unsigned int, unsigned char, bool)
+00025680	notifyCellUpdate__11cSC3DirtBagUiUiUiUib	cSC3DirtBag::notifyCellUpdate(unsigned int, unsigned int, unsigned int, unsigned int, bool)
+000257f4	InitFloraLevel__11cSC3DirtBagUiUiUc	cSC3DirtBag::InitFloraLevel(unsigned int, unsigned int, unsigned char)
+000259a0	IsWater__C11cSC3DirtBagUiUi	cSC3DirtBag::IsWater(unsigned int, unsigned int) const
+00025b10	IsRealWater__C11cSC3DirtBagUiUi	cSC3DirtBag::IsRealWater(unsigned int, unsigned int) const
+00025c80	CellWaterVertCount__C11cSC3DirtBagUiUi	cSC3DirtBag::CellWaterVertCount(unsigned int, unsigned int) const
+00025df4	GenerateAltFromBMP__11cSC3DirtBagR10cIGZString	cSC3DirtBag::GenerateAltFromBMP(cIGZString &)
+00026304	SetGrid__11cSC3DirtBagb	cSC3DirtBag::SetGrid(bool)
+000263c4	getVertexNormal__C11cSC3DirtBagffPCUcR18sIGZPoint3DFloat32	cSC3DirtBag::getVertexNormal(float, float, unsigned char const *, sIGZPoint3DFloat32 &) const
+0002658c	GrowAndFix__17cSC3ConvexContourPC12cISC3DirtBagRUiT2	cSC3ConvexContour::GrowAndFix(cISC3DirtBag const *, unsigned int &, unsigned int &)
+00026b20	Bounds__17cSC3ConvexContourRUiN31	cSC3ConvexContour::Bounds(unsigned int &, unsigned int &, unsigned int &, unsigned int &)
+00026c84	CreateRoadOutline__17cSC3ConvexContourPC12cISC3DirtBagP26cISC3EnumCityViewSelectionRUiT3	cSC3ConvexContour::CreateRoadOutline(cISC3DirtBag const *, cISC3EnumCityViewSelection *, unsigned int &, unsigned int &)
+000276ec	CreateHighwayOutline__17cSC3ConvexContourPC12cISC3DirtBagP26cISC3EnumCityViewSelectionRUiT3	cSC3ConvexContour::CreateHighwayOutline(cISC3DirtBag const *, cISC3EnumCityViewSelection *, unsigned int &, unsigned int &)
+00028108	ReflectPrimaryHighway__17cSC3ConvexContourP12cISC3DirtBag	cSC3ConvexContour::ReflectPrimaryHighway(cISC3DirtBag *)
+000281f4	addSec__17cSC3ConvexContourPC12cISC3DirtBagUiUiUcb	cSC3ConvexContour::addSec(cISC3DirtBag const *, unsigned int, unsigned int, unsigned char, bool)
+000282ec	needsAdjustment__17cSC3ConvexContourUiR17cSC3ContourVertexRUiT3	cSC3ConvexContour::needsAdjustment(unsigned int, cSC3ContourVertex &, unsigned int &, unsigned int &)
+0002843c	addConnection__17cSC3ConvexContourPC12cISC3DirtBagUiRC17cSC3ContourVertex	cSC3ConvexContour::addConnection(cISC3DirtBag const *, unsigned int, cSC3ContourVertex const &)
+00028564	InstallFunctionFilter__11cSC3DirtBagPFRC14cSC3CityBoundsUiiPv_bPvb	cSC3DirtBag::InstallFunctionFilter(bool (*)(cSC3CityBounds const &, unsigned int, int, void *), void *, bool)
+0002870c	CanRaiseTerrain__C11cSC3DirtBagRC14cSC3CityBoundsR14cSC3CityBoundsRUi	cSC3DirtBag::CanRaiseTerrain(cSC3CityBounds const &, cSC3CityBounds &, unsigned int &) const
+00028d2c	CanLowerTerrain__C11cSC3DirtBagRC14cSC3CityBoundsR14cSC3CityBoundsRUi	cSC3DirtBag::CanLowerTerrain(cSC3CityBounds const &, cSC3CityBounds &, unsigned int &) const
+0002934c	CanLevelTerrain__C11cSC3DirtBagRC14cSC3CityBoundsUcR14cSC3CityBoundsRUi	cSC3DirtBag::CanLevelTerrain(cSC3CityBounds const &, unsigned char, cSC3CityBounds &, unsigned int &) const
+000298dc	GetOptimalLevel__C11cSC3DirtBagRC14cSC3CityBoundsRUcR14cSC3CityBoundsRUi	cSC3DirtBag::GetOptimalLevel(cSC3CityBounds const &, unsigned char &, cSC3CityBounds &, unsigned int &) const
+00029a90	CanPrepareForRoad__C11cSC3DirtBagP26cISC3EnumCityViewSelectionR14cSC3CityBoundsRUi	cSC3DirtBag::CanPrepareForRoad(cISC3EnumCityViewSelection *, cSC3CityBounds &, unsigned int &) const
+00029c4c	CanPrepareForHighway__C11cSC3DirtBagP26cISC3EnumCityViewSelectionR14cSC3CityBoundsRUi	cSC3DirtBag::CanPrepareForHighway(cISC3EnumCityViewSelection *, cSC3CityBounds &, unsigned int &) const
+00029e04	CanPlaceWater__C11cSC3DirtBagRC14cSC3CityBoundsR14cSC3CityBoundsRUi	cSC3DirtBag::CanPlaceWater(cSC3CityBounds const &, cSC3CityBounds &, unsigned int &) const
+00029f28	CanPlaceWater__C11cSC3DirtBagP26cISC3EnumCityViewSelectionR14cSC3CityBoundsRUi	cSC3DirtBag::CanPlaceWater(cISC3EnumCityViewSelection *, cSC3CityBounds &, unsigned int &) const
+0002a1d4	CanSetupZone__C11cSC3DirtBagRC14cSC3CityBoundsRUib	cSC3DirtBag::CanSetupZone(cSC3CityBounds const &, unsigned int &, bool) const
+0002ab28	RaiseTerrain__11cSC3DirtBagRC14cSC3CityBoundsR14cSC3CityBoundsRUib	cSC3DirtBag::RaiseTerrain(cSC3CityBounds const &, cSC3CityBounds &, unsigned int &, bool)
+0002b3f8	LowerTerrain__11cSC3DirtBagRC14cSC3CityBoundsR14cSC3CityBoundsRUib	cSC3DirtBag::LowerTerrain(cSC3CityBounds const &, cSC3CityBounds &, unsigned int &, bool)
+0002bcc8	LevelTerrain__11cSC3DirtBagRC14cSC3CityBoundsUcR14cSC3CityBoundsRUib	cSC3DirtBag::LevelTerrain(cSC3CityBounds const &, unsigned char, cSC3CityBounds &, unsigned int &, bool)
+0002c4f0	PrepareForRoad__11cSC3DirtBagP26cISC3EnumCityViewSelectionR14cSC3CityBoundsRUib	cSC3DirtBag::PrepareForRoad(cISC3EnumCityViewSelection *, cSC3CityBounds &, unsigned int &, bool)
+0002ca10	PrepareForHighway__11cSC3DirtBagP26cISC3EnumCityViewSelectionR14cSC3CityBoundsRUib	cSC3DirtBag::PrepareForHighway(cISC3EnumCityViewSelection *, cSC3CityBounds &, unsigned int &, bool)
+0002cefc	PlaceWater__11cSC3DirtBagRC14cSC3CityBoundsR14cSC3CityBoundsRUib	cSC3DirtBag::PlaceWater(cSC3CityBounds const &, cSC3CityBounds &, unsigned int &, bool)
+0002d278	PlaceWater__11cSC3DirtBagP26cISC3EnumCityViewSelectionR14cSC3CityBoundsRUib	cSC3DirtBag::PlaceWater(cISC3EnumCityViewSelection *, cSC3CityBounds &, unsigned int &, bool)
+0002d77c	SetupZone__11cSC3DirtBagRC14cSC3CityBoundsRUibT3	cSC3DirtBag::SetupZone(cSC3CityBounds const &, unsigned int &, bool, bool)
+0002e3b0	MarkVertexChanged__C11cSC3DirtBagUiUi	cSC3DirtBag::MarkVertexChanged(unsigned int, unsigned int) const
+0002e4a8	RecomputeSeaportMap__11cSC3DirtBag	cSC3DirtBag::RecomputeSeaportMap(void)
+0002e76c	RecalcSaltWater__11cSC3DirtBag	cSC3DirtBag::RecalcSaltWater(void)
+0002ee80	GetAverageAltitude__C11cSC3DirtBag	cSC3DirtBag::GetAverageAltitude(void) const
+0002f010	QueryInterface__11cSC3DirtBagUiPPv	cSC3DirtBag::QueryInterface(unsigned int, void **)
+0002f110	RegisterCheats__11cSC3DirtBag	cSC3DirtBag::RegisterCheats(void)
+0002fec0	CheatLoadTerrain__11cSC3DirtBagP10cIGZString	cSC3DirtBag::CheatLoadTerrain(cIGZString *)
+00030314	CheatTerrainShift__11cSC3DirtBagi	cSC3DirtBag::CheatTerrainShift(int)
+00030600	IsNeighborPresent__C11cSC3DirtBagUc	cSC3DirtBag::IsNeighborPresent(unsigned char) const
+0003083c	GetLayerType__11cSC3DirtBag	cSC3DirtBag::GetLayerType(void)
+00030848	SimulationEnd__11cSC3DirtBag	cSC3DirtBag::SimulationEnd(void)
+00030854	GetManipulator__11cSC3DirtBagRC18cISC3CityAgentTypePP25cISC3CityLayerManipulatorRi	cSC3DirtBag::GetManipulator(cISC3CityAgentType const &, cISC3CityLayerManipulator **, int &)
+00030860	GetVariantValue__11cSC3DirtBagG7cRZRect	cSC3DirtBag::GetVariantValue(cRZRect)
+00030870	MaxAltitudeDelta__C11cSC3DirtBag	cSC3DirtBag::MaxAltitudeDelta(void) const
+000308a4	LockUpdates__11cSC3DirtBagb	cSC3DirtBag::LockUpdates(bool)
+000308e0	StaticInit__11cSC3DirtBagP19cISC3CityDefinition	cSC3DirtBag::StaticInit(cISC3CityDefinition *)
+00030950	StaticShutdown__11cSC3DirtBag	cSC3DirtBag::StaticShutdown(void)
+0003099c	GetVertexAltitude__C11cSC3DirtBagUiUiRUc	cSC3DirtBag::GetVertexAltitude(unsigned int, unsigned int, unsigned char &) const
+000309f4	GetVertexAltitudeDirt__C11cSC3DirtBagUiUiRUc	cSC3DirtBag::GetVertexAltitudeDirt(unsigned int, unsigned int, unsigned char &) const
+00030a44	GetVertexAltitudeWater__C11cSC3DirtBagUiUiRUc	cSC3DirtBag::GetVertexAltitudeWater(unsigned int, unsigned int, unsigned char &) const
+00030a94	GetVertexLight__C11cSC3DirtBagUiUiRUc	cSC3DirtBag::GetVertexLight(unsigned int, unsigned int, unsigned char &) const
+00030ae4	GetDirtClod__C11cSC3DirtBagUcUiUibPP19cISC3CitySpriteInstRUcUc	cSC3DirtBag::GetDirtClod(unsigned char, unsigned int, unsigned int, bool, cISC3CitySpriteInst **, unsigned char &, unsigned char) const
+00030bc8	GetDirtClodLand__C11cSC3DirtBagUcUiUiPP19cISC3CitySpriteInstRUcUc	cSC3DirtBag::GetDirtClodLand(unsigned char, unsigned int, unsigned int, cISC3CitySpriteInst **, unsigned char &, unsigned char) const
+00030c50	GetDirtClodShore__C11cSC3DirtBagUcUiUiPP19cISC3CitySpriteInstRUcUc	cSC3DirtBag::GetDirtClodShore(unsigned char, unsigned int, unsigned int, cISC3CitySpriteInst **, unsigned char &, unsigned char) const
+00030cf8	GetDirtClodWater__C11cSC3DirtBagUcUiUiPP19cISC3CitySpriteInstRUcUc	cSC3DirtBag::GetDirtClodWater(unsigned char, unsigned int, unsigned int, cISC3CitySpriteInst **, unsigned char &, unsigned char) const
+00030d80	GetDirtClodCursor__C11cSC3DirtBagUcUiUiUsbPP19cISC3CitySpriteInstRUc	cSC3DirtBag::GetDirtClodCursor(unsigned char, unsigned int, unsigned int, unsigned short, bool, cISC3CitySpriteInst **, unsigned char &) const
+00030e38	GetDirtClodSingle__C11cSC3DirtBagUcUsUiUibPP19cISC3CitySpriteInstRUc	cSC3DirtBag::GetDirtClodSingle(unsigned char, unsigned short, unsigned int, unsigned int, bool, cISC3CitySpriteInst **, unsigned char &) const
+00030f00	GetDirtClodEdge__C11cSC3DirtBagUiUibT3PP19cISC3CitySpriteInstRUc	cSC3DirtBag::GetDirtClodEdge(unsigned int, unsigned int, bool, bool, cISC3CitySpriteInst **, unsigned char &) const
+00030fa4	Tick__11cSC3DirtBagiiRC7cRZRectUi	cSC3DirtBag::Tick(int, int, cRZRect const &, unsigned int)
+00030fac	GetGlobalSeaLevel__C11cSC3DirtBag	cSC3DirtBag::GetGlobalSeaLevel(void) const
+00030fc0	SetGlobalSeaLevel__11cSC3DirtBagUc	cSC3DirtBag::SetGlobalSeaLevel(unsigned char)
+00031074	GetGrid__C11cSC3DirtBag	cSC3DirtBag::GetGrid(void) const
+00031098	RegenPalette__11cSC3DirtBagUc	cSC3DirtBag::RegenPalette(unsigned char)
+000310cc	CellCountX__C11cSC3DirtBag	cSC3DirtBag::CellCountX(void) const
+00031104	CellCountZ__C11cSC3DirtBag	cSC3DirtBag::CellCountZ(void) const
+00031140	VertexCountX__C11cSC3DirtBag	cSC3DirtBag::VertexCountX(void) const
+00031180	VertexCountZ__C11cSC3DirtBag	cSC3DirtBag::VertexCountZ(void) const
+000311c0	AltitudeMax__C11cSC3DirtBag	cSC3DirtBag::AltitudeMax(void) const
+000311f4	AltitudeMin__C11cSC3DirtBag	cSC3DirtBag::AltitudeMin(void) const
+00031224	MaxAltitudeAllowed__C11cSC3DirtBag	cSC3DirtBag::MaxAltitudeAllowed(void) const
+00031230	MinAltitudeAllowed__C11cSC3DirtBag	cSC3DirtBag::MinAltitudeAllowed(void) const
+0003123c	MaxAltitudeDeltaAllowed__C11cSC3DirtBag	cSC3DirtBag::MaxAltitudeDeltaAllowed(void) const
+0003124c	AltitudeScale__C11cSC3DirtBag	cSC3DirtBag::AltitudeScale(void) const
+0003127c	InCellBounds__C11cSC3DirtBagUiUi	cSC3DirtBag::InCellBounds(unsigned int, unsigned int) const
+000312d8	InCellBounds__C11cSC3DirtBagUiUiUiUi	cSC3DirtBag::InCellBounds(unsigned int, unsigned int, unsigned int, unsigned int) const
+00031340	InVertexBounds__C11cSC3DirtBagUiUi	cSC3DirtBag::InVertexBounds(unsigned int, unsigned int) const
+00031374	InVertexBounds__C11cSC3DirtBagUiUiUiUi	cSC3DirtBag::InVertexBounds(unsigned int, unsigned int, unsigned int, unsigned int) const
+000313e0	IsValidVertexAltitude__C11cSC3DirtBagUc	cSC3DirtBag::IsValidVertexAltitude(unsigned char) const
+000313f0	IsValidVertexLight__C11cSC3DirtBagUc	cSC3DirtBag::IsValidVertexLight(unsigned char) const
+0003142c	calculateAndSetVertexLight__11cSC3DirtBagUiUiUiUi	cSC3DirtBag::calculateAndSetVertexLight(unsigned int, unsigned int, unsigned int, unsigned int)
+0003156c	getVertAltForLightCalc__C11cSC3DirtBagUiUiPUc	cSC3DirtBag::getVertAltForLightCalc(unsigned int, unsigned int, unsigned char *) const
+00031800	getVertexLightIndex__C11cSC3DirtBagRC18sIGZPoint3DFloat32T1RUc	cSC3DirtBag::getVertexLightIndex(sIGZPoint3DFloat32 const &, sIGZPoint3DFloat32 const &, unsigned char &) const
+000318b0	vecCrossProduct__11cSC3DirtBagRC18sIGZPoint3DFloat32T1R18sIGZPoint3DFloat32	cSC3DirtBag::vecCrossProduct(sIGZPoint3DFloat32 const &, sIGZPoint3DFloat32 const &, sIGZPoint3DFloat32 &)
+000318fc	vecAdd__11cSC3DirtBagRC18sIGZPoint3DFloat32T1R18sIGZPoint3DFloat32	cSC3DirtBag::vecAdd(sIGZPoint3DFloat32 const &, sIGZPoint3DFloat32 const &, sIGZPoint3DFloat32 &)
+00031924	vecDotProduct__11cSC3DirtBagRC18sIGZPoint3DFloat32T1Rf	cSC3DirtBag::vecDotProduct(sIGZPoint3DFloat32 const &, sIGZPoint3DFloat32 const &, float &)
+00031950	vecUnit__11cSC3DirtBagRC18sIGZPoint3DFloat32R18sIGZPoint3DFloat32	cSC3DirtBag::vecUnit(sIGZPoint3DFloat32 const &, sIGZPoint3DFloat32 &)
+000319ac	vecScalarDivide__11cSC3DirtBagRC18sIGZPoint3DFloat32fR18sIGZPoint3DFloat32	cSC3DirtBag::vecScalarDivide(sIGZPoint3DFloat32 const &, float, sIGZPoint3DFloat32 &)
+000319ec	__17cSC3ConvexContour	cSC3ConvexContour::cSC3ConvexContour(void)
+00031a08	_._17cSC3ConvexContour	cSC3ConvexContour::~cSC3ConvexContour(void)
+00031a60	Start__17cSC3ConvexContour	cSC3ConvexContour::Start(void)
+00031acc	AddVertex__17cSC3ConvexContourPC12cISC3DirtBagUiUiUc	cSC3ConvexContour::AddVertex(cISC3DirtBag const *, unsigned int, unsigned int, unsigned char)
+00031b70	Reflect__17cSC3ConvexContourP12cISC3DirtBag	cSC3ConvexContour::Reflect(cISC3DirtBag *)
+00031bdc	ReflectPrimary__17cSC3ConvexContourP12cISC3DirtBag	cSC3ConvexContour::ReflectPrimary(cISC3DirtBag *)
+00031c40	flip__17cSC3ConvexContour	cSC3ConvexContour::flip(void)
+00031c64	addPri__17cSC3ConvexContourPC12cISC3DirtBagUiUiUc	cSC3ConvexContour::addPri(cISC3DirtBag const *, unsigned int, unsigned int, unsigned char)
+00031d1c	outOfBounds__17cSC3ConvexContourPC12cISC3DirtBagRC17cSC3ContourVertex	cSC3ConvexContour::outOfBounds(cISC3DirtBag const *, cSC3ContourVertex const &)
+00031d88	FunctionFilterTestPassed__C11cSC3DirtBagRC14cSC3CityBoundsUii	cSC3DirtBag::FunctionFilterTestPassed(cSC3CityBounds const &, unsigned int, int) const
+00031ddc	ResetChanges__C11cSC3DirtBag	cSC3DirtBag::ResetChanges(void) const
+00031e28	MarkCellChanged__C11cSC3DirtBagUiUi	cSC3DirtBag::MarkCellChanged(unsigned int, unsigned int) const
+00031e58	ChangedByLastOperation__C11cSC3DirtBagUiUi	cSC3DirtBag::ChangedByLastOperation(unsigned int, unsigned int) const
+00031e90	Distance__C11cSC3DirtBagUiUiRUi	cSC3DirtBag::Distance(unsigned int, unsigned int, unsigned int &) const
+00031f04	GetWaterPath__C11cSC3DirtBagUiUiUiP17sIGZPointXZUint32RUi	cSC3DirtBag::GetWaterPath(unsigned int, unsigned int, unsigned int, sIGZPointXZUint32 *, unsigned int &) const
+0003203c	GetPathGranularity__C11cSC3DirtBag	cSC3DirtBag::GetPathGranularity(void) const
+0003204c	BlockCell__11cSC3DirtBagUiUib	cSC3DirtBag::BlockCell(unsigned int, unsigned int, bool)
+000320b8	IsCellBlocked__C11cSC3DirtBagUiUi	cSC3DirtBag::IsCellBlocked(unsigned int, unsigned int) const
+00032114	IsDeepWaterPresent__11cSC3DirtBag	cSC3DirtBag::IsDeepWaterPresent(void)
+00032150	AddRef__11cSC3DirtBag	cSC3DirtBag::AddRef(void)
+00032198	Release__11cSC3DirtBag	cSC3DirtBag::Release(void)
+00032204	CheatAddSalt__11cSC3DirtBag	cSC3DirtBag::CheatAddSalt(void)
+00032234	CheatRemoveSalt__11cSC3DirtBag	cSC3DirtBag::CheatRemoveSalt(void)
+000324d8	DoQueryInfo__11cSC3DirtBagR10cGZMessageP11cIGZUnknown	cSC3DirtBag::DoQueryInfo(cGZMessage &, cIGZUnknown *)
+00032700	DoStandardQueryViewInfo__11cSC3DirtBagR10cGZMessageP21cISC3WinQueryListView	cSC3DirtBag::DoStandardQueryViewInfo(cGZMessage &, cISC3WinQueryListView *)
+00032ba4	GetInfoStrings__11cSC3DirtBagUiUiR10cIGZStringT3Ui	cSC3DirtBag::GetInfoStrings(unsigned int, unsigned int, cIGZString &, cIGZString &, unsigned int)
+00033c74	__20cSC3TerrainMapSpriteR11cSC3DirtBag	cSC3TerrainMapSprite::cSC3TerrainMapSprite(cSC3DirtBag &)
+00033e50	GetColor__20cSC3TerrainMapSpriteUiUiRUi	cSC3TerrainMapSprite::GetColor(unsigned int, unsigned int, unsigned int &)
+00034000	DebugClassTag__11cSC3DirtBagR10cIGZString	cSC3DirtBag::DebugClassTag(cIGZString &)
+0003400c	DebugTypeTag__11cSC3DirtBagR10cIGZString	cSC3DirtBag::DebugTypeTag(cIGZString &)
+0003401c	GetQueryString__C11cSC3DirtBagUiUi	cSC3DirtBag::GetQueryString(unsigned int, unsigned int) const
+00034054	DoQueryViews__11cSC3DirtBagR10cGZMessageP13cISC3WinQuery	cSC3DirtBag::DoQueryViews(cGZMessage &, cISC3WinQuery *)
+00034060	DoDebugQueryViewInfo__11cSC3DirtBagR10cGZMessageP21cISC3WinQueryListView	cSC3DirtBag::DoDebugQueryViewInfo(cGZMessage &, cISC3WinQueryListView *)
+0003406c	GetDebugInfoStringCount__11cSC3DirtBag	cSC3DirtBag::GetDebugInfoStringCount(void)
+00034078	GetDebugInfoStrings__11cSC3DirtBagUiUiR10cIGZStringT3Ui	cSC3DirtBag::GetDebugInfoStrings(unsigned int, unsigned int, cIGZString &, cIGZString &, unsigned int)
+00034084	GetInfoStringCount__11cSC3DirtBag	cSC3DirtBag::GetInfoStringCount(void)
+00034090	GetMapSpriteCount__11cSC3DirtBag	cSC3DirtBag::GetMapSpriteCount(void)
+0003409c	GetSpriteIdFromIndex__11cSC3DirtBagUiRUi	cSC3DirtBag::GetSpriteIdFromIndex(unsigned int, unsigned int &)
+000340c4	CreateMapSprite__11cSC3DirtBagUiUiPPv	cSC3DirtBag::CreateMapSprite(unsigned int, unsigned int, void **)
+00034190	_._20cSC3TerrainMapSprite	cSC3TerrainMapSprite::~cSC3TerrainMapSprite(void)
+000341e4	Init_FromFile__27cSC3DirtClodColorLightTableRC9cRZString	cSC3DirtClodColorLightTable::Init_FromFile(cRZString const &)
+00034db8	Init_FromBuffer__27cSC3DirtClodColorLightTableP10cIGZBuffer	cSC3DirtClodColorLightTable::Init_FromBuffer(cIGZBuffer *)
+00034ecc	Init_FromPaletteFile__27cSC3DirtClodColorLightTableRC9cRZString	cSC3DirtClodColorLightTable::Init_FromPaletteFile(cRZString const &)
+00035b74	Init_FromPalette__27cSC3DirtClodColorLightTableiPC8cDCColor	cSC3DirtClodColorLightTable::Init_FromPalette(int, cDCColor const *)
+00035eb4	Init_FromCopy__27cSC3DirtClodColorLightTableRC27cSC3DirtClodColorLightTableR8cDCColorf	cSC3DirtClodColorLightTable::Init_FromCopy(cSC3DirtClodColorLightTable const &, cDCColor &, float)
+00038814	GenerateBumpMaps__13cSC3DirtClodX	cSC3DirtClodX::GenerateBumpMaps(void)
+00038948	IsPixelOpaque__C13cSC3DirtClodXiiii	cSC3DirtClodX::IsPixelOpaque(int, int, int, int) const
+00038b60	GetH__C13cSC3DirtClodXii	cSC3DirtClodX::GetH(int, int) const
+00038c70	GetAllSpans__C13cSC3DirtClodXiiR7cRZRect	cSC3DirtClodX::GetAllSpans(int, int, cRZRect &) const
+00038e10	InvalidateCache__C13cSC3DirtClodX	cSC3DirtClodX::InvalidateCache(void) const
+00038ea8	pregetPoints__C16cSC3DirtClodLandii	cSC3DirtClodLand::pregetPoints(int, int) const
+00039060	getColor__C16cSC3DirtClodLandP10cIGZBufferUsUsiR12cSC3LCVertex	cSC3DirtClodLand::getColor(cIGZBuffer *, unsigned short, unsigned short, int, cSC3LCVertex &) const
+00039258	Draw__C16cSC3DirtClodLandP10cIGZBufferRC7cRZRectiiP7cRZRect	cSC3DirtClodLand::Draw(cIGZBuffer *, cRZRect const &, int, int, cRZRect *) const
+00039730	pregetPoints__C17cSC3DirtClodWaterii	cSC3DirtClodWater::pregetPoints(int, int) const
+000398e8	getColor__C17cSC3DirtClodWaterP10cIGZBufferUsUsiR12cSC3LCVertex	cSC3DirtClodWater::getColor(cIGZBuffer *, unsigned short, unsigned short, int, cSC3LCVertex &) const
+00039c44	Draw__C17cSC3DirtClodWaterP10cIGZBufferRC7cRZRectiiP7cRZRect	cSC3DirtClodWater::Draw(cIGZBuffer *, cRZRect const &, int, int, cRZRect *) const
+0003a020	pregetPoints__C17cSC3DirtClodShoreii	cSC3DirtClodShore::pregetPoints(int, int) const
+0003a318	getColor__C17cSC3DirtClodShoreP10cIGZBufferUsUsiR12cSC3LCVertex	cSC3DirtClodShore::getColor(cIGZBuffer *, unsigned short, unsigned short, int, cSC3LCVertex &) const
+0003a5b8	Draw__C17cSC3DirtClodShoreP10cIGZBufferRC7cRZRectiiP7cRZRect	cSC3DirtClodShore::Draw(cIGZBuffer *, cRZRect const &, int, int, cRZRect *) const
+0003acd0	pregetPoints__C18cSC3DirtClodCursorii	cSC3DirtClodCursor::pregetPoints(int, int) const
+0003af44	Draw__C18cSC3DirtClodCursorP10cIGZBufferRC7cRZRectiiP7cRZRect	cSC3DirtClodCursor::Draw(cIGZBuffer *, cRZRect const &, int, int, cRZRect *) const
+0003b1d0	GetAllSpans__C16cSC3DirtClodEdgeiiR7cRZRect	cSC3DirtClodEdge::GetAllSpans(int, int, cRZRect &) const
+0003b360	Draw__C16cSC3DirtClodEdgeP10cIGZBufferRC7cRZRectiiP7cRZRect	cSC3DirtClodEdge::Draw(cIGZBuffer *, cRZRect const &, int, int, cRZRect *) const
+0003bbb4	pregetPoints__C16cSC3DirtClodEdgeii	cSC3DirtClodEdge::pregetPoints(int, int) const
+0003bfbc	__19cSC3DirtClodFactory	cSC3DirtClodFactory::cSC3DirtClodFactory(void)
+0003c128	_._19cSC3DirtClodFactory	cSC3DirtClodFactory::~cSC3DirtClodFactory(void)
+0003c228	SetDirtBag__19cSC3DirtClodFactoryP12cISC3DirtBag	cSC3DirtClodFactory::SetDirtBag(cISC3DirtBag *)
+0003c300	GetDirtClodLand__C19cSC3DirtClodFactoryUiUiUcUcPP19cISC3CitySpriteInst	cSC3DirtClodFactory::GetDirtClodLand(unsigned int, unsigned int, unsigned char, unsigned char, cISC3CitySpriteInst **) const
+0003c4b0	GetDirtClodShore__C19cSC3DirtClodFactoryUiUiUcUcPP19cISC3CitySpriteInst	cSC3DirtClodFactory::GetDirtClodShore(unsigned int, unsigned int, unsigned char, unsigned char, cISC3CitySpriteInst **) const
+0003c660	GetDirtClodWater__C19cSC3DirtClodFactoryUiUiUcUcPP19cISC3CitySpriteInst	cSC3DirtClodFactory::GetDirtClodWater(unsigned int, unsigned int, unsigned char, unsigned char, cISC3CitySpriteInst **) const
+0003c810	GetDirtClodCursor__C19cSC3DirtClodFactoryUiUiUcUsbPP19cISC3CitySpriteInst	cSC3DirtClodFactory::GetDirtClodCursor(unsigned int, unsigned int, unsigned char, unsigned short, bool, cISC3CitySpriteInst **) const
+0003c8e8	GetDirtClodEdge__C19cSC3DirtClodFactoryUiUibT3PP19cISC3CitySpriteInst	cSC3DirtClodFactory::GetDirtClodEdge(unsigned int, unsigned int, bool, bool, cISC3CitySpriteInst **) const
+0003c9c4	RegenPalette__19cSC3DirtClodFactoryUc	cSC3DirtClodFactory::RegenPalette(unsigned char)
+0003db24	buildColorLightTables__19cSC3DirtClodFactory	cSC3DirtClodFactory::buildColorLightTables(void)
+0003dbf4	releaseColorLightTables__19cSC3DirtClodFactory	cSC3DirtClodFactory::releaseColorLightTables(void)
+0003de8c	GetGrid__C19cSC3DirtClodFactory	cSC3DirtClodFactory::GetGrid(void) const
+0003dea0	GetDirtClodFactory__Fv	GetDirtClodFactory(void)
+0003df40	__27cSC3DirtClodColorLightTable	cSC3DirtClodColorLightTable::cSC3DirtClodColorLightTable(void)
+0003df60	_._27cSC3DirtClodColorLightTable	cSC3DirtClodColorLightTable::~cSC3DirtClodColorLightTable(void)
+0003dfa4	Shutdown__27cSC3DirtClodColorLightTable	cSC3DirtClodColorLightTable::Shutdown(void)
+0003e028	Tick__13cSC3DirtClodXii	cSC3DirtClodX::Tick(int, int)
+0003e034	Tick__13cSC3DirtClodXUi	cSC3DirtClodX::Tick(unsigned int)
+0003e040	IsGeomFlag__13cSC3DirtClodXUi	cSC3DirtClodX::IsGeomFlag(unsigned int)
+0003e054	SetGeomFlag__13cSC3DirtClodXUi	cSC3DirtClodX::SetGeomFlag(unsigned int)
+0003e060	ClearGeomFlag__13cSC3DirtClodXUi	cSC3DirtClodX::ClearGeomFlag(unsigned int)
+0003e06c	GetGeomFlag__13cSC3DirtClodX	cSC3DirtClodX::GetGeomFlag(void)
+0003e078	GetLayerFlags__C13cSC3DirtClodX	cSC3DirtClodX::GetLayerFlags(void) const
+0003e084	GetLayerFlags32__C13cSC3DirtClodX	cSC3DirtClodX::GetLayerFlags32(void) const
+0003e090	SetHilite__13cSC3DirtClodXUi	cSC3DirtClodX::SetHilite(unsigned int)
+0003e09c	SetLayer__13cSC3DirtClodXUc	cSC3DirtClodX::SetLayer(unsigned char)
+0003e0a4	SetNext__13cSC3DirtClodXP19cISC3CitySpriteInst	cSC3DirtClodX::SetNext(cISC3CitySpriteInst *)
+0003e0ac	GetNext__13cSC3DirtClodX	cSC3DirtClodX::GetNext(void)
+0003e0b8	Init__13cSC3DirtClodXP21cISC3CitySpriteAttrib	cSC3DirtClodX::Init(cISC3CitySpriteAttrib *)
+0003e0c4	GetSpriteAttrib__13cSC3DirtClodX	cSC3DirtClodX::GetSpriteAttrib(void)
+0003e0d0	SetSpriteAttrib__13cSC3DirtClodXP21cISC3CitySpriteAttrib	cSC3DirtClodX::SetSpriteAttrib(cISC3CitySpriteAttrib *)
+0003e0e0	_._13cSC3DirtClodX	cSC3DirtClodX::~cSC3DirtClodX(void)
+0003e118	__13cSC3DirtClodXUcUiUiUc	cSC3DirtClodX::cSC3DirtClodX(unsigned char, unsigned int, unsigned int, unsigned char)
+0003e174	GetW__C13cSC3DirtClodXii	cSC3DirtClodX::GetW(int, int) const
+0003e198	SetRotationOffset__13cSC3DirtClodXUc	cSC3DirtClodX::SetRotationOffset(unsigned char)
+0003e1a0	GetRotationOffset__C13cSC3DirtClodXRUc	cSC3DirtClodX::GetRotationOffset(unsigned char &) const
+0003e1b4	GetAreaFromPt__C13cSC3DirtClodXiiR7cRZRectii	cSC3DirtClodX::GetAreaFromPt(int, int, cRZRect &, int, int) const
+0003e208	Prepare__13cSC3DirtClodXiib	cSC3DirtClodX::Prepare(int, int, bool)
+0003e214	Unprepare__13cSC3DirtClodXii	cSC3DirtClodX::Unprepare(int, int)
+0003e224	Draw__C13cSC3DirtClodXP10cIGZBufferiiiiP7cRZRect	cSC3DirtClodX::Draw(cIGZBuffer *, int, int, int, int, cRZRect *) const
+0003e288	QueryInterface__13cSC3DirtClodXUiPPv	cSC3DirtClodX::QueryInterface(unsigned int, void **)
+0003e2e0	AddRef__13cSC3DirtClodX	cSC3DirtClodX::AddRef(void)
+0003e31c	Release__13cSC3DirtClodX	cSC3DirtClodX::Release(void)
+0003e384	__nw__16cSC3DirtClodLandUi	cSC3DirtClodLand::operator new(unsigned int)
+0003e3ec	__dl__16cSC3DirtClodLandPv	cSC3DirtClodLand::operator delete(void *)
+0003e440	__nw__17cSC3DirtClodWaterUi	cSC3DirtClodWater::operator new(unsigned int)
+0003e4a8	__dl__17cSC3DirtClodWaterPv	cSC3DirtClodWater::operator delete(void *)
+0003e4fc	__nw__17cSC3DirtClodShoreUi	cSC3DirtClodShore::operator new(unsigned int)
+0003e564	__dl__17cSC3DirtClodShorePv	cSC3DirtClodShore::operator delete(void *)
+0003e5b8	__nw__18cSC3DirtClodCursorUi	cSC3DirtClodCursor::operator new(unsigned int)
+0003e620	__dl__18cSC3DirtClodCursorPv	cSC3DirtClodCursor::operator delete(void *)
+0003e674	__16cSC3DirtClodLandUcUiUiUc	cSC3DirtClodLand::cSC3DirtClodLand(unsigned char, unsigned int, unsigned int, unsigned char)
+0003e710	__17cSC3DirtClodWaterUcUiUiUc	cSC3DirtClodWater::cSC3DirtClodWater(unsigned char, unsigned int, unsigned int, unsigned char)
+0003e7a4	__17cSC3DirtClodShoreUcUiUiUc	cSC3DirtClodShore::cSC3DirtClodShore(unsigned char, unsigned int, unsigned int, unsigned char)
+0003e840	__18cSC3DirtClodCursorUcUiUiUsb	cSC3DirtClodCursor::cSC3DirtClodCursor(unsigned char, unsigned int, unsigned int, unsigned short, bool)
+0003e8b0	getColor__C18cSC3DirtClodCursorP10cIGZBufferUsUsiR12cSC3LCVertex	cSC3DirtClodCursor::getColor(cIGZBuffer *, unsigned short, unsigned short, int, cSC3LCVertex &) const
+0003e9c0	getColor__C16cSC3DirtClodEdgeP10cIGZBufferUsUsiR12cSC3LCVertex	cSC3DirtClodEdge::getColor(cIGZBuffer *, unsigned short, unsigned short, int, cSC3LCVertex &) const
+0003e9cc	__nw__16cSC3DirtClodEdgeUi	cSC3DirtClodEdge::operator new(unsigned int)
+0003ea34	__dl__16cSC3DirtClodEdgePv	cSC3DirtClodEdge::operator delete(void *)
+0003ea88	__16cSC3DirtClodEdgeUiUibT3	cSC3DirtClodEdge::cSC3DirtClodEdge(unsigned int, unsigned int, bool, bool)
+0003eb04	GetW__C16cSC3DirtClodEdgeii	cSC3DirtClodEdge::GetW(int, int) const
+0003eb2c	GetH__C16cSC3DirtClodEdgeii	cSC3DirtClodEdge::GetH(int, int) const
+0003eba4	Init__19cSC3DirtClodFactory	cSC3DirtClodFactory::Init(void)
+0003ebe4	Shutdown__19cSC3DirtClodFactory	cSC3DirtClodFactory::Shutdown(void)
+0003ec30	DoMessage__19cSC3DirtClodFactoryR10cGZMessage	cSC3DirtClodFactory::DoMessage(cGZMessage &)
+0003ec6c	GetColorInNative16Bit__C19cSC3DirtClodFactoryUcUsUc	cSC3DirtClodFactory::GetColorInNative16Bit(unsigned char, unsigned short, unsigned char) const
+0003ecc4	GetMaxLightIndex__C19cSC3DirtClodFactory	cSC3DirtClodFactory::GetMaxLightIndex(void) const
+0003ece8	GetLightStep__C19cSC3DirtClodFactory	cSC3DirtClodFactory::GetLightStep(void) const
+0003ed08	GetLightIndex__C19cSC3DirtClodFactoryf	cSC3DirtClodFactory::GetLightIndex(float) const
+0003ed5c	SetGrid__19cSC3DirtClodFactoryb	cSC3DirtClodFactory::SetGrid(bool)
+0003ed6c	GetPaletteCount__C19cSC3DirtClodFactory	cSC3DirtClodFactory::GetPaletteCount(void) const
+0003ed78	GetPaletteMaxColor__C19cSC3DirtClodFactoryUc	cSC3DirtClodFactory::GetPaletteMaxColor(unsigned char) const
+0003ed94	SetAltitudePalette__19cSC3DirtClodFactoryUi	cSC3DirtClodFactory::SetAltitudePalette(unsigned int)
+0003ee68	buildStringResourceTable__19cSC3DirtClodFactory	cSC3DirtClodFactory::buildStringResourceTable(void)
+0003ee74	releaseStringResourceTable__19cSC3DirtClodFactory	cSC3DirtClodFactory::releaseStringResourceTable(void)
+0003ee80	AddRef__19cSC3DirtClodFactory	cSC3DirtClodFactory::AddRef(void)
+0003eeb4	Release__19cSC3DirtClodFactory	cSC3DirtClodFactory::Release(void)
+0003ef08	QueryInterface__19cSC3DirtClodFactoryUiPPv	cSC3DirtClodFactory::QueryInterface(unsigned int, void **)
+0003ef60	InvalidateColorTable__19cSC3DirtClodFactory	cSC3DirtClodFactory::InvalidateColorTable(void)
+0003eff4	CreateCommand__22cSC3DirtCommandFactoryUiUiPPv	cSC3DirtCommandFactory::CreateCommand(unsigned int, unsigned int, void **)
+0003f334	__22cSC3DirtCommandFactory	cSC3DirtCommandFactory::cSC3DirtCommandFactory(void)
+0003f36c	_._22cSC3DirtCommandFactory	cSC3DirtCommandFactory::~cSC3DirtCommandFactory(void)
+0003f3a4	Init__17cSC3DirtGeneratorUiUi	cSC3DirtGenerator::Init(unsigned int, unsigned int)
+0003f674	GenerateAltFromBMP8__17cSC3DirtGeneratorPC10cIGZStringUc	cSC3DirtGenerator::GenerateAltFromBMP8(cIGZString const *, unsigned char)
+0003f7b0	GenerateAltFromBMP24__17cSC3DirtGeneratorPC10cIGZString	cSC3DirtGenerator::GenerateAltFromBMP24(cIGZString const *)
+0003f8d0	ReflectMap__17cSC3DirtGeneratorP12cISC3DirtBag	cSC3DirtGenerator::ReflectMap(cISC3DirtBag *)
+0003faac	AltitudeSubdivision__17cSC3DirtGeneratorUiUiUiUiUiUi	cSC3DirtGenerator::AltitudeSubdivision(unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int)
+00040070	ChangeTerrainProfile__17cSC3DirtGeneratorUcUcUcUc	cSC3DirtGenerator::ChangeTerrainProfile(unsigned char, unsigned char, unsigned char, unsigned char)
+0004024c	GenerateRandom__17cSC3DirtGeneratoriUcUcUcUc	cSC3DirtGenerator::GenerateRandom(int, unsigned char, unsigned char, unsigned char, unsigned char)
+0004101c	FindSaltWater__17cSC3DirtGeneratorUcUc	cSC3DirtGenerator::FindSaltWater(unsigned char, unsigned char)
+000413fc	CreateFlora__17cSC3DirtGeneratorUc	cSC3DirtGenerator::CreateFlora(unsigned char)
+00041674	FixShores__17cSC3DirtGeneratorUc	cSC3DirtGenerator::FixShores(unsigned char)
+00041a7c	CreateRivers__17cSC3DirtGeneratorUcUc	cSC3DirtGenerator::CreateRivers(unsigned char, unsigned char)
+00041fac	SetDifficulty__17cSC3DirtGeneratori	cSC3DirtGenerator::SetDifficulty(int)
+00041fc0	__17cSC3DirtGenerator	cSC3DirtGenerator::cSC3DirtGenerator(void)
+0004202c	_._17cSC3DirtGenerator	cSC3DirtGenerator::~cSC3DirtGenerator(void)
+0004207c	QueryInterface__17cSC3DirtGeneratorUiPPv	cSC3DirtGenerator::QueryInterface(unsigned int, void **)
+000420d4	AddRef__17cSC3DirtGenerator	cSC3DirtGenerator::AddRef(void)
+00042110	Release__17cSC3DirtGenerator	cSC3DirtGenerator::Release(void)
+0004216c	IsReady__C17cSC3DirtGenerator	cSC3DirtGenerator::IsReady(void) const
+00042198	Shutdown__17cSC3DirtGenerator	cSC3DirtGenerator::Shutdown(void)
+00042234	traceDepth__17cSC3DirtGeneratoriiiiSc	cSC3DirtGenerator::traceDepth(int, int, int, int, signed char)
+00042304	Init__18cSC3NeighborMapGenP12cISC3DirtBag	cSC3NeighborMapGen::Init(cISC3DirtBag *)
+000424c0	DrawMap__18cSC3NeighborMapGenP10cIGZBuffer	cSC3NeighborMapGen::DrawMap(cIGZBuffer *)
+00043098	createLand__18cSC3NeighborMapGenP10cIGZBuffer	cSC3NeighborMapGen::createLand(cIGZBuffer *)
+0004324c	__18cSC3NeighborMapGen	cSC3NeighborMapGen::cSC3NeighborMapGen(void)
+000432b0	_._18cSC3NeighborMapGen	cSC3NeighborMapGen::~cSC3NeighborMapGen(void)
+00043300	QueryInterface__18cSC3NeighborMapGenUiPPv	cSC3NeighborMapGen::QueryInterface(unsigned int, void **)
+00043360	AddRef__18cSC3NeighborMapGen	cSC3NeighborMapGen::AddRef(void)
+0004339c	Release__18cSC3NeighborMapGen	cSC3NeighborMapGen::Release(void)
+000433fc	Shutdown__18cSC3NeighborMapGen	cSC3NeighborMapGen::Shutdown(void)
+00043454	convertAltToColor__18cSC3NeighborMapGenP10cIGZBufferSc	cSC3NeighborMapGen::convertAltToColor(cIGZBuffer *, signed char)
+00043514	RZGetCOMDllDirector_SimDirt__Fv	RZGetCOMDllDirector_SimDirt(void)
+00043664	__17cRZCOMDllDirector	cRZCOMDllDirector::cRZCOMDllDirector(void)
+000438f4	_._17cRZCOMDllDirector	cRZCOMDllDirector::~cRZCOMDllDirector(void)
+00043a34	InitializeCOM__17cRZCOMDllDirectorP7cIGZCOMR10cIGZString	cRZCOMDllDirector::InitializeCOM(cIGZCOM *, cIGZString &)
+00043d24	OnStart__17cRZCOMDllDirectorP7cIGZCOM	cRZCOMDllDirector::OnStart(cIGZCOM *)
+00043e80	GetClassObject__17cRZCOMDllDirectorUiUiPPv	cRZCOMDllDirector::GetClassObject(unsigned int, unsigned int, void **)
+00043f98	EnumClassObjects__17cRZCOMDllDirectorPFUiUiPv_vPv	cRZCOMDllDirector::EnumClassObjects(void (*)(unsigned int, unsigned int, void *), void *)
+00044078	AddDirector__17cRZCOMDllDirectorP17cRZCOMDllDirector	cRZCOMDllDirector::AddDirector(cRZCOMDllDirector *)
+00044120	OnUnload__17cRZCOMDllDirector	cRZCOMDllDirector::OnUnload(void)
+00044130	GZCOM__Fv	GZCOM(void)
+00044160	GZDllGetGZCOMDirector	GZDllGetGZCOMDirector
+00044180	QueryInterface__17cRZCOMDllDirectorUiPPv	cRZCOMDllDirector::QueryInterface(unsigned int, void **)
+000441fc	FrameWork__17cRZCOMDllDirector	cRZCOMDllDirector::FrameWork(void)
+0004420c	AddRef__17cRZCOMDllDirector	cRZCOMDllDirector::AddRef(void)
+00044228	Release__17cRZCOMDllDirector	cRZCOMDllDirector::Release(void)
+00044250	RemoveRef__17cRZCOMDllDirector	cRZCOMDllDirector::RemoveRef(void)
+00044268	RefCount__17cRZCOMDllDirector	cRZCOMDllDirector::RefCount(void)
+0004427c	ModuleName__17cRZCOMDllDirectorR10cIGZString	cRZCOMDllDirector::ModuleName(cIGZString &)
+000442b0	CanUnloadNow__17cRZCOMDllDirector	cRZCOMDllDirector::CanUnloadNow(void)
+00044308	AddCls__17cRZCOMDllDirectorUiPFv_P11cIGZUnknownUi	cRZCOMDllDirector::AddCls(unsigned int, cIGZUnknown *(*)(void), unsigned int)
+0004435c	AppRegister__17cRZCOMDllDirectorP12cIGZRegistry	cRZCOMDllDirector::AppRegister(cIGZRegistry *)
+000443b4	PreFrameWorkInit__17cRZCOMDllDirector	cRZCOMDllDirector::PreFrameWorkInit(void)
+000443c0	PreAppInit__17cRZCOMDllDirector	cRZCOMDllDirector::PreAppInit(void)
+000443cc	PostAppInit__17cRZCOMDllDirector	cRZCOMDllDirector::PostAppInit(void)
+000443d8	PreAppShutdown__17cRZCOMDllDirector	cRZCOMDllDirector::PreAppShutdown(void)
+000443e4	PostAppShutdown__17cRZCOMDllDirector	cRZCOMDllDirector::PostAppShutdown(void)
+000443f0	PostSystemServiceShutdown__17cRZCOMDllDirector	cRZCOMDllDirector::PostSystemServiceShutdown(void)
+000443fc	AbortiveQuit__17cRZCOMDllDirector	cRZCOMDllDirector::AbortiveQuit(void)
+00044408	OnInstall__17cRZCOMDllDirector	cRZCOMDllDirector::OnInstall(void)
+00044414	GZCOM__17cRZCOMDllDirector	cRZCOMDllDirector::GZCOM(void)
+00044430	__out_of_range__FPCc	__out_of_range(char const *)
+00044698	__length_error__FPCc	__length_error(char const *)
+000448f8	__11logic_errorRCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0	logic_error::logic_error(basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &)
+00044954	what__C11logic_error	logic_error::what(void) const
+0004497c	__12domain_errorRCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0	domain_error::domain_error(basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &)
+000449dc	__16invalid_argumentRCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0	invalid_argument::invalid_argument(basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &)
+00044a3c	__12length_errorRCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0	length_error::length_error(basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &)
+00044a9c	__12out_of_rangeRCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0	out_of_range::out_of_range(basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &)
+00044afc	__13runtime_errorRCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0	runtime_error::runtime_error(basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &)
+00044b5c	what__C13runtime_error	runtime_error::what(void) const
+00044b80	__13runtime_error	runtime_error::runtime_error(void)
+00044be4	__11range_errorRCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0	range_error::range_error(basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &)
+00044c3c	__14overflow_errorRCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0	overflow_error::overflow_error(basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &)
+00044c9c	__15underflow_errorRCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0	underflow_error::underflow_error(basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &)
+00044d00	__7istreamiP9streambufP7ostream	istream::istream(int, streambuf *, ostream *)
+00044db4	skip_ws__FP9streambuf	skip_ws(streambuf *)
+00044de8	get__7istreamRc	istream::get(char &)
+00044ec8	peek__7istream	istream::peek(void)
+00044f24	ignore__7istreamii	istream::ignore(int, int)
+0004501c	read__7istreamPci	istream::read(char *, int)
+000450f4	sync__7istream	istream::sync(void)
+00045134	seekg__7istreamx	istream::seekg(long long)
+0004516c	seekg__7istreamxQ23ios8seek_dir	istream::seekg(long long, ios::seek_dir)
+000451ac	tellg__7istream	istream::tellg(void)
+000451ec	__rs__7istreamRc	istream::operator>>(char &)
+000452d4	__rs__7istreamPc	istream::operator>>(char *)
+000456f0	__rs__7istreamRs	istream::operator>>(short &)
+00045734	__rs__7istreamRUs	istream::operator>>(unsigned short &)
+00045778	__rs__7istreamRi	istream::operator>>(int &)
+000457b8	__rs__7istreamRUi	istream::operator>>(unsigned int &)
+000457f8	__rs__7istreamRl	istream::operator>>(long &)
+00045838	__rs__7istreamRUl	istream::operator>>(unsigned long &)
+00045878	__rs__7istreamRx	istream::operator>>(long long &)
+000458c0	__rs__7istreamRUx	istream::operator>>(unsigned long long &)
+00045908	__rs__7istreamRb	istream::operator>>(bool &)
+00045954	__rs__7istreamRr	istream::operator>>(long double &)
+00045a28	__rs__7istreamRd	istream::operator>>(double &)
+00045af8	__rs__7istreamRf	istream::operator>>(float &)
+00045bc8	__rs__7istreamP9streambuf	istream::operator>>(streambuf *)
+00045ccc	__ls__7ostreamc	ostream::operator<<(char)
+0004603c	__ls__7ostreami	ostream::operator<<(int)
+000460e8	__ls__7ostreamUi	ostream::operator<<(unsigned int)
+00046178	__ls__7ostreaml	ostream::operator<<(long)
+00046224	__ls__7ostreamUl	ostream::operator<<(unsigned long)
+000462b4	__ls__7ostreamx	ostream::operator<<(long long)
+00046368	__ls__7ostreamUx	ostream::operator<<(unsigned long long)
+000463f8	__ls__7ostreamd	ostream::operator<<(double)
+000465a8	__ls__7ostreamr	ostream::operator<<(long double)
+0004675c	__ls__7ostreamPCc	ostream::operator<<(char const *)
+000468e8	__ls__7ostreamP9streambuf	ostream::operator<<(streambuf *)
+00046a00	__7ostreamiP9streambufP7ostream	ostream::ostream(int, streambuf *, ostream *)
+00046aac	seekp__7ostreamx	ostream::seekp(long long)
+00046ae4	seekp__7ostreamxQ23ios8seek_dir	ostream::seekp(long long, ios::seek_dir)
+00046b24	tellp__7ostream	ostream::tellp(void)
+00046b64	flush__7ostream	ostream::flush(void)
+00046b94	flush__FR7ostream	flush(ostream &)
+00046bac	ws__FR7istream	ws(istream &)
+00046c88	_skip_ws__7istream	istream::_skip_ws(void)
+00046cd0	ends__FR7ostream	ends(ostream &)
+00046cf4	endl__FR7ostream	endl(ostream &)
+00046d20	lock__FR7istream	lock(istream &)
+00046d40	unlock__FR7istream	unlock(istream &)
+00046d60	lock__FR7ostream	lock(ostream &)
+00046d80	unlock__FR7ostream	unlock(ostream &)
+00046da0	write__7ostreamPCci	ostream::write(char const *, int)
+00046e74	do_osfx__7ostream	ostream::do_osfx(void)
+00046ec0	__8iostreamiP9streambufP7ostream	iostream::iostream(int, streambuf *, ostream *)
+00046f84	close__3ios	ios::close(void)
+00046fc8	skip__7istreami	istream::skip(int)
+00046ff0	__7ostreami	ostream::ostream(int)
+00047050	opfx__7ostream	ostream::opfx(void)
+00047094	osfx__7ostream	ostream::osfx(void)
+000470c8	put__7ostreamc	ostream::put(char)
+000470f0	put__7ostreamUc	ostream::put(unsigned char)
+00047118	put__7ostreamSc	ostream::put(signed char)
+00047140	write__7ostreamPCUci	ostream::write(unsigned char const *, int)
+00047160	write__7ostreamPCSci	ostream::write(signed char const *, int)
+00047180	write__7ostreamPCvi	ostream::write(void const *, int)
+000471a0	__ls__7ostreamUc	ostream::operator<<(unsigned char)
+000471bc	__ls__7ostreamSc	ostream::operator<<(signed char)
+000471d8	__ls__7ostreamPCUc	ostream::operator<<(unsigned char const *)
+000471f4	__ls__7ostreamPCSc	ostream::operator<<(signed char const *)
+00047210	__ls__7ostreams	ostream::operator<<(short)
+0004722c	__ls__7ostreamUs	ostream::operator<<(unsigned short)
+00047248	__ls__7ostreamb	ostream::operator<<(bool)
+00047264	__ls__7ostreamf	ostream::operator<<(float)
+00047284	__ls__7ostreamPFR7ostream_R7ostream	ostream::operator<<(ostream &(*)(ostream &))
+0004729c	__ls__7ostreamPFR3ios_R3ios	ostream::operator<<(ios &(*)(ios &))
+000472bc	ostreambuf__C7ostream	ostream::ostreambuf(void) const
+000472cc	__7istreami	istream::istream(int)
+00047334	get__7istreamPUcic	istream::get(unsigned char *, int, char)
+00047358	get__7istreamRUc	istream::get(unsigned char &)
+00047374	getline__7istreamPUcic	istream::getline(unsigned char *, int, char)
+00047398	get__7istreamRSc	istream::get(signed char &)
+000473b4	get__7istreamPScic	istream::get(signed char *, int, char)
+000473d8	getline__7istreamPScic	istream::getline(signed char *, int, char)
+000473fc	read__7istreamPUci	istream::read(unsigned char *, int)
+0004741c	read__7istreamPSci	istream::read(signed char *, int)
+0004743c	read__7istreamPvi	istream::read(void *, int)
+0004745c	ipfx__7istreami	istream::ipfx(int)
+000474e0	ipfx0__7istream	istream::ipfx0(void)
+00047544	ipfx1__7istream	istream::ipfx1(void)
+00047598	isfx__7istream	istream::isfx(void)
+000475b4	get__7istream	istream::get(void)
+00047638	gcount__7istream	istream::gcount(void)
+00047648	putback__7istreamc	istream::putback(char)
+00047680	unget__7istream	istream::unget(void)
+000476b4	unget__7istreamc	istream::unget(char)
+000476ec	istreambuf__C7istream	istream::istreambuf(void) const
+000476fc	__rs__7istreamPUc	istream::operator>>(unsigned char *)
+00047718	__rs__7istreamPSc	istream::operator>>(signed char *)
+00047734	__rs__7istreamRUc	istream::operator>>(unsigned char &)
+00047750	__rs__7istreamRSc	istream::operator>>(signed char &)
+0004776c	__rs__7istreamPFR3ios_R3ios	istream::operator>>(ios &(*)(ios &))
+0004778c	__rs__7istreamPFR7istream_R7istream	istream::operator>>(istream &(*)(istream &))
+000477a4	__8iostreami	iostream::iostream(int)
+00047824	__as__22_IO_istream_withassignR22_IO_istream_withassign	_IO_istream_withassign::operator=(_IO_istream_withassign &)
+00047840	__as__22_IO_ostream_withassignR22_IO_ostream_withassign	_IO_ostream_withassign::operator=(_IO_ostream_withassign &)
+0004785c	dec__FR3ios	dec(ios &)
+00047874	hex__FR3ios	hex(ios &)
+0004788c	oct__FR3ios	oct(ios &)
+000478b0	getline__7istreamPcic	istream::getline(char *, int, char)
+00047a1c	get__7istreamPcic	istream::get(char *, int, char)
+00047b28	_sb_readline__FP9streambufRlc	_sb_readline(streambuf *, long &, char)
+00047c44	gets__7istreamPPcc	istream::gets(char **, char)
+00047d50	scan__7istreamPCce	istream::scan(char const *,...)
+00047e28	vscan__7istreamPCcPv	istream::vscan(char const *, void *)
+00047ef8	vscan__9streambufPCcPvP3ios	streambuf::vscan(char const *, void *, ios *)
+00047f34	scan__9streambufPCce	streambuf::scan(char const *,...)
+00047f54	sync_with_stdio__3iosi	ios::sync_with_stdio(int)
+00047f60	_un_link__9streambuf	streambuf::_un_link(void)
+00047f78	_link_in__9streambuf	streambuf::_link_in(void)
+00047f90	switch_to_get_mode__9streambuf	streambuf::switch_to_get_mode(void)
+00047fa8	free_backup_area__9streambuf	streambuf::free_backup_area(void)
+00047fc0	__overflow__FP9streambufi	__overflow(streambuf *, int)
+00047fe0	underflow__9streambuf	streambuf::underflow(void)
+00047fec	uflow__9streambuf	streambuf::uflow(void)
+00048004	overflow__9streambufi	streambuf::overflow(int)
+00048010	xsputn__9streambufPCci	streambuf::xsputn(char const *, int)
+00048030	xsgetn__9streambufPci	streambuf::xsgetn(char *, int)
+00048050	ignore__9streambufi	streambuf::ignore(int)
+000480a0	sync__9streambuf	streambuf::sync(void)
+000480ac	pbackfail__9streambufi	streambuf::pbackfail(int)
+000480c8	setbuf__9streambufPci	streambuf::setbuf(char *, int)
+00048168	seekpos__9streambufxi	streambuf::seekpos(long long, int)
+00048198	sseekpos__9streambufxi	streambuf::sseekpos(long long, int)
+000481b8	setb__9streambufPcT1i	streambuf::setb(char *, char *, int)
+000481dc	doallocate__9streambuf	streambuf::doallocate(void)
+000481f4	doallocbuf__9streambuf	streambuf::doallocbuf(void)
+0004820c	__9streambufi	streambuf::streambuf(int)
+00048248	_._9streambuf	streambuf::~streambuf(void)
+000482a8	seekoff__9streambufxQ23ios8seek_diri	streambuf::seekoff(long long, ios::seek_dir, int)
+000482bc	sseekoff__9streambufxQ23ios8seek_diri	streambuf::sseekoff(long long, ios::seek_dir, int)
+000482e4	sputbackc__9streambufc	streambuf::sputbackc(char)
+00048300	sungetc__9streambuf	streambuf::sungetc(void)
+00048318	get_column__9streambuf	streambuf::get_column(void)
+0004834c	set_column__9streambufi	streambuf::set_column(int)
+00048360	flush_all__9streambuf	streambuf::flush_all(void)
+00048370	flush_all_linebuffered__9streambuf	streambuf::flush_all_linebuffered(void)
+00048380	sys_stat__9streambufPv	streambuf::sys_stat(void *)
+0004839c	sys_read__9streambufPci	streambuf::sys_read(char *, int)
+000483a8	sys_write__9streambufPCci	streambuf::sys_write(char const *, int)
+000483b4	sys_seek__9streambufxQ23ios8seek_dir	streambuf::sys_seek(long long, ios::seek_dir)
+000483c8	sys_close__9streambuf	streambuf::sys_close(void)
+000483d4	showmanyc__9streambuf	streambuf::showmanyc(void)
+000483e0	imbue__9streambufPv	streambuf::imbue(void *)
+000483e8	__12streammarkerP9streambuf	streammarker::streammarker(streambuf *)
+00048408	_._12streammarker	streammarker::~streammarker(void)
+0004843c	delta__12streammarkerR12streammarker	streammarker::delta(streammarker &)
+00048458	delta__12streammarker	streammarker::delta(void)
+00048470	seekmark__9streambufR12streammarkeri	streambuf::seekmark(streammarker &, int)
+00048490	unsave_markers__9streambuf	streambuf::unsave_markers(void)
+000484a8	readable__3ios	ios::readable(void)
+000484c0	writable__3ios	ios::writable(void)
+000484d8	is_open__3ios	ios::is_open(void)
+000484fc	tie__C3ios	ios::tie(void) const
+0004850c	tie__3iosP7ostream	ios::tie(ostream *)
+00048524	fill__C3ios	ios::fill(void) const
+00048534	fill__3iosw	ios::fill(wchar_t)
+0004854c	flags__C3ios	ios::flags(void) const
+0004855c	flags__3iosUl	ios::flags(unsigned long)
+00048574	precision__C3ios	ios::precision(void) const
+00048584	precision__3iosi	ios::precision(int)
+0004859c	setf__3iosUl	ios::setf(unsigned long)
+000485b4	setf__3iosUlUl	ios::setf(unsigned long, unsigned long)
+000485d8	unsetf__3iosUl	ios::unsetf(unsigned long)
+000485f4	width__C3ios	ios::width(void) const
+00048604	width__3iosi	ios::width(int)
+0004861c	_throw_failure__C3ios	ios::_throw_failure(void) const
+00048624	clear__3iosi	ios::clear(int)
+00048640	set__3iosi	ios::set(int)
+00048650	setstate__3iosi	ios::setstate(int)
+00048660	good__C3ios	ios::good(void) const
+00048674	eof__C3ios	ios::eof(void) const
+00048688	fail__C3ios	ios::fail(void) const
+0004869c	bad__C3ios	ios::bad(void) const
+000486b0	rdstate__C3ios	ios::rdstate(void) const
+000486c0	__opPv__C3ios	ios::operator void *(void) const
+000486dc	__nt__C3ios	ios::operator!(void) const
+000486f0	exceptions__C3ios	ios::exceptions(void) const
+00048700	exceptions__3iosi	ios::exceptions(int)
+00048710	rdbuf__C3ios	ios::rdbuf(void) const
+0004871c	rdbuf__3iosP9streambuf	ios::rdbuf(streambuf *)
+0004873c	sync_with_stdio__3ios	ios::sync_with_stdio(void)
+00048750	unset__3ios11state_value	ios::unset(state_value)
+00048764	__Q23ios4Init	ios::Init::Init(void)
+00048770	set_offset__12streammarkeri	streammarker::set_offset(int)
+00048780	saving__12streammarker	streammarker::saving(void)
+0004878c	_vtable__9streambuf	streambuf::_vtable(void)
+0004879c	xchain__9streambuf	streambuf::xchain(void)
+000487ac	gptr__C9streambuf	streambuf::gptr(void) const
+000487c8	pptr__C9streambuf	streambuf::pptr(void) const
+000487d8	egptr__C9streambuf	streambuf::egptr(void) const
+000487f8	epptr__C9streambuf	streambuf::epptr(void) const
+00048808	pbase__C9streambuf	streambuf::pbase(void) const
+00048818	eback__C9streambuf	streambuf::eback(void) const
+00048838	base__C9streambuf	streambuf::base(void) const
+00048848	ebuf__C9streambuf	streambuf::ebuf(void) const
+00048858	blen__C9streambuf	streambuf::blen(void) const
+0004886c	xput_char__9streambufc	streambuf::xput_char(char)
+00048884	xflags__9streambuf	streambuf::xflags(void)
+00048890	xflags__9streambufi	streambuf::xflags(int)
+000488a4	xsetflags__9streambufi	streambuf::xsetflags(int)
+000488b4	xsetflags__9streambufii	streambuf::xsetflags(int, int)
+000488d0	gbump__9streambufi	streambuf::gbump(int)
+000488ec	pbump__9streambufi	streambuf::pbump(int)
+00048900	setp__9streambufPcT1	streambuf::setp(char *, char *)
+0004891c	setg__9streambufPcN21	streambuf::setg(char *, char *, char *)
+00048950	shortbuf__9streambuf	streambuf::shortbuf(void)
+00048960	in_backup__9streambuf	streambuf::in_backup(void)
+00048974	Gbase__9streambuf	streambuf::Gbase(void)
+0004898c	eGptr__9streambuf	streambuf::eGptr(void)
+000489a8	Bbase__9streambuf	streambuf::Bbase(void)
+000489c8	Bptr__9streambuf	streambuf::Bptr(void)
+000489d8	eBptr__9streambuf	streambuf::eBptr(void)
+000489f8	Nbase__9streambuf	streambuf::Nbase(void)
+00048a08	eNptr__9streambuf	streambuf::eNptr(void)
+00048a18	have_backup__9streambuf	streambuf::have_backup(void)
+00048a2c	have_markers__9streambuf	streambuf::have_markers(void)
+00048a40	put_mode__9streambuf	streambuf::put_mode(void)
+00048a54	pubseekoff__9streambufxQ23ios8seek_diri	streambuf::pubseekoff(long long, ios::seek_dir, int)
+00048a7c	pubseekpos__9streambufxi	streambuf::pubseekpos(long long, int)
+00048a9c	unbuffered__9streambuf	streambuf::unbuffered(void)
+00048ab0	linebuffered__9streambuf	streambuf::linebuffered(void)
+00048ac4	unbuffered__9streambufi	streambuf::unbuffered(int)
+00048adc	linebuffered__9streambufi	streambuf::linebuffered(int)
+00048af8	allocate__9streambuf	streambuf::allocate(void)
+00048b24	allocbuf__9streambuf	streambuf::allocbuf(void)
+00048b40	in_avail__9streambuf	streambuf::in_avail(void)
+00048b54	out_waiting__9streambuf	streambuf::out_waiting(void)
+00048b68	sputn__9streambufPCci	streambuf::sputn(char const *, int)
+00048b90	padn__9streambufci	streambuf::padn(char, int)
+00048bb0	sgetn__9streambufPci	streambuf::sgetn(char *, int)
+00048bd0	sputc__9streambufi	streambuf::sputc(int)
+00048bec	sbumpc__9streambuf	streambuf::sbumpc(void)
+00048c04	sgetc__9streambuf	streambuf::sgetc(void)
+00048c1c	snextc__9streambuf	streambuf::snextc(void)
+00048c54	stossc__9streambuf	streambuf::stossc(void)
+00048c6c	is_open__C7filebuf	filebuf::is_open(void) const
+00048c80	fd__C7filebuf	filebuf::fd(void) const
+00048c9c	is_reading__7filebuf	filebuf::is_reading(void)
+00048cd0	cur_ptr__7filebuf	filebuf::cur_ptr(void)
+00048d10	file_ptr__7filebuf	filebuf::file_ptr(void)
+00048d28	init__3iosP9streambufP7ostream	ios::init(streambuf *, ostream *)
+00048d78	__3iosP9streambufP7ostream	ios::ios(streambuf *, ostream *)
+00048dcc	_._3ios	ios::~ios(void)
+00048e10	init__7filebuf	filebuf::init(void)
+00048e28	__7filebuf	filebuf::filebuf(void)
+00048e88	__7filebufi	filebuf::filebuf(int)
+00048eec	__7filebufiPci	filebuf::filebuf(int, char *, int)
+00048f6c	_._7filebuf	filebuf::~filebuf(void)
+00048fc8	open__7filebufPCcii	filebuf::open(char const *, int, int)
+00049078	open__7filebufPCcT1	filebuf::open(char const *, char const *)
+00049098	attach__7filebufi	filebuf::attach(int)
+000490b4	setbuf__7filebufPci	filebuf::setbuf(char *, int)
+000490d4	doallocate__7filebuf	filebuf::doallocate(void)
+000490ec	overflow__7filebufi	filebuf::overflow(int)
+00049108	underflow__7filebuf	filebuf::underflow(void)
+00049120	sync__7filebuf	filebuf::sync(void)
+00049138	seekoff__7filebufxQ23ios8seek_diri	filebuf::seekoff(long long, ios::seek_dir, int)
+00049160	close__7filebuf	filebuf::close(void)
+00049184	sys_read__7filebufPci	filebuf::sys_read(char *, int)
+000491a4	sys_seek__7filebufxQ23ios8seek_dir	filebuf::sys_seek(long long, ios::seek_dir)
+000491c4	sys_write__7filebufPCci	filebuf::sys_write(char const *, int)
+000491e4	sys_stat__7filebufPv	filebuf::sys_stat(void *)
+00049200	sys_close__7filebuf	filebuf::sys_close(void)
+00049218	xsputn__7filebufPCci	filebuf::xsputn(char const *, int)
+00049238	xsgetn__7filebufPci	filebuf::xsgetn(char *, int)
+00049260	__as__22_IO_istream_withassignR7istream	_IO_istream_withassign::operator=(istream &)
+000492c4	__as__22_IO_ostream_withassignR7ostream	_IO_ostream_withassign::operator=(ostream &)
+00049324	__default_terminate	__default_terminate
+00049340	__terminate	__terminate
+00049368	__throw_type_match	__throw_type_match
+0004939c	__empty	__empty
+000493f8	__get_eh_context	__get_eh_context
+0004941c	__get_eh_info	__get_eh_info
+000494cc	__get_dynamic_handler_chain	__get_dynamic_handler_chain
+000494f4	__sjthrow	__sjthrow
+00049604	__sjpopnthrow	__sjpopnthrow
+000496fc	__eh_rtime_match	__eh_rtime_match
+00049754	__get_eh_table_version	__get_eh_table_version
+00049764	__get_eh_table_language	__get_eh_table_language
+00049a08	__unwinding_cleanup	__unwinding_cleanup
+00049d78	__throw	__throw
+00049e38	__rethrow	__rethrow
+00049f04	__pure_virtual	__pure_virtual
+00049f40	__udivdi3	__udivdi3
+0004a060	__umoddi3	__umoddi3
+0004a1f4	terminate__Fv	terminate(void)
+0004a214	__default_unexpected__Fv	__default_unexpected(void)
+0004a230	set_terminate__FPFv_v	set_terminate(void (*)(void))
+0004a258	set_unexpected__FPFv_v	set_unexpected(void (*)(void))
+0004a284	unexpected__Fv	unexpected(void)
+0004a2a4	__cp_exception_info	__cp_exception_info
+0004a2cc	__cp_eh_info	__cp_eh_info
+0004a2f0	__start_cp_handler	__start_cp_handler
+0004a31c	__eh_alloc	__eh_alloc
+0004a354	__eh_free	__eh_free
+0004a380	__cplus_type_matcher	__cplus_type_matcher
+0004a3ec	__cp_push_exception	__cp_push_exception
+0004a460	__cp_pop_exception	__cp_pop_exception
+0004a510	__uncatch_exception	__uncatch_exception
+0004a540	__check_eh_spec	__check_eh_spec
+0004a714	__throw_bad_cast	__throw_bad_cast
+0004a7b8	__throw_bad_typeid	__throw_bad_typeid
+0004a858	uncaught_exception__Fv	uncaught_exception(void)
+0004a88c	what__C9exception	exception::what(void) const
+0004a8b4	__9exception	exception::exception(void)
+0004a8dc	_._9exception	exception::~exception(void)
+0004a914	__13bad_exception	bad_exception::bad_exception(void)
+0004a944	_._13bad_exception	bad_exception::~bad_exception(void)
+0004b404	__register_frame_info	__register_frame_info
+0004b450	__register_frame	__register_frame
+0004b488	__register_frame_info_table	__register_frame_info_table
+0004b4d0	__register_frame_table	__register_frame_table
+0004b508	__deregister_frame_info	__deregister_frame_info
+0004b570	__deregister_frame	__deregister_frame
+0004b5a4	__frame_state_for	__frame_state_for
+0004b824	__builtin_delete	__builtin_delete
+0004b8c4	__builtin_new	__builtin_new
+0004ba24	__builtin_vec_delete	__builtin_vec_delete
+0004bac4	__builtin_vec_new	__builtin_vec_new
+0004bb74	_._9type_info	type_info::~type_info(void)
+0004bbac	__eq__C9type_infoRC9type_info	type_info::operator==(type_info const &) const
+0004bbf0	__rtti_class	__rtti_class
+0004bc3c	__rtti_si	__rtti_si
+0004bc84	__rtti_user	__rtti_user
+0004bcbc	dcast__C16__user_type_infoRC9type_infoiPvPC9type_infoT3	__user_type_info::dcast(type_info const &, int, void *, type_info const *, void *) const
+0004bcf4	dcast__C14__si_type_infoRC9type_infoiPvPC9type_infoT3	__si_type_info::dcast(type_info const &, int, void *, type_info const *, void *) const
+0004bd54	dcast__C17__class_type_infoRC9type_infoiPvPC9type_infoT3	__class_type_info::dcast(type_info const &, int, void *, type_info const *, void *) const
+0004bea4	__9type_infoPCc	type_info::type_info(char const *)
+0004becc	name__C9type_info	type_info::name(void) const
+0004bedc	__ne__C9type_infoRC9type_info	type_info::operator!=(type_info const &) const
+0004bf0c	__8bad_cast	bad_cast::bad_cast(void)
+0004bf3c	_._8bad_cast	bad_cast::~bad_cast(void)
+0004bf7c	__10bad_typeid	bad_typeid::bad_typeid(void)
+0004bfac	_._10bad_typeid	bad_typeid::~bad_typeid(void)
+0004bfec	__16__user_type_infoPCc	__user_type_info::__user_type_info(char const *)
+0004c020	__14__si_type_infoPCcRC16__user_type_info	__si_type_info::__si_type_info(char const *, __user_type_info const &)
+0004c068	__17__class_type_infoPCcPCQ217__class_type_info9base_infoUi	__class_type_info::__class_type_info(char const *, __class_type_info::base_info const *, unsigned int)
+0004c0c4	before__C9type_infoRC9type_info	type_info::before(type_info const &) const
+0004c0f8	__throw_type_match_rtti	__throw_type_match_rtti
+0004c590	__is_pointer__FPv	__is_pointer(void *)
+0004c5e4	__rtti_ptr	__rtti_ptr
+0004c620	__rtti_attr	__rtti_attr
+0004c664	__rtti_func	__rtti_func
+0004c69c	__rtti_ptmf	__rtti_ptmf
+0004c6d4	__rtti_ptmd	__rtti_ptmd
+0004c70c	__rtti_array	__rtti_array
+0004c744	__dynamic_cast	__dynamic_cast
+0004c798	__tfv	void type_info function
+0004c7e0	__tfx	long long type_info function
+0004c828	__tfl	long type_info function
+0004c870	__tfi	int type_info function
+0004c8b8	__tfs	short type_info function
+0004c900	__tfb	bool type_info function
+0004c948	__tfc	char type_info function
+0004c990	__tfw	wchar_t type_info function
+0004c9d8	__tfr	long double type_info function
+0004ca20	__tfd	double type_info function
+0004ca68	__tff	float type_info function
+0004cab0	__tfUi	unsigned int type_info function
+0004caf8	__tfUl	unsigned long type_info function
+0004cb40	__tfUx	unsigned long long type_info function
+0004cb88	__tfUs	unsigned short type_info function
+0004cbd0	__tfUc	unsigned char type_info function
+0004cc18	__tfSc	signed char type_info function
+0004cc60	set_new_handler__FPFv_v	set_new_handler(void (*)(void))
+0004cc88	what__C9bad_alloc	bad_alloc::what(void) const
+0004cca8	__nw__FUiPv	operator new(unsigned int, void *)
+0004ccc4	__vn__FUiPv	operator new [](unsigned int, void *)
+0004cd54	_S_chunk_alloc__t24__default_alloc_template2b1i0UiRi	__default_alloc_template<true, 0>::_S_chunk_alloc(unsigned int, int &)
+0004cf04	clone__Q2t12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0_3Rep	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >::Rep::clone(void)
+0004d124	alloc__t12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0Uib	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >::alloc(unsigned int, bool)
+0004d404	replace__t12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0UiUiUic	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >::replace(unsigned int, unsigned int, unsigned int, char)
+0004d7d4	replace__t12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0UiUiPCcUi	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >::replace(unsigned int, unsigned int, char const *, unsigned int)
+0004dbb4	replace__t12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0UiUiRCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0UiUi	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >::replace(unsigned int, unsigned int, basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &, unsigned int, unsigned int)
+0004dd14	replace__H1ZPCc_t12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0PcT1X00X00_Rt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > & basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >::replace<char const *>(char *, char *, char const *, char const *)
+0004e114	compare__Ct12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0RCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0UiUi	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >::compare(basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &, unsigned int, unsigned int) const
+0004e1bc	__thunk_116__._21cSC3CityToolLevelDirt	virtual function thunk (delta:-116) for cSC3CityToolLevelDirt::~cSC3CityToolLevelDirt(void)
+0004e1d8	__thunk_116_Release__21cSC3CityToolLevelDirt	virtual function thunk (delta:-116) for cSC3CityToolLevelDirt::Release(void)
+0004e1f4	__thunk_116_AddRef__21cSC3CityToolLevelDirt	virtual function thunk (delta:-116) for cSC3CityToolLevelDirt::AddRef(void)
+0004e210	__thunk_112_QueryInterface__21cSC3CityToolLevelDirtUiPPv	virtual function thunk (delta:-112) for cSC3CityToolLevelDirt::QueryInterface(unsigned int, void **)
+0004e22c	__thunk_112_AddRef__21cSC3CityToolLevelDirt	virtual function thunk (delta:-112) for cSC3CityToolLevelDirt::AddRef(void)
+0004e248	__thunk_112_Release__21cSC3CityToolLevelDirt	virtual function thunk (delta:-112) for cSC3CityToolLevelDirt::Release(void)
+0004e264	__thunk_112_Execute__21cSC3CityToolLevelDirt	virtual function thunk (delta:-112) for cSC3CityToolLevelDirt::Execute(void)
+0004e280	__thunk_92__._21cSC3CityToolLowerDirt	virtual function thunk (delta:-92) for cSC3CityToolLowerDirt::~cSC3CityToolLowerDirt(void)
+0004e29c	__thunk_92_Release__21cSC3CityToolLowerDirt	virtual function thunk (delta:-92) for cSC3CityToolLowerDirt::Release(void)
+0004e2b8	__thunk_92_AddRef__21cSC3CityToolLowerDirt	virtual function thunk (delta:-92) for cSC3CityToolLowerDirt::AddRef(void)
+0004e2d4	__thunk_88_QueryInterface__21cSC3CityToolLowerDirtUiPPv	virtual function thunk (delta:-88) for cSC3CityToolLowerDirt::QueryInterface(unsigned int, void **)
+0004e2f0	__thunk_88_AddRef__21cSC3CityToolLowerDirt	virtual function thunk (delta:-88) for cSC3CityToolLowerDirt::AddRef(void)
+0004e30c	__thunk_88_Release__21cSC3CityToolLowerDirt	virtual function thunk (delta:-88) for cSC3CityToolLowerDirt::Release(void)
+0004e328	__thunk_88_Execute__21cSC3CityToolLowerDirt	virtual function thunk (delta:-88) for cSC3CityToolLowerDirt::Execute(void)
+0004e344	__thunk_92__._21cSC3CityToolRaiseDirt	virtual function thunk (delta:-92) for cSC3CityToolRaiseDirt::~cSC3CityToolRaiseDirt(void)
+0004e360	__thunk_92_Release__21cSC3CityToolRaiseDirt	virtual function thunk (delta:-92) for cSC3CityToolRaiseDirt::Release(void)
+0004e37c	__thunk_92_AddRef__21cSC3CityToolRaiseDirt	virtual function thunk (delta:-92) for cSC3CityToolRaiseDirt::AddRef(void)
+0004e398	__thunk_88_QueryInterface__21cSC3CityToolRaiseDirtUiPPv	virtual function thunk (delta:-88) for cSC3CityToolRaiseDirt::QueryInterface(unsigned int, void **)
+0004e3b4	__thunk_88_AddRef__21cSC3CityToolRaiseDirt	virtual function thunk (delta:-88) for cSC3CityToolRaiseDirt::AddRef(void)
+0004e3d0	__thunk_88_Release__21cSC3CityToolRaiseDirt	virtual function thunk (delta:-88) for cSC3CityToolRaiseDirt::Release(void)
+0004e3ec	__thunk_88_Execute__21cSC3CityToolRaiseDirt	virtual function thunk (delta:-88) for cSC3CityToolRaiseDirt::Execute(void)
+0004e408	__thunk_92__._22cSC3CityToolPlaceWater	virtual function thunk (delta:-92) for cSC3CityToolPlaceWater::~cSC3CityToolPlaceWater(void)
+0004e424	__thunk_92_Release__22cSC3CityToolPlaceWater	virtual function thunk (delta:-92) for cSC3CityToolPlaceWater::Release(void)
+0004e440	__thunk_92_AddRef__22cSC3CityToolPlaceWater	virtual function thunk (delta:-92) for cSC3CityToolPlaceWater::AddRef(void)
+0004e45c	__thunk_88_QueryInterface__22cSC3CityToolPlaceWaterUiPPv	virtual function thunk (delta:-88) for cSC3CityToolPlaceWater::QueryInterface(unsigned int, void **)
+0004e478	__thunk_88_AddRef__22cSC3CityToolPlaceWater	virtual function thunk (delta:-88) for cSC3CityToolPlaceWater::AddRef(void)
+0004e494	__thunk_88_Release__22cSC3CityToolPlaceWater	virtual function thunk (delta:-88) for cSC3CityToolPlaceWater::Release(void)
+0004e4b0	__thunk_88_Execute__22cSC3CityToolPlaceWater	virtual function thunk (delta:-88) for cSC3CityToolPlaceWater::Execute(void)
+0004e4d4	clear__t10_List_base2Zt4pair2ZPFRC14cSC3CityBoundsUiiPv_bZPvZt9allocator1Zt4pair2ZPFRC14cSC3CityBoundsUiiPv_bZPv	_List_base<pair<bool (*)(cSC3CityBounds const &, unsigned int, int, void *), void *>, allocator<pair<bool (*)(cSC3CityBounds const &, unsigned int, int, void *), void *> > >::clear(void)
+0004e550	__thunk_4_QueryInterface__11cSC3DirtBagUiPPv	virtual function thunk (delta:-4) for cSC3DirtBag::QueryInterface(unsigned int, void **)
+0004e56c	__thunk_4_AddRef__11cSC3DirtBag	virtual function thunk (delta:-4) for cSC3DirtBag::AddRef(void)
+0004e588	__thunk_4_Release__11cSC3DirtBag	virtual function thunk (delta:-4) for cSC3DirtBag::Release(void)
+0004e5a4	__thunk_4__._11cSC3DirtBag	virtual function thunk (delta:-4) for cSC3DirtBag::~cSC3DirtBag(void)
+0004e5c0	__thunk_32_QueryInterface__11cSC3DirtBagUiPPv	virtual function thunk (delta:-32) for cSC3DirtBag::QueryInterface(unsigned int, void **)
+0004e5dc	__thunk_32_AddRef__11cSC3DirtBag	virtual function thunk (delta:-32) for cSC3DirtBag::AddRef(void)
+0004e5f8	__thunk_32_Release__11cSC3DirtBag	virtual function thunk (delta:-32) for cSC3DirtBag::Release(void)
+0004e614	__thunk_32_CreateMapSprite__11cSC3DirtBagUiUiPPv	virtual function thunk (delta:-32) for cSC3DirtBag::CreateMapSprite(unsigned int, unsigned int, void **)
+0004e630	__thunk_32_GetMapSpriteCount__11cSC3DirtBag	virtual function thunk (delta:-32) for cSC3DirtBag::GetMapSpriteCount(void)
+0004e64c	__thunk_32_GetSpriteIdFromIndex__11cSC3DirtBagUiRUi	virtual function thunk (delta:-32) for cSC3DirtBag::GetSpriteIdFromIndex(unsigned int, unsigned int &)
+0004e674	_._t10cRZCellMap1Zb	cRZCellMap<bool>::~cRZCellMap(void)
+0004e6f0	SetAllCells__t10cRZCellMap1ZbRCb	cRZCellMap<bool>::SetAllCells(bool const &)
+0004e764	_._7cRZLock	cRZLock::~cRZLock(void)
+0004e7c4	GetDepthFromColorType__18cGZBufferColorTypeQ218cGZBufferColorType10eColorType	cGZBufferColorType::GetDepthFromColorType(cGZBufferColorType::eColorType)
+0004e864	_S_oom_malloc__t23__malloc_alloc_template1i0Ui	__malloc_alloc_template<0>::_S_oom_malloc(unsigned int)
+0004e8e4	_S_refill__t24__default_alloc_template2b1i0Ui	__default_alloc_template<true, 0>::_S_refill(unsigned int)
+0004e974	__t10cRZCellMap1ZUcUiUiRCUc	cRZCellMap<unsigned char>::cRZCellMap(unsigned int, unsigned int, unsigned char const &)
+0004ea0c	CellCountX__Ct10cRZCellMap1ZUc	cRZCellMap<unsigned char>::CellCountX(void) const
+0004ea18	CellCountY__Ct10cRZCellMap1ZUc	cRZCellMap<unsigned char>::CellCountY(void) const
+0004ea28	SetValue__t10cRZCellMap1ZUcUiUiRCUc	cRZCellMap<unsigned char>::SetValue(unsigned int, unsigned int, unsigned char const &)
+0004ea54	SetAllCells__t10cRZCellMap1ZUcRCUc	cRZCellMap<unsigned char>::SetAllCells(unsigned char const &)
+0004eaa4	GetValue__Ct10cRZCellMap1ZUcUiUiRUc	cRZCellMap<unsigned char>::GetValue(unsigned int, unsigned int, unsigned char &) const
+0004ead4	SetValue__t10cRZCellMap1ZUcUiUiUiUiRCUc	cRZCellMap<unsigned char>::SetValue(unsigned int, unsigned int, unsigned int, unsigned int, unsigned char const &)
+0004eb44	_._t10cRZCellMap1ZUc	cRZCellMap<unsigned char>::~cRZCellMap(void)
+0004ebb8	InBounds__Ct10cRZCellMap1ZUcUiUi	cRZCellMap<unsigned char>::InBounds(unsigned int, unsigned int) const
+0004ebd8	ValidCellRect__Ct10cRZCellMap1ZUcUiUiUiUi	cRZCellMap<unsigned char>::ValidCellRect(unsigned int, unsigned int, unsigned int, unsigned int) const
+0004ebf4	InBounds__Ct10cRZCellMap1ZUcUiUiUiUi	cRZCellMap<unsigned char>::InBounds(unsigned int, unsigned int, unsigned int, unsigned int) const
+0004ec38	Init__18FastFixedAllocatorUi	FastFixedAllocator::Init(unsigned int)
+0004ec64	grow__18FastFixedAllocator	FastFixedAllocator::grow(void)
+0004ecd4	GetLightStep__27cSC3DirtClodColorLightTable	cSC3DirtClodColorLightTable::GetLightStep(void)
+0004ed30	_._16cSC3DirtClodLand	cSC3DirtClodLand::~cSC3DirtClodLand(void)
+0004ed94	_._17cSC3DirtClodWater	cSC3DirtClodWater::~cSC3DirtClodWater(void)
+0004edf8	_._17cSC3DirtClodShore	cSC3DirtClodShore::~cSC3DirtClodShore(void)
+0004ee5c	_._18cSC3DirtClodCursor	cSC3DirtClodCursor::~cSC3DirtClodCursor(void)
+0004eec0	_._16cSC3DirtClodEdge	cSC3DirtClodEdge::~cSC3DirtClodEdge(void)
+0004ef24	Bezier2D4Controls__H1Z8cRZPoint_RX01N30PX01i_v	void Bezier2D4Controls<cRZPoint>(cRZPoint &, cRZPoint &, cRZPoint &, cRZPoint &, cRZPoint *, int)
+0004f040	GetDirectorID__C15cSDBCOMDirector	cSDBCOMDirector::GetDirectorID(void) const
+0004f054	AppRegister__15cSDBCOMDirectorP12cIGZRegistry	cSDBCOMDirector::AppRegister(cIGZRegistry *)
+0004f5f0	_._15cSDBCOMDirector	cSDBCOMDirector::~cSDBCOMDirector(void)
+0004f634	CreatecSC3DirtBag__15cSDBCOMDirector	cSDBCOMDirector::CreatecSC3DirtBag(void)
+0004f6a4	CreatecSC3DirtCommandFactory__15cSDBCOMDirector	cSDBCOMDirector::CreatecSC3DirtCommandFactory(void)
+0004f724	CreatecSC3DirtGenerator__15cSDBCOMDirector	cSDBCOMDirector::CreatecSC3DirtGenerator(void)
+0004f794	CreatecSC3NeighborMapGen__15cSDBCOMDirector	cSDBCOMDirector::CreatecSC3NeighborMapGen(void)
+0004f804	_M_erase__t8_Rb_tree5Zt4pair2ZCUiZUiZt4pair2ZCt4pair2ZCUiZUiZPFv_P11cIGZUnknownZt10_Select1st1Zt4pair2ZCt4pair2ZCUiZUiZPFv_P11cIGZUnknownZt4less1Zt4pair2ZCUiZUiZt9allocator1ZPFv_P11cIGZUnknownPt13_Rb_tree_node1Zt4pair2ZCt4pair2ZCUiZUiZPFv_P11cIGZUnknown	_Rb_tree<pair<unsigned int const, unsigned int>, pair<pair<unsigned int const, unsigned int> const, cIGZUnknown *(*)(void)>, _Select1st<pair<pair<unsigned int const, unsigned int> const, cIGZUnknown *(*)(void)> >, less<pair<unsigned int const, unsigned int> >, allocator<cIGZUnknown *(*)(void)> >::_M_erase(_Rb_tree_node<pair<pair<unsigned int const, unsigned int> const, cIGZUnknown *(*)(void)> > *)
+0004f884	_M_insert_aux__t6vector2ZP17cRZCOMDllDirectorZt9allocator1ZP17cRZCOMDllDirectorPP17cRZCOMDllDirectorRCP17cRZCOMDllDirector	vector<cRZCOMDllDirector *, allocator<cRZCOMDllDirector *> >::_M_insert_aux(cRZCOMDllDirector **, cRZCOMDllDirector *const &)
+0004fbb4	_M_insert__t8_Rb_tree5Zt4pair2ZCUiZUiZt4pair2ZCt4pair2ZCUiZUiZPFv_P11cIGZUnknownZt10_Select1st1Zt4pair2ZCt4pair2ZCUiZUiZPFv_P11cIGZUnknownZt4less1Zt4pair2ZCUiZUiZt9allocator1ZPFv_P11cIGZUnknownP18_Rb_tree_node_baseT1RCt4pair2ZCt4pair2ZCUiZUiZPFv_P11cIGZUnknown	_Rb_tree<pair<unsigned int const, unsigned int>, pair<pair<unsigned int const, unsigned int> const, cIGZUnknown *(*)(void)>, _Select1st<pair<pair<unsigned int const, unsigned int> const, cIGZUnknown *(*)(void)> >, less<pair<unsigned int const, unsigned int> >, allocator<cIGZUnknown *(*)(void)> >::_M_insert(_Rb_tree_node_base *, _Rb_tree_node_base *, pair<pair<unsigned int const, unsigned int> const, cIGZUnknown *(*)(void)> const &)
+0004ffd4	insert_unique__t8_Rb_tree5Zt4pair2ZCUiZUiZt4pair2ZCt4pair2ZCUiZUiZPFv_P11cIGZUnknownZt10_Select1st1Zt4pair2ZCt4pair2ZCUiZUiZPFv_P11cIGZUnknownZt4less1Zt4pair2ZCUiZUiZt9allocator1ZPFv_P11cIGZUnknownRCt4pair2ZCt4pair2ZCUiZUiZPFv_P11cIGZUnknown	_Rb_tree<pair<unsigned int const, unsigned int>, pair<pair<unsigned int const, unsigned int> const, cIGZUnknown *(*)(void)>, _Select1st<pair<pair<unsigned int const, unsigned int> const, cIGZUnknown *(*)(void)> >, less<pair<unsigned int const, unsigned int> >, allocator<cIGZUnknown *(*)(void)> >::insert_unique(pair<pair<unsigned int const, unsigned int> const, cIGZUnknown *(*)(void)> const &)
+0005012c	__thunk_4_QueryInterface__17cRZCOMDllDirectorUiPPv	virtual function thunk (delta:-4) for cRZCOMDllDirector::QueryInterface(unsigned int, void **)
+00050148	__thunk_4_AddRef__17cRZCOMDllDirector	virtual function thunk (delta:-4) for cRZCOMDllDirector::AddRef(void)
+00050164	__thunk_4_Release__17cRZCOMDllDirector	virtual function thunk (delta:-4) for cRZCOMDllDirector::Release(void)
+00050180	__thunk_4_PreFrameWorkInit__17cRZCOMDllDirector	virtual function thunk (delta:-4) for cRZCOMDllDirector::PreFrameWorkInit(void)
+0005019c	__thunk_4_PreAppInit__17cRZCOMDllDirector	virtual function thunk (delta:-4) for cRZCOMDllDirector::PreAppInit(void)
+000501b8	__thunk_4_PostAppInit__17cRZCOMDllDirector	virtual function thunk (delta:-4) for cRZCOMDllDirector::PostAppInit(void)
+000501d4	__thunk_4_PreAppShutdown__17cRZCOMDllDirector	virtual function thunk (delta:-4) for cRZCOMDllDirector::PreAppShutdown(void)
+000501f0	__thunk_4_PostAppShutdown__17cRZCOMDllDirector	virtual function thunk (delta:-4) for cRZCOMDllDirector::PostAppShutdown(void)
+0005020c	__thunk_4_PostSystemServiceShutdown__17cRZCOMDllDirector	virtual function thunk (delta:-4) for cRZCOMDllDirector::PostSystemServiceShutdown(void)
+00050228	__thunk_4_AbortiveQuit__17cRZCOMDllDirector	virtual function thunk (delta:-4) for cRZCOMDllDirector::AbortiveQuit(void)
+00050244	__thunk_4_OnInstall__17cRZCOMDllDirector	virtual function thunk (delta:-4) for cRZCOMDllDirector::OnInstall(void)
+00050264	_._t3map4Zt4pair2ZCUiZUiZPFv_P11cIGZUnknownZt4less1Zt4pair2ZCUiZUiZt9allocator1ZPFv_P11cIGZUnknown	map<pair<unsigned int const, unsigned int>, cIGZUnknown *(*)(void), less<pair<unsigned int const, unsigned int> >, allocator<cIGZUnknown *(*)(void)> >::~map(void)
+00050310	_._11logic_error	logic_error::~logic_error(void)
+000503c0	__11logic_errorRC11logic_error	logic_error::logic_error(logic_error const &)
+0005041c	__tf11logic_error	logic_error type_info function
+00050454	_._12domain_error	domain_error::~domain_error(void)
+00050470	__tf12domain_error	domain_error type_info function
+000504c8	_._16invalid_argument	invalid_argument::~invalid_argument(void)
+000504e4	__tf16invalid_argument	invalid_argument type_info function
+0005053c	_._12length_error	length_error::~length_error(void)
+00050558	__tf12length_error	length_error type_info function
+000505b0	_._12out_of_range	out_of_range::~out_of_range(void)
+000505cc	__tf12out_of_range	out_of_range type_info function
+00050630	_._13runtime_error	runtime_error::~runtime_error(void)
+000506d4	__tf13runtime_error	runtime_error type_info function
+0005070c	_._11range_error	range_error::~range_error(void)
+00050728	__tf11range_error	range_error type_info function
+00050780	_._14overflow_error	overflow_error::~overflow_error(void)
+0005079c	__tf14overflow_error	overflow_error type_info function
+000507f4	_._15underflow_error	underflow_error::~underflow_error(void)
+00050810	__tf15underflow_error	underflow_error type_info function
+00050868	__thunk_4__._22_IO_ostream_withassign	virtual function thunk (delta:-4) for _IO_ostream_withassign::~_IO_ostream_withassign(void)
+00050874	__thunk_8__._22_IO_istream_withassign	virtual function thunk (delta:-8) for _IO_istream_withassign::~_IO_istream_withassign(void)
+00050880	__thunk_12__._8iostream	virtual function thunk (delta:-12) for iostream::~iostream(void)
+0005088c	__thunk_8__._7istream	virtual function thunk (delta:-8) for istream::~istream(void)
+00050898	__thunk_4__._7ostream	virtual function thunk (delta:-4) for ostream::~ostream(void)
+000508a4	_._8iostream	iostream::~iostream(void)
+00050908	_._7ostream	ostream::~ostream(void)
+0005095c	__tf7ostream	ostream type_info function
+00050994	_._7istream	istream::~istream(void)
+000509e8	__tf7istream	istream type_info function
+00050a20	__tf8iostream	iostream type_info function
+00050a9c	_._22_IO_istream_withassign	_IO_istream_withassign::~_IO_istream_withassign(void)
+00050af8	__tf22_IO_istream_withassign	_IO_istream_withassign type_info function
+00050b50	_._22_IO_ostream_withassign	_IO_ostream_withassign::~_IO_ostream_withassign(void)
+00050bac	__tf22_IO_ostream_withassign	_IO_ostream_withassign type_info function
+00050c04	__tf3ios	ios type_info function
+00050c3c	__tf9streambuf	streambuf type_info function
+00050c74	__tf7filebuf	filebuf type_info function
+00050ccc	__tf11_ios_fields	_ios_fields type_info function
+00050cf8	__tf8_IO_FILE	_IO_FILE type_info function
+00050d28	__tf9exception	exception type_info function
+00050d68	__tf13bad_exception	bad_exception type_info function
+00050dd4	__tf9type_info	type_info type_info function
+00050e14	__tf8bad_cast	bad_cast type_info function
+00050e60	__tf10bad_typeid	bad_typeid type_info function
+00050eac	_._16__user_type_info	__user_type_info::~__user_type_info(void)
+00050edc	__tf16__user_type_info	__user_type_info type_info function
+00050f48	_._14__si_type_info	__si_type_info::~__si_type_info(void)
+00050f78	__tf14__si_type_info	__si_type_info type_info function
+00051014	_._17__class_type_info	__class_type_info::~__class_type_info(void)
+00051044	__tf17__class_type_info	__class_type_info type_info function
+000510e0	_._19__pointer_type_info	__pointer_type_info::~__pointer_type_info(void)
+00051110	__tf19__pointer_type_info	__pointer_type_info type_info function
+0005115c	_._16__attr_type_info	__attr_type_info::~__attr_type_info(void)
+0005118c	__tf16__attr_type_info	__attr_type_info type_info function
+000511d8	_._19__builtin_type_info	__builtin_type_info::~__builtin_type_info(void)
+00051208	__tf19__builtin_type_info	__builtin_type_info type_info function
+00051254	_._16__func_type_info	__func_type_info::~__func_type_info(void)
+00051284	__tf16__func_type_info	__func_type_info type_info function
+000512d0	_._16__ptmf_type_info	__ptmf_type_info::~__ptmf_type_info(void)
+00051300	__tf16__ptmf_type_info	__ptmf_type_info type_info function
+0005134c	_._16__ptmd_type_info	__ptmd_type_info::~__ptmd_type_info(void)
+0005137c	__tf16__ptmd_type_info	__ptmd_type_info type_info function
+000513c8	_._17__array_type_info	__array_type_info::~__array_type_info(void)
+000513f8	__tf17__array_type_info	__array_type_info type_info function
+00051444	_._9bad_alloc	bad_alloc::~bad_alloc(void)
+0005147c	__tf9bad_alloc	bad_alloc type_info function
+000514c4	_fini	_fini

@@ -1,0 +1,317 @@
+rva	demangled	mangled	source	method
+001144	virtual function thunk (delta:-28) for cSC3AuraLayer::GetMayorRating(void)	__thunk_28_GetMayorRating__13cSC3AuraLayer	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.14cISC3AuraLayer
+00114b	virtual function thunk (delta:-32) for cSC3AuraLayer::GetLayerType(void)	__thunk_32_GetLayerType__13cSC3AuraLayer	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.14cISC3CityLayer
+001151	virtual function thunk (delta:-36) for cSC3AuraLayer::TypeId(void) const	__thunk_36_TypeId__C13cSC3AuraLayer	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.14cISC3CityAgent
+001154	virtual function thunk (delta:-36) for cSC3AuraLayer::SetAgentType(cISC3CityAgentType *)	__thunk_36_SetAgentType__13cSC3AuraLayerP18cISC3CityAgentType	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.14cISC3CityAgent
+001159	virtual function thunk (delta:-36) for cSC3AuraLayer::IsAgentLocking(void)	__thunk_36_IsAgentLocking__13cSC3AuraLayer	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.14cISC3CityAgent
+00115c	cSC3AuraLayer::Init(cISC3City *, signed char const &)	Init__13cSC3AuraLayerP9cISC3CityRCSc	libSimMisc.so	vtable:__vt_13cSC3AuraLayer
+00116c	cSC3AuraLayer::GetValueSint32(unsigned int, unsigned int, int &) const	GetValueSint32__C13cSC3AuraLayerUiUiRi	libSimMisc.so	tokens:8.1
+00119b	cSC3AuraLayer::SetAllCells(signed char const &)	SetAllCells__13cSC3AuraLayerRCSc	libSimMisc.so	vtable:__vt_13cSC3AuraLayer
+001236	cSC3AuraLayer::SerialWrite(cIGZDBSerialRecord &) const	SerialWrite__C13cSC3AuraLayerR18cIGZDBSerialRecord	libSimMisc.so	vtable:__vt_13cSC3AuraLayer
+001245	virtual function thunk (delta:-40) for cSC3AuraLayer::OccupantMoved(unsigned int, cISC3Occupant *, cSC3CityCoord const &)	__thunk_40_OccupantMoved__13cSC3AuraLayerUiP13cISC3OccupantRC13cSC3CityCoord	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.23cISC3CityChangeReceiver
+00124a	virtual function thunk (delta:-40) for cSC3AuraLayer::CellChangedAll(unsigned int)	__thunk_40_CellChangedAll__13cSC3AuraLayerUi	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.23cISC3CityChangeReceiver
+001254	cSC3AuraLayer::~cSC3AuraLayer(void)	_._13cSC3AuraLayer	libSimMisc.so	vtable:__vt_13cSC3AuraLayer
+0012dc	cSC3CityCellMapSized<signed char>::QueryInterface(unsigned int, void **)	QueryInterface__t20cSC3CityCellMapSized1ZScUiPPv	libSimMisc.so	vtable:__vt_t20cSC3CityCellMapSized1ZSc
+00130b	cSC3CityCellMapSized<short>::QueryInterface(unsigned int, void **)	QueryInterface__t20cSC3CityCellMapSized1ZsUiPPv	libSimMisc.so	tokens:15.3
+00133a	virtual function thunk (delta:-32) for cSC3AuraLayer::StaticInit(cISC3CityDefinition *)	__thunk_32_StaticInit__13cSC3AuraLayerP19cISC3CityDefinition	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.14cISC3CityLayer
+0021e9	virtual function thunk (delta:-32) for cSC3AuraLayer::StaticShutdown(void)	__thunk_32_StaticShutdown__13cSC3AuraLayer	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.14cISC3CityLayer
+0028f1	virtual function thunk (delta:-32) for cSC3AuraLayer::Save(cISC3City *, cIGZDBSegment *)	__thunk_32_Save__13cSC3AuraLayerP9cISC3CityP13cIGZDBSegment	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.14cISC3CityLayer
+002a1d	cSC3AuraLayer::Shutdown(void)	Shutdown__13cSC3AuraLayer	libSimMisc.so	vtable:__vt_13cSC3AuraLayer
+002af4	virtual function thunk (delta:-32) for cSC3AuraLayer::SimulationBegin(void)	__thunk_32_SimulationBegin__13cSC3AuraLayer	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.14cISC3CityLayer
+002b45	virtual function thunk (delta:-32) for cSC3AuraLayer::SimulationEnd(void)	__thunk_32_SimulationEnd__13cSC3AuraLayer	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.14cISC3CityLayer
+002bcb	cSC3AuraLayer::Simulate(int)	Simulate__13cSC3AuraLayeri	libSimMisc.so	callee
+002c4f	cSC3AuraLayer::QueryInterface(unsigned int, void **)	QueryInterface__13cSC3AuraLayerUiPPv	libSimMisc.so	tokens:27.6
+002cd2	virtual function thunk (delta:-32) for cSC3AuraLayer::GetManipulator(cISC3CityAgentType const &, cISC3CityLayerManipulator **, int &)	__thunk_32_GetManipulator__13cSC3AuraLayerRC18cISC3CityAgentTypePP25cISC3CityLayerManipulatorRi	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.14cISC3CityLayer
+002cde	virtual function thunk (delta:-36) for cSC3AuraLayer::Simulate(int)	__thunk_36_Simulate__13cSC3AuraLayeri	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.14cISC3CityAgent
+002d07	virtual function thunk (delta:-36) for cSC3AuraLayer::MinimumExecutionInterval(void)	__thunk_36_MinimumExecutionInterval__13cSC3AuraLayer	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.14cISC3CityAgent
+002d0b	cSC3AuraLayer::doDailySim(void)	doDailySim__13cSC3AuraLayer	libSimMisc.so	tokens:42.4
+00314a	cSC3AuraLayer::OccupantInserted(unsigned int, cISC3Occupant *)	OccupantInserted__13cSC3AuraLayerUiP13cISC3Occupant	libSimMisc.so	vtable-thunk:__vt_13cSC3AuraLayer.23cISC3CityChangeReceiver
+003385	virtual function thunk (delta:-40) for cSC3AuraLayer::OccupantInserted(unsigned int, cISC3Occupant *)	__thunk_40_OccupantInserted__13cSC3AuraLayerUiP13cISC3Occupant	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.23cISC3CityChangeReceiver
+003396	virtual function thunk (delta:-40) for cSC3AuraLayer::OccupantRemoved(unsigned int, cISC3Occupant *)	__thunk_40_OccupantRemoved__13cSC3AuraLayerUiP13cISC3Occupant	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.23cISC3CityChangeReceiver
+0033a7	virtual function thunk (delta:-40) for cSC3AuraLayer::OccupantChanged(unsigned int, cISC3Occupant *, int, void *)	__thunk_40_OccupantChanged__13cSC3AuraLayerUiP13cISC3OccupantiPv	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.23cISC3CityChangeReceiver
+003d42	cSC3AuraLayer::Release(void)	Release__13cSC3AuraLayer	libSimMisc.so	vtable-thunk:__vt_13cSC3AuraLayer.14cISC3AuraLayer
+003d72	cSC3CityCellMapSized<signed char>::Init(cISC3City *, signed char const &)	Init__t20cSC3CityCellMapSized1ZScP9cISC3CityRCSc	libSimMisc.so	vtable:__vt_t20cSC3CityCellMapSized1ZSc
+003def	cSC3AuraLayer::CellCountX(void) const	CellCountX__C13cSC3AuraLayer	libSimMisc.so	vtable:__vt_13cSC3AuraLayer
+003df3	cSC3AuraLayer::CellCountZ(void) const	CellCountZ__C13cSC3AuraLayer	libSimMisc.so	vtable:__vt_13cSC3AuraLayer
+003df7	cSC3CityCellMapSized<signed char>::GetValueSint32(unsigned int, unsigned int, int &) const	GetValueSint32__Ct20cSC3CityCellMapSized1ZScUiUiRi	libSimMisc.so	vtable:__vt_t20cSC3CityCellMapSized1ZSc
+003e20	cSC3AuraLayer::GetValue(unsigned int, unsigned int, signed char &) const	GetValue__C13cSC3AuraLayerUiUiRSc	libSimMisc.so	vtable:__vt_13cSC3AuraLayer
+003eab	cSC3AuraLayer::SerialRead(cIGZDBSerialRecord &)	SerialRead__13cSC3AuraLayerR18cIGZDBSerialRecord	libSimMisc.so	vtable:__vt_13cSC3AuraLayer
+003ec1	cSC3AuraLayer::AddRef(void)	AddRef__13cSC3AuraLayer	libSimMisc.so	vtable-thunk:__vt_13cSC3AuraLayer.14cISC3AuraLayer
+003ed8	cSC3CityCellMapSized<short>::Init(cISC3City *, short const &)	Init__t20cSC3CityCellMapSized1ZsP9cISC3CityRCs	libSimMisc.so	vtable:__vt_t20cSC3CityCellMapSized1Zs
+003f55	cSC3CityCellMapSized<short>::Shutdown(void)	Shutdown__t20cSC3CityCellMapSized1Zs	libSimMisc.so	vtable:__vt_t20cSC3CityCellMapSized1Zs
+003f77	cSC3CityCellMapSized<short>::GetValueSint32(unsigned int, unsigned int, int &) const	GetValueSint32__Ct20cSC3CityCellMapSized1ZsUiUiRi	libSimMisc.so	vtable:__vt_t20cSC3CityCellMapSized1Zs
+003fa0	cSC3CityCellMapSized<short>::GetValue(unsigned int, unsigned int, short &) const	GetValue__Ct20cSC3CityCellMapSized1ZsUiUiRs	libSimMisc.so	vtable:__vt_t20cSC3CityCellMapSized1Zs
+004022	cSC3CityCellMapSized<short>::SetAllCells(short const &)	SetAllCells__t20cSC3CityCellMapSized1ZsRCs	libSimMisc.so	vtable:__vt_t20cSC3CityCellMapSized1Zs
+00405b	cSC3AuraLayer::ValidRect(unsigned int, unsigned int, unsigned int, unsigned int) const	ValidRect__C13cSC3AuraLayerUiUiUiUi	libSimMisc.so	vtable:__vt_13cSC3AuraLayer
+004079	cSC3CityCellMapSized<short>::SerialRead(cIGZDBSerialRecord &)	SerialRead__t20cSC3CityCellMapSized1ZsR18cIGZDBSerialRecord	libSimMisc.so	vtable:__vt_t20cSC3CityCellMapSized1Zs
+004088	cSC3CityCellMapSized<short>::SerialWrite(cIGZDBSerialRecord &) const	SerialWrite__Ct20cSC3CityCellMapSized1ZsR18cIGZDBSerialRecord	libSimMisc.so	vtable:__vt_t20cSC3CityCellMapSized1Zs
+004259	cSC3CityCellMapSized<signed char>::~cSC3CityCellMapSized(void)	_._t20cSC3CityCellMapSized1ZSc	libSimMisc.so	vtable:__vt_t20cSC3CityCellMapSized1ZSc
+004276	cSC3CityCellMapSized<short>::~cSC3CityCellMapSized(void)	_._t20cSC3CityCellMapSized1Zs	libSimMisc.so	vtable:__vt_t20cSC3CityCellMapSized1Zs
+00445c	cSC3CityCellMapSized<signed char>::SerialRead(cIGZDBSerialRecord &)	SerialRead__t20cSC3CityCellMapSized1ZScR18cIGZDBSerialRecord	libSimMisc.so	vtable-thunk:__vt_t20cSC3CityCellMapSized1ZSc
+004491	cSC3CityCellMapSized<signed char>::SerialWrite(cIGZDBSerialRecord &) const	SerialWrite__Ct20cSC3CityCellMapSized1ZScR18cIGZDBSerialRecord	libSimMisc.so	vtable-thunk:__vt_t20cSC3CityCellMapSized1ZSc
+004a7d	virtual function thunk (delta:-28) for cSC3AuraLayer::QueryInterface(unsigned int, void **)	__thunk_28_QueryInterface__13cSC3AuraLayerUiPPv	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.14cISC3AuraLayer
+004a85	virtual function thunk (delta:-28) for cSC3AuraLayer::AddRef(void)	__thunk_28_AddRef__13cSC3AuraLayer	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.14cISC3AuraLayer
+004a8d	virtual function thunk (delta:-28) for cSC3AuraLayer::Release(void)	__thunk_28_Release__13cSC3AuraLayer	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.14cISC3AuraLayer
+004a95	virtual function thunk (delta:-28) for cSC3AuraLayer::CellCountX(void) const	__thunk_28_CellCountX__C13cSC3AuraLayer	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.14cISC3AuraLayer
+004a9d	virtual function thunk (delta:-28) for cSC3AuraLayer::CellCountZ(void) const	__thunk_28_CellCountZ__C13cSC3AuraLayer	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.14cISC3AuraLayer
+004aa5	virtual function thunk (delta:-28) for cSC3AuraLayer::GetValueSint32(unsigned int, unsigned int, int &) const	__thunk_28_GetValueSint32__C13cSC3AuraLayerUiUiRi	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.14cISC3AuraLayer
+004abd	virtual function thunk (delta:-28) for cSC3AuraLayer::ValidRect(unsigned int, unsigned int, unsigned int, unsigned int) const	__thunk_28_ValidRect__C13cSC3AuraLayerUiUiUiUi	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.14cISC3AuraLayer
+004ac5	virtual function thunk (delta:-28) for cSC3AuraLayer::SerialRead(cIGZDBSerialRecord &)	__thunk_28_SerialRead__13cSC3AuraLayerR18cIGZDBSerialRecord	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.14cISC3AuraLayer
+004acd	virtual function thunk (delta:-28) for cSC3AuraLayer::SerialWrite(cIGZDBSerialRecord &) const	__thunk_28_SerialWrite__C13cSC3AuraLayerR18cIGZDBSerialRecord	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.14cISC3AuraLayer
+004ad5	virtual function thunk (delta:-28) for cSC3AuraLayer::Init(cISC3City *, signed char const &)	__thunk_28_Init__13cSC3AuraLayerP9cISC3CityRCSc	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.14cISC3AuraLayer
+004add	virtual function thunk (delta:-28) for cSC3AuraLayer::Shutdown(void)	__thunk_28_Shutdown__13cSC3AuraLayer	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.14cISC3AuraLayer
+004ae5	virtual function thunk (delta:-28) for cSC3AuraLayer::GetValue(unsigned int, unsigned int, signed char &) const	__thunk_28_GetValue__C13cSC3AuraLayerUiUiRSc	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.14cISC3AuraLayer
+004af5	virtual function thunk (delta:-28) for cSC3AuraLayer::SetAllCells(signed char const &)	__thunk_28_SetAllCells__13cSC3AuraLayerRCSc	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.14cISC3AuraLayer
+004b05	virtual function thunk (delta:-32) for cSC3AuraLayer::QueryInterface(unsigned int, void **)	__thunk_32_QueryInterface__13cSC3AuraLayerUiPPv	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.14cISC3CityLayer
+004b0d	virtual function thunk (delta:-32) for cSC3AuraLayer::AddRef(void)	__thunk_32_AddRef__13cSC3AuraLayer	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.14cISC3CityLayer
+004b15	virtual function thunk (delta:-32) for cSC3AuraLayer::Release(void)	__thunk_32_Release__13cSC3AuraLayer	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.14cISC3CityLayer
+004b1d	virtual function thunk (delta:-32) for cSC3AuraLayer::Shutdown(void)	__thunk_32_Shutdown__13cSC3AuraLayer	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.14cISC3CityLayer
+004b25	virtual function thunk (delta:-36) for cSC3AuraLayer::QueryInterface(unsigned int, void **)	__thunk_36_QueryInterface__13cSC3AuraLayerUiPPv	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.14cISC3CityAgent
+004b2d	virtual function thunk (delta:-36) for cSC3AuraLayer::AddRef(void)	__thunk_36_AddRef__13cSC3AuraLayer	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.14cISC3CityAgent
+004b35	virtual function thunk (delta:-36) for cSC3AuraLayer::Release(void)	__thunk_36_Release__13cSC3AuraLayer	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.14cISC3CityAgent
+004b3d	virtual function thunk (delta:-36) for cSC3AuraLayer::DebugClassTag(cIGZString &)	__thunk_36_DebugClassTag__13cSC3AuraLayerR10cIGZString	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.14cISC3CityAgent
+004b45	virtual function thunk (delta:-40) for cSC3AuraLayer::QueryInterface(unsigned int, void **)	__thunk_40_QueryInterface__13cSC3AuraLayerUiPPv	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.23cISC3CityChangeReceiver
+004b4d	virtual function thunk (delta:-40) for cSC3AuraLayer::AddRef(void)	__thunk_40_AddRef__13cSC3AuraLayer	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.23cISC3CityChangeReceiver
+004b55	virtual function thunk (delta:-40) for cSC3AuraLayer::Release(void)	__thunk_40_Release__13cSC3AuraLayer	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.23cISC3CityChangeReceiver
+004b5d	virtual function thunk (delta:-44) for cSC3AuraLayer::QueryInterface(unsigned int, void **)	__thunk_44_QueryInterface__13cSC3AuraLayerUiPPv	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.21cISC3MapSpriteFactory
+004b65	virtual function thunk (delta:-44) for cSC3AuraLayer::AddRef(void)	__thunk_44_AddRef__13cSC3AuraLayer	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.21cISC3MapSpriteFactory
+004b6d	virtual function thunk (delta:-44) for cSC3AuraLayer::Release(void)	__thunk_44_Release__13cSC3AuraLayer	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.21cISC3MapSpriteFactory
+004b8d	virtual function thunk (delta:-32) for cSC3AuraLayer::DoQueryInfo(cGZMessage &, cIGZUnknown *)	__thunk_32_DoQueryInfo__13cSC3AuraLayerR10cGZMessageP11cIGZUnknown	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.14cISC3CityLayer
+004bf9	cSC3AuraLayer::on_window_create(cGZMessage &, cIGZUnknown *)	on_window_create__13cSC3AuraLayerR10cGZMessageP11cIGZUnknown	libSimMisc.so	tokens:37.9
+004d79	cSC3AuraLayer::DoQueryViews(cGZMessage &, cISC3WinQuery *)	DoQueryViews__13cSC3AuraLayerR10cGZMessageP13cISC3WinQuery	libSimMisc.so	vtable:__vt_13cSC3AuraLayer
+004d7e	virtual function thunk (delta:-44) for cSC3AuraLayer::GetMapSpriteCount(void)	__thunk_44_GetMapSpriteCount__13cSC3AuraLayer	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.21cISC3MapSpriteFactory
+004d82	virtual function thunk (delta:-44) for cSC3AuraLayer::GetSpriteIdFromIndex(unsigned int, unsigned int &)	__thunk_44_GetSpriteIdFromIndex__13cSC3AuraLayerUiRUi	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.21cISC3MapSpriteFactory
+004d9c	virtual function thunk (delta:-44) for cSC3AuraLayer::CreateMapSprite(unsigned int, unsigned int, void **)	__thunk_44_CreateMapSprite__13cSC3AuraLayerUiUiPPv	libSimMisc.so	vtable:__vt_13cSC3AuraLayer.21cISC3MapSpriteFactory
+0051ed	cSC3BudgetLayer::SetTotalFunds(long long)	SetTotalFunds__15cSC3BudgetLayerx	libSimMisc.so	vtable:__vt_15cSC3BudgetLayer
+005204	cSC3BudgetLayer::GetTotalFunds(void)	GetTotalFunds__15cSC3BudgetLayer	libSimMisc.so	vtable:__vt_15cSC3BudgetLayer
+00520b	cSC3BudgetLayer::GetTaxRate(cISC3BudgetLayer::tTaxType)	GetTaxRate__15cSC3BudgetLayerQ216cISC3BudgetLayer8tTaxType	libSimMisc.so	vtable:__vt_15cSC3BudgetLayer
+00521f	cSC3BudgetLayer::GetTotalBorrowed(void)	GetTotalBorrowed__15cSC3BudgetLayer	libSimMisc.so	vtable:__vt_15cSC3BudgetLayer
+00522c	cSC3BudgetLayer::SetMarxism(bool)	SetMarxism__15cSC3BudgetLayerb	libSimMisc.so	vtable:__vt_15cSC3BudgetLayer
+005236	cSC3BudgetLayer::MarxismIsOn(void)	MarxismIsOn__15cSC3BudgetLayer	libSimMisc.so	vtable:__vt_15cSC3BudgetLayer
+00523a	virtual function thunk (delta:-8) for cSC3BudgetLayer::~cSC3BudgetLayer(void)	__thunk_8__._15cSC3BudgetLayer	libSimMisc.so	vtable:__vt_15cSC3BudgetLayer.11cRZRefCount
+007d2b	cSC3BudgetLayer::QueryInterface(unsigned int, void **)	QueryInterface__15cSC3BudgetLayerUiPPv	libSimMisc.so	tokens:13.2
+007d78	cSC3BudgetLayer::AddRef(void)	AddRef__15cSC3BudgetLayer	libSimMisc.so	vtable:__vt_15cSC3BudgetLayer
+007d80	cSC3BudgetLayer::Release(void)	Release__15cSC3BudgetLayer	libSimMisc.so	vtable:__vt_15cSC3BudgetLayer
+008630	cSC3BudgetLayer::AddDepartmentBudget(cISC3DepartmentBudget *)	AddDepartmentBudget__15cSC3BudgetLayerP21cISC3DepartmentBudget	libSimMisc.so	vtable:__vt_15cSC3BudgetLayer
+0086a1	cSC3BudgetLayer::RemoveDepartmentBudget(cISC3DepartmentBudget *)	RemoveDepartmentBudget__15cSC3BudgetLayerP21cISC3DepartmentBudget	libSimMisc.so	vtable:__vt_15cSC3BudgetLayer
+0086dc	cSC3BudgetLayer::GetDepartmentBudget(unsigned int, cISC3DepartmentBudget *&)	GetDepartmentBudget__15cSC3BudgetLayerUiRP21cISC3DepartmentBudget	libSimMisc.so	vtable:__vt_15cSC3BudgetLayer
+00892f	cSC3BudgetLayer::GetValveModifier(unsigned char)	GetValveModifier__15cSC3BudgetLayerUc	libSimMisc.so	vtable:__vt_15cSC3BudgetLayer
+008946	cSC3BudgetLayer::WithdrawFunds(unsigned int)	WithdrawFunds__15cSC3BudgetLayerUi	libSimMisc.so	vtable:__vt_15cSC3BudgetLayer
+0089a8	cSC3BudgetLayer::DepositFunds(unsigned int)	DepositFunds__15cSC3BudgetLayerUi	libSimMisc.so	vtable:__vt_15cSC3BudgetLayer
+0089ed	cSC3BudgetLayer::DepositDisasterReliefFunds(unsigned int)	DepositDisasterReliefFunds__15cSC3BudgetLayerUi	libSimMisc.so	vtable:__vt_15cSC3BudgetLayer
+008a3e	cSC3BudgetLayer::GetYTDIncome(void)	GetYTDIncome__15cSC3BudgetLayer	libSimMisc.so	vtable:__vt_15cSC3BudgetLayer
+008ae1	cSC3BudgetLayer::GetEstIncome(void)	GetEstIncome__15cSC3BudgetLayer	libSimMisc.so	vtable:__vt_15cSC3BudgetLayer
+008ced	cSC3BudgetLayer::GetYTDExpenses(void)	GetYTDExpenses__15cSC3BudgetLayer	libSimMisc.so	vtable:__vt_15cSC3BudgetLayer
+008d92	cSC3BudgetLayer::GetEstExpenses(void)	GetEstExpenses__15cSC3BudgetLayer	libSimMisc.so	vtable:__vt_15cSC3BudgetLayer
+008fbe	cSC3BudgetLayer::GetCost(unsigned int)	GetCost__15cSC3BudgetLayerUi	libSimMisc.so	tokens:15.1
+009150	cSC3BudgetLayer::IssueBond(unsigned int)	IssueBond__15cSC3BudgetLayerUi	libSimMisc.so	vtable:__vt_15cSC3BudgetLayer
+0092aa	cSC3BudgetLayer::GetCurrentBorrowingLimit(void)	GetCurrentBorrowingLimit__15cSC3BudgetLayer	libSimMisc.so	vtable:__vt_15cSC3BudgetLayer
+0092b9	cSC3BudgetLayer::NeededFundingChanged(cISC3DepartmentBudget *)	NeededFundingChanged__15cSC3BudgetLayerP21cISC3DepartmentBudget	libSimMisc.so	vtable:__vt_15cSC3BudgetLayer
+00933d	cSC3BudgetLayer::FundingPercentageChanged(cISC3DepartmentBudget *)	FundingPercentageChanged__15cSC3BudgetLayerP21cISC3DepartmentBudget	libSimMisc.so	vtable:__vt_15cSC3BudgetLayer
+00a35d	virtual function thunk (delta:-4) for cSC3BudgetLayer::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__15cSC3BudgetLayerUiPPv	libSimMisc.so	caller
+00a365	virtual function thunk (delta:-4) for cSC3BudgetLayer::AddRef(void)	__thunk_4_AddRef__15cSC3BudgetLayer	libSimMisc.so	caller
+00a375	virtual function thunk (delta:-8) for cSC3BudgetLayer::Release(void)	__thunk_8_Release__15cSC3BudgetLayer	libSimMisc.so	vtable:__vt_15cSC3BudgetLayer.11cRZRefCount
+00a37d	virtual function thunk (delta:-8) for cSC3BudgetLayer::AddRef(void)	__thunk_8_AddRef__15cSC3BudgetLayer	libSimMisc.so	vtable:__vt_15cSC3BudgetLayer.11cRZRefCount
+00c312	cSC3CmdSimMiscFactory::CreateCommand(unsigned int, unsigned int, void **)	CreateCommand__21cSC3CmdSimMiscFactoryUiUiPPv	libSimMisc.so	tokens:8.1
+00c395	virtual function thunk (delta:-4) for cSC3CmdShowBudgetWin::~cSC3CmdShowBudgetWin(void)	__thunk_4__._20cSC3CmdShowBudgetWin	libSimMisc.so	vtable:__vt_20cSC3CmdShowBudgetWin.11cRZRefCount
+01486e	cSC3NeighborsLayer::GetLayerType(void)	GetLayerType__18cSC3NeighborsLayer	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+014874	cSC3NeighborsLayer::~cSC3NeighborsLayer(void)	_._18cSC3NeighborsLayer	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+0149e3	cSC3NeighborsLayer::StaticInit(cISC3CityDefinition *)	StaticInit__18cSC3NeighborsLayerP19cISC3CityDefinition	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+014a08	cSC3NeighborsLayer::StaticShutdown(void)	StaticShutdown__18cSC3NeighborsLayer	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+0152ed	cSC3NeighborsLayer::SimulationBegin(void)	SimulationBegin__18cSC3NeighborsLayer	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+015346	cSC3NeighborsLayer::SimulationEnd(void)	SimulationEnd__18cSC3NeighborsLayer	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+015378	cSC3NeighborsLayer::Save(cISC3City *, cIGZDBSegment *)	Save__18cSC3NeighborsLayerP9cISC3CityP13cIGZDBSegment	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+015986	cSC3NeighborsLayer::Shutdown(void)	Shutdown__18cSC3NeighborsLayer	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+016678	cSC3NeighborsLayer::CreateNeighbors(void)	CreateNeighbors__18cSC3NeighborsLayer	libSimMisc.so	tokens:23.2
+0168cc	cSC3NeighborsLayer::GetNeighborName(unsigned char, cIGZString &) const	GetNeighborName__C18cSC3NeighborsLayerUcR10cIGZString	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+0168f6	cSC3NeighborsLayer::SetNeighborName(unsigned char, cIGZString const &)	SetNeighborName__18cSC3NeighborsLayerUcRC10cIGZString	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+016960	cSC3NeighborsLayer::GetNeighborMayorName(unsigned char, cIGZString &) const	GetNeighborMayorName__C18cSC3NeighborsLayerUcR10cIGZString	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+01698a	cSC3NeighborsLayer::IsLandNeighbor(unsigned char)	IsLandNeighbor__18cSC3NeighborsLayerUc	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+0169a7	cSC3NeighborsLayer::NumberOfLandNeighbors(void)	NumberOfLandNeighbors__18cSC3NeighborsLayer	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+0169bf	cSC3NeighborsLayer::GetNeighborPopulation(unsigned char)	GetNeighborPopulation__18cSC3NeighborsLayerUc	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+0169d9	cSC3NeighborsLayer::GetRailConnections(void)	GetRailConnections__18cSC3NeighborsLayer	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+0169f1	cSC3NeighborsLayer::GetRoadConnections(void)	GetRoadConnections__18cSC3NeighborsLayer	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+016a09	cSC3NeighborsLayer::GetWaterConnections(void)	GetWaterConnections__18cSC3NeighborsLayer	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+016a21	cSC3NeighborsLayer::GetPowerConnections(void)	GetPowerConnections__18cSC3NeighborsLayer	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+016a39	cSC3NeighborsLayer::GetGarbageConnections(void)	GetGarbageConnections__18cSC3NeighborsLayer	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+016a57	cSC3NeighborsLayer::GetHighwayConnections(void)	GetHighwayConnections__18cSC3NeighborsLayer	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+016a6f	cSC3NeighborsLayer::GetSubwayConnections(void)	GetSubwayConnections__18cSC3NeighborsLayer	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+016a87	cSC3NeighborsLayer::GetTotalRailConnections(void)	GetTotalRailConnections__18cSC3NeighborsLayer	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+016a9b	cSC3NeighborsLayer::GetTotalRoadConnections(void)	GetTotalRoadConnections__18cSC3NeighborsLayer	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+016aaf	cSC3NeighborsLayer::GetTotalWaterConnections(void)	GetTotalWaterConnections__18cSC3NeighborsLayer	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+016ac3	cSC3NeighborsLayer::GetTotalPowerConnections(void)	GetTotalPowerConnections__18cSC3NeighborsLayer	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+016ad7	cSC3NeighborsLayer::GetTotalGarbageConnections(void)	GetTotalGarbageConnections__18cSC3NeighborsLayer	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+016af4	cSC3NeighborsLayer::GetTotalHighwayConnections(void)	GetTotalHighwayConnections__18cSC3NeighborsLayer	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+016b08	cSC3NeighborsLayer::GetTotalSubwayConnections(void)	GetTotalSubwayConnections__18cSC3NeighborsLayer	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+016b1c	cSC3NeighborsLayer::MakeConnection(cISTTransitLayer::CONNECTION_TYPE, unsigned int, unsigned int)	MakeConnection__18cSC3NeighborsLayerQ216cISTTransitLayer15CONNECTION_TYPEUiUi	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+016b99	cSC3NeighborsLayer::RemoveConnection(cISTTransitLayer::CONNECTION_TYPE, unsigned int, unsigned int)	RemoveConnection__18cSC3NeighborsLayerQ216cISTTransitLayer15CONNECTION_TYPEUiUi	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+016c16	cSC3NeighborsLayer::CheckHasAnyConnection(unsigned int, unsigned int)	CheckHasAnyConnection__18cSC3NeighborsLayerUiUi	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+016d0f	cSC3NeighborsLayer::CheckIsConnection(cISTTransitLayer::CONNECTION_TYPE, unsigned int, unsigned int)	CheckIsConnection__18cSC3NeighborsLayerQ216cISTTransitLayer15CONNECTION_TYPEUiUi	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+016d68	cSC3NeighborsLayer::CheckIsConnected(cISTTransitLayer::CONNECTION_TYPE, unsigned char)	CheckIsConnected__18cSC3NeighborsLayerQ216cISTTransitLayer15CONNECTION_TYPEUc	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+016fb0	cSC3NeighborsLayer::GetNumberOfNeighborDeals(void)	GetNumberOfNeighborDeals__18cSC3NeighborsLayer	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+016fb8	cSC3NeighborsLayer::GetNeighborDeals(unsigned char &, cISC3NeighborsLayer::tDealRecord *)	GetNeighborDeals__18cSC3NeighborsLayerRUcPQ219cISC3NeighborsLayer11tDealRecord	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+01701e	cSC3NeighborsLayer::GetValidCityForDeal(unsigned char)	GetValidCityForDeal__18cSC3NeighborsLayerUc	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+0170e6	cSC3NeighborsLayer::RenewDeal(unsigned char)	RenewDeal__18cSC3NeighborsLayerUc	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+01761c	cSC3NeighborsLayer::ProposeDeal(unsigned char, unsigned char, unsigned int)	ProposeDeal__18cSC3NeighborsLayerUcUcUi	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+017b64	cSC3NeighborsLayer::ConnectionsExistForDeal(unsigned char, unsigned char)	ConnectionsExistForDeal__18cSC3NeighborsLayerUcUc	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+017d45	cSC3NeighborsLayer::SetDeal(unsigned char)	SetDeal__18cSC3NeighborsLayerUc	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+017f16	cSC3NeighborsLayer::ClearDeal(unsigned char)	ClearDeal__18cSC3NeighborsLayerUc	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+017f89	cSC3NeighborsLayer::ClearDealWithPenalty(unsigned char)	ClearDealWithPenalty__18cSC3NeighborsLayerUc	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+018011	cSC3NeighborsLayer::ClearProposedDeal(unsigned char)	ClearProposedDeal__18cSC3NeighborsLayerUc	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+018078	cSC3NeighborsLayer::CheckForDeal(unsigned char)	CheckForDeal__18cSC3NeighborsLayerUc	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+0180bf	cSC3NeighborsLayer::CheckForProposedDeal(unsigned char)	CheckForProposedDeal__18cSC3NeighborsLayerUc	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+01823e	cSC3NeighborsLayer::CheckForBrokenDeals(cISC3NeighborDeal **)	CheckForBrokenDeals__18cSC3NeighborsLayerPP17cISC3NeighborDeal	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+0182ab	cSC3NeighborsLayer::SetDealAmount(unsigned char, int)	SetDealAmount__18cSC3NeighborsLayerUci	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+01833a	cSC3NeighborsLayer::DoQueryInfo(cGZMessage &, cIGZUnknown *)	DoQueryInfo__18cSC3NeighborsLayerR10cGZMessageP11cIGZUnknown	libSimMisc.so	tokens:22.4
+018c2a	cSC3NeighborsLayer::QueryInterface(unsigned int, void **)	QueryInterface__18cSC3NeighborsLayerUiPPv	libSimMisc.so	tokens:20.1
+018c7e	cSC3NeighborsLayer::AddRef(void)	AddRef__18cSC3NeighborsLayer	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+018c95	cSC3NeighborsLayer::Release(void)	Release__18cSC3NeighborsLayer	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+018f95	cSC3NeighborsLayer::GetTotalMonthlyNeighborDealIncome(void)	GetTotalMonthlyNeighborDealIncome__18cSC3NeighborsLayer	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+019000	cSC3NeighborsLayer::GetTotalMonthlyNeighborDealExpense(void)	GetTotalMonthlyNeighborDealExpense__18cSC3NeighborsLayer	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+019077	cSC3NeighborsLayer::GetNeighborDealPenaltyExpense(void)	GetNeighborDealPenaltyExpense__18cSC3NeighborsLayer	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+01908b	virtual function thunk (delta:-4) for cSC3NeighborsLayer::Simulate(int)	__thunk_4_Simulate__18cSC3NeighborsLayeri	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer.14cISC3CityAgent
+0190a1	cSC3NeighborsLayer::Simulate(int)	Simulate__18cSC3NeighborsLayeri	libSimMisc.so	vtable-thunk:__vt_18cSC3NeighborsLayer.14cISC3CityAgent
+0190dd	virtual function thunk (delta:-8) for cSC3WorldLayer::MinimumExecutionInterval(void)	__thunk_8_MinimumExecutionInterval__14cSC3WorldLayer	libSimMisc.so	vtable:__vt_14cSC3WorldLayer.14cISC3CityAgent
+0190e1	virtual function thunk (delta:-4) for cSC3NeighborsLayer::TypeId(void) const	__thunk_4_TypeId__C18cSC3NeighborsLayer	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer.14cISC3CityAgent
+0190e7	virtual function thunk (delta:-4) for cSC3NeighborsLayer::AgentType(void)	__thunk_4_AgentType__18cSC3NeighborsLayer	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer.14cISC3CityAgent
+019154	cSC3NeighborDeal::~cSC3NeighborDeal(void)	_._16cSC3NeighborDeal	libSimMisc.so	vtable:__vt_16cSC3NeighborDeal
+0191c9	cSC3NeighborDeal::QueryInterface(unsigned int, void **)	QueryInterface__16cSC3NeighborDealUiPPv	libSimMisc.so	tokens:8.1
+0191ee	cSC3NeighborDeal::AddRef(void)	AddRef__16cSC3NeighborDeal	libSimMisc.so	vtable:__vt_16cSC3NeighborDeal
+019205	cSC3NeighborDeal::Release(void)	Release__16cSC3NeighborDeal	libSimMisc.so	vtable:__vt_16cSC3NeighborDeal
+019242	cSC3NeighborDeal::GetDealStructure(cISC3NeighborsLayer::tDealRecord &)	GetDealStructure__16cSC3NeighborDealRQ219cISC3NeighborsLayer11tDealRecord	libSimMisc.so	vtable:__vt_16cSC3NeighborDeal
+019293	cSC3NeighborDeal::SetFromDealStructure(cISC3NeighborsLayer::tDealRecord &)	SetFromDealStructure__16cSC3NeighborDealRQ219cISC3NeighborsLayer11tDealRecord	libSimMisc.so	vtable:__vt_16cSC3NeighborDeal
+01934f	cSC3NeighborDeal::GetCityName(cIGZString &) const	GetCityName__C16cSC3NeighborDealR10cIGZString	libSimMisc.so	vtable:__vt_16cSC3NeighborDeal
+019363	cSC3NeighborDeal::GetDeal(cIGZString &) const	GetDeal__C16cSC3NeighborDealR10cIGZString	libSimMisc.so	vtable:__vt_16cSC3NeighborDeal
+019377	cSC3NeighborDeal::GetCost(void) const	GetCost__C16cSC3NeighborDeal	libSimMisc.so	vtable:__vt_16cSC3NeighborDeal
+01937b	cSC3NeighborDeal::GetDealCity(void) const	GetDealCity__C16cSC3NeighborDeal	libSimMisc.so	vtable:__vt_16cSC3NeighborDeal
+019380	cSC3NeighborDeal::GetDealType(void) const	GetDealType__C16cSC3NeighborDeal	libSimMisc.so	vtable:__vt_16cSC3NeighborDeal
+019385	cSC3NeighborDeal::GetDealLength(void) const	GetDealLength__C16cSC3NeighborDeal	libSimMisc.so	vtable:__vt_16cSC3NeighborDeal
+019389	cSC3NeighborDeal::GetMinimumCost(void) const	GetMinimumCost__C16cSC3NeighborDeal	libSimMisc.so	vtable:__vt_16cSC3NeighborDeal
+01938d	cSC3NeighborDeal::GetDealRate(void) const	GetDealRate__C16cSC3NeighborDeal	libSimMisc.so	vtable:__vt_16cSC3NeighborDeal
+019391	cSC3NeighborDeal::GetStartDate(cIGZDate &) const	GetStartDate__C16cSC3NeighborDealR8cIGZDate	libSimMisc.so	vtable:__vt_16cSC3NeighborDeal
+0193a4	cSC3NeighborDeal::SetCityName(cIGZString const &)	SetCityName__16cSC3NeighborDealRC10cIGZString	libSimMisc.so	vtable:__vt_16cSC3NeighborDeal
+0193fc	cSC3NeighborDeal::SetDeal(cIGZString const &)	SetDeal__16cSC3NeighborDealRC10cIGZString	libSimMisc.so	vtable:__vt_16cSC3NeighborDeal
+019454	cSC3NeighborDeal::SetAmount(int)	SetAmount__16cSC3NeighborDeali	libSimMisc.so	vtable:__vt_16cSC3NeighborDeal
+01945e	cSC3NeighborDeal::SetCost(int)	SetCost__16cSC3NeighborDeali	libSimMisc.so	vtable:__vt_16cSC3NeighborDeal
+019468	cSC3NeighborDeal::SetDealCity(unsigned int)	SetDealCity__16cSC3NeighborDealUi	libSimMisc.so	vtable:__vt_16cSC3NeighborDeal
+019472	cSC3NeighborDeal::SetDealType(unsigned int)	SetDealType__16cSC3NeighborDealUi	libSimMisc.so	vtable:__vt_16cSC3NeighborDeal
+01947c	cSC3NeighborDeal::SetDealLength(int)	SetDealLength__16cSC3NeighborDeali	libSimMisc.so	vtable:__vt_16cSC3NeighborDeal
+019486	cSC3NeighborDeal::SetMinimumCost(int)	SetMinimumCost__16cSC3NeighborDeali	libSimMisc.so	vtable:__vt_16cSC3NeighborDeal
+019490	cSC3NeighborDeal::SetTerminationCost(int)	SetTerminationCost__16cSC3NeighborDeali	libSimMisc.so	vtable:__vt_16cSC3NeighborDeal
+01949a	cSC3NeighborDeal::SetDealRate(int)	SetDealRate__16cSC3NeighborDeali	libSimMisc.so	vtable:__vt_16cSC3NeighborDeal
+0194a4	cSC3NeighborDeal::SetStartDate(cIGZDate const &)	SetStartDate__16cSC3NeighborDealRC8cIGZDate	libSimMisc.so	vtable:__vt_16cSC3NeighborDeal
+0194bf	cSC3NeighborDeal::Copy(cISC3NeighborDeal const &)	Copy__16cSC3NeighborDealRC17cISC3NeighborDeal	libSimMisc.so	vtable:__vt_16cSC3NeighborDeal
+0199cb	virtual function thunk (delta:-4) for cSC3NeighborsLayer::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__18cSC3NeighborsLayerUiPPv	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer.14cISC3CityAgent
+0199d3	virtual function thunk (delta:-4) for cSC3NeighborsLayer::AddRef(void)	__thunk_4_AddRef__18cSC3NeighborsLayer	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer.14cISC3CityAgent
+0199db	virtual function thunk (delta:-4) for cSC3NeighborsLayer::Release(void)	__thunk_4_Release__18cSC3NeighborsLayer	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer.14cISC3CityAgent
+019ab8	virtual function thunk (delta:-8) for cSC3WorldLayer::IsAgentLocking(void)	__thunk_8_IsAgentLocking__14cSC3WorldLayer	libSimMisc.so	vtable:__vt_14cSC3WorldLayer.14cISC3CityAgent
+019abb	cSC3OrdinanceLayer::GetOridnanceListSize(unsigned int)	GetOridnanceListSize__18cSC3OrdinanceLayerUi	libSimMisc.so	vtable:__vt_18cSC3OrdinanceLayer
+019ac7	cSC3OrdinanceLayer::GetTotalMonthlyOrdinanceExpense(void)	GetTotalMonthlyOrdinanceExpense__18cSC3OrdinanceLayer	libSimMisc.so	vtable:__vt_18cSC3OrdinanceLayer
+019acb	cSC3OrdinanceLayer::GetTotalMonthlyOrdinanceIncome(void)	GetTotalMonthlyOrdinanceIncome__18cSC3OrdinanceLayer	libSimMisc.so	vtable:__vt_18cSC3OrdinanceLayer
+019acf	virtual function thunk (delta:-4) for cSC3OrdinanceLayer::GetLayerType(void)	__thunk_4_GetLayerType__18cSC3OrdinanceLayer	libSimMisc.so	vtable:__vt_18cSC3OrdinanceLayer.14cISC3CityLayer
+019ad5	cSC3OrdinanceLayer::~cSC3OrdinanceLayer(void)	_._18cSC3OrdinanceLayer	libSimMisc.so	vtable:__vt_18cSC3OrdinanceLayer
+019b3e	cSC3OrdinanceLayer::AddRef(void)	AddRef__18cSC3OrdinanceLayer	libSimMisc.so	vtable:__vt_18cSC3OrdinanceLayer
+019b45	cSC3OrdinanceLayer::Release(void)	Release__18cSC3OrdinanceLayer	libSimMisc.so	vtable:__vt_18cSC3OrdinanceLayer
+019b65	cSC3OrdinanceLayer::Init(cISC3City *)	Init__18cSC3OrdinanceLayerP9cISC3City	libSimMisc.so	tokens:47.0
+019d5a	virtual function thunk (delta:-4) for cSC3OrdinanceLayer::Save(cISC3City *, cIGZDBSegment *)	__thunk_4_Save__18cSC3OrdinanceLayerP9cISC3CityP13cIGZDBSegment	libSimMisc.so	vtable:__vt_18cSC3OrdinanceLayer.14cISC3CityLayer
+019e38	virtual function thunk (delta:-4) for cSC3OrdinanceLayer::SimulationBegin(void)	__thunk_4_SimulationBegin__18cSC3OrdinanceLayer	libSimMisc.so	vtable:__vt_18cSC3OrdinanceLayer.14cISC3CityLayer
+019ef5	virtual function thunk (delta:-4) for cSC3OrdinanceLayer::Shutdown(void)	__thunk_4_Shutdown__18cSC3OrdinanceLayer	libSimMisc.so	vtable:__vt_18cSC3OrdinanceLayer.14cISC3CityLayer
+019fc7	cSC3OrdinanceLayer::EndOfMonth(void)	EndOfMonth__18cSC3OrdinanceLayer	libSimMisc.so	tokens:8.1
+01a057	cSC3OrdinanceLayer::GetOrdinanceData(void)	GetOrdinanceData__18cSC3OrdinanceLayer	libSimMisc.so	tokens:76.6
+01a153	cSC3OrdinanceLayer::CheckForNewOrdinances(void)	CheckForNewOrdinances__18cSC3OrdinanceLayer	libSimMisc.so	tokens:67.3
+01a8ca	cSC3OrdinanceLayer::GetOrdinanceListSize(unsigned int)	GetOrdinanceListSize__18cSC3OrdinanceLayerUi	libSimMisc.so	vtable:__vt_18cSC3OrdinanceLayer
+01a90a	cSC3OrdinanceLayer::GetOrdinanceList(cISC3OrdinanceLayer::cISC3OrdinanceStruct **, unsigned int)	GetOrdinanceList__18cSC3OrdinanceLayerPPQ219cISC3OrdinanceLayer20cISC3OrdinanceStructUi	libSimMisc.so	vtable:__vt_18cSC3OrdinanceLayer
+01a98b	cSC3OrdinanceLayer::QueryOrdinanceOn(unsigned int)	QueryOrdinanceOn__18cSC3OrdinanceLayerUi	libSimMisc.so	vtable:__vt_18cSC3OrdinanceLayer
+01a9c1	cSC3OrdinanceLayer::QueryOrdinanceAvailable(unsigned int)	QueryOrdinanceAvailable__18cSC3OrdinanceLayerUi	libSimMisc.so	vtable:__vt_18cSC3OrdinanceLayer
+01a9f7	cSC3OrdinanceLayer::QueryOrdinanceAvailableAndOff(unsigned int)	QueryOrdinanceAvailableAndOff__18cSC3OrdinanceLayerUi	libSimMisc.so	vtable:__vt_18cSC3OrdinanceLayer
+01aa45	cSC3OrdinanceLayer::TotalOrdinancesOn(void)	TotalOrdinancesOn__18cSC3OrdinanceLayer	libSimMisc.so	vtable:__vt_18cSC3OrdinanceLayer
+01aa77	cSC3OrdinanceLayer::SetOrdinance(unsigned int, bool)	SetOrdinance__18cSC3OrdinanceLayerUib	libSimMisc.so	tokens:8.1
+01ab68	cSC3OrdinanceLayer::MakeOrdinanceAvailable(unsigned int)	MakeOrdinanceAvailable__18cSC3OrdinanceLayerUi	libSimMisc.so	vtable:__vt_18cSC3OrdinanceLayer
+01abdd	cSC3OrdinanceLayer::GetOrdinanceCost(unsigned int)	GetOrdinanceCost__18cSC3OrdinanceLayerUi	libSimMisc.so	tokens:237.4
+01aebf	cSC3OrdinanceLayer::DoMessage(cGZMessage &)	DoMessage__18cSC3OrdinanceLayerR10cGZMessage	libSimMisc.so	tokens:14.8
+01aee1	cSC3OrdinanceLayer::QueryInterface(unsigned int, void **)	QueryInterface__18cSC3OrdinanceLayerUiPPv	libSimMisc.so	tokens:13.1
+01af2e	virtual function thunk (delta:-4) for cSC3OrdinanceLayer::GetManipulator(cISC3CityAgentType const &, cISC3CityLayerManipulator **, int &)	__thunk_4_GetManipulator__18cSC3OrdinanceLayerRC18cISC3CityAgentTypePP25cISC3CityLayerManipulatorRi	libSimMisc.so	vtable:__vt_18cSC3OrdinanceLayer.14cISC3CityLayer
+01af90	cSC3OrdinanceLayer::GetManipulator(cISC3CityAgentType const &, cISC3CityLayerManipulator **, int &)	GetManipulator__18cSC3OrdinanceLayerRC18cISC3CityAgentTypePP25cISC3CityLayerManipulatorRi	libSimMisc.so	callee
+01afbe	cSC3BudgetWinProc::Release(void)	Release__17cSC3BudgetWinProc	libSimMisc.so	vtable:__vt_17cSC3BudgetWinProc
+01b035	cSC3MonthlyOrdinanceLayerManip::Apply(cISC3CityAgent &)	Apply__30cSC3MonthlyOrdinanceLayerManipR14cISC3CityAgent	libSimMisc.so	caller
+01b17c	virtual function thunk (delta:-4) for cSC3BudgetWinProc::Release(void)	__thunk_4_Release__17cSC3BudgetWinProc	libSimMisc.so	caller
+01b18c	virtual function thunk (delta:-4) for cSC3OrdinanceLayer::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__18cSC3OrdinanceLayerUiPPv	libSimMisc.so	vtable:__vt_18cSC3OrdinanceLayer.14cISC3CityLayer
+01b194	virtual function thunk (delta:-4) for cSC3OrdinanceLayer::AddRef(void)	__thunk_4_AddRef__18cSC3OrdinanceLayer	libSimMisc.so	vtable:__vt_18cSC3OrdinanceLayer.14cISC3CityLayer
+01b19c	virtual function thunk (delta:-4) for cSC3OrdinanceLayer::Release(void)	__thunk_4_Release__18cSC3OrdinanceLayer	libSimMisc.so	vtable:__vt_18cSC3OrdinanceLayer.14cISC3CityLayer
+01b2b4	cSC3WeatherLayer::FarenheitToCelsius(float)	FarenheitToCelsius__16cSC3WeatherLayerf	libSimMisc.so	tokens:29.7
+01b2c7	cSC3WeatherLayer::CelsiusToFarenheit(float)	CelsiusToFarenheit__16cSC3WeatherLayerf	libSimMisc.so	tokens:23.4
+01b2f4	cSC3WeatherLayer::GetLayerType(void)	GetLayerType__16cSC3WeatherLayer	libSimMisc.so	tokens:8.1
+01b47a	cSC3WeatherLayer::QueryInterface(unsigned int, void **)	QueryInterface__16cSC3WeatherLayerUiPPv	libSimMisc.so	tokens:14.3
+01b4bb	cSC3WeatherLayer::EndOfMonth(void)	EndOfMonth__16cSC3WeatherLayer	libSimMisc.so	tokens:22.9
+01b733	cSC3WeatherLayer::SetWeather(cISC3WeatherLayer::WeatherType, int)	SetWeather__16cSC3WeatherLayerQ217cISC3WeatherLayer11WeatherTypei	libSimMisc.so	tokens:8.1
+01b7ce	cSC3WeatherLayer::GetAverageTemperaturePerSeasonPerLocation(float &, float &, float &, float &, float &, float &, float &, float &, float &, cISC3WeatherLayer::Season, int, int, bool)	GetAverageTemperaturePerSeasonPerLocation__16cSC3WeatherLayerRfN81Q217cISC3WeatherLayer6Seasoniib	libSimMisc.so	tokens:197.6
+01bc12	cSC3BudgetWinProc::QueryInterface(unsigned int, void **)	QueryInterface__17cSC3BudgetWinProcUiPPv	libSimMisc.so	vtable:__vt_17cSC3BudgetWinProc
+01bc3d	cSC3BudgetWinProc::CreateBudgetWindow(cIGZWin *&)	CreateBudgetWindow__17cSC3BudgetWinProcRP7cIGZWin	libSimMisc.so	vtable:__vt_17cSC3BudgetWinProc
+01be04	cSC3BudgetWinProc::DoWinMsg(cIGZWin *, unsigned int, unsigned int, unsigned int, unsigned int)	DoWinMsg__17cSC3BudgetWinProcP7cIGZWinUiUiUiUi	libSimMisc.so	vtable:__vt_17cSC3BudgetWinProc
+026616	cSC3WorldLayer::~cSC3WorldLayer(void)	_._14cSC3WorldLayer	libSimMisc.so	vtable:__vt_14cSC3WorldLayer
+026714	virtual function thunk (delta:-4) for cSC3WorldLayer::StaticInit(cISC3CityDefinition *)	__thunk_4_StaticInit__14cSC3WorldLayerP19cISC3CityDefinition	libSimMisc.so	vtable:__vt_14cSC3WorldLayer.14cISC3CityLayer
+026738	virtual function thunk (delta:-4) for cSC3WorldLayer::StaticShutdown(void)	__thunk_4_StaticShutdown__14cSC3WorldLayer	libSimMisc.so	vtable:__vt_14cSC3WorldLayer.14cISC3CityLayer
+027563	virtual function thunk (delta:-4) for cSC3WorldLayer::Init(cISC3City *)	__thunk_4_Init__14cSC3WorldLayerP9cISC3City	libSimMisc.so	vtable:__vt_14cSC3WorldLayer.14cISC3CityLayer
+02776c	virtual function thunk (delta:-4) for cSC3WorldLayer::Save(cISC3City *, cIGZDBSegment *)	__thunk_4_Save__14cSC3WorldLayerP9cISC3CityP13cIGZDBSegment	libSimMisc.so	vtable:__vt_14cSC3WorldLayer.14cISC3CityLayer
+0278b0	virtual function thunk (delta:-4) for cSC3WorldLayer::SimulationBegin(void)	__thunk_4_SimulationBegin__14cSC3WorldLayer	libSimMisc.so	vtable:__vt_14cSC3WorldLayer.14cISC3CityLayer
+027a94	virtual function thunk (delta:-4) for cSC3WorldLayer::SimulationEnd(void)	__thunk_4_SimulationEnd__14cSC3WorldLayer	libSimMisc.so	vtable:__vt_14cSC3WorldLayer.14cISC3CityLayer
+027abe	virtual function thunk (delta:-4) for cSC3WorldLayer::Shutdown(void)	__thunk_4_Shutdown__14cSC3WorldLayer	libSimMisc.so	vtable:__vt_14cSC3WorldLayer.14cISC3CityLayer
+0283b6	cSC3WorldLayer::GetWorldPopulation(void)	GetWorldPopulation__14cSC3WorldLayer	libSimMisc.so	vtable:__vt_14cSC3WorldLayer
+0283bd	cSC3WorldLayer::GetGlobalSeaLevel(void)	GetGlobalSeaLevel__14cSC3WorldLayer	libSimMisc.so	vtable:__vt_14cSC3WorldLayer
+0283c4	virtual function thunk (delta:-8) for cSC3WorldLayer::TypeId(void) const	__thunk_8_TypeId__C14cSC3WorldLayer	libSimMisc.so	vtable:__vt_14cSC3WorldLayer.14cISC3CityAgent
+0283ca	cSC3WorldLayer::GetUnemploymentHistory(void)	GetUnemploymentHistory__14cSC3WorldLayer	libSimMisc.so	vtable:__vt_14cSC3WorldLayer
+0283d1	cSC3WorldLayer::QueryInterface(unsigned int, void **)	QueryInterface__14cSC3WorldLayerUiPPv	libSimMisc.so	tokens:20.5
+02842c	cSC3WorldLayer::AddRef(void)	AddRef__14cSC3WorldLayer	libSimMisc.so	vtable:__vt_14cSC3WorldLayer
+028449	cSC3WorldLayer::Release(void)	Release__14cSC3WorldLayer	libSimMisc.so	vtable:__vt_14cSC3WorldLayer
+0285a3	virtual function thunk (delta:-8) for cSC3WorldLayer::Simulate(int)	__thunk_8_Simulate__14cSC3WorldLayeri	libSimMisc.so	vtable:__vt_14cSC3WorldLayer.14cISC3CityAgent
+0285bb	cSC3WorldLayer::EndOfMonth(void)	EndOfMonth__14cSC3WorldLayer	libSimMisc.so	tokens:36.1
+028da6	cSC3NeighborsLayer::GetManipulator(cISC3CityAgentType const &, cISC3CityLayerManipulator **, int &)	GetManipulator__18cSC3NeighborsLayerRC18cISC3CityAgentTypePP25cISC3CityLayerManipulatorRi	libSimMisc.so	vtable:__vt_18cSC3NeighborsLayer
+028f01	cSC3WorkforceValve::cSC3WorkforceValve(void)	__18cSC3WorkforceValve	libSimMisc.so	vtable-user:__vt_18cSC3WorkforceValve
+028f56	virtual function thunk (delta:-68) for cSC3WorkforceValve::GetCIRatio(unsigned int &, unsigned int &)	__thunk_68_GetCIRatio__18cSC3WorkforceValveRUiT1	libSimMisc.so	vtable:__vt_18cSC3WorkforceValve.19cISC3WorkforceValve
+028f6b	cSC3WorkforceValve::~cSC3WorkforceValve(void)	_._18cSC3WorkforceValve	libSimMisc.so	vtable:__vt_18cSC3WorkforceValve
+028fbb	cSC3WorkforceValve::Init(cISC3City *, unsigned int, cISC3CityLayer *)	Init__18cSC3WorkforceValveP9cISC3CityUiP14cISC3CityLayer	libSimMisc.so	vtable:__vt_18cSC3WorkforceValve
+02902b	cSC3WorkforceValve::Shutdown(void)	Shutdown__18cSC3WorkforceValve	libSimMisc.so	vtable:__vt_18cSC3WorkforceValve
+029072	virtual function thunk (delta:-68) for cSC3WorkforceValve::AsISC3Valve(void)	__thunk_68_AsISC3Valve__18cSC3WorkforceValve	libSimMisc.so	vtable:__vt_18cSC3WorkforceValve.19cISC3WorkforceValve
+029076	cSC3WorkforceValve::QueryInterface(unsigned int, void **)	QueryInterface__18cSC3WorkforceValveUiPPv	libSimMisc.so	tokens:8.1
+0290b4	cSC3WorkforceValve::SimulationBegin(void)	SimulationBegin__18cSC3WorkforceValve	libSimMisc.so	vtable:__vt_18cSC3WorkforceValve
+029133	cSC3WorkforceValve::SerialRead(cISC3City *, cIGZDBSerialRecord &)	SerialRead__18cSC3WorkforceValveP9cISC3CityR18cIGZDBSerialRecord	libSimMisc.so	vtable:__vt_18cSC3WorkforceValve
+029186	cSC3WorkforceValve::SerialWrite(cISC3City *, cIGZDBSerialRecord &) const	SerialWrite__C18cSC3WorkforceValveP9cISC3CityR18cIGZDBSerialRecord	libSimMisc.so	vtable:__vt_18cSC3WorkforceValve
+0291e1	cSC3WorkforceValve::EndOfMonth(void)	EndOfMonth__18cSC3WorkforceValve	libSimMisc.so	vtable:__vt_18cSC3WorkforceValve
+0291ff	cSC3WorkforceValve::AddToSupplyValue(int)	AddToSupplyValue__18cSC3WorkforceValvei	libSimMisc.so	vtable:__vt_18cSC3WorkforceValve
+0292ba	cSC3WorkforceValve::AddToDemandValue(int)	AddToDemandValue__18cSC3WorkforceValvei	libSimMisc.so	vtable:__vt_18cSC3WorkforceValve
+0292de	virtual function thunk (delta:-68) for cSC3WorkforceValve::SetCIRatio(unsigned int, unsigned int)	__thunk_68_SetCIRatio__18cSC3WorkforceValveUiUi	libSimMisc.so	vtable:__vt_18cSC3WorkforceValve.19cISC3WorkforceValve
+029302	cSC3WorkforceValve::SetJobToResFactor(unsigned char)	SetJobToResFactor__18cSC3WorkforceValveUc	libSimMisc.so	vtable:__vt_18cSC3WorkforceValve
+029314	cSC3WorkforceValve::SetExternalJobDemand(unsigned int)	SetExternalJobDemand__18cSC3WorkforceValveUi	libSimMisc.so	vtable:__vt_18cSC3WorkforceValve
+02931e	cSC3WorkforceValve::ForceExternalJobDemandUpdate(void)	ForceExternalJobDemandUpdate__18cSC3WorkforceValve	libSimMisc.so	vtable:__vt_18cSC3WorkforceValve
+02a0eb	virtual function thunk (delta:-68) for cSC3WorkforceValve::QueryInterface(unsigned int, void **)	__thunk_68_QueryInterface__18cSC3WorkforceValveUiPPv	libSimMisc.so	vtable:__vt_18cSC3WorkforceValve.19cISC3WorkforceValve
+02a0f3	virtual function thunk (delta:-68) for cSC3WorkforceValve::AddRef(void)	__thunk_68_AddRef__18cSC3WorkforceValve	libSimMisc.so	vtable:__vt_18cSC3WorkforceValve.19cISC3WorkforceValve
+02a0fb	virtual function thunk (delta:-68) for cSC3WorkforceValve::Release(void)	__thunk_68_Release__18cSC3WorkforceValve	libSimMisc.so	vtable:__vt_18cSC3WorkforceValve.19cISC3WorkforceValve
+02a10b	virtual function thunk (delta:-4) for cSC3WorldLayer::AddRef(void)	__thunk_4_AddRef__14cSC3WorldLayer	libSimMisc.so	caller
+02a11b	virtual function thunk (delta:-8) for cSC3WorldLayer::QueryInterface(unsigned int, void **)	__thunk_8_QueryInterface__14cSC3WorldLayerUiPPv	libSimMisc.so	vtable:__vt_14cSC3WorldLayer.14cISC3CityAgent
+02a123	virtual function thunk (delta:-8) for cSC3WorldLayer::AddRef(void)	__thunk_8_AddRef__14cSC3WorldLayer	libSimMisc.so	vtable:__vt_14cSC3WorldLayer.14cISC3CityAgent
+02a12b	virtual function thunk (delta:-8) for cSC3WorldLayer::Release(void)	__thunk_8_Release__14cSC3WorldLayer	libSimMisc.so	vtable:__vt_14cSC3WorldLayer.14cISC3CityAgent
+02a1d9	cSC3CityCellMapSized<short>::AddRef(void)	AddRef__t20cSC3CityCellMapSized1Zs	libSimMisc.so	vtable-thunk:__vt_t20cSC3CityCellMapSized1Zs
+02a204	RZGetCOMDllDirector_SimMisc(void)	RZGetCOMDllDirector_SimMisc__Fv	libSimMisc.so	tokens:289.2
+02a4c5	cSMCOMDirector::GetDirectorID(void) const	GetDirectorID__C14cSMCOMDirector	libSimMisc.so	tokens:8.1
+02a4cb	cSMCOMDirector::AppRegister(cIGZRegistry *)	AppRegister__14cSMCOMDirectorP12cIGZRegistry	libSimMisc.so	vtable:__vt_14cSMCOMDirector
+02a6da	cSMCOMDirector::CreatecSC3CmdSimMiscFactory(void)	CreatecSC3CmdSimMiscFactory__14cSMCOMDirector	libSimMisc.so	vtable-user:__vt_21cSC3CmdSimMiscFactory
+02acc2	cSMCOMDirector::~cSMCOMDirector(void)	_._14cSMCOMDirector	libSimMisc.so	vtable:__vt_14cSMCOMDirector
+02acf0	cSC3CmdSimMiscFactory::~cSC3CmdSimMiscFactory(void)	_._21cSC3CmdSimMiscFactory	libSimMisc.so	vtable:__vt_21cSC3CmdSimMiscFactory
+02ad1b	virtual function thunk (delta:-4) for cRZCOMDllDirector::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__17cRZCOMDllDirectorUiPPv	libSimMisc.so	vtable:__vt_17cRZCOMDllDirector.18cIGZFrameWorkHooks
+02d981	cRZCOMDllDirector::OnStart(cIGZCOM *)	OnStart__17cRZCOMDllDirectorP7cIGZCOM	libSimMisc.so	tokens:16.2
+02ed34	cSC3WorkforceValve::AddRef(void)	AddRef__18cSC3WorkforceValve	libSimMisc.so	vtable-thunk:__vt_18cSC3WorkforceValve.19cISC3WorkforceValve
+02ff96	cRZCOMDllDirector::QueryInterface(unsigned int, void **)	QueryInterface__17cRZCOMDllDirectorUiPPv	libSimMisc.so	tokens:16.2
+02ffd7	cRZCOMDllDirector::FrameWork(void)	FrameWork__17cRZCOMDllDirector	libSimMisc.so	vtable:__vt_14cSMCOMDirector
+02ffe0	cRZCOMDllDirector::RemoveRef(void)	RemoveRef__17cRZCOMDllDirector	libSimMisc.so	vtable:__vt_14cSMCOMDirector
+02ffef	cRZCOMDllDirector::RefCount(void)	RefCount__17cRZCOMDllDirector	libSimMisc.so	vtable:__vt_14cSMCOMDirector
+02fff3	cRZCOMDllDirector::InitializeCOM(cIGZCOM *, cIGZString &)	InitializeCOM__17cRZCOMDllDirectorP7cIGZCOMR10cIGZString	libSimMisc.so	vtable:__vt_14cSMCOMDirector
+0300c1	cRZCOMDllDirector::GetClassObject(unsigned int, unsigned int, void **)	GetClassObject__17cRZCOMDllDirectorUiUiPPv	libSimMisc.so	vtable:__vt_14cSMCOMDirector
+030142	cRZCOMDllDirector::EnumClassObjects(void (*)(unsigned int, unsigned int, void *), void *)	EnumClassObjects__17cRZCOMDllDirectorPFUiUiPv_vPv	libSimMisc.so	vtable:__vt_14cSMCOMDirector
+030196	cRZCOMDllDirector::ModuleName(cIGZString &)	ModuleName__17cRZCOMDllDirectorR10cIGZString	libSimMisc.so	vtable:__vt_14cSMCOMDirector
+0301aa	cRZCOMDllDirector::AddDirector(cRZCOMDllDirector *)	AddDirector__17cRZCOMDllDirectorP17cRZCOMDllDirector	libSimMisc.so	vtable:__vt_14cSMCOMDirector
+0301f4	cRZCOMDllDirector::CanUnloadNow(void)	CanUnloadNow__17cRZCOMDllDirector	libSimMisc.so	vtable:__vt_14cSMCOMDirector
+032100	cSC3AuraLayer::SimulationBegin(void)	SimulationBegin__13cSC3AuraLayer	libSimMisc.so	callee
+034813	cSC3WorldLayer::AsISC3CityLayer(void)	AsISC3CityLayer__14cSC3WorldLayer	libSimMisc.so	vtable:__vt_14cSC3WorldLayer
+036f03	cSC3WorkforceValve::Release(void)	Release__18cSC3WorkforceValve	libSimMisc.so	vtable-thunk:__vt_18cSC3WorkforceValve.19cISC3WorkforceValve
+037132	cSC3NeighborDeal::GetAmount(void) const	GetAmount__C16cSC3NeighborDeal	libSimMisc.so	vtable:__vt_16cSC3NeighborDeal
+03713a	cRZCOMDllDirector::GZCOM(void)	GZCOM__17cRZCOMDllDirector	libSimMisc.so	vtable:__vt_14cSMCOMDirector

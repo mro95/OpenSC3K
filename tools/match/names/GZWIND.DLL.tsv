@@ -1,0 +1,20 @@
+rva	demangled	mangled	source	method
+0010dc	cRZCOMDllDirector::OnUnload(void)	OnUnload__17cRZCOMDllDirector	libGZWinD.so	vtable:__vt_20cGZWinDllCOMDirector
+0010df	cGZWinDllCOMDirector::GetDirectorID(void) const	GetDirectorID__C20cGZWinDllCOMDirector	libGZWinD.so	tokens:7.3
+0010e5	cGZWinDllCOMDirector::OnStart(cIGZCOM *)	OnStart__20cGZWinDllCOMDirectorP7cIGZCOM	libGZWinD.so	tokens:13.3
+0011da	virtual function thunk (delta:-4) for cRZCOMDllDirector::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__17cRZCOMDllDirectorUiPPv	libGZWinD.so	caller
+005d9e	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >::replace(unsigned int, unsigned int, unsigned int, char)	replace__t12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0UiUiUic	libGZWinD.so	tokens:12.7
+009da1	cGZWinDllCOMDirector::~cGZWinDllCOMDirector(void)	_._20cGZWinDllCOMDirector	libGZWinD.so	vtable:__vt_20cGZWinDllCOMDirector
+01739c	cRZCOMDllDirector::GZCOM(void)	GZCOM__17cRZCOMDllDirector	libGZWinD.so	vtable:__vt_20cGZWinDllCOMDirector
+01fa5f	cRZCOMDllDirector::FrameWork(void)	FrameWork__17cRZCOMDllDirector	libGZWinD.so	vtable:__vt_20cGZWinDllCOMDirector
+02263f	cRZCOMDllDirector::QueryInterface(unsigned int, void **)	QueryInterface__17cRZCOMDllDirectorUiPPv	libGZWinD.so	tokens:14.6
+022685	cRZCOMDllDirector::RemoveRef(void)	RemoveRef__17cRZCOMDllDirector	libGZWinD.so	vtable:__vt_20cGZWinDllCOMDirector
+022694	cRZCOMDllDirector::RefCount(void)	RefCount__17cRZCOMDllDirector	libGZWinD.so	vtable:__vt_20cGZWinDllCOMDirector
+022698	cRZCOMDllDirector::InitializeCOM(cIGZCOM *, cIGZString &)	InitializeCOM__17cRZCOMDllDirectorP7cIGZCOMR10cIGZString	libGZWinD.so	vtable:__vt_20cGZWinDllCOMDirector
+022766	cRZCOMDllDirector::GetClassObject(unsigned int, unsigned int, void **)	GetClassObject__17cRZCOMDllDirectorUiUiPPv	libGZWinD.so	vtable:__vt_20cGZWinDllCOMDirector
+0227e7	cRZCOMDllDirector::EnumClassObjects(void (*)(unsigned int, unsigned int, void *), void *)	EnumClassObjects__17cRZCOMDllDirectorPFUiUiPv_vPv	libGZWinD.so	vtable:__vt_20cGZWinDllCOMDirector
+02283b	cRZCOMDllDirector::ModuleName(cIGZString &)	ModuleName__17cRZCOMDllDirectorR10cIGZString	libGZWinD.so	vtable:__vt_20cGZWinDllCOMDirector
+02284f	cRZCOMDllDirector::AddDirector(cRZCOMDllDirector *)	AddDirector__17cRZCOMDllDirectorP17cRZCOMDllDirector	libGZWinD.so	vtable:__vt_20cGZWinDllCOMDirector
+022899	cRZCOMDllDirector::CanUnloadNow(void)	CanUnloadNow__17cRZCOMDllDirector	libGZWinD.so	vtable:__vt_20cGZWinDllCOMDirector
+0228f0	cRZCOMDllDirector::AppRegister(cIGZRegistry *)	AppRegister__17cRZCOMDllDirectorP12cIGZRegistry	libGZWinD.so	vtable:__vt_20cGZWinDllCOMDirector
+02297d	cRZCOMDllDirector::OnStart(cIGZCOM *)	OnStart__17cRZCOMDllDirectorP7cIGZCOM	libGZWinD.so	tokens:14.6

@@ -1,0 +1,1462 @@
+addr	mangled	demangled
+00037c84	_init	_init
+00039254	RZGetCOMDllDirector_SimNtwrk__Fv	RZGetCOMDllDirector_SimNtwrk(void)
+000393e4	PrepareAndPlaceBridges__15cSTTransitLayerP20cISC3OccupantManagerRt4list2Z13cSC3CityCoordZt9allocator1Z13cSC3CityCoordiPt6vector2ZUiZt9allocator1ZUiT2RUi	cSTTransitLayer::PrepareAndPlaceBridges(cISC3OccupantManager *, list<cSC3CityCoord, allocator<cSC3CityCoord> > &, int, vector<unsigned int, allocator<unsigned int> > *, list<cSC3CityCoord, allocator<cSC3CityCoord> > &, unsigned int &)
+0003c668	PrepareAndPlaceBridgesforHway__15cSTTransitLayerP20cISC3OccupantManagerRt4list2Z13cSC3CityCoordZt9allocator1Z13cSC3CityCoordiPt6vector2ZUiZt9allocator1ZUiT2RUi	cSTTransitLayer::PrepareAndPlaceBridgesforHway(cISC3OccupantManager *, list<cSC3CityCoord, allocator<cSC3CityCoord> > &, int, vector<unsigned int, allocator<unsigned int> > *, list<cSC3CityCoord, allocator<cSC3CityCoord> > &, unsigned int &)
+000403f4	addCell__24cSLCityViewLineAlgorithmRC13cSC3CityCoordb	cSLCityViewLineAlgorithm::addCell(cSC3CityCoord const &, bool)
+000404f8	addCell__24cSLCityViewLineAlgorithmiib	cSLCityViewLineAlgorithm::addCell(int, int, bool)
+00040604	DrawLine__24cSLCityViewLineAlgorithmRC13cSC3CityCoordT1PP26cISC3EnumCityViewSelectionR14cSC3CityBounds	cSLCityViewLineAlgorithm::DrawLine(cSC3CityCoord const &, cSC3CityCoord const &, cISC3EnumCityViewSelection **, cSC3CityBounds &)
+000430f4	EngineersDialog__15cSTTransitLayerUii	cSTTransitLayer::EngineersDialog(unsigned int, int)
+00044154	DoDialog__15cSimpleModalWin	cSimpleModalWin::DoDialog(void)
+00044288	__15cSimpleModalWinR9cRZStringT1i	cSimpleModalWin::cSimpleModalWin(cRZString &, cRZString &, int)
+00044444	_._15cSimpleModalWin	cSimpleModalWin::~cSimpleModalWin(void)
+00044588	DoWinMsg__15cSimpleModalWinP7cIGZWinUiUiUiUi	cSimpleModalWin::DoWinMsg(cIGZWin *, unsigned int, unsigned int, unsigned int, unsigned int)
+000448c4	on_init__15cSimpleModalWinP7cIGZWin	cSimpleModalWin::on_init(cIGZWin *)
+00045cc4	createResizableButton__15cSimpleModalWinRP10cIGZWinBtnUiUi	cSimpleModalWin::createResizableButton(cIGZWinBtn *&, unsigned int, unsigned int)
+00045f90	QueryInterface__15cSimpleModalWinUiPPv	cSimpleModalWin::QueryInterface(unsigned int, void **)
+00045fec	AddRef__15cSimpleModalWin	cSimpleModalWin::AddRef(void)
+00046004	Release__15cSimpleModalWin	cSimpleModalWin::Release(void)
+0004601c	EngineersDebug__15cSTTransitLayeri	cSTTransitLayer::EngineersDebug(int)
+00046034	getTileID__24cSLCityViewLineAlgorithmUsUs	cSLCityViewLineAlgorithm::getTileID(unsigned short, unsigned short)
+0004613c	DrawLine__32cSLCityViewLineAlgorithmForRampsRC13cSC3CityCoordT1PP26cISC3EnumCityViewSelectionR14cSC3CityBounds	cSLCityViewLineAlgorithmForRamps::DrawLine(cSC3CityCoord const &, cSC3CityCoord const &, cISC3EnumCityViewSelection **, cSC3CityBounds &)
+00047e74	getTileID__15cSTTransitLayerUsUs	cSTTransitLayer::getTileID(unsigned short, unsigned short)
+00047f7c	isUnprotectedRoad__15cSTTransitLayerG13cSC3CityCoord	cSTTransitLayer::isUnprotectedRoad(cSC3CityCoord)
+00048054	PlaceOnramp__15cSTTransitLayerP26cISC3EnumCityViewSelectionRUiR14cSC3CityBoundsR13cSC3CityCoord	cSTTransitLayer::PlaceOnramp(cISC3EnumCityViewSelection *, unsigned int &, cSC3CityBounds &, cSC3CityCoord &)
+0004a244	QueryInterface__32cSLCityViewLineAlgorithmForRampsUiPPv	cSLCityViewLineAlgorithmForRamps::QueryInterface(unsigned int, void **)
+0004a278	AddRef__32cSLCityViewLineAlgorithmForRamps	cSLCityViewLineAlgorithmForRamps::AddRef(void)
+0004a2a4	Release__32cSLCityViewLineAlgorithmForRamps	cSLCityViewLineAlgorithmForRamps::Release(void)
+0004a2d0	emptyOrTree__24cSLCityViewLineAlgorithmG13cSC3CityCoord	cSLCityViewLineAlgorithm::emptyOrTree(cSC3CityCoord)
+0004a37c	isUnprotectedRoad__24cSLCityViewLineAlgorithmG13cSC3CityCoord	cSLCityViewLineAlgorithm::isUnprotectedRoad(cSC3CityCoord)
+0004a420	emptyOrTree__15cSTTransitLayerG13cSC3CityCoord	cSTTransitLayer::emptyOrTree(cSC3CityCoord)
+0004a504	CreateNetworkOccupant__13cSTNetworkOccUcUiPPv	cSTNetworkOcc::CreateNetworkOccupant(unsigned char, unsigned int, void **)
+0004b064	Init__13cSTNetworkOccP9cISC3CityP19cISC3OccPersistInfo	cSTNetworkOcc::Init(cISC3City *, cISC3OccPersistInfo *)
+0004b284	Save__13cSTNetworkOccP9cISC3CityR19cISC3OccPersistInfo	cSTNetworkOcc::Save(cISC3City *, cISC3OccPersistInfo &)
+0004b3b4	DoStandardQueryViewInfo__13cSTNetworkOccR10cGZMessageP21cISC3WinQueryListView	cSTNetworkOcc::DoStandardQueryViewInfo(cGZMessage &, cISC3WinQueryListView *)
+0004bc04	GetStreetSimPart__20cSTNetworkOccTransit	cSTNetworkOccTransit::GetStreetSimPart(void)
+0004bce8	__20cSTNetworkOccTransit	cSTNetworkOccTransit::cSTNetworkOccTransit(void)
+0004bda0	GetSubTypeData__13cSTNetworkOccUi	cSTNetworkOcc::GetSubTypeData(unsigned int)
+0004bdb0	AsISC3Occupant__13cSTNetworkOcc	cSTNetworkOcc::AsISC3Occupant(void)
+0004bdc4	Init__13cSTNetworkOccR14cGZResourceKey	cSTNetworkOcc::Init(cGZResourceKey &)
+0004be00	Init__13cSTNetworkOccUiUi	cSTNetworkOcc::Init(unsigned int, unsigned int)
+0004be68	Shutdown__13cSTNetworkOcc	cSTNetworkOcc::Shutdown(void)
+0004beb4	SerialRead__13cSTNetworkOccP9cISC3CityR18cIGZDBSerialRecord	cSTNetworkOcc::SerialRead(cISC3City *, cIGZDBSerialRecord &)
+0004bf40	SerialWrite__13cSTNetworkOccP9cISC3CityR18cIGZDBSerialRecord	cSTNetworkOcc::SerialWrite(cISC3City *, cIGZDBSerialRecord &)
+0004bfc4	AsSC3ResourceKey__C13cSTNetworkOccUi	cSTNetworkOcc::AsSC3ResourceKey(unsigned int) const
+0004bffc	Repair__13cSTNetworkOcc	cSTNetworkOcc::Repair(void)
+0004c00c	NeedsRepair__C13cSTNetworkOcc	cSTNetworkOcc::NeedsRepair(void) const
+0004c01c	SetDamage__13cSTNetworkOccb	cSTNetworkOcc::SetDamage(bool)
+0004c03c	IsDiagonal__C13cSTNetworkOcc	cSTNetworkOcc::IsDiagonal(void) const
+0004c0a8	SetIsDiagonal__13cSTNetworkOccb	cSTNetworkOcc::SetIsDiagonal(bool)
+0004c0b4	IsCollapse__C13cSTNetworkOcc	cSTNetworkOcc::IsCollapse(void) const
+0004c120	SetCollapse__13cSTNetworkOccb	cSTNetworkOcc::SetCollapse(bool)
+0004c128	TileId__C13cSTNetworkOcc	cSTNetworkOcc::TileId(void) const
+0004c138	SetTileId__13cSTNetworkOccUi	cSTNetworkOcc::SetTileId(unsigned int)
+0004c14c	GetRotationFlags__13cSTNetworkOcc	cSTNetworkOcc::GetRotationFlags(void)
+0004c160	SetRotationFlags__13cSTNetworkOccUi	cSTNetworkOcc::SetRotationFlags(unsigned int)
+0004c17c	IsTeleport__C13cSTNetworkOcc	cSTNetworkOcc::IsTeleport(void) const
+0004c190	SetTeleport__13cSTNetworkOccii	cSTNetworkOcc::SetTeleport(int, int)
+0004c1c8	GetTeleport__13cSTNetworkOccRiT1	cSTNetworkOcc::GetTeleport(int &, int &)
+0004c204	GetConnectivity__C13cSTNetworkOccibiRbN34	cSTNetworkOcc::GetConnectivity(int, bool, int, bool &, bool &, bool &, bool &) const
+0004c2ac	GetSSAttribKey__13cSTNetworkOccR14cGZResourceKey	cSTNetworkOcc::GetSSAttribKey(cGZResourceKey &)
+0004c2b8	GetStreetSimPart__13cSTNetworkOcc	cSTNetworkOcc::GetStreetSimPart(void)
+0004c2c4	DeleteStreetSimPart__13cSTNetworkOcc	cSTNetworkOcc::DeleteStreetSimPart(void)
+0004c2d4	DebugInstanceTag__13cSTNetworkOccR10cIGZString	cSTNetworkOcc::DebugInstanceTag(cIGZString &)
+0004c300	DebugClassTag__13cSTNetworkOccR10cIGZString	cSTNetworkOcc::DebugClassTag(cIGZString &)
+0004c30c	DebugTypeTag__13cSTNetworkOccR10cIGZString	cSTNetworkOcc::DebugTypeTag(cIGZString &)
+0004c31c	QueryInterface__13cSTNetworkOccUiPPv	cSTNetworkOcc::QueryInterface(unsigned int, void **)
+0004c36c	DoDebugQueryViewInfo__13cSTNetworkOccR10cGZMessageP21cISC3WinQueryListView	cSTNetworkOcc::DoDebugQueryViewInfo(cGZMessage &, cISC3WinQueryListView *)
+0004c3a0	AddRef__13cSTNetworkOcc	cSTNetworkOcc::AddRef(void)
+0004c3cc	Release__13cSTNetworkOcc	cSTNetworkOcc::Release(void)
+0004c3f8	__13cSTNetworkOcc	cSTNetworkOcc::cSTNetworkOcc(void)
+0004c45c	_._13cSTNetworkOcc	cSTNetworkOcc::~cSTNetworkOcc(void)
+0004c4b8	StaticInit__20cSTNetworkOccTransitP16cISTTransitLayer	cSTNetworkOccTransit::StaticInit(cISTTransitLayer *)
+0004c528	StaticShutdown__20cSTNetworkOccTransit	cSTNetworkOccTransit::StaticShutdown(void)
+0004c584	GetSSAttribKey__20cSTNetworkOccTransitR14cGZResourceKey	cSTNetworkOccTransit::GetSSAttribKey(cGZResourceKey &)
+0004c600	DeleteStreetSimPart__20cSTNetworkOccTransit	cSTNetworkOccTransit::DeleteStreetSimPart(void)
+0004c640	_._20cSTNetworkOccTransit	cSTNetworkOccTransit::~cSTNetworkOccTransit(void)
+0004c6c4	__27cSC3TransitBlockPersistInfob	cSC3TransitBlockPersistInfo::cSC3TransitBlockPersistInfo(bool)
+0004c714	_._27cSC3TransitBlockPersistInfo	cSC3TransitBlockPersistInfo::~cSC3TransitBlockPersistInfo(void)
+0004c748	Clear__27cSC3TransitBlockPersistInfo	cSC3TransitBlockPersistInfo::Clear(void)
+0004c768	QueryInterface__27cSC3TransitBlockPersistInfoUiPPv	cSC3TransitBlockPersistInfo::QueryInterface(unsigned int, void **)
+0004c7c0	AddRef__27cSC3TransitBlockPersistInfo	cSC3TransitBlockPersistInfo::AddRef(void)
+0004c7fc	Release__27cSC3TransitBlockPersistInfo	cSC3TransitBlockPersistInfo::Release(void)
+0004c874	GetTransitTileId__C27cSC3TransitBlockPersistInfoUi	cSC3TransitBlockPersistInfo::GetTransitTileId(unsigned int) const
+0004c880	GetNeedsRepair__C27cSC3TransitBlockPersistInfo	cSC3TransitBlockPersistInfo::GetNeedsRepair(void) const
+0004c894	HasTeleportData__C27cSC3TransitBlockPersistInfo	cSC3TransitBlockPersistInfo::HasTeleportData(void) const
+0004c8a8	TeleportDirection__C27cSC3TransitBlockPersistInfoi	cSC3TransitBlockPersistInfo::TeleportDirection(int) const
+0004c8e0	TeleportDistance__C27cSC3TransitBlockPersistInfoi	cSC3TransitBlockPersistInfo::TeleportDistance(int) const
+0004c91c	GetLocationInCells__C27cSC3TransitBlockPersistInfoRUiN21	cSC3TransitBlockPersistInfo::GetLocationInCells(unsigned int &, unsigned int &, unsigned int &) const
+0004c95c	GetAttribKey__C27cSC3TransitBlockPersistInfoR14cGZResourceKey	cSC3TransitBlockPersistInfo::GetAttribKey(cGZResourceKey &) const
+0004c980	GetRotationFlag__C27cSC3TransitBlockPersistInfoRUi	cSC3TransitBlockPersistInfo::GetRotationFlag(unsigned int &) const
+0004c99c	GetTypeId__C27cSC3TransitBlockPersistInfoRUi	cSC3TransitBlockPersistInfo::GetTypeId(unsigned int &) const
+0004c9a8	GetSizeInCells__C27cSC3TransitBlockPersistInfoRUiT1	cSC3TransitBlockPersistInfo::GetSizeInCells(unsigned int &, unsigned int &) const
+0004c9b4	SetAttribKey__27cSC3TransitBlockPersistInfoRC14cGZResourceKey	cSC3TransitBlockPersistInfo::SetAttribKey(cGZResourceKey const &)
+0004c9cc	SetTypeId__27cSC3TransitBlockPersistInfoUi	cSC3TransitBlockPersistInfo::SetTypeId(unsigned int)
+0004c9d4	SetLocationInCells__27cSC3TransitBlockPersistInfoUiUiUi	cSC3TransitBlockPersistInfo::SetLocationInCells(unsigned int, unsigned int, unsigned int)
+0004ca24	SetSizeInCells__27cSC3TransitBlockPersistInfoUiUi	cSC3TransitBlockPersistInfo::SetSizeInCells(unsigned int, unsigned int)
+0004ca2c	SetRotationFlag__27cSC3TransitBlockPersistInfoUi	cSC3TransitBlockPersistInfo::SetRotationFlag(unsigned int)
+0004ca48	GetCanSimRemoveFlag__C27cSC3TransitBlockPersistInfo	cSC3TransitBlockPersistInfo::GetCanSimRemoveFlag(void) const
+0004ca5c	GetCanUserRemoveFlag__C27cSC3TransitBlockPersistInfo	cSC3TransitBlockPersistInfo::GetCanUserRemoveFlag(void) const
+0004ca70	DidSameKeyWriteResource__27cSC3TransitBlockPersistInfo	cSC3TransitBlockPersistInfo::DidSameKeyWriteResource(void)
+0004ca7c	SetSameKeyWroteResource__27cSC3TransitBlockPersistInfob	cSC3TransitBlockPersistInfo::SetSameKeyWroteResource(bool)
+0004ca88	HasNameField__C27cSC3TransitBlockPersistInfo	cSC3TransitBlockPersistInfo::HasNameField(void) const
+0004ca94	GetNameField__C27cSC3TransitBlockPersistInfoR10cIGZString	cSC3TransitBlockPersistInfo::GetNameField(cIGZString &) const
+0004caa0	SetNameField__27cSC3TransitBlockPersistInfoR10cIGZString	cSC3TransitBlockPersistInfo::SetNameField(cIGZString &)
+0004caac	SetRemoveFlags__27cSC3TransitBlockPersistInfobT1	cSC3TransitBlockPersistInfo::SetRemoveFlags(bool, bool)
+0004cad8	HasSimCreateDate__C27cSC3TransitBlockPersistInfo	cSC3TransitBlockPersistInfo::HasSimCreateDate(void) const
+0004cae4	GetSimCreateDate__C27cSC3TransitBlockPersistInfoRiT1	cSC3TransitBlockPersistInfo::GetSimCreateDate(int &, int &) const
+0004caf0	SetSimCreateDate__27cSC3TransitBlockPersistInfoii	cSC3TransitBlockPersistInfo::SetSimCreateDate(int, int)
+0004cafc	HasLayerData1__C27cSC3TransitBlockPersistInfo	cSC3TransitBlockPersistInfo::HasLayerData1(void) const
+0004cb08	GetLayerData1__C27cSC3TransitBlockPersistInfoRUi	cSC3TransitBlockPersistInfo::GetLayerData1(unsigned int &) const
+0004cb1c	SetLayerData1__27cSC3TransitBlockPersistInfoUi	cSC3TransitBlockPersistInfo::SetLayerData1(unsigned int)
+0004cb30	HasLayerData2__C27cSC3TransitBlockPersistInfo	cSC3TransitBlockPersistInfo::HasLayerData2(void) const
+0004cb3c	GetLayerData2__C27cSC3TransitBlockPersistInfoRUi	cSC3TransitBlockPersistInfo::GetLayerData2(unsigned int &) const
+0004cb50	SetLayerData2__27cSC3TransitBlockPersistInfoUi	cSC3TransitBlockPersistInfo::SetLayerData2(unsigned int)
+0004cb64	GetIntDataCount__C27cSC3TransitBlockPersistInfo	cSC3TransitBlockPersistInfo::GetIntDataCount(void) const
+0004cb74	GetIntData__27cSC3TransitBlockPersistInfoUiRUi	cSC3TransitBlockPersistInfo::GetIntData(unsigned int, unsigned int &)
+0004cc1c	SetIntData__27cSC3TransitBlockPersistInfoUiUi	cSC3TransitBlockPersistInfo::SetIntData(unsigned int, unsigned int)
+0004ccd8	GetStringDataCount__C27cSC3TransitBlockPersistInfo	cSC3TransitBlockPersistInfo::GetStringDataCount(void) const
+0004cce4	GetStringData__27cSC3TransitBlockPersistInfoUiR10cIGZString	cSC3TransitBlockPersistInfo::GetStringData(unsigned int, cIGZString &)
+0004ccf0	SetStringData__27cSC3TransitBlockPersistInfoUiR10cIGZString	cSC3TransitBlockPersistInfo::SetStringData(unsigned int, cIGZString &)
+0004ccfc	GetFloatDataCount__C27cSC3TransitBlockPersistInfo	cSC3TransitBlockPersistInfo::GetFloatDataCount(void) const
+0004cd08	GetFloatData__27cSC3TransitBlockPersistInfoUiRf	cSC3TransitBlockPersistInfo::GetFloatData(unsigned int, float &)
+0004cd14	SetFloatData__27cSC3TransitBlockPersistInfoUif	cSC3TransitBlockPersistInfo::SetFloatData(unsigned int, float)
+0004cd20	GetTokenCount__C27cSC3TransitBlockPersistInfo	cSC3TransitBlockPersistInfo::GetTokenCount(void) const
+0004cd2c	GetToken__27cSC3TransitBlockPersistInfoUiPP11cIGZVariant	cSC3TransitBlockPersistInfo::GetToken(unsigned int, cIGZVariant **)
+0004cd38	AddToken__27cSC3TransitBlockPersistInfoUiR11cIGZVariant	cSC3TransitBlockPersistInfo::AddToken(unsigned int, cIGZVariant &)
+0004cd44	GetPersistRecordVersion__C27cSC3TransitBlockPersistInfo	cSC3TransitBlockPersistInfo::GetPersistRecordVersion(void) const
+0004cd54	SerialWrite__27cSC3TransitBlockPersistInfoP9cISC3CityR18cIGZDBSerialRecord	cSC3TransitBlockPersistInfo::SerialWrite(cISC3City *, cIGZDBSerialRecord &)
+0004cda8	SerialRead__27cSC3TransitBlockPersistInfoP9cISC3CityUiR18cIGZDBSerialRecord	cSC3TransitBlockPersistInfo::SerialRead(cISC3City *, unsigned int, cIGZDBSerialRecord &)
+0004ce70	GetOccupantGZCLSID__C21cSTTransitBlockAttribRUi	cSTTransitBlockAttrib::GetOccupantGZCLSID(unsigned int &) const
+0004ce7c	SetOccupantGZCLSID__21cSTTransitBlockAttribUi	cSTTransitBlockAttrib::SetOccupantGZCLSID(unsigned int)
+0004ce8c	GetConnectivity__C21cSTTransitBlockAttribibiiRbN35	cSTTransitBlockAttrib::GetConnectivity(int, bool, int, int, bool &, bool &, bool &, bool &) const
+0004cf5c	SetConnectivity__21cSTTransitBlockAttribUi	cSTTransitBlockAttrib::SetConnectivity(unsigned int)
+0004cf70	IsDiagonal__C21cSTTransitBlockAttrib	cSTTransitBlockAttrib::IsDiagonal(void) const
+0004cf84	SetDiagonal__21cSTTransitBlockAttribb	cSTTransitBlockAttrib::SetDiagonal(bool)
+0004cfa8	IsCollapse__C21cSTTransitBlockAttrib	cSTTransitBlockAttrib::IsCollapse(void) const
+0004cfc0	SetCollapse__21cSTTransitBlockAttribb	cSTTransitBlockAttrib::SetCollapse(bool)
+0004cfe8	TokenRead__21cSTTransitBlockAttribR15cISLTokenRecord	cSTTransitBlockAttrib::TokenRead(cISLTokenRecord &)
+0004d0d0	TokenWrite__21cSTTransitBlockAttribR15cISLTokenRecord	cSTTransitBlockAttrib::TokenWrite(cISLTokenRecord &)
+0004d180	MajorType__C21cSTTransitBlockAttrib	cSTTransitBlockAttrib::MajorType(void) const
+0004d190	Key__C21cSTTransitBlockAttrib	cSTTransitBlockAttrib::Key(void) const
+0004d1bc	SubTypeInfo__C21cSTTransitBlockAttrib	cSTTransitBlockAttrib::SubTypeInfo(void) const
+0004d1ec	AnimType__C21cSTTransitBlockAttrib	cSTTransitBlockAttrib::AnimType(void) const
+0004d21c	TypeId__C21cSTTransitBlockAttrib	cSTTransitBlockAttrib::TypeId(void) const
+0004d248	SizeInCellsX__21cSTTransitBlockAttrib	cSTTransitBlockAttrib::SizeInCellsX(void)
+0004d274	SizeInCellsZ__21cSTTransitBlockAttrib	cSTTransitBlockAttrib::SizeInCellsZ(void)
+0004d2a0	SizeInCellsY__21cSTTransitBlockAttrib	cSTTransitBlockAttrib::SizeInCellsY(void)
+0004d2cc	CityAgentType__21cSTTransitBlockAttrib	cSTTransitBlockAttrib::CityAgentType(void)
+0004d2f8	GetSpriteAttrib__21cSTTransitBlockAttrib	cSTTransitBlockAttrib::GetSpriteAttrib(void)
+0004d324	GetSpriteAttrib__21cSTTransitBlockAttribUi	cSTTransitBlockAttrib::GetSpriteAttrib(unsigned int)
+0004d354	GetOriginalSpriteAttrib__21cSTTransitBlockAttrib	cSTTransitBlockAttrib::GetOriginalSpriteAttrib(void)
+0004d380	GetDefaultLayerFlag__C21cSTTransitBlockAttrib	cSTTransitBlockAttrib::GetDefaultLayerFlag(void) const
+0004d3ac	SetDefaultLayerFlag__21cSTTransitBlockAttribUi	cSTTransitBlockAttrib::SetDefaultLayerFlag(unsigned int)
+0004d3dc	GetPeopleProducerAttrib__21cSTTransitBlockAttrib	cSTTransitBlockAttrib::GetPeopleProducerAttrib(void)
+0004d408	GetVehicleProducerAttrib__21cSTTransitBlockAttrib	cSTTransitBlockAttrib::GetVehicleProducerAttrib(void)
+0004d434	Flammability__21cSTTransitBlockAttrib	cSTTransitBlockAttrib::Flammability(void)
+0004d464	GetName__21cSTTransitBlockAttribR10cIGZString	cSTTransitBlockAttrib::GetName(cIGZString &)
+0004d494	GetNameKey__21cSTTransitBlockAttribR14cGZResourceKey	cSTTransitBlockAttrib::GetNameKey(cGZResourceKey &)
+0004d4c4	SetIsTextRecord__21cSTTransitBlockAttribb	cSTTransitBlockAttrib::SetIsTextRecord(bool)
+0004d4f8	IsTextRecord__C21cSTTransitBlockAttrib	cSTTransitBlockAttrib::IsTextRecord(void) const
+0004d524	GetQueryDialogClass__21cSTTransitBlockAttrib	cSTTransitBlockAttrib::GetQueryDialogClass(void)
+0004d550	SetQueryDialogClass__21cSTTransitBlockAttribUi	cSTTransitBlockAttrib::SetQueryDialogClass(unsigned int)
+0004d580	IsGeomFlag__21cSTTransitBlockAttribUi	cSTTransitBlockAttrib::IsGeomFlag(unsigned int)
+0004d5b0	SetGeomFlag__21cSTTransitBlockAttribUi	cSTTransitBlockAttrib::SetGeomFlag(unsigned int)
+0004d5e0	ClearGeomFlag__21cSTTransitBlockAttribUi	cSTTransitBlockAttrib::ClearGeomFlag(unsigned int)
+0004d610	GetGeomFlag__21cSTTransitBlockAttrib	cSTTransitBlockAttrib::GetGeomFlag(void)
+0004d63c	GetOccLayerFlag__21cSTTransitBlockAttrib	cSTTransitBlockAttrib::GetOccLayerFlag(void)
+0004d66c	SetOccLayerFlag__21cSTTransitBlockAttribUc	cSTTransitBlockAttrib::SetOccLayerFlag(unsigned char)
+0004d6a0	GetSoundObjectId__21cSTTransitBlockAttribRi	cSTTransitBlockAttrib::GetSoundObjectId(int &)
+0004d6d0	GetSoundKeyA__21cSTTransitBlockAttribR14cGZResourceKey	cSTTransitBlockAttrib::GetSoundKeyA(cGZResourceKey &)
+0004d700	GetSoundKeyB__21cSTTransitBlockAttribR14cGZResourceKey	cSTTransitBlockAttrib::GetSoundKeyB(cGZResourceKey &)
+0004d730	GetPlopCursorKey__21cSTTransitBlockAttribR14cGZResourceKey	cSTTransitBlockAttrib::GetPlopCursorKey(cGZResourceKey &)
+0004d760	GetQueryDescKey__21cSTTransitBlockAttribR14cGZResourceKey	cSTTransitBlockAttrib::GetQueryDescKey(cGZResourceKey &)
+0004d790	GetQueryFormatFlags__21cSTTransitBlockAttribRUi	cSTTransitBlockAttrib::GetQueryFormatFlags(unsigned int &)
+0004d7c0	DebugInstanceTag__21cSTTransitBlockAttribR10cIGZString	cSTTransitBlockAttrib::DebugInstanceTag(cIGZString &)
+0004d7ec	DebugClassTag__21cSTTransitBlockAttribR10cIGZString	cSTTransitBlockAttrib::DebugClassTag(cIGZString &)
+0004d7f8	DebugTypeTag__21cSTTransitBlockAttribR10cIGZString	cSTTransitBlockAttrib::DebugTypeTag(cIGZString &)
+0004d808	__21cSTTransitBlockAttrib	cSTTransitBlockAttrib::cSTTransitBlockAttrib(void)
+0004d89c	_._21cSTTransitBlockAttrib	cSTTransitBlockAttrib::~cSTTransitBlockAttrib(void)
+0004d90c	QueryInterface__21cSTTransitBlockAttribUiPPv	cSTTransitBlockAttrib::QueryInterface(unsigned int, void **)
+0004d95c	AddRef__21cSTTransitBlockAttrib	cSTTransitBlockAttrib::AddRef(void)
+0004d988	Release__21cSTTransitBlockAttrib	cSTTransitBlockAttrib::Release(void)
+0004d9b4	SetOverRideAttrib__21cSTTransitBlockAttribP22cISC3OccAttribOverRide	cSTTransitBlockAttrib::SetOverRideAttrib(cISC3OccAttribOverRide *)
+0004d9e4	GetOverRideAttrib__21cSTTransitBlockAttrib	cSTTransitBlockAttrib::GetOverRideAttrib(void)
+0004da10	GetArchitectName__21cSTTransitBlockAttribR10cIGZString	cSTTransitBlockAttrib::GetArchitectName(cIGZString &)
+0004da74	SetTransitDamage__15cSTTransitLayerf	cSTTransitLayer::SetTransitDamage(float)
+0004e6f4	GetTransitDamage__C15cSTTransitLayer	cSTTransitLayer::GetTransitDamage(void) const
+0004e7e4	Execute__12cCTPlaceRoad	cCTPlaceRoad::Execute(void)
+0004eb10	ExecuteOnMouseUp__12cCTPlaceRoadP26cISC3EnumCityViewSelection	cCTPlaceRoad::ExecuteOnMouseUp(cISC3EnumCityViewSelection *)
+0004ed44	Execute__15cCTPlaceHighway	cCTPlaceHighway::Execute(void)
+0004f070	ExecuteOnMouseUp__15cCTPlaceHighwayP26cISC3EnumCityViewSelection	cCTPlaceHighway::ExecuteOnMouseUp(cISC3EnumCityViewSelection *)
+0004f2a4	Execute__12cCTPlaceRail	cCTPlaceRail::Execute(void)
+0004f5d0	ExecuteOnMouseUp__12cCTPlaceRailP26cISC3EnumCityViewSelection	cCTPlaceRail::ExecuteOnMouseUp(cISC3EnumCityViewSelection *)
+0004f804	Execute__14cCTPlaceSubway	cCTPlaceSubway::Execute(void)
+0004fb20	ExecuteOnMouseUp__14cCTPlaceSubwayP26cISC3EnumCityViewSelection	cCTPlaceSubway::ExecuteOnMouseUp(cISC3EnumCityViewSelection *)
+0004fd54	Execute__14cCTPlaceOnramp	cCTPlaceOnramp::Execute(void)
+000500a0	ExecuteOnMouseUp__14cCTPlaceOnrampP26cISC3EnumCityViewSelection	cCTPlaceOnramp::ExecuteOnMouseUp(cISC3EnumCityViewSelection *)
+000502d4	Execute__13cCTPlacePower	cCTPlacePower::Execute(void)
+000505b0	ExecuteOnMouseUp__13cCTPlacePowerP26cISC3EnumCityViewSelection	cCTPlacePower::ExecuteOnMouseUp(cISC3EnumCityViewSelection *)
+000507e4	Execute__12cCTPlacePipe	cCTPlacePipe::Execute(void)
+00050ab0	ExecuteOnMouseUp__12cCTPlacePipeP26cISC3EnumCityViewSelection	cCTPlacePipe::ExecuteOnMouseUp(cISC3EnumCityViewSelection *)
+00050ce4	CreateCommand__25cSC3TransitCommandFactoryUiUiPPv	cSC3TransitCommandFactory::CreateCommand(unsigned int, unsigned int, void **)
+000512e4	canEdit__24cSLCityViewLineAlgorithmii	cSLCityViewLineAlgorithm::canEdit(int, int)
+000513e8	canCrossStraightOnly__24cSLCityViewLineAlgorithmiiii	cSLCityViewLineAlgorithm::canCrossStraightOnly(int, int, int, int)
+00051500	getDirtWaterVertexAlt__24cSLCityViewLineAlgorithmRC13cSC3CityCoordRQ224cSLCityViewLineAlgorithm18tDirtCellVertexAlt	cSLCityViewLineAlgorithm::getDirtWaterVertexAlt(cSC3CityCoord const &, cSLCityViewLineAlgorithm::tDirtCellVertexAlt &)
+00051620	getDirtOrWaterVertexAlt__24cSLCityViewLineAlgorithmRC13cSC3CityCoordRQ224cSLCityViewLineAlgorithm18tDirtCellVertexAlt	cSLCityViewLineAlgorithm::getDirtOrWaterVertexAlt(cSC3CityCoord const &, cSLCityViewLineAlgorithm::tDirtCellVertexAlt &)
+00051740	__24cSLCityViewLineAlgorithm	cSLCityViewLineAlgorithm::cSLCityViewLineAlgorithm(void)
+00051940	ExecuteOnMouseMove__12cCTPlaceRoadP26cISC3EnumCityViewSelection	cCTPlaceRoad::ExecuteOnMouseMove(cISC3EnumCityViewSelection *)
+0005199c	ExecuteOnMouseDrag__12cCTPlaceRoadP26cISC3EnumCityViewSelection	cCTPlaceRoad::ExecuteOnMouseDrag(cISC3EnumCityViewSelection *)
+000519f8	ExecuteLineDraw__12cCTPlaceRoadRC13cSC3CityCoordT1PP26cISC3EnumCityViewSelection	cCTPlaceRoad::ExecuteLineDraw(cSC3CityCoord const &, cSC3CityCoord const &, cISC3EnumCityViewSelection **)
+00051a70	CVActiveCursor__12cCTPlaceRoadRUi	cCTPlaceRoad::CVActiveCursor(unsigned int &)
+00051a84	CVIsValidHandlerByView__C12cCTPlaceRoadiUi	cCTPlaceRoad::CVIsValidHandlerByView(int, unsigned int) const
+00051aa0	QueryInterface__12cCTPlaceRoadUiPPv	cCTPlaceRoad::QueryInterface(unsigned int, void **)
+00051af0	AddRef__12cCTPlaceRoad	cCTPlaceRoad::AddRef(void)
+00051b1c	Release__12cCTPlaceRoad	cCTPlaceRoad::Release(void)
+00051b48	__12cCTPlaceRoad	cCTPlaceRoad::cCTPlaceRoad(void)
+00051c20	_._12cCTPlaceRoad	cCTPlaceRoad::~cCTPlaceRoad(void)
+00051cfc	CVActiveCursor__15cCTPlaceHighwayRUi	cCTPlaceHighway::CVActiveCursor(unsigned int &)
+00051d10	CVIsValidHandlerByView__C15cCTPlaceHighwayiUi	cCTPlaceHighway::CVIsValidHandlerByView(int, unsigned int) const
+00051d2c	ExecuteOnMouseMove__15cCTPlaceHighwayP26cISC3EnumCityViewSelection	cCTPlaceHighway::ExecuteOnMouseMove(cISC3EnumCityViewSelection *)
+00051d88	ExecuteOnMouseDrag__15cCTPlaceHighwayP26cISC3EnumCityViewSelection	cCTPlaceHighway::ExecuteOnMouseDrag(cISC3EnumCityViewSelection *)
+00051de4	ExecuteLineDraw__15cCTPlaceHighwayRC13cSC3CityCoordT1PP26cISC3EnumCityViewSelection	cCTPlaceHighway::ExecuteLineDraw(cSC3CityCoord const &, cSC3CityCoord const &, cISC3EnumCityViewSelection **)
+00051e60	QueryInterface__15cCTPlaceHighwayUiPPv	cCTPlaceHighway::QueryInterface(unsigned int, void **)
+00051eb0	AddRef__15cCTPlaceHighway	cCTPlaceHighway::AddRef(void)
+00051edc	Release__15cCTPlaceHighway	cCTPlaceHighway::Release(void)
+00051f08	__15cCTPlaceHighway	cCTPlaceHighway::cCTPlaceHighway(void)
+00051fe0	_._15cCTPlaceHighway	cCTPlaceHighway::~cCTPlaceHighway(void)
+000520c0	ExecuteOnMouseMove__12cCTPlaceRailP26cISC3EnumCityViewSelection	cCTPlaceRail::ExecuteOnMouseMove(cISC3EnumCityViewSelection *)
+0005211c	ExecuteOnMouseDrag__12cCTPlaceRailP26cISC3EnumCityViewSelection	cCTPlaceRail::ExecuteOnMouseDrag(cISC3EnumCityViewSelection *)
+00052178	ExecuteLineDraw__12cCTPlaceRailRC13cSC3CityCoordT1PP26cISC3EnumCityViewSelection	cCTPlaceRail::ExecuteLineDraw(cSC3CityCoord const &, cSC3CityCoord const &, cISC3EnumCityViewSelection **)
+000521f0	CVActiveCursor__12cCTPlaceRailRUi	cCTPlaceRail::CVActiveCursor(unsigned int &)
+00052204	CVIsValidHandlerByView__C12cCTPlaceRailiUi	cCTPlaceRail::CVIsValidHandlerByView(int, unsigned int) const
+00052220	QueryInterface__12cCTPlaceRailUiPPv	cCTPlaceRail::QueryInterface(unsigned int, void **)
+00052270	AddRef__12cCTPlaceRail	cCTPlaceRail::AddRef(void)
+0005229c	Release__12cCTPlaceRail	cCTPlaceRail::Release(void)
+000522c8	__12cCTPlaceRail	cCTPlaceRail::cCTPlaceRail(void)
+000523a0	_._12cCTPlaceRail	cCTPlaceRail::~cCTPlaceRail(void)
+00052480	ExecuteOnMouseMove__14cCTPlaceSubwayP26cISC3EnumCityViewSelection	cCTPlaceSubway::ExecuteOnMouseMove(cISC3EnumCityViewSelection *)
+000524dc	ExecuteOnMouseDrag__14cCTPlaceSubwayP26cISC3EnumCityViewSelection	cCTPlaceSubway::ExecuteOnMouseDrag(cISC3EnumCityViewSelection *)
+00052538	ExecuteLineDraw__14cCTPlaceSubwayRC13cSC3CityCoordT1PP26cISC3EnumCityViewSelection	cCTPlaceSubway::ExecuteLineDraw(cSC3CityCoord const &, cSC3CityCoord const &, cISC3EnumCityViewSelection **)
+000525b0	CVActiveCursor__14cCTPlaceSubwayRUi	cCTPlaceSubway::CVActiveCursor(unsigned int &)
+000525c4	CVIsValidHandlerByView__C14cCTPlaceSubwayiUi	cCTPlaceSubway::CVIsValidHandlerByView(int, unsigned int) const
+000525d8	QueryInterface__14cCTPlaceSubwayUiPPv	cCTPlaceSubway::QueryInterface(unsigned int, void **)
+0005262c	AddRef__14cCTPlaceSubway	cCTPlaceSubway::AddRef(void)
+00052658	Release__14cCTPlaceSubway	cCTPlaceSubway::Release(void)
+00052684	__14cCTPlaceSubway	cCTPlaceSubway::cCTPlaceSubway(void)
+00052750	_._14cCTPlaceSubway	cCTPlaceSubway::~cCTPlaceSubway(void)
+00052830	ExecuteOnMouseMove__14cCTPlaceOnrampP26cISC3EnumCityViewSelection	cCTPlaceOnramp::ExecuteOnMouseMove(cISC3EnumCityViewSelection *)
+0005288c	ExecuteOnMouseDrag__14cCTPlaceOnrampP26cISC3EnumCityViewSelection	cCTPlaceOnramp::ExecuteOnMouseDrag(cISC3EnumCityViewSelection *)
+000528e8	ExecuteLineDraw__14cCTPlaceOnrampRC13cSC3CityCoordT1PP26cISC3EnumCityViewSelection	cCTPlaceOnramp::ExecuteLineDraw(cSC3CityCoord const &, cSC3CityCoord const &, cISC3EnumCityViewSelection **)
+00052960	CVActiveCursor__14cCTPlaceOnrampRUi	cCTPlaceOnramp::CVActiveCursor(unsigned int &)
+00052974	CVIsValidHandlerByView__C14cCTPlaceOnrampiUi	cCTPlaceOnramp::CVIsValidHandlerByView(int, unsigned int) const
+00052990	QueryInterface__14cCTPlaceOnrampUiPPv	cCTPlaceOnramp::QueryInterface(unsigned int, void **)
+000529e0	AddRef__14cCTPlaceOnramp	cCTPlaceOnramp::AddRef(void)
+00052a0c	Release__14cCTPlaceOnramp	cCTPlaceOnramp::Release(void)
+00052a38	__14cCTPlaceOnramp	cCTPlaceOnramp::cCTPlaceOnramp(void)
+00052b10	_._14cCTPlaceOnramp	cCTPlaceOnramp::~cCTPlaceOnramp(void)
+00052bf0	ExecuteOnMouseMove__13cCTPlacePowerP26cISC3EnumCityViewSelection	cCTPlacePower::ExecuteOnMouseMove(cISC3EnumCityViewSelection *)
+00052c4c	ExecuteOnMouseDrag__13cCTPlacePowerP26cISC3EnumCityViewSelection	cCTPlacePower::ExecuteOnMouseDrag(cISC3EnumCityViewSelection *)
+00052ca8	ExecuteLineDraw__13cCTPlacePowerRC13cSC3CityCoordT1PP26cISC3EnumCityViewSelection	cCTPlacePower::ExecuteLineDraw(cSC3CityCoord const &, cSC3CityCoord const &, cISC3EnumCityViewSelection **)
+00052d20	CVActiveCursor__13cCTPlacePowerRUi	cCTPlacePower::CVActiveCursor(unsigned int &)
+00052d34	CVIsValidHandlerByView__C13cCTPlacePoweriUi	cCTPlacePower::CVIsValidHandlerByView(int, unsigned int) const
+00052d50	QueryInterface__13cCTPlacePowerUiPPv	cCTPlacePower::QueryInterface(unsigned int, void **)
+00052da0	AddRef__13cCTPlacePower	cCTPlacePower::AddRef(void)
+00052dcc	Release__13cCTPlacePower	cCTPlacePower::Release(void)
+00052df8	__13cCTPlacePower	cCTPlacePower::cCTPlacePower(void)
+00052ed0	_._13cCTPlacePower	cCTPlacePower::~cCTPlacePower(void)
+00052fb0	ExecuteOnMouseMove__12cCTPlacePipeP26cISC3EnumCityViewSelection	cCTPlacePipe::ExecuteOnMouseMove(cISC3EnumCityViewSelection *)
+0005300c	ExecuteOnMouseDrag__12cCTPlacePipeP26cISC3EnumCityViewSelection	cCTPlacePipe::ExecuteOnMouseDrag(cISC3EnumCityViewSelection *)
+00053068	ExecuteLineDraw__12cCTPlacePipeRC13cSC3CityCoordT1PP26cISC3EnumCityViewSelection	cCTPlacePipe::ExecuteLineDraw(cSC3CityCoord const &, cSC3CityCoord const &, cISC3EnumCityViewSelection **)
+000530e0	CVActiveCursor__12cCTPlacePipeRUi	cCTPlacePipe::CVActiveCursor(unsigned int &)
+000530f4	CVIsValidHandlerByView__C12cCTPlacePipeiUi	cCTPlacePipe::CVIsValidHandlerByView(int, unsigned int) const
+00053108	QueryInterface__12cCTPlacePipeUiPPv	cCTPlacePipe::QueryInterface(unsigned int, void **)
+0005315c	AddRef__12cCTPlacePipe	cCTPlacePipe::AddRef(void)
+00053188	Release__12cCTPlacePipe	cCTPlacePipe::Release(void)
+000531b4	__12cCTPlacePipe	cCTPlacePipe::cCTPlacePipe(void)
+00053280	_._12cCTPlacePipe	cCTPlacePipe::~cCTPlacePipe(void)
+00053360	Setup__24cSLCityViewLineAlgorithmUiP20cISC3OccupantManagerP23cISC3OccManIteratorTestN23P12cISC3DirtBagUiUibT9iUi	cSLCityViewLineAlgorithm::Setup(unsigned int, cISC3OccupantManager *, cISC3OccManIteratorTest *, cISC3OccManIteratorTest *, cISC3OccManIteratorTest *, cISC3DirtBag *, unsigned int, unsigned int, bool, bool, int, unsigned int)
+00053400	isDirtFlat__24cSLCityViewLineAlgorithmRC13cSC3CityCoord	cSLCityViewLineAlgorithm::isDirtFlat(cSC3CityCoord const &)
+00053460	isDirtOrWaterFlat__24cSLCityViewLineAlgorithmRC13cSC3CityCoord	cSLCityViewLineAlgorithm::isDirtOrWaterFlat(cSC3CityCoord const &)
+000534c0	isDirtSloped__24cSLCityViewLineAlgorithmRC13cSC3CityCoord	cSLCityViewLineAlgorithm::isDirtSloped(cSC3CityCoord const &)
+00053550	isDirtSlopedZ__24cSLCityViewLineAlgorithmRC13cSC3CityCoord	cSLCityViewLineAlgorithm::isDirtSlopedZ(cSC3CityCoord const &)
+000535b8	isDirtSlopedX__24cSLCityViewLineAlgorithmRC13cSC3CityCoord	cSLCityViewLineAlgorithm::isDirtSlopedX(cSC3CityCoord const &)
+00053620	isDirtWater__24cSLCityViewLineAlgorithmRC13cSC3CityCoord	cSLCityViewLineAlgorithm::isDirtWater(cSC3CityCoord const &)
+00053664	QueryInterface__24cSLCityViewLineAlgorithmUiPPv	cSLCityViewLineAlgorithm::QueryInterface(unsigned int, void **)
+000536dc	AddRef__24cSLCityViewLineAlgorithm	cSLCityViewLineAlgorithm::AddRef(void)
+000536f8	Release__24cSLCityViewLineAlgorithm	cSLCityViewLineAlgorithm::Release(void)
+00053740	_._24cSLCityViewLineAlgorithm	cSLCityViewLineAlgorithm::~cSLCityViewLineAlgorithm(void)
+000537a4	StaticInit__15cSTTransitLayerP19cISC3CityDefinition	cSTTransitLayer::StaticInit(cISC3CityDefinition *)
+00055998	StaticShutdown__15cSTTransitLayer	cSTTransitLayer::StaticShutdown(void)
+00057a0c	Init__15cSTTransitLayerP9cISC3City	cSTTransitLayer::Init(cISC3City *)
+00057c78	Init__15cSTTransitLayerP9cISC3CityP13cISC2Importer	cSTTransitLayer::Init(cISC3City *, cISC2Importer *)
+00058490	Save__15cSTTransitLayerP9cISC3CityP13cIGZDBSegment	cSTTransitLayer::Save(cISC3City *, cIGZDBSegment *)
+00058764	WriteOccupants__15cSTTransitLayerP13cIGZDBSegmentP20cISC3OccupantManagerP23cISC3OccManIteratorTestR14cGZResourceKeyRUi	cSTTransitLayer::WriteOccupants(cIGZDBSegment *, cISC3OccupantManager *, cISC3OccManIteratorTest *, cGZResourceKey &, unsigned int &)
+00058980	Init__15cSTTransitLayerP9cISC3CityP13cIGZDBSegment	cSTTransitLayer::Init(cISC3City *, cIGZDBSegment *)
+00059004	Shutdown__15cSTTransitLayer	cSTTransitLayer::Shutdown(void)
+000591a4	SimulationBegin__15cSTTransitLayer	cSTTransitLayer::SimulationBegin(void)
+000592cc	CreateOccupantTest__15cSTTransitLayerPPvUii	cSTTransitLayer::CreateOccupantTest(void **, unsigned int, int)
+000599e8	QueryInterface__15cSTTransitLayerUiPPv	cSTTransitLayer::QueryInterface(unsigned int, void **)
+00059b18	DoMessage__15cSTTransitLayerR10cGZMessage	cSTTransitLayer::DoMessage(cGZMessage &)
+00059d44	CanPlaceRoad__C15cSTTransitLayerP26cISC3EnumCityViewSelectionRUi	cSTTransitLayer::CanPlaceRoad(cISC3EnumCityViewSelection *, unsigned int &) const
+0005a228	CanPlaceHighway__C15cSTTransitLayerP26cISC3EnumCityViewSelectionRUi	cSTTransitLayer::CanPlaceHighway(cISC3EnumCityViewSelection *, unsigned int &) const
+0005a708	CanPlaceRail__C15cSTTransitLayerP26cISC3EnumCityViewSelectionRUi	cSTTransitLayer::CanPlaceRail(cISC3EnumCityViewSelection *, unsigned int &) const
+0005abe8	CanPlaceSubway__C15cSTTransitLayerP26cISC3EnumCityViewSelectionRUi	cSTTransitLayer::CanPlaceSubway(cISC3EnumCityViewSelection *, unsigned int &) const
+0005b0c8	CanPlacePipe__C15cSTTransitLayerP26cISC3EnumCityViewSelectionRUi	cSTTransitLayer::CanPlacePipe(cISC3EnumCityViewSelection *, unsigned int &) const
+0005b5a8	CanPlacePower__C15cSTTransitLayerP26cISC3EnumCityViewSelectionRUi	cSTTransitLayer::CanPlacePower(cISC3EnumCityViewSelection *, unsigned int &) const
+0005ba88	CanPlaceOnramp__C15cSTTransitLayerP26cISC3EnumCityViewSelectionRUi	cSTTransitLayer::CanPlaceOnramp(cISC3EnumCityViewSelection *, unsigned int &) const
+0005bec4	PlaceNetwork__15cSTTransitLayerP26cISC3EnumCityViewSelectioniRUiR14cSC3CityBoundsR13cSC3CityCoord	cSTTransitLayer::PlaceNetwork(cISC3EnumCityViewSelection *, int, unsigned int &, cSC3CityBounds &, cSC3CityCoord &)
+0005c0f0	mustStaySurfOcc__15cSTTransitLayerUiG13cSC3CityCoord	cSTTransitLayer::mustStaySurfOcc(unsigned int, cSC3CityCoord)
+0005c268	PlaceNetworkEx__15cSTTransitLayerP20cISC3OccupantManagerP26cISC3EnumCityViewSelectioniUiR14cSC3CityBoundsP13cSC3CityCoordUiR13cSC3CityCoord	cSTTransitLayer::PlaceNetworkEx(cISC3OccupantManager *, cISC3EnumCityViewSelection *, int, unsigned int, cSC3CityBounds &, cSC3CityCoord *, unsigned int, cSC3CityCoord &)
+0005dc98	RefreshNetwork__15cSTTransitLayerRC14cSC3CityBoundsUi	cSTTransitLayer::RefreshNetwork(cSC3CityBounds const &, unsigned int)
+0005ea48	EditNetwork__15cSTTransitLayerGt4list2Z13cSC3CityCoordZt9allocator1Z13cSC3CityCoordiR14cSC3CityBounds	cSTTransitLayer::EditNetwork(list<cSC3CityCoord, allocator<cSC3CityCoord> >, int, cSC3CityBounds &)
+00061854	SolveNetwork__15cSTTransitLayerRt4list2Z13cSC3CityCoordZt9allocator1Z13cSC3CityCoordN31P14cTileEvaluatorP20cISC3OccupantManagerP23cISC3OccManIteratorTestN27bT10_ii	cSTTransitLayer::SolveNetwork(list<cSC3CityCoord, allocator<cSC3CityCoord> > &, list<cSC3CityCoord, allocator<cSC3CityCoord> > &, list<cSC3CityCoord, allocator<cSC3CityCoord> > &, list<cSC3CityCoord, allocator<cSC3CityCoord> > &, cTileEvaluator *, cISC3OccupantManager *, cISC3OccManIteratorTest *, cISC3OccManIteratorTest *, cISC3OccManIteratorTest *, bool, bool, int, int)
+00061dd0	InsertNetwork__15cSTTransitLayerP20cISC3OccupantManagerRC13cSC3CityCoordR18cTileIdentityArrayP23cISC3OccManIteratorTestT4bT6i	cSTTransitLayer::InsertNetwork(cISC3OccupantManager *, cSC3CityCoord const &, cTileIdentityArray &, cISC3OccManIteratorTest *, cISC3OccManIteratorTest *, bool, bool, int)
+000620c4	InsertNetworkIntersection__15cSTTransitLayerP20cISC3OccupantManagerRC13cSC3CityCoordP23cISC3OccManIteratorTestT3bT5issT5	cSTTransitLayer::InsertNetworkIntersection(cISC3OccupantManager *, cSC3CityCoord const &, cISC3OccManIteratorTest *, cISC3OccManIteratorTest *, bool, bool, int, short, short, bool)
+00062418	AddNeighborTilesToTileList__15cSTTransitLayerRt4list2Z13cSC3CityCoordZt9allocator1Z13cSC3CityCoordRC13cSC3CityCoord	cSTTransitLayer::AddNeighborTilesToTileList(list<cSC3CityCoord, allocator<cSC3CityCoord> > &, cSC3CityCoord const &)
+00062618	AddRefreshTilesToTileList__15cSTTransitLayerP20cISC3OccupantManagerP23cISC3OccManIteratorTestUiRC14cSC3CityBoundsRt4list2Z13cSC3CityCoordZt9allocator1Z13cSC3CityCoord	cSTTransitLayer::AddRefreshTilesToTileList(cISC3OccupantManager *, cISC3OccManIteratorTest *, unsigned int, cSC3CityBounds const &, list<cSC3CityCoord, allocator<cSC3CityCoord> > &)
+00062e9c	ReadTileSets__15cSTTransitLayer	cSTTransitLayer::ReadTileSets(void)
+00067cf4	GrokFileTileSet__15cSTTransitLayerP7cRZFilePcPt6vector2Z14cGZResourceKeyZt9allocator1Z14cGZResourceKey	cSTTransitLayer::GrokFileTileSet(cRZFile *, char *, vector<cGZResourceKey, allocator<cGZResourceKey> > *)
+0006806c	ReadTilingFamilies__15cSTTransitLayer	cSTTransitLayer::ReadTilingFamilies(void)
+00071e14	ReadConvertAndProtectedSets__15cSTTransitLayer	cSTTransitLayer::ReadConvertAndProtectedSets(void)
+0007fbe4	GrokFileConvertSets__15cSTTransitLayerP7cRZFilePcPt6vector2Z14tSTTileConvertZt9allocator1Z14tSTTileConvert	cSTTransitLayer::GrokFileConvertSets(cRZFile *, char *, vector<tSTTileConvert, allocator<tSTTileConvert> > *)
+0008003c	GrokFileProtectedSets__15cSTTransitLayerP7cRZFilePcPt6vector2ZUiZt9allocator1ZUi	cSTTransitLayer::GrokFileProtectedSets(cRZFile *, char *, vector<unsigned int, allocator<unsigned int> > *)
+00080374	CreateNeighborhood__15cSTTransitLayerPP17cTileNeighborhoodRt4list2Z13cSC3CityCoordZt9allocator1Z13cSC3CityCoordT2P14cTileEvaluatorP20cISC3OccupantManagerP23cISC3OccManIteratorTestT6RC13cSC3CityCoordii	cSTTransitLayer::CreateNeighborhood(cTileNeighborhood **, list<cSC3CityCoord, allocator<cSC3CityCoord> > &, list<cSC3CityCoord, allocator<cSC3CityCoord> > &, cTileEvaluator *, cISC3OccupantManager *, cISC3OccManIteratorTest *, cISC3OccManIteratorTest *, cSC3CityCoord const &, int, int)
+00081244	__15cSTTransitLayer	cSTTransitLayer::cSTTransitLayer(void)
+00081374	getDirtWaterVertexAlt__15cSTTransitLayerRC13cSC3CityCoordRQ215cSTTransitLayer18tDirtCellVertexAlt	cSTTransitLayer::getDirtWaterVertexAlt(cSC3CityCoord const &, cSTTransitLayer::tDirtCellVertexAlt &)
+00081490	selectSloped__15cSTTransitLayerRC13cSC3CityCoordiRt4list2Z13cSC3CityCoordZt9allocator1Z13cSC3CityCoordRUiRUcb	cSTTransitLayer::selectSloped(cSC3CityCoord const &, int, list<cSC3CityCoord, allocator<cSC3CityCoord> > &, unsigned int &, unsigned char &, bool)
+00081894	getSubType__15cSTTransitLayerUi	cSTTransitLayer::getSubType(unsigned int)
+00081a54	isProtected__15cSTTransitLayeriUi	cSTTransitLayer::isProtected(int, unsigned int)
+00081aec	convert__15cSTTransitLayeriiUiUcRUiRUc	cSTTransitLayer::convert(int, int, unsigned int, unsigned char, unsigned int &, unsigned char &)
+00081c4c	isNonDiagonalLine__15cSTTransitLayerPt4list2Z13cSC3CityCoordZt9allocator1Z13cSC3CityCoord	cSTTransitLayer::isNonDiagonalLine(list<cSC3CityCoord, allocator<cSC3CityCoord> > *)
+00081d68	Test__15cSTRoadEditTestP13cISC3Occupant	cSTRoadEditTest::Test(cISC3Occupant *)
+00081e10	Test__16cSTPowerEditTestP13cISC3Occupant	cSTPowerEditTest::Test(cISC3Occupant *)
+00081ea4	Test__15cSTRailEditTestP13cISC3Occupant	cSTRailEditTest::Test(cISC3Occupant *)
+00081f50	Test__18cSTHighwayEditTestP13cISC3Occupant	cSTHighwayEditTest::Test(cISC3Occupant *)
+00082000	Test__29cSTRoadTraverseHorizontalTestP13cISC3Occupant	cSTRoadTraverseHorizontalTest::Test(cISC3Occupant *)
+000820e0	Test__29cSTRailTraverseHorizontalTestP13cISC3Occupant	cSTRailTraverseHorizontalTest::Test(cISC3Occupant *)
+000821f0	Test__32cSTHighwayTraverseHorizontalTestP13cISC3Occupant	cSTHighwayTraverseHorizontalTest::Test(cISC3Occupant *)
+000822e0	Test__30cSTPowerTraverseHorizontalTestP13cISC3Occupant	cSTPowerTraverseHorizontalTest::Test(cISC3Occupant *)
+000823c0	Test__27cSTRoadTraverseVerticalTestP13cISC3Occupant	cSTRoadTraverseVerticalTest::Test(cISC3Occupant *)
+000824a4	Test__27cSTRailTraverseVerticalTestP13cISC3Occupant	cSTRailTraverseVerticalTest::Test(cISC3Occupant *)
+000825a0	Test__30cSTHighwayTraverseVerticalTestP13cISC3Occupant	cSTHighwayTraverseVerticalTest::Test(cISC3Occupant *)
+000826b0	Test__28cSTPowerTraverseVerticalTestP13cISC3Occupant	cSTPowerTraverseVerticalTest::Test(cISC3Occupant *)
+000827dc	NumRoadOccs__C15cSTTransitLayer	cSTTransitLayer::NumRoadOccs(void) const
+000827ec	NumHighwayOccs__C15cSTTransitLayer	cSTTransitLayer::NumHighwayOccs(void) const
+000827fc	NumRailOccs__C15cSTTransitLayer	cSTTransitLayer::NumRailOccs(void) const
+0008280c	NumSubwayOccs__C15cSTTransitLayer	cSTTransitLayer::NumSubwayOccs(void) const
+0008281c	NumPlumbingOccs__C15cSTTransitLayer	cSTTransitLayer::NumPlumbingOccs(void) const
+0008282c	NumPowerOccs__C15cSTTransitLayer	cSTTransitLayer::NumPowerOccs(void) const
+0008283c	SimulationEnd__15cSTTransitLayer	cSTTransitLayer::SimulationEnd(void)
+00082848	SetmDebugRules__15cSTTransitLayerb	cSTTransitLayer::SetmDebugRules(bool)
+0008285c	CreateOccupant__15cSTTransitLayerPPvUiUiUi	cSTTransitLayer::CreateOccupant(void **, unsigned int, unsigned int, unsigned int)
+0008290c	CreateOccupant__15cSTTransitLayerR19cISC3OccPersistInfoUiPPv	cSTTransitLayer::CreateOccupant(cISC3OccPersistInfo &, unsigned int, void **)
+000829ec	CreateOccupant__15cSTTransitLayerR14cGZResourceKeyUiPPv	cSTTransitLayer::CreateOccupant(cGZResourceKey &, unsigned int, void **)
+00082a30	CreateOccupant__15cSTTransitLayerP19cISC3OccupantAttribUiPPv	cSTTransitLayer::CreateOccupant(cISC3OccupantAttrib *, unsigned int, void **)
+00082a80	GetLayerType__15cSTTransitLayer	cSTTransitLayer::GetLayerType(void)
+00082a90	Release__15cSTTransitLayer	cSTTransitLayer::Release(void)
+00082ae8	AddRef__15cSTTransitLayer	cSTTransitLayer::AddRef(void)
+00082b24	surfaceInsert__15cSTTransitLayerP13cISC3Occupant	cSTTransitLayer::surfaceInsert(cISC3Occupant *)
+00082b7c	plumbingInsert__15cSTTransitLayerP13cISC3Occupant	cSTTransitLayer::plumbingInsert(cISC3Occupant *)
+00082bb8	subwayInsert__15cSTTransitLayerP13cISC3Occupant	cSTTransitLayer::subwayInsert(cISC3Occupant *)
+00082bf4	surfaceRemove__15cSTTransitLayerP13cISC3Occupant	cSTTransitLayer::surfaceRemove(cISC3Occupant *)
+00082c4c	plumbingRemove__15cSTTransitLayerP13cISC3Occupant	cSTTransitLayer::plumbingRemove(cISC3Occupant *)
+00082c88	subwayRemove__15cSTTransitLayerP13cISC3Occupant	cSTTransitLayer::subwayRemove(cISC3Occupant *)
+00082cc0	GetManipulator__15cSTTransitLayerRC18cISC3CityAgentTypePP25cISC3CityLayerManipulatorRi	cSTTransitLayer::GetManipulator(cISC3CityAgentType const &, cISC3CityLayerManipulator **, int &)
+00082cd8	HasTransit__C15cSTTransitLayerRC13cSC3CityCoord	cSTTransitLayer::HasTransit(cSC3CityCoord const &) const
+00082d68	HasRoad__C15cSTTransitLayerRC13cSC3CityCoord	cSTTransitLayer::HasRoad(cSC3CityCoord const &) const
+00082dec	HasHighway__C15cSTTransitLayerRC13cSC3CityCoord	cSTTransitLayer::HasHighway(cSC3CityCoord const &) const
+00082e70	HasRail__C15cSTTransitLayerRC13cSC3CityCoord	cSTTransitLayer::HasRail(cSC3CityCoord const &) const
+00082ef4	HasSubway__C15cSTTransitLayerRC13cSC3CityCoord	cSTTransitLayer::HasSubway(cSC3CityCoord const &) const
+00082f78	HasPower__C15cSTTransitLayerRC13cSC3CityCoord	cSTTransitLayer::HasPower(cSC3CityCoord const &) const
+00082ffc	HasPipe__C15cSTTransitLayerRC13cSC3CityCoord	cSTTransitLayer::HasPipe(cSC3CityCoord const &) const
+00083080	HasTunnel__C15cSTTransitLayerRC13cSC3CityCoord	cSTTransitLayer::HasTunnel(cSC3CityCoord const &) const
+00083104	PlaceRoad__15cSTTransitLayerP26cISC3EnumCityViewSelectionRUiR14cSC3CityBoundsR13cSC3CityCoord	cSTTransitLayer::PlaceRoad(cISC3EnumCityViewSelection *, unsigned int &, cSC3CityBounds &, cSC3CityCoord &)
+0008314c	PlaceHighway__15cSTTransitLayerP26cISC3EnumCityViewSelectionRUiR14cSC3CityBoundsR13cSC3CityCoord	cSTTransitLayer::PlaceHighway(cISC3EnumCityViewSelection *, unsigned int &, cSC3CityBounds &, cSC3CityCoord &)
+00083194	PlaceRail__15cSTTransitLayerP26cISC3EnumCityViewSelectionRUiR14cSC3CityBoundsR13cSC3CityCoord	cSTTransitLayer::PlaceRail(cISC3EnumCityViewSelection *, unsigned int &, cSC3CityBounds &, cSC3CityCoord &)
+000831dc	PlaceSubway__15cSTTransitLayerP26cISC3EnumCityViewSelectionRUiR14cSC3CityBoundsR13cSC3CityCoord	cSTTransitLayer::PlaceSubway(cISC3EnumCityViewSelection *, unsigned int &, cSC3CityBounds &, cSC3CityCoord &)
+00083224	PlacePower__15cSTTransitLayerP26cISC3EnumCityViewSelectionRUiR14cSC3CityBoundsR13cSC3CityCoord	cSTTransitLayer::PlacePower(cISC3EnumCityViewSelection *, unsigned int &, cSC3CityBounds &, cSC3CityCoord &)
+0008326c	PlacePipe__15cSTTransitLayerP26cISC3EnumCityViewSelectionRUiR14cSC3CityBoundsR13cSC3CityCoord	cSTTransitLayer::PlacePipe(cISC3EnumCityViewSelection *, unsigned int &, cSC3CityBounds &, cSC3CityCoord &)
+000832b4	ReloadTileRules__15cSTTransitLayer	cSTTransitLayer::ReloadTileRules(void)
+000832f8	canEdit__15cSTTransitLayeriii	cSTTransitLayer::canEdit(int, int, int)
+00083400	isDirtFlat__15cSTTransitLayerRC13cSC3CityCoord	cSTTransitLayer::isDirtFlat(cSC3CityCoord const &)
+00083460	isDirtSloped__15cSTTransitLayerRC13cSC3CityCoord	cSTTransitLayer::isDirtSloped(cSC3CityCoord const &)
+000834f0	isDirtTunnel__15cSTTransitLayerRC13cSC3CityCoord	cSTTransitLayer::isDirtTunnel(cSC3CityCoord const &)
+00083564	isDirtWater__15cSTTransitLayerRC13cSC3CityCoord	cSTTransitLayer::isDirtWater(cSC3CityCoord const &)
+000835a8	ReadFile__15cSTTransitLayerP7cRZFilePc	cSTTransitLayer::ReadFile(cRZFile *, char *)
+00083648	DumpTileSets__15cSTTransitLayer	cSTTransitLayer::DumpTileSets(void)
+00083654	DumpTilingFamilies__15cSTTransitLayer	cSTTransitLayer::DumpTilingFamilies(void)
+00083660	DumpConvertAndProtectedSets__15cSTTransitLayer	cSTTransitLayer::DumpConvertAndProtectedSets(void)
+00083670	InitTileIdentity__15cSTTransitLayerP13cTileIdentityRC13cSC3CityCoordP13cISC3OccupantiiiiP23cISC3OccManIteratorTestT8	cSTTransitLayer::InitTileIdentity(cTileIdentity *, cSC3CityCoord const &, cISC3Occupant *, int, int, int, int, cISC3OccManIteratorTest *, cISC3OccManIteratorTest *)
+000837cc	_._15cSTTransitLayer	cSTTransitLayer::~cSTTransitLayer(void)
+00083820	setVertexAltitude__15cSTTransitLayerUiUiUc	cSTTransitLayer::setVertexAltitude(unsigned int, unsigned int, unsigned char)
+00083884	setVertexAltitude__15cSTTransitLayerUiUiUiUiUc	cSTTransitLayer::setVertexAltitude(unsigned int, unsigned int, unsigned int, unsigned int, unsigned char)
+000838fc	getVertexAltitude__15cSTTransitLayerUiUiRUc	cSTTransitLayer::getVertexAltitude(unsigned int, unsigned int, unsigned char &)
+00083964	getTileRuleID__15cSTTransitLayerP13cISC3Occupant	cSTTransitLayer::getTileRuleID(cISC3Occupant *)
+000839d0	isRoad__15cSTTransitLayerUi	cSTTransitLayer::isRoad(unsigned int)
+00083a14	isHighway__15cSTTransitLayerUi	cSTTransitLayer::isHighway(unsigned int)
+00083a54	isRail__15cSTTransitLayerUi	cSTTransitLayer::isRail(unsigned int)
+00083a94	isSubway__15cSTTransitLayerUi	cSTTransitLayer::isSubway(unsigned int)
+00083ad4	isPipe__15cSTTransitLayerUi	cSTTransitLayer::isPipe(unsigned int)
+00083b14	isPower__15cSTTransitLayerUi	cSTTransitLayer::isPower(unsigned int)
+00083b54	isNetwork__15cSTTransitLayerUi	cSTTransitLayer::isNetwork(unsigned int)
+00083c08	getTileID__15cSTTransitLayerP13cISC3Occupant	cSTTransitLayer::getTileID(cISC3Occupant *)
+00083c90	__10cSTOccTest	cSTOccTest::cSTOccTest(void)
+00083ccc	_._10cSTOccTest	cSTOccTest::~cSTOccTest(void)
+00083d04	QueryInterface__10cSTOccTestUiPPv	cSTOccTest::QueryInterface(unsigned int, void **)
+00083d5c	AddRef__10cSTOccTest	cSTOccTest::AddRef(void)
+00083d74	Release__10cSTOccTest	cSTOccTest::Release(void)
+00083d98	Test__10cSTOccTestP13cISC3Occupant	cSTOccTest::Test(cISC3Occupant *)
+00083dc8	Test__11cSTRoadTestP13cISC3Occupant	cSTRoadTest::Test(cISC3Occupant *)
+00083df8	Test__11cSTRailTestP13cISC3Occupant	cSTRailTest::Test(cISC3Occupant *)
+00083e28	Test__14cSTHighwayTestP13cISC3Occupant	cSTHighwayTest::Test(cISC3Occupant *)
+00083e58	Test__13cSTSubwayTestP13cISC3Occupant	cSTSubwayTest::Test(cISC3Occupant *)
+00083e88	Test__11cSTPipeTestP13cISC3Occupant	cSTPipeTest::Test(cISC3Occupant *)
+00083eb8	Test__12cSTPowerTestP13cISC3Occupant	cSTPowerTest::Test(cISC3Occupant *)
+00083ee8	Test__14cSTNetworkTestP13cISC3Occupant	cSTNetworkTest::Test(cISC3Occupant *)
+00083f18	Test__14cSTTransitTestP13cISC3Occupant	cSTTransitTest::Test(cISC3Occupant *)
+00083f48	Test__11cSTTreeTestP13cISC3Occupant	cSTTreeTest::Test(cISC3Occupant *)
+00083f78	Test__15cSTNotARoadTestP13cISC3Occupant	cSTNotARoadTest::Test(cISC3Occupant *)
+00083fac	Test__15cSTNotARailTestP13cISC3Occupant	cSTNotARailTest::Test(cISC3Occupant *)
+00083fe0	Test__18cSTNotAHighwayTestP13cISC3Occupant	cSTNotAHighwayTest::Test(cISC3Occupant *)
+00084014	Test__17cSTNotASubwayTestP13cISC3Occupant	cSTNotASubwayTest::Test(cISC3Occupant *)
+00084048	Test__15cSTNotAPipeTestP13cISC3Occupant	cSTNotAPipeTest::Test(cISC3Occupant *)
+0008407c	Test__16cSTNotAPowerTestP13cISC3Occupant	cSTNotAPowerTest::Test(cISC3Occupant *)
+000840b0	Test__18cSTNotANetworkTestP13cISC3Occupant	cSTNotANetworkTest::Test(cISC3Occupant *)
+000840e4	Test__17cSTSubwayEditTestP13cISC3Occupant	cSTSubwayEditTest::Test(cISC3Occupant *)
+00084120	Test__15cSTPipeEditTestP13cISC3Occupant	cSTPipeEditTest::Test(cISC3Occupant *)
+00084158	Test__25cSTRoadEditTestWconstrainP13cISC3Occupant	cSTRoadEditTestWconstrain::Test(cISC3Occupant *)
+000841d0	Test__26cSTPowerEditTestWconstrainP13cISC3Occupant	cSTPowerEditTestWconstrain::Test(cISC3Occupant *)
+00084228	Test__25cSTRailEditTestWconstrainP13cISC3Occupant	cSTRailEditTestWconstrain::Test(cISC3Occupant *)
+000842a0	Test__28cSTHighwayEditTestWconstrainP13cISC3Occupant	cSTHighwayEditTestWconstrain::Test(cISC3Occupant *)
+00084314	Test__27cSTSubwayEditTestWconstrainP13cISC3Occupant	cSTSubwayEditTestWconstrain::Test(cISC3Occupant *)
+00084350	Test__25cSTPipeEditTestWconstrainP13cISC3Occupant	cSTPipeEditTestWconstrain::Test(cISC3Occupant *)
+00084388	Test__31cSTSubwayTraverseHorizontalTestP13cISC3Occupant	cSTSubwayTraverseHorizontalTest::Test(cISC3Occupant *)
+000843b8	Test__29cSTPipeTraverseHorizontalTestP13cISC3Occupant	cSTPipeTraverseHorizontalTest::Test(cISC3Occupant *)
+000843e8	Test__29cSTSubwayTraverseVerticalTestP13cISC3Occupant	cSTSubwayTraverseVerticalTest::Test(cISC3Occupant *)
+00084418	Test__27cSTPipeTraverseVerticalTestP13cISC3Occupant	cSTPipeTraverseVerticalTest::Test(cISC3Occupant *)
+00084448	Test__16cSTCanDamageTestP13cISC3Occupant	cSTCanDamageTest::Test(cISC3Occupant *)
+000844c4	Test__14cSTDamagedTestP13cISC3Occupant	cSTDamagedTest::Test(cISC3Occupant *)
+00084558	DebugClassTag__15cSTTransitLayerR10cIGZString	cSTTransitLayer::DebugClassTag(cIGZString &)
+00084564	DebugTypeTag__15cSTTransitLayerR10cIGZString	cSTTransitLayer::DebugTypeTag(cIGZString &)
+00084570	DoQueryInfo__15cSTTransitLayerR10cGZMessageP11cIGZUnknown	cSTTransitLayer::DoQueryInfo(cGZMessage &, cIGZUnknown *)
+0008457c	IsStringInfoAvailable__15cSTTransitLayerUi	cSTTransitLayer::IsStringInfoAvailable(unsigned int)
+00084588	GetInfoStringCount__15cSTTransitLayerUi	cSTTransitLayer::GetInfoStringCount(unsigned int)
+00084594	GetInfoStrings__15cSTTransitLayerUiUiUiUiRUiR10cIGZStringT6	cSTTransitLayer::GetInfoStrings(unsigned int, unsigned int, unsigned int, unsigned int, unsigned int &, cIGZString &, cIGZString &)
+000845a0	GetMapSpriteCount__15cSTTransitLayer	cSTTransitLayer::GetMapSpriteCount(void)
+000845ac	GetSpriteIdFromIndex__15cSTTransitLayerUiRUi	cSTTransitLayer::GetSpriteIdFromIndex(unsigned int, unsigned int &)
+000845b8	CreateMapSprite__15cSTTransitLayerUiUiPPv	cSTTransitLayer::CreateMapSprite(unsigned int, unsigned int, void **)
+000845d4	PrepareAndPlaceTunnel__15cSTTransitLayerP20cISC3OccupantManagerUiiG13cSC3CityCoordN24R13cSC3CityCoordss	cSTTransitLayer::PrepareAndPlaceTunnel(cISC3OccupantManager *, unsigned int, int, cSC3CityCoord, cSC3CityCoord, cSC3CityCoord, cSC3CityCoord &, short, short)
+000851e4	PrepareAndPlaceTunnelforHighways__15cSTTransitLayerP20cISC3OccupantManagerUiiG13cSC3CityCoordN34ss	cSTTransitLayer::PrepareAndPlaceTunnelforHighways(cISC3OccupantManager *, unsigned int, int, cSC3CityCoord, cSC3CityCoord, cSC3CityCoord, cSC3CityCoord, short, short)
+00086490	CollapseSupport__15cSTTransitLayerP20cISC3OccupantManagerG13cSC3CityCoordUsUcR14cSC3CityBoundsb	cSTTransitLayer::CollapseSupport(cISC3OccupantManager *, cSC3CityCoord, unsigned short, unsigned char, cSC3CityBounds &, bool)
+000866a0	CollapseSupport__15cSTTransitLayerP20cISC3OccupantManagerG13cSC3CityCoordUsUcR14cSC3CityBoundsbRt4list2Z13cSC3CityCoordZt9allocator1Z13cSC3CityCoordT6	cSTTransitLayer::CollapseSupport(cISC3OccupantManager *, cSC3CityCoord, unsigned short, unsigned char, cSC3CityBounds &, bool, list<cSC3CityCoord, allocator<cSC3CityCoord> > &, bool)
+00086b78	collapseStructure__15cSTTransitLayerP20cISC3OccupantManagerG13cSC3CityCoordUsUcR14cSC3CityBoundsRibRt4list2Z13cSC3CityCoordZt9allocator1Z13cSC3CityCoord	cSTTransitLayer::collapseStructure(cISC3OccupantManager *, cSC3CityCoord, unsigned short, unsigned char, cSC3CityBounds &, int &, bool, list<cSC3CityCoord, allocator<cSC3CityCoord> > &)
+00087b34	myRemoveOccupantIfMatch__15cSTTransitLayerP20cISC3OccupantManagerUiUiUiiRibRt4list2Z13cSC3CityCoordZt9allocator1Z13cSC3CityCoord	cSTTransitLayer::myRemoveOccupantIfMatch(cISC3OccupantManager *, unsigned int, unsigned int, unsigned int, int, int &, bool, list<cSC3CityCoord, allocator<cSC3CityCoord> > &)
+00087d7c	myRemoveOccupant__15cSTTransitLayerP20cISC3OccupantManagerUiUiR14cSC3CityBoundsRibRt4list2Z13cSC3CityCoordZt9allocator1Z13cSC3CityCoord	cSTTransitLayer::myRemoveOccupant(cISC3OccupantManager *, unsigned int, unsigned int, cSC3CityBounds &, int &, bool, list<cSC3CityCoord, allocator<cSC3CityCoord> > &)
+00088084	SameNet__15cSTTransitLayerUiP13cISC3Occupant	cSTTransitLayer::SameNet(unsigned int, cISC3Occupant *)
+00088178	myPrepareForRoad__15cSTTransitLayerUiP26cISC3EnumCityViewSelectionR14cSC3CityBoundsRUiRt4list2Z13cSC3CityCoordZt9allocator1Z13cSC3CityCoordbT6	cSTTransitLayer::myPrepareForRoad(unsigned int, cISC3EnumCityViewSelection *, cSC3CityBounds &, unsigned int &, list<cSC3CityCoord, allocator<cSC3CityCoord> > &, bool, bool)
+00088b60	myPrepareForHighway__15cSTTransitLayerUiP26cISC3EnumCityViewSelectionR14cSC3CityBoundsRUiRt4list2Z13cSC3CityCoordZt9allocator1Z13cSC3CityCoordbT6	cSTTransitLayer::myPrepareForHighway(unsigned int, cISC3EnumCityViewSelection *, cSC3CityBounds &, unsigned int &, list<cSC3CityCoord, allocator<cSC3CityCoord> > &, bool, bool)
+000890c8	DoPrepare__15cSTTransitLayerUsUsUsUsssUsRt4list2Z13cSC3CityCoordZt9allocator1Z13cSC3CityCoordb	cSTTransitLayer::DoPrepare(unsigned short, unsigned short, unsigned short, unsigned short, short, short, unsigned short, list<cSC3CityCoord, allocator<cSC3CityCoord> > &, bool)
+00089fb8	FlattenCellIfYouCan__15cSTTransitLayerG13cSC3CityCoordT1RUii	cSTTransitLayer::FlattenCellIfYouCan(cSC3CityCoord, cSC3CityCoord, unsigned int &, int)
+0008a338	ForcePlaceTile__15cSTTransitLayerP20cISC3OccupantManagerRC13cSC3CityCoordUisiUi	cSTTransitLayer::ForcePlaceTile(cISC3OccupantManager *, cSC3CityCoord const &, unsigned int, short, int, unsigned int)
+0008a504	PrepareAndPlaceConnection__15cSTTransitLayerRt4list2Z13cSC3CityCoordZt9allocator1Z13cSC3CityCoordiUi	cSTTransitLayer::PrepareAndPlaceConnection(list<cSC3CityCoord, allocator<cSC3CityCoord> > &, int, unsigned int)
+0008aff4	ShouldWeRemoveConnection__15cSTTransitLayerP13cISC3OccupantRib	cSTTransitLayer::ShouldWeRemoveConnection(cISC3Occupant *, int &, bool)
+0008b25c	myRemoveOccupant__15cSTTransitLayerP20cISC3OccupantManagerUiUiR14cSC3CityBoundsRi	cSTTransitLayer::myRemoveOccupant(cISC3OccupantManager *, unsigned int, unsigned int, cSC3CityBounds &, int &)
+0008b39c	FullDoPrepare__15cSTTransitLayerRt4list2Z13cSC3CityCoordZt9allocator1Z13cSC3CityCoordT1ibRi	cSTTransitLayer::FullDoPrepare(list<cSC3CityCoord, allocator<cSC3CityCoord> > &, list<cSC3CityCoord, allocator<cSC3CityCoord> > &, int, bool, int &)
+0008b738	safeSetVertexAltitude__15cSTTransitLayerUiUiUci	cSTTransitLayer::safeSetVertexAltitude(unsigned int, unsigned int, unsigned char, int)
+0008bb28	CanSafeSetVertexAltitude__15cSTTransitLayerUiUiUci	cSTTransitLayer::CanSafeSetVertexAltitude(unsigned int, unsigned int, unsigned char, int)
+0008bf84	DidATunnelCollapsed__15cSTTransitLayerUiUi	cSTTransitLayer::DidATunnelCollapsed(unsigned int, unsigned int)
+0008bf90	RemoveConnectionInteractive__15cSTTransitLayerP20cISC3OccupantManagerP13cISC3Occupant	cSTTransitLayer::RemoveConnectionInteractive(cISC3OccupantManager *, cISC3Occupant *)
+0008c054	__17cRZCOMDllDirector	cRZCOMDllDirector::cRZCOMDllDirector(void)
+0008c2e4	_._17cRZCOMDllDirector	cRZCOMDllDirector::~cRZCOMDllDirector(void)
+0008c424	InitializeCOM__17cRZCOMDllDirectorP7cIGZCOMR10cIGZString	cRZCOMDllDirector::InitializeCOM(cIGZCOM *, cIGZString &)
+0008c714	OnStart__17cRZCOMDllDirectorP7cIGZCOM	cRZCOMDllDirector::OnStart(cIGZCOM *)
+0008c870	GetClassObject__17cRZCOMDllDirectorUiUiPPv	cRZCOMDllDirector::GetClassObject(unsigned int, unsigned int, void **)
+0008c988	EnumClassObjects__17cRZCOMDllDirectorPFUiUiPv_vPv	cRZCOMDllDirector::EnumClassObjects(void (*)(unsigned int, unsigned int, void *), void *)
+0008ca68	AddDirector__17cRZCOMDllDirectorP17cRZCOMDllDirector	cRZCOMDllDirector::AddDirector(cRZCOMDllDirector *)
+0008cb10	OnUnload__17cRZCOMDllDirector	cRZCOMDllDirector::OnUnload(void)
+0008cb20	GZCOM__Fv	GZCOM(void)
+0008cb50	GZDllGetGZCOMDirector	GZDllGetGZCOMDirector
+0008cb70	QueryInterface__17cRZCOMDllDirectorUiPPv	cRZCOMDllDirector::QueryInterface(unsigned int, void **)
+0008cbec	FrameWork__17cRZCOMDllDirector	cRZCOMDllDirector::FrameWork(void)
+0008cbfc	AddRef__17cRZCOMDllDirector	cRZCOMDllDirector::AddRef(void)
+0008cc18	Release__17cRZCOMDllDirector	cRZCOMDllDirector::Release(void)
+0008cc40	RemoveRef__17cRZCOMDllDirector	cRZCOMDllDirector::RemoveRef(void)
+0008cc58	RefCount__17cRZCOMDllDirector	cRZCOMDllDirector::RefCount(void)
+0008cc6c	ModuleName__17cRZCOMDllDirectorR10cIGZString	cRZCOMDllDirector::ModuleName(cIGZString &)
+0008cca0	CanUnloadNow__17cRZCOMDllDirector	cRZCOMDllDirector::CanUnloadNow(void)
+0008ccf8	AddCls__17cRZCOMDllDirectorUiPFv_P11cIGZUnknownUi	cRZCOMDllDirector::AddCls(unsigned int, cIGZUnknown *(*)(void), unsigned int)
+0008cd4c	AppRegister__17cRZCOMDllDirectorP12cIGZRegistry	cRZCOMDllDirector::AppRegister(cIGZRegistry *)
+0008cda4	PreFrameWorkInit__17cRZCOMDllDirector	cRZCOMDllDirector::PreFrameWorkInit(void)
+0008cdb0	PreAppInit__17cRZCOMDllDirector	cRZCOMDllDirector::PreAppInit(void)
+0008cdbc	PostAppInit__17cRZCOMDllDirector	cRZCOMDllDirector::PostAppInit(void)
+0008cdc8	PreAppShutdown__17cRZCOMDllDirector	cRZCOMDllDirector::PreAppShutdown(void)
+0008cdd4	PostAppShutdown__17cRZCOMDllDirector	cRZCOMDllDirector::PostAppShutdown(void)
+0008cde0	PostSystemServiceShutdown__17cRZCOMDllDirector	cRZCOMDllDirector::PostSystemServiceShutdown(void)
+0008cdec	AbortiveQuit__17cRZCOMDllDirector	cRZCOMDllDirector::AbortiveQuit(void)
+0008cdf8	OnInstall__17cRZCOMDllDirector	cRZCOMDllDirector::OnInstall(void)
+0008ce04	GZCOM__17cRZCOMDllDirector	cRZCOMDllDirector::GZCOM(void)
+0008ce20	__out_of_range__FPCc	__out_of_range(char const *)
+0008d088	__length_error__FPCc	__length_error(char const *)
+0008d2e8	__11logic_errorRCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0	logic_error::logic_error(basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &)
+0008d344	what__C11logic_error	logic_error::what(void) const
+0008d36c	__12domain_errorRCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0	domain_error::domain_error(basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &)
+0008d3cc	__16invalid_argumentRCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0	invalid_argument::invalid_argument(basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &)
+0008d42c	__12length_errorRCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0	length_error::length_error(basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &)
+0008d48c	__12out_of_rangeRCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0	out_of_range::out_of_range(basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &)
+0008d4ec	__13runtime_errorRCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0	runtime_error::runtime_error(basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &)
+0008d54c	what__C13runtime_error	runtime_error::what(void) const
+0008d570	__13runtime_error	runtime_error::runtime_error(void)
+0008d5d4	__11range_errorRCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0	range_error::range_error(basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &)
+0008d62c	__14overflow_errorRCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0	overflow_error::overflow_error(basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &)
+0008d68c	__15underflow_errorRCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0	underflow_error::underflow_error(basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &)
+0008d6f0	__7istreamiP9streambufP7ostream	istream::istream(int, streambuf *, ostream *)
+0008d7a4	skip_ws__FP9streambuf	skip_ws(streambuf *)
+0008d7d8	get__7istreamRc	istream::get(char &)
+0008d8b8	peek__7istream	istream::peek(void)
+0008d914	ignore__7istreamii	istream::ignore(int, int)
+0008da0c	read__7istreamPci	istream::read(char *, int)
+0008dae4	sync__7istream	istream::sync(void)
+0008db24	seekg__7istreamx	istream::seekg(long long)
+0008db5c	seekg__7istreamxQ23ios8seek_dir	istream::seekg(long long, ios::seek_dir)
+0008db9c	tellg__7istream	istream::tellg(void)
+0008dbdc	__rs__7istreamRc	istream::operator>>(char &)
+0008dcc4	__rs__7istreamPc	istream::operator>>(char *)
+0008e0e0	__rs__7istreamRs	istream::operator>>(short &)
+0008e124	__rs__7istreamRUs	istream::operator>>(unsigned short &)
+0008e168	__rs__7istreamRi	istream::operator>>(int &)
+0008e1a8	__rs__7istreamRUi	istream::operator>>(unsigned int &)
+0008e1e8	__rs__7istreamRl	istream::operator>>(long &)
+0008e228	__rs__7istreamRUl	istream::operator>>(unsigned long &)
+0008e268	__rs__7istreamRx	istream::operator>>(long long &)
+0008e2b0	__rs__7istreamRUx	istream::operator>>(unsigned long long &)
+0008e2f8	__rs__7istreamRb	istream::operator>>(bool &)
+0008e344	__rs__7istreamRr	istream::operator>>(long double &)
+0008e418	__rs__7istreamRd	istream::operator>>(double &)
+0008e4e8	__rs__7istreamRf	istream::operator>>(float &)
+0008e5b8	__rs__7istreamP9streambuf	istream::operator>>(streambuf *)
+0008e6bc	__ls__7ostreamc	ostream::operator<<(char)
+0008ea2c	__ls__7ostreami	ostream::operator<<(int)
+0008ead8	__ls__7ostreamUi	ostream::operator<<(unsigned int)
+0008eb68	__ls__7ostreaml	ostream::operator<<(long)
+0008ec14	__ls__7ostreamUl	ostream::operator<<(unsigned long)
+0008eca4	__ls__7ostreamx	ostream::operator<<(long long)
+0008ed58	__ls__7ostreamUx	ostream::operator<<(unsigned long long)
+0008ede8	__ls__7ostreamd	ostream::operator<<(double)
+0008ef98	__ls__7ostreamr	ostream::operator<<(long double)
+0008f14c	__ls__7ostreamPCc	ostream::operator<<(char const *)
+0008f2d8	__ls__7ostreamP9streambuf	ostream::operator<<(streambuf *)
+0008f3f0	__7ostreamiP9streambufP7ostream	ostream::ostream(int, streambuf *, ostream *)
+0008f49c	seekp__7ostreamx	ostream::seekp(long long)
+0008f4d4	seekp__7ostreamxQ23ios8seek_dir	ostream::seekp(long long, ios::seek_dir)
+0008f514	tellp__7ostream	ostream::tellp(void)
+0008f554	flush__7ostream	ostream::flush(void)
+0008f584	flush__FR7ostream	flush(ostream &)
+0008f59c	ws__FR7istream	ws(istream &)
+0008f678	_skip_ws__7istream	istream::_skip_ws(void)
+0008f6c0	ends__FR7ostream	ends(ostream &)
+0008f6e4	endl__FR7ostream	endl(ostream &)
+0008f710	lock__FR7istream	lock(istream &)
+0008f730	unlock__FR7istream	unlock(istream &)
+0008f750	lock__FR7ostream	lock(ostream &)
+0008f770	unlock__FR7ostream	unlock(ostream &)
+0008f790	write__7ostreamPCci	ostream::write(char const *, int)
+0008f864	do_osfx__7ostream	ostream::do_osfx(void)
+0008f8b0	__8iostreamiP9streambufP7ostream	iostream::iostream(int, streambuf *, ostream *)
+0008f974	close__3ios	ios::close(void)
+0008f9b8	skip__7istreami	istream::skip(int)
+0008f9e0	__7ostreami	ostream::ostream(int)
+0008fa40	opfx__7ostream	ostream::opfx(void)
+0008fa84	osfx__7ostream	ostream::osfx(void)
+0008fab8	put__7ostreamc	ostream::put(char)
+0008fae0	put__7ostreamUc	ostream::put(unsigned char)
+0008fb08	put__7ostreamSc	ostream::put(signed char)
+0008fb30	write__7ostreamPCUci	ostream::write(unsigned char const *, int)
+0008fb50	write__7ostreamPCSci	ostream::write(signed char const *, int)
+0008fb70	write__7ostreamPCvi	ostream::write(void const *, int)
+0008fb90	__ls__7ostreamUc	ostream::operator<<(unsigned char)
+0008fbac	__ls__7ostreamSc	ostream::operator<<(signed char)
+0008fbc8	__ls__7ostreamPCUc	ostream::operator<<(unsigned char const *)
+0008fbe4	__ls__7ostreamPCSc	ostream::operator<<(signed char const *)
+0008fc00	__ls__7ostreams	ostream::operator<<(short)
+0008fc1c	__ls__7ostreamUs	ostream::operator<<(unsigned short)
+0008fc38	__ls__7ostreamb	ostream::operator<<(bool)
+0008fc54	__ls__7ostreamf	ostream::operator<<(float)
+0008fc74	__ls__7ostreamPFR7ostream_R7ostream	ostream::operator<<(ostream &(*)(ostream &))
+0008fc8c	__ls__7ostreamPFR3ios_R3ios	ostream::operator<<(ios &(*)(ios &))
+0008fcac	ostreambuf__C7ostream	ostream::ostreambuf(void) const
+0008fcbc	__7istreami	istream::istream(int)
+0008fd24	get__7istreamPUcic	istream::get(unsigned char *, int, char)
+0008fd48	get__7istreamRUc	istream::get(unsigned char &)
+0008fd64	getline__7istreamPUcic	istream::getline(unsigned char *, int, char)
+0008fd88	get__7istreamRSc	istream::get(signed char &)
+0008fda4	get__7istreamPScic	istream::get(signed char *, int, char)
+0008fdc8	getline__7istreamPScic	istream::getline(signed char *, int, char)
+0008fdec	read__7istreamPUci	istream::read(unsigned char *, int)
+0008fe0c	read__7istreamPSci	istream::read(signed char *, int)
+0008fe2c	read__7istreamPvi	istream::read(void *, int)
+0008fe4c	ipfx__7istreami	istream::ipfx(int)
+0008fed0	ipfx0__7istream	istream::ipfx0(void)
+0008ff34	ipfx1__7istream	istream::ipfx1(void)
+0008ff88	isfx__7istream	istream::isfx(void)
+0008ffa4	get__7istream	istream::get(void)
+00090028	gcount__7istream	istream::gcount(void)
+00090038	putback__7istreamc	istream::putback(char)
+00090070	unget__7istream	istream::unget(void)
+000900a4	unget__7istreamc	istream::unget(char)
+000900dc	istreambuf__C7istream	istream::istreambuf(void) const
+000900ec	__rs__7istreamPUc	istream::operator>>(unsigned char *)
+00090108	__rs__7istreamPSc	istream::operator>>(signed char *)
+00090124	__rs__7istreamRUc	istream::operator>>(unsigned char &)
+00090140	__rs__7istreamRSc	istream::operator>>(signed char &)
+0009015c	__rs__7istreamPFR3ios_R3ios	istream::operator>>(ios &(*)(ios &))
+0009017c	__rs__7istreamPFR7istream_R7istream	istream::operator>>(istream &(*)(istream &))
+00090194	__8iostreami	iostream::iostream(int)
+00090214	__as__22_IO_istream_withassignR22_IO_istream_withassign	_IO_istream_withassign::operator=(_IO_istream_withassign &)
+00090230	__as__22_IO_ostream_withassignR22_IO_ostream_withassign	_IO_ostream_withassign::operator=(_IO_ostream_withassign &)
+0009024c	dec__FR3ios	dec(ios &)
+00090264	hex__FR3ios	hex(ios &)
+0009027c	oct__FR3ios	oct(ios &)
+000902a0	getline__7istreamPcic	istream::getline(char *, int, char)
+0009040c	get__7istreamPcic	istream::get(char *, int, char)
+00090518	_sb_readline__FP9streambufRlc	_sb_readline(streambuf *, long &, char)
+00090634	gets__7istreamPPcc	istream::gets(char **, char)
+00090740	scan__7istreamPCce	istream::scan(char const *,...)
+00090818	vscan__7istreamPCcPv	istream::vscan(char const *, void *)
+000908e8	vscan__9streambufPCcPvP3ios	streambuf::vscan(char const *, void *, ios *)
+00090924	scan__9streambufPCce	streambuf::scan(char const *,...)
+00090944	sync_with_stdio__3iosi	ios::sync_with_stdio(int)
+00090950	_un_link__9streambuf	streambuf::_un_link(void)
+00090968	_link_in__9streambuf	streambuf::_link_in(void)
+00090980	switch_to_get_mode__9streambuf	streambuf::switch_to_get_mode(void)
+00090998	free_backup_area__9streambuf	streambuf::free_backup_area(void)
+000909b0	__overflow__FP9streambufi	__overflow(streambuf *, int)
+000909d0	underflow__9streambuf	streambuf::underflow(void)
+000909dc	uflow__9streambuf	streambuf::uflow(void)
+000909f4	overflow__9streambufi	streambuf::overflow(int)
+00090a00	xsputn__9streambufPCci	streambuf::xsputn(char const *, int)
+00090a20	xsgetn__9streambufPci	streambuf::xsgetn(char *, int)
+00090a40	ignore__9streambufi	streambuf::ignore(int)
+00090a90	sync__9streambuf	streambuf::sync(void)
+00090a9c	pbackfail__9streambufi	streambuf::pbackfail(int)
+00090ab8	setbuf__9streambufPci	streambuf::setbuf(char *, int)
+00090b58	seekpos__9streambufxi	streambuf::seekpos(long long, int)
+00090b88	sseekpos__9streambufxi	streambuf::sseekpos(long long, int)
+00090ba8	setb__9streambufPcT1i	streambuf::setb(char *, char *, int)
+00090bcc	doallocate__9streambuf	streambuf::doallocate(void)
+00090be4	doallocbuf__9streambuf	streambuf::doallocbuf(void)
+00090bfc	__9streambufi	streambuf::streambuf(int)
+00090c38	_._9streambuf	streambuf::~streambuf(void)
+00090c98	seekoff__9streambufxQ23ios8seek_diri	streambuf::seekoff(long long, ios::seek_dir, int)
+00090cac	sseekoff__9streambufxQ23ios8seek_diri	streambuf::sseekoff(long long, ios::seek_dir, int)
+00090cd4	sputbackc__9streambufc	streambuf::sputbackc(char)
+00090cf0	sungetc__9streambuf	streambuf::sungetc(void)
+00090d08	get_column__9streambuf	streambuf::get_column(void)
+00090d3c	set_column__9streambufi	streambuf::set_column(int)
+00090d50	flush_all__9streambuf	streambuf::flush_all(void)
+00090d60	flush_all_linebuffered__9streambuf	streambuf::flush_all_linebuffered(void)
+00090d70	sys_stat__9streambufPv	streambuf::sys_stat(void *)
+00090d8c	sys_read__9streambufPci	streambuf::sys_read(char *, int)
+00090d98	sys_write__9streambufPCci	streambuf::sys_write(char const *, int)
+00090da4	sys_seek__9streambufxQ23ios8seek_dir	streambuf::sys_seek(long long, ios::seek_dir)
+00090db8	sys_close__9streambuf	streambuf::sys_close(void)
+00090dc4	showmanyc__9streambuf	streambuf::showmanyc(void)
+00090dd0	imbue__9streambufPv	streambuf::imbue(void *)
+00090dd8	__12streammarkerP9streambuf	streammarker::streammarker(streambuf *)
+00090df8	_._12streammarker	streammarker::~streammarker(void)
+00090e2c	delta__12streammarkerR12streammarker	streammarker::delta(streammarker &)
+00090e48	delta__12streammarker	streammarker::delta(void)
+00090e60	seekmark__9streambufR12streammarkeri	streambuf::seekmark(streammarker &, int)
+00090e80	unsave_markers__9streambuf	streambuf::unsave_markers(void)
+00090e98	readable__3ios	ios::readable(void)
+00090eb0	writable__3ios	ios::writable(void)
+00090ec8	is_open__3ios	ios::is_open(void)
+00090eec	tie__C3ios	ios::tie(void) const
+00090efc	tie__3iosP7ostream	ios::tie(ostream *)
+00090f14	fill__C3ios	ios::fill(void) const
+00090f24	fill__3iosw	ios::fill(wchar_t)
+00090f3c	flags__C3ios	ios::flags(void) const
+00090f4c	flags__3iosUl	ios::flags(unsigned long)
+00090f64	precision__C3ios	ios::precision(void) const
+00090f74	precision__3iosi	ios::precision(int)
+00090f8c	setf__3iosUl	ios::setf(unsigned long)
+00090fa4	setf__3iosUlUl	ios::setf(unsigned long, unsigned long)
+00090fc8	unsetf__3iosUl	ios::unsetf(unsigned long)
+00090fe4	width__C3ios	ios::width(void) const
+00090ff4	width__3iosi	ios::width(int)
+0009100c	_throw_failure__C3ios	ios::_throw_failure(void) const
+00091014	clear__3iosi	ios::clear(int)
+00091030	set__3iosi	ios::set(int)
+00091040	setstate__3iosi	ios::setstate(int)
+00091050	good__C3ios	ios::good(void) const
+00091064	eof__C3ios	ios::eof(void) const
+00091078	fail__C3ios	ios::fail(void) const
+0009108c	bad__C3ios	ios::bad(void) const
+000910a0	rdstate__C3ios	ios::rdstate(void) const
+000910b0	__opPv__C3ios	ios::operator void *(void) const
+000910cc	__nt__C3ios	ios::operator!(void) const
+000910e0	exceptions__C3ios	ios::exceptions(void) const
+000910f0	exceptions__3iosi	ios::exceptions(int)
+00091100	rdbuf__C3ios	ios::rdbuf(void) const
+0009110c	rdbuf__3iosP9streambuf	ios::rdbuf(streambuf *)
+0009112c	sync_with_stdio__3ios	ios::sync_with_stdio(void)
+00091140	unset__3ios11state_value	ios::unset(state_value)
+00091154	__Q23ios4Init	ios::Init::Init(void)
+00091160	set_offset__12streammarkeri	streammarker::set_offset(int)
+00091170	saving__12streammarker	streammarker::saving(void)
+0009117c	_vtable__9streambuf	streambuf::_vtable(void)
+0009118c	xchain__9streambuf	streambuf::xchain(void)
+0009119c	gptr__C9streambuf	streambuf::gptr(void) const
+000911b8	pptr__C9streambuf	streambuf::pptr(void) const
+000911c8	egptr__C9streambuf	streambuf::egptr(void) const
+000911e8	epptr__C9streambuf	streambuf::epptr(void) const
+000911f8	pbase__C9streambuf	streambuf::pbase(void) const
+00091208	eback__C9streambuf	streambuf::eback(void) const
+00091228	base__C9streambuf	streambuf::base(void) const
+00091238	ebuf__C9streambuf	streambuf::ebuf(void) const
+00091248	blen__C9streambuf	streambuf::blen(void) const
+0009125c	xput_char__9streambufc	streambuf::xput_char(char)
+00091274	xflags__9streambuf	streambuf::xflags(void)
+00091280	xflags__9streambufi	streambuf::xflags(int)
+00091294	xsetflags__9streambufi	streambuf::xsetflags(int)
+000912a4	xsetflags__9streambufii	streambuf::xsetflags(int, int)
+000912c0	gbump__9streambufi	streambuf::gbump(int)
+000912dc	pbump__9streambufi	streambuf::pbump(int)
+000912f0	setp__9streambufPcT1	streambuf::setp(char *, char *)
+0009130c	setg__9streambufPcN21	streambuf::setg(char *, char *, char *)
+00091340	shortbuf__9streambuf	streambuf::shortbuf(void)
+00091350	in_backup__9streambuf	streambuf::in_backup(void)
+00091364	Gbase__9streambuf	streambuf::Gbase(void)
+0009137c	eGptr__9streambuf	streambuf::eGptr(void)
+00091398	Bbase__9streambuf	streambuf::Bbase(void)
+000913b8	Bptr__9streambuf	streambuf::Bptr(void)
+000913c8	eBptr__9streambuf	streambuf::eBptr(void)
+000913e8	Nbase__9streambuf	streambuf::Nbase(void)
+000913f8	eNptr__9streambuf	streambuf::eNptr(void)
+00091408	have_backup__9streambuf	streambuf::have_backup(void)
+0009141c	have_markers__9streambuf	streambuf::have_markers(void)
+00091430	put_mode__9streambuf	streambuf::put_mode(void)
+00091444	pubseekoff__9streambufxQ23ios8seek_diri	streambuf::pubseekoff(long long, ios::seek_dir, int)
+0009146c	pubseekpos__9streambufxi	streambuf::pubseekpos(long long, int)
+0009148c	unbuffered__9streambuf	streambuf::unbuffered(void)
+000914a0	linebuffered__9streambuf	streambuf::linebuffered(void)
+000914b4	unbuffered__9streambufi	streambuf::unbuffered(int)
+000914cc	linebuffered__9streambufi	streambuf::linebuffered(int)
+000914e8	allocate__9streambuf	streambuf::allocate(void)
+00091514	allocbuf__9streambuf	streambuf::allocbuf(void)
+00091530	in_avail__9streambuf	streambuf::in_avail(void)
+00091544	out_waiting__9streambuf	streambuf::out_waiting(void)
+00091558	sputn__9streambufPCci	streambuf::sputn(char const *, int)
+00091580	padn__9streambufci	streambuf::padn(char, int)
+000915a0	sgetn__9streambufPci	streambuf::sgetn(char *, int)
+000915c0	sputc__9streambufi	streambuf::sputc(int)
+000915dc	sbumpc__9streambuf	streambuf::sbumpc(void)
+000915f4	sgetc__9streambuf	streambuf::sgetc(void)
+0009160c	snextc__9streambuf	streambuf::snextc(void)
+00091644	stossc__9streambuf	streambuf::stossc(void)
+0009165c	is_open__C7filebuf	filebuf::is_open(void) const
+00091670	fd__C7filebuf	filebuf::fd(void) const
+0009168c	is_reading__7filebuf	filebuf::is_reading(void)
+000916c0	cur_ptr__7filebuf	filebuf::cur_ptr(void)
+00091700	file_ptr__7filebuf	filebuf::file_ptr(void)
+00091718	init__3iosP9streambufP7ostream	ios::init(streambuf *, ostream *)
+00091768	__3iosP9streambufP7ostream	ios::ios(streambuf *, ostream *)
+000917bc	_._3ios	ios::~ios(void)
+00091800	init__7filebuf	filebuf::init(void)
+00091818	__7filebuf	filebuf::filebuf(void)
+00091878	__7filebufi	filebuf::filebuf(int)
+000918dc	__7filebufiPci	filebuf::filebuf(int, char *, int)
+0009195c	_._7filebuf	filebuf::~filebuf(void)
+000919b8	open__7filebufPCcii	filebuf::open(char const *, int, int)
+00091a68	open__7filebufPCcT1	filebuf::open(char const *, char const *)
+00091a88	attach__7filebufi	filebuf::attach(int)
+00091aa4	setbuf__7filebufPci	filebuf::setbuf(char *, int)
+00091ac4	doallocate__7filebuf	filebuf::doallocate(void)
+00091adc	overflow__7filebufi	filebuf::overflow(int)
+00091af8	underflow__7filebuf	filebuf::underflow(void)
+00091b10	sync__7filebuf	filebuf::sync(void)
+00091b28	seekoff__7filebufxQ23ios8seek_diri	filebuf::seekoff(long long, ios::seek_dir, int)
+00091b50	close__7filebuf	filebuf::close(void)
+00091b74	sys_read__7filebufPci	filebuf::sys_read(char *, int)
+00091b94	sys_seek__7filebufxQ23ios8seek_dir	filebuf::sys_seek(long long, ios::seek_dir)
+00091bb4	sys_write__7filebufPCci	filebuf::sys_write(char const *, int)
+00091bd4	sys_stat__7filebufPv	filebuf::sys_stat(void *)
+00091bf0	sys_close__7filebuf	filebuf::sys_close(void)
+00091c08	xsputn__7filebufPCci	filebuf::xsputn(char const *, int)
+00091c28	xsgetn__7filebufPci	filebuf::xsgetn(char *, int)
+00091c50	__as__22_IO_istream_withassignR7istream	_IO_istream_withassign::operator=(istream &)
+00091cb4	__as__22_IO_ostream_withassignR7ostream	_IO_ostream_withassign::operator=(ostream &)
+00091d14	__default_terminate	__default_terminate
+00091d30	__terminate	__terminate
+00091d58	__throw_type_match	__throw_type_match
+00091d8c	__empty	__empty
+00091de8	__get_eh_context	__get_eh_context
+00091e0c	__get_eh_info	__get_eh_info
+00091ebc	__get_dynamic_handler_chain	__get_dynamic_handler_chain
+00091ee4	__sjthrow	__sjthrow
+00091ff4	__sjpopnthrow	__sjpopnthrow
+000920ec	__eh_rtime_match	__eh_rtime_match
+00092144	__get_eh_table_version	__get_eh_table_version
+00092154	__get_eh_table_language	__get_eh_table_language
+000923f8	__unwinding_cleanup	__unwinding_cleanup
+00092768	__throw	__throw
+00092828	__rethrow	__rethrow
+000928f4	__pure_virtual	__pure_virtual
+00092930	__udivdi3	__udivdi3
+00092a50	__umoddi3	__umoddi3
+00092be4	terminate__Fv	terminate(void)
+00092c04	__default_unexpected__Fv	__default_unexpected(void)
+00092c20	set_terminate__FPFv_v	set_terminate(void (*)(void))
+00092c48	set_unexpected__FPFv_v	set_unexpected(void (*)(void))
+00092c74	unexpected__Fv	unexpected(void)
+00092c94	__cp_exception_info	__cp_exception_info
+00092cbc	__cp_eh_info	__cp_eh_info
+00092ce0	__start_cp_handler	__start_cp_handler
+00092d0c	__eh_alloc	__eh_alloc
+00092d44	__eh_free	__eh_free
+00092d70	__cplus_type_matcher	__cplus_type_matcher
+00092ddc	__cp_push_exception	__cp_push_exception
+00092e50	__cp_pop_exception	__cp_pop_exception
+00092f00	__uncatch_exception	__uncatch_exception
+00092f30	__check_eh_spec	__check_eh_spec
+00093104	__throw_bad_cast	__throw_bad_cast
+000931a8	__throw_bad_typeid	__throw_bad_typeid
+00093248	uncaught_exception__Fv	uncaught_exception(void)
+0009327c	what__C9exception	exception::what(void) const
+000932a4	__9exception	exception::exception(void)
+000932cc	_._9exception	exception::~exception(void)
+00093304	__13bad_exception	bad_exception::bad_exception(void)
+00093334	_._13bad_exception	bad_exception::~bad_exception(void)
+00093df4	__register_frame_info	__register_frame_info
+00093e40	__register_frame	__register_frame
+00093e78	__register_frame_info_table	__register_frame_info_table
+00093ec0	__register_frame_table	__register_frame_table
+00093ef8	__deregister_frame_info	__deregister_frame_info
+00093f60	__deregister_frame	__deregister_frame
+00093f94	__frame_state_for	__frame_state_for
+00094214	__builtin_delete	__builtin_delete
+000942b4	__builtin_new	__builtin_new
+00094414	__builtin_vec_delete	__builtin_vec_delete
+000944b4	__builtin_vec_new	__builtin_vec_new
+00094564	_._9type_info	type_info::~type_info(void)
+0009459c	__eq__C9type_infoRC9type_info	type_info::operator==(type_info const &) const
+000945e0	__rtti_class	__rtti_class
+0009462c	__rtti_si	__rtti_si
+00094674	__rtti_user	__rtti_user
+000946ac	dcast__C16__user_type_infoRC9type_infoiPvPC9type_infoT3	__user_type_info::dcast(type_info const &, int, void *, type_info const *, void *) const
+000946e4	dcast__C14__si_type_infoRC9type_infoiPvPC9type_infoT3	__si_type_info::dcast(type_info const &, int, void *, type_info const *, void *) const
+00094744	dcast__C17__class_type_infoRC9type_infoiPvPC9type_infoT3	__class_type_info::dcast(type_info const &, int, void *, type_info const *, void *) const
+00094894	__9type_infoPCc	type_info::type_info(char const *)
+000948bc	name__C9type_info	type_info::name(void) const
+000948cc	__ne__C9type_infoRC9type_info	type_info::operator!=(type_info const &) const
+000948fc	__8bad_cast	bad_cast::bad_cast(void)
+0009492c	_._8bad_cast	bad_cast::~bad_cast(void)
+0009496c	__10bad_typeid	bad_typeid::bad_typeid(void)
+0009499c	_._10bad_typeid	bad_typeid::~bad_typeid(void)
+000949dc	__16__user_type_infoPCc	__user_type_info::__user_type_info(char const *)
+00094a10	__14__si_type_infoPCcRC16__user_type_info	__si_type_info::__si_type_info(char const *, __user_type_info const &)
+00094a58	__17__class_type_infoPCcPCQ217__class_type_info9base_infoUi	__class_type_info::__class_type_info(char const *, __class_type_info::base_info const *, unsigned int)
+00094ab4	before__C9type_infoRC9type_info	type_info::before(type_info const &) const
+00094ae8	__throw_type_match_rtti	__throw_type_match_rtti
+00094f80	__is_pointer__FPv	__is_pointer(void *)
+00094fd4	__rtti_ptr	__rtti_ptr
+00095010	__rtti_attr	__rtti_attr
+00095054	__rtti_func	__rtti_func
+0009508c	__rtti_ptmf	__rtti_ptmf
+000950c4	__rtti_ptmd	__rtti_ptmd
+000950fc	__rtti_array	__rtti_array
+00095134	__dynamic_cast	__dynamic_cast
+00095188	__tfv	void type_info function
+000951d0	__tfx	long long type_info function
+00095218	__tfl	long type_info function
+00095260	__tfi	int type_info function
+000952a8	__tfs	short type_info function
+000952f0	__tfb	bool type_info function
+00095338	__tfc	char type_info function
+00095380	__tfw	wchar_t type_info function
+000953c8	__tfr	long double type_info function
+00095410	__tfd	double type_info function
+00095458	__tff	float type_info function
+000954a0	__tfUi	unsigned int type_info function
+000954e8	__tfUl	unsigned long type_info function
+00095530	__tfUx	unsigned long long type_info function
+00095578	__tfUs	unsigned short type_info function
+000955c0	__tfUc	unsigned char type_info function
+00095608	__tfSc	signed char type_info function
+00095650	set_new_handler__FPFv_v	set_new_handler(void (*)(void))
+00095678	what__C9bad_alloc	bad_alloc::what(void) const
+00095698	__nw__FUiPv	operator new(unsigned int, void *)
+000956b4	__vn__FUiPv	operator new [](unsigned int, void *)
+00095744	_S_chunk_alloc__t24__default_alloc_template2b1i0UiRi	__default_alloc_template<true, 0>::_S_chunk_alloc(unsigned int, int &)
+000958f4	clone__Q2t12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0_3Rep	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >::Rep::clone(void)
+00095b14	alloc__t12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0Uib	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >::alloc(unsigned int, bool)
+00095df4	replace__t12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0UiUiUic	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >::replace(unsigned int, unsigned int, unsigned int, char)
+000961c4	replace__t12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0UiUiPCcUi	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >::replace(unsigned int, unsigned int, char const *, unsigned int)
+000965a4	replace__t12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0UiUiRCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0UiUi	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >::replace(unsigned int, unsigned int, basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &, unsigned int, unsigned int)
+00096704	replace__H1ZPCc_t12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0PcT1X00X00_Rt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > & basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >::replace<char const *>(char *, char *, char const *, char const *)
+00096b04	compare__Ct12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0RCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0UiUi	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >::compare(basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &, unsigned int, unsigned int) const
+00096bac	GetDirectorID__C14cSNCOMDirector	cSNCOMDirector::GetDirectorID(void) const
+00096bb8	AppRegister__14cSNCOMDirectorP12cIGZRegistry	cSNCOMDirector::AppRegister(cIGZRegistry *)
+00096bd4	CreatecSTTransitLayer__14cSNCOMDirector	cSNCOMDirector::CreatecSTTransitLayer(void)
+00096c44	CreateSTTransitBlockAttrib__14cSNCOMDirector	cSNCOMDirector::CreateSTTransitBlockAttrib(void)
+00096cb4	_._14cSNCOMDirector	cSNCOMDirector::~cSNCOMDirector(void)
+00096cf4	__uninitialized_copy_aux__H2ZP13cSC3CityCoordZP13cSC3CityCoord_X01X01X11G12__false_type_X11	cSC3CityCoord * __uninitialized_copy_aux<cSC3CityCoord *, cSC3CityCoord *>(cSC3CityCoord *, cSC3CityCoord *, cSC3CityCoord *, __false_type)
+00096d44	_M_insert_aux__t6vector2Z13cSC3CityCoordZt9allocator1Z13cSC3CityCoordP13cSC3CityCoordRC13cSC3CityCoord	vector<cSC3CityCoord, allocator<cSC3CityCoord> >::_M_insert_aux(cSC3CityCoord *, cSC3CityCoord const &)
+00097124	clear__t10_List_base2Z13cSC3CityCoordZt9allocator1Z13cSC3CityCoord	_List_base<cSC3CityCoord, allocator<cSC3CityCoord> >::clear(void)
+000971a4	_S_oom_malloc__t23__malloc_alloc_template1i0Ui	__malloc_alloc_template<0>::_S_oom_malloc(unsigned int)
+00097224	_S_refill__t24__default_alloc_template2b1i0Ui	__default_alloc_template<true, 0>::_S_refill(unsigned int)
+000972b4	GetDepthFromColorType__18cGZBufferColorTypeQ218cGZBufferColorType10eColorType	cGZBufferColorType::GetDepthFromColorType(cGZBufferColorType::eColorType)
+00097354	_M_insert_dispatch__H1Zt14_List_iterator3Z13cSC3CityCoordZRC13cSC3CityCoordZPC13cSC3CityCoord_t4list2Z13cSC3CityCoordZt9allocator1Z13cSC3CityCoordGt14_List_iterator3Z13cSC3CityCoordZR13cSC3CityCoordZP13cSC3CityCoordX00X00G12__false_type_v	void list<cSC3CityCoord, allocator<cSC3CityCoord> >::_M_insert_dispatch<_List_iterator<cSC3CityCoord, cSC3CityCoord const &, cSC3CityCoord const *> >(_List_iterator<cSC3CityCoord, cSC3CityCoord &, cSC3CityCoord *>, _List_iterator<cSC3CityCoord, cSC3CityCoord const &, cSC3CityCoord const *>, _List_iterator<cSC3CityCoord, cSC3CityCoord const &, cSC3CityCoord const *>, __false_type)
+0009747c	__thunk_4_QueryInterface__32cSLCityViewLineAlgorithmForRampsUiPPv	virtual function thunk (delta:-4) for cSLCityViewLineAlgorithmForRamps::QueryInterface(unsigned int, void **)
+00097498	__thunk_4_AddRef__32cSLCityViewLineAlgorithmForRamps	virtual function thunk (delta:-4) for cSLCityViewLineAlgorithmForRamps::AddRef(void)
+000974b4	__thunk_4_Release__32cSLCityViewLineAlgorithmForRamps	virtual function thunk (delta:-4) for cSLCityViewLineAlgorithmForRamps::Release(void)
+000974d0	__thunk_4__._32cSLCityViewLineAlgorithmForRamps	virtual function thunk (delta:-4) for cSLCityViewLineAlgorithmForRamps::~cSLCityViewLineAlgorithmForRamps(void)
+000974f0	_._32cSLCityViewLineAlgorithmForRamps	cSLCityViewLineAlgorithmForRamps::~cSLCityViewLineAlgorithmForRamps(void)
+0009752c	__thunk_4_QueryInterface__13cSTNetworkOccUiPPv	virtual function thunk (delta:-4) for cSTNetworkOcc::QueryInterface(unsigned int, void **)
+00097548	__thunk_4_AddRef__13cSTNetworkOcc	virtual function thunk (delta:-4) for cSTNetworkOcc::AddRef(void)
+00097564	__thunk_4_Release__13cSTNetworkOcc	virtual function thunk (delta:-4) for cSTNetworkOcc::Release(void)
+00097580	__thunk_4_Init__13cSTNetworkOccR14cGZResourceKey	virtual function thunk (delta:-4) for cSTNetworkOcc::Init(cGZResourceKey &)
+0009759c	__thunk_4_Init__13cSTNetworkOccP9cISC3CityP19cISC3OccPersistInfo	virtual function thunk (delta:-4) for cSTNetworkOcc::Init(cISC3City *, cISC3OccPersistInfo *)
+000975b8	__thunk_4_Shutdown__13cSTNetworkOcc	virtual function thunk (delta:-4) for cSTNetworkOcc::Shutdown(void)
+000975d4	__thunk_4_Save__13cSTNetworkOccP9cISC3CityR19cISC3OccPersistInfo	virtual function thunk (delta:-4) for cSTNetworkOcc::Save(cISC3City *, cISC3OccPersistInfo &)
+000975f0	__thunk_4_GetGeomFlag__19cSTHighwayTunnelOcc	virtual function thunk (delta:-4) for cSTHighwayTunnelOcc::GetGeomFlag(void)
+0009760c	__thunk_4_GetOccLayerFlag__19cSTHighwayTunnelOcc	virtual function thunk (delta:-4) for cSTHighwayTunnelOcc::GetOccLayerFlag(void)
+00097628	__thunk_4_MajorType__C19cSTHighwayTunnelOcc	virtual function thunk (delta:-4) for cSTHighwayTunnelOcc::MajorType(void) const
+00097644	__thunk_4_GetSubTypeData__13cSTNetworkOccUi	virtual function thunk (delta:-4) for cSTNetworkOcc::GetSubTypeData(unsigned int)
+00097660	__thunk_4_GetDefaultLayerFlag__C19cSTHighwayTunnelOcc	virtual function thunk (delta:-4) for cSTHighwayTunnelOcc::GetDefaultLayerFlag(void) const
+0009767c	__thunk_4_DebugInstanceTag__13cSTNetworkOccR10cIGZString	virtual function thunk (delta:-4) for cSTNetworkOcc::DebugInstanceTag(cIGZString &)
+00097698	__thunk_4_DebugClassTag__19cSTHighwayTunnelOccR10cIGZString	virtual function thunk (delta:-4) for cSTHighwayTunnelOcc::DebugClassTag(cIGZString &)
+000976b4	__thunk_4_DebugTypeTag__13cSTNetworkOccR10cIGZString	virtual function thunk (delta:-4) for cSTNetworkOcc::DebugTypeTag(cIGZString &)
+000976d0	__thunk_4_DoStandardQueryViewInfo__13cSTNetworkOccR10cGZMessageP21cISC3WinQueryListView	virtual function thunk (delta:-4) for cSTNetworkOcc::DoStandardQueryViewInfo(cGZMessage &, cISC3WinQueryListView *)
+000976ec	__thunk_4_DoDebugQueryViewInfo__13cSTNetworkOccR10cGZMessageP21cISC3WinQueryListView	virtual function thunk (delta:-4) for cSTNetworkOcc::DoDebugQueryViewInfo(cGZMessage &, cISC3WinQueryListView *)
+00097708	__thunk_4_SerialRead__13cSTNetworkOccP9cISC3CityR18cIGZDBSerialRecord	virtual function thunk (delta:-4) for cSTNetworkOcc::SerialRead(cISC3City *, cIGZDBSerialRecord &)
+00097724	__thunk_4_SerialWrite__13cSTNetworkOccP9cISC3CityR18cIGZDBSerialRecord	virtual function thunk (delta:-4) for cSTNetworkOcc::SerialWrite(cISC3City *, cIGZDBSerialRecord &)
+00097740	__thunk_4__._19cSTHighwayTunnelOcc	virtual function thunk (delta:-4) for cSTHighwayTunnelOcc::~cSTHighwayTunnelOcc(void)
+0009775c	__thunk_4_GetGeomFlag__16cSTRailTunnelOcc	virtual function thunk (delta:-4) for cSTRailTunnelOcc::GetGeomFlag(void)
+00097778	__thunk_4_GetOccLayerFlag__16cSTRailTunnelOcc	virtual function thunk (delta:-4) for cSTRailTunnelOcc::GetOccLayerFlag(void)
+00097794	__thunk_4_MajorType__C16cSTRailTunnelOcc	virtual function thunk (delta:-4) for cSTRailTunnelOcc::MajorType(void) const
+000977b0	__thunk_4_GetDefaultLayerFlag__C16cSTRailTunnelOcc	virtual function thunk (delta:-4) for cSTRailTunnelOcc::GetDefaultLayerFlag(void) const
+000977cc	__thunk_4_DebugClassTag__16cSTRailTunnelOccR10cIGZString	virtual function thunk (delta:-4) for cSTRailTunnelOcc::DebugClassTag(cIGZString &)
+000977e8	__thunk_4__._16cSTRailTunnelOcc	virtual function thunk (delta:-4) for cSTRailTunnelOcc::~cSTRailTunnelOcc(void)
+00097804	__thunk_4_GetGeomFlag__16cSTRoadTunnelOcc	virtual function thunk (delta:-4) for cSTRoadTunnelOcc::GetGeomFlag(void)
+00097820	__thunk_4_GetOccLayerFlag__16cSTRoadTunnelOcc	virtual function thunk (delta:-4) for cSTRoadTunnelOcc::GetOccLayerFlag(void)
+0009783c	__thunk_4_MajorType__C16cSTRoadTunnelOcc	virtual function thunk (delta:-4) for cSTRoadTunnelOcc::MajorType(void) const
+00097858	__thunk_4_GetDefaultLayerFlag__C16cSTRoadTunnelOcc	virtual function thunk (delta:-4) for cSTRoadTunnelOcc::GetDefaultLayerFlag(void) const
+00097874	__thunk_4_DebugClassTag__16cSTRoadTunnelOccR10cIGZString	virtual function thunk (delta:-4) for cSTRoadTunnelOcc::DebugClassTag(cIGZString &)
+00097890	__thunk_4__._16cSTRoadTunnelOcc	virtual function thunk (delta:-4) for cSTRoadTunnelOcc::~cSTRoadTunnelOcc(void)
+000978ac	__thunk_4_GetGeomFlag__16cSTWireBridgeOcc	virtual function thunk (delta:-4) for cSTWireBridgeOcc::GetGeomFlag(void)
+000978c8	__thunk_4_GetOccLayerFlag__16cSTWireBridgeOcc	virtual function thunk (delta:-4) for cSTWireBridgeOcc::GetOccLayerFlag(void)
+000978e4	__thunk_4_MajorType__C16cSTWireBridgeOcc	virtual function thunk (delta:-4) for cSTWireBridgeOcc::MajorType(void) const
+00097900	__thunk_4_GetDefaultLayerFlag__C16cSTWireBridgeOcc	virtual function thunk (delta:-4) for cSTWireBridgeOcc::GetDefaultLayerFlag(void) const
+0009791c	__thunk_4_DebugClassTag__16cSTWireBridgeOccR10cIGZString	virtual function thunk (delta:-4) for cSTWireBridgeOcc::DebugClassTag(cIGZString &)
+00097938	__thunk_4__._16cSTWireBridgeOcc	virtual function thunk (delta:-4) for cSTWireBridgeOcc::~cSTWireBridgeOcc(void)
+00097954	__thunk_4_GetGeomFlag__16cSTRailBridgeOcc	virtual function thunk (delta:-4) for cSTRailBridgeOcc::GetGeomFlag(void)
+00097970	__thunk_4_GetOccLayerFlag__16cSTRailBridgeOcc	virtual function thunk (delta:-4) for cSTRailBridgeOcc::GetOccLayerFlag(void)
+0009798c	__thunk_4_MajorType__C16cSTRailBridgeOcc	virtual function thunk (delta:-4) for cSTRailBridgeOcc::MajorType(void) const
+000979a8	__thunk_4_GetDefaultLayerFlag__C16cSTRailBridgeOcc	virtual function thunk (delta:-4) for cSTRailBridgeOcc::GetDefaultLayerFlag(void) const
+000979c4	__thunk_4_DebugClassTag__16cSTRailBridgeOccR10cIGZString	virtual function thunk (delta:-4) for cSTRailBridgeOcc::DebugClassTag(cIGZString &)
+000979e0	__thunk_4__._16cSTRailBridgeOcc	virtual function thunk (delta:-4) for cSTRailBridgeOcc::~cSTRailBridgeOcc(void)
+000979fc	__thunk_4_GetGeomFlag__19cSTHighwayBridgeOcc	virtual function thunk (delta:-4) for cSTHighwayBridgeOcc::GetGeomFlag(void)
+00097a18	__thunk_4_GetOccLayerFlag__19cSTHighwayBridgeOcc	virtual function thunk (delta:-4) for cSTHighwayBridgeOcc::GetOccLayerFlag(void)
+00097a34	__thunk_4_MajorType__C19cSTHighwayBridgeOcc	virtual function thunk (delta:-4) for cSTHighwayBridgeOcc::MajorType(void) const
+00097a50	__thunk_4_GetDefaultLayerFlag__C19cSTHighwayBridgeOcc	virtual function thunk (delta:-4) for cSTHighwayBridgeOcc::GetDefaultLayerFlag(void) const
+00097a6c	__thunk_4_DebugClassTag__19cSTHighwayBridgeOccR10cIGZString	virtual function thunk (delta:-4) for cSTHighwayBridgeOcc::DebugClassTag(cIGZString &)
+00097a88	__thunk_4__._19cSTHighwayBridgeOcc	virtual function thunk (delta:-4) for cSTHighwayBridgeOcc::~cSTHighwayBridgeOcc(void)
+00097aa4	__thunk_4_GetGeomFlag__16cSTRoadBridgeOcc	virtual function thunk (delta:-4) for cSTRoadBridgeOcc::GetGeomFlag(void)
+00097ac0	__thunk_4_GetOccLayerFlag__16cSTRoadBridgeOcc	virtual function thunk (delta:-4) for cSTRoadBridgeOcc::GetOccLayerFlag(void)
+00097adc	__thunk_4_MajorType__C16cSTRoadBridgeOcc	virtual function thunk (delta:-4) for cSTRoadBridgeOcc::MajorType(void) const
+00097af8	__thunk_4_GetDefaultLayerFlag__C16cSTRoadBridgeOcc	virtual function thunk (delta:-4) for cSTRoadBridgeOcc::GetDefaultLayerFlag(void) const
+00097b14	__thunk_4_DebugClassTag__16cSTRoadBridgeOccR10cIGZString	virtual function thunk (delta:-4) for cSTRoadBridgeOcc::DebugClassTag(cIGZString &)
+00097b30	__thunk_4__._16cSTRoadBridgeOcc	virtual function thunk (delta:-4) for cSTRoadBridgeOcc::~cSTRoadBridgeOcc(void)
+00097b4c	__thunk_4_GetGeomFlag__15cSTOnRampHwyOcc	virtual function thunk (delta:-4) for cSTOnRampHwyOcc::GetGeomFlag(void)
+00097b68	__thunk_4_GetOccLayerFlag__15cSTOnRampHwyOcc	virtual function thunk (delta:-4) for cSTOnRampHwyOcc::GetOccLayerFlag(void)
+00097b84	__thunk_4_MajorType__C15cSTOnRampHwyOcc	virtual function thunk (delta:-4) for cSTOnRampHwyOcc::MajorType(void) const
+00097ba0	__thunk_4_GetDefaultLayerFlag__C15cSTOnRampHwyOcc	virtual function thunk (delta:-4) for cSTOnRampHwyOcc::GetDefaultLayerFlag(void) const
+00097bbc	__thunk_4_DebugClassTag__15cSTOnRampHwyOccR10cIGZString	virtual function thunk (delta:-4) for cSTOnRampHwyOcc::DebugClassTag(cIGZString &)
+00097bd8	__thunk_4__._15cSTOnRampHwyOcc	virtual function thunk (delta:-4) for cSTOnRampHwyOcc::~cSTOnRampHwyOcc(void)
+00097bf4	__thunk_4_GetGeomFlag__16cSTOnRampRoadOcc	virtual function thunk (delta:-4) for cSTOnRampRoadOcc::GetGeomFlag(void)
+00097c10	__thunk_4_GetOccLayerFlag__16cSTOnRampRoadOcc	virtual function thunk (delta:-4) for cSTOnRampRoadOcc::GetOccLayerFlag(void)
+00097c2c	__thunk_4_MajorType__C16cSTOnRampRoadOcc	virtual function thunk (delta:-4) for cSTOnRampRoadOcc::MajorType(void) const
+00097c48	__thunk_4_GetDefaultLayerFlag__C16cSTOnRampRoadOcc	virtual function thunk (delta:-4) for cSTOnRampRoadOcc::GetDefaultLayerFlag(void) const
+00097c64	__thunk_4_DebugClassTag__16cSTOnRampRoadOccR10cIGZString	virtual function thunk (delta:-4) for cSTOnRampRoadOcc::DebugClassTag(cIGZString &)
+00097c80	__thunk_4__._16cSTOnRampRoadOcc	virtual function thunk (delta:-4) for cSTOnRampRoadOcc::~cSTOnRampRoadOcc(void)
+00097c9c	__thunk_4_GetGeomFlag__18cSTPowerHighwayOcc	virtual function thunk (delta:-4) for cSTPowerHighwayOcc::GetGeomFlag(void)
+00097cb8	__thunk_4_GetOccLayerFlag__18cSTPowerHighwayOcc	virtual function thunk (delta:-4) for cSTPowerHighwayOcc::GetOccLayerFlag(void)
+00097cd4	__thunk_4_MajorType__C18cSTPowerHighwayOcc	virtual function thunk (delta:-4) for cSTPowerHighwayOcc::MajorType(void) const
+00097cf0	__thunk_4_GetDefaultLayerFlag__C18cSTPowerHighwayOcc	virtual function thunk (delta:-4) for cSTPowerHighwayOcc::GetDefaultLayerFlag(void) const
+00097d0c	__thunk_4_DebugClassTag__18cSTPowerHighwayOccR10cIGZString	virtual function thunk (delta:-4) for cSTPowerHighwayOcc::DebugClassTag(cIGZString &)
+00097d28	__thunk_4__._18cSTPowerHighwayOcc	virtual function thunk (delta:-4) for cSTPowerHighwayOcc::~cSTPowerHighwayOcc(void)
+00097d44	__thunk_4_GetGeomFlag__15cSTPowerRailOcc	virtual function thunk (delta:-4) for cSTPowerRailOcc::GetGeomFlag(void)
+00097d60	__thunk_4_GetOccLayerFlag__15cSTPowerRailOcc	virtual function thunk (delta:-4) for cSTPowerRailOcc::GetOccLayerFlag(void)
+00097d7c	__thunk_4_MajorType__C15cSTPowerRailOcc	virtual function thunk (delta:-4) for cSTPowerRailOcc::MajorType(void) const
+00097d98	__thunk_4_GetDefaultLayerFlag__C15cSTPowerRailOcc	virtual function thunk (delta:-4) for cSTPowerRailOcc::GetDefaultLayerFlag(void) const
+00097db4	__thunk_4_DebugClassTag__15cSTPowerRailOccR10cIGZString	virtual function thunk (delta:-4) for cSTPowerRailOcc::DebugClassTag(cIGZString &)
+00097dd0	__thunk_4__._15cSTPowerRailOcc	virtual function thunk (delta:-4) for cSTPowerRailOcc::~cSTPowerRailOcc(void)
+00097dec	__thunk_4_GetGeomFlag__15cSTPowerRoadOcc	virtual function thunk (delta:-4) for cSTPowerRoadOcc::GetGeomFlag(void)
+00097e08	__thunk_4_GetOccLayerFlag__15cSTPowerRoadOcc	virtual function thunk (delta:-4) for cSTPowerRoadOcc::GetOccLayerFlag(void)
+00097e24	__thunk_4_MajorType__C15cSTPowerRoadOcc	virtual function thunk (delta:-4) for cSTPowerRoadOcc::MajorType(void) const
+00097e40	__thunk_4_GetDefaultLayerFlag__C15cSTPowerRoadOcc	virtual function thunk (delta:-4) for cSTPowerRoadOcc::GetDefaultLayerFlag(void) const
+00097e5c	__thunk_4_DebugClassTag__15cSTPowerRoadOccR10cIGZString	virtual function thunk (delta:-4) for cSTPowerRoadOcc::DebugClassTag(cIGZString &)
+00097e78	__thunk_4__._15cSTPowerRoadOcc	virtual function thunk (delta:-4) for cSTPowerRoadOcc::~cSTPowerRoadOcc(void)
+00097e94	__thunk_4_GetGeomFlag__16cSTSubwayRailOcc	virtual function thunk (delta:-4) for cSTSubwayRailOcc::GetGeomFlag(void)
+00097eb0	__thunk_4_GetOccLayerFlag__16cSTSubwayRailOcc	virtual function thunk (delta:-4) for cSTSubwayRailOcc::GetOccLayerFlag(void)
+00097ecc	__thunk_4_MajorType__C16cSTSubwayRailOcc	virtual function thunk (delta:-4) for cSTSubwayRailOcc::MajorType(void) const
+00097ee8	__thunk_4_GetDefaultLayerFlag__C16cSTSubwayRailOcc	virtual function thunk (delta:-4) for cSTSubwayRailOcc::GetDefaultLayerFlag(void) const
+00097f04	__thunk_4_DebugClassTag__16cSTSubwayRailOccR10cIGZString	virtual function thunk (delta:-4) for cSTSubwayRailOcc::DebugClassTag(cIGZString &)
+00097f20	__thunk_4__._16cSTSubwayRailOcc	virtual function thunk (delta:-4) for cSTSubwayRailOcc::~cSTSubwayRailOcc(void)
+00097f3c	__thunk_4_GetGeomFlag__17cSTRailHighwayOcc	virtual function thunk (delta:-4) for cSTRailHighwayOcc::GetGeomFlag(void)
+00097f58	__thunk_4_GetOccLayerFlag__17cSTRailHighwayOcc	virtual function thunk (delta:-4) for cSTRailHighwayOcc::GetOccLayerFlag(void)
+00097f74	__thunk_4_MajorType__C17cSTRailHighwayOcc	virtual function thunk (delta:-4) for cSTRailHighwayOcc::MajorType(void) const
+00097f90	__thunk_4_GetDefaultLayerFlag__C17cSTRailHighwayOcc	virtual function thunk (delta:-4) for cSTRailHighwayOcc::GetDefaultLayerFlag(void) const
+00097fac	__thunk_4_DebugClassTag__17cSTRailHighwayOccR10cIGZString	virtual function thunk (delta:-4) for cSTRailHighwayOcc::DebugClassTag(cIGZString &)
+00097fc8	__thunk_4__._17cSTRailHighwayOcc	virtual function thunk (delta:-4) for cSTRailHighwayOcc::~cSTRailHighwayOcc(void)
+00097fe4	__thunk_4_GetGeomFlag__17cSTRoadHighwayOcc	virtual function thunk (delta:-4) for cSTRoadHighwayOcc::GetGeomFlag(void)
+00098000	__thunk_4_GetOccLayerFlag__17cSTRoadHighwayOcc	virtual function thunk (delta:-4) for cSTRoadHighwayOcc::GetOccLayerFlag(void)
+0009801c	__thunk_4_MajorType__C17cSTRoadHighwayOcc	virtual function thunk (delta:-4) for cSTRoadHighwayOcc::MajorType(void) const
+00098038	__thunk_4_GetDefaultLayerFlag__C17cSTRoadHighwayOcc	virtual function thunk (delta:-4) for cSTRoadHighwayOcc::GetDefaultLayerFlag(void) const
+00098054	__thunk_4_DebugClassTag__17cSTRoadHighwayOccR10cIGZString	virtual function thunk (delta:-4) for cSTRoadHighwayOcc::DebugClassTag(cIGZString &)
+00098070	__thunk_4__._17cSTRoadHighwayOcc	virtual function thunk (delta:-4) for cSTRoadHighwayOcc::~cSTRoadHighwayOcc(void)
+0009808c	__thunk_4_GetGeomFlag__14cSTRoadRailOcc	virtual function thunk (delta:-4) for cSTRoadRailOcc::GetGeomFlag(void)
+000980a8	__thunk_4_GetOccLayerFlag__14cSTRoadRailOcc	virtual function thunk (delta:-4) for cSTRoadRailOcc::GetOccLayerFlag(void)
+000980c4	__thunk_4_MajorType__C14cSTRoadRailOcc	virtual function thunk (delta:-4) for cSTRoadRailOcc::MajorType(void) const
+000980e0	__thunk_4_GetDefaultLayerFlag__C14cSTRoadRailOcc	virtual function thunk (delta:-4) for cSTRoadRailOcc::GetDefaultLayerFlag(void) const
+000980fc	__thunk_4_DebugClassTag__14cSTRoadRailOccR10cIGZString	virtual function thunk (delta:-4) for cSTRoadRailOcc::DebugClassTag(cIGZString &)
+00098118	__thunk_4__._14cSTRoadRailOcc	virtual function thunk (delta:-4) for cSTRoadRailOcc::~cSTRoadRailOcc(void)
+00098134	__thunk_4_GetGeomFlag__10cSTWireOcc	virtual function thunk (delta:-4) for cSTWireOcc::GetGeomFlag(void)
+00098150	__thunk_4_GetOccLayerFlag__10cSTWireOcc	virtual function thunk (delta:-4) for cSTWireOcc::GetOccLayerFlag(void)
+0009816c	__thunk_4_MajorType__C10cSTWireOcc	virtual function thunk (delta:-4) for cSTWireOcc::MajorType(void) const
+00098188	__thunk_4_GetDefaultLayerFlag__C10cSTWireOcc	virtual function thunk (delta:-4) for cSTWireOcc::GetDefaultLayerFlag(void) const
+000981a4	__thunk_4_DebugClassTag__10cSTWireOccR10cIGZString	virtual function thunk (delta:-4) for cSTWireOcc::DebugClassTag(cIGZString &)
+000981c0	__thunk_4__._10cSTWireOcc	virtual function thunk (delta:-4) for cSTWireOcc::~cSTWireOcc(void)
+000981dc	__thunk_4_GetGeomFlag__10cSTPipeOcc	virtual function thunk (delta:-4) for cSTPipeOcc::GetGeomFlag(void)
+000981f8	__thunk_4_GetOccLayerFlag__10cSTPipeOcc	virtual function thunk (delta:-4) for cSTPipeOcc::GetOccLayerFlag(void)
+00098214	__thunk_4_MajorType__C10cSTPipeOcc	virtual function thunk (delta:-4) for cSTPipeOcc::MajorType(void) const
+00098230	__thunk_4_GetDefaultLayerFlag__C10cSTPipeOcc	virtual function thunk (delta:-4) for cSTPipeOcc::GetDefaultLayerFlag(void) const
+0009824c	__thunk_4_DebugClassTag__10cSTPipeOccR10cIGZString	virtual function thunk (delta:-4) for cSTPipeOcc::DebugClassTag(cIGZString &)
+00098268	__thunk_4__._10cSTPipeOcc	virtual function thunk (delta:-4) for cSTPipeOcc::~cSTPipeOcc(void)
+00098284	__thunk_4_GetGeomFlag__10cSTRailOcc	virtual function thunk (delta:-4) for cSTRailOcc::GetGeomFlag(void)
+000982a0	__thunk_4_GetOccLayerFlag__10cSTRailOcc	virtual function thunk (delta:-4) for cSTRailOcc::GetOccLayerFlag(void)
+000982bc	__thunk_4_MajorType__C10cSTRailOcc	virtual function thunk (delta:-4) for cSTRailOcc::MajorType(void) const
+000982d8	__thunk_4_GetDefaultLayerFlag__C10cSTRailOcc	virtual function thunk (delta:-4) for cSTRailOcc::GetDefaultLayerFlag(void) const
+000982f4	__thunk_4_DebugClassTag__10cSTRailOccR10cIGZString	virtual function thunk (delta:-4) for cSTRailOcc::DebugClassTag(cIGZString &)
+00098310	__thunk_4__._10cSTRailOcc	virtual function thunk (delta:-4) for cSTRailOcc::~cSTRailOcc(void)
+0009832c	__thunk_4_GetGeomFlag__12cSTSubwayOcc	virtual function thunk (delta:-4) for cSTSubwayOcc::GetGeomFlag(void)
+00098348	__thunk_4_GetOccLayerFlag__12cSTSubwayOcc	virtual function thunk (delta:-4) for cSTSubwayOcc::GetOccLayerFlag(void)
+00098364	__thunk_4_MajorType__C12cSTSubwayOcc	virtual function thunk (delta:-4) for cSTSubwayOcc::MajorType(void) const
+00098380	__thunk_4_GetDefaultLayerFlag__C12cSTSubwayOcc	virtual function thunk (delta:-4) for cSTSubwayOcc::GetDefaultLayerFlag(void) const
+0009839c	__thunk_4_DebugClassTag__12cSTSubwayOccR10cIGZString	virtual function thunk (delta:-4) for cSTSubwayOcc::DebugClassTag(cIGZString &)
+000983b8	__thunk_4__._12cSTSubwayOcc	virtual function thunk (delta:-4) for cSTSubwayOcc::~cSTSubwayOcc(void)
+000983d4	__thunk_4_GetGeomFlag__13cSTHighwayOcc	virtual function thunk (delta:-4) for cSTHighwayOcc::GetGeomFlag(void)
+000983f0	__thunk_4_GetOccLayerFlag__13cSTHighwayOcc	virtual function thunk (delta:-4) for cSTHighwayOcc::GetOccLayerFlag(void)
+0009840c	__thunk_4_MajorType__C13cSTHighwayOcc	virtual function thunk (delta:-4) for cSTHighwayOcc::MajorType(void) const
+00098428	__thunk_4_GetDefaultLayerFlag__C13cSTHighwayOcc	virtual function thunk (delta:-4) for cSTHighwayOcc::GetDefaultLayerFlag(void) const
+00098444	__thunk_4_DebugClassTag__13cSTHighwayOccR10cIGZString	virtual function thunk (delta:-4) for cSTHighwayOcc::DebugClassTag(cIGZString &)
+00098460	__thunk_4__._13cSTHighwayOcc	virtual function thunk (delta:-4) for cSTHighwayOcc::~cSTHighwayOcc(void)
+0009847c	__thunk_4_GetGeomFlag__10cSTRoadOcc	virtual function thunk (delta:-4) for cSTRoadOcc::GetGeomFlag(void)
+00098498	__thunk_4_GetOccLayerFlag__10cSTRoadOcc	virtual function thunk (delta:-4) for cSTRoadOcc::GetOccLayerFlag(void)
+000984b4	__thunk_4_MajorType__C10cSTRoadOcc	virtual function thunk (delta:-4) for cSTRoadOcc::MajorType(void) const
+000984d0	__thunk_4_GetDefaultLayerFlag__C10cSTRoadOcc	virtual function thunk (delta:-4) for cSTRoadOcc::GetDefaultLayerFlag(void) const
+000984ec	__thunk_4_DebugClassTag__10cSTRoadOccR10cIGZString	virtual function thunk (delta:-4) for cSTRoadOcc::DebugClassTag(cIGZString &)
+00098508	__thunk_4__._10cSTRoadOcc	virtual function thunk (delta:-4) for cSTRoadOcc::~cSTRoadOcc(void)
+00098524	__thunk_4_DebugClassTag__13cSTNetworkOccR10cIGZString	virtual function thunk (delta:-4) for cSTNetworkOcc::DebugClassTag(cIGZString &)
+00098540	__thunk_4__._20cSTNetworkOccTransit	virtual function thunk (delta:-4) for cSTNetworkOccTransit::~cSTNetworkOccTransit(void)
+0009855c	__thunk_4__._13cSTNetworkOcc	virtual function thunk (delta:-4) for cSTNetworkOcc::~cSTNetworkOcc(void)
+00098578	GetGeomFlag__10cSTRoadOcc	cSTRoadOcc::GetGeomFlag(void)
+00098584	GetOccLayerFlag__10cSTRoadOcc	cSTRoadOcc::GetOccLayerFlag(void)
+00098590	GetDefaultLayerFlag__C10cSTRoadOcc	cSTRoadOcc::GetDefaultLayerFlag(void) const
+0009859c	MajorType__C10cSTRoadOcc	cSTRoadOcc::MajorType(void) const
+000985a8	DebugClassTag__10cSTRoadOccR10cIGZString	cSTRoadOcc::DebugClassTag(cIGZString &)
+000985b8	_._10cSTRoadOcc	cSTRoadOcc::~cSTRoadOcc(void)
+000985f4	GetGeomFlag__13cSTHighwayOcc	cSTHighwayOcc::GetGeomFlag(void)
+00098600	GetOccLayerFlag__13cSTHighwayOcc	cSTHighwayOcc::GetOccLayerFlag(void)
+0009860c	GetDefaultLayerFlag__C13cSTHighwayOcc	cSTHighwayOcc::GetDefaultLayerFlag(void) const
+00098618	MajorType__C13cSTHighwayOcc	cSTHighwayOcc::MajorType(void) const
+00098624	DebugClassTag__13cSTHighwayOccR10cIGZString	cSTHighwayOcc::DebugClassTag(cIGZString &)
+00098634	_._13cSTHighwayOcc	cSTHighwayOcc::~cSTHighwayOcc(void)
+00098670	GetGeomFlag__12cSTSubwayOcc	cSTSubwayOcc::GetGeomFlag(void)
+0009867c	GetOccLayerFlag__12cSTSubwayOcc	cSTSubwayOcc::GetOccLayerFlag(void)
+00098688	GetDefaultLayerFlag__C12cSTSubwayOcc	cSTSubwayOcc::GetDefaultLayerFlag(void) const
+00098694	MajorType__C12cSTSubwayOcc	cSTSubwayOcc::MajorType(void) const
+000986a0	DebugClassTag__12cSTSubwayOccR10cIGZString	cSTSubwayOcc::DebugClassTag(cIGZString &)
+000986b0	_._12cSTSubwayOcc	cSTSubwayOcc::~cSTSubwayOcc(void)
+000986ec	GetGeomFlag__10cSTRailOcc	cSTRailOcc::GetGeomFlag(void)
+000986f8	GetOccLayerFlag__10cSTRailOcc	cSTRailOcc::GetOccLayerFlag(void)
+00098704	GetDefaultLayerFlag__C10cSTRailOcc	cSTRailOcc::GetDefaultLayerFlag(void) const
+00098710	MajorType__C10cSTRailOcc	cSTRailOcc::MajorType(void) const
+0009871c	DebugClassTag__10cSTRailOccR10cIGZString	cSTRailOcc::DebugClassTag(cIGZString &)
+0009872c	_._10cSTRailOcc	cSTRailOcc::~cSTRailOcc(void)
+00098768	GetGeomFlag__10cSTPipeOcc	cSTPipeOcc::GetGeomFlag(void)
+00098774	GetOccLayerFlag__10cSTPipeOcc	cSTPipeOcc::GetOccLayerFlag(void)
+00098780	GetDefaultLayerFlag__C10cSTPipeOcc	cSTPipeOcc::GetDefaultLayerFlag(void) const
+0009878c	MajorType__C10cSTPipeOcc	cSTPipeOcc::MajorType(void) const
+00098798	DebugClassTag__10cSTPipeOccR10cIGZString	cSTPipeOcc::DebugClassTag(cIGZString &)
+000987a8	_._10cSTPipeOcc	cSTPipeOcc::~cSTPipeOcc(void)
+000987e4	GetGeomFlag__10cSTWireOcc	cSTWireOcc::GetGeomFlag(void)
+000987f0	GetOccLayerFlag__10cSTWireOcc	cSTWireOcc::GetOccLayerFlag(void)
+000987fc	GetDefaultLayerFlag__C10cSTWireOcc	cSTWireOcc::GetDefaultLayerFlag(void) const
+00098808	MajorType__C10cSTWireOcc	cSTWireOcc::MajorType(void) const
+00098814	DebugClassTag__10cSTWireOccR10cIGZString	cSTWireOcc::DebugClassTag(cIGZString &)
+00098824	_._10cSTWireOcc	cSTWireOcc::~cSTWireOcc(void)
+00098860	GetGeomFlag__14cSTRoadRailOcc	cSTRoadRailOcc::GetGeomFlag(void)
+0009886c	GetOccLayerFlag__14cSTRoadRailOcc	cSTRoadRailOcc::GetOccLayerFlag(void)
+00098878	GetDefaultLayerFlag__C14cSTRoadRailOcc	cSTRoadRailOcc::GetDefaultLayerFlag(void) const
+00098884	MajorType__C14cSTRoadRailOcc	cSTRoadRailOcc::MajorType(void) const
+00098890	DebugClassTag__14cSTRoadRailOccR10cIGZString	cSTRoadRailOcc::DebugClassTag(cIGZString &)
+000988a0	_._14cSTRoadRailOcc	cSTRoadRailOcc::~cSTRoadRailOcc(void)
+000988dc	GetGeomFlag__17cSTRoadHighwayOcc	cSTRoadHighwayOcc::GetGeomFlag(void)
+000988e8	GetOccLayerFlag__17cSTRoadHighwayOcc	cSTRoadHighwayOcc::GetOccLayerFlag(void)
+000988f4	GetDefaultLayerFlag__C17cSTRoadHighwayOcc	cSTRoadHighwayOcc::GetDefaultLayerFlag(void) const
+00098900	MajorType__C17cSTRoadHighwayOcc	cSTRoadHighwayOcc::MajorType(void) const
+0009890c	DebugClassTag__17cSTRoadHighwayOccR10cIGZString	cSTRoadHighwayOcc::DebugClassTag(cIGZString &)
+0009891c	_._17cSTRoadHighwayOcc	cSTRoadHighwayOcc::~cSTRoadHighwayOcc(void)
+00098958	GetGeomFlag__17cSTRailHighwayOcc	cSTRailHighwayOcc::GetGeomFlag(void)
+00098964	GetOccLayerFlag__17cSTRailHighwayOcc	cSTRailHighwayOcc::GetOccLayerFlag(void)
+00098970	GetDefaultLayerFlag__C17cSTRailHighwayOcc	cSTRailHighwayOcc::GetDefaultLayerFlag(void) const
+0009897c	MajorType__C17cSTRailHighwayOcc	cSTRailHighwayOcc::MajorType(void) const
+00098988	DebugClassTag__17cSTRailHighwayOccR10cIGZString	cSTRailHighwayOcc::DebugClassTag(cIGZString &)
+00098998	_._17cSTRailHighwayOcc	cSTRailHighwayOcc::~cSTRailHighwayOcc(void)
+000989d4	GetGeomFlag__16cSTSubwayRailOcc	cSTSubwayRailOcc::GetGeomFlag(void)
+000989e0	GetOccLayerFlag__16cSTSubwayRailOcc	cSTSubwayRailOcc::GetOccLayerFlag(void)
+000989ec	GetDefaultLayerFlag__C16cSTSubwayRailOcc	cSTSubwayRailOcc::GetDefaultLayerFlag(void) const
+000989f8	MajorType__C16cSTSubwayRailOcc	cSTSubwayRailOcc::MajorType(void) const
+00098a04	DebugClassTag__16cSTSubwayRailOccR10cIGZString	cSTSubwayRailOcc::DebugClassTag(cIGZString &)
+00098a14	_._16cSTSubwayRailOcc	cSTSubwayRailOcc::~cSTSubwayRailOcc(void)
+00098a50	GetGeomFlag__15cSTPowerRoadOcc	cSTPowerRoadOcc::GetGeomFlag(void)
+00098a5c	GetOccLayerFlag__15cSTPowerRoadOcc	cSTPowerRoadOcc::GetOccLayerFlag(void)
+00098a68	GetDefaultLayerFlag__C15cSTPowerRoadOcc	cSTPowerRoadOcc::GetDefaultLayerFlag(void) const
+00098a74	MajorType__C15cSTPowerRoadOcc	cSTPowerRoadOcc::MajorType(void) const
+00098a80	DebugClassTag__15cSTPowerRoadOccR10cIGZString	cSTPowerRoadOcc::DebugClassTag(cIGZString &)
+00098a90	_._15cSTPowerRoadOcc	cSTPowerRoadOcc::~cSTPowerRoadOcc(void)
+00098acc	GetGeomFlag__15cSTPowerRailOcc	cSTPowerRailOcc::GetGeomFlag(void)
+00098ad8	GetOccLayerFlag__15cSTPowerRailOcc	cSTPowerRailOcc::GetOccLayerFlag(void)
+00098ae4	GetDefaultLayerFlag__C15cSTPowerRailOcc	cSTPowerRailOcc::GetDefaultLayerFlag(void) const
+00098af0	MajorType__C15cSTPowerRailOcc	cSTPowerRailOcc::MajorType(void) const
+00098afc	DebugClassTag__15cSTPowerRailOccR10cIGZString	cSTPowerRailOcc::DebugClassTag(cIGZString &)
+00098b0c	_._15cSTPowerRailOcc	cSTPowerRailOcc::~cSTPowerRailOcc(void)
+00098b48	GetGeomFlag__18cSTPowerHighwayOcc	cSTPowerHighwayOcc::GetGeomFlag(void)
+00098b54	GetOccLayerFlag__18cSTPowerHighwayOcc	cSTPowerHighwayOcc::GetOccLayerFlag(void)
+00098b60	GetDefaultLayerFlag__C18cSTPowerHighwayOcc	cSTPowerHighwayOcc::GetDefaultLayerFlag(void) const
+00098b6c	MajorType__C18cSTPowerHighwayOcc	cSTPowerHighwayOcc::MajorType(void) const
+00098b78	DebugClassTag__18cSTPowerHighwayOccR10cIGZString	cSTPowerHighwayOcc::DebugClassTag(cIGZString &)
+00098b88	_._18cSTPowerHighwayOcc	cSTPowerHighwayOcc::~cSTPowerHighwayOcc(void)
+00098bc4	GetGeomFlag__16cSTOnRampRoadOcc	cSTOnRampRoadOcc::GetGeomFlag(void)
+00098bd0	GetOccLayerFlag__16cSTOnRampRoadOcc	cSTOnRampRoadOcc::GetOccLayerFlag(void)
+00098bdc	GetDefaultLayerFlag__C16cSTOnRampRoadOcc	cSTOnRampRoadOcc::GetDefaultLayerFlag(void) const
+00098be8	MajorType__C16cSTOnRampRoadOcc	cSTOnRampRoadOcc::MajorType(void) const
+00098bf4	DebugClassTag__16cSTOnRampRoadOccR10cIGZString	cSTOnRampRoadOcc::DebugClassTag(cIGZString &)
+00098c04	_._16cSTOnRampRoadOcc	cSTOnRampRoadOcc::~cSTOnRampRoadOcc(void)
+00098c40	GetGeomFlag__15cSTOnRampHwyOcc	cSTOnRampHwyOcc::GetGeomFlag(void)
+00098c4c	GetOccLayerFlag__15cSTOnRampHwyOcc	cSTOnRampHwyOcc::GetOccLayerFlag(void)
+00098c58	GetDefaultLayerFlag__C15cSTOnRampHwyOcc	cSTOnRampHwyOcc::GetDefaultLayerFlag(void) const
+00098c64	MajorType__C15cSTOnRampHwyOcc	cSTOnRampHwyOcc::MajorType(void) const
+00098c70	DebugClassTag__15cSTOnRampHwyOccR10cIGZString	cSTOnRampHwyOcc::DebugClassTag(cIGZString &)
+00098c80	_._15cSTOnRampHwyOcc	cSTOnRampHwyOcc::~cSTOnRampHwyOcc(void)
+00098cbc	GetGeomFlag__16cSTRoadBridgeOcc	cSTRoadBridgeOcc::GetGeomFlag(void)
+00098cc8	GetOccLayerFlag__16cSTRoadBridgeOcc	cSTRoadBridgeOcc::GetOccLayerFlag(void)
+00098cd4	GetDefaultLayerFlag__C16cSTRoadBridgeOcc	cSTRoadBridgeOcc::GetDefaultLayerFlag(void) const
+00098ce0	MajorType__C16cSTRoadBridgeOcc	cSTRoadBridgeOcc::MajorType(void) const
+00098cec	DebugClassTag__16cSTRoadBridgeOccR10cIGZString	cSTRoadBridgeOcc::DebugClassTag(cIGZString &)
+00098cfc	_._16cSTRoadBridgeOcc	cSTRoadBridgeOcc::~cSTRoadBridgeOcc(void)
+00098d38	GetGeomFlag__19cSTHighwayBridgeOcc	cSTHighwayBridgeOcc::GetGeomFlag(void)
+00098d44	GetOccLayerFlag__19cSTHighwayBridgeOcc	cSTHighwayBridgeOcc::GetOccLayerFlag(void)
+00098d50	GetDefaultLayerFlag__C19cSTHighwayBridgeOcc	cSTHighwayBridgeOcc::GetDefaultLayerFlag(void) const
+00098d5c	MajorType__C19cSTHighwayBridgeOcc	cSTHighwayBridgeOcc::MajorType(void) const
+00098d68	DebugClassTag__19cSTHighwayBridgeOccR10cIGZString	cSTHighwayBridgeOcc::DebugClassTag(cIGZString &)
+00098d78	_._19cSTHighwayBridgeOcc	cSTHighwayBridgeOcc::~cSTHighwayBridgeOcc(void)
+00098db4	GetGeomFlag__16cSTRailBridgeOcc	cSTRailBridgeOcc::GetGeomFlag(void)
+00098dc0	GetOccLayerFlag__16cSTRailBridgeOcc	cSTRailBridgeOcc::GetOccLayerFlag(void)
+00098dcc	GetDefaultLayerFlag__C16cSTRailBridgeOcc	cSTRailBridgeOcc::GetDefaultLayerFlag(void) const
+00098dd8	MajorType__C16cSTRailBridgeOcc	cSTRailBridgeOcc::MajorType(void) const
+00098de4	DebugClassTag__16cSTRailBridgeOccR10cIGZString	cSTRailBridgeOcc::DebugClassTag(cIGZString &)
+00098df4	_._16cSTRailBridgeOcc	cSTRailBridgeOcc::~cSTRailBridgeOcc(void)
+00098e30	GetGeomFlag__16cSTWireBridgeOcc	cSTWireBridgeOcc::GetGeomFlag(void)
+00098e3c	GetOccLayerFlag__16cSTWireBridgeOcc	cSTWireBridgeOcc::GetOccLayerFlag(void)
+00098e48	GetDefaultLayerFlag__C16cSTWireBridgeOcc	cSTWireBridgeOcc::GetDefaultLayerFlag(void) const
+00098e54	MajorType__C16cSTWireBridgeOcc	cSTWireBridgeOcc::MajorType(void) const
+00098e60	DebugClassTag__16cSTWireBridgeOccR10cIGZString	cSTWireBridgeOcc::DebugClassTag(cIGZString &)
+00098e70	_._16cSTWireBridgeOcc	cSTWireBridgeOcc::~cSTWireBridgeOcc(void)
+00098eac	GetGeomFlag__16cSTRoadTunnelOcc	cSTRoadTunnelOcc::GetGeomFlag(void)
+00098eb8	GetOccLayerFlag__16cSTRoadTunnelOcc	cSTRoadTunnelOcc::GetOccLayerFlag(void)
+00098ec4	GetDefaultLayerFlag__C16cSTRoadTunnelOcc	cSTRoadTunnelOcc::GetDefaultLayerFlag(void) const
+00098ed0	MajorType__C16cSTRoadTunnelOcc	cSTRoadTunnelOcc::MajorType(void) const
+00098edc	DebugClassTag__16cSTRoadTunnelOccR10cIGZString	cSTRoadTunnelOcc::DebugClassTag(cIGZString &)
+00098eec	_._16cSTRoadTunnelOcc	cSTRoadTunnelOcc::~cSTRoadTunnelOcc(void)
+00098f28	GetGeomFlag__16cSTRailTunnelOcc	cSTRailTunnelOcc::GetGeomFlag(void)
+00098f34	GetOccLayerFlag__16cSTRailTunnelOcc	cSTRailTunnelOcc::GetOccLayerFlag(void)
+00098f40	GetDefaultLayerFlag__C16cSTRailTunnelOcc	cSTRailTunnelOcc::GetDefaultLayerFlag(void) const
+00098f4c	MajorType__C16cSTRailTunnelOcc	cSTRailTunnelOcc::MajorType(void) const
+00098f58	DebugClassTag__16cSTRailTunnelOccR10cIGZString	cSTRailTunnelOcc::DebugClassTag(cIGZString &)
+00098f68	_._16cSTRailTunnelOcc	cSTRailTunnelOcc::~cSTRailTunnelOcc(void)
+00098fa4	GetGeomFlag__19cSTHighwayTunnelOcc	cSTHighwayTunnelOcc::GetGeomFlag(void)
+00098fb0	GetOccLayerFlag__19cSTHighwayTunnelOcc	cSTHighwayTunnelOcc::GetOccLayerFlag(void)
+00098fbc	GetDefaultLayerFlag__C19cSTHighwayTunnelOcc	cSTHighwayTunnelOcc::GetDefaultLayerFlag(void) const
+00098fc8	MajorType__C19cSTHighwayTunnelOcc	cSTHighwayTunnelOcc::MajorType(void) const
+00098fd4	DebugClassTag__19cSTHighwayTunnelOccR10cIGZString	cSTHighwayTunnelOcc::DebugClassTag(cIGZString &)
+00098fe4	_._19cSTHighwayTunnelOcc	cSTHighwayTunnelOcc::~cSTHighwayTunnelOcc(void)
+00099020	__thunk_28_QueryInterface__21cSTTransitBlockAttribUiPPv	virtual function thunk (delta:-28) for cSTTransitBlockAttrib::QueryInterface(unsigned int, void **)
+0009903c	__thunk_28_AddRef__21cSTTransitBlockAttrib	virtual function thunk (delta:-28) for cSTTransitBlockAttrib::AddRef(void)
+00099058	__thunk_28_Release__21cSTTransitBlockAttrib	virtual function thunk (delta:-28) for cSTTransitBlockAttrib::Release(void)
+00099074	__thunk_28_TokenRead__21cSTTransitBlockAttribR15cISLTokenRecord	virtual function thunk (delta:-28) for cSTTransitBlockAttrib::TokenRead(cISLTokenRecord &)
+00099090	__thunk_28_TokenWrite__21cSTTransitBlockAttribR15cISLTokenRecord	virtual function thunk (delta:-28) for cSTTransitBlockAttrib::TokenWrite(cISLTokenRecord &)
+000990ac	__thunk_28_SetIsTextRecord__21cSTTransitBlockAttribb	virtual function thunk (delta:-28) for cSTTransitBlockAttrib::SetIsTextRecord(bool)
+000990c8	__thunk_28_IsTextRecord__C21cSTTransitBlockAttrib	virtual function thunk (delta:-28) for cSTTransitBlockAttrib::IsTextRecord(void) const
+000990e4	__thunk_24_QueryInterface__21cSTTransitBlockAttribUiPPv	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::QueryInterface(unsigned int, void **)
+00099100	__thunk_24_AddRef__21cSTTransitBlockAttrib	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::AddRef(void)
+0009911c	__thunk_24_Release__21cSTTransitBlockAttrib	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::Release(void)
+00099138	__thunk_24_GetOccupantGZCLSID__C21cSTTransitBlockAttribRUi	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::GetOccupantGZCLSID(unsigned int &) const
+00099154	__thunk_24_SetOccupantGZCLSID__21cSTTransitBlockAttribUi	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::SetOccupantGZCLSID(unsigned int)
+00099170	__thunk_24_Key__C21cSTTransitBlockAttrib	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::Key(void) const
+0009918c	__thunk_24_IsGeomFlag__21cSTTransitBlockAttribUi	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::IsGeomFlag(unsigned int)
+000991a8	__thunk_24_SetGeomFlag__21cSTTransitBlockAttribUi	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::SetGeomFlag(unsigned int)
+000991c4	__thunk_24_ClearGeomFlag__21cSTTransitBlockAttribUi	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::ClearGeomFlag(unsigned int)
+000991e0	__thunk_24_GetGeomFlag__21cSTTransitBlockAttrib	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::GetGeomFlag(void)
+000991fc	__thunk_24_GetOccLayerFlag__21cSTTransitBlockAttrib	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::GetOccLayerFlag(void)
+00099218	__thunk_24_SetOccLayerFlag__21cSTTransitBlockAttribUc	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::SetOccLayerFlag(unsigned char)
+00099234	__thunk_24_MajorType__C21cSTTransitBlockAttrib	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::MajorType(void) const
+00099250	__thunk_24_SubTypeInfo__C21cSTTransitBlockAttrib	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::SubTypeInfo(void) const
+0009926c	__thunk_24_AnimType__C21cSTTransitBlockAttrib	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::AnimType(void) const
+00099288	__thunk_24_GetName__21cSTTransitBlockAttribR10cIGZString	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::GetName(cIGZString &)
+000992a4	__thunk_24_SizeInCellsX__21cSTTransitBlockAttrib	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::SizeInCellsX(void)
+000992c0	__thunk_24_SizeInCellsZ__21cSTTransitBlockAttrib	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::SizeInCellsZ(void)
+000992dc	__thunk_24_SizeInCellsY__21cSTTransitBlockAttrib	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::SizeInCellsY(void)
+000992f8	__thunk_24_CityAgentType__21cSTTransitBlockAttrib	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::CityAgentType(void)
+00099314	__thunk_24_TypeId__C21cSTTransitBlockAttrib	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::TypeId(void) const
+00099330	__thunk_24_GetSpriteAttrib__21cSTTransitBlockAttribUi	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::GetSpriteAttrib(unsigned int)
+0009934c	__thunk_24_GetSpriteAttrib__21cSTTransitBlockAttrib	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::GetSpriteAttrib(void)
+00099368	__thunk_24_GetOriginalSpriteAttrib__21cSTTransitBlockAttrib	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::GetOriginalSpriteAttrib(void)
+00099384	__thunk_24_GetDefaultLayerFlag__C21cSTTransitBlockAttrib	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::GetDefaultLayerFlag(void) const
+000993a0	__thunk_24_SetDefaultLayerFlag__21cSTTransitBlockAttribUi	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::SetDefaultLayerFlag(unsigned int)
+000993bc	__thunk_24_GetPeopleProducerAttrib__21cSTTransitBlockAttrib	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::GetPeopleProducerAttrib(void)
+000993d8	__thunk_24_GetVehicleProducerAttrib__21cSTTransitBlockAttrib	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::GetVehicleProducerAttrib(void)
+000993f4	__thunk_24_Flammability__21cSTTransitBlockAttrib	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::Flammability(void)
+00099410	__thunk_24_GetSoundObjectId__21cSTTransitBlockAttribRi	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::GetSoundObjectId(int &)
+0009942c	__thunk_24_GetSoundKeyA__21cSTTransitBlockAttribR14cGZResourceKey	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::GetSoundKeyA(cGZResourceKey &)
+00099448	__thunk_24_GetSoundKeyB__21cSTTransitBlockAttribR14cGZResourceKey	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::GetSoundKeyB(cGZResourceKey &)
+00099464	__thunk_24_GetPlopCursorKey__21cSTTransitBlockAttribR14cGZResourceKey	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::GetPlopCursorKey(cGZResourceKey &)
+00099480	__thunk_24_GetQueryDescKey__21cSTTransitBlockAttribR14cGZResourceKey	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::GetQueryDescKey(cGZResourceKey &)
+0009949c	__thunk_24_GetQueryFormatFlags__21cSTTransitBlockAttribRUi	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::GetQueryFormatFlags(unsigned int &)
+000994b8	__thunk_24_GetQueryDialogClass__21cSTTransitBlockAttrib	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::GetQueryDialogClass(void)
+000994d4	__thunk_24_SetQueryDialogClass__21cSTTransitBlockAttribUi	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::SetQueryDialogClass(unsigned int)
+000994f0	__thunk_24_DebugInstanceTag__21cSTTransitBlockAttribR10cIGZString	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::DebugInstanceTag(cIGZString &)
+0009950c	__thunk_24_DebugClassTag__21cSTTransitBlockAttribR10cIGZString	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::DebugClassTag(cIGZString &)
+00099528	__thunk_24_DebugTypeTag__21cSTTransitBlockAttribR10cIGZString	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::DebugTypeTag(cIGZString &)
+00099544	__thunk_24_GetNameKey__21cSTTransitBlockAttribR14cGZResourceKey	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::GetNameKey(cGZResourceKey &)
+00099560	__thunk_24_SetOverRideAttrib__21cSTTransitBlockAttribP22cISC3OccAttribOverRide	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::SetOverRideAttrib(cISC3OccAttribOverRide *)
+0009957c	__thunk_24_GetOverRideAttrib__21cSTTransitBlockAttrib	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::GetOverRideAttrib(void)
+00099598	__thunk_24_GetArchitectName__21cSTTransitBlockAttribR10cIGZString	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::GetArchitectName(cIGZString &)
+000995b4	__thunk_4_QueryInterface__21cSTTransitBlockAttribUiPPv	virtual function thunk (delta:-4) for cSTTransitBlockAttrib::QueryInterface(unsigned int, void **)
+000995d0	__thunk_4_AddRef__21cSTTransitBlockAttrib	virtual function thunk (delta:-4) for cSTTransitBlockAttrib::AddRef(void)
+000995ec	__thunk_4_Release__21cSTTransitBlockAttrib	virtual function thunk (delta:-4) for cSTTransitBlockAttrib::Release(void)
+00099608	__thunk_4_Key__C21cSTTransitBlockAttrib	virtual function thunk (delta:-4) for cSTTransitBlockAttrib::Key(void) const
+00099624	__thunk_4_DebugInstanceTag__21cSTTransitBlockAttribR10cIGZString	virtual function thunk (delta:-4) for cSTTransitBlockAttrib::DebugInstanceTag(cIGZString &)
+00099640	__thunk_4_DebugClassTag__21cSTTransitBlockAttribR10cIGZString	virtual function thunk (delta:-4) for cSTTransitBlockAttrib::DebugClassTag(cIGZString &)
+0009965c	__thunk_4_DebugTypeTag__21cSTTransitBlockAttribR10cIGZString	virtual function thunk (delta:-4) for cSTTransitBlockAttrib::DebugTypeTag(cIGZString &)
+00099678	__thunk_4__._21cSTTransitBlockAttrib	virtual function thunk (delta:-4) for cSTTransitBlockAttrib::~cSTTransitBlockAttrib(void)
+000996a4	_M_insert_aux__t6vector2ZP13cISC3OccupantZt9allocator1ZP13cISC3OccupantPP13cISC3OccupantRCP13cISC3Occupant	vector<cISC3Occupant *, allocator<cISC3Occupant *> >::_M_insert_aux(cISC3Occupant **, cISC3Occupant *const &)
+000999cc	__thunk_4_QueryInterface__24cSLCityViewLineAlgorithmUiPPv	virtual function thunk (delta:-4) for cSLCityViewLineAlgorithm::QueryInterface(unsigned int, void **)
+000999e8	__thunk_4_AddRef__24cSLCityViewLineAlgorithm	virtual function thunk (delta:-4) for cSLCityViewLineAlgorithm::AddRef(void)
+00099a04	__thunk_4_Release__24cSLCityViewLineAlgorithm	virtual function thunk (delta:-4) for cSLCityViewLineAlgorithm::Release(void)
+00099a20	__thunk_4__._24cSLCityViewLineAlgorithm	virtual function thunk (delta:-4) for cSLCityViewLineAlgorithm::~cSLCityViewLineAlgorithm(void)
+00099a3c	__thunk_104__._13cCTPlacePower	virtual function thunk (delta:-104) for cCTPlacePower::~cCTPlacePower(void)
+00099a58	__thunk_104_Release__13cCTPlacePower	virtual function thunk (delta:-104) for cCTPlacePower::Release(void)
+00099a74	__thunk_104_AddRef__13cCTPlacePower	virtual function thunk (delta:-104) for cCTPlacePower::AddRef(void)
+00099a90	__thunk_100_QueryInterface__13cCTPlacePowerUiPPv	virtual function thunk (delta:-100) for cCTPlacePower::QueryInterface(unsigned int, void **)
+00099aac	__thunk_100_AddRef__13cCTPlacePower	virtual function thunk (delta:-100) for cCTPlacePower::AddRef(void)
+00099ac8	__thunk_100_Release__13cCTPlacePower	virtual function thunk (delta:-100) for cCTPlacePower::Release(void)
+00099ae4	__thunk_100_Execute__13cCTPlacePower	virtual function thunk (delta:-100) for cCTPlacePower::Execute(void)
+00099b00	__thunk_104__._12cCTPlacePipe	virtual function thunk (delta:-104) for cCTPlacePipe::~cCTPlacePipe(void)
+00099b1c	__thunk_104_Release__12cCTPlacePipe	virtual function thunk (delta:-104) for cCTPlacePipe::Release(void)
+00099b38	__thunk_104_AddRef__12cCTPlacePipe	virtual function thunk (delta:-104) for cCTPlacePipe::AddRef(void)
+00099b54	__thunk_100_QueryInterface__12cCTPlacePipeUiPPv	virtual function thunk (delta:-100) for cCTPlacePipe::QueryInterface(unsigned int, void **)
+00099b70	__thunk_100_AddRef__12cCTPlacePipe	virtual function thunk (delta:-100) for cCTPlacePipe::AddRef(void)
+00099b8c	__thunk_100_Release__12cCTPlacePipe	virtual function thunk (delta:-100) for cCTPlacePipe::Release(void)
+00099ba8	__thunk_100_Execute__12cCTPlacePipe	virtual function thunk (delta:-100) for cCTPlacePipe::Execute(void)
+00099bc4	__thunk_104__._14cCTPlaceSubway	virtual function thunk (delta:-104) for cCTPlaceSubway::~cCTPlaceSubway(void)
+00099be0	__thunk_104_Release__14cCTPlaceSubway	virtual function thunk (delta:-104) for cCTPlaceSubway::Release(void)
+00099bfc	__thunk_104_AddRef__14cCTPlaceSubway	virtual function thunk (delta:-104) for cCTPlaceSubway::AddRef(void)
+00099c18	__thunk_100_QueryInterface__14cCTPlaceSubwayUiPPv	virtual function thunk (delta:-100) for cCTPlaceSubway::QueryInterface(unsigned int, void **)
+00099c34	__thunk_100_AddRef__14cCTPlaceSubway	virtual function thunk (delta:-100) for cCTPlaceSubway::AddRef(void)
+00099c50	__thunk_100_Release__14cCTPlaceSubway	virtual function thunk (delta:-100) for cCTPlaceSubway::Release(void)
+00099c6c	__thunk_100_Execute__14cCTPlaceSubway	virtual function thunk (delta:-100) for cCTPlaceSubway::Execute(void)
+00099c88	__thunk_104__._14cCTPlaceOnramp	virtual function thunk (delta:-104) for cCTPlaceOnramp::~cCTPlaceOnramp(void)
+00099ca4	__thunk_104_Release__14cCTPlaceOnramp	virtual function thunk (delta:-104) for cCTPlaceOnramp::Release(void)
+00099cc0	__thunk_104_AddRef__14cCTPlaceOnramp	virtual function thunk (delta:-104) for cCTPlaceOnramp::AddRef(void)
+00099cdc	__thunk_100_QueryInterface__14cCTPlaceOnrampUiPPv	virtual function thunk (delta:-100) for cCTPlaceOnramp::QueryInterface(unsigned int, void **)
+00099cf8	__thunk_100_AddRef__14cCTPlaceOnramp	virtual function thunk (delta:-100) for cCTPlaceOnramp::AddRef(void)
+00099d14	__thunk_100_Release__14cCTPlaceOnramp	virtual function thunk (delta:-100) for cCTPlaceOnramp::Release(void)
+00099d30	__thunk_100_Execute__14cCTPlaceOnramp	virtual function thunk (delta:-100) for cCTPlaceOnramp::Execute(void)
+00099d4c	__thunk_104__._15cCTPlaceHighway	virtual function thunk (delta:-104) for cCTPlaceHighway::~cCTPlaceHighway(void)
+00099d68	__thunk_104_Release__15cCTPlaceHighway	virtual function thunk (delta:-104) for cCTPlaceHighway::Release(void)
+00099d84	__thunk_104_AddRef__15cCTPlaceHighway	virtual function thunk (delta:-104) for cCTPlaceHighway::AddRef(void)
+00099da0	__thunk_100_QueryInterface__15cCTPlaceHighwayUiPPv	virtual function thunk (delta:-100) for cCTPlaceHighway::QueryInterface(unsigned int, void **)
+00099dbc	__thunk_100_AddRef__15cCTPlaceHighway	virtual function thunk (delta:-100) for cCTPlaceHighway::AddRef(void)
+00099dd8	__thunk_100_Release__15cCTPlaceHighway	virtual function thunk (delta:-100) for cCTPlaceHighway::Release(void)
+00099df4	__thunk_100_Execute__15cCTPlaceHighway	virtual function thunk (delta:-100) for cCTPlaceHighway::Execute(void)
+00099e10	__thunk_104__._12cCTPlaceRail	virtual function thunk (delta:-104) for cCTPlaceRail::~cCTPlaceRail(void)
+00099e2c	__thunk_104_Release__12cCTPlaceRail	virtual function thunk (delta:-104) for cCTPlaceRail::Release(void)
+00099e48	__thunk_104_AddRef__12cCTPlaceRail	virtual function thunk (delta:-104) for cCTPlaceRail::AddRef(void)
+00099e64	__thunk_100_QueryInterface__12cCTPlaceRailUiPPv	virtual function thunk (delta:-100) for cCTPlaceRail::QueryInterface(unsigned int, void **)
+00099e80	__thunk_100_AddRef__12cCTPlaceRail	virtual function thunk (delta:-100) for cCTPlaceRail::AddRef(void)
+00099e9c	__thunk_100_Release__12cCTPlaceRail	virtual function thunk (delta:-100) for cCTPlaceRail::Release(void)
+00099eb8	__thunk_100_Execute__12cCTPlaceRail	virtual function thunk (delta:-100) for cCTPlaceRail::Execute(void)
+00099ed4	__thunk_104__._12cCTPlaceRoad	virtual function thunk (delta:-104) for cCTPlaceRoad::~cCTPlaceRoad(void)
+00099ef0	__thunk_104_Release__12cCTPlaceRoad	virtual function thunk (delta:-104) for cCTPlaceRoad::Release(void)
+00099f0c	__thunk_104_AddRef__12cCTPlaceRoad	virtual function thunk (delta:-104) for cCTPlaceRoad::AddRef(void)
+00099f28	__thunk_100_QueryInterface__12cCTPlaceRoadUiPPv	virtual function thunk (delta:-100) for cCTPlaceRoad::QueryInterface(unsigned int, void **)
+00099f44	__thunk_100_AddRef__12cCTPlaceRoad	virtual function thunk (delta:-100) for cCTPlaceRoad::AddRef(void)
+00099f60	__thunk_100_Release__12cCTPlaceRoad	virtual function thunk (delta:-100) for cCTPlaceRoad::Release(void)
+00099f7c	__thunk_100_Execute__12cCTPlaceRoad	virtual function thunk (delta:-100) for cCTPlaceRoad::Execute(void)
+00099f9c	_._25cSC3TransitCommandFactory	cSC3TransitCommandFactory::~cSC3TransitCommandFactory(void)
+00099fd4	remove__t4list2Z13cSC3CityCoordZt9allocator1Z13cSC3CityCoordRC13cSC3CityCoord	list<cSC3CityCoord, allocator<cSC3CityCoord> >::remove(cSC3CityCoord const &)
+0009a0c4	merge__t4list2Z13cSC3CityCoordZt9allocator1Z13cSC3CityCoordRt4list2Z13cSC3CityCoordZt9allocator1Z13cSC3CityCoord	list<cSC3CityCoord, allocator<cSC3CityCoord> >::merge(list<cSC3CityCoord, allocator<cSC3CityCoord> > &)
+0009a234	sort__t4list2Z13cSC3CityCoordZt9allocator1Z13cSC3CityCoord	list<cSC3CityCoord, allocator<cSC3CityCoord> >::sort(void)
+0009a884	adjacent_find__H1Zt14_List_iterator3Z13cSC3CityCoordZR13cSC3CityCoordZP13cSC3CityCoord_X01X01_X01	_List_iterator<cSC3CityCoord, cSC3CityCoord &, cSC3CityCoord *> adjacent_find<_List_iterator<cSC3CityCoord, cSC3CityCoord &, cSC3CityCoord *> >(_List_iterator<cSC3CityCoord, cSC3CityCoord &, cSC3CityCoord *>, _List_iterator<cSC3CityCoord, cSC3CityCoord &, cSC3CityCoord *>)
+0009a934	__unique_copy__H2Zt14_List_iterator3Z13cSC3CityCoordZR13cSC3CityCoordZP13cSC3CityCoordZt14_List_iterator3Z13cSC3CityCoordZR13cSC3CityCoordZP13cSC3CityCoord_X01X01X11G20forward_iterator_tag_X11	_List_iterator<cSC3CityCoord, cSC3CityCoord &, cSC3CityCoord *> __unique_copy<_List_iterator<cSC3CityCoord, cSC3CityCoord &, cSC3CityCoord *>, _List_iterator<cSC3CityCoord, cSC3CityCoord &, cSC3CityCoord *> >(_List_iterator<cSC3CityCoord, cSC3CityCoord &, cSC3CityCoord *>, _List_iterator<cSC3CityCoord, cSC3CityCoord &, cSC3CityCoord *>, _List_iterator<cSC3CityCoord, cSC3CityCoord &, cSC3CityCoord *>, forward_iterator_tag)
+0009a9f4	unique__H1Zt14_List_iterator3Z13cSC3CityCoordZR13cSC3CityCoordZP13cSC3CityCoord_X01X01_X01	_List_iterator<cSC3CityCoord, cSC3CityCoord &, cSC3CityCoord *> unique<_List_iterator<cSC3CityCoord, cSC3CityCoord &, cSC3CityCoord *> >(_List_iterator<cSC3CityCoord, cSC3CityCoord &, cSC3CityCoord *>, _List_iterator<cSC3CityCoord, cSC3CityCoord &, cSC3CityCoord *>)
+0009aa94	__uninitialized_copy_aux__H2ZP14cGZResourceKeyZP14cGZResourceKey_X01X01X11G12__false_type_X11	cGZResourceKey * __uninitialized_copy_aux<cGZResourceKey *, cGZResourceKey *>(cGZResourceKey *, cGZResourceKey *, cGZResourceKey *, __false_type)
+0009aae4	_M_insert_aux__t6vector2Z14cGZResourceKeyZt9allocator1Z14cGZResourceKeyP14cGZResourceKeyRC14cGZResourceKey	vector<cGZResourceKey, allocator<cGZResourceKey> >::_M_insert_aux(cGZResourceKey *, cGZResourceKey const &)
+0009aec4	__uninitialized_copy_aux__H2ZP14tSTTileConvertZP14tSTTileConvert_X01X01X11G12__false_type_X11	tSTTileConvert * __uninitialized_copy_aux<tSTTileConvert *, tSTTileConvert *>(tSTTileConvert *, tSTTileConvert *, tSTTileConvert *, __false_type)
+0009af14	_M_insert_aux__t6vector2Z14tSTTileConvertZt9allocator1Z14tSTTileConvertP14tSTTileConvertRC14tSTTileConvert	vector<tSTTileConvert, allocator<tSTTileConvert> >::_M_insert_aux(tSTTileConvert *, tSTTileConvert const &)
+0009b2d4	_M_insert_aux__t6vector2ZUiZt9allocator1ZUiPUiRCUi	vector<unsigned int, allocator<unsigned int> >::_M_insert_aux(unsigned int *, unsigned int const &)
+0009b5fc	__thunk_12_QueryInterface__15cSTTransitLayerUiPPv	virtual function thunk (delta:-12) for cSTTransitLayer::QueryInterface(unsigned int, void **)
+0009b618	__thunk_12_AddRef__15cSTTransitLayer	virtual function thunk (delta:-12) for cSTTransitLayer::AddRef(void)
+0009b634	__thunk_12_Release__15cSTTransitLayer	virtual function thunk (delta:-12) for cSTTransitLayer::Release(void)
+0009b650	__thunk_12_GetInfoStringCount__15cSTTransitLayerUi	virtual function thunk (delta:-12) for cSTTransitLayer::GetInfoStringCount(unsigned int)
+0009b66c	__thunk_12_GetInfoStrings__15cSTTransitLayerUiUiUiUiRUiR10cIGZStringT6	virtual function thunk (delta:-12) for cSTTransitLayer::GetInfoStrings(unsigned int, unsigned int, unsigned int, unsigned int, unsigned int &, cIGZString &, cIGZString &)
+0009b688	__thunk_8_QueryInterface__15cSTTransitLayerUiPPv	virtual function thunk (delta:-8) for cSTTransitLayer::QueryInterface(unsigned int, void **)
+0009b6a4	__thunk_8_AddRef__15cSTTransitLayer	virtual function thunk (delta:-8) for cSTTransitLayer::AddRef(void)
+0009b6c0	__thunk_8_Release__15cSTTransitLayer	virtual function thunk (delta:-8) for cSTTransitLayer::Release(void)
+0009b6dc	__thunk_8_CreateOccupant__15cSTTransitLayerR14cGZResourceKeyUiPPv	virtual function thunk (delta:-8) for cSTTransitLayer::CreateOccupant(cGZResourceKey &, unsigned int, void **)
+0009b6f8	__thunk_8_CreateOccupant__15cSTTransitLayerP19cISC3OccupantAttribUiPPv	virtual function thunk (delta:-8) for cSTTransitLayer::CreateOccupant(cISC3OccupantAttrib *, unsigned int, void **)
+0009b714	__thunk_4_QueryInterface__15cSTTransitLayerUiPPv	virtual function thunk (delta:-4) for cSTTransitLayer::QueryInterface(unsigned int, void **)
+0009b730	__thunk_4_AddRef__15cSTTransitLayer	virtual function thunk (delta:-4) for cSTTransitLayer::AddRef(void)
+0009b74c	__thunk_4_Release__15cSTTransitLayer	virtual function thunk (delta:-4) for cSTTransitLayer::Release(void)
+0009b768	__thunk_4_CreateMapSprite__15cSTTransitLayerUiUiPPv	virtual function thunk (delta:-4) for cSTTransitLayer::CreateMapSprite(unsigned int, unsigned int, void **)
+0009b784	__thunk_4_GetMapSpriteCount__15cSTTransitLayer	virtual function thunk (delta:-4) for cSTTransitLayer::GetMapSpriteCount(void)
+0009b7a0	__thunk_4_GetSpriteIdFromIndex__15cSTTransitLayerUiRUi	virtual function thunk (delta:-4) for cSTTransitLayer::GetSpriteIdFromIndex(unsigned int, unsigned int &)
+0009b7c4	_._18cTileIdentityArray	cTileIdentityArray::~cTileIdentityArray(void)
+0009b874	_._11cSTRoadTest	cSTRoadTest::~cSTRoadTest(void)
+0009b8ac	_._11cSTRailTest	cSTRailTest::~cSTRailTest(void)
+0009b8e4	_._14cSTHighwayTest	cSTHighwayTest::~cSTHighwayTest(void)
+0009b91c	_._13cSTSubwayTest	cSTSubwayTest::~cSTSubwayTest(void)
+0009b954	_._11cSTPipeTest	cSTPipeTest::~cSTPipeTest(void)
+0009b98c	_._12cSTPowerTest	cSTPowerTest::~cSTPowerTest(void)
+0009b9c4	_._14cSTNetworkTest	cSTNetworkTest::~cSTNetworkTest(void)
+0009b9fc	_._14cSTTransitTest	cSTTransitTest::~cSTTransitTest(void)
+0009ba34	_._11cSTTreeTest	cSTTreeTest::~cSTTreeTest(void)
+0009ba6c	_._15cSTNotARoadTest	cSTNotARoadTest::~cSTNotARoadTest(void)
+0009baa4	_._15cSTNotARailTest	cSTNotARailTest::~cSTNotARailTest(void)
+0009badc	_._18cSTNotAHighwayTest	cSTNotAHighwayTest::~cSTNotAHighwayTest(void)
+0009bb14	_._17cSTNotASubwayTest	cSTNotASubwayTest::~cSTNotASubwayTest(void)
+0009bb4c	_._15cSTNotAPipeTest	cSTNotAPipeTest::~cSTNotAPipeTest(void)
+0009bb84	_._16cSTNotAPowerTest	cSTNotAPowerTest::~cSTNotAPowerTest(void)
+0009bbbc	_._18cSTNotANetworkTest	cSTNotANetworkTest::~cSTNotANetworkTest(void)
+0009bbf4	_._15cSTRoadEditTest	cSTRoadEditTest::~cSTRoadEditTest(void)
+0009bc2c	_._16cSTPowerEditTest	cSTPowerEditTest::~cSTPowerEditTest(void)
+0009bc64	_._15cSTRailEditTest	cSTRailEditTest::~cSTRailEditTest(void)
+0009bc9c	_._18cSTHighwayEditTest	cSTHighwayEditTest::~cSTHighwayEditTest(void)
+0009bcd4	_._15cSTPipeEditTest	cSTPipeEditTest::~cSTPipeEditTest(void)
+0009bd0c	_._17cSTSubwayEditTest	cSTSubwayEditTest::~cSTSubwayEditTest(void)
+0009bd44	_._25cSTRoadEditTestWconstrain	cSTRoadEditTestWconstrain::~cSTRoadEditTestWconstrain(void)
+0009bd7c	_._26cSTPowerEditTestWconstrain	cSTPowerEditTestWconstrain::~cSTPowerEditTestWconstrain(void)
+0009bdb4	_._25cSTRailEditTestWconstrain	cSTRailEditTestWconstrain::~cSTRailEditTestWconstrain(void)
+0009bdec	_._28cSTHighwayEditTestWconstrain	cSTHighwayEditTestWconstrain::~cSTHighwayEditTestWconstrain(void)
+0009be24	_._25cSTPipeEditTestWconstrain	cSTPipeEditTestWconstrain::~cSTPipeEditTestWconstrain(void)
+0009be5c	_._27cSTSubwayEditTestWconstrain	cSTSubwayEditTestWconstrain::~cSTSubwayEditTestWconstrain(void)
+0009be94	_._29cSTRoadTraverseHorizontalTest	cSTRoadTraverseHorizontalTest::~cSTRoadTraverseHorizontalTest(void)
+0009becc	_._29cSTRailTraverseHorizontalTest	cSTRailTraverseHorizontalTest::~cSTRailTraverseHorizontalTest(void)
+0009bf04	_._32cSTHighwayTraverseHorizontalTest	cSTHighwayTraverseHorizontalTest::~cSTHighwayTraverseHorizontalTest(void)
+0009bf3c	_._31cSTSubwayTraverseHorizontalTest	cSTSubwayTraverseHorizontalTest::~cSTSubwayTraverseHorizontalTest(void)
+0009bf74	_._30cSTPowerTraverseHorizontalTest	cSTPowerTraverseHorizontalTest::~cSTPowerTraverseHorizontalTest(void)
+0009bfac	_._29cSTPipeTraverseHorizontalTest	cSTPipeTraverseHorizontalTest::~cSTPipeTraverseHorizontalTest(void)
+0009bfe4	_._27cSTRoadTraverseVerticalTest	cSTRoadTraverseVerticalTest::~cSTRoadTraverseVerticalTest(void)
+0009c01c	_._27cSTRailTraverseVerticalTest	cSTRailTraverseVerticalTest::~cSTRailTraverseVerticalTest(void)
+0009c054	_._30cSTHighwayTraverseVerticalTest	cSTHighwayTraverseVerticalTest::~cSTHighwayTraverseVerticalTest(void)
+0009c08c	_._29cSTSubwayTraverseVerticalTest	cSTSubwayTraverseVerticalTest::~cSTSubwayTraverseVerticalTest(void)
+0009c0c4	_._28cSTPowerTraverseVerticalTest	cSTPowerTraverseVerticalTest::~cSTPowerTraverseVerticalTest(void)
+0009c0fc	_._27cSTPipeTraverseVerticalTest	cSTPipeTraverseVerticalTest::~cSTPipeTraverseVerticalTest(void)
+0009c134	_._16cSTCanDamageTest	cSTCanDamageTest::~cSTCanDamageTest(void)
+0009c16c	_._14cSTDamagedTest	cSTDamagedTest::~cSTDamagedTest(void)
+0009c1a4	_M_erase__t8_Rb_tree5Zt4pair2ZCUiZUiZt4pair2ZCt4pair2ZCUiZUiZPFv_P11cIGZUnknownZt10_Select1st1Zt4pair2ZCt4pair2ZCUiZUiZPFv_P11cIGZUnknownZt4less1Zt4pair2ZCUiZUiZt9allocator1ZPFv_P11cIGZUnknownPt13_Rb_tree_node1Zt4pair2ZCt4pair2ZCUiZUiZPFv_P11cIGZUnknown	_Rb_tree<pair<unsigned int const, unsigned int>, pair<pair<unsigned int const, unsigned int> const, cIGZUnknown *(*)(void)>, _Select1st<pair<pair<unsigned int const, unsigned int> const, cIGZUnknown *(*)(void)> >, less<pair<unsigned int const, unsigned int> >, allocator<cIGZUnknown *(*)(void)> >::_M_erase(_Rb_tree_node<pair<pair<unsigned int const, unsigned int> const, cIGZUnknown *(*)(void)> > *)
+0009c224	_M_insert_aux__t6vector2ZP17cRZCOMDllDirectorZt9allocator1ZP17cRZCOMDllDirectorPP17cRZCOMDllDirectorRCP17cRZCOMDllDirector	vector<cRZCOMDllDirector *, allocator<cRZCOMDllDirector *> >::_M_insert_aux(cRZCOMDllDirector **, cRZCOMDllDirector *const &)
+0009c554	_M_insert__t8_Rb_tree5Zt4pair2ZCUiZUiZt4pair2ZCt4pair2ZCUiZUiZPFv_P11cIGZUnknownZt10_Select1st1Zt4pair2ZCt4pair2ZCUiZUiZPFv_P11cIGZUnknownZt4less1Zt4pair2ZCUiZUiZt9allocator1ZPFv_P11cIGZUnknownP18_Rb_tree_node_baseT1RCt4pair2ZCt4pair2ZCUiZUiZPFv_P11cIGZUnknown	_Rb_tree<pair<unsigned int const, unsigned int>, pair<pair<unsigned int const, unsigned int> const, cIGZUnknown *(*)(void)>, _Select1st<pair<pair<unsigned int const, unsigned int> const, cIGZUnknown *(*)(void)> >, less<pair<unsigned int const, unsigned int> >, allocator<cIGZUnknown *(*)(void)> >::_M_insert(_Rb_tree_node_base *, _Rb_tree_node_base *, pair<pair<unsigned int const, unsigned int> const, cIGZUnknown *(*)(void)> const &)
+0009c974	insert_unique__t8_Rb_tree5Zt4pair2ZCUiZUiZt4pair2ZCt4pair2ZCUiZUiZPFv_P11cIGZUnknownZt10_Select1st1Zt4pair2ZCt4pair2ZCUiZUiZPFv_P11cIGZUnknownZt4less1Zt4pair2ZCUiZUiZt9allocator1ZPFv_P11cIGZUnknownRCt4pair2ZCt4pair2ZCUiZUiZPFv_P11cIGZUnknown	_Rb_tree<pair<unsigned int const, unsigned int>, pair<pair<unsigned int const, unsigned int> const, cIGZUnknown *(*)(void)>, _Select1st<pair<pair<unsigned int const, unsigned int> const, cIGZUnknown *(*)(void)> >, less<pair<unsigned int const, unsigned int> >, allocator<cIGZUnknown *(*)(void)> >::insert_unique(pair<pair<unsigned int const, unsigned int> const, cIGZUnknown *(*)(void)> const &)
+0009cacc	__thunk_4_QueryInterface__17cRZCOMDllDirectorUiPPv	virtual function thunk (delta:-4) for cRZCOMDllDirector::QueryInterface(unsigned int, void **)
+0009cae8	__thunk_4_AddRef__17cRZCOMDllDirector	virtual function thunk (delta:-4) for cRZCOMDllDirector::AddRef(void)
+0009cb04	__thunk_4_Release__17cRZCOMDllDirector	virtual function thunk (delta:-4) for cRZCOMDllDirector::Release(void)
+0009cb20	__thunk_4_PreFrameWorkInit__17cRZCOMDllDirector	virtual function thunk (delta:-4) for cRZCOMDllDirector::PreFrameWorkInit(void)
+0009cb3c	__thunk_4_PreAppInit__17cRZCOMDllDirector	virtual function thunk (delta:-4) for cRZCOMDllDirector::PreAppInit(void)
+0009cb58	__thunk_4_PostAppInit__17cRZCOMDllDirector	virtual function thunk (delta:-4) for cRZCOMDllDirector::PostAppInit(void)
+0009cb74	__thunk_4_PreAppShutdown__17cRZCOMDllDirector	virtual function thunk (delta:-4) for cRZCOMDllDirector::PreAppShutdown(void)
+0009cb90	__thunk_4_PostAppShutdown__17cRZCOMDllDirector	virtual function thunk (delta:-4) for cRZCOMDllDirector::PostAppShutdown(void)
+0009cbac	__thunk_4_PostSystemServiceShutdown__17cRZCOMDllDirector	virtual function thunk (delta:-4) for cRZCOMDllDirector::PostSystemServiceShutdown(void)
+0009cbc8	__thunk_4_AbortiveQuit__17cRZCOMDllDirector	virtual function thunk (delta:-4) for cRZCOMDllDirector::AbortiveQuit(void)
+0009cbe4	__thunk_4_OnInstall__17cRZCOMDllDirector	virtual function thunk (delta:-4) for cRZCOMDllDirector::OnInstall(void)
+0009cc04	_._t3map4Zt4pair2ZCUiZUiZPFv_P11cIGZUnknownZt4less1Zt4pair2ZCUiZUiZt9allocator1ZPFv_P11cIGZUnknown	map<pair<unsigned int const, unsigned int>, cIGZUnknown *(*)(void), less<pair<unsigned int const, unsigned int> >, allocator<cIGZUnknown *(*)(void)> >::~map(void)
+0009ccb0	_._11logic_error	logic_error::~logic_error(void)
+0009cd60	__11logic_errorRC11logic_error	logic_error::logic_error(logic_error const &)
+0009cdbc	__tf11logic_error	logic_error type_info function
+0009cdf4	_._12domain_error	domain_error::~domain_error(void)
+0009ce10	__tf12domain_error	domain_error type_info function
+0009ce68	_._16invalid_argument	invalid_argument::~invalid_argument(void)
+0009ce84	__tf16invalid_argument	invalid_argument type_info function
+0009cedc	_._12length_error	length_error::~length_error(void)
+0009cef8	__tf12length_error	length_error type_info function
+0009cf50	_._12out_of_range	out_of_range::~out_of_range(void)
+0009cf6c	__tf12out_of_range	out_of_range type_info function
+0009cfd0	_._13runtime_error	runtime_error::~runtime_error(void)
+0009d074	__tf13runtime_error	runtime_error type_info function
+0009d0ac	_._11range_error	range_error::~range_error(void)
+0009d0c8	__tf11range_error	range_error type_info function
+0009d120	_._14overflow_error	overflow_error::~overflow_error(void)
+0009d13c	__tf14overflow_error	overflow_error type_info function
+0009d194	_._15underflow_error	underflow_error::~underflow_error(void)
+0009d1b0	__tf15underflow_error	underflow_error type_info function
+0009d208	__thunk_4__._22_IO_ostream_withassign	virtual function thunk (delta:-4) for _IO_ostream_withassign::~_IO_ostream_withassign(void)
+0009d214	__thunk_8__._22_IO_istream_withassign	virtual function thunk (delta:-8) for _IO_istream_withassign::~_IO_istream_withassign(void)
+0009d220	__thunk_12__._8iostream	virtual function thunk (delta:-12) for iostream::~iostream(void)
+0009d22c	__thunk_8__._7istream	virtual function thunk (delta:-8) for istream::~istream(void)
+0009d238	__thunk_4__._7ostream	virtual function thunk (delta:-4) for ostream::~ostream(void)
+0009d244	_._8iostream	iostream::~iostream(void)
+0009d2a8	_._7ostream	ostream::~ostream(void)
+0009d2fc	__tf7ostream	ostream type_info function
+0009d334	_._7istream	istream::~istream(void)
+0009d388	__tf7istream	istream type_info function
+0009d3c0	__tf8iostream	iostream type_info function
+0009d43c	_._22_IO_istream_withassign	_IO_istream_withassign::~_IO_istream_withassign(void)
+0009d498	__tf22_IO_istream_withassign	_IO_istream_withassign type_info function
+0009d4f0	_._22_IO_ostream_withassign	_IO_ostream_withassign::~_IO_ostream_withassign(void)
+0009d54c	__tf22_IO_ostream_withassign	_IO_ostream_withassign type_info function
+0009d5a4	__tf3ios	ios type_info function
+0009d5dc	__tf9streambuf	streambuf type_info function
+0009d614	__tf7filebuf	filebuf type_info function
+0009d66c	__tf11_ios_fields	_ios_fields type_info function
+0009d698	__tf8_IO_FILE	_IO_FILE type_info function
+0009d6c8	__tf9exception	exception type_info function
+0009d708	__tf13bad_exception	bad_exception type_info function
+0009d774	__tf9type_info	type_info type_info function
+0009d7b4	__tf8bad_cast	bad_cast type_info function
+0009d800	__tf10bad_typeid	bad_typeid type_info function
+0009d84c	_._16__user_type_info	__user_type_info::~__user_type_info(void)
+0009d87c	__tf16__user_type_info	__user_type_info type_info function
+0009d8e8	_._14__si_type_info	__si_type_info::~__si_type_info(void)
+0009d918	__tf14__si_type_info	__si_type_info type_info function
+0009d9b4	_._17__class_type_info	__class_type_info::~__class_type_info(void)
+0009d9e4	__tf17__class_type_info	__class_type_info type_info function
+0009da80	_._19__pointer_type_info	__pointer_type_info::~__pointer_type_info(void)
+0009dab0	__tf19__pointer_type_info	__pointer_type_info type_info function
+0009dafc	_._16__attr_type_info	__attr_type_info::~__attr_type_info(void)
+0009db2c	__tf16__attr_type_info	__attr_type_info type_info function
+0009db78	_._19__builtin_type_info	__builtin_type_info::~__builtin_type_info(void)
+0009dba8	__tf19__builtin_type_info	__builtin_type_info type_info function
+0009dbf4	_._16__func_type_info	__func_type_info::~__func_type_info(void)
+0009dc24	__tf16__func_type_info	__func_type_info type_info function
+0009dc70	_._16__ptmf_type_info	__ptmf_type_info::~__ptmf_type_info(void)
+0009dca0	__tf16__ptmf_type_info	__ptmf_type_info type_info function
+0009dcec	_._16__ptmd_type_info	__ptmd_type_info::~__ptmd_type_info(void)
+0009dd1c	__tf16__ptmd_type_info	__ptmd_type_info type_info function
+0009dd68	_._17__array_type_info	__array_type_info::~__array_type_info(void)
+0009dd98	__tf17__array_type_info	__array_type_info type_info function
+0009dde4	_._9bad_alloc	bad_alloc::~bad_alloc(void)
+0009de1c	__tf9bad_alloc	bad_alloc type_info function
+0009de64	_fini	_fini

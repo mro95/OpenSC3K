@@ -1,0 +1,386 @@
+rva	demangled	mangled	source	method
+0010f3	cSC3WinAdvOrd::QueryInterface(unsigned int, void **)	QueryInterface__13cSC3WinAdvOrdUiPPv	libSimUI.so	tokens:16.1
+00162d	cSC3WinAdvOrd::DoMessage(cGZMessage &)	DoMessage__13cSC3WinAdvOrdR10cGZMessage	libSimUI.so	tokens:59.2
+002486	cSC3WinOrdList::DoMessage(cGZMessage &)	DoMessage__14cSC3WinOrdListR10cGZMessage	libSimUI.so	tokens:26.4
+002671	cSC3PetDlg::~cSC3PetDlg(void)	_._10cSC3PetDlg	libSimUI.so	vtable:__vt_10cSC3PetDlg
+002e3e	cSC3MainUIMgr::Release(void)	Release__13cSC3MainUIMgr	libSimUI.so	vtable:__vt_13cSC3MainUIMgr
+0041f4	cSC3MeetMenu::~cSC3MeetMenu(void)	_._12cSC3MeetMenu	libSimUI.so	vtable:__vt_12cSC3MeetMenu
+004217	cSC3OrdDlg::QueryInterface(unsigned int, void **)	QueryInterface__10cSC3OrdDlgUiPPv	libSimUI.so	vtable:__vt_10cSC3OrdDlg
+0042f7	cSC3MeetMenu::DoWinMsg(cIGZWin *, unsigned int, unsigned int, unsigned int, unsigned int)	DoWinMsg__12cSC3MeetMenuP7cIGZWinUiUiUiUi	libSimUI.so	tokens:40.6
+00506d	cSC3MeetMenu::on_btn_clicked(cIGZWin *, unsigned int)	on_btn_clicked__12cSC3MeetMenuP7cIGZWinUi	libSimUI.so	tokens:23.6
+005171	cSC3AdvDlgMain::~cSC3AdvDlgMain(void)	_._14cSC3AdvDlgMain	libSimUI.so	vtable:__vt_14cSC3AdvDlgMain
+00519b	cSC3AdvDlgMain::Release(void)	Release__14cSC3AdvDlgMain	libSimUI.so	vtable:__vt_14cSC3AdvDlgMain
+0052ec	cSC3WinProcTerrEdit::GetTrees(void)	GetTrees__19cSC3WinProcTerrEdit	libSimUI.so	vtable:__vt_19cSC3WinProcTerrEdit
+0052fc	cSC3AdvDlgMain::DoWinMsg(cIGZWin *, unsigned int, unsigned int, unsigned int, unsigned int)	DoWinMsg__14cSC3AdvDlgMainP7cIGZWinUiUiUiUi	libSimUI.so	tokens:80.6
+00674d	cSC3AdvDlgTopic::QueryInterface(unsigned int, void **)	QueryInterface__15cSC3AdvDlgTopicUiPPv	libSimUI.so	vtable:__vt_15cSC3AdvDlgTopic
+00813c	cSC3WinQuery::SetFillColor(unsigned int)	SetFillColor__12cSC3WinQueryUi	libSimUI.so	vtable:__vt_12cSC3WinQuery
+008b72	cSC3AdvDlgTopic::~cSC3AdvDlgTopic(void)	_._15cSC3AdvDlgTopic	libSimUI.so	vtable:__vt_15cSC3AdvDlgTopic
+008ceb	cSC3AdvDlgTopic::DoWinMsg(cIGZWin *, unsigned int, unsigned int, unsigned int, unsigned int)	DoWinMsg__15cSC3AdvDlgTopicP7cIGZWinUiUiUiUi	libSimUI.so	caller
+008d40	cSC3AdvDlgTopic::on_btn_clicked(cIGZWin *, unsigned int)	on_btn_clicked__15cSC3AdvDlgTopicP7cIGZWinUi	libSimUI.so	tokens:26.8
+00a432	cSC3OrdDlg::~cSC3OrdDlg(void)	_._10cSC3OrdDlg	libSimUI.so	vtable:__vt_10cSC3OrdDlg
+00a455	cSC3OrdDlg::Release(void)	Release__10cSC3OrdDlg	libSimUI.so	vtable:__vt_10cSC3OrdDlg
+00a533	cSC3OrdDlg::DoWinMsg(cIGZWin *, unsigned int, unsigned int, unsigned int, unsigned int)	DoWinMsg__10cSC3OrdDlgP7cIGZWinUiUiUiUi	libSimUI.so	tokens:21.5
+00b70e	__builtin_delete	__builtin_delete	libSimUI.so	callee
+00be20	cSC3PetDlg::QueryInterface(unsigned int, void **)	QueryInterface__10cSC3PetDlgUiPPv	libSimUI.so	vtable:__vt_10cSC3PetDlg
+00be2b	cSC3PetDlg::AddRef(void)	AddRef__10cSC3PetDlg	libSimUI.so	vtable:__vt_10cSC3PetDlg
+00be7a	virtual function thunk (delta:-4) for cSC3AdvDlgMain::Release(void)	__thunk_4_Release__14cSC3AdvDlgMain	libSimUI.so	caller
+00be82	cSC3CatalogIterator::Reset(void)	Reset__19cSC3CatalogIterator	libSimUI.so	vtable:__vt_19cSC3CatalogIterator
+00bea3	cSC3CatalogIterator::Current(void) const	Current__C19cSC3CatalogIterator	libSimUI.so	vtable:__vt_19cSC3CatalogIterator
+00bec6	cSC3CatalogIterator::Next(void)	Next__19cSC3CatalogIterator	libSimUI.so	vtable:__vt_19cSC3CatalogIterator
+00beef	cSC3CatalogIterator::GotoIndex(unsigned int)	GotoIndex__19cSC3CatalogIteratorUi	libSimUI.so	vtable:__vt_19cSC3CatalogIterator
+00bf3d	cSC3CatalogIterator::~cSC3CatalogIterator(void)	_._19cSC3CatalogIterator	libSimUI.so	vtable:__vt_19cSC3CatalogIterator
+00bf67	cSC3CatalogIterator::QueryInterface(unsigned int, void **)	QueryInterface__19cSC3CatalogIteratorUiPPv	libSimUI.so	tokens:8.9
+00bf8c	cSC3CatalogIterator::Release(void)	Release__19cSC3CatalogIterator	libSimUI.so	vtable:__vt_19cSC3CatalogIterator
+00bfbc	cSC3Catalog::GetIterator(cISC3CatalogIterator **)	GetIterator__11cSC3CatalogPP20cISC3CatalogIterator	libSimUI.so	vtable:__vt_11cSC3Catalog
+00bffc	cSC3Catalog::GetEntryCount(void) const	GetEntryCount__C11cSC3Catalog	libSimUI.so	vtable:__vt_11cSC3Catalog
+00c006	cSC3Catalog::AddEntry(cISC3CatalogEntry *)	AddEntry__11cSC3CatalogP17cISC3CatalogEntry	libSimUI.so	vtable:__vt_11cSC3Catalog
+00c067	cSC3Catalog::CreateEntry(void) const	CreateEntry__C11cSC3Catalog	libSimUI.so	vtable:__vt_11cSC3Catalog
+00c099	cSC3Catalog::RemoveAllEntries(void)	RemoveAllEntries__11cSC3Catalog	libSimUI.so	vtable:__vt_11cSC3Catalog
+00c0e1	cSC3Catalog::SetOrderFieldID(unsigned int)	SetOrderFieldID__11cSC3CatalogUi	libSimUI.so	vtable:__vt_11cSC3Catalog
+00c0eb	cSC3Catalog::~cSC3Catalog(void)	_._11cSC3Catalog	libSimUI.so	vtable:__vt_11cSC3Catalog
+00c146	cSC3Catalog::QueryInterface(unsigned int, void **)	QueryInterface__11cSC3CatalogUiPPv	libSimUI.so	tokens:8.9
+00c16b	cSC3Catalog::Release(void)	Release__11cSC3Catalog	libSimUI.so	vtable:__vt_11cSC3Catalog
+00c75a	cSC3CatalogEntryField::Set(cIGZVariant *)	Set__21cSC3CatalogEntryFieldP11cIGZVariant	libSimUI.so	vtable:__vt_21cSC3CatalogEntryField
+00c783	cSC3CatalogEntryField::Get(cIGZVariant **)	Get__21cSC3CatalogEntryFieldPP11cIGZVariant	libSimUI.so	vtable:__vt_21cSC3CatalogEntryField
+00c7a8	cSC3CatalogEntryField::~cSC3CatalogEntryField(void)	_._21cSC3CatalogEntryField	libSimUI.so	vtable:__vt_21cSC3CatalogEntryField
+00c7d2	cSC3CatalogEntryField::QueryInterface(unsigned int, void **)	QueryInterface__21cSC3CatalogEntryFieldUiPPv	libSimUI.so	tokens:8.9
+00c7f7	cSC3Catalog::AddRef(void)	AddRef__11cSC3Catalog	libSimUI.so	vtable:__vt_11cSC3Catalog
+00c80e	cSC3CatalogEntryField::Release(void)	Release__21cSC3CatalogEntryField	libSimUI.so	vtable:__vt_21cSC3CatalogEntryField
+00e58b	cSC3CmdCityImageThumbnail_Bulk::~cSC3CmdCityImageThumbnail_Bulk(void)	_._30cSC3CmdCityImageThumbnail_Bulk	libSimUI.so	vtable-user:__vt_30cSC3CmdCityImageThumbnail_Bulk
+00e5d4	cSC3CmdCityImageThumbnail_Bulk::QueryInterface(unsigned int, void **)	QueryInterface__30cSC3CmdCityImageThumbnail_BulkUiPPv	libSimUI.so	tokens:8.9
+00e615	cSC3CmdCityImageThumbnail_Bulk::AddRef(void)	AddRef__30cSC3CmdCityImageThumbnail_Bulk	libSimUI.so	vtable:__vt_30cSC3CmdCityImageThumbnail_Bulk
+00e632	cSC3CmdCityImageThumbnail_Bulk::Release(void)	Release__30cSC3CmdCityImageThumbnail_Bulk	libSimUI.so	vtable:__vt_30cSC3CmdCityImageThumbnail_Bulk
+00f162	virtual function thunk (delta:-4) for cSC3CmdCityImageThumbnail_Bulk::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__30cSC3CmdCityImageThumbnail_BulkUiPPv	libSimUI.so	caller
+00f839	cSC3WinProcMsgBox::on_btn_clicked(cIGZWin *, unsigned int)	on_btn_clicked__17cSC3WinProcMsgBoxP7cIGZWinUi	libSimUI.so	tokens:16.5
+011500	cSC3WinProc::run_cmd(unsigned int, bool &) const	run_cmd__C11cSC3WinProcUiRb	libSimUI.so	tokens:16.6
+011ad2	cSC3CmdSelectCityScheme::AddRef(void)	AddRef__23cSC3CmdSelectCityScheme	libSimUI.so	vtable:__vt_23cSC3CmdSelectCityScheme
+011ada	cSC3CmdSelectCityScheme::AreDisastersEnabled(void) const	AreDisastersEnabled__C23cSC3CmdSelectCityScheme	libSimUI.so	vtable:__vt_23cSC3CmdSelectCityScheme
+011aee	cSC3CmdSelectCityScheme::AreFundsDebt(void) const	AreFundsDebt__C23cSC3CmdSelectCityScheme	libSimUI.so	vtable:__vt_23cSC3CmdSelectCityScheme
+011db0	cSC3CmdSelectCityScheme::GetCityDescription(void) const	GetCityDescription__C23cSC3CmdSelectCityScheme	libSimUI.so	vtable:__vt_23cSC3CmdSelectCityScheme
+011dc3	cSC3CmdSelectCityScheme::GetCityName(void) const	GetCityName__C23cSC3CmdSelectCityScheme	libSimUI.so	vtable:__vt_23cSC3CmdSelectCityScheme
+011dd6	cSC3CmdSelectCityScheme::GetCitySize(void) const	GetCitySize__C23cSC3CmdSelectCityScheme	libSimUI.so	vtable:__vt_23cSC3CmdSelectCityScheme
+011ded	cSC3CmdSelectCityScheme::GetDifficulty(void) const	GetDifficulty__C23cSC3CmdSelectCityScheme	libSimUI.so	vtable:__vt_23cSC3CmdSelectCityScheme
+011e02	cSC3CmdSelectCityScheme::GetDirtGenerator(void) const	GetDirtGenerator__C23cSC3CmdSelectCityScheme	libSimUI.so	vtable:__vt_23cSC3CmdSelectCityScheme
+011e16	cSC3CmdSelectCityScheme::GetFunds(void) const	GetFunds__C23cSC3CmdSelectCityScheme	libSimUI.so	vtable:__vt_23cSC3CmdSelectCityScheme
+011e35	cSC3CmdSelectCityScheme::GetMayorName(void) const	GetMayorName__C23cSC3CmdSelectCityScheme	libSimUI.so	vtable:__vt_23cSC3CmdSelectCityScheme
+011e48	cSC3CmdSelectCityScheme::GetSelectedBuildingSet(void) const	GetSelectedBuildingSet__C23cSC3CmdSelectCityScheme	libSimUI.so	vtable:__vt_23cSC3CmdSelectCityScheme
+011e5c	cSC3CmdSelectCityScheme::GetSelectedFloraSet(void) const	GetSelectedFloraSet__C23cSC3CmdSelectCityScheme	libSimUI.so	vtable:__vt_23cSC3CmdSelectCityScheme
+011e70	cSC3CmdSelectCityScheme::GetSelectedLandScape(void) const	GetSelectedLandScape__C23cSC3CmdSelectCityScheme	libSimUI.so	vtable:__vt_23cSC3CmdSelectCityScheme
+011e84	cSC3CmdSelectCityScheme::GetStartYear(void) const	GetStartYear__C23cSC3CmdSelectCityScheme	libSimUI.so	vtable:__vt_23cSC3CmdSelectCityScheme
+011e9b	cSC3CmdSelectCityScheme::IsAutoBudgetEnabled(void) const	IsAutoBudgetEnabled__C23cSC3CmdSelectCityScheme	libSimUI.so	vtable:__vt_23cSC3CmdSelectCityScheme
+011eaf	cSC3CmdSelectCityScheme::QueryInterface(unsigned int, void **)	QueryInterface__23cSC3CmdSelectCitySchemeUiPPv	libSimUI.so	tokens:8.9
+011edb	cSC3CmdSelectCityScheme::Release(void)	Release__23cSC3CmdSelectCityScheme	libSimUI.so	vtable:__vt_23cSC3CmdSelectCityScheme
+011ee3	virtual function thunk (delta:-4) for cSC3CmdSelectCityScheme::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__23cSC3CmdSelectCitySchemeUiPPv	libSimUI.so	caller
+011f0b	cSC3CmdSimUIFactory::CreateCommand(unsigned int, unsigned int, void **)	CreateCommand__19cSC3CmdSimUIFactoryUiUiPPv	libSimUI.so	tokens:166.7
+012494	cSC3CmdReplaceBuildingDialog::QueryInterface(unsigned int, void **)	QueryInterface__28cSC3CmdReplaceBuildingDialogUiPPv	libSimUI.so	tokens:8.9
+0124a4	cSC3CmdBuildingReplacementMgrDialog::QueryInterface(unsigned int, void **)	QueryInterface__35cSC3CmdBuildingReplacementMgrDialogUiPPv	libSimUI.so	tokens:8.9
+0124c4	cSC3CmdEditOverRidesDialog::QueryInterface(unsigned int, void **)	QueryInterface__26cSC3CmdEditOverRidesDialogUiPPv	libSimUI.so	tokens:8.9
+012ebc	cSC3CtrlCreator::create_SC3TextBtn(cIGZWinCtrlMgr *, unsigned int, void **)	create_SC3TextBtn__15cSC3CtrlCreatorP14cIGZWinCtrlMgrUiPPv	libSimUI.so	tokens:16.2
+0136f7	cSC3CtrlCreator::create_SC3OptGrp(cIGZWinCtrlMgr *, unsigned int, void **)	create_SC3OptGrp__15cSC3CtrlCreatorP14cIGZWinCtrlMgrUiPPv	libSimUI.so	tokens:8.9
+0139b6	cSC3OrdDlg::AddRef(void)	AddRef__10cSC3OrdDlg	libSimUI.so	vtable:__vt_10cSC3OrdDlg
+013e65	cSC3MainUIMgr::~cSC3MainUIMgr(void)	_._13cSC3MainUIMgr	libSimUI.so	vtable:__vt_13cSC3MainUIMgr
+013ec0	cSC3MainUIMgr::QueryInterface(unsigned int, void **)	QueryInterface__13cSC3MainUIMgrUiPPv	libSimUI.so	tokens:8.9
+013ef3	cSC3MainUIMgr::Init(cIGZWin *)	Init__13cSC3MainUIMgrP7cIGZWin	libSimUI.so	vtable:__vt_13cSC3MainUIMgr
+01437a	cSC3MainUIMgr::Shutdown(void)	Shutdown__13cSC3MainUIMgr	libSimUI.so	vtable:__vt_13cSC3MainUIMgr
+0144f2	cSC3MainUIMgr::DoMessage(cGZMessage &)	DoMessage__13cSC3MainUIMgrR10cGZMessage	libSimUI.so	vtable:__vt_13cSC3MainUIMgr
+014842	cSC3MainUIMgr::set_window_visibility(bool)	set_window_visibility__13cSC3MainUIMgrb	libSimUI.so	tokens:8.9
+014fbd	cSC3WinMapsAndGraphsView::IsTearable(void)	IsTearable__24cSC3WinMapsAndGraphsView	libSimUI.so	vtable:__vt_17cSC3WinChartsView
+015504	cSC3MenuSet::~cSC3MenuSet(void)	_._11cSC3MenuSet	libSimUI.so	vtable:__vt_11cSC3MenuSet
+01557c	cSC3MenuSet::QueryInterface(unsigned int, void **)	QueryInterface__11cSC3MenuSetUiPPv	libSimUI.so	vtable:__vt_11cSC3MenuSet
+015581	cSC3MenuSet::Release(void)	Release__11cSC3MenuSet	libSimUI.so	vtable:__vt_11cSC3MenuSet
+015599	cSC3MenuSet::GetMenuDesc(unsigned int, cISC3MenuDesc *&)	GetMenuDesc__11cSC3MenuSetUiRP13cISC3MenuDesc	libSimUI.so	vtable:__vt_11cSC3MenuSet
+0155da	cSC3MenuSet::InitFromRegistry(cIGZString const &, cIGZString const &)	InitFromRegistry__11cSC3MenuSetRC10cIGZStringT1	libSimUI.so	tokens:25.3
+0158e0	cSC3MenuSet::Shutdown(void)	Shutdown__11cSC3MenuSet	libSimUI.so	vtable:__vt_11cSC3MenuSet
+015ac2	cSC3MenuDesc::cSC3MenuDesc(void)	__12cSC3MenuDesc	libSimUI.so	vtable-user:__vt_12cSC3MenuDesc
+015af0	cSC3MenuDesc::~cSC3MenuDesc(void)	_._12cSC3MenuDesc	libSimUI.so	caller
+015b45	cSC3MenuDesc::Release(void)	Release__12cSC3MenuDesc	libSimUI.so	vtable:__vt_12cSC3MenuDesc
+015b66	cSC3MenuDesc::SetMenuDescFlag(int, bool)	SetMenuDescFlag__12cSC3MenuDescib	libSimUI.so	vtable:__vt_12cSC3MenuDesc
+015b80	cSC3MenuDesc::GetMenuDescFlag(int)	GetMenuDescFlag__12cSC3MenuDesci	libSimUI.so	vtable:__vt_12cSC3MenuDesc
+015b90	cSC3MenuDesc::GetMenuDescItemIDs(int &, unsigned int const *&)	GetMenuDescItemIDs__12cSC3MenuDescRiRPCUi	libSimUI.so	vtable:__vt_12cSC3MenuDesc
+015bb3	cSC3MenuDesc::InitFromRegistry(cIGZString const &, cIGZString const &)	InitFromRegistry__12cSC3MenuDescRC10cIGZStringT1	libSimUI.so	vtable:__vt_12cSC3MenuDesc
+015f20	cSC3MenuDesc::Shutdown(void)	Shutdown__12cSC3MenuDesc	libSimUI.so	vtable:__vt_12cSC3MenuDesc
+015f48	cSC3MenuDesc::GetMenuDescName(cIGZString &)	GetMenuDescName__12cSC3MenuDescR10cIGZString	libSimUI.so	vtable:__vt_12cSC3MenuDesc
+015f5c	cSC3MenuDesc::GetMenuDescColors(unsigned int &, unsigned int &)	GetMenuDescColors__12cSC3MenuDescRUiT1	libSimUI.so	vtable:__vt_12cSC3MenuDesc
+015f8a	cSC3MenuBtnDef::~cSC3MenuBtnDef(void)	_._14cSC3MenuBtnDef	libSimUI.so	vtable:__vt_14cSC3MenuBtnDef
+015fad	cSC3MenuBtnDef::Release(void)	Release__14cSC3MenuBtnDef	libSimUI.so	vtable:__vt_14cSC3MenuBtnDef
+015fc5	cSC3MenuBtnDef::GetDefaultMenuItemID(void)	GetDefaultMenuItemID__14cSC3MenuBtnDef	libSimUI.so	vtable:__vt_14cSC3MenuBtnDef
+015fc9	cSC3MenuBtnDef::InitFromRegistry(cIGZString const &, cIGZString const &)	InitFromRegistry__14cSC3MenuBtnDefRC10cIGZStringT1	libSimUI.so	vtable:__vt_14cSC3MenuBtnDef
+0162ad	cSC3MenuItemInfo::~cSC3MenuItemInfo(void)	_._16cSC3MenuItemInfo	libSimUI.so	vtable:__vt_16cSC3MenuItemInfo
+016329	cSC3MenuItemInfo::Activate(void)	Activate__16cSC3MenuItemInfo	libSimUI.so	vtable:__vt_16cSC3MenuItemInfo
+0164b0	cSC3MenuItemInfo::GetMenuItemTip(cIGZString *&)	GetMenuItemTip__16cSC3MenuItemInfoRP10cIGZString	libSimUI.so	vtable:__vt_16cSC3MenuItemInfo
+0164be	cSC3MenuItemInfo::GetMenuItemName(cIGZString *&)	GetMenuItemName__16cSC3MenuItemInfoRP10cIGZString	libSimUI.so	vtable:__vt_16cSC3MenuItemInfo
+0164cc	cSC3MenuItemInfo::GetMenuItemVersion(void)	GetMenuItemVersion__16cSC3MenuItemInfo	libSimUI.so	vtable:__vt_16cSC3MenuItemInfo
+0164d1	cSC3MenuItemInfo::GetMenuItemCommandType(void)	GetMenuItemCommandType__16cSC3MenuItemInfo	libSimUI.so	vtable:__vt_16cSC3MenuItemInfo
+0164d6	cSC3MenuItemInfo::GetMenuItemCommandData(cGZMessage &)	GetMenuItemCommandData__16cSC3MenuItemInfoR10cGZMessage	libSimUI.so	vtable:__vt_16cSC3MenuItemInfo
+0164f6	cSC3MenuItemInfo::SetEnabled(bool)	SetEnabled__16cSC3MenuItemInfob	libSimUI.so	vtable:__vt_16cSC3MenuItemInfo
+016540	cSC3MenuItemInfo::InitFromRegistry(cIGZString const &, cIGZString const &)	InitFromRegistry__16cSC3MenuItemInfoRC10cIGZStringT1	libSimUI.so	vtable:__vt_16cSC3MenuItemInfo
+017404	cSC3BATReplacementShared::GetLotSizeText(cRZString &, unsigned int)	GetLotSizeText__24cSC3BATReplacementSharedR9cRZStringUi	libSimUI.so	tokens:8.9
+0184fe	cSC3WinSlidesOnly::AddOriginal(cISC3OccupantAttrib *, cISC3OccAttribOverRide *)	AddOriginal__17cSC3WinSlidesOnlyP19cISC3OccupantAttribP22cISC3OccAttribOverRide	libSimUI.so	tokens:8.9
+018bfc	cSC3WinSlides::AddOriginal(cISC3OccupantAttrib *, cISC3OccAttribOverRide *)	AddOriginal__13cSC3WinSlidesP19cISC3OccupantAttribP22cISC3OccAttribOverRide	libSimUI.so	vtable:__vt_13cSC3WinSlides
+018cc4	cSC3WinSlides::ClearAllOverRides(void)	ClearAllOverRides__13cSC3WinSlides	libSimUI.so	vtable:__vt_13cSC3WinSlides
+01911c	cSC3WinSlides::GetMinMaxInfo(cRZRect &) const	GetMinMaxInfo__C13cSC3WinSlidesR7cRZRect	libSimUI.so	vtable:__vt_13cSC3WinSlides
+019192	cSC3WinSlides::GetSelection(void) const	GetSelection__C13cSC3WinSlides	libSimUI.so	vtable:__vt_13cSC3WinSlides
+01951a	cSC3WinSlides::SetScrollIndent(unsigned int)	SetScrollIndent__13cSC3WinSlidesUi	libSimUI.so	vtable:__vt_13cSC3WinSlides
+019534	cSC3WinSlides::QueryInterface(unsigned int, void **)	QueryInterface__13cSC3WinSlidesUiPPv	libSimUI.so	vtable:__vt_13cSC3WinSlides
+019568	cSC3WinSlides::RemoveAllSlides(void)	RemoveAllSlides__13cSC3WinSlides	libSimUI.so	vtable:__vt_13cSC3WinSlides
+019676	cSC3WinSlides::SetOverRide(cISC3OccAttribOverRide *)	SetOverRide__13cSC3WinSlidesP22cISC3OccAttribOverRide	libSimUI.so	vtable:__vt_13cSC3WinSlides
+0196a0	cSC3WinSlides::SetPicSize(unsigned int)	SetPicSize__13cSC3WinSlidesUi	libSimUI.so	vtable:__vt_13cSC3WinSlides
+0196c3	cSC3WinSlides::SetSelection(int)	SetSelection__13cSC3WinSlidesi	libSimUI.so	vtable:__vt_13cSC3WinSlides
+01a00e	virtual function thunk (delta:-4) for cSC3WinSlides::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__13cSC3WinSlidesUiPPv	libSimUI.so	caller
+01aa20	cSC3WinBudgetSlider::QueryInterface(unsigned int, void **)	QueryInterface__19cSC3WinBudgetSliderUiPPv	libSimUI.so	tokens:8.9
+01b089	cSC3WinBudgetSlider::SetValue(int)	SetValue__19cSC3WinBudgetSlideri	libSimUI.so	caller
+01b15f	cSC3WinBudgetSlider::send_slider_changed_msg(void)	send_slider_changed_msg__19cSC3WinBudgetSlider	libSimUI.so	tokens:8.9
+01b2f7	virtual function thunk (delta:-156) for cSC3WinBudgetSlider::QueryInterface(unsigned int, void **)	__thunk_156_QueryInterface__19cSC3WinBudgetSliderUiPPv	libSimUI.so	caller
+01b302	cSC3PetDlg::Release(void)	Release__10cSC3PetDlg	libSimUI.so	vtable:__vt_10cSC3PetDlg
+01bdc3	cSC3WinProcBuildingReplacementMgr::ImportReplacementSet(cIGZWin *)	ImportReplacementSet__33cSC3WinProcBuildingReplacementMgrP7cIGZWin	libSimUI.so	tokens:8.9
+01bf97	cSC3WinProcBuildingReplacementMgr::init_controls(cIGZWin *)	init_controls__33cSC3WinProcBuildingReplacementMgrP7cIGZWin	libSimUI.so	tokens:275.6
+01cef4	cSC3WinProcBuildingReplacementMgr::QueryInterface(unsigned int, void **)	QueryInterface__33cSC3WinProcBuildingReplacementMgrUiPPv	libSimUI.so	tokens:8.9
+01d283	cSC3WinProcBuildingReplacementMgr::ResizeAndPositionControls(cIGZWin *)	ResizeAndPositionControls__33cSC3WinProcBuildingReplacementMgrP7cIGZWin	libSimUI.so	vtable:__vt_33cSC3WinProcBuildingReplacementMgr
+01dd35	virtual function thunk (delta:-4) for cSC3WinProcBuildingReplacementMgr::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__33cSC3WinProcBuildingReplacementMgrUiPPv	libSimUI.so	caller
+01de4c	cSC3WinBusinessDeals::~cSC3WinBusinessDeals(void)	_._20cSC3WinBusinessDeals	libSimUI.so	vtable:__vt_20cSC3WinBusinessDeals
+01de81	cSC3WinBusinessDeals::QueryInterface(unsigned int, void **)	QueryInterface__20cSC3WinBusinessDealsUiPPv	libSimUI.so	caller
+01df3a	cSC3WinBusinessDeals::DoWinMsg(cIGZWin *, unsigned int, unsigned int, unsigned int, unsigned int)	DoWinMsg__20cSC3WinBusinessDealsP7cIGZWinUiUiUiUi	libSimUI.so	caller
+01ec36	cSC3WinBusinessDeals::EnumCityItems(cISC3City *, bool)	EnumCityItems__20cSC3WinBusinessDealsP9cISC3Cityb	libSimUI.so	tokens:23.0
+01efba	cSC3WinBusinessDeals::DoFinanceBriefing(void)	DoFinanceBriefing__20cSC3WinBusinessDeals	libSimUI.so	tokens:15.7
+01f205	cSC3WinChartsView::~cSC3WinChartsView(void)	_._17cSC3WinChartsView	libSimUI.so	vtable:__vt_17cSC3WinChartsView
+01f248	cSC3WinChartsView::QueryInterface(unsigned int, void **)	QueryInterface__17cSC3WinChartsViewUiPPv	libSimUI.so	vtable:__vt_17cSC3WinChartsView
+01f286	cSC3WinChartsView::CreateView(cISC3WinMapsAndGraphs &, cRZRect &, cRZPoint &)	CreateView__17cSC3WinChartsViewR21cISC3WinMapsAndGraphsR7cRZRectR8cRZPoint	libSimUI.so	vtable:__vt_17cSC3WinChartsView
+01f308	cSC3WinChartsView::EnumCityItems(cISC3City *, bool)	EnumCityItems__17cSC3WinChartsViewP9cISC3Cityb	libSimUI.so	vtable:__vt_17cSC3WinChartsView
+01f3df	cSC3WinChartsView::on_init(cIGZWin *)	on_init__17cSC3WinChartsViewP7cIGZWin	libSimUI.so	vtable:__vt_17cSC3WinChartsView
+020ffd	cSC3WinChartsView::on_shutdown(cIGZWin *)	on_shutdown__17cSC3WinChartsViewP7cIGZWin	libSimUI.so	vtable:__vt_17cSC3WinChartsView
+0249b9	cSC3WinDateCashTitle::QueryInterface(unsigned int, void **)	QueryInterface__20cSC3WinDateCashTitleUiPPv	libSimUI.so	tokens:8.9
+026e40	cSC3WinDateCashTitle::update_pop(cISC3City *)	update_pop__20cSC3WinDateCashTitleP9cISC3City	libSimUI.so	tokens:26.8
+0270e5	cSC3WinDateCashTitle::get_layout_info(cSC3WinDateCashTitle::tDCTInfo &)	get_layout_info__20cSC3WinDateCashTitleRQ220cSC3WinDateCashTitle8tDCTInfo	libSimUI.so	tokens:25.0
+0276a6	virtual function thunk (delta:-156) for cSC3WinDateCashTitle::QueryInterface(unsigned int, void **)	__thunk_156_QueryInterface__20cSC3WinDateCashTitleUiPPv	libSimUI.so	caller
+027978	virtual function thunk (delta:-4) for cSC3WinProcEditOverRidesDialog::~cSC3WinProcEditOverRidesDialog(void)	__thunk_4__._30cSC3WinProcEditOverRidesDialog	libSimUI.so	vtable:__vt_30cSC3WinProcEditOverRidesDialog.11cSC3WinProc
+02a7dc	cSC3WinProcEditOverRidesDialog::render_buildings(cIGZWin *)	render_buildings__30cSC3WinProcEditOverRidesDialogP7cIGZWin	libSimUI.so	tokens:25.0
+02b2f8	cSC3WinProcEditOverRidesDialog::QueryInterface(unsigned int, void **)	QueryInterface__30cSC3WinProcEditOverRidesDialogUiPPv	libSimUI.so	tokens:8.9
+02bac2	virtual function thunk (delta:-4) for cSC3WinProcEditOverRidesDialog::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__30cSC3WinProcEditOverRidesDialogUiPPv	libSimUI.so	caller
+02ce22	cSC3WinGen::DoMessage(cGZMessage &)	DoMessage__10cSC3WinGenR10cGZMessage	libSimUI.so	callee
+02deb1	cSC3WinGraphsView::CreateView(cISC3WinMapsAndGraphs &, cRZRect &, cRZPoint &)	CreateView__17cSC3WinGraphsViewR21cISC3WinMapsAndGraphsR7cRZRectR8cRZPoint	libSimUI.so	vtable:__vt_17cSC3WinGraphsView
+02e012	cSC3WinGraphsView::on_init(cIGZWin *)	on_init__17cSC3WinGraphsViewP7cIGZWin	libSimUI.so	vtable:__vt_17cSC3WinGraphsView
+02eb59	cSC3WinGraphsView::on_shutdown(cIGZWin *)	on_shutdown__17cSC3WinGraphsViewP7cIGZWin	libSimUI.so	vtable:__vt_17cSC3WinGraphsView
+02f7b3	cSC3WinQueryListView::DebugKeyHelp(void)	DebugKeyHelp__20cSC3WinQueryListView	libSimUI.so	vtable:__vt_20cSC3WinQueryListView
+02f8fd	cSC3WinGraphsView::EnumCityItems(cISC3City *, bool)	EnumCityItems__17cSC3WinGraphsViewP9cISC3Cityb	libSimUI.so	vtable:__vt_17cSC3WinGraphsView
+02f9f7	cSC3WinGraphsView::~cSC3WinGraphsView(void)	_._17cSC3WinGraphsView	libSimUI.so	vtable:__vt_17cSC3WinGraphsView
+02fa71	cSC3WinGraphsView::QueryInterface(unsigned int, void **)	QueryInterface__17cSC3WinGraphsViewUiPPv	libSimUI.so	vtable:__vt_17cSC3WinGraphsView
+03175c	cSC3WinChatControls::DoWinMsg(cIGZWin *, unsigned int, unsigned int, unsigned int, unsigned int)	DoWinMsg__19cSC3WinChatControlsP7cIGZWinUiUiUiUi	libSimUI.so	caller
+0317b3	cSC3WinChatControls::on_button_activated(unsigned int)	on_button_activated__19cSC3WinChatControlsUi	libSimUI.so	tokens:17.1
+031a75	cSC3WinChatControls::UpdateConnectionStatus(void)	UpdateConnectionStatus__19cSC3WinChatControls	libSimUI.so	tokens:69.7
+03218b	cSC3WinProc::on_init(cIGZWin *)	on_init__11cSC3WinProcP7cIGZWin	libSimUI.so	vtable:__vt_11cSC3WinProc
+0321c6	cSC3WinChatGeneral::DoConnectionStatusChange(int, int)	DoConnectionStatusChange__18cSC3WinChatGeneralii	libSimUI.so	tokens:44.7
+0323f1	cSC3WinChatGeneral::DoChannelInviteMessage(basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const *, basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const *)	DoChannelInviteMessage__18cSC3WinChatGeneralPCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0T1	libSimUI.so	tokens:8.9
+032520	cSC3WinChatGeneral::DoChannelJoinPartMessage(IRCJoinLeaveStruct *)	DoChannelJoinPartMessage__18cSC3WinChatGeneralP18IRCJoinLeaveStruct	libSimUI.so	tokens:35.3
+032ccf	cSC3WinChatGeneral::DoChannelListUpdate(list<IRCChannelInfoBasic, allocator<IRCChannelInfoBasic> > *)	DoChannelListUpdate__18cSC3WinChatGeneralPt4list2Z19IRCChannelInfoBasicZt9allocator1Z19IRCChannelInfoBasic	libSimUI.so	caller
+033bd0	cSC3WinChatGeneral::ConvertChannelNameToChannelPopupName(cRZString const &, unsigned int, cRZString const &, cRZString &)	ConvertChannelNameToChannelPopupName__18cSC3WinChatGeneralRC9cRZStringUiT1R9cRZString	libSimUI.so	tokens:8.9
+033c7c	cSC3WinChatGeneral::ConvertChannelNameToChannelListboxName(cRZString const &, unsigned int, cRZString &)	ConvertChannelNameToChannelListboxName__18cSC3WinChatGeneralRC9cRZStringUiR9cRZString	libSimUI.so	tokens:17.9
+033d3f	cSC3WinChatGeneral::DoListBoxCursorEventDoubleClick(cWinListBoxCursorEvent *)	DoListBoxCursorEventDoubleClick__18cSC3WinChatGeneralP22cWinListBoxCursorEvent	libSimUI.so	tokens:8.9
+035860	cSC3WinChatGeneral::DisplayInitialMessageText(void)	DisplayInitialMessageText__18cSC3WinChatGeneral	libSimUI.so	tokens:26.8
+035aea	cSC3WinChatSmall::QueryInterface(unsigned int, void **)	QueryInterface__16cSC3WinChatSmallUiPPv	libSimUI.so	tokens:16.1
+036891	cSC3WinChatMedium::QueryInterface(unsigned int, void **)	QueryInterface__17cSC3WinChatMediumUiPPv	libSimUI.so	tokens:16.1
+037a97	cSC3WinChatLarge::QueryInterface(unsigned int, void **)	QueryInterface__16cSC3WinChatLargeUiPPv	libSimUI.so	tokens:16.1
+03b5cc	cSC3WinChatFriends::DoWinMsg(cIGZWin *, unsigned int, unsigned int, unsigned int, unsigned int)	DoWinMsg__18cSC3WinChatFriendsP7cIGZWinUiUiUiUi	libSimUI.so	tokens:15.4
+0401c3	cSC3WinTransfer::DoMessage(cGZMessage &)	DoMessage__15cSC3WinTransferR10cGZMessage	libSimUI.so	caller
+04023e	cSC3WinTransfer::DoTransferMessage(cGZMessage &)	DoTransferMessage__15cSC3WinTransferR10cGZMessage	libSimUI.so	tokens:35.7
+0404ee	cSC3WinTransfer::CancelTransfer(void)	CancelTransfer__15cSC3WinTransfer	libSimUI.so	tokens:8.9
+040649	cSC3WinTransfer::UpdateStatus(unsigned int, unsigned int)	UpdateStatus__15cSC3WinTransferUiUi	libSimUI.so	tokens:35.7
+0409cd	cSC3WinTransfer::ConvertWindowToOKOnly(void)	ConvertWindowToOKOnly__15cSC3WinTransfer	libSimUI.so	callee
+04163d	cSC3WinLayers::apply(void)	apply__13cSC3WinLayers	libSimUI.so	tokens:8.9
+042856	virtual function thunk (delta:-4) for cSC3WinQuery::AddRef(void)	__thunk_4_AddRef__12cSC3WinQuery	libSimUI.so	caller
+042cc8	cSC3WinMapCtrl::SetRotation(int)	SetRotation__14cSC3WinMapCtrli	libSimUI.so	tokens:17.9
+042e80	cSC3WinMapCtrl::GZOnMouseUpL(int, int, unsigned int)	GZOnMouseUpL__14cSC3WinMapCtrliiUi	libSimUI.so	tokens:8.9
+042ebf	cSC3WinMapCtrl::GZOnMouseUpR(int, int, unsigned int)	GZOnMouseUpR__14cSC3WinMapCtrliiUi	libSimUI.so	tokens:8.9
+042efe	cSC3WinMapCtrl::GZOnMouseMove(int, int, unsigned int)	GZOnMouseMove__14cSC3WinMapCtrliiUi	libSimUI.so	tokens:8.9
+042f20	cSC3WinMapCtrl::GZReleaseCapture(void)	GZReleaseCapture__14cSC3WinMapCtrl	libSimUI.so	tokens:8.9
+043b87	cSC3WinMapCtrlFilter_IGZBuffer::QueryInterface(unsigned int, void **)	QueryInterface__30cSC3WinMapCtrlFilter_IGZBufferUiPPv	libSimUI.so	vtable:__vt_30cSC3WinMapCtrlFilter_IGZBuffer
+043ba9	cSC3WinMapCtrlFilter_IGZBuffer::Release(void)	Release__30cSC3WinMapCtrlFilter_IGZBuffer	libSimUI.so	vtable:__vt_30cSC3WinMapCtrlFilter_IGZBuffer
+043d78	cSC3WinMapCtrlFilter_IGZBuffer::~cSC3WinMapCtrlFilter_IGZBuffer(void)	_._30cSC3WinMapCtrlFilter_IGZBuffer	libSimUI.so	vtable:__vt_30cSC3WinMapCtrlFilter_IGZBuffer
+043da2	cSC3WinMapCtrlFilter_IGZBuffer::GetWidth(void)	GetWidth__30cSC3WinMapCtrlFilter_IGZBuffer	libSimUI.so	vtable:__vt_30cSC3WinMapCtrlFilter_IGZBuffer
+043dbf	cSC3WinMapCtrlFilter_IGZBuffer::GetHieght(void)	GetHieght__30cSC3WinMapCtrlFilter_IGZBuffer	libSimUI.so	vtable:__vt_30cSC3WinMapCtrlFilter_IGZBuffer
+043ddc	cSC3WinMapCtrlFilter_IGZBuffer::SetVisible(bool)	SetVisible__30cSC3WinMapCtrlFilter_IGZBufferb	libSimUI.so	vtable:__vt_30cSC3WinMapCtrlFilter_IGZBuffer
+043de6	cSC3WinMapCtrlFilter_IGZBuffer::IsVisible(void)	IsVisible__30cSC3WinMapCtrlFilter_IGZBuffer	libSimUI.so	vtable:__vt_30cSC3WinMapCtrlFilter_IGZBuffer
+043dea	cSC3WinMapCtrlFilter_IGZBuffer::Draw(cIGZBuffer *, cRZRect &, cRZRect *)	Draw__30cSC3WinMapCtrlFilter_IGZBufferP10cIGZBufferR7cRZRectP7cRZRect	libSimUI.so	vtable:__vt_30cSC3WinMapCtrlFilter_IGZBuffer
+043e3b	cSC3WinMapCtrlFilter_IGZBuffer::CloneFilter(cISC3WinMapCtrlFilter **)	CloneFilter__30cSC3WinMapCtrlFilter_IGZBufferPP21cISC3WinMapCtrlFilter	libSimUI.so	vtable:__vt_30cSC3WinMapCtrlFilter_IGZBuffer
+043e9e	cSC3WinMapCtrlFilter_IGZBuffer::SetDestinationCoords(int, int, int, int, int, int)	SetDestinationCoords__30cSC3WinMapCtrlFilter_IGZBufferiiiiii	libSimUI.so	vtable:__vt_30cSC3WinMapCtrlFilter_IGZBuffer
+044109	cSC3WinGraphsView::RefreshData(cISC3City *)	RefreshData__17cSC3WinGraphsViewP9cISC3City	libSimUI.so	vtable:__vt_17cSC3WinGraphsView
+04410e	cSC3WinMapsAndGraphs::~cSC3WinMapsAndGraphs(void)	_._20cSC3WinMapsAndGraphs	libSimUI.so	vtable:__vt_20cSC3WinMapsAndGraphs
+0441d4	cSC3WinMapsAndGraphs::QueryInterface(unsigned int, void **)	QueryInterface__20cSC3WinMapsAndGraphsUiPPv	libSimUI.so	vtable:__vt_20cSC3WinMapsAndGraphs
+044227	cSC3WinMapsAndGraphs::Release(void)	Release__20cSC3WinMapsAndGraphs	libSimUI.so	vtable:__vt_20cSC3WinMapsAndGraphs
+044257	cSC3WinMapsAndGraphs::CreateWin(void)	CreateWin__20cSC3WinMapsAndGraphs	libSimUI.so	vtable:__vt_20cSC3WinMapsAndGraphs
+044400	cSC3WinMapsAndGraphs::GetCurrentViewId(void)	GetCurrentViewId__20cSC3WinMapsAndGraphs	libSimUI.so	vtable:__vt_20cSC3WinMapsAndGraphs
+044424	cSC3WinMapsAndGraphs::SetDefaultViewId(unsigned int const &)	SetDefaultViewId__20cSC3WinMapsAndGraphsRCUi	libSimUI.so	vtable:__vt_20cSC3WinMapsAndGraphs
+044647	cSC3WinMapsAndGraphs::AddPalette(unsigned int, cIGZPalette *)	AddPalette__20cSC3WinMapsAndGraphsUiP11cIGZPalette	libSimUI.so	vtable:__vt_20cSC3WinMapsAndGraphs
+04468e	cSC3WinMapsAndGraphs::GetPalette(unsigned int)	GetPalette__20cSC3WinMapsAndGraphsUi	libSimUI.so	vtable:__vt_20cSC3WinMapsAndGraphs
+0446b5	cSC3WinMapsAndGraphs::ReleaseAllPalettes(void)	ReleaseAllPalettes__20cSC3WinMapsAndGraphs	libSimUI.so	vtable:__vt_20cSC3WinMapsAndGraphs
+0446fc	cSC3WinMapsAndGraphs::GetPaletteCount(void) const	GetPaletteCount__C20cSC3WinMapsAndGraphs	libSimUI.so	vtable:__vt_20cSC3WinMapsAndGraphs
+04470e	cSC3WinMapsAndGraphs::GetPaletteByIndex(unsigned int)	GetPaletteByIndex__20cSC3WinMapsAndGraphsUi	libSimUI.so	vtable:__vt_20cSC3WinMapsAndGraphs
+044730	cSC3WinMapsAndGraphs::AddMapSprite(cISC3MapSprite *)	AddMapSprite__20cSC3WinMapsAndGraphsP14cISC3MapSprite	libSimUI.so	vtable:__vt_20cSC3WinMapsAndGraphs
+044771	cSC3WinMapsAndGraphs::GetMapSprite(unsigned int)	GetMapSprite__20cSC3WinMapsAndGraphsUi	libSimUI.so	vtable:__vt_20cSC3WinMapsAndGraphs
+0447a4	cSC3WinMapsAndGraphs::ReleaseAllMapSprites(void)	ReleaseAllMapSprites__20cSC3WinMapsAndGraphs	libSimUI.so	vtable:__vt_20cSC3WinMapsAndGraphs
+0447e9	cSC3WinMapsAndGraphs::GetMapSpriteCount(void) const	GetMapSpriteCount__C20cSC3WinMapsAndGraphs	libSimUI.so	vtable:__vt_20cSC3WinMapsAndGraphs
+0447fb	cSC3WinMapsAndGraphs::GetMapSpriteByIndex(unsigned int)	GetMapSpriteByIndex__20cSC3WinMapsAndGraphsUi	libSimUI.so	vtable:__vt_20cSC3WinMapsAndGraphs
+04496f	cSC3WinMapsAndGraphs::DoesMapViewExist(void)	DoesMapViewExist__20cSC3WinMapsAndGraphs	libSimUI.so	vtable:__vt_20cSC3WinMapsAndGraphs
+04498d	cSC3WinMapsAndGraphs::SetFrameArea(cRZRect const &)	SetFrameArea__20cSC3WinMapsAndGraphsRC7cRZRect	libSimUI.so	vtable:__vt_20cSC3WinMapsAndGraphs
+0449e1	cSC3WinMapsAndGraphs::GetFrameArea(cRZRect &) const	GetFrameArea__C20cSC3WinMapsAndGraphsR7cRZRect	libSimUI.so	vtable:__vt_20cSC3WinMapsAndGraphs
+0449f5	cSC3WinMapsAndGraphs::SetCaption(cIGZString const &)	SetCaption__20cSC3WinMapsAndGraphsRC10cIGZString	libSimUI.so	vtable:__vt_20cSC3WinMapsAndGraphs
+044a66	cSC3WinMapsAndGraphs::GetCaption(cIGZString &) const	GetCaption__C20cSC3WinMapsAndGraphsR10cIGZString	libSimUI.so	vtable:__vt_20cSC3WinMapsAndGraphs
+044bd8	cSC3WinMapsAndGraphs::RefreshData(cISC3City *)	RefreshData__20cSC3WinMapsAndGraphsP9cISC3City	libSimUI.so	tokens:16.6
+044c4a	cSC3WinMapsAndGraphs::EnumCityItems(cISC3City *, bool)	EnumCityItems__20cSC3WinMapsAndGraphsP9cISC3Cityb	libSimUI.so	tokens:21.7
+0450c7	cSC3WinMapView::EnumCityItems(cISC3City *, bool)	EnumCityItems__14cSC3WinMapViewP9cISC3Cityb	libSimUI.so	vtable:__vt_19cSC3WinMapView_Aura
+04516d	cSC3WinMapsAndGraphs::AddRef(void)	AddRef__20cSC3WinMapsAndGraphs	libSimUI.so	vtable:__vt_20cSC3WinMapsAndGraphs
+0452f8	cSC3WinMapsAndGraphsView::GetMapsAndGraphsWindow(void)	GetMapsAndGraphsWindow__24cSC3WinMapsAndGraphsView	libSimUI.so	vtable:__vt_17cSC3WinChartsView
+0452fc	cSC3WinMapsAndGraphsView::IsReady(void)	IsReady__24cSC3WinMapsAndGraphsView	libSimUI.so	vtable:__vt_17cSC3WinChartsView
+045305	cSC3WinMapsAndGraphsView::GetViewId(void)	GetViewId__24cSC3WinMapsAndGraphsView	libSimUI.so	vtable:__vt_17cSC3WinChartsView
+045309	cSC3WinMapsAndGraphsView::SetViewId(unsigned int const &)	SetViewId__24cSC3WinMapsAndGraphsViewRCUi	libSimUI.so	vtable:__vt_17cSC3WinChartsView
+045334	cSC3WinMapsAndGraphsView::GetAssociatedIGZWin(void) const	GetAssociatedIGZWin__C24cSC3WinMapsAndGraphsView	libSimUI.so	vtable:__vt_17cSC3WinChartsView
+045343	cSC3WinMapsAndGraphsView::GetViewArea(cRZRect &)	GetViewArea__24cSC3WinMapsAndGraphsViewR7cRZRect	libSimUI.so	vtable:__vt_17cSC3WinChartsView
+045357	cSC3WinMapsAndGraphsView::SetViewArea(cRZRect &)	SetViewArea__24cSC3WinMapsAndGraphsViewR7cRZRect	libSimUI.so	vtable:__vt_17cSC3WinChartsView
+045385	cSC3WinMapsAndGraphsView::GetName(void) const	GetName__C24cSC3WinMapsAndGraphsView	libSimUI.so	vtable:__vt_17cSC3WinChartsView
+0454ec	cSC3WinMapsAndGraphsView::GetIconButton(void)	GetIconButton__24cSC3WinMapsAndGraphsView	libSimUI.so	vtable:__vt_17cSC3WinChartsView
+045501	cSC3WinMapsAndGraphsView::IsIconButtonReady(void)	IsIconButtonReady__24cSC3WinMapsAndGraphsView	libSimUI.so	vtable:__vt_17cSC3WinChartsView
+0455f5	cSC3WinMapsAndGraphsView::GetIconButtonLocation(cRZPoint &)	GetIconButtonLocation__24cSC3WinMapsAndGraphsViewR8cRZPoint	libSimUI.so	vtable:__vt_17cSC3WinChartsView
+045609	cSC3WinMapsAndGraphsView::SetIconButtonLocation(cRZPoint &)	SetIconButtonLocation__24cSC3WinMapsAndGraphsViewR8cRZPoint	libSimUI.so	vtable:__vt_17cSC3WinChartsView
+04563d	cSC3WinMapsAndGraphsView::IconButtonToggleOn(void)	IconButtonToggleOn__24cSC3WinMapsAndGraphsView	libSimUI.so	vtable:__vt_17cSC3WinChartsView
+04564c	cSC3WinMapsAndGraphsView::IconButtonToggleOff(void)	IconButtonToggleOff__24cSC3WinMapsAndGraphsView	libSimUI.so	vtable:__vt_17cSC3WinChartsView
+04565b	cSC3WinMapsAndGraphsView::IsStandAlone(void)	IsStandAlone__24cSC3WinMapsAndGraphsView	libSimUI.so	vtable:__vt_17cSC3WinChartsView
+045d0c	cSC3WinMapView::QueryInterface(unsigned int, void **)	QueryInterface__14cSC3WinMapViewUiPPv	libSimUI.so	vtable:__vt_19cSC3WinMapView_Aura
+04603f	cSC3WinMapView::PrepareShowView(void)	PrepareShowView__14cSC3WinMapView	libSimUI.so	vtable:__vt_19cSC3WinMapView_Aura
+0460a7	cSC3WinMapView::PrepareHideView(void)	PrepareHideView__14cSC3WinMapView	libSimUI.so	vtable:__vt_19cSC3WinMapView_Aura
+046130	cSC3WinMapView::SetShowInCity(void)	SetShowInCity__14cSC3WinMapView	libSimUI.so	vtable:__vt_19cSC3WinMapView_Aura
+0476dd	cSC3WinMapView::GetMapControl(void)	GetMapControl__14cSC3WinMapView	libSimUI.so	vtable:__vt_19cSC3WinMapView_Aura
+04773c	cSC3WinMapView::DoShowInCity(void)	DoShowInCity__14cSC3WinMapView	libSimUI.so	tokens:8.9
+047827	cSC3WinMapView::DoCityViewRotation(int)	DoCityViewRotation__14cSC3WinMapViewi	libSimUI.so	vtable:__vt_19cSC3WinMapView_Aura
+047eac	cSC3WinMapView::on_init(cIGZWin *)	on_init__14cSC3WinMapViewP7cIGZWin	libSimUI.so	vtable:__vt_19cSC3WinMapView_Aura
+047eb8	cSC3WinMapView::on_shutdown(cIGZWin *)	on_shutdown__14cSC3WinMapViewP7cIGZWin	libSimUI.so	vtable:__vt_19cSC3WinMapView_Aura
+047f88	cSC3WinMapView_Aura::~cSC3WinMapView_Aura(void)	_._19cSC3WinMapView_Aura	libSimUI.so	vtable:__vt_19cSC3WinMapView_Aura
+047fcb	cSC3WinMapView_Aura::CreateView(cISC3WinMapsAndGraphs &, cRZRect &, cRZPoint &)	CreateView__19cSC3WinMapView_AuraR21cISC3WinMapsAndGraphsR7cRZRectR8cRZPoint	libSimUI.so	tokens:17.2
+04839d	cSC3WinMapView_Zone::~cSC3WinMapView_Zone(void)	_._19cSC3WinMapView_Zone	libSimUI.so	vtable:__vt_19cSC3WinMapView_Zone
+0483e0	cSC3WinMapView_Zone::CreateView(cISC3WinMapsAndGraphs &, cRZRect &, cRZPoint &)	CreateView__19cSC3WinMapView_ZoneR21cISC3WinMapsAndGraphsR7cRZRectR8cRZPoint	libSimUI.so	tokens:24.7
+048c15	cSC3WinMapView_Crime::~cSC3WinMapView_Crime(void)	_._20cSC3WinMapView_Crime	libSimUI.so	vtable:__vt_20cSC3WinMapView_Crime
+048c58	cSC3WinMapView_Crime::CreateView(cISC3WinMapsAndGraphs &, cRZRect &, cRZPoint &)	CreateView__20cSC3WinMapView_CrimeR21cISC3WinMapsAndGraphsR7cRZRectR8cRZPoint	libSimUI.so	tokens:25.1
+04913d	cSC3WinMapView_Population::~cSC3WinMapView_Population(void)	_._25cSC3WinMapView_Population	libSimUI.so	vtable:__vt_25cSC3WinMapView_Population
+049180	cSC3WinMapView_Population::CreateView(cISC3WinMapsAndGraphs &, cRZRect &, cRZPoint &)	CreateView__25cSC3WinMapView_PopulationR21cISC3WinMapsAndGraphsR7cRZRectR8cRZPoint	libSimUI.so	tokens:16.9
+049552	cSC3WinMapView_Power::~cSC3WinMapView_Power(void)	_._20cSC3WinMapView_Power	libSimUI.so	vtable:__vt_20cSC3WinMapView_Power
+049595	cSC3WinMapView_Power::CreateView(cISC3WinMapsAndGraphs &, cRZRect &, cRZPoint &)	CreateView__20cSC3WinMapView_PowerR21cISC3WinMapsAndGraphsR7cRZRectR8cRZPoint	libSimUI.so	tokens:17.2
+049967	cSC3WinMapView_Flammability::~cSC3WinMapView_Flammability(void)	_._27cSC3WinMapView_Flammability	libSimUI.so	vtable:__vt_27cSC3WinMapView_Flammability
+0499aa	cSC3WinMapView_Flammability::CreateView(cISC3WinMapsAndGraphs &, cRZRect &, cRZPoint &)	CreateView__27cSC3WinMapView_FlammabilityR21cISC3WinMapsAndGraphsR7cRZRectR8cRZPoint	libSimUI.so	tokens:25.1
+049e8f	cSC3WinMapView_LandValue::~cSC3WinMapView_LandValue(void)	_._24cSC3WinMapView_LandValue	libSimUI.so	vtable:__vt_24cSC3WinMapView_LandValue
+049ed2	cSC3WinMapView_LandValue::CreateView(cISC3WinMapsAndGraphs &, cRZRect &, cRZPoint &)	CreateView__24cSC3WinMapView_LandValueR21cISC3WinMapsAndGraphsR7cRZRectR8cRZPoint	libSimUI.so	tokens:16.9
+04ca02	cSC3WinMenuBtnLevel2::Init(void)	Init__20cSC3WinMenuBtnLevel2	libSimUI.so	caller
+04cdcd	cSC3WinMenuBtnLevel2::get_menu_btn_level_2_info(cSC3WinMenuBtnLevel2::tMenuBtnInfoLevel2 &)	get_menu_btn_level_2_info__20cSC3WinMenuBtnLevel2RQ220cSC3WinMenuBtnLevel218tMenuBtnInfoLevel2	libSimUI.so	tokens:140.0
+04df03	cSC3WinMapCtrlFilter_IGZBuffer::GetFilterId(void)	GetFilterId__30cSC3WinMapCtrlFilter_IGZBuffer	libSimUI.so	vtable:__vt_30cSC3WinMapCtrlFilter_IGZBuffer
+04e0e5	cSC3WinMapCtrlFilter_IGZBuffer::GetPalette(void)	GetPalette__30cSC3WinMapCtrlFilter_IGZBuffer	libSimUI.so	vtable:__vt_30cSC3WinMapCtrlFilter_IGZBuffer
+0507ad	cSC3WinNav::DoMessage(cGZMessage &)	DoMessage__10cSC3WinNavR10cGZMessage	libSimUI.so	tokens:48.9
+050b35	cSC3WinNav::rot_to_inst(int, int)	rot_to_inst__10cSC3WinNavii	libSimUI.so	tokens:26.0
+050cb3	cSC3WinNav::on_rotation_changed(int)	on_rotation_changed__10cSC3WinNavi	libSimUI.so	tokens:16.2
+0517df	cSC3WinNeighbor::~cSC3WinNeighbor(void)	_._15cSC3WinNeighbor	libSimUI.so	vtable:__vt_15cSC3WinNeighbor
+05184a	cSC3WinNeighbor::QueryInterface(unsigned int, void **)	QueryInterface__15cSC3WinNeighborUiPPv	libSimUI.so	tokens:8.9
+051895	cSC3WinNeighbor::AddRef(void)	AddRef__15cSC3WinNeighbor	libSimUI.so	vtable:__vt_15cSC3WinNeighbor
+0518ac	cSC3WinNeighbor::Release(void)	Release__15cSC3WinNeighbor	libSimUI.so	vtable:__vt_15cSC3WinNeighbor
+0518dc	cSC3WinNeighbor::SetupWindow(void)	SetupWindow__15cSC3WinNeighbor	libSimUI.so	vtable:__vt_15cSC3WinNeighbor
+051c4b	cSC3WinNeighbor::GetAssociatedIGZWin(void) const	GetAssociatedIGZWin__C15cSC3WinNeighbor	libSimUI.so	vtable:__vt_15cSC3WinNeighbor
+053cd6	cSC3WinNeighbor::GetNeighborCount(void) const	GetNeighborCount__C15cSC3WinNeighbor	libSimUI.so	vtable:__vt_15cSC3WinNeighbor
+053cda	cSC3WinNeighbor::GetSelectedNeighborId(void)	GetSelectedNeighborId__15cSC3WinNeighbor	libSimUI.so	vtable:__vt_15cSC3WinNeighbor
+053ebd	cSC3WinNeighbor::SetDealIcon(unsigned int, cIGZBuffer *)	SetDealIcon__15cSC3WinNeighborUiP10cIGZBuffer	libSimUI.so	vtable:__vt_15cSC3WinNeighbor
+053f19	cSC3WinNeighbor::GetDealIcon(unsigned int)	GetDealIcon__15cSC3WinNeighborUi	libSimUI.so	vtable:__vt_15cSC3WinNeighbor
+053f42	cSC3WinNeighbor::GetNeighbor(unsigned int, cIGZString &, unsigned int &, bool)	GetNeighbor__15cSC3WinNeighborUiR10cIGZStringRUib	libSimUI.so	vtable:__vt_15cSC3WinNeighbor
+053f8a	cSC3WinNeighbor::SetNeighbor(unsigned int, cIGZString const &, unsigned int, bool)	SetNeighbor__15cSC3WinNeighborUiRC10cIGZStringUib	libSimUI.so	vtable:__vt_15cSC3WinNeighbor
+0541cb	cSC3WinNeighbor::RemoveNeighborDeal(unsigned int, unsigned char)	RemoveNeighborDeal__15cSC3WinNeighborUiUc	libSimUI.so	vtable:__vt_15cSC3WinNeighbor
+05acd2	cSC3WinPeekBuilding::Init(void)	Init__19cSC3WinPeekBuilding	libSimUI.so	tokens:17.9
+05ad4b	cSC3WinProc::~cSC3WinProc(void)	_._11cSC3WinProc	libSimUI.so	vtable:__vt_11cSC3WinProc
+05ad6e	cSC3WinProc::QueryInterface(unsigned int, void **)	QueryInterface__11cSC3WinProcUiPPv	libSimUI.so	vtable:__vt_11cSC3WinProc
+05ad94	cSC3WinProc::AddRef(void)	AddRef__11cSC3WinProc	libSimUI.so	vtable:__vt_11cSC3WinProc
+05ada4	cSC3WinProc::Release(void)	Release__11cSC3WinProc	libSimUI.so	vtable:__vt_11cSC3WinProc
+05adc5	cSC3WinProc::DoWinMsg(cIGZWin *, unsigned int, unsigned int, unsigned int, unsigned int)	DoWinMsg__11cSC3WinProcP7cIGZWinUiUiUiUi	libSimUI.so	vtable:__vt_11cSC3WinProc
+05aff7	cSC3WinProc::on_message(cIGZWin *, unsigned int, unsigned int, unsigned int, unsigned int)	on_message__11cSC3WinProcP7cIGZWinUiUiUiUi	libSimUI.so	vtable:__vt_11cSC3WinProc
+05e0e5	cSC3WinProcCityScheme::GZPaint(void)	GZPaint__21cSC3WinProcCityScheme	libSimUI.so	tokens:8.9
+05f2b2	cSC3WinProcTerrEdit::~cSC3WinProcTerrEdit(void)	_._19cSC3WinProcTerrEdit	libSimUI.so	vtable:__vt_19cSC3WinProcTerrEdit
+05f2dc	cSC3WinProcTerrEdit::ResetToDefault(void)	ResetToDefault__19cSC3WinProcTerrEdit	libSimUI.so	vtable:__vt_19cSC3WinProcTerrEdit
+05f2f6	cSC3WinProcTerrEdit::QueryInterface(unsigned int, void **)	QueryInterface__19cSC3WinProcTerrEditUiPPv	libSimUI.so	vtable:__vt_19cSC3WinProcTerrEdit
+05f33a	cSC3MenuItemInfo::Release(void)	Release__16cSC3MenuItemInfo	libSimUI.so	vtable:__vt_16cSC3MenuItemInfo
+05f352	cSC3WinProcTerrEdit::DoWinMsg(cIGZWin *, unsigned int, unsigned int, unsigned int, unsigned int)	DoWinMsg__19cSC3WinProcTerrEditP7cIGZWinUiUiUiUi	libSimUI.so	vtable:__vt_19cSC3WinProcTerrEdit
+05f44c	cSC3WinProcTerrEdit::CreateTerrEditWin(cIGZWin *&)	CreateTerrEditWin__19cSC3WinProcTerrEditRP7cIGZWin	libSimUI.so	vtable:__vt_19cSC3WinProcTerrEdit
+05f610	cSC3WinProcTerrEdit::GetCoastFlags(void)	GetCoastFlags__19cSC3WinProcTerrEdit	libSimUI.so	vtable:__vt_19cSC3WinProcTerrEdit
+05f615	cSC3WinProcTerrEdit::GetHills(void)	GetHills__19cSC3WinProcTerrEdit	libSimUI.so	vtable:__vt_19cSC3WinProcTerrEdit
+05f619	cSC3WinProcTerrEdit::GetWater(void)	GetWater__19cSC3WinProcTerrEdit	libSimUI.so	vtable:__vt_19cSC3WinProcTerrEdit
+05f61d	cSC3WinProcTerrEdit::GetSmoothing(void)	GetSmoothing__19cSC3WinProcTerrEdit	libSimUI.so	vtable:__vt_19cSC3WinProcTerrEdit
+060ab2	cSC3WinProcTerrEdit::SetupRegenMessage(cGZMessage &)	SetupRegenMessage__19cSC3WinProcTerrEditR10cGZMessage	libSimUI.so	tokens:8.9
+0612d7	cSC3WinMapCtrlFilter_IGZBuffer::SetPostFilter(bool)	SetPostFilter__30cSC3WinMapCtrlFilter_IGZBufferb	libSimUI.so	vtable:__vt_30cSC3WinMapCtrlFilter_IGZBuffer
+061588	virtual function thunk (delta:-4) for cSC3WinProcTerrEdit::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__19cSC3WinProcTerrEditUiPPv	libSimUI.so	caller
+06208b	cSC3WinQuery::SetLabelFlags(unsigned int)	SetLabelFlags__12cSC3WinQueryUi	libSimUI.so	vtable:__vt_12cSC3WinQuery
+062095	cSC3WinQuery::~cSC3WinQuery(void)	_._12cSC3WinQuery	libSimUI.so	vtable:__vt_12cSC3WinQuery
+062167	cSC3WinQuery::QueryInterface(unsigned int, void **)	QueryInterface__12cSC3WinQueryUiPPv	libSimUI.so	vtable:__vt_12cSC3WinQuery
+06218e	cSC3WinQuery::AddRef(void)	AddRef__12cSC3WinQuery	libSimUI.so	vtable:__vt_12cSC3WinQuery
+0621a5	cSC3WinQuery::Release(void)	Release__12cSC3WinQuery	libSimUI.so	vtable:__vt_12cSC3WinQuery
+062d38	cSC3WinQuery::GetFrameArea(cRZRect &) const	GetFrameArea__C12cSC3WinQueryR7cRZRect	libSimUI.so	vtable:__vt_12cSC3WinQuery
+062d4c	cSC3WinQuery::GetName(void)	GetName__12cSC3WinQuery	libSimUI.so	vtable:__vt_12cSC3WinQuery
+062d53	cSC3WinQuery::GetName2(void)	GetName2__12cSC3WinQuery	libSimUI.so	vtable:__vt_12cSC3WinQuery
+062d5a	cSC3WinQuery::GetNameEditFlag(void)	GetNameEditFlag__12cSC3WinQuery	libSimUI.so	vtable:__vt_12cSC3WinQuery
+062d61	cSC3WinQuery::SetFrameArea(cRZRect &)	SetFrameArea__12cSC3WinQueryR7cRZRect	libSimUI.so	vtable:__vt_12cSC3WinQuery
+062d97	cSC3WinQuery::SetMaximumHeightAllowed(int)	SetMaximumHeightAllowed__12cSC3WinQueryi	libSimUI.so	vtable:__vt_12cSC3WinQuery
+062da3	cSC3WinQuery::SetCaption(cIGZString &)	SetCaption__12cSC3WinQueryR10cIGZString	libSimUI.so	vtable:__vt_12cSC3WinQuery
+062dfe	cSC3WinQuery::SetFrameLayout(cISC3WinQuery::tLayout)	SetFrameLayout__12cSC3WinQueryQ213cISC3WinQuery7tLayout	libSimUI.so	vtable:__vt_12cSC3WinQuery
+062e14	cSC3WinQuery::SetNameEditFlag(bool)	SetNameEditFlag__12cSC3WinQueryb	libSimUI.so	vtable:__vt_12cSC3WinQuery
+062e36	cSC3WinQuery::SetName(cIGZString &)	SetName__12cSC3WinQueryR10cIGZString	libSimUI.so	vtable:__vt_12cSC3WinQuery
+062e9e	cSC3WinQuery::SetName2(cIGZString &)	SetName2__12cSC3WinQueryR10cIGZString	libSimUI.so	vtable:__vt_12cSC3WinQuery
+062f1b	cSC3WinQuery::SetName2Edit(cIGZString &, cIGZString &)	SetName2Edit__12cSC3WinQueryR10cIGZStringT1	libSimUI.so	vtable:__vt_12cSC3WinQuery
+062fe4	cSC3WinQuery::SetGraphicWindow(cIGZWin &)	SetGraphicWindow__12cSC3WinQueryR7cIGZWin	libSimUI.so	vtable:__vt_12cSC3WinQuery
+063059	cSC3WinQuery::SetGraphicWindow_UseOccupant(void)	SetGraphicWindow_UseOccupant__12cSC3WinQuery	libSimUI.so	vtable:__vt_12cSC3WinQuery
+0631ad	cSC3WinQuery::GetGraphicWindow(unsigned int, void **) const	GetGraphicWindow__C12cSC3WinQueryUiPPv	libSimUI.so	vtable:__vt_12cSC3WinQuery
+0631ca	cSC3WinQuery::GetGraphicWindowArea(cRZRect &) const	GetGraphicWindowArea__C12cSC3WinQueryR7cRZRect	libSimUI.so	vtable:__vt_12cSC3WinQuery
+0631de	cSC3WinQuery::GetDefaultInfoWindow(unsigned int, void **) const	GetDefaultInfoWindow__C12cSC3WinQueryUiPPv	libSimUI.so	vtable:__vt_12cSC3WinQuery
+0631fb	cSC3WinQuery::GetDefaultInfoWindowArea(cRZRect &) const	GetDefaultInfoWindowArea__C12cSC3WinQueryR7cRZRect	libSimUI.so	vtable:__vt_12cSC3WinQuery
+06320f	cSC3WinQuery::SetDefaultInfoWindow(cISC3WinQueryView *)	SetDefaultInfoWindow__12cSC3WinQueryP17cISC3WinQueryView	libSimUI.so	vtable:__vt_12cSC3WinQuery
+063232	cSC3WinQuery::GetAssociatedIGZWin(void) const	GetAssociatedIGZWin__C12cSC3WinQuery	libSimUI.so	vtable:__vt_12cSC3WinQuery
+063244	cSC3WinQuery::GetAssociatedCityCoord(cSC3CityCoord &) const	GetAssociatedCityCoord__C12cSC3WinQueryR13cSC3CityCoord	libSimUI.so	vtable:__vt_12cSC3WinQuery
+06325a	cSC3WinQuery::GetInfoViewCount(void)	GetInfoViewCount__12cSC3WinQuery	libSimUI.so	vtable:__vt_12cSC3WinQuery
+06326d	cSC3WinQuery::GetInfoView(unsigned int &, unsigned int, void **)	GetInfoView__12cSC3WinQueryRUiUiPPv	libSimUI.so	vtable:__vt_12cSC3WinQuery
+0632e4	cSC3WinQuery::AddInfoView(cISC3WinQueryView &)	AddInfoView__12cSC3WinQueryR17cISC3WinQueryView	libSimUI.so	vtable:__vt_12cSC3WinQuery
+06330b	cSC3WinQuery::EnumCityItems(cISC3City *, bool)	EnumCityItems__12cSC3WinQueryP9cISC3Cityb	libSimUI.so	tokens:23.0
+063376	cSC3WinQuery::EnumLayer(cGZMessage &, cISC3CityLayer *)	EnumLayer__12cSC3WinQueryR10cGZMessageP14cISC3CityLayer	libSimUI.so	vtable:__vt_12cSC3WinQuery
+063d45	cSC3WinQuery::EnableCheckBox(void)	EnableCheckBox__12cSC3WinQuery	libSimUI.so	vtable:__vt_12cSC3WinQuery
+063e9b	cSC3WinQuery::SetCheckBox(cIGZString &, cIGZFont *, bool)	SetCheckBox__12cSC3WinQueryR10cIGZStringP8cIGZFontb	libSimUI.so	vtable:__vt_12cSC3WinQuery
+063f70	cSC3WinQuery::GetCheckBoxSetting(void)	GetCheckBoxSetting__12cSC3WinQuery	libSimUI.so	vtable:__vt_12cSC3WinQuery
+0640eb	cSC3WinQueryListView::QueryInterface(unsigned int, void **)	QueryInterface__20cSC3WinQueryListViewUiPPv	libSimUI.so	vtable:__vt_20cSC3WinQueryListView
+0649ca	virtual function thunk (delta:-4) for cSC3WinQuery::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__12cSC3WinQueryUiPPv	libSimUI.so	caller
+0649d2	virtual function thunk (delta:-4) for cSC3WinQuery::Release(void)	__thunk_4_Release__12cSC3WinQuery	libSimUI.so	caller
+065303	cSC3WinRCI::DoMessage(cGZMessage &)	DoMessage__10cSC3WinRCIR10cGZMessage	libSimUI.so	tokens:40.3
+066002	cSC3WinProcEditOverRidesDialog::AddRef(void)	AddRef__30cSC3WinProcEditOverRidesDialog	libSimUI.so	vtable:__vt_30cSC3WinProcEditOverRidesDialog
+06616d	cSC3WinQuery::GetMaximumHeightAllowed(void) const	GetMaximumHeightAllowed__C12cSC3WinQuery	libSimUI.so	vtable:__vt_12cSC3WinQuery
+066c72	cSC3WinProcReplaceBuildingDialog::QueryInterface(unsigned int, void **)	QueryInterface__32cSC3WinProcReplaceBuildingDialogUiPPv	libSimUI.so	tokens:8.9
+066ca6	cSC3WinProcEditOverRidesDialog::Release(void)	Release__30cSC3WinProcEditOverRidesDialog	libSimUI.so	vtable:__vt_30cSC3WinProcEditOverRidesDialog
+066cae	cSC3WinProcReplaceBuildingDialog::Replace(cIGZWin *)	Replace__32cSC3WinProcReplaceBuildingDialogP7cIGZWin	libSimUI.so	vtable:__vt_32cSC3WinProcReplaceBuildingDialog
+06714e	cSC3WinProcReplaceBuildingDialog::Revert(cIGZWin *)	Revert__32cSC3WinProcReplaceBuildingDialogP7cIGZWin	libSimUI.so	vtable:__vt_32cSC3WinProcReplaceBuildingDialog
+0671d9	cSC3WinProcReplaceBuildingDialog::SetOriginalInfo(cIGZWin *, cISC3OccupantAttrib *)	SetOriginalInfo__32cSC3WinProcReplaceBuildingDialogP7cIGZWinP19cISC3OccupantAttrib	libSimUI.so	vtable:__vt_32cSC3WinProcReplaceBuildingDialog
+067261	cSC3WinProcReplaceBuildingDialog::SetOverRideInfo(cIGZWin *, cISC3OccAttribOverRide *)	SetOverRideInfo__32cSC3WinProcReplaceBuildingDialogP7cIGZWinP22cISC3OccAttribOverRide	libSimUI.so	vtable:__vt_32cSC3WinProcReplaceBuildingDialog
+06735f	virtual function thunk (delta:-4) for cSC3WinProcReplaceBuildingDialog::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__32cSC3WinProcReplaceBuildingDialogUiPPv	libSimUI.so	caller
+06736f	virtual function thunk (delta:-4) for cSC3WinProcEditOverRidesDialog::Release(void)	__thunk_4_Release__30cSC3WinProcEditOverRidesDialog	libSimUI.so	vtable:__vt_30cSC3WinProcEditOverRidesDialog.11cSC3WinProc
+06742d	cSC3WinSelectABuilding::~cSC3WinSelectABuilding(void)	_._22cSC3WinSelectABuilding	libSimUI.so	vtable:__vt_22cSC3WinSelectABuilding
+067469	cSC3WinSelectABuilding::QueryInterface(unsigned int, void **)	QueryInterface__22cSC3WinSelectABuildingUiPPv	libSimUI.so	vtable:__vt_22cSC3WinSelectABuilding
+06950a	cSC3WinSelectABuilding::EnumCityItems(cISC3City *, bool)	EnumCityItems__22cSC3WinSelectABuildingP9cISC3Cityb	libSimUI.so	vtable:__vt_22cSC3WinSelectABuilding
+0697e5	cSC3WinProcMsgBox::~cSC3WinProcMsgBox(void)	_._17cSC3WinProcMsgBox	libSimUI.so	vtable:__vt_17cSC3WinProcMsgBox
+069833	cSC3WinProcMsgBox::QueryInterface(unsigned int, void **)	QueryInterface__17cSC3WinProcMsgBoxUiPPv	libSimUI.so	vtable:__vt_17cSC3WinProcMsgBox
+069855	cSC3WinProcMsgBox::Release(void)	Release__17cSC3WinProcMsgBox	libSimUI.so	vtable:__vt_17cSC3WinProcMsgBox
+069885	cSC3WinProcMsgBox::DoWinMsg(cIGZWin *, unsigned int, unsigned int, unsigned int, unsigned int)	DoWinMsg__17cSC3WinProcMsgBoxP7cIGZWinUiUiUiUi	libSimUI.so	vtable:__vt_17cSC3WinProcMsgBox
+0698f2	cSC3WinProcMsgBox::CreateAndExecuteMsgBox(unsigned int &, cIGZString const &, cIGZString const &, unsigned int)	CreateAndExecuteMsgBox__17cSC3WinProcMsgBoxRUiRC10cIGZStringT2Ui	libSimUI.so	vtable:__vt_17cSC3WinProcMsgBox
+0698fa	cSC3WinTipOfTheDay::DoWinMsg(cIGZWin *, unsigned int, unsigned int, unsigned int, unsigned int)	DoWinMsg__18cSC3WinTipOfTheDayP7cIGZWinUiUiUiUi	libSimUI.so	caller
+0699cf	cSC3WinTipOfTheDay::init_dialog(cIGZWin *)	init_dialog__18cSC3WinTipOfTheDayP7cIGZWin	libSimUI.so	tokens:16.5
+06a939	cSC3CatalogIterator::AddRef(void)	AddRef__19cSC3CatalogIterator	libSimUI.so	vtable-thunk:__vt_19cSC3CatalogIterator
+06ac6d	cSUICOMDirector::GetDirectorID(void) const	GetDirectorID__C15cSUICOMDirector	libSimUI.so	tokens:8.9
+06af51	cSC3WinChartsView::PrepareHideView(void)	PrepareHideView__17cSC3WinChartsView	libSimUI.so	vtable:__vt_17cSC3WinChartsView
+06dc97	cSC3WinQuery::GetCaption(void)	GetCaption__12cSC3WinQuery	libSimUI.so	vtable:__vt_12cSC3WinQuery
+06e093	cSC3MenuSet::SetMenuMgr(cISC3MenuMgr *)	SetMenuMgr__11cSC3MenuSetP12cISC3MenuMgr	libSimUI.so	vtable:__vt_11cSC3MenuSet
+072199	cSC3WinMapCtrlFilter_IGZBuffer::SetFilterId(unsigned int)	SetFilterId__30cSC3WinMapCtrlFilter_IGZBufferUi	libSimUI.so	vtable:__vt_30cSC3WinMapCtrlFilter_IGZBuffer
+07b83f	cSC3WinNeighbor::SetSelectedNeighborId(unsigned int)	SetSelectedNeighborId__15cSC3WinNeighborUi	libSimUI.so	vtable:__vt_15cSC3WinNeighbor
+082616	cSC3WinSlides::AddRef(void)	AddRef__13cSC3WinSlides	libSimUI.so	vtable:__vt_13cSC3WinSlides
+08261e	cSC3WinSlides::Release(void)	Release__13cSC3WinSlides	libSimUI.so	vtable:__vt_13cSC3WinSlides
+083a5f	cSC3WinQuery::GetAssociatedOccupant(void) const	GetAssociatedOccupant__C12cSC3WinQuery	libSimUI.so	vtable:__vt_12cSC3WinQuery
+0849a6	cRZCOMDllDirector::QueryInterface(unsigned int, void **)	QueryInterface__17cRZCOMDllDirectorUiPPv	libSimUI.so	tokens:17.9
+084a06	cSC3MenuDesc::GetMenuDescID(void)	GetMenuDescID__12cSC3MenuDesc	libSimUI.so	vtable:__vt_12cSC3MenuDesc
+08ab6e	cSC3WinQuery::GetFillColor(unsigned int &)	GetFillColor__12cSC3WinQueryRUi	libSimUI.so	vtable:__vt_12cSC3WinQuery
+08abd2	cSC3WinQuery::GetFrameLayout(cISC3WinQuery::tLayout &) const	GetFrameLayout__C12cSC3WinQueryRQ213cISC3WinQuery7tLayout	libSimUI.so	vtable:__vt_12cSC3WinQuery
+08ebf5	cSC3MenuBtnDef::GetMenuBtnDefID(void)	GetMenuBtnDefID__14cSC3MenuBtnDef	libSimUI.so	vtable:__vt_14cSC3MenuBtnDef
+0903fe	cSC3WinProc::on_key_down(cIGZWin *, unsigned int, unsigned int)	on_key_down__11cSC3WinProcP7cIGZWinUiUi	libSimUI.so	vtable:__vt_11cSC3WinProc
+0909bf	cSC3WinProc::on_command(cIGZWin *, unsigned int, unsigned int, unsigned int)	on_command__11cSC3WinProcP7cIGZWinUiUiUi	libSimUI.so	vtable:__vt_11cSC3WinProc
+0909ce	cSC3WinMapsAndGraphsView::PerformTearOff(cISC3WinMapsAndGraphsView **)	PerformTearOff__24cSC3WinMapsAndGraphsViewPP25cISC3WinMapsAndGraphsView	libSimUI.so	vtable:__vt_17cSC3WinChartsView
+090d3c	cSC3MenuSet::GetMenuSetID(void)	GetMenuSetID__11cSC3MenuSet	libSimUI.so	vtable:__vt_11cSC3MenuSet

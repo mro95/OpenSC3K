@@ -1,0 +1,532 @@
+rva	demangled	mangled	source	method
+001100	cSC3CitySpriteAttrib::QueryInterface(unsigned int, void **)	QueryInterface__20cSC3CitySpriteAttribUiPPv	libSimSpr.so	vtable:__vt_20cSC3CitySpriteAttrib
+00112c	cSC3CitySpriteAttrib::AddRef(void)	AddRef__20cSC3CitySpriteAttrib	libSimSpr.so	vtable:__vt_20cSC3CitySpriteAttrib
+001134	cSC3CitySpriteAttrib::Release(void)	Release__20cSC3CitySpriteAttrib	libSimSpr.so	vtable:__vt_20cSC3CitySpriteAttrib
+001148	cSC3CitySpriteAttrib::SprAttIsPixelOpaque(unsigned short, int, int) const	SprAttIsPixelOpaque__C20cSC3CitySpriteAttribUsii	libSimSpr.so	vtable:__vt_20cSC3CitySpriteAttrib
+001241	cSC3CitySpriteAttrib::SprAttGetW(unsigned short) const	SprAttGetW__C20cSC3CitySpriteAttribUs	libSimSpr.so	vtable:__vt_20cSC3CitySpriteAttrib
+00129a	cSC3CitySpriteAttrib::SprAttGetH(unsigned short) const	SprAttGetH__C20cSC3CitySpriteAttribUs	libSimSpr.so	vtable:__vt_20cSC3CitySpriteAttrib
+0012cb	cSC3CitySpriteAttrib::SprAttGetArea(unsigned short, cRZRect &) const	SprAttGetArea__C20cSC3CitySpriteAttribUsR7cRZRect	libSimSpr.so	vtable:__vt_20cSC3CitySpriteAttrib
+001369	cSC3CitySpriteAttrib::SprAttGetAreaFromPt(unsigned short, cRZRect &, int, int) const	SprAttGetAreaFromPt__C20cSC3CitySpriteAttribUsR7cRZRectii	libSimSpr.so	vtable:__vt_20cSC3CitySpriteAttrib
+001476	cSC3CitySpriteAttrib::SprAttGetRegPt(unsigned short, int &, int &) const	SprAttGetRegPt__C20cSC3CitySpriteAttribUsRiT2	libSimSpr.so	vtable:__vt_20cSC3CitySpriteAttrib
+0014cd	cSC3CitySpriteAttrib::SprAttGetAllSpans(unsigned short, cRZRect &) const	SprAttGetAllSpans__C20cSC3CitySpriteAttribUsR7cRZRect	libSimSpr.so	vtable:__vt_20cSC3CitySpriteAttrib
+001571	cSC3CitySpriteAttrib::SprAttGetTotalFrameCount(void) const	SprAttGetTotalFrameCount__C20cSC3CitySpriteAttrib	libSimSpr.so	vtable:__vt_20cSC3CitySpriteAttrib
+001576	cSC3CitySpriteAttrib::SprAttGetAnimSetCount(void) const	SprAttGetAnimSetCount__C20cSC3CitySpriteAttrib	libSimSpr.so	vtable:__vt_20cSC3CitySpriteAttrib
+00157a	cSC3CitySpriteAttrib::SprAttGetZoomSetCount(void) const	SprAttGetZoomSetCount__C20cSC3CitySpriteAttrib	libSimSpr.so	vtable:__vt_20cSC3CitySpriteAttrib
+00157e	cSC3CitySpriteAttrib::SprAttGetZoomCount(void) const	SprAttGetZoomCount__C20cSC3CitySpriteAttrib	libSimSpr.so	vtable:__vt_20cSC3CitySpriteAttrib
+001582	cSC3CitySpriteAttrib::SprAttGetRotCount(void) const	SprAttGetRotCount__C20cSC3CitySpriteAttrib	libSimSpr.so	vtable:__vt_20cSC3CitySpriteAttrib
+001586	cSC3CitySpriteAttrib::SprAttGetAnimFrameCount(void) const	SprAttGetAnimFrameCount__C20cSC3CitySpriteAttrib	libSimSpr.so	vtable:__vt_20cSC3CitySpriteAttrib
+00158a	cSC3CitySpriteAttrib::SprAttGetRegRectCount(void) const	SprAttGetRegRectCount__C20cSC3CitySpriteAttrib	libSimSpr.so	vtable:__vt_20cSC3CitySpriteAttrib
+00158e	cSC3CitySpriteAttrib::SprAttGetLayerFlags(void) const	SprAttGetLayerFlags__C20cSC3CitySpriteAttrib	libSimSpr.so	vtable:__vt_20cSC3CitySpriteAttrib
+001592	cSC3CitySpriteAttrib::SprAttPrepare(unsigned short)	SprAttPrepare__20cSC3CitySpriteAttribUs	libSimSpr.so	vtable:__vt_20cSC3CitySpriteAttrib
+0015c4	cSC3CitySpriteAttrib::SprAttUnprepare(unsigned short)	SprAttUnprepare__20cSC3CitySpriteAttribUs	libSimSpr.so	vtable:__vt_20cSC3CitySpriteAttrib
+00181f	cSC3CitySpriteAttrib::SprAttDrawRegFrame(cIGZBuffer *, int, int, unsigned short, unsigned int, cRZRect *) const	SprAttDrawRegFrame__C20cSC3CitySpriteAttribP10cIGZBufferiiUsUiP7cRZRect	libSimSpr.so	vtable:__vt_20cSC3CitySpriteAttrib
+0018ef	cSC3CitySpriteAttrib::GetResKey(cGZResourceKey &) const	GetResKey__C20cSC3CitySpriteAttribR14cGZResourceKey	libSimSpr.so	vtable:__vt_20cSC3CitySpriteAttrib
+001909	cSC3CitySpriteAttrib::SerialRead(cIGZDBSerialRecord &)	SerialRead__20cSC3CitySpriteAttribR18cIGZDBSerialRecord	libSimSpr.so	tokens:92.2
+001c90	cSC3CitySpriteAttrib::SerialReadBinary(cIGZDBSerialRecord &)	SerialReadBinary__20cSC3CitySpriteAttribR18cIGZDBSerialRecord	libSimSpr.so	vtable:__vt_20cSC3CitySpriteAttrib
+001ee6	cSC3CitySpriteAttrib::SerialWrite(cIGZDBSerialRecord &)	SerialWrite__20cSC3CitySpriteAttribR18cIGZDBSerialRecord	libSimSpr.so	vtable:__vt_20cSC3CitySpriteAttrib
+002088	cSC3CitySpriteAttrib::SprAttCreateSprInst(cISC3CitySpriteInst **) const	SprAttCreateSprInst__C20cSC3CitySpriteAttribPP19cISC3CitySpriteInst	libSimSpr.so	vtable:__vt_20cSC3CitySpriteAttrib
+002188	cSC3CitySpriteAttrib::SprAttInitSprInst(cISC3CitySpriteInst **) const	SprAttInitSprInst__C20cSC3CitySpriteAttribPP19cISC3CitySpriteInst	libSimSpr.so	vtable:__vt_20cSC3CitySpriteAttrib
+0021d5	cSC3CitySpriteAttrib::SprAttReleaseSprInst(cISC3CitySpriteInst **) const	SprAttReleaseSprInst__C20cSC3CitySpriteAttribPP19cISC3CitySpriteInst	libSimSpr.so	vtable:__vt_20cSC3CitySpriteAttrib
+002214	cSC3CitySpriteAttrib::IsAnimated(void) const	IsAnimated__C20cSC3CitySpriteAttrib	libSimSpr.so	vtable:__vt_20cSC3CitySpriteAttrib
+002217	cSC3CitySpriteAttrib::IsGeomFlag(unsigned int)	IsGeomFlag__20cSC3CitySpriteAttribUi	libSimSpr.so	vtable:__vt_20cSC3CitySpriteAttrib
+00222a	cSC3CitySpriteAttrib::ClearGeomFlag(unsigned int)	ClearGeomFlag__20cSC3CitySpriteAttribUi	libSimSpr.so	vtable:__vt_20cSC3CitySpriteAttrib
+002238	cSC3CitySpriteAttrib::SetGeomFlag(unsigned int)	SetGeomFlag__20cSC3CitySpriteAttribUi	libSimSpr.so	vtable:__vt_20cSC3CitySpriteAttrib
+002244	cSC3CitySpriteAttrib::GetGeomFlag(void)	GetGeomFlag__20cSC3CitySpriteAttrib	libSimSpr.so	vtable:__vt_20cSC3CitySpriteAttrib
+0024f8	cSC3EmptyTest::Test(cISC3Occupant *)	Test__13cSC3EmptyTestP13cISC3Occupant	libSimSpr.so	vtable:__vt_13cSC3EmptyTest
+0029b8	virtual function thunk (delta:-4) for cSC3CitySpriteAttrib::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__20cSC3CitySpriteAttribUiPPv	libSimSpr.so	caller
+0029c0	virtual function thunk (delta:-4) for cSC3CitySpriteAttrib::AddRef(void)	__thunk_4_AddRef__20cSC3CitySpriteAttrib	libSimSpr.so	caller
+0029c8	virtual function thunk (delta:-4) for cSC3CitySpriteAttrib::Release(void)	__thunk_4_Release__20cSC3CitySpriteAttrib	libSimSpr.so	caller
+0030ac	cSC3CitySpriteAttribAnim::SprAttCreateSprInst(cISC3CitySpriteInst **) const	SprAttCreateSprInst__C24cSC3CitySpriteAttribAnimPP19cISC3CitySpriteInst	libSimSpr.so	vtable:__vt_24cSC3CitySpriteAttribAnim
+0030dc	cSC3CitySpriteAttribAnim::AddScript(cIGZString *)	AddScript__24cSC3CitySpriteAttribAnimP10cIGZString	libSimSpr.so	vtable:__vt_24cSC3CitySpriteAttribAnim
+003880	cSC3CitySpriteAttribAnim::SerialRead(cIGZDBSerialRecord &)	SerialRead__24cSC3CitySpriteAttribAnimR18cIGZDBSerialRecord	libSimSpr.so	tokens:49.0
+003bb4	cSC3CitySpriteAttribAnim::SerialReadBinary(cIGZDBSerialRecord &)	SerialReadBinary__24cSC3CitySpriteAttribAnimR18cIGZDBSerialRecord	libSimSpr.so	vtable:__vt_24cSC3CitySpriteAttribAnim
+003e7c	cSC3CitySpriteAttribAnim::AddSprite(cIGZString *)	AddSprite__24cSC3CitySpriteAttribAnimP10cIGZString	libSimSpr.so	vtable:__vt_24cSC3CitySpriteAttribAnim
+003f2b	cSC3CitySpriteAttribAnim::CreateAnimMachine(sAnimMachine **) const	CreateAnimMachine__C24cSC3CitySpriteAttribAnimPP12sAnimMachine	libSimSpr.so	vtable:__vt_24cSC3CitySpriteAttribAnim
+0059d6	cSC3CityViewIso::AddRef(void)	AddRef__15cSC3CityViewIso	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+006226	cSC3CitySpriteCellMap::MoveRelative(int, int, bool)	MoveRelative__21cSC3CitySpriteCellMapiib	libSimSpr.so	tokens:31.9
+006ed7	cRZLock::~cRZLock(void)	_._7cRZLock	libSimSpr.so	vtable:__vt_7cRZLock
+008a81	cSC3CitySpriteCellMap::BackgroundTaskThreadFunction(void)	BackgroundTaskThreadFunction__21cSC3CitySpriteCellMap	libSimSpr.so	tokens:41.4
+0122cd	cSC3CitySpriteImageMgr::IsInitialized(void) const	IsInitialized__C22cSC3CitySpriteImageMgr	libSimSpr.so	vtable:__vt_22cSC3CitySpriteImageMgr
+0122d1	virtual function thunk (delta:-8) for cSC3CitySpriteImageMgr::~cSC3CitySpriteImageMgr(void)	__thunk_8__._22cSC3CitySpriteImageMgr	libSimSpr.so	vtable:__vt_22cSC3CitySpriteImageMgr.10cRZUnknown
+01237c	cSC3CitySpriteImageMgr::Release(void)	Release__22cSC3CitySpriteImageMgr	libSimSpr.so	vtable-thunk:__vt_22cSC3CitySpriteImageMgr.10cRZUnknown
+012385	cSC3CitySpriteImageMgr::Init(void)	Init__22cSC3CitySpriteImageMgr	libSimSpr.so	vtable:__vt_22cSC3CitySpriteImageMgr
+0123ff	cSC3CitySpriteImageMgr::RealShutdown(void)	RealShutdown__22cSC3CitySpriteImageMgr	libSimSpr.so	vtable:__vt_22cSC3CitySpriteImageMgr
+012566	cSC3CitySpriteImageMgr::AddSpriteInfoFileToSearchList(cIGZString &, bool)	AddSpriteInfoFileToSearchList__22cSC3CitySpriteImageMgrR10cIGZStringb	libSimSpr.so	vtable:__vt_22cSC3CitySpriteImageMgr
+0125c1	cSC3CitySpriteImageMgr::RemoveSpriteInfoFileToSearchList(cIGZString &)	RemoveSpriteInfoFileToSearchList__22cSC3CitySpriteImageMgrR10cIGZString	libSimSpr.so	vtable:__vt_22cSC3CitySpriteImageMgr
+012674	cSC3CitySpriteImageMgr::PrepareImage(unsigned int, unsigned int, cSC3ImageInfo **)	PrepareImage__22cSC3CitySpriteImageMgrUiUiPP13cSC3ImageInfo	libSimSpr.so	vtable:__vt_22cSC3CitySpriteImageMgr
+012a53	cSC3CitySpriteImageMgr::GetImageInfo(unsigned int, unsigned int)	GetImageInfo__22cSC3CitySpriteImageMgrUiUi	libSimSpr.so	vtable:__vt_22cSC3CitySpriteImageMgr
+012a7f	cSC3CitySpriteImageMgr::UnprepareImage(unsigned int, unsigned int)	UnprepareImage__22cSC3CitySpriteImageMgrUiUi	libSimSpr.so	vtable:__vt_22cSC3CitySpriteImageMgr
+013f7b	virtual function thunk (delta:-4) for cSC3CitySpriteImageMgr::Release(void)	__thunk_4_Release__22cSC3CitySpriteImageMgr	libSimSpr.so	caller
+013f93	virtual function thunk (delta:-8) for cSC3CitySpriteImageMgr::QueryInterface(unsigned int, void **)	__thunk_8_QueryInterface__22cSC3CitySpriteImageMgrUiPPv	libSimSpr.so	vtable:__vt_22cSC3CitySpriteImageMgr.10cRZUnknown
+013f9b	virtual function thunk (delta:-8) for cSC3CitySpriteImageMgr::AddRef(void)	__thunk_8_AddRef__22cSC3CitySpriteImageMgr	libSimSpr.so	vtable:__vt_22cSC3CitySpriteImageMgr.10cRZUnknown
+013fa3	virtual function thunk (delta:-8) for cSC3CitySpriteImageMgr::Release(void)	__thunk_8_Release__22cSC3CitySpriteImageMgr	libSimSpr.so	vtable:__vt_22cSC3CitySpriteImageMgr.10cRZUnknown
+014039	cSC3CitySpriteInstAnim::QueryInterface(unsigned int, void **)	QueryInterface__22cSC3CitySpriteInstAnimUiPPv	libSimSpr.so	tokens:8.6
+014df9	cSC3CitySpriteInstAnim::Tick(unsigned int)	Tick__22cSC3CitySpriteInstAnimUi	libSimSpr.so	caller
+01531f	virtual function thunk (delta:-4) for cSC3CitySpriteAttribFactory::~cSC3CitySpriteAttribFactory(void)	__thunk_4__._27cSC3CitySpriteAttribFactory	libSimSpr.so	vtable:__vt_27cSC3CitySpriteAttribFactory.10cRZUnknown
+0155bf	cSC3CitySpriteInstAnim::ViewChange(int, int)	ViewChange__22cSC3CitySpriteInstAnimii	libSimSpr.so	tokens:23.2
+016e89	cSC3CitySpriteManager::~cSC3CitySpriteManager(void)	_._21cSC3CitySpriteManager	libSimSpr.so	vtable:__vt_21cSC3CitySpriteManager
+016eba	cSC3CitySpriteManager::Init(cISC3City *, cISC3CitySpriteCellMap *)	Init__21cSC3CitySpriteManagerP9cISC3CityP22cISC3CitySpriteCellMap	libSimSpr.so	vtable:__vt_21cSC3CitySpriteManager
+01706a	cSC3CitySpriteManager::Shutdown(void)	Shutdown__21cSC3CitySpriteManager	libSimSpr.so	vtable:__vt_21cSC3CitySpriteManager
+0172fe	cSC3CitySpriteManager::RegisterTerrain(void)	RegisterTerrain__21cSC3CitySpriteManager	libSimSpr.so	tokens:250.9
+01785d	cSC3CitySpriteManager::QueryInterface(unsigned int, void **)	QueryInterface__21cSC3CitySpriteManagerUiPPv	libSimSpr.so	vtable:__vt_21cSC3CitySpriteManager
+0178a8	cSC3CitySpriteManager::AddRef(void)	AddRef__21cSC3CitySpriteManager	libSimSpr.so	vtable:__vt_21cSC3CitySpriteManager
+0178bf	cSC3CitySpriteManager::Release(void)	Release__21cSC3CitySpriteManager	libSimSpr.so	vtable:__vt_21cSC3CitySpriteManager
+0178f2	cSC3CitySpriteManager::DoMessage(cGZMessage &)	DoMessage__21cSC3CitySpriteManagerR10cGZMessage	libSimSpr.so	tokens:97.6
+017c27	virtual function thunk (delta:-8) for cSC3CitySpriteManager::CellChangedAll(unsigned int)	__thunk_8_CellChangedAll__21cSC3CitySpriteManagerUi	libSimSpr.so	vtable:__vt_21cSC3CitySpriteManager.23cISC3CityChangeReceiver
+017ca5	virtual function thunk (delta:-8) for cSC3CitySpriteManager::CellChanged(unsigned int, unsigned int, unsigned int, unsigned int, unsigned int)	__thunk_8_CellChanged__21cSC3CitySpriteManagerUiUiUiUiUi	libSimSpr.so	vtable:__vt_21cSC3CitySpriteManager.23cISC3CityChangeReceiver
+017d3c	virtual function thunk (delta:-8) for cSC3CitySpriteManager::CellChanged(unsigned int, unsigned int, unsigned int)	__thunk_8_CellChanged__21cSC3CitySpriteManagerUiUiUi	libSimSpr.so	vtable:__vt_21cSC3CitySpriteManager.23cISC3CityChangeReceiver
+017ee2	virtual function thunk (delta:-36) for cGZDBSegmentIndexedFile::OpenForReading(cIGZString const &)	__thunk_36_OpenForReading__23cGZDBSegmentIndexedFileRC10cIGZString	libSimSpr.so	tokens:8.6
+018128	cSC3CitySpriteManager::GetViewID(int &) const	GetViewID__C21cSC3CitySpriteManagerRi	libSimSpr.so	vtable:__vt_21cSC3CitySpriteManager
+018137	cSC3CitySpriteManager::SetGrid(bool)	SetGrid__21cSC3CitySpriteManagerb	libSimSpr.so	vtable:__vt_21cSC3CitySpriteManager
+018156	cSC3CitySpriteManager::SetCityViewFlag(unsigned int, bool, bool)	SetCityViewFlag__21cSC3CitySpriteManagerUibT2	libSimSpr.so	vtable:__vt_21cSC3CitySpriteManager
+01818c	cSC3CitySpriteManager::SetCityViewFlags(unsigned int, bool)	SetCityViewFlags__21cSC3CitySpriteManagerUib	libSimSpr.so	vtable:__vt_21cSC3CitySpriteManager
+018298	cSC3CitySpriteManager::GetCityViewFlags(void) const	GetCityViewFlags__C21cSC3CitySpriteManager	libSimSpr.so	vtable:__vt_21cSC3CitySpriteManager
+01829f	cSC3CitySpriteManager::GetCityViewFlag(unsigned int) const	GetCityViewFlag__C21cSC3CitySpriteManagerUi	libSimSpr.so	vtable:__vt_21cSC3CitySpriteManager
+0182b2	cSC3CitySpriteManager::ClearCityViewFlags(void)	ClearCityViewFlags__21cSC3CitySpriteManager	libSimSpr.so	vtable:__vt_21cSC3CitySpriteManager
+0182ba	cSC3CitySpriteManager::SetViewID(int, bool)	SetViewID__21cSC3CitySpriteManagerib	libSimSpr.so	vtable:__vt_21cSC3CitySpriteManager
+018874	cSC3CitySpriteManager::OccupantInserted(unsigned int, cISC3Occupant *)	OccupantInserted__21cSC3CitySpriteManagerUiP13cISC3Occupant	libSimSpr.so	vtable:__vt_21cSC3CitySpriteManager
+0188b7	cSC3CitySpriteManager::OccupantRemoved(unsigned int, cISC3Occupant *)	OccupantRemoved__21cSC3CitySpriteManagerUiP13cISC3Occupant	libSimSpr.so	vtable:__vt_21cSC3CitySpriteManager
+0188f0	cSC3CitySpriteManager::OccupantMoved(unsigned int, cISC3Occupant *, cSC3CityCoord const &)	OccupantMoved__21cSC3CitySpriteManagerUiP13cISC3OccupantRC13cSC3CityCoord	libSimSpr.so	vtable:__vt_21cSC3CitySpriteManager
+018942	cSC3CitySpriteManager::OccupantChanged(unsigned int, cISC3Occupant *, int, void *)	OccupantChanged__21cSC3CitySpriteManagerUiP13cISC3OccupantiPv	libSimSpr.so	vtable-thunk:__vt_21cSC3CitySpriteManager.23cISC3CityChangeReceiver
+018cdb	cRZCOMDllDirector::GZCOM(void)	GZCOM__17cRZCOMDllDirector	libSimSpr.so	vtable:__vt_14cSPCOMDirector
+01912e	cSC3CitySpriteManager::GetUnalignedOccupantsInVolume(cSC3CityBounds const &, cISC3Occupant **, unsigned int &)	GetUnalignedOccupantsInVolume__21cSC3CitySpriteManagerRC14cSC3CityBoundsPP13cISC3OccupantRUi	libSimSpr.so	vtable:__vt_21cSC3CitySpriteManager
+0192aa	cSC3CitySpriteManager::InsertCellAlignedSprite(cISC3Occupant *, bool) const	InsertCellAlignedSprite__C21cSC3CitySpriteManagerP13cISC3Occupantb	libSimSpr.so	vtable:__vt_21cSC3CitySpriteManager
+0196b7	cSC3CitySpriteManager::RemoveCellAlignedSprite(cISC3Occupant *) const	RemoveCellAlignedSprite__C21cSC3CitySpriteManagerP13cISC3Occupant	libSimSpr.so	vtable:__vt_21cSC3CitySpriteManager
+019830	cSC3CitySpriteManager::RemoveAndInsertCellAlignedSprites(cISC3Occupant *, cISC3Occupant *) const	RemoveAndInsertCellAlignedSprites__C21cSC3CitySpriteManagerP13cISC3OccupantT1	libSimSpr.so	vtable:__vt_21cSC3CitySpriteManager
+019899	cSC3CitySpriteManager::ChangeCellAlignedSprite(cISC3Occupant *, unsigned int, void *, unsigned int) const	ChangeCellAlignedSprite__C21cSC3CitySpriteManagerP13cISC3OccupantUiPvUi	libSimSpr.so	vtable:__vt_21cSC3CitySpriteManager
+019acd	cSC3CitySpriteManager::ChangeCellAlignedSpriteInst(cSC3CityCoord const &, unsigned int, void *) const	ChangeCellAlignedSpriteInst__C21cSC3CitySpriteManagerRC13cSC3CityCoordUiPv	libSimSpr.so	vtable:__vt_21cSC3CitySpriteManager
+01a073	cSC3CitySpriteManager::InsertUnalignedSpriteInst(cISC3CitySpriteInst *, cSC3CityCoord const &, int, unsigned int) const	InsertUnalignedSpriteInst__C21cSC3CitySpriteManagerP19cISC3CitySpriteInstRC13cSC3CityCoordiUi	libSimSpr.so	vtable:__vt_21cSC3CitySpriteManager
+01a0fc	cSC3CitySpriteManager::RemoveUnalignedSpriteInst(cISC3CitySpriteInst *, cSC3CityCoord const &) const	RemoveUnalignedSpriteInst__C21cSC3CitySpriteManagerP19cISC3CitySpriteInstRC13cSC3CityCoord	libSimSpr.so	vtable:__vt_21cSC3CitySpriteManager
+01a169	cSC3CitySpriteManager::MoveUnalignedSpriteInst(cISC3CitySpriteInst *, cSC3CityCoord const &, cSC3CityCoord const &) const	MoveUnalignedSpriteInst__C21cSC3CitySpriteManagerP19cISC3CitySpriteInstRC13cSC3CityCoordT2	libSimSpr.so	vtable:__vt_21cSC3CitySpriteManager
+01a1ec	cSC3CitySpriteManager::ChangeUnalignedSpriteInst(cISC3CitySpriteInst *, cSC3CityCoord const &, unsigned int, void *) const	ChangeUnalignedSpriteInst__C21cSC3CitySpriteManagerP19cISC3CitySpriteInstRC13cSC3CityCoordUiPv	libSimSpr.so	vtable:__vt_21cSC3CitySpriteManager
+01a657	cSC3CitySpriteManager::createTerrainSpriteAura(unsigned int, unsigned int, unsigned char &, cISC3CitySpriteInst **) const	createTerrainSpriteAura__C21cSC3CitySpriteManagerUiUiRUcPP19cISC3CitySpriteInst	libSimSpr.so	tokens:8.6
+01b41b	cSC3CitySpriteManager::InitCityViewEffects(void)	InitCityViewEffects__21cSC3CitySpriteManager	libSimSpr.so	tokens:16.0
+01b85d	cSC3EffectsManager::QueryInterface(unsigned int, void **)	QueryInterface__18cSC3EffectsManagerUiPPv	libSimSpr.so	vtable:__vt_18cSC3EffectsManager
+01b882	cSC3EffectsManager::Release(void)	Release__18cSC3EffectsManager	libSimSpr.so	vtable:__vt_18cSC3EffectsManager
+01b96a	cSC3EffectsManager::ShutdownEffects(void)	ShutdownEffects__18cSC3EffectsManager	libSimSpr.so	vtable:__vt_18cSC3EffectsManager
+01b995	cSC3TrafficTest::Test(cISC3Occupant *)	Test__15cSC3TrafficTestP13cISC3Occupant	libSimSpr.so	tokens:8.6
+01b9a6	cSC3FlammabilityTest::Test(cISC3Occupant *)	Test__20cSC3FlammabilityTestP13cISC3Occupant	libSimSpr.so	tokens:15.9
+01b9df	cSC3CrimeTest::Test(cISC3Occupant *)	Test__13cSC3CrimeTestP13cISC3Occupant	libSimSpr.so	tokens:15.9
+01ba2e	virtual function thunk (delta:-4) for cSC3CitySpriteManager::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__21cSC3CitySpriteManagerUiPPv	libSimSpr.so	vtable:__vt_21cSC3CitySpriteManager.17cIGZMessageTarget
+01ba36	virtual function thunk (delta:-4) for cSC3CitySpriteManager::AddRef(void)	__thunk_4_AddRef__21cSC3CitySpriteManager	libSimSpr.so	vtable:__vt_21cSC3CitySpriteManager.17cIGZMessageTarget
+01ba3e	virtual function thunk (delta:-4) for cSC3CitySpriteManager::Release(void)	__thunk_4_Release__21cSC3CitySpriteManager	libSimSpr.so	vtable:__vt_21cSC3CitySpriteManager.17cIGZMessageTarget
+01ba46	virtual function thunk (delta:-8) for cSC3CitySpriteManager::QueryInterface(unsigned int, void **)	__thunk_8_QueryInterface__21cSC3CitySpriteManagerUiPPv	libSimSpr.so	caller
+01ba4e	virtual function thunk (delta:-8) for cSC3CitySpriteManager::AddRef(void)	__thunk_8_AddRef__21cSC3CitySpriteManager	libSimSpr.so	caller
+01ba56	virtual function thunk (delta:-8) for cSC3CitySpriteManager::Release(void)	__thunk_8_Release__21cSC3CitySpriteManager	libSimSpr.so	caller
+01ba5e	virtual function thunk (delta:-8) for cSC3CitySpriteManager::OccupantInserted(unsigned int, cISC3Occupant *)	__thunk_8_OccupantInserted__21cSC3CitySpriteManagerUiP13cISC3Occupant	libSimSpr.so	caller
+01ba66	virtual function thunk (delta:-8) for cSC3CitySpriteManager::OccupantRemoved(unsigned int, cISC3Occupant *)	__thunk_8_OccupantRemoved__21cSC3CitySpriteManagerUiP13cISC3Occupant	libSimSpr.so	caller
+01ba6e	virtual function thunk (delta:-8) for cSC3CitySpriteManager::OccupantMoved(unsigned int, cISC3Occupant *, cSC3CityCoord const &)	__thunk_8_OccupantMoved__21cSC3CitySpriteManagerUiP13cISC3OccupantRC13cSC3CityCoord	libSimSpr.so	caller
+01ba76	virtual function thunk (delta:-8) for cSC3CitySpriteManager::OccupantChanged(unsigned int, cISC3Occupant *, int, void *)	__thunk_8_OccupantChanged__21cSC3CitySpriteManagerUiP13cISC3OccupantiPv	libSimSpr.so	vtable:__vt_21cSC3CitySpriteManager.23cISC3CityChangeReceiver
+01bb3b	cSC3CitySpriteInstBasic::Tick(unsigned int)	Tick__23cSC3CitySpriteInstBasicUi	libSimSpr.so	vtable:__vt_23cSC3CitySpriteInstBasic
+01bb63	cSC3CitySpriteInstBasic::SetHilite(unsigned int)	SetHilite__23cSC3CitySpriteInstBasicUi	libSimSpr.so	vtable:__vt_15cSC3WaterDebris
+01bb89	cSC3TrailingSmoke::AddRef(void)	AddRef__17cSC3TrailingSmoke	libSimSpr.so	vtable-thunk:__vt_17cSC3TrailingSmoke
+01bb91	cSC3TrailingSmoke::Release(void)	Release__17cSC3TrailingSmoke	libSimSpr.so	vtable-thunk:__vt_17cSC3TrailingSmoke
+01bf24	cSC3CityViewIso::EnablePlot(bool)	EnablePlot__15cSC3CityViewIsob	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01bf3c	cSC3CityViewIso::IsScreenShaking(void)	IsScreenShaking__15cSC3CityViewIso	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01bf43	cSC3CityViewIso::GetAnimTickManager(void)	GetAnimTickManager__15cSC3CityViewIso	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01bf4a	cSC3CityViewIso::GetViewManager(void)	GetViewManager__15cSC3CityViewIso	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01bf51	cSC3CityViewIso::GetSpriteCellMap(void)	GetSpriteCellMap__15cSC3CityViewIso	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01bf58	cSC3CityViewIso::~cSC3CityViewIso(void)	_._15cSC3CityViewIso	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01bfc9	virtual function thunk (delta:-4) for cSC3CityViewIso::DoMessage(cGZMessage &)	__thunk_4_DoMessage__15cSC3CityViewIsoR10cGZMessage	libSimSpr.so	vtable:__vt_15cSC3CityViewIso.17cIGZMessageTarget
+01c041	cSC3CityViewIso::Save(cISC3City *, cIGZDBSegment *)	Save__15cSC3CityViewIsoP9cISC3CityP13cIGZDBSegment	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01c336	cSC3CityViewIso::GetCityViewID(void) const	GetCityViewID__C15cSC3CityViewIso	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01c34e	cSC3CityViewIso::SetCityViewID(int, bool)	SetCityViewID__15cSC3CityViewIsoib	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01c409	cSC3CityViewIso::SetCityViewFlag(unsigned int, bool, bool)	SetCityViewFlag__15cSC3CityViewIsoUibT2	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01c43a	cSC3CityViewIso::GetCityViewFlag(unsigned int) const	GetCityViewFlag__C15cSC3CityViewIsoUi	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01c44c	cSC3CityViewIso::SetCityViewFlags(unsigned int, bool)	SetCityViewFlags__15cSC3CityViewIsoUib	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01c479	cSC3CityViewIso::GetCityViewFlags(void) const	GetCityViewFlags__C15cSC3CityViewIso	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01c484	cSC3CityViewIso::TestCityViewFlags(unsigned int) const	TestCityViewFlags__C15cSC3CityViewIsoUi	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01c496	cSC3CityViewIso::ClearCityViewFlags(void)	ClearCityViewFlags__15cSC3CityViewIso	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01c7cd	cSC3CityViewIso::Shutdown(void)	Shutdown__15cSC3CityViewIso	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01c911	cSC3CityViewIso::DoNextShakeFrame(void)	DoNextShakeFrame__15cSC3CityViewIso	libSimSpr.so	tokens:8.6
+01cab9	cSC3CityViewIso::Plot(void)	Plot__15cSC3CityViewIso	libSimSpr.so	tokens:8.6
+01cc18	cSC3CityViewIso::SetBackgroundBitmapForZoom(int)	SetBackgroundBitmapForZoom__15cSC3CityViewIsoi	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01cd28	cSC3CityViewIso::GetViewInfo(cISC3CityViewInfo **)	GetViewInfo__15cSC3CityViewIsoPP17cISC3CityViewInfo	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01cf3a	cSC3CityViewIso::GetScreenClipRect(cRZRect &) const	GetScreenClipRect__C15cSC3CityViewIsoR7cRZRect	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01cf7f	cSC3CityViewIso::SetScreenClipRect(cRZRect const &)	SetScreenClipRect__15cSC3CityViewIsoRC7cRZRect	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01d01b	cSC3CityViewIso::CameraGoHome(bool)	CameraGoHome__15cSC3CityViewIsob	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01d039	cSC3CityViewIso::FocusCameraOn(unsigned int, unsigned int, bool)	FocusCameraOn__15cSC3CityViewIsoUiUib	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01d0e8	cSC3CityViewIso::GetZoomAndRotation(int &, int &)	GetZoomAndRotation__15cSC3CityViewIsoRiT1	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01d15a	cSC3CityViewIso::GetFocusCell(unsigned int &, unsigned int &) const	GetFocusCell__C15cSC3CityViewIsoRUiT1	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01d175	cSC3CityViewIso::GetCameraHint(cRZRect *, cRZRect *)	GetCameraHint__15cSC3CityViewIsoP7cRZRectT1	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01d1d9	cSC3CityViewIso::SetZoomAndRotation(int, int, bool)	SetZoomAndRotation__15cSC3CityViewIsoiib	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01d2d6	cSC3CityViewIso::ZoomIn(bool)	ZoomIn__15cSC3CityViewIsob	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01d365	cSC3CityViewIso::ZoomOut(bool)	ZoomOut__15cSC3CityViewIsob	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01d3f3	cSC3CityViewIso::RotateCameraCW(bool)	RotateCameraCW__15cSC3CityViewIsob	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01d47b	cSC3CityViewIso::RotateCameraCCW(bool)	RotateCameraCCW__15cSC3CityViewIsob	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01d503	cSC3CityViewIso::Translate(float, float, bool)	Translate__15cSC3CityViewIsoffb	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01d5e4	cSC3CityViewIso::DoScreenShake(int, int, int, int, bool, int)	DoScreenShake__15cSC3CityViewIsoiiiibi	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01d64f	cSC3CityViewIso::CurrentOccupantManager(void)	CurrentOccupantManager__15cSC3CityViewIso	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01d65d	cSC3CityViewIso::SetAnimFrequency(float const &)	SetAnimFrequency__15cSC3CityViewIsoRCf	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01d67e	cSC3CityViewIso::GetAnimFrequency(float &)	GetAnimFrequency__15cSC3CityViewIsoRf	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01d68a	cSC3CityViewIso::SetSmoothNavigation(bool)	SetSmoothNavigation__15cSC3CityViewIsob	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01d694	cSC3CityViewIso::GetSmoothNavigation(void)	GetSmoothNavigation__15cSC3CityViewIso	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01d698	cSC3CityViewIso::PerformPick(int, int, cSC3CityCoord &, bool)	PerformPick__15cSC3CityViewIsoiiR13cSC3CityCoordb	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01d709	cSC3CityViewIso::GetOccupantsInVolume(cSC3CityBounds const &, cISC3Occupant **, unsigned int &, bool, bool)	GetOccupantsInVolume__15cSC3CityViewIsoRC14cSC3CityBoundsPP13cISC3OccupantRUibT4	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01d74c	cSC3CityViewIso::GetCitySpriteManager(void)	GetCitySpriteManager__15cSC3CityViewIso	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01d753	cSC3CityViewIso::GetCitySpriteCellMap(void)	GetCitySpriteCellMap__15cSC3CityViewIso	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01d75a	cSC3CityViewIso::NotifyClients(int, int, int)	NotifyClients__15cSC3CityViewIsoiii	libSimSpr.so	tokens:37.3
+01d890	cSC3CityViewIso::SetNotify(bool)	SetNotify__15cSC3CityViewIsob	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01d89a	cSC3CityViewIso::QueryInterface(unsigned int, void **)	QueryInterface__15cSC3CityViewIsoUiPPv	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01d8c1	cSC3CityViewIso::Release(void)	Release__15cSC3CityViewIso	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+01d8df	virtual function thunk (delta:-4) for cSC3CityViewIso::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__15cSC3CityViewIsoUiPPv	libSimSpr.so	caller
+01d8e7	virtual function thunk (delta:-4) for cSC3CityViewIso::AddRef(void)	__thunk_4_AddRef__15cSC3CityViewIso	libSimSpr.so	caller
+01d8ef	virtual function thunk (delta:-4) for cSC3CityViewIso::Release(void)	__thunk_4_Release__15cSC3CityViewIso	libSimSpr.so	caller
+01da58	cSC3DBSegmentSprite::QueryInterface(unsigned int, void **)	QueryInterface__19cSC3DBSegmentSpriteUiPPv	libSimSpr.so	tokens:8.6
+01da84	cSC3DBSegmentSprite::AddRef(void)	AddRef__19cSC3DBSegmentSprite	libSimSpr.so	vtable:__vt_19cSC3DBSegmentSprite
+01da8c	cSC3DBSegmentSprite::Release(void)	Release__19cSC3DBSegmentSprite	libSimSpr.so	vtable:__vt_19cSC3DBSegmentSprite
+01da94	cSC3DBSegmentSprite::Init(unsigned int, cIGZString const *, bool)	Init__19cSC3DBSegmentSpriteUiPC10cIGZStringb	libSimSpr.so	vtable:__vt_19cSC3DBSegmentSprite
+01daed	cSC3DBSegmentSprite::Shutdown(void)	Shutdown__19cSC3DBSegmentSprite	libSimSpr.so	vtable:__vt_19cSC3DBSegmentSprite
+01daf5	cSC3DBSegmentSprite::LoadSprite(cIGZBuffer **, cGZResourceKey const &)	LoadSprite__19cSC3DBSegmentSpritePP10cIGZBufferRC14cGZResourceKey	libSimSpr.so	tokens:39.4
+01dfd1	cSC3DBSegmentSprite::LoadImageInfo(cSC3ImageInfo &, cGZResourceKey const &)	LoadImageInfo__19cSC3DBSegmentSpriteR13cSC3ImageInfoRC14cGZResourceKey	libSimSpr.so	vtable:__vt_19cSC3DBSegmentSprite
+01efd2	virtual function thunk (delta:-4) for cSC3DBSegmentSprite::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__19cSC3DBSegmentSpriteUiPPv	libSimSpr.so	vtable:__vt_19cSC3DBSegmentSprite.23cGZDBSegmentIndexedFile
+01efda	virtual function thunk (delta:-4) for cSC3DBSegmentSprite::AddRef(void)	__thunk_4_AddRef__19cSC3DBSegmentSprite	libSimSpr.so	vtable:__vt_19cSC3DBSegmentSprite.23cGZDBSegmentIndexedFile
+01efe2	virtual function thunk (delta:-4) for cSC3DBSegmentSprite::Release(void)	__thunk_4_Release__19cSC3DBSegmentSprite	libSimSpr.so	vtable:__vt_19cSC3DBSegmentSprite.23cGZDBSegmentIndexedFile
+01efea	virtual function thunk (delta:-4) for cSC3DBSegmentSprite::Init(unsigned int, cIGZString const *, bool)	__thunk_4_Init__19cSC3DBSegmentSpriteUiPC10cIGZStringb	libSimSpr.so	vtable:__vt_19cSC3DBSegmentSprite.23cGZDBSegmentIndexedFile
+01eff2	virtual function thunk (delta:-4) for cSC3DBSegmentSprite::Shutdown(void)	__thunk_4_Shutdown__19cSC3DBSegmentSprite	libSimSpr.so	vtable:__vt_19cSC3DBSegmentSprite.23cGZDBSegmentIndexedFile
+01effa	virtual function thunk (delta:-40) for cSC3DBSegmentSprite::QueryInterface(unsigned int, void **)	__thunk_40_QueryInterface__19cSC3DBSegmentSpriteUiPPv	libSimSpr.so	caller
+01f002	virtual function thunk (delta:-40) for cSC3DBSegmentSprite::AddRef(void)	__thunk_40_AddRef__19cSC3DBSegmentSprite	libSimSpr.so	caller
+01f00a	virtual function thunk (delta:-40) for cSC3DBSegmentSprite::Release(void)	__thunk_40_Release__19cSC3DBSegmentSprite	libSimSpr.so	caller
+01f012	virtual function thunk (delta:-40) for cSC3DBSegmentSprite::Init(unsigned int, cIGZString const *, bool)	__thunk_40_Init__19cSC3DBSegmentSpriteUiPC10cIGZStringb	libSimSpr.so	caller
+01f01a	virtual function thunk (delta:-40) for cSC3DBSegmentSprite::Shutdown(void)	__thunk_40_Shutdown__19cSC3DBSegmentSprite	libSimSpr.so	caller
+01f417	cSC3CitySpriteInstBasic::GetW(int, int) const	GetW__C23cSC3CitySpriteInstBasicii	libSimSpr.so	vtable:__vt_15cSC3WaterDebris
+01f429	cSC3CitySpriteInstBasic::GetH(int, int) const	GetH__C23cSC3CitySpriteInstBasicii	libSimSpr.so	vtable:__vt_15cSC3WaterDebris
+01f440	cSC3CitySpriteInstBasic::GetAllSpans(int, int, cRZRect &) const	GetAllSpans__C23cSC3CitySpriteInstBasiciiR7cRZRect	libSimSpr.so	vtable:__vt_15cSC3WaterDebris
+01f45c	cSC3CitySpriteInstBasic::GetAreaFromPt(int, int, cRZRect &, int, int) const	GetAreaFromPt__C23cSC3CitySpriteInstBasiciiR7cRZRectii	libSimSpr.so	vtable:__vt_15cSC3WaterDebris
+01f49f	cSC3CitySpriteInstBasic::GetGeomFlag(void)	GetGeomFlag__23cSC3CitySpriteInstBasic	libSimSpr.so	vtable:__vt_15cSC3WaterDebris
+01f4a3	cSC3CitySpriteInstBasic::IsGeomFlag(unsigned int)	IsGeomFlag__23cSC3CitySpriteInstBasicUi	libSimSpr.so	vtable:__vt_15cSC3WaterDebris
+01f4b6	cSC3CitySpriteInstBasic::SetGeomFlag(unsigned int)	SetGeomFlag__23cSC3CitySpriteInstBasicUi	libSimSpr.so	vtable:__vt_15cSC3WaterDebris
+01f4c2	cSC3CitySpriteInstBasic::ClearGeomFlag(unsigned int)	ClearGeomFlag__23cSC3CitySpriteInstBasicUi	libSimSpr.so	vtable:__vt_15cSC3WaterDebris
+01f4d0	cSC3CitySpriteInstBasic::Init(cISC3CitySpriteAttrib *)	Init__23cSC3CitySpriteInstBasicP21cISC3CitySpriteAttrib	libSimSpr.so	vtable:__vt_15cSC3WaterDebris
+01f4d5	cSC3CitySpriteInstBasic::GetLayerFlags32(void) const	GetLayerFlags32__C23cSC3CitySpriteInstBasic	libSimSpr.so	vtable:__vt_15cSC3WaterDebris
+01f4d8	cSC3CitySpriteInstBasic::GetRotationOffset(unsigned char &) const	GetRotationOffset__C23cSC3CitySpriteInstBasicRUc	libSimSpr.so	vtable:__vt_15cSC3WaterDebris
+01f4f3	cSC3AcidRainDisplay::AddRef(void)	AddRef__19cSC3AcidRainDisplay	libSimSpr.so	vtable:__vt_19cSC3AcidRainDisplay
+01f57a	cSC3CitySpriteInstBasic::Unprepare(int, int)	Unprepare__23cSC3CitySpriteInstBasicii	libSimSpr.so	vtable:__vt_23cSC3CitySpriteInstBasic
+01f718	cSC3ToxicCloudDisplay::Prepare(int, int, bool)	Prepare__21cSC3ToxicCloudDisplayiib	libSimSpr.so	vtable:__vt_21cSC3ToxicCloudDisplay
+01f878	cSC3ToxicCloudDisplay::QueryInterface(unsigned int, void **)	QueryInterface__21cSC3ToxicCloudDisplayUiPPv	libSimSpr.so	tokens:8.6
+01faf5	cSC3ToxicCloudDisplay::Tick(unsigned int)	Tick__21cSC3ToxicCloudDisplayUi	libSimSpr.so	tokens:16.4
+01fdf1	cSC3ToxicCloudDisplay::Unprepare(int, int)	Unprepare__21cSC3ToxicCloudDisplayii	libSimSpr.so	vtable:__vt_21cSC3ToxicCloudDisplay
+020169	cSC3AcidRainDisplay::Release(void)	Release__19cSC3AcidRainDisplay	libSimSpr.so	vtable:__vt_19cSC3AcidRainDisplay
+02071d	cSC3AcidRainDisplay::Prepare(int, int, bool)	Prepare__19cSC3AcidRainDisplayiib	libSimSpr.so	vtable:__vt_19cSC3AcidRainDisplay
+0207c4	cSC3AcidRainDisplay::QueryInterface(unsigned int, void **)	QueryInterface__19cSC3AcidRainDisplayUiPPv	libSimSpr.so	tokens:8.6
+020893	cSC3AcidRainDisplay::Tick(unsigned int)	Tick__19cSC3AcidRainDisplayUi	libSimSpr.so	vtable:__vt_19cSC3AcidRainDisplay
+020ad4	cSC3AcidRainDisplay::Unprepare(int, int)	Unprepare__19cSC3AcidRainDisplayii	libSimSpr.so	vtable:__vt_19cSC3AcidRainDisplay
+021171	virtual function thunk (delta:-4) for cSC3CitySpriteInstBasic::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__23cSC3CitySpriteInstBasicUiPPv	libSimSpr.so	caller
+021179	virtual function thunk (delta:-4) for cSC3CitySpriteInstBasic::IsGeomFlag(unsigned int)	__thunk_4_IsGeomFlag__23cSC3CitySpriteInstBasicUi	libSimSpr.so	caller
+021189	virtual function thunk (delta:-4) for cSC3CitySpriteInstBasic::ClearGeomFlag(unsigned int)	__thunk_4_ClearGeomFlag__23cSC3CitySpriteInstBasicUi	libSimSpr.so	caller
+021191	virtual function thunk (delta:-4) for cSC3CitySpriteInstBasic::GetGeomFlag(void)	__thunk_4_GetGeomFlag__23cSC3CitySpriteInstBasic	libSimSpr.so	caller
+021199	virtual function thunk (delta:-4) for cSC3CitySpriteInstBasic::Tick(unsigned int)	__thunk_4_Tick__23cSC3CitySpriteInstBasicUi	libSimSpr.so	caller
+0211b9	virtual function thunk (delta:-4) for cSC3AcidRainDisplay::Tick(unsigned int)	__thunk_4_Tick__19cSC3AcidRainDisplayUi	libSimSpr.so	caller
+0211dc	virtual function thunk (delta:-4) for cSC3ToxicCloudDisplay::Tick(unsigned int)	__thunk_4_Tick__21cSC3ToxicCloudDisplayUi	libSimSpr.so	caller
+02151c	cSC3RadiationDisplay::cSC3RadiationDisplay(void)	__20cSC3RadiationDisplay	libSimSpr.so	vtable-user:__vt_20cSC3RadiationDisplay
+021551	cSC3FireSimulator::AddRef(void)	AddRef__17cSC3FireSimulator	libSimSpr.so	vtable:__vt_17cSC3FireSimulator
+021558	cSC3RadiationDisplay::Release(void)	Release__20cSC3RadiationDisplay	libSimSpr.so	vtable:__vt_20cSC3RadiationDisplay
+02157d	cSC3RadiationDisplay::~cSC3RadiationDisplay(void)	_._20cSC3RadiationDisplay	libSimSpr.so	caller
+0215ec	cSC3RadiationDisplay::Init(bool)	Init__20cSC3RadiationDisplayb	libSimSpr.so	vtable:__vt_20cSC3RadiationDisplay
+021665	cSC3RadiationDisplay::Shutdown(void)	Shutdown__20cSC3RadiationDisplay	libSimSpr.so	vtable:__vt_20cSC3RadiationDisplay
+02170c	cSC3RadiationDisplay::QueryInterface(unsigned int, void **)	QueryInterface__20cSC3RadiationDisplayUiPPv	libSimSpr.so	tokens:8.6
+02174d	cSC3RadiationDisplay::ShowOrHide(bool)	ShowOrHide__20cSC3RadiationDisplayb	libSimSpr.so	vtable:__vt_20cSC3RadiationDisplay
+021790	cSC3RadiationDisplay::UpdateCell(unsigned int, unsigned int, bool)	UpdateCell__20cSC3RadiationDisplayUiUib	libSimSpr.so	vtable:__vt_20cSC3RadiationDisplay
+021c2b	cSC3RadiationDisplay::UpdateRadiationDisplay(cISC3PollutionLayer const *, unsigned int, unsigned int)	UpdateRadiationDisplay__20cSC3RadiationDisplayPC19cISC3PollutionLayerUiUi	libSimSpr.so	vtable:__vt_20cSC3RadiationDisplay
+021cf1	cSC3RadiationDisplay::AddToAnimationSystem(void)	AddToAnimationSystem__20cSC3RadiationDisplay	libSimSpr.so	vtable:__vt_20cSC3RadiationDisplay
+021dd4	cSC3RadiationDisplay::RemoveFromAnimationSystem(void)	RemoveFromAnimationSystem__20cSC3RadiationDisplay	libSimSpr.so	vtable:__vt_20cSC3RadiationDisplay
+022064	cSC3NeighborTileDisplay::cSC3NeighborTileDisplay(void)	__23cSC3NeighborTileDisplay	libSimSpr.so	vtable-user:__vt_23cSC3NeighborTileDisplay
+02209c	cSC3NeighborTileDisplay::Release(void)	Release__23cSC3NeighborTileDisplay	libSimSpr.so	vtable:__vt_23cSC3NeighborTileDisplay
+0220c1	cSC3NeighborTileDisplay::~cSC3NeighborTileDisplay(void)	_._23cSC3NeighborTileDisplay	libSimSpr.so	caller
+022130	cSC3NeighborTileDisplay::Init(cISC3OccupantManager *, cISC3NeighborTileDisplay::OccupantManagerUsed, bool)	Init__23cSC3NeighborTileDisplayP20cISC3OccupantManagerQ224cISC3NeighborTileDisplay19OccupantManagerUsedb	libSimSpr.so	vtable:__vt_23cSC3NeighborTileDisplay
+0221b1	cSC3NeighborTileDisplay::Shutdown(void)	Shutdown__23cSC3NeighborTileDisplay	libSimSpr.so	vtable:__vt_23cSC3NeighborTileDisplay
+022227	cSC3NeighborTileDisplay::QueryInterface(unsigned int, void **)	QueryInterface__23cSC3NeighborTileDisplayUiPPv	libSimSpr.so	tokens:8.6
+022268	cSC3NeighborTileDisplay::ShowOrHide(bool)	ShowOrHide__23cSC3NeighborTileDisplayb	libSimSpr.so	vtable:__vt_23cSC3NeighborTileDisplay
+022285	cSC3NeighborTileDisplay::AddToAnimationSystem(void)	AddToAnimationSystem__23cSC3NeighborTileDisplay	libSimSpr.so	vtable:__vt_23cSC3NeighborTileDisplay
+0222de	cSC3NeighborTileDisplay::RemoveFromAnimationSystem(void)	RemoveFromAnimationSystem__23cSC3NeighborTileDisplay	libSimSpr.so	vtable:__vt_23cSC3NeighborTileDisplay
+022411	cSC3NeighborTileDisplay::DoMessage(cGZMessage &)	DoMessage__23cSC3NeighborTileDisplayR10cGZMessage	libSimSpr.so	tokens:23.9
+022734	cSC3NeighborTileDisplay::UpdateAll(void)	UpdateAll__23cSC3NeighborTileDisplay	libSimSpr.so	vtable:__vt_23cSC3NeighborTileDisplay
+024cce	cSC3ParticleSimulator::Init(void)	Init__21cSC3ParticleSimulator	libSimSpr.so	vtable:__vt_21cSC3ParticleSimulator
+024ccf	cSC3ParticleSimulator::DoParticleGeneration(int, int, int, int, int)	DoParticleGeneration__21cSC3ParticleSimulatoriiiii	libSimSpr.so	vtable:__vt_21cSC3ParticleSimulator
+024ee6	cSC3ParticleSimulator::QueryInterface(unsigned int, void **)	QueryInterface__21cSC3ParticleSimulatorUiPPv	libSimSpr.so	tokens:8.6
+0250f8	cSC3WaterSplashSimulator::Init(int, int, int, int, int, signed char)	Init__24cSC3WaterSplashSimulatoriiiiiSc	libSimSpr.so	vtable:__vt_24cSC3WaterSplashSimulator
+0253f8	cSC3WaterSplashSimulator::QueryInterface(unsigned int, void **)	QueryInterface__24cSC3WaterSplashSimulatorUiPPv	libSimSpr.so	tokens:8.6
+025637	cSC3ExplosionDebrisSimulator::RemoveFromAnimationSystem(void)	RemoveFromAnimationSystem__28cSC3ExplosionDebrisSimulator	libSimSpr.so	callee
+025a75	cSC3ExplosionDebrisSimulator::QueryInterface(unsigned int, void **)	QueryInterface__28cSC3ExplosionDebrisSimulatorUiPPv	libSimSpr.so	tokens:8.6
+025dad	cSC3ExplosionDebrisSimulator::Tick(unsigned int)	Tick__28cSC3ExplosionDebrisSimulatorUi	libSimSpr.so	tokens:15.3
+02640b	cSC3WhirlpoolDebris::AddRef(void)	AddRef__19cSC3WhirlpoolDebris	libSimSpr.so	vtable:__vt_19cSC3WhirlpoolDebris
+026413	cSC3WhirlpoolDebris::Release(void)	Release__19cSC3WhirlpoolDebris	libSimSpr.so	vtable:__vt_19cSC3WhirlpoolDebris
+0264a4	cSC3ExplosionSimulator::Init(int, int, int, signed char, signed char, bool)	Init__22cSC3ExplosionSimulatoriiiScScb	libSimSpr.so	tokens:8.6
+0265e9	cSC3ExplosionSimulator::QueryInterface(unsigned int, void **)	QueryInterface__22cSC3ExplosionSimulatorUiPPv	libSimSpr.so	tokens:8.6
+026615	cSC3ExplosionSimulator::SetBlastRadius(int, int, int)	SetBlastRadius__22cSC3ExplosionSimulatoriii	libSimSpr.so	vtable:__vt_22cSC3ExplosionSimulator
+026b08	cSC3ExplosionSimulator::DoBlastWave(int)	DoBlastWave__22cSC3ExplosionSimulatori	libSimSpr.so	tokens:14.2
+026d52	cSC3ExplosionSimulator::GetOccupantTrajectories(cRZ3DPointFloat32 *, cRZ3DPointFloat32 *, unsigned int)	GetOccupantTrajectories__22cSC3ExplosionSimulatorP17cRZ3DPointFloat32T1Ui	libSimSpr.so	vtable:__vt_22cSC3ExplosionSimulator
+027537	cSC3TrailingSmoke::QueryInterface(unsigned int, void **)	QueryInterface__17cSC3TrailingSmokeUiPPv	libSimSpr.so	tokens:8.6
+02756e	cSC3TrailingSmoke::Prepare(int, int, bool)	Prepare__17cSC3TrailingSmokeiib	libSimSpr.so	vtable:__vt_17cSC3TrailingSmoke
+027618	cSC3TrailingSmoke::Unprepare(int, int)	Unprepare__17cSC3TrailingSmokeii	libSimSpr.so	vtable:__vt_17cSC3TrailingSmoke
+02777b	cSC3TrailingSmoke::Tick(unsigned int)	Tick__17cSC3TrailingSmokeUi	libSimSpr.so	vtable:__vt_17cSC3TrailingSmoke
+027bcf	cSC3WaterDebris::AddRef(void)	AddRef__15cSC3WaterDebris	libSimSpr.so	vtable:__vt_15cSC3WaterDebris
+027bd7	cSC3WaterDebris::Release(void)	Release__15cSC3WaterDebris	libSimSpr.so	vtable:__vt_15cSC3WaterDebris
+027c9f	cSC3WaterDebris::Prepare(int, int, bool)	Prepare__15cSC3WaterDebrisiib	libSimSpr.so	vtable:__vt_15cSC3WaterDebris
+027d0e	cSC3WaterDebris::Unprepare(int, int)	Unprepare__15cSC3WaterDebrisii	libSimSpr.so	vtable:__vt_15cSC3WaterDebris
+027dc8	cSC3WaterDebris::Tick(unsigned int)	Tick__15cSC3WaterDebrisUi	libSimSpr.so	tokens:8.6
+028062	cSC3TrajectoryObject::EnableTrailingSmoke(bool)	EnableTrailingSmoke__20cSC3TrajectoryObjectb	libSimSpr.so	vtable:__vt_20cSC3TrajectoryObject
+02806f	cSC3TrajectoryObject::GetType(void)	GetType__20cSC3TrajectoryObject	libSimSpr.so	vtable:__vt_20cSC3TrajectoryObject
+028076	cSC3TrajectoryObject::GetSourceSignature(void)	GetSourceSignature__20cSC3TrajectoryObject	libSimSpr.so	vtable:__vt_20cSC3TrajectoryObject
+02807d	cSC3TrajectoryObject::SetSourceSignature(unsigned int)	SetSourceSignature__20cSC3TrajectoryObjectUi	libSimSpr.so	vtable:__vt_20cSC3TrajectoryObject
+028113	cSC3TrajectoryObject::Init(int, int, int, cRZ3DPointFloat32 const &, int)	Init__20cSC3TrajectoryObjectiiiRC17cRZ3DPointFloat32i	libSimSpr.so	vtable:__vt_20cSC3TrajectoryObject
+0283ae	cSC3TrajectoryObject::QueryInterface(unsigned int, void **)	QueryInterface__20cSC3TrajectoryObjectUiPPv	libSimSpr.so	tokens:8.6
+0283da	cSC3TrajectoryObject::SetTrajectoryType(cISC3TrajectoryObject::TrajectoryType, void *)	SetTrajectoryType__20cSC3TrajectoryObjectQ221cISC3TrajectoryObject14TrajectoryTypePv	libSimSpr.so	vtable:__vt_20cSC3TrajectoryObject
+02944e	cSC3TrajectoryObject::GetCountOfTrajectoryObjects(unsigned int)	GetCountOfTrajectoryObjects__20cSC3TrajectoryObjectUi	libSimSpr.so	vtable:__vt_20cSC3TrajectoryObject
+02971d	cSC3NuclearExplosionSimulator::Init(int, int, int, signed char, signed char)	Init__29cSC3NuclearExplosionSimulatoriiiScSc	libSimSpr.so	vtable:__vt_29cSC3NuclearExplosionSimulator
+029795	cSC3NuclearExplosionSimulator::GetCoordinatesForPowerPlantExplosion(int, int, int &, int &, int &)	GetCoordinatesForPowerPlantExplosion__29cSC3NuclearExplosionSimulatoriiRiN23	libSimSpr.so	vtable:__vt_29cSC3NuclearExplosionSimulator
+029821	cSC3NuclearExplosionSimulator::GetRandomPositionForTrailingSmoke(cRZ3DPointFloat32 &)	GetRandomPositionForTrailingSmoke__29cSC3NuclearExplosionSimulatorR17cRZ3DPointFloat32	libSimSpr.so	tokens:17.1
+029b41	cSC3NuclearExplosionSimulator::QueryInterface(unsigned int, void **)	QueryInterface__29cSC3NuclearExplosionSimulatorUiPPv	libSimSpr.so	tokens:8.6
+02a5df	cSC3WeatherViewSimulator::cSC3WeatherViewSimulator(void)	__24cSC3WeatherViewSimulator	libSimSpr.so	tokens:8.6
+02a699	cSC3WeatherViewSimulator::GetWeatherVisibility(void)	GetWeatherVisibility__24cSC3WeatherViewSimulator	libSimSpr.so	vtable:__vt_24cSC3WeatherViewSimulator
+02a6b4	cSC3WeatherViewSimulator::Release(void)	Release__24cSC3WeatherViewSimulator	libSimSpr.so	vtable:__vt_24cSC3WeatherViewSimulator
+02a6cf	cSC3WeatherViewSimulator::~cSC3WeatherViewSimulator(void)	_._24cSC3WeatherViewSimulator	libSimSpr.so	vtable:__vt_24cSC3WeatherViewSimulator
+02a738	cSC3WeatherViewSimulator::Init(void)	Init__24cSC3WeatherViewSimulator	libSimSpr.so	vtable:__vt_24cSC3WeatherViewSimulator
+02a88c	cSC3WeatherViewSimulator::Shutdown(void)	Shutdown__24cSC3WeatherViewSimulator	libSimSpr.so	vtable:__vt_24cSC3WeatherViewSimulator
+02a8c9	cSC3WeatherViewSimulator::QueryInterface(unsigned int, void **)	QueryInterface__24cSC3WeatherViewSimulatorUiPPv	libSimSpr.so	tokens:16.0
+02ab89	cSC3WeatherViewSimulator::ShowOrHide(bool)	ShowOrHide__24cSC3WeatherViewSimulatorb	libSimSpr.so	vtable:__vt_24cSC3WeatherViewSimulator
+02b282	cSC3WeatherViewSimulator::SetCurrentPrecipitation(cISC3WeatherViewSimulator::PrecipitationType)	SetCurrentPrecipitation__24cSC3WeatherViewSimulatorQ225cISC3WeatherViewSimulator17PrecipitationType	libSimSpr.so	vtable:__vt_24cSC3WeatherViewSimulator
+02b320	cSC3WeatherViewSimulator::SetCloudProperties(cRZ3DPointFloat32 const &, bool, bool, signed char)	SetCloudProperties__24cSC3WeatherViewSimulatorRC17cRZ3DPointFloat32bT2Sc	libSimSpr.so	vtable:__vt_24cSC3WeatherViewSimulator
+02b3d0	cSC3WeatherViewSimulator::DoMessage(cGZMessage &)	DoMessage__24cSC3WeatherViewSimulatorR10cGZMessage	libSimSpr.so	tokens:38.4
+02c0c4	cSC3WeatherViewSimulator::SetNewPrecipitationToggleTime(unsigned int)	SetNewPrecipitationToggleTime__24cSC3WeatherViewSimulatorUi	libSimSpr.so	tokens:16.0
+02c0ed	cSC3WeatherViewSimulator::SetNewLightningStrikeTime(unsigned int)	SetNewLightningStrikeTime__24cSC3WeatherViewSimulatorUi	libSimSpr.so	tokens:16.4
+02c10f	cSC3WeatherViewSimulator::SetNewCreateBirdFlockTime(unsigned int)	SetNewCreateBirdFlockTime__24cSC3WeatherViewSimulatorUi	libSimSpr.so	tokens:23.7
+02c7d9	cSC3WeatherViewSimulator::VectorToAppropriateEdge(cRZ3DPointFloat32 const &)	VectorToAppropriateEdge__24cSC3WeatherViewSimulatorRC17cRZ3DPointFloat32	libSimSpr.so	tokens:17.1
+02c833	cSC3WeatherViewSimulator::PickRandomSeedPositionForCloud(cRZ3DPointFloat32 &, bool)	PickRandomSeedPositionForCloud__24cSC3WeatherViewSimulatorR17cRZ3DPointFloat32b	libSimSpr.so	tokens:23.5
+02e0ab	virtual function thunk (delta:-4) for cSC3RadiationDisplay::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__20cSC3RadiationDisplayUiPPv	libSimSpr.so	caller
+02e0b3	virtual function thunk (delta:-4) for cSC3RadiationDisplay::Release(void)	__thunk_4_Release__20cSC3RadiationDisplay	libSimSpr.so	caller
+02e113	virtual function thunk (delta:-4) for cSC3WaterDebris::Tick(unsigned int)	__thunk_4_Tick__15cSC3WaterDebrisUi	libSimSpr.so	caller
+02e139	virtual function thunk (delta:-4) for cSC3TrailingSmoke::Tick(unsigned int)	__thunk_4_Tick__17cSC3TrailingSmokeUi	libSimSpr.so	caller
+02e16f	virtual function thunk (delta:-4) for cSC3NeighborTileDisplay::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__23cSC3NeighborTileDisplayUiPPv	libSimSpr.so	caller
+02e177	virtual function thunk (delta:-4) for cSC3NeighborTileDisplay::Release(void)	__thunk_4_Release__23cSC3NeighborTileDisplay	libSimSpr.so	caller
+02e871	cSC3FireSimulator::~cSC3FireSimulator(void)	_._17cSC3FireSimulator	libSimSpr.so	vtable:__vt_17cSC3FireSimulator
+02e8e8	cSC3FireSimulator::QueryInterface(unsigned int, void **)	QueryInterface__17cSC3FireSimulatorUiPPv	libSimSpr.so	tokens:16.0
+02e929	cSC3FireSimulator::Release(void)	Release__17cSC3FireSimulator	libSimSpr.so	vtable:__vt_17cSC3FireSimulator
+02e944	cSC3FireSimulator::ReleaseAsynchronous(void)	ReleaseAsynchronous__17cSC3FireSimulator	libSimSpr.so	vtable:__vt_17cSC3FireSimulator
+02ea78	cSC3FireSimulator::GetPositionForExplosion(int &, int &, int &)	GetPositionForExplosion__17cSC3FireSimulatorRiN21	libSimSpr.so	vtable:__vt_17cSC3FireSimulator
+02eba8	cSC3FireSimulator::DoAnimationTick(unsigned int)	DoAnimationTick__17cSC3FireSimulatorUi	libSimSpr.so	tokens:15.7
+02ed24	cSC3FireSimulator::SetLevel(signed char, bool)	SetLevel__17cSC3FireSimulatorScb	libSimSpr.so	vtable:__vt_17cSC3FireSimulator
+02f3d9	cSC3TornadoDebris::Tick(unsigned int)	Tick__17cSC3TornadoDebrisUi	libSimSpr.so	caller
+02f708	cSC3TornadoDebris::GetLinearVectorAndVelocity(cRZ3DPointFloat32 &, cRZ3DPointFloat32 &)	GetLinearVectorAndVelocity__17cSC3TornadoDebrisR17cRZ3DPointFloat32T1	libSimSpr.so	tokens:25.3
+02f88b	cSC3TornadoSimulator::SetPosition(int, int, int)	SetPosition__20cSC3TornadoSimulatoriii	libSimSpr.so	vtable:__vt_20cSC3TornadoSimulator
+02f890	cSC3TornadoSimulator::GetCurrentSurfaceType(void)	GetCurrentSurfaceType__20cSC3TornadoSimulator	libSimSpr.so	vtable:__vt_20cSC3TornadoSimulator
+02f976	cSC3TornadoSimulator::Init(int, int, int, cRZ3DPointFloat32 const &, signed char)	Init__20cSC3TornadoSimulatoriiiRC17cRZ3DPointFloat32Sc	libSimSpr.so	vtable:__vt_20cSC3TornadoSimulator
+02fbd5	cSC3TornadoSimulator::SetDirection(cRZ3DPointFloat32 const &)	SetDirection__20cSC3TornadoSimulatorRC17cRZ3DPointFloat32	libSimSpr.so	vtable:__vt_20cSC3TornadoSimulator
+02fc40	cSC3TornadoSimulator::SetSpeed(float const &)	SetSpeed__20cSC3TornadoSimulatorRCf	libSimSpr.so	vtable:__vt_20cSC3TornadoSimulator
+02fc5d	cSC3TornadoSimulator::DoFade(bool, bool)	DoFade__20cSC3TornadoSimulatorbT1	libSimSpr.so	vtable:__vt_20cSC3TornadoSimulator
+02fe58	cSC3TornadoSimulator::QueryInterface(unsigned int, void **)	QueryInterface__20cSC3TornadoSimulatorUiPPv	libSimSpr.so	tokens:8.6
+03126d	cSC3TornadoSimulator::CreateTornadoDebris(void)	CreateTornadoDebris__20cSC3TornadoSimulator	libSimSpr.so	vtable:__vt_20cSC3TornadoSimulator
+0314b8	cSC3TornadoSimulator::GetPosition(int &, int &, int &)	GetPosition__20cSC3TornadoSimulatorRiN21	libSimSpr.so	vtable:__vt_20cSC3TornadoSimulator
+0315c1	cSC3UFOSimulator::QueryInterface(unsigned int, void **)	QueryInterface__16cSC3UFOSimulatorUiPPv	libSimSpr.so	tokens:8.6
+0318c6	cSC3UFOSimulator::Shutdown(void)	Shutdown__16cSC3UFOSimulator	libSimSpr.so	tokens:8.6
+033a25	cSC3UFOSimulator::AddInstruction(cSC3UFOSimulator::InstructionData const &)	AddInstruction__16cSC3UFOSimulatorRCQ216cSC3UFOSimulator15InstructionData	libSimSpr.so	tokens:8.6
+034560	cSC3UFOGroupSimulator::~cSC3UFOGroupSimulator(void)	_._21cSC3UFOGroupSimulator	libSimSpr.so	vtable:__vt_21cSC3UFOGroupSimulator
+0345fa	cSC3UFOGroupSimulator::Init(bool, unsigned int, int)	Init__21cSC3UFOGroupSimulatorbUii	libSimSpr.so	vtable:__vt_21cSC3UFOGroupSimulator
+034623	cSC3UFOGroupSimulator::Shutdown(void)	Shutdown__21cSC3UFOGroupSimulator	libSimSpr.so	vtable:__vt_21cSC3UFOGroupSimulator
+03462b	cSC3UFOGroupSimulator::QueryInterface(unsigned int, void **)	QueryInterface__21cSC3UFOGroupSimulatorUiPPv	libSimSpr.so	tokens:8.6
+034653	cSC3UFOGroupSimulator::ReleaseAsynchronous(void)	ReleaseAsynchronous__21cSC3UFOGroupSimulator	libSimSpr.so	vtable:__vt_21cSC3UFOGroupSimulator
+0346a8	cSC3UFOGroupSimulator::DoMessage(cGZMessage &)	DoMessage__21cSC3UFOGroupSimulatorR10cGZMessage	libSimSpr.so	tokens:15.7
+034836	cSC3UFOGroupSimulator::SetCount(unsigned int)	SetCount__21cSC3UFOGroupSimulatorUi	libSimSpr.so	vtable:__vt_21cSC3UFOGroupSimulator
+0348f7	cSC3UFOGroupSimulator::AddUFOToGroup(cISC3UFOSimulator *, bool, bool)	AddUFOToGroup__21cSC3UFOGroupSimulatorP17cISC3UFOSimulatorbT2	libSimSpr.so	vtable:__vt_21cSC3UFOGroupSimulator
+03497a	cSC3UFOGroupSimulator::DoesUFOExistAnywhere(cISC3UFOSimulator const *) const	DoesUFOExistAnywhere__C21cSC3UFOGroupSimulatorPC17cISC3UFOSimulator	libSimSpr.so	vtable:__vt_21cSC3UFOGroupSimulator
+0349b9	cSC3UFOGroupSimulator::DoesUFOBelongToGroup(cISC3UFOSimulator const *) const	DoesUFOBelongToGroup__C21cSC3UFOGroupSimulatorPC17cISC3UFOSimulator	libSimSpr.so	vtable:__vt_21cSC3UFOGroupSimulator
+0349dc	cSC3UFOGroupSimulator::DoesAnyUFOExistAnywhere(void) const	DoesAnyUFOExistAnywhere__C21cSC3UFOGroupSimulator	libSimSpr.so	vtable:__vt_21cSC3UFOGroupSimulator
+034a04	cSC3UFOGroupSimulator::GetAllUFOsAnywhere(cISC3UFOSimulator **, unsigned int &) const	GetAllUFOsAnywhere__C21cSC3UFOGroupSimulatorPP17cISC3UFOSimulatorRUi	libSimSpr.so	vtable:__vt_21cSC3UFOGroupSimulator
+034a85	cSC3UFOGroupSimulator::GetListOfCurrentlyVisibleUFOs(cISC3UFOSimulator **, unsigned int &) const	GetListOfCurrentlyVisibleUFOs__C21cSC3UFOGroupSimulatorPP17cISC3UFOSimulatorRUi	libSimSpr.so	vtable:__vt_21cSC3UFOGroupSimulator
+034bac	cSC3UFOGroupSimulator::DestroyAllUFOs(bool)	DestroyAllUFOs__21cSC3UFOGroupSimulatorb	libSimSpr.so	vtable:__vt_21cSC3UFOGroupSimulator
+034c80	cSC3UFOGroupSimulator::AddInstructionVaporizeBuilding(int, int, int, bool)	AddInstructionVaporizeBuilding__21cSC3UFOGroupSimulatoriiib	libSimSpr.so	vtable:__vt_21cSC3UFOGroupSimulator
+034d61	cSC3UFOGroupSimulator::AddInstructionMakeCropCircle(int, int, int, bool)	AddInstructionMakeCropCircle__21cSC3UFOGroupSimulatoriiib	libSimSpr.so	vtable:__vt_21cSC3UFOGroupSimulator
+034e42	cSC3UFOGroupSimulator::AddInstructionSelfDestruct(bool, int, bool)	AddInstructionSelfDestruct__21cSC3UFOGroupSimulatorbiT1	libSimSpr.so	vtable:__vt_21cSC3UFOGroupSimulator
+034f29	cSC3UFOGroupSimulator::AddInstructionSuckUpPerson(cISC3Occupant *, int, bool)	AddInstructionSuckUpPerson__21cSC3UFOGroupSimulatorP13cISC3Occupantib	libSimSpr.so	vtable:__vt_21cSC3UFOGroupSimulator
+034fea	cSC3UFOGroupSimulator::AddInstructionSpawnUFO(bool, int, bool)	AddInstructionSpawnUFO__21cSC3UFOGroupSimulatorbiT1	libSimSpr.so	vtable:__vt_21cSC3UFOGroupSimulator
+0350a9	cSC3UFOGroupSimulator::AddInstructionMigrateToArea(cRZRect const &, int, bool)	AddInstructionMigrateToArea__21cSC3UFOGroupSimulatorRC7cRZRectib	libSimSpr.so	vtable:__vt_21cSC3UFOGroupSimulator
+0351f1	cSC3UFOGroupSimulator::AddInstructionSetSpeed(float, int, bool)	AddInstructionSetSpeed__21cSC3UFOGroupSimulatorfib	libSimSpr.so	vtable:__vt_21cSC3UFOGroupSimulator
+0352a9	cSC3UFOGroupSimulator::AddInstructionDropBomb(int, int, int, bool)	AddInstructionDropBomb__21cSC3UFOGroupSimulatoriiib	libSimSpr.so	vtable:__vt_21cSC3UFOGroupSimulator
+0353ce	cSC3UFOGroupSimulator::GetUFO(unsigned int)	GetUFO__21cSC3UFOGroupSimulatorUi	libSimSpr.so	vtable:__vt_21cSC3UFOGroupSimulator
+035433	cSC3EarthquakeSimulator::Release(void)	Release__23cSC3EarthquakeSimulator	libSimSpr.so	vtable:__vt_23cSC3EarthquakeSimulator
+03548c	cSC3EarthquakeSimulator::Init(cRZ3DPointSint32 const &, cRZ3DPointSint32 const &, cRZ3DPointSint32 &, int, signed char, int, bool)	Init__23cSC3EarthquakeSimulatorRC16cRZ3DPointSint32T1R16cRZ3DPointSint32iScib	libSimSpr.so	vtable:__vt_23cSC3EarthquakeSimulator
+0354ff	cSC3EarthquakeSimulator::QueryInterface(unsigned int, void **)	QueryInterface__23cSC3EarthquakeSimulatorUiPPv	libSimSpr.so	vtable:__vt_23cSC3EarthquakeSimulator
+035521	cSC3EarthquakeSimulator::GetEarthquakePosition(cRZ3DPointSint32 &, cRZ3DPointSint32 &, cRZ3DPointSint32 &)	GetEarthquakePosition__23cSC3EarthquakeSimulatorR16cRZ3DPointSint32N21	libSimSpr.so	vtable:__vt_23cSC3EarthquakeSimulator
+035563	cSC3EarthquakeSimulator::DoEarthquakeEffect(int, int, int)	DoEarthquakeEffect__23cSC3EarthquakeSimulatoriii	libSimSpr.so	tokens:8.6
+035635	cSC3EarthquakeSimulator::DoAnimationTick(unsigned int)	DoAnimationTick__23cSC3EarthquakeSimulatorUi	libSimSpr.so	tokens:8.6
+035707	cSC3WhirlpoolDebris::MakeNewWhirlpoolDebris(void)	MakeNewWhirlpoolDebris__19cSC3WhirlpoolDebris	libSimSpr.so	vtable:__vt_19cSC3WhirlpoolDebris
+0358be	cSC3WhirlpoolDebris::Init(int, int, int, int)	Init__19cSC3WhirlpoolDebrisiiii	libSimSpr.so	tokens:77.1
+035af0	cSC3WhirlpoolDebris::ChangePosition(cSC3CityCoord &)	ChangePosition__19cSC3WhirlpoolDebrisR13cSC3CityCoord	libSimSpr.so	vtable:__vt_19cSC3WhirlpoolDebris
+035d85	cSC3WhirlpoolDebris::SetTimeBetweenFrames(unsigned int)	SetTimeBetweenFrames__19cSC3WhirlpoolDebrisUi	libSimSpr.so	vtable:__vt_19cSC3WhirlpoolDebris
+035d92	cSC3WhirlpoolDebris::SetTimeToLive(unsigned int)	SetTimeToLive__19cSC3WhirlpoolDebrisUi	libSimSpr.so	vtable:__vt_19cSC3WhirlpoolDebris
+035d9f	cSC3WhirlpoolDebris::QueryInterface(unsigned int, void **)	QueryInterface__19cSC3WhirlpoolDebrisUiPPv	libSimSpr.so	vtable:__vt_19cSC3WhirlpoolDebris
+035f49	cSC3WhirlpoolSimulator::AddRef(void)	AddRef__22cSC3WhirlpoolSimulator	libSimSpr.so	vtable:__vt_22cSC3WhirlpoolSimulator
+035f51	cSC3WhirlpoolSimulator::Release(void)	Release__22cSC3WhirlpoolSimulator	libSimSpr.so	vtable:__vt_22cSC3WhirlpoolSimulator
+035f76	cSC3WhirlpoolSimulator::SetMicrosecondsBetweenFrames(unsigned int)	SetMicrosecondsBetweenFrames__22cSC3WhirlpoolSimulatorUi	libSimSpr.so	vtable:__vt_22cSC3WhirlpoolSimulator
+035f83	cSC3WhirlpoolSimulator::SetObjectFastestSpeedTimes100000000(unsigned int)	SetObjectFastestSpeedTimes100000000__22cSC3WhirlpoolSimulatorUi	libSimSpr.so	tokens:8.6
+035fa5	cSC3WhirlpoolSimulator::SetOuterGravityDistance(unsigned int)	SetOuterGravityDistance__22cSC3WhirlpoolSimulatorUi	libSimSpr.so	vtable:__vt_22cSC3WhirlpoolSimulator
+035fc1	cSC3WhirlpoolSimulator::GetLocation(int &, int &)	GetLocation__22cSC3WhirlpoolSimulatorRiT1	libSimSpr.so	vtable:__vt_22cSC3WhirlpoolSimulator
+0360bd	cSC3WhirlpoolSimulator::QueryInterface(unsigned int, void **)	QueryInterface__22cSC3WhirlpoolSimulatorUiPPv	libSimSpr.so	tokens:8.6
+0360e9	cSC3WhirlpoolSimulator::Init(cRZ3DPointFloat32 const &, int, signed char, float)	Init__22cSC3WhirlpoolSimulatorRC17cRZ3DPointFloat32iScf	libSimSpr.so	vtable:__vt_22cSC3WhirlpoolSimulator
+03620a	cSC3WhirlpoolSimulator::GetWhirlpoolDiameterAnimUnits(void)	GetWhirlpoolDiameterAnimUnits__22cSC3WhirlpoolSimulator	libSimSpr.so	vtable:__vt_22cSC3WhirlpoolSimulator
+0363e1	cSC3WhirlpoolSimulator::WouldWhirlpoolFitInLocation(cRZ3DPointFloat32 &)	WouldWhirlpoolFitInLocation__22cSC3WhirlpoolSimulatorR17cRZ3DPointFloat32	libSimSpr.so	tokens:8.6
+036496	cSC3WhirlpoolSimulator::Tick(unsigned int)	Tick__22cSC3WhirlpoolSimulatorUi	libSimSpr.so	tokens:8.6
+0369cf	cSC3WhirlpoolSimulator::DoFade(bool, bool)	DoFade__22cSC3WhirlpoolSimulatorbT1	libSimSpr.so	vtable:__vt_22cSC3WhirlpoolSimulator
+036f8c	cSC3WhirlpoolSimulator::CanOccupantBeAbducted(cISC3Occupant *)	CanOccupantBeAbducted__22cSC3WhirlpoolSimulatorP13cISC3Occupant	libSimSpr.so	tokens:32.5
+037c7f	cSC3SurfaceTest::SetTest(bool, bool, bool, bool, bool, bool)	SetTest__15cSC3SurfaceTestbN51	libSimSpr.so	vtable:__vt_15cSC3SurfaceTest
+037c93	cSC3SpaceDebrisDisplay::Release(void)	Release__22cSC3SpaceDebrisDisplay	libSimSpr.so	vtable:__vt_22cSC3SpaceDebrisDisplay
+037cae	cSC3SpaceDebrisDisplay::~cSC3SpaceDebrisDisplay(void)	_._22cSC3SpaceDebrisDisplay	libSimSpr.so	vtable:__vt_22cSC3SpaceDebrisDisplay
+037cdc	cSC3SpaceDebrisDisplay::Init(void)	Init__22cSC3SpaceDebrisDisplay	libSimSpr.so	vtable:__vt_22cSC3SpaceDebrisDisplay
+037d4e	cSC3SpaceDebrisDisplay::Shutdown(void)	Shutdown__22cSC3SpaceDebrisDisplay	libSimSpr.so	vtable:__vt_22cSC3SpaceDebrisDisplay
+037dbe	cSC3SpaceDebrisDisplay::Start(void)	Start__22cSC3SpaceDebrisDisplay	libSimSpr.so	vtable:__vt_22cSC3SpaceDebrisDisplay
+037dca	cSC3SpaceDebrisDisplay::Stop(void)	Stop__22cSC3SpaceDebrisDisplay	libSimSpr.so	vtable:__vt_22cSC3SpaceDebrisDisplay
+037dd1	cSC3SpaceDebrisDisplay::SetAverageDebrisTime(unsigned int)	SetAverageDebrisTime__22cSC3SpaceDebrisDisplayUi	libSimSpr.so	vtable:__vt_22cSC3SpaceDebrisDisplay
+037ddb	cSC3SpaceDebrisDisplay::QueryInterface(unsigned int, void **)	QueryInterface__22cSC3SpaceDebrisDisplayUiPPv	libSimSpr.so	tokens:16.0
+037e45	cSC3SurfaceTest::Test(cISC3Occupant *)	Test__15cSC3SurfaceTestP13cISC3Occupant	libSimSpr.so	vtable:__vt_15cSC3SurfaceTest
+037e75	cSC3SpaceDebrisDisplay::DoMessage(cGZMessage &)	DoMessage__22cSC3SpaceDebrisDisplayR10cGZMessage	libSimSpr.so	vtable:__vt_22cSC3SpaceDebrisDisplay
+037e8f	cSC3SpaceDebrisDisplay::GetCountOfRemainingSpaceDebris(void)	GetCountOfRemainingSpaceDebris__22cSC3SpaceDebrisDisplay	libSimSpr.so	vtable:__vt_22cSC3SpaceDebrisDisplay
+037e9b	cSC3SpaceDebrisDisplay::CreateNewRandomDebris(void)	CreateNewRandomDebris__22cSC3SpaceDebrisDisplay	libSimSpr.so	tokens:17.1
+03810e	cSC3SpaceDebrisImpactDisplay::Init(int, int, int)	Init__28cSC3SpaceDebrisImpactDisplayiii	libSimSpr.so	tokens:17.1
+038210	cSC3SpaceDebrisImpactDisplay::SetTimeToLive(unsigned int)	SetTimeToLive__28cSC3SpaceDebrisImpactDisplayUi	libSimSpr.so	vtable:__vt_28cSC3SpaceDebrisImpactDisplay
+03824d	cSC3SpaceDebrisImpactDisplay::DoTerrainChanged(cRZRect const &)	DoTerrainChanged__28cSC3SpaceDebrisImpactDisplayRC7cRZRect	libSimSpr.so	vtable:__vt_28cSC3SpaceDebrisImpactDisplay
+0383fa	cSC3SpaceDebrisImpactDisplay::QueryInterface(unsigned int, void **)	QueryInterface__28cSC3SpaceDebrisImpactDisplayUiPPv	libSimSpr.so	vtable:__vt_28cSC3SpaceDebrisImpactDisplay
+0385b7	cSC3SpaceDebrisImpactDisplay::Tick(unsigned int)	Tick__28cSC3SpaceDebrisImpactDisplayUi	libSimSpr.so	tokens:16.0
+038a1b	cSC3LocustsSimulator::QueryInterface(unsigned int, void **)	QueryInterface__20cSC3LocustsSimulatorUiPPv	libSimSpr.so	tokens:8.6
+039eed	cSC3LocustsSimulator::DoBigLocustsSimulation(float)	DoBigLocustsSimulation__20cSC3LocustsSimulatorf	libSimSpr.so	tokens:38.9
+03a5e4	cSC3LocustsSimulator::CheckForDestroyedTrees(void)	CheckForDestroyedTrees__20cSC3LocustsSimulator	libSimSpr.so	tokens:15.1
+03a76e	cSC3UFOGroupSimulator::GetCount(void)	GetCount__21cSC3UFOGroupSimulator	libSimSpr.so	vtable:__vt_21cSC3UFOGroupSimulator
+03a778	cSC3UFOGroupSimulator::Release(void)	Release__21cSC3UFOGroupSimulator	libSimSpr.so	vtable:__vt_21cSC3UFOGroupSimulator
+03a793	cSC3LocustsGroupSimulator::~cSC3LocustsGroupSimulator(void)	_._25cSC3LocustsGroupSimulator	libSimSpr.so	vtable:__vt_25cSC3LocustsGroupSimulator
+03a82d	cSC3LocustsGroupSimulator::Init(unsigned int, int)	Init__25cSC3LocustsGroupSimulatorUii	libSimSpr.so	vtable:__vt_25cSC3LocustsGroupSimulator
+03a84f	cSC3LocustsGroupSimulator::QueryInterface(unsigned int, void **)	QueryInterface__25cSC3LocustsGroupSimulatorUiPPv	libSimSpr.so	tokens:8.6
+03a877	cSC3LocustsGroupSimulator::ReleaseAsynchronous(void)	ReleaseAsynchronous__25cSC3LocustsGroupSimulator	libSimSpr.so	vtable:__vt_25cSC3LocustsGroupSimulator
+03a8cc	cSC3LocustsGroupSimulator::DoMessage(cGZMessage &)	DoMessage__25cSC3LocustsGroupSimulatorR10cGZMessage	libSimSpr.so	vtable:__vt_25cSC3LocustsGroupSimulator
+03a9e3	cSC3LocustsGroupSimulator::SetCount(unsigned int)	SetCount__25cSC3LocustsGroupSimulatorUi	libSimSpr.so	vtable:__vt_25cSC3LocustsGroupSimulator
+03ab3e	cSC3LocustsGroupSimulator::AddLocustsToGroup(cISC3LocustsSimulator *, bool, bool)	AddLocustsToGroup__25cSC3LocustsGroupSimulatorP21cISC3LocustsSimulatorbT2	libSimSpr.so	vtable:__vt_25cSC3LocustsGroupSimulator
+03abc8	cSC3LocustsGroupSimulator::DistributeTargetListAmongSwarms(cRZ3DPointUint32 *, unsigned int)	DistributeTargetListAmongSwarms__25cSC3LocustsGroupSimulatorP16cRZ3DPointUint32Ui	libSimSpr.so	vtable:__vt_25cSC3LocustsGroupSimulator
+03ae81	cSC3LocustsGroupSimulator::DoesLocustsExistAnywhere(cISC3LocustsSimulator const *) const	DoesLocustsExistAnywhere__C25cSC3LocustsGroupSimulatorPC21cISC3LocustsSimulator	libSimSpr.so	vtable:__vt_25cSC3LocustsGroupSimulator
+03aec0	cSC3LocustsGroupSimulator::DoesAnyLocustsExistAnywhere(void) const	DoesAnyLocustsExistAnywhere__C25cSC3LocustsGroupSimulator	libSimSpr.so	vtable:__vt_25cSC3LocustsGroupSimulator
+03aee8	cSC3LocustsGroupSimulator::GetAllLocustsAnywhere(cISC3LocustsSimulator **, unsigned int &) const	GetAllLocustsAnywhere__C25cSC3LocustsGroupSimulatorPP21cISC3LocustsSimulatorRUi	libSimSpr.so	vtable:__vt_25cSC3LocustsGroupSimulator
+03af69	cSC3LocustsGroupSimulator::GetListOfCurrentlyVisibleLocusts(cISC3LocustsSimulator **, unsigned int &) const	GetListOfCurrentlyVisibleLocusts__C25cSC3LocustsGroupSimulatorPP21cISC3LocustsSimulatorRUi	libSimSpr.so	vtable:__vt_25cSC3LocustsGroupSimulator
+03b086	cSC3LocustsGroupSimulator::GetEatingSwarmsCount(unsigned int &, unsigned int &) const	GetEatingSwarmsCount__C25cSC3LocustsGroupSimulatorRUiT1	libSimSpr.so	vtable:__vt_25cSC3LocustsGroupSimulator
+03b193	cSC3UFOGroupSimulator::IsAnyUFOCurrentlyVisible(void) const	IsAnyUFOCurrentlyVisible__C21cSC3UFOGroupSimulator	libSimSpr.so	vtable:__vt_21cSC3UFOGroupSimulator
+03b1b4	cSC3LocustsGroupSimulator::DestroyAllLocusts(bool)	DestroyAllLocusts__25cSC3LocustsGroupSimulatorb	libSimSpr.so	vtable:__vt_25cSC3LocustsGroupSimulator
+03b288	cSC3LocustsGroupSimulator::AddInstructionAttackCrops(int, int, int, int, bool)	AddInstructionAttackCrops__25cSC3LocustsGroupSimulatoriiiib	libSimSpr.so	vtable:__vt_25cSC3LocustsGroupSimulator
+03b37c	cSC3LocustsGroupSimulator::AddInstructionDisappear(int, bool)	AddInstructionDisappear__25cSC3LocustsGroupSimulatorib	libSimSpr.so	vtable:__vt_25cSC3LocustsGroupSimulator
+03b437	cSC3LocustsGroupSimulator::AddInstructionMigrateToArea(cRZRect const &, int, bool)	AddInstructionMigrateToArea__25cSC3LocustsGroupSimulatorRC7cRZRectib	libSimSpr.so	vtable:__vt_25cSC3LocustsGroupSimulator
+03b57f	cSC3LocustsGroupSimulator::AddInstructionPoisonSwarm(int, int, cISC3LocustsSimulator *, bool)	AddInstructionPoisonSwarm__25cSC3LocustsGroupSimulatoriiP21cISC3LocustsSimulatorb	libSimSpr.so	vtable:__vt_25cSC3LocustsGroupSimulator
+03b5be	cSC3LocustsGroupSimulator::AddInstructionSetSpeed(float, int, bool)	AddInstructionSetSpeed__25cSC3LocustsGroupSimulatorfib	libSimSpr.so	vtable:__vt_25cSC3LocustsGroupSimulator
+03b676	cSC3UFOGroupSimulator::GetInstructionLoad(void)	GetInstructionLoad__21cSC3UFOGroupSimulator	libSimSpr.so	vtable:__vt_21cSC3UFOGroupSimulator
+03b6db	cSC3LocustsGroupSimulator::DropDDTTrail(int, int, int)	DropDDTTrail__25cSC3LocustsGroupSimulatoriii	libSimSpr.so	vtable:__vt_25cSC3LocustsGroupSimulator
+03c3db	virtual function thunk (delta:-4) for cSC3FireSimulator::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__17cSC3FireSimulatorUiPPv	libSimSpr.so	caller
+03c3e3	cSC3EmptyTest::AddRef(void)	AddRef__13cSC3EmptyTest	libSimSpr.so	vtable:__vt_15cSC3SurfaceTest
+03c3eb	virtual function thunk (delta:-4) for cSC3FireSimulator::Release(void)	__thunk_4_Release__17cSC3FireSimulator	libSimSpr.so	caller
+03c3f3	virtual function thunk (delta:-4) for cSC3EarthquakeSimulator::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__23cSC3EarthquakeSimulatorUiPPv	libSimSpr.so	caller
+03c3fb	virtual function thunk (delta:-4) for cSC3EarthquakeSimulator::Release(void)	__thunk_4_Release__23cSC3EarthquakeSimulator	libSimSpr.so	caller
+03c403	cSC3EmptyTest::QueryInterface(unsigned int, void **)	QueryInterface__13cSC3EmptyTestUiPPv	libSimSpr.so	vtable:__vt_15cSC3SurfaceTest
+03c40b	cSC3EmptyTest::Release(void)	Release__13cSC3EmptyTest	libSimSpr.so	vtable:__vt_15cSC3SurfaceTest
+03cf95	cSC3PowerOuttageDisplay::AddRef(void)	AddRef__23cSC3PowerOuttageDisplay	libSimSpr.so	vtable:__vt_23cSC3PowerOuttageDisplay
+03cf9c	cSC3PowerOuttageDisplay::Release(void)	Release__23cSC3PowerOuttageDisplay	libSimSpr.so	vtable:__vt_23cSC3PowerOuttageDisplay
+03d10f	cSC3PowerOuttageDisplay::Init(unsigned int, unsigned int)	Init__23cSC3PowerOuttageDisplayUiUi	libSimSpr.so	vtable:__vt_23cSC3PowerOuttageDisplay
+03d3df	cSC3PowerOuttageDisplay::Shutdown(void)	Shutdown__23cSC3PowerOuttageDisplay	libSimSpr.so	vtable:__vt_23cSC3PowerOuttageDisplay
+03d47b	cSC3PowerOuttageDisplay::QueryInterface(unsigned int, void **)	QueryInterface__23cSC3PowerOuttageDisplayUiPPv	libSimSpr.so	tokens:8.6
+03db3d	cSC3PowerOuttageDisplay::UpdatePowerMap(cISC3CityCellMap<bool> const *)	UpdatePowerMap__23cSC3PowerOuttageDisplayPCt16cISC3CityCellMap1Zb	libSimSpr.so	vtable:__vt_23cSC3PowerOuttageDisplay
+04102f	LandModificationChangeDetector::DoMessage(cGZMessage &)	DoMessage__30LandModificationChangeDetectorR10cGZMessage	libSimSpr.so	tokens:21.3
+04174e	cSC3CitySpriteInstBasic::QueryInterface(unsigned int, void **)	QueryInterface__23cSC3CitySpriteInstBasicUiPPv	libSimSpr.so	vtable:__vt_23cSC3CitySpriteInstBasic
+041d8d	cSC3CitySpriteInstBasic::IsPixelOpaque(int, int, int, int) const	IsPixelOpaque__C23cSC3CitySpriteInstBasiciiii	libSimSpr.so	vtable:__vt_15cSC3WaterDebris
+042a95	cSC3WinCityView::GZPaint(void)	GZPaint__15cSC3WinCityView	libSimSpr.so	tokens:8.6
+042cbd	cSC3WinCityView::GetCameraHint(cRZRect *, cRZRect *)	GetCameraHint__15cSC3WinCityViewP7cRZRectT1	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+042cd3	cSC3WinCityView::SetEdgeScroll(bool)	SetEdgeScroll__15cSC3WinCityViewb	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+042cfe	cSC3WinCityView::SetMouseScroll(short, short, bool)	SetMouseScroll__15cSC3WinCityViewssb	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+042d7c	cSC3WinCityView::CameraGoHome(void)	CameraGoHome__15cSC3WinCityView	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+042d8a	cSC3WinCityView::ZoomIn(bool)	ZoomIn__15cSC3WinCityViewb	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+042f27	cSC3WinCityView::ZoomOut(bool)	ZoomOut__15cSC3WinCityViewb	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+0430c4	cSC3WinCityView::SetZoom(int, int, bool)	SetZoom__15cSC3WinCityViewiib	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+04327d	cSC3WinCityView::Translate(float, float, bool)	Translate__15cSC3WinCityViewffb	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+0432aa	cSC3WinCityView::RotateCameraCCW(bool)	RotateCameraCCW__15cSC3WinCityViewb	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+0433f5	cSC3WinCityView::RotateCameraCW(bool)	RotateCameraCW__15cSC3WinCityViewb	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+043540	cSC3WinCityView::FocusCameraOn(unsigned int, unsigned int, bool)	FocusCameraOn__15cSC3WinCityViewUiUib	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+043662	cSC3WinCityView::SetViewParam(unsigned int, unsigned int, bool)	SetViewParam__15cSC3WinCityViewUiUib	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+043844	cSC3WinCityView::UpdateDataView(void)	UpdateDataView__15cSC3WinCityView	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+043a38	cSC3WinCityView::UpdateScroll(short, short)	UpdateScroll__15cSC3WinCityViewss	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+044297	cSC3WinCityView::PreCityChange(void)	PreCityChange__15cSC3WinCityView	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+044323	cSC3WinCityView::PostCityChange(void)	PostCityChange__15cSC3WinCityView	libSimSpr.so	tokens:23.9
+044465	cSC3WinCityView::AsIGZWin(void)	AsIGZWin__15cSC3WinCityView	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+044471	cSC3WinCityView::Init(cISC3City *, cIGZDBSegment *)	Init__15cSC3WinCityViewP9cISC3CityP13cIGZDBSegment	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+047e6d	cSC3WinCityView::Shutdown(void)	Shutdown__15cSC3WinCityView	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+04874f	cSC3WinCityView::CellCursorVisible(void)	CellCursorVisible__15cSC3WinCityView	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+048756	cSC3WinCityView::GetCurrentView(void)	GetCurrentView__15cSC3WinCityView	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+04875d	cSC3WinCityView::GetIsoView(void)	GetIsoView__15cSC3WinCityView	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+048764	cSC3WinCityView::SetCurrentView(cISC3CityView *)	SetCurrentView__15cSC3WinCityViewP13cISC3CityView	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+0487ee	cSC3WinCityView::Init(void)	Init__15cSC3WinCityView	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+048910	cSC3WinCityView::Save(cISC3City *, cIGZDBSegment *)	Save__15cSC3WinCityViewP9cISC3CityP13cIGZDBSegment	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+0489cc	cSC3WinCityView::QueryInterface(unsigned int, void **)	QueryInterface__15cSC3WinCityViewUiPPv	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+0489f8	cSC3WinCityView::AddRef(void)	AddRef__15cSC3WinCityView	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+048a00	cSC3WinCityView::Release(void)	Release__15cSC3WinCityView	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+048a08	cSC3WinCityView::SetActiveHandler(cISLCityViewHandler *)	SetActiveHandler__15cSC3WinCityViewP19cISLCityViewHandler	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+048a2d	cSC3WinCityView::SwitchHandler(int, cISLCityViewHandler *)	SwitchHandler__15cSC3WinCityViewiP19cISLCityViewHandler	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+048d21	cSC3WinCityView::SetActiveCursor(unsigned int)	SetActiveCursor__15cSC3WinCityViewUi	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+049789	cSC3WinCityView::DefActiveCursor(unsigned int &)	DefActiveCursor__15cSC3WinCityViewRUi	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+04979a	cSC3WinCityView::DefOnKeyDown(unsigned int, unsigned int)	DefOnKeyDown__15cSC3WinCityViewUiUi	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+04985a	cSC3WinCityView::DefOnKeyUp(unsigned int, unsigned int)	DefOnKeyUp__15cSC3WinCityViewUiUi	libSimSpr.so	tokens:17.1
+0499d4	cSC3WinCityView::DefOnMouseDownL(int, int, unsigned int)	DefOnMouseDownL__15cSC3WinCityViewiiUi	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+0499d9	cSC3WinCityView::DefOnMouseDownR(int, int, unsigned int)	DefOnMouseDownR__15cSC3WinCityViewiiUi	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+0499fa	cSC3WinCityView::DefOnMouseUpL(int, int, unsigned int)	DefOnMouseUpL__15cSC3WinCityViewiiUi	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+049a5a	cSC3WinCityView::DefOnMouseUpR(int, int, unsigned int)	DefOnMouseUpR__15cSC3WinCityViewiiUi	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+049a6e	cSC3WinCityView::DefOnMouseMove(int, int, unsigned int)	DefOnMouseMove__15cSC3WinCityViewiiUi	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+049a80	cSC3WinCityView::DefOnHotKey(unsigned int, unsigned int, unsigned int)	DefOnHotKey__15cSC3WinCityViewUiUiUi	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+04a3d7	cSC3WinCityView::SetCostDisplay(bool, int, int)	SetCostDisplay__15cSC3WinCityViewbii	libSimSpr.so	tokens:25.7
+04a5b2	cSC3WinCityView::EnableCostDisplay(bool)	EnableCostDisplay__15cSC3WinCityViewb	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+04aabc	cSC3WinCityView::GetViewManager(void)	GetViewManager__15cSC3WinCityView	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+04abc0	cSC3WinCityView::GetCellCursorMap(void) const	GetCellCursorMap__C15cSC3WinCityView	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+04abc7	cSC3WinCityView::SetCellCursorSize(unsigned int, unsigned int)	SetCellCursorSize__15cSC3WinCityViewUiUi	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+04abde	cSC3WinCityView::SetCellCursorVisible(bool)	SetCellCursorVisible__15cSC3WinCityViewb	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+04ac00	cSC3WinCityView::AnimationPause(bool)	AnimationPause__15cSC3WinCityViewb	libSimSpr.so	vtable:__vt_15cSC3WinCityView
+04ad29	virtual function thunk (delta:-4) for cSC3WinCityView::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__15cSC3WinCityViewUiPPv	libSimSpr.so	caller
+04ad31	virtual function thunk (delta:-4) for cSC3WinCityView::AddRef(void)	__thunk_4_AddRef__15cSC3WinCityView	libSimSpr.so	caller
+04ad39	virtual function thunk (delta:-4) for cSC3WinCityView::Release(void)	__thunk_4_Release__15cSC3WinCityView	libSimSpr.so	caller
+04ad49	virtual function thunk (delta:-4) for cSC3WinCityView::Shutdown(void)	__thunk_4_Shutdown__15cSC3WinCityView	libSimSpr.so	caller
+04adcd	cSC3WinCityViewCellCursor::GetColor(cSC3CityCoord const &, unsigned int &)	GetColor__25cSC3WinCityViewCellCursorRC13cSC3CityCoordRUi	libSimSpr.so	vtable:__vt_25cSC3WinCityViewCellCursor
+04ae23	cSC3WinCityViewCellCursor::Clear(bool)	Clear__25cSC3WinCityViewCellCursorb	libSimSpr.so	vtable:__vt_25cSC3WinCityViewCellCursor
+04ae4d	cSC3WinCityViewCellCursor::SetCell(cSC3CityCoord const &, unsigned int)	SetCell__25cSC3WinCityViewCellCursorRC13cSC3CityCoordUi	libSimSpr.so	vtable:__vt_25cSC3WinCityViewCellCursor
+04ae95	cSC3WinCityViewCellCursor::SetLine(cSC3CityCoord const &, cSC3CityCoord const &, unsigned int)	SetLine__25cSC3WinCityViewCellCursorRC13cSC3CityCoordT1Ui	libSimSpr.so	vtable:__vt_25cSC3WinCityViewCellCursor
+04af93	cSC3WinCityViewCellCursor::SetRect(cSC3CityBounds const &, unsigned int)	SetRect__25cSC3WinCityViewCellCursorRC14cSC3CityBoundsUi	libSimSpr.so	vtable:__vt_25cSC3WinCityViewCellCursor
+04affc	cSC3WinCityViewCellCursor::SetEllipse(cSC3CityCoord const &, cSC3CityCoord const &, unsigned int)	SetEllipse__25cSC3WinCityViewCellCursorRC13cSC3CityCoordT1Ui	libSimSpr.so	tokens:15.6
+04b3da	cSC3WinCityViewCellCursor::SetCellList(cISC3EnumCityViewSelection *, unsigned int, cISC3EnumCityViewSelection *, unsigned int)	SetCellList__25cSC3WinCityViewCellCursorP26cISC3EnumCityViewSelectionUiT1Ui	libSimSpr.so	vtable:__vt_25cSC3WinCityViewCellCursor
+04b6d1	cSC3WinCityViewCellCursor::GetEnumerator(cISC3EnumCityViewSelection **)	GetEnumerator__25cSC3WinCityViewCellCursorPP26cISC3EnumCityViewSelection	libSimSpr.so	vtable:__vt_25cSC3WinCityViewCellCursor
+04b6e0	cSC3WinCityViewCellCursor::SetPalette(unsigned int)	SetPalette__25cSC3WinCityViewCellCursorUi	libSimSpr.so	vtable:__vt_25cSC3WinCityViewCellCursor
+04b6ef	cSC3WinCityViewCellCursor::SetDefaultColor(unsigned int, unsigned int)	SetDefaultColor__25cSC3WinCityViewCellCursorUiUi	libSimSpr.so	vtable:__vt_25cSC3WinCityViewCellCursor
+04b70a	cSC3WinCityViewCellCursor::GetDefaultColor(unsigned int &, unsigned int &) const	GetDefaultColor__C25cSC3WinCityViewCellCursorRUiT1	libSimSpr.so	vtable:__vt_25cSC3WinCityViewCellCursor
+04b71f	cSC3WinCityViewCellCursor::CellCountX(void) const	CellCountX__C25cSC3WinCityViewCellCursor	libSimSpr.so	vtable:__vt_25cSC3WinCityViewCellCursor
+04b727	cSC3WinCityViewCellCursor::CellCountZ(void) const	CellCountZ__C25cSC3WinCityViewCellCursor	libSimSpr.so	vtable:__vt_25cSC3WinCityViewCellCursor
+04b779	cSC3WinCityViewCellCursor::UpdateRegion(cSC3CityBounds const &)	UpdateRegion__25cSC3WinCityViewCellCursorRC14cSC3CityBounds	libSimSpr.so	vtable:__vt_25cSC3WinCityViewCellCursor
+04b93c	cSC3WinCityViewCellCursor::Init(cISC3City *)	Init__25cSC3WinCityViewCellCursorP9cISC3City	libSimSpr.so	vtable:__vt_25cSC3WinCityViewCellCursor
+04ba87	cSC3CityCellMap<unsigned char>::QueryInterface(unsigned int, void **)	QueryInterface__t15cSC3CityCellMap1ZUcUiPPv	libSimSpr.so	tokens:17.1
+04bab6	cSC3WinCityViewCellCursor::Shutdown(void)	Shutdown__25cSC3WinCityViewCellCursor	libSimSpr.so	vtable:__vt_25cSC3WinCityViewCellCursor
+04bae9	cSC3WinCityViewCellCursor::QueryInterface(unsigned int, void **)	QueryInterface__25cSC3WinCityViewCellCursorUiPPv	libSimSpr.so	tokens:8.6
+04bb1e	cSC3WinCityViewCellCursor::AddRef(void)	AddRef__25cSC3WinCityViewCellCursor	libSimSpr.so	vtable:__vt_25cSC3WinCityViewCellCursor
+04bb26	cSC3WinCityViewCellCursor::Release(void)	Release__25cSC3WinCityViewCellCursor	libSimSpr.so	vtable:__vt_25cSC3WinCityViewCellCursor
+04c611	RZGetCOMDllDirector_SimSpr(void)	RZGetCOMDllDirector_SimSpr__Fv	libSimSpr.so	tokens:254.8
+04c91a	cSPCOMDirector::GetDirectorID(void) const	GetDirectorID__C14cSPCOMDirector	libSimSpr.so	tokens:8.6
+04c920	cSPCOMDirector::OnStart(cIGZCOM *)	OnStart__14cSPCOMDirectorP7cIGZCOM	libSimSpr.so	vtable:__vt_14cSPCOMDirector
+04cab3	cSC3ParticleSimulator::cSC3ParticleSimulator(void)	__21cSC3ParticleSimulator	libSimSpr.so	vtable-user:__vt_21cSC3ParticleSimulator
+04cad9	cSC3ParticleSimulator::AddRef(void)	AddRef__21cSC3ParticleSimulator	libSimSpr.so	vtable:__vt_21cSC3ParticleSimulator
+04cae0	cSC3ParticleSimulator::Release(void)	Release__21cSC3ParticleSimulator	libSimSpr.so	vtable:__vt_21cSC3ParticleSimulator
+04d0c4	cSPCOMDirector::~cSPCOMDirector(void)	_._14cSPCOMDirector	libSimSpr.so	vtable:__vt_14cSPCOMDirector
+04d154	virtual function thunk (delta:-4) for cRZCOMDllDirector::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__17cRZCOMDllDirectorUiPPv	libSimSpr.so	caller
+04f7e9	cRZCOMDllDirector::QueryInterface(unsigned int, void **)	QueryInterface__17cRZCOMDllDirectorUiPPv	libSimSpr.so	tokens:17.1
+04f82a	cRZCOMDllDirector::FrameWork(void)	FrameWork__17cRZCOMDllDirector	libSimSpr.so	vtable:__vt_14cSPCOMDirector
+04f833	cRZCOMDllDirector::RemoveRef(void)	RemoveRef__17cRZCOMDllDirector	libSimSpr.so	vtable:__vt_14cSPCOMDirector
+04f842	cRZCOMDllDirector::RefCount(void)	RefCount__17cRZCOMDllDirector	libSimSpr.so	vtable:__vt_14cSPCOMDirector
+04f846	cRZCOMDllDirector::InitializeCOM(cIGZCOM *, cIGZString &)	InitializeCOM__17cRZCOMDllDirectorP7cIGZCOMR10cIGZString	libSimSpr.so	vtable:__vt_14cSPCOMDirector
+04f914	cRZCOMDllDirector::GetClassObject(unsigned int, unsigned int, void **)	GetClassObject__17cRZCOMDllDirectorUiUiPPv	libSimSpr.so	vtable:__vt_14cSPCOMDirector
+04f995	cRZCOMDllDirector::EnumClassObjects(void (*)(unsigned int, unsigned int, void *), void *)	EnumClassObjects__17cRZCOMDllDirectorPFUiUiPv_vPv	libSimSpr.so	vtable:__vt_14cSPCOMDirector
+04f9e9	cRZCOMDllDirector::ModuleName(cIGZString &)	ModuleName__17cRZCOMDllDirectorR10cIGZString	libSimSpr.so	vtable:__vt_14cSPCOMDirector
+04f9fd	cRZCOMDllDirector::AddDirector(cRZCOMDllDirector *)	AddDirector__17cRZCOMDllDirectorP17cRZCOMDllDirector	libSimSpr.so	vtable:__vt_14cSPCOMDirector
+04fa47	cRZCOMDllDirector::CanUnloadNow(void)	CanUnloadNow__17cRZCOMDllDirector	libSimSpr.so	vtable:__vt_14cSPCOMDirector
+04fa9e	cRZCOMDllDirector::AppRegister(cIGZRegistry *)	AppRegister__17cRZCOMDllDirectorP12cIGZRegistry	libSimSpr.so	vtable:__vt_14cSPCOMDirector
+04fb28	cRZCOMDllDirector::OnStart(cIGZCOM *)	OnStart__17cRZCOMDllDirectorP7cIGZCOM	libSimSpr.so	tokens:17.1
+0507b4	cSC3CitySpriteImageMgr::QueryInterface(unsigned int, void **)	QueryInterface__22cSC3CitySpriteImageMgrUiPPv	libSimSpr.so	callee
+0507cf	cSC3CitySpriteImageMgr::AddRef(void)	AddRef__22cSC3CitySpriteImageMgr	libSimSpr.so	vtable-thunk:__vt_22cSC3CitySpriteImageMgr.16cRZSystemService
+05089b	virtual function thunk (delta:-4) for cSC3CitySpriteImageMgr::Init(void)	__thunk_4_Init__22cSC3CitySpriteImageMgr	libSimSpr.so	vtable:__vt_22cSC3CitySpriteImageMgr.16cRZSystemService
+05089e	virtual function thunk (delta:-4) for cSC3CitySpriteImageMgr::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__22cSC3CitySpriteImageMgrUiPPv	libSimSpr.so	vtable:__vt_22cSC3CitySpriteImageMgr.16cRZSystemService
+054c75	cSC3PowerOuttageDisplay::ShowOrHide(bool)	ShowOrHide__23cSC3PowerOuttageDisplayb	libSimSpr.so	vtable:__vt_23cSC3PowerOuttageDisplay
+057484	virtual function thunk (delta:-4) for cSC3CitySpriteImageMgr::AddRef(void)	__thunk_4_AddRef__22cSC3CitySpriteImageMgr	libSimSpr.so	vtable:__vt_22cSC3CitySpriteImageMgr.16cRZSystemService
+05982a	cSC3EffectsManager::AddRef(void)	AddRef__18cSC3EffectsManager	libSimSpr.so	vtable:__vt_18cSC3EffectsManager
+05b7a6	cSC3CityViewIso::GetViewID(void) const	GetViewID__C15cSC3CityViewIso	libSimSpr.so	vtable:__vt_15cSC3CityViewIso
+05b7ac	cSC3CitySpriteAttribAnim::SerialWrite(cIGZDBSerialRecord &)	SerialWrite__24cSC3CitySpriteAttribAnimR18cIGZDBSerialRecord	libSimSpr.so	vtable:__vt_24cSC3CitySpriteAttribAnim

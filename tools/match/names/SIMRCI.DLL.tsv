@@ -1,0 +1,320 @@
+rva	demangled	mangled	source	method
+004784	cSC3AirportZoneDeveloper::UpdateCell(sIGZPointXZUint32 const &)	UpdateCell__24cSC3AirportZoneDeveloperRC17sIGZPointXZUint32	libSimRCI.so	caller
+004966	cSC3AirportZoneDeveloper::checkAreaDevRules(sIGZRectUint32 const &, int, int)	checkAreaDevRules__24cSC3AirportZoneDeveloperRC14sIGZRectUint32ii	libSimRCI.so	tokens:8.4
+004c2a	cSC3BuildingCollege::cSC3BuildingCollege(void)	__19cSC3BuildingCollege	libSimRCI.so	vtable-user:__vt_19cSC3BuildingCollege
+0052b5	virtual function thunk (delta:-4) for cSC3BuildingCollege::SystemMembership(void)	__thunk_4_SystemMembership__19cSC3BuildingCollege	libSimRCI.so	vtable:__vt_19cSC3BuildingCollege.15cISC3EQModifier
+0052b9	virtual function thunk (delta:-20) for cSC3BuildingCollege::~cSC3BuildingCollege(void)	__thunk_20__._19cSC3BuildingCollege	libSimRCI.so	vtable:__vt_19cSC3BuildingCollege.12cSC3Occupant
+0052d9	cSC3BuildingCollege::~cSC3BuildingCollege(void)	_._19cSC3BuildingCollege	libSimRCI.so	callee
+005315	cSC3BuildingMuseum::AsISC3Building(void)	AsISC3Building__18cSC3BuildingMuseum	libSimRCI.so	vtable:__vt_18cSC3BuildingMuseum
+005321	cSC3BuildingMuseum::AsISC3Occupant(void)	AsISC3Occupant__18cSC3BuildingMuseum	libSimRCI.so	vtable:__vt_18cSC3BuildingMuseum
+00532d	cSC3BuildingMuseum::AddRef(void)	AddRef__18cSC3BuildingMuseum	libSimRCI.so	vtable:__vt_18cSC3BuildingMuseum
+005335	cSC3BuildingMuseum::Release(void)	Release__18cSC3BuildingMuseum	libSimRCI.so	vtable:__vt_18cSC3BuildingMuseum
+00533d	cSC3BuildingCollege::QueryInterface(unsigned int, void **)	QueryInterface__19cSC3BuildingCollegeUiPPv	libSimRCI.so	tokens:21.8
+0053ef	cSC3BuildingCollege::Save(cISC3City *, cISC3OccPersistInfo &)	Save__19cSC3BuildingCollegeP9cISC3CityR19cISC3OccPersistInfo	libSimRCI.so	vtable-thunk:__vt_19cSC3BuildingCollege.12cSC3Occupant
+00544c	virtual function thunk (delta:-20) for cSC3BuildingCollege::SerialRead(cISC3City *, cIGZDBSerialRecord &)	__thunk_20_SerialRead__19cSC3BuildingCollegeP9cISC3CityR18cIGZDBSerialRecord	libSimRCI.so	vtable:__vt_19cSC3BuildingCollege.12cSC3Occupant
+005490	virtual function thunk (delta:-20) for cSC3BuildingCollege::SerialWrite(cISC3City *, cIGZDBSerialRecord &)	__thunk_20_SerialWrite__19cSC3BuildingCollegeP9cISC3CityR18cIGZDBSerialRecord	libSimRCI.so	vtable:__vt_19cSC3BuildingCollege.12cSC3Occupant
+0054de	virtual function thunk (delta:-4) for cSC3BuildingCollege::NumberOfSimsServed(void)	__thunk_4_NumberOfSimsServed__19cSC3BuildingCollege	libSimRCI.so	vtable:__vt_19cSC3BuildingCollege.15cISC3EQModifier
+0054e4	virtual function thunk (delta:-4) for cSC3BuildingCollege::MinAgeServed(void)	__thunk_4_MinAgeServed__19cSC3BuildingCollege	libSimRCI.so	vtable:__vt_19cSC3BuildingCollege.15cISC3EQModifier
+0054ea	virtual function thunk (delta:-4) for cSC3BuildingCollege::MaxAgeServed(void)	__thunk_4_MaxAgeServed__19cSC3BuildingCollege	libSimRCI.so	vtable:__vt_19cSC3BuildingCollege.15cISC3EQModifier
+0054f0	virtual function thunk (delta:-8) for cSC3BuildingCollege::SetFundingPercentage(unsigned char)	__thunk_8_SetFundingPercentage__19cSC3BuildingCollegeUc	libSimRCI.so	vtable:__vt_19cSC3BuildingCollege.19cISC3BuildingBudget
+0055a3	virtual function thunk (delta:-20) for cSC3BuildingCollege::DoStandardQueryViewInfo(cGZMessage &, cISC3WinQueryListView *)	__thunk_20_DoStandardQueryViewInfo__19cSC3BuildingCollegeR10cGZMessageP21cISC3WinQueryListView	libSimRCI.so	vtable:__vt_19cSC3BuildingCollege.12cSC3Occupant
+0060f9	virtual function thunk (delta:-20) for cSC3BuildingCollege::DoQueryViews(cGZMessage &, cISC3WinQuery *)	__thunk_20_DoQueryViews__19cSC3BuildingCollegeR10cGZMessageP13cISC3WinQuery	libSimRCI.so	vtable:__vt_19cSC3BuildingCollege.12cSC3Occupant
+00621c	cSC3BuildingSchool::GetDebugInfoStrings(cIGZString &, cIGZString &, unsigned int)	GetDebugInfoStrings__18cSC3BuildingSchoolR10cIGZStringT1Ui	libSimRCI.so	vtable:__vt_18cSC3BuildingSchool
+00637e	virtual function thunk (delta:-4) for cSC3BuildingCollege::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__19cSC3BuildingCollegeUiPPv	libSimRCI.so	vtable:__vt_19cSC3BuildingCollege.15cISC3EQModifier
+006386	virtual function thunk (delta:-8) for cSC3BuildingCollege::QueryInterface(unsigned int, void **)	__thunk_8_QueryInterface__19cSC3BuildingCollegeUiPPv	libSimRCI.so	vtable:__vt_19cSC3BuildingCollege.19cISC3BuildingBudget
+00638e	virtual function thunk (delta:-8) for cSC3BuildingMuseum::AsISC3Occupant(void)	__thunk_8_AsISC3Occupant__18cSC3BuildingMuseum	libSimRCI.so	vtable:__vt_18cSC3BuildingMuseum.19cISC3BuildingBudget
+006396	virtual function thunk (delta:-12) for cSC3BuildingCollege::QueryInterface(unsigned int, void **)	__thunk_12_QueryInterface__19cSC3BuildingCollegeUiPPv	libSimRCI.so	caller
+00639e	virtual function thunk (delta:-16) for cSC3BuildingCollege::QueryInterface(unsigned int, void **)	__thunk_16_QueryInterface__19cSC3BuildingCollegeUiPPv	libSimRCI.so	vtable:__vt_19cSC3BuildingCollege.14cISC3CityAgent
+0063be	virtual function thunk (delta:-20) for cSC3BuildingCollege::QueryInterface(unsigned int, void **)	__thunk_20_QueryInterface__19cSC3BuildingCollegeUiPPv	libSimRCI.so	vtable:__vt_19cSC3BuildingCollege.12cSC3Occupant
+0063d6	virtual function thunk (delta:-20) for cSC3BuildingMuseum::Init(cISC3City *, cISC3OccPersistInfo *)	__thunk_20_Init__18cSC3BuildingMuseumP9cISC3CityP19cISC3OccPersistInfo	libSimRCI.so	vtable:__vt_18cSC3BuildingMuseum.12cSC3Occupant
+0063e6	virtual function thunk (delta:-20) for cSC3BuildingCollege::Save(cISC3City *, cISC3OccPersistInfo &)	__thunk_20_Save__19cSC3BuildingCollegeP9cISC3CityR19cISC3OccPersistInfo	libSimRCI.so	vtable:__vt_19cSC3BuildingCollege.12cSC3Occupant
+006416	cSC3BuildingHospital::cSC3BuildingHospital(void)	__20cSC3BuildingHospital	libSimRCI.so	vtable-user:__vt_20cSC3BuildingHospital
+0069ad	virtual function thunk (delta:-20) for cSC3BuildingHospital::~cSC3BuildingHospital(void)	__thunk_20__._20cSC3BuildingHospital	libSimRCI.so	vtable:__vt_20cSC3BuildingHospital.12cSC3Occupant
+0069cd	cSC3BuildingHospital::~cSC3BuildingHospital(void)	_._20cSC3BuildingHospital	libSimRCI.so	callee
+006a09	cSC3BuildingHospital::QueryInterface(unsigned int, void **)	QueryInterface__20cSC3BuildingHospitalUiPPv	libSimRCI.so	tokens:22.8
+006b05	cSC3BuildingHospital::Save(cISC3City *, cISC3OccPersistInfo &)	Save__20cSC3BuildingHospitalP9cISC3CityR19cISC3OccPersistInfo	libSimRCI.so	vtable-thunk:__vt_20cSC3BuildingHospital.12cSC3Occupant
+006b78	virtual function thunk (delta:-20) for cSC3BuildingHospital::SerialRead(cISC3City *, cIGZDBSerialRecord &)	__thunk_20_SerialRead__20cSC3BuildingHospitalP9cISC3CityR18cIGZDBSerialRecord	libSimRCI.so	vtable:__vt_20cSC3BuildingHospital.12cSC3Occupant
+006bbc	virtual function thunk (delta:-20) for cSC3BuildingHospital::SerialWrite(cISC3City *, cIGZDBSerialRecord &)	__thunk_20_SerialWrite__20cSC3BuildingHospitalP9cISC3CityR18cIGZDBSerialRecord	libSimRCI.so	vtable:__vt_20cSC3BuildingHospital.12cSC3Occupant
+006c0a	virtual function thunk (delta:-8) for cSC3BuildingHospital::NumberOfSimsServed(void)	__thunk_8_NumberOfSimsServed__20cSC3BuildingHospital	libSimRCI.so	vtable:__vt_20cSC3BuildingHospital.15cISC3HQModifier
+006c0e	virtual function thunk (delta:-4) for cSC3BuildingSchool::EQEffect(void)	__thunk_4_EQEffect__18cSC3BuildingSchool	libSimRCI.so	vtable:__vt_18cSC3BuildingSchool.15cISC3EQModifier
+006c12	virtual function thunk (delta:-4) for cSC3BuildingHospital::SetFundingPercentage(unsigned char)	__thunk_4_SetFundingPercentage__20cSC3BuildingHospitalUc	libSimRCI.so	vtable:__vt_20cSC3BuildingHospital.19cISC3BuildingBudget
+006ccd	virtual function thunk (delta:-20) for cSC3BuildingHospital::DoStandardQueryViewInfo(cGZMessage &, cISC3WinQueryListView *)	__thunk_20_DoStandardQueryViewInfo__20cSC3BuildingHospitalR10cGZMessageP21cISC3WinQueryListView	libSimRCI.so	vtable:__vt_20cSC3BuildingHospital.12cSC3Occupant
+0077ba	virtual function thunk (delta:-20) for cSC3BuildingHospital::DoQueryViews(cGZMessage &, cISC3WinQuery *)	__thunk_20_DoQueryViews__20cSC3BuildingHospitalR10cGZMessageP13cISC3WinQuery	libSimRCI.so	vtable:__vt_20cSC3BuildingHospital.12cSC3Occupant
+0078dd	virtual function thunk (delta:-4) for cSC3BuildingHospital::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__20cSC3BuildingHospitalUiPPv	libSimRCI.so	vtable:__vt_20cSC3BuildingHospital.19cISC3BuildingBudget
+0078e5	virtual function thunk (delta:-4) for cSC3BuildingHospital::AsISC3Occupant(void)	__thunk_4_AsISC3Occupant__20cSC3BuildingHospital	libSimRCI.so	vtable:__vt_20cSC3BuildingHospital.19cISC3BuildingBudget
+0078ed	virtual function thunk (delta:-8) for cSC3BuildingHospital::QueryInterface(unsigned int, void **)	__thunk_8_QueryInterface__20cSC3BuildingHospitalUiPPv	libSimRCI.so	vtable:__vt_20cSC3BuildingHospital.15cISC3HQModifier
+0078f5	virtual function thunk (delta:-12) for cSC3BuildingHospital::QueryInterface(unsigned int, void **)	__thunk_12_QueryInterface__20cSC3BuildingHospitalUiPPv	libSimRCI.so	caller
+0078fd	virtual function thunk (delta:-16) for cSC3BuildingHospital::QueryInterface(unsigned int, void **)	__thunk_16_QueryInterface__20cSC3BuildingHospitalUiPPv	libSimRCI.so	vtable:__vt_20cSC3BuildingHospital.14cISC3CityAgent
+007905	virtual function thunk (delta:-20) for cSC3BuildingHospital::QueryInterface(unsigned int, void **)	__thunk_20_QueryInterface__20cSC3BuildingHospitalUiPPv	libSimRCI.so	vtable:__vt_20cSC3BuildingHospital.12cSC3Occupant
+007915	virtual function thunk (delta:-20) for cSC3BuildingHospital::Save(cISC3City *, cISC3OccPersistInfo &)	__thunk_20_Save__20cSC3BuildingHospitalP9cISC3CityR19cISC3OccPersistInfo	libSimRCI.so	vtable:__vt_20cSC3BuildingHospital.12cSC3Occupant
+007df4	virtual function thunk (delta:-4) for cSC3BuildingLibrary::SystemMembership(void)	__thunk_4_SystemMembership__19cSC3BuildingLibrary	libSimRCI.so	vtable:__vt_19cSC3BuildingLibrary.15cISC3EQModifier
+007df8	virtual function thunk (delta:-8) for cSC3BuildingLibrary::GetMonthlyUpkeep(void)	__thunk_8_GetMonthlyUpkeep__19cSC3BuildingLibrary	libSimRCI.so	vtable:__vt_19cSC3BuildingLibrary.19cISC3BuildingBudget
+007e5a	cSC3BuildingLibrary::QueryInterface(unsigned int, void **)	QueryInterface__19cSC3BuildingLibraryUiPPv	libSimRCI.so	tokens:21.8
+007f18	virtual function thunk (delta:-20) for cSC3BuildingMuseum::SerialWrite(cISC3City *, cIGZDBSerialRecord &)	__thunk_20_SerialWrite__18cSC3BuildingMuseumP9cISC3CityR18cIGZDBSerialRecord	libSimRCI.so	vtable:__vt_18cSC3BuildingMuseum.12cSC3Occupant
+007f28	virtual function thunk (delta:-4) for cSC3BuildingLibrary::NumberOfSimsServed(void)	__thunk_4_NumberOfSimsServed__19cSC3BuildingLibrary	libSimRCI.so	vtable:__vt_19cSC3BuildingLibrary.15cISC3EQModifier
+007f2e	virtual function thunk (delta:-4) for cSC3BuildingLibrary::MinAgeServed(void)	__thunk_4_MinAgeServed__19cSC3BuildingLibrary	libSimRCI.so	vtable:__vt_19cSC3BuildingLibrary.15cISC3EQModifier
+007f34	virtual function thunk (delta:-4) for cSC3BuildingLibrary::MaxAgeServed(void)	__thunk_4_MaxAgeServed__19cSC3BuildingLibrary	libSimRCI.so	vtable:__vt_19cSC3BuildingLibrary.15cISC3EQModifier
+007f3a	virtual function thunk (delta:-8) for cSC3BuildingLibrary::SetFundingPercentage(unsigned char)	__thunk_8_SetFundingPercentage__19cSC3BuildingLibraryUc	libSimRCI.so	vtable:__vt_19cSC3BuildingLibrary.19cISC3BuildingBudget
+008a56	virtual function thunk (delta:-4) for cSC3BuildingLibrary::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__19cSC3BuildingLibraryUiPPv	libSimRCI.so	vtable:__vt_19cSC3BuildingLibrary.15cISC3EQModifier
+008a5e	virtual function thunk (delta:-8) for cSC3BuildingLibrary::QueryInterface(unsigned int, void **)	__thunk_8_QueryInterface__19cSC3BuildingLibraryUiPPv	libSimRCI.so	vtable:__vt_19cSC3BuildingLibrary.19cISC3BuildingBudget
+008a6e	virtual function thunk (delta:-16) for cSC3BuildingLibrary::QueryInterface(unsigned int, void **)	__thunk_16_QueryInterface__19cSC3BuildingLibraryUiPPv	libSimRCI.so	vtable:__vt_19cSC3BuildingLibrary.14cISC3CityAgent
+008aae	cSC3BuildingMuseum::cSC3BuildingMuseum(void)	__18cSC3BuildingMuseum	libSimRCI.so	vtable-user:__vt_18cSC3BuildingMuseum
+008f4b	virtual function thunk (delta:-4) for cSC3BuildingMuseum::SystemMembership(void)	__thunk_4_SystemMembership__18cSC3BuildingMuseum	libSimRCI.so	vtable:__vt_18cSC3BuildingMuseum.15cISC3EQModifier
+008f4f	virtual function thunk (delta:-8) for cSC3BuildingMuseum::GetMonthlyUpkeep(void)	__thunk_8_GetMonthlyUpkeep__18cSC3BuildingMuseum	libSimRCI.so	vtable:__vt_18cSC3BuildingMuseum.19cISC3BuildingBudget
+008f55	virtual function thunk (delta:-20) for cSC3BuildingMuseum::~cSC3BuildingMuseum(void)	__thunk_20__._18cSC3BuildingMuseum	libSimRCI.so	vtable:__vt_18cSC3BuildingMuseum.12cSC3Occupant
+008f75	cSC3BuildingMuseum::~cSC3BuildingMuseum(void)	_._18cSC3BuildingMuseum	libSimRCI.so	callee
+008fb1	cSC3BuildingMuseum::QueryInterface(unsigned int, void **)	QueryInterface__18cSC3BuildingMuseumUiPPv	libSimRCI.so	tokens:21.8
+009007	cSC3BuildingMuseum::Init(cISC3City *, cISC3OccPersistInfo *)	Init__18cSC3BuildingMuseumP9cISC3CityP19cISC3OccPersistInfo	libSimRCI.so	tokens:14.3
+009042	cSC3BuildingMuseum::Save(cISC3City *, cISC3OccPersistInfo &)	Save__18cSC3BuildingMuseumP9cISC3CityR19cISC3OccPersistInfo	libSimRCI.so	vtable-thunk:__vt_18cSC3BuildingMuseum.12cSC3Occupant
+00906f	virtual function thunk (delta:-20) for cSC3BuildingMuseum::SerialRead(cISC3City *, cIGZDBSerialRecord &)	__thunk_20_SerialRead__18cSC3BuildingMuseumP9cISC3CityR18cIGZDBSerialRecord	libSimRCI.so	vtable:__vt_18cSC3BuildingMuseum.12cSC3Occupant
+00907f	virtual function thunk (delta:-4) for cSC3BuildingMuseum::NumberOfSimsServed(void)	__thunk_4_NumberOfSimsServed__18cSC3BuildingMuseum	libSimRCI.so	vtable:__vt_18cSC3BuildingMuseum.15cISC3EQModifier
+009085	virtual function thunk (delta:-4) for cSC3BuildingMuseum::MinAgeServed(void)	__thunk_4_MinAgeServed__18cSC3BuildingMuseum	libSimRCI.so	vtable:__vt_18cSC3BuildingMuseum.15cISC3EQModifier
+00908b	virtual function thunk (delta:-4) for cSC3BuildingMuseum::MaxAgeServed(void)	__thunk_4_MaxAgeServed__18cSC3BuildingMuseum	libSimRCI.so	vtable:__vt_18cSC3BuildingMuseum.15cISC3EQModifier
+009091	virtual function thunk (delta:-4) for cSC3BuildingMuseum::EQEffect(void)	__thunk_4_EQEffect__18cSC3BuildingMuseum	libSimRCI.so	vtable:__vt_18cSC3BuildingMuseum.15cISC3EQModifier
+009098	virtual function thunk (delta:-8) for cSC3BuildingMuseum::SetFundingPercentage(unsigned char)	__thunk_8_SetFundingPercentage__18cSC3BuildingMuseumUc	libSimRCI.so	vtable:__vt_18cSC3BuildingMuseum.19cISC3BuildingBudget
+0090d4	cSC3BuildingMuseum::DoStandardQueryViewInfo(cGZMessage &, cISC3WinQueryListView *)	DoStandardQueryViewInfo__18cSC3BuildingMuseumR10cGZMessageP21cISC3WinQueryListView	libSimRCI.so	tokens:13.7
+009b6b	virtual function thunk (delta:-20) for cSC3BuildingMuseum::DoDebugQueryViewInfo(cGZMessage &, cISC3WinQueryListView *)	__thunk_20_DoDebugQueryViewInfo__18cSC3BuildingMuseumR10cGZMessageP21cISC3WinQueryListView	libSimRCI.so	vtable:__vt_18cSC3BuildingMuseum.12cSC3Occupant
+009b7b	virtual function thunk (delta:-4) for cSC3BuildingMuseum::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__18cSC3BuildingMuseumUiPPv	libSimRCI.so	vtable:__vt_18cSC3BuildingMuseum.15cISC3EQModifier
+009b83	virtual function thunk (delta:-4) for cSC3BuildingMuseum::AddRef(void)	__thunk_4_AddRef__18cSC3BuildingMuseum	libSimRCI.so	vtable:__vt_18cSC3BuildingMuseum.15cISC3EQModifier
+009b8b	virtual function thunk (delta:-4) for cSC3BuildingMuseum::Release(void)	__thunk_4_Release__18cSC3BuildingMuseum	libSimRCI.so	vtable:__vt_18cSC3BuildingMuseum.15cISC3EQModifier
+009b93	virtual function thunk (delta:-8) for cSC3BuildingMuseum::QueryInterface(unsigned int, void **)	__thunk_8_QueryInterface__18cSC3BuildingMuseumUiPPv	libSimRCI.so	vtable:__vt_18cSC3BuildingMuseum.19cISC3BuildingBudget
+009b9b	virtual function thunk (delta:-8) for cSC3BuildingMuseum::AddRef(void)	__thunk_8_AddRef__18cSC3BuildingMuseum	libSimRCI.so	vtable:__vt_18cSC3BuildingMuseum.19cISC3BuildingBudget
+009ba3	virtual function thunk (delta:-8) for cSC3BuildingMuseum::Release(void)	__thunk_8_Release__18cSC3BuildingMuseum	libSimRCI.so	vtable:__vt_18cSC3BuildingMuseum.19cISC3BuildingBudget
+009bab	virtual function thunk (delta:-12) for cSC3BuildingMuseum::QueryInterface(unsigned int, void **)	__thunk_12_QueryInterface__18cSC3BuildingMuseumUiPPv	libSimRCI.so	caller
+009bb3	virtual function thunk (delta:-16) for cSC3BuildingMuseum::QueryInterface(unsigned int, void **)	__thunk_16_QueryInterface__18cSC3BuildingMuseumUiPPv	libSimRCI.so	vtable:__vt_18cSC3BuildingMuseum.14cISC3CityAgent
+009bbb	virtual function thunk (delta:-20) for cSC3BuildingMuseum::QueryInterface(unsigned int, void **)	__thunk_20_QueryInterface__18cSC3BuildingMuseumUiPPv	libSimRCI.so	vtable:__vt_18cSC3BuildingMuseum.12cSC3Occupant
+009bc3	virtual function thunk (delta:-12) for cSC3BuildingMuseum::Init(cISC3City *, cISC3OccPersistInfo *)	__thunk_12_Init__18cSC3BuildingMuseumP9cISC3CityP19cISC3OccPersistInfo	libSimRCI.so	caller
+009bcb	virtual function thunk (delta:-20) for cSC3BuildingMuseum::Save(cISC3City *, cISC3OccPersistInfo &)	__thunk_20_Save__18cSC3BuildingMuseumP9cISC3CityR19cISC3OccPersistInfo	libSimRCI.so	vtable:__vt_18cSC3BuildingMuseum.12cSC3Occupant
+009eed	cSC3BuildingSchool::cSC3BuildingSchool(void)	__18cSC3BuildingSchool	libSimRCI.so	vtable-user:__vt_18cSC3BuildingSchool
+00a570	virtual function thunk (delta:-4) for cSC3BuildingMuseum::NumberOfEducators(void)	__thunk_4_NumberOfEducators__18cSC3BuildingMuseum	libSimRCI.so	vtable:__vt_18cSC3BuildingMuseum.15cISC3EQModifier
+00a573	virtual function thunk (delta:-4) for cSC3BuildingSchool::NumberOfEducators(void)	__thunk_4_NumberOfEducators__18cSC3BuildingSchool	libSimRCI.so	vtable:__vt_18cSC3BuildingSchool.15cISC3EQModifier
+00a577	virtual function thunk (delta:-8) for cSC3BuildingSchool::GetMonthlyUpkeep(void)	__thunk_8_GetMonthlyUpkeep__18cSC3BuildingSchool	libSimRCI.so	vtable:__vt_18cSC3BuildingSchool.19cISC3BuildingBudget
+00a57b	virtual function thunk (delta:-20) for cSC3BuildingSchool::~cSC3BuildingSchool(void)	__thunk_20__._18cSC3BuildingSchool	libSimRCI.so	vtable:__vt_18cSC3BuildingSchool.12cSC3Occupant
+00a59b	cSC3BuildingSchool::~cSC3BuildingSchool(void)	_._18cSC3BuildingSchool	libSimRCI.so	callee
+00a5d7	cSC3BuildingSchool::QueryInterface(unsigned int, void **)	QueryInterface__18cSC3BuildingSchoolUiPPv	libSimRCI.so	tokens:21.8
+00a67c	cSC3BuildingSchool::Save(cISC3City *, cISC3OccPersistInfo &)	Save__18cSC3BuildingSchoolP9cISC3CityR19cISC3OccPersistInfo	libSimRCI.so	vtable-thunk:__vt_18cSC3BuildingSchool.12cSC3Occupant
+00a6bf	virtual function thunk (delta:-20) for cSC3BuildingSchool::SerialRead(cISC3City *, cIGZDBSerialRecord &)	__thunk_20_SerialRead__18cSC3BuildingSchoolP9cISC3CityR18cIGZDBSerialRecord	libSimRCI.so	vtable:__vt_18cSC3BuildingSchool.12cSC3Occupant
+00a6f4	virtual function thunk (delta:-20) for cSC3BuildingSchool::SerialWrite(cISC3City *, cIGZDBSerialRecord &)	__thunk_20_SerialWrite__18cSC3BuildingSchoolP9cISC3CityR18cIGZDBSerialRecord	libSimRCI.so	vtable:__vt_18cSC3BuildingSchool.12cSC3Occupant
+00a72d	virtual function thunk (delta:-4) for cSC3BuildingSchool::NumberOfSimsServed(void)	__thunk_4_NumberOfSimsServed__18cSC3BuildingSchool	libSimRCI.so	vtable:__vt_18cSC3BuildingSchool.15cISC3EQModifier
+00a733	virtual function thunk (delta:-4) for cSC3BuildingSchool::MinAgeServed(void)	__thunk_4_MinAgeServed__18cSC3BuildingSchool	libSimRCI.so	vtable:__vt_18cSC3BuildingSchool.15cISC3EQModifier
+00a739	virtual function thunk (delta:-4) for cSC3BuildingSchool::MaxAgeServed(void)	__thunk_4_MaxAgeServed__18cSC3BuildingSchool	libSimRCI.so	vtable:__vt_18cSC3BuildingSchool.15cISC3EQModifier
+00a73f	virtual function thunk (delta:-8) for cSC3BuildingSchool::SetFundingPercentage(unsigned char)	__thunk_8_SetFundingPercentage__18cSC3BuildingSchoolUc	libSimRCI.so	vtable:__vt_18cSC3BuildingSchool.19cISC3BuildingBudget
+00b5a0	cSC3BuildingSchool::GetDebugInfoStringCount(void)	GetDebugInfoStringCount__18cSC3BuildingSchool	libSimRCI.so	vtable:__vt_18cSC3BuildingSchool
+00b5a3	virtual function thunk (delta:-20) for cSC3BuildingSchool::DoQueryViews(cGZMessage &, cISC3WinQuery *)	__thunk_20_DoQueryViews__18cSC3BuildingSchoolR10cGZMessageP13cISC3WinQuery	libSimRCI.so	vtable:__vt_18cSC3BuildingSchool.12cSC3Occupant
+00b6c6	virtual function thunk (delta:-4) for cSC3BuildingSchool::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__18cSC3BuildingSchoolUiPPv	libSimRCI.so	vtable:__vt_18cSC3BuildingSchool.15cISC3EQModifier
+00b6ce	virtual function thunk (delta:-8) for cSC3BuildingSchool::QueryInterface(unsigned int, void **)	__thunk_8_QueryInterface__18cSC3BuildingSchoolUiPPv	libSimRCI.so	vtable:__vt_18cSC3BuildingSchool.19cISC3BuildingBudget
+00b6d6	virtual function thunk (delta:-12) for cSC3BuildingSchool::QueryInterface(unsigned int, void **)	__thunk_12_QueryInterface__18cSC3BuildingSchoolUiPPv	libSimRCI.so	caller
+00b6de	virtual function thunk (delta:-12) for cSC3BuildingMuseum::AddRef(void)	__thunk_12_AddRef__18cSC3BuildingMuseum	libSimRCI.so	caller
+00b6e6	virtual function thunk (delta:-12) for cSC3BuildingMuseum::Release(void)	__thunk_12_Release__18cSC3BuildingMuseum	libSimRCI.so	caller
+00b6ee	virtual function thunk (delta:-12) for cSC3BuildingMuseum::AsISC3Occupant(void)	__thunk_12_AsISC3Occupant__18cSC3BuildingMuseum	libSimRCI.so	caller
+00b6f6	virtual function thunk (delta:-16) for cSC3BuildingSchool::QueryInterface(unsigned int, void **)	__thunk_16_QueryInterface__18cSC3BuildingSchoolUiPPv	libSimRCI.so	vtable:__vt_18cSC3BuildingSchool.14cISC3CityAgent
+00b6fe	virtual function thunk (delta:-16) for cSC3BuildingMuseum::AddRef(void)	__thunk_16_AddRef__18cSC3BuildingMuseum	libSimRCI.so	vtable:__vt_18cSC3BuildingMuseum.14cISC3CityAgent
+00b706	virtual function thunk (delta:-16) for cSC3BuildingMuseum::Release(void)	__thunk_16_Release__18cSC3BuildingMuseum	libSimRCI.so	vtable:__vt_18cSC3BuildingMuseum.14cISC3CityAgent
+00b70e	virtual function thunk (delta:-20) for cSC3BuildingSchool::QueryInterface(unsigned int, void **)	__thunk_20_QueryInterface__18cSC3BuildingSchoolUiPPv	libSimRCI.so	vtable:__vt_18cSC3BuildingSchool.12cSC3Occupant
+00b716	virtual function thunk (delta:-20) for cSC3BuildingMuseum::AddRef(void)	__thunk_20_AddRef__18cSC3BuildingMuseum	libSimRCI.so	vtable:__vt_18cSC3BuildingMuseum.12cSC3Occupant
+00b71e	virtual function thunk (delta:-20) for cSC3BuildingMuseum::Release(void)	__thunk_20_Release__18cSC3BuildingMuseum	libSimRCI.so	vtable:__vt_18cSC3BuildingMuseum.12cSC3Occupant
+00b72e	virtual function thunk (delta:-20) for cSC3BuildingSchool::Save(cISC3City *, cISC3OccPersistInfo &)	__thunk_20_Save__18cSC3BuildingSchoolP9cISC3CityR19cISC3OccPersistInfo	libSimRCI.so	vtable:__vt_18cSC3BuildingSchool.12cSC3Occupant
+00b736	cSC3CityToolPlaceZone::Execute(void)	Execute__21cSC3CityToolPlaceZone	libSimRCI.so	tokens:8.4
+00b7b9	cSC3CityToolPlaceZone::CVOnActivate(void)	CVOnActivate__21cSC3CityToolPlaceZone	libSimRCI.so	vtable:__vt_21cSC3CityToolPlaceZone
+00b7d0	cSC3CityToolPlaceZone::ExecuteOnMouseUp(cSC3CityBounds const &)	ExecuteOnMouseUp__21cSC3CityToolPlaceZoneRC14cSC3CityBounds	libSimRCI.so	vtable:__vt_21cSC3CityToolPlaceZone
+00b931	cSC3CityToolPlaceZone::ExecuteOnMouseDrag(cSC3CityBounds const &)	ExecuteOnMouseDrag__21cSC3CityToolPlaceZoneRC14cSC3CityBounds	libSimRCI.so	vtable:__vt_21cSC3CityToolPlaceZone
+00b973	cSC3CityToolPlaceZone::ExecuteOnMouseMove(cSC3CityCoord const &)	ExecuteOnMouseMove__21cSC3CityToolPlaceZoneRC13cSC3CityCoord	libSimRCI.so	vtable:__vt_21cSC3CityToolPlaceZone
+00b9d2	cSC3CityToolPlaceZone::ExecuteRectDraw(cSC3CityBounds const &, cSC3CityBounds &)	ExecuteRectDraw__21cSC3CityToolPlaceZoneRC14cSC3CityBoundsR14cSC3CityBounds	libSimRCI.so	vtable:__vt_21cSC3CityToolPlaceZone
+00ba06	cSC3CityToolPlaceZone::CVActiveCursor(unsigned int &)	CVActiveCursor__21cSC3CityToolPlaceZoneRUi	libSimRCI.so	vtable:__vt_21cSC3CityToolPlaceZone
+00ba17	cSC3CityToolPlaceZone::CVIsValidHandlerByView(int, unsigned int) const	CVIsValidHandlerByView__C21cSC3CityToolPlaceZoneiUi	libSimRCI.so	vtable:__vt_21cSC3CityToolPlaceZone
+00ba2c	cSC3CityToolPlaceZone::QueryInterface(unsigned int, void **)	QueryInterface__21cSC3CityToolPlaceZoneUiPPv	libSimRCI.so	vtable:__vt_21cSC3CityToolPlaceZone
+00ba58	cSC3CityToolPlaceZone::AddRef(void)	AddRef__21cSC3CityToolPlaceZone	libSimRCI.so	vtable:__vt_21cSC3CityToolPlaceZone
+00ba60	cSC3CityToolPlaceZone::Release(void)	Release__21cSC3CityToolPlaceZone	libSimRCI.so	vtable:__vt_21cSC3CityToolPlaceZone
+00bae1	cSC3CityToolPlaceZone::~cSC3CityToolPlaceZone(void)	_._21cSC3CityToolPlaceZone	libSimRCI.so	vtable:__vt_21cSC3CityToolPlaceZone
+00bb73	cSC3RCICmdFactory::CreateCommand(unsigned int, unsigned int, void **)	CreateCommand__17cSC3RCICmdFactoryUiUiPPv	libSimRCI.so	tokens:176.7
+00be95	virtual function thunk (delta:-112) for cSC3CityToolPlaceZone::QueryInterface(unsigned int, void **)	__thunk_112_QueryInterface__21cSC3CityToolPlaceZoneUiPPv	libSimRCI.so	vtable:__vt_21cSC3CityToolPlaceZone.14cRZGameCommand
+00be9d	virtual function thunk (delta:-112) for cSC3CityToolPlaceZone::AddRef(void)	__thunk_112_AddRef__21cSC3CityToolPlaceZone	libSimRCI.so	vtable:__vt_21cSC3CityToolPlaceZone.14cRZGameCommand
+00bea5	virtual function thunk (delta:-112) for cSC3CityToolPlaceZone::Release(void)	__thunk_112_Release__21cSC3CityToolPlaceZone	libSimRCI.so	vtable:__vt_21cSC3CityToolPlaceZone.14cRZGameCommand
+00bead	virtual function thunk (delta:-116) for cSC3CityToolPlaceZone::~cSC3CityToolPlaceZone(void)	__thunk_116__._21cSC3CityToolPlaceZone	libSimRCI.so	caller
+00beb5	virtual function thunk (delta:-116) for cSC3CityToolPlaceZone::Release(void)	__thunk_116_Release__21cSC3CityToolPlaceZone	libSimRCI.so	caller
+00bebd	virtual function thunk (delta:-116) for cSC3CityToolPlaceZone::AddRef(void)	__thunk_116_AddRef__21cSC3CityToolPlaceZone	libSimRCI.so	caller
+00e7b3	cRZCOMDllDirector::OnUnload(void)	OnUnload__17cRZCOMDllDirector	libSimRCI.so	vtable:__vt_14cSRCOMDirector
+00e7b6	cSC3CommercialLayer::GetLayerType(void)	GetLayerType__19cSC3CommercialLayer	libSimRCI.so	tokens:8.4
+00e7bc	cSC3CommercialLayer::GetDevelopmentCap(void)	GetDevelopmentCap__19cSC3CommercialLayer	libSimRCI.so	vtable:__vt_19cSC3CommercialLayer
+00e842	cSC3CommercialLayer::Init(cISC3City *)	Init__19cSC3CommercialLayerP9cISC3City	libSimRCI.so	tokens:14.6
+00eccd	cSC3CommercialLayer::LoadINI(void)	LoadINI__19cSC3CommercialLayer	libSimRCI.so	tokens:8.4
+00ee95	cSC3CommercialLayer::QueryInterface(unsigned int, void **)	QueryInterface__19cSC3CommercialLayerUiPPv	libSimRCI.so	tokens:8.4
+00efe2	virtual function thunk (delta:-12) for cSC3CommercialLayer::QueryInterface(unsigned int, void **)	__thunk_12_QueryInterface__19cSC3CommercialLayerUiPPv	libSimRCI.so	caller
+01591c	cSC3IndustrialLayer::GetLayerType(void)	GetLayerType__19cSC3IndustrialLayer	libSimRCI.so	tokens:8.4
+015922	cSC3IndustrialLayer::GetDevelopmentCap(void)	GetDevelopmentCap__19cSC3IndustrialLayer	libSimRCI.so	vtable:__vt_19cSC3IndustrialLayer
+0159a5	cSC3IndustrialLayer::Init(cISC3City *)	Init__19cSC3IndustrialLayerP9cISC3City	libSimRCI.so	tokens:14.7
+015dc0	cSC3IndustrialLayer::LoadINI(void)	LoadINI__19cSC3IndustrialLayer	libSimRCI.so	tokens:8.4
+016061	cSC3IndustrialLayer::EndOfMonth(void)	EndOfMonth__19cSC3IndustrialLayer	libSimRCI.so	tokens:16.8
+016109	cSC3IndustrialLayer::QueryInterface(unsigned int, void **)	QueryInterface__19cSC3IndustrialLayerUiPPv	libSimRCI.so	tokens:8.4
+01625b	cSC3IndAreaManipulator::Apply(cISC3CityAgent &)	Apply__22cSC3IndAreaManipulatorR14cISC3CityAgent	libSimRCI.so	caller
+016268	virtual function thunk (delta:-12) for cSC3IndustrialLayer::QueryInterface(unsigned int, void **)	__thunk_12_QueryInterface__19cSC3IndustrialLayerUiPPv	libSimRCI.so	caller
+0188d3	cSC3IndZoneDeveloper::findBestLandUse(unsigned char, bool, bool)	findBestLandUse__20cSC3IndZoneDeveloperUcbT2	libSimRCI.so	tokens:101.0
+019ccb	cSC3LandfillZoneDeveloper::SimulationBegin(void)	SimulationBegin__25cSC3LandfillZoneDeveloper	libSimRCI.so	tokens:8.4
+01b2b9	cSC3LandValueLayer::cSC3LandValueLayer(void)	__18cSC3LandValueLayer	libSimRCI.so	vtable-user:__vt_18cSC3LandValueLayer
+01b3c5	cSC3LandValueLayer::Init(cISC3City *, unsigned char const &)	Init__18cSC3LandValueLayerP9cISC3CityRCUc	libSimRCI.so	vtable:__vt_18cSC3LandValueLayer
+01b3d5	cSC3LandValueLayer::CellCountX(void) const	CellCountX__C18cSC3LandValueLayer	libSimRCI.so	vtable:__vt_18cSC3LandValueLayer
+01b3d9	cSC3LandValueLayer::CellCountZ(void) const	CellCountZ__C18cSC3LandValueLayer	libSimRCI.so	vtable:__vt_18cSC3LandValueLayer
+01b3dd	cSC3LandValueLayer::GetValueSint32(unsigned int, unsigned int, int &) const	GetValueSint32__C18cSC3LandValueLayerUiUiRi	libSimRCI.so	tokens:8.4
+01b40c	cSC3LandValueLayer::SetAllCells(unsigned char const &)	SetAllCells__18cSC3LandValueLayerRCUc	libSimRCI.so	vtable:__vt_18cSC3LandValueLayer
+01b44f	cSC3LandValueLayer::SerialRead(cIGZDBSerialRecord &)	SerialRead__18cSC3LandValueLayerR18cIGZDBSerialRecord	libSimRCI.so	vtable:__vt_18cSC3LandValueLayer
+01b45e	cSC3LandValueLayer::~cSC3LandValueLayer(void)	_._18cSC3LandValueLayer	libSimRCI.so	vtable:__vt_18cSC3LandValueLayer
+01b47a	cSC3CityCellMapSized<short>::cSC3CityCellMapSized(int)	__t20cSC3CityCellMapSized1Zsi	libSimRCI.so	vtable-user:__vt_t20cSC3CityCellMapSized1Zs
+01b4b4	cSC3CityCellMapSized<unsigned char>::SerialRead(cIGZDBSerialRecord &)	SerialRead__t20cSC3CityCellMapSized1ZUcR18cIGZDBSerialRecord	libSimRCI.so	vtable-thunk:__vt_t20cSC3CityCellMapSized1ZUc
+01b4e9	cSC3CityCellMapSized<unsigned char>::SerialWrite(cIGZDBSerialRecord &) const	SerialWrite__Ct20cSC3CityCellMapSized1ZUcR18cIGZDBSerialRecord	libSimRCI.so	vtable-thunk:__vt_t20cSC3CityCellMapSized1ZUc
+01b51e	cSC3CityCellMapSized<short>::QueryInterface(unsigned int, void **)	QueryInterface__t20cSC3CityCellMapSized1ZsUiPPv	libSimRCI.so	tokens:15.6
+01c854	cSC3LandValueLayer::Init(cISC3City *)	Init__18cSC3LandValueLayerP9cISC3City	libSimRCI.so	tokens:32.7
+01d132	cSC3LandValueLayer::Shutdown(void)	Shutdown__18cSC3LandValueLayer	libSimRCI.so	vtable:__vt_18cSC3LandValueLayer
+01d720	cSC3LandValueLayer::GetValue(unsigned int, unsigned int, unsigned char &) const	GetValue__C18cSC3LandValueLayerUiUiRUc	libSimRCI.so	vtable:__vt_18cSC3LandValueLayer
+01d748	cSC3LandValueLayer::QueryInterface(unsigned int, void **)	QueryInterface__18cSC3LandValueLayerUiPPv	libSimRCI.so	tokens:23.3
+01deca	cSC3DailyLandValueManipulator::Apply(cISC3CityAgent &)	Apply__29cSC3DailyLandValueManipulatorR14cISC3CityAgent	libSimRCI.so	tokens:15.6
+01e6d8	cSC3DailyLandValueManipulator::QueryInterface(unsigned int, void **)	QueryInterface__29cSC3DailyLandValueManipulatorUiPPv	libSimRCI.so	vtable:__vt_29cSC3DailyLandValueManipulator
+01eb22	cSC3BuildingPier::AddRef(void)	AddRef__16cSC3BuildingPier	libSimRCI.so	vtable-thunk:__vt_16cSC3BuildingPier.14cISC3CityAgent
+01eb39	cSC3BuildingPier::Release(void)	Release__16cSC3BuildingPier	libSimRCI.so	vtable-thunk:__vt_16cSC3BuildingPier.14cISC3CityAgent
+01eb69	cSC3CityCellMapSized<unsigned char>::Init(cISC3City *, unsigned char const &)	Init__t20cSC3CityCellMapSized1ZUcP9cISC3CityRCUc	libSimRCI.so	vtable:__vt_t20cSC3CityCellMapSized1ZUc
+01ebe6	cSC3CityCellMapSized<short>::Shutdown(void)	Shutdown__t20cSC3CityCellMapSized1Zs	libSimRCI.so	vtable:__vt_t20cSC3CityCellMapSized1Zs
+01ec08	cSC3CityCellMapSized<unsigned char>::GetValueSint32(unsigned int, unsigned int, int &) const	GetValueSint32__Ct20cSC3CityCellMapSized1ZUcUiUiRi	libSimRCI.so	vtable:__vt_t20cSC3CityCellMapSized1ZUc
+01ec31	cSC3CityCellMapSized<unsigned char>::GetValue(unsigned int, unsigned int, unsigned char &) const	GetValue__Ct20cSC3CityCellMapSized1ZUcUiUiRUc	libSimRCI.so	vtable:__vt_t20cSC3CityCellMapSized1ZUc
+01ecee	cSC3ZoneLayer::ValidRect(unsigned int, unsigned int, unsigned int, unsigned int) const	ValidRect__C13cSC3ZoneLayerUiUiUiUi	libSimRCI.so	vtable:__vt_13cSC3ZoneLayer
+01ed0c	cSC3LandValueLayer::SerialWrite(cIGZDBSerialRecord &) const	SerialWrite__C18cSC3LandValueLayerR18cIGZDBSerialRecord	libSimRCI.so	vtable:__vt_18cSC3LandValueLayer
+01ed1b	cSC3CityCellMapSized<short>::Init(cISC3City *, short const &)	Init__t20cSC3CityCellMapSized1ZsP9cISC3CityRCs	libSimRCI.so	vtable:__vt_t20cSC3CityCellMapSized1Zs
+01ed98	cSC3CityCellMapSized<short>::GetValueSint32(unsigned int, unsigned int, int &) const	GetValueSint32__Ct20cSC3CityCellMapSized1ZsUiUiRi	libSimRCI.so	vtable:__vt_t20cSC3CityCellMapSized1Zs
+01edc1	cSC3CityCellMapSized<short>::GetValue(unsigned int, unsigned int, short &) const	GetValue__Ct20cSC3CityCellMapSized1ZsUiUiRs	libSimRCI.so	vtable:__vt_t20cSC3CityCellMapSized1Zs
+01ee43	cSC3CityCellMapSized<short>::SetAllCells(short const &)	SetAllCells__t20cSC3CityCellMapSized1ZsRCs	libSimRCI.so	vtable:__vt_t20cSC3CityCellMapSized1Zs
+01eea2	cSC3CityCellMapSized<short>::SerialRead(cIGZDBSerialRecord &)	SerialRead__t20cSC3CityCellMapSized1ZsR18cIGZDBSerialRecord	libSimRCI.so	vtable:__vt_t20cSC3CityCellMapSized1Zs
+01eeb1	cSC3CityCellMapSized<short>::SerialWrite(cIGZDBSerialRecord &) const	SerialWrite__Ct20cSC3CityCellMapSized1ZsR18cIGZDBSerialRecord	libSimRCI.so	vtable:__vt_t20cSC3CityCellMapSized1Zs
+01f05e	cSC3CityCellMapSized<unsigned char>::~cSC3CityCellMapSized(void)	_._t20cSC3CityCellMapSized1ZUc	libSimRCI.so	vtable:__vt_t20cSC3CityCellMapSized1ZUc
+01f07b	cSC3CityCellMapSized<short>::~cSC3CityCellMapSized(void)	_._t20cSC3CityCellMapSized1Zs	libSimRCI.so	vtable:__vt_t20cSC3CityCellMapSized1Zs
+01f4b1	virtual function thunk (delta:-28) for cSC3LandValueLayer::Release(void)	__thunk_28_Release__18cSC3LandValueLayer	libSimRCI.so	vtable:__vt_18cSC3LandValueLayer.19cISC3LandValueLayer
+01f4b9	virtual function thunk (delta:-28) for cSC3LandValueLayer::CellCountX(void) const	__thunk_28_CellCountX__C18cSC3LandValueLayer	libSimRCI.so	vtable:__vt_18cSC3LandValueLayer.19cISC3LandValueLayer
+01f4c1	virtual function thunk (delta:-28) for cSC3LandValueLayer::CellCountZ(void) const	__thunk_28_CellCountZ__C18cSC3LandValueLayer	libSimRCI.so	caller
+01f4c9	virtual function thunk (delta:-28) for cSC3LandValueLayer::GetValueSint32(unsigned int, unsigned int, int &) const	__thunk_28_GetValueSint32__C18cSC3LandValueLayerUiUiRi	libSimRCI.so	caller
+01f4f1	virtual function thunk (delta:-28) for cSC3LandValueLayer::SerialWrite(cIGZDBSerialRecord &) const	__thunk_28_SerialWrite__C18cSC3LandValueLayerR18cIGZDBSerialRecord	libSimRCI.so	caller
+01f4f9	virtual function thunk (delta:-28) for cSC3LandValueLayer::Init(cISC3City *, unsigned char const &)	__thunk_28_Init__18cSC3LandValueLayerP9cISC3CityRCUc	libSimRCI.so	caller
+01f509	virtual function thunk (delta:-28) for cSC3LandValueLayer::GetValue(unsigned int, unsigned int, unsigned char &) const	__thunk_28_GetValue__C18cSC3LandValueLayerUiUiRUc	libSimRCI.so	caller
+01f519	virtual function thunk (delta:-28) for cSC3LandValueLayer::SetAllCells(unsigned char const &)	__thunk_28_SetAllCells__18cSC3LandValueLayerRCUc	libSimRCI.so	caller
+01f579	cSC3LandValueLayer::DoQueryInfo(cGZMessage &, cIGZUnknown *)	DoQueryInfo__18cSC3LandValueLayerR10cGZMessageP11cIGZUnknown	libSimRCI.so	caller
+01f5e5	cSC3LandValueLayer::on_window_create(cGZMessage &, cIGZUnknown *)	on_window_create__18cSC3LandValueLayerR10cGZMessageP11cIGZUnknown	libSimRCI.so	tokens:67.0
+020f96	cSC3ResidentialLayer::SchoolIsOnStrike(void)	SchoolIsOnStrike__20cSC3ResidentialLayer	libSimRCI.so	vtable:__vt_20cSC3ResidentialLayer
+020f9d	cSC3ResidentialLayer::CollegeIsOnStrike(void)	CollegeIsOnStrike__20cSC3ResidentialLayer	libSimRCI.so	vtable:__vt_20cSC3ResidentialLayer
+020fa4	cSC3ResidentialLayer::HealthIsOnStrike(void)	HealthIsOnStrike__20cSC3ResidentialLayer	libSimRCI.so	vtable:__vt_20cSC3ResidentialLayer
+020fab	cSC3ResidentialLayer::GetHealthSystemRating(void)	GetHealthSystemRating__20cSC3ResidentialLayer	libSimRCI.so	vtable:__vt_20cSC3ResidentialLayer
+020fb3	cSC3ResidentialLayer::GetSchoolSystemRating(void)	GetSchoolSystemRating__20cSC3ResidentialLayer	libSimRCI.so	vtable:__vt_20cSC3ResidentialLayer
+020fbb	cSC3ResidentialLayer::GetCollegeSystemRating(void)	GetCollegeSystemRating__20cSC3ResidentialLayer	libSimRCI.so	vtable:__vt_20cSC3ResidentialLayer
+020fc3	cSC3ResidentialLayer::GetPatientCount(void)	GetPatientCount__20cSC3ResidentialLayer	libSimRCI.so	vtable:__vt_20cSC3ResidentialLayer
+020fca	cSC3ResidentialLayer::GetDoctorCount(void)	GetDoctorCount__20cSC3ResidentialLayer	libSimRCI.so	vtable:__vt_20cSC3ResidentialLayer
+020fd1	cSC3ResidentialLayer::GetSchoolStudentCount(void)	GetSchoolStudentCount__20cSC3ResidentialLayer	libSimRCI.so	vtable:__vt_20cSC3ResidentialLayer
+020fd8	cSC3ResidentialLayer::GetTeacherCount(void)	GetTeacherCount__20cSC3ResidentialLayer	libSimRCI.so	vtable:__vt_20cSC3ResidentialLayer
+020fdf	cSC3ResidentialLayer::GetCollegeStudentCount(void)	GetCollegeStudentCount__20cSC3ResidentialLayer	libSimRCI.so	vtable:__vt_20cSC3ResidentialLayer
+020fe6	cSC3ResidentialLayer::GetProfessorCount(void)	GetProfessorCount__20cSC3ResidentialLayer	libSimRCI.so	vtable:__vt_20cSC3ResidentialLayer
+020fed	cSC3ResidentialLayer::GetHealthSystemCapacity(void)	GetHealthSystemCapacity__20cSC3ResidentialLayer	libSimRCI.so	vtable:__vt_20cSC3ResidentialLayer
+020ff4	cSC3ResidentialLayer::GetSchoolSystemCapacity(void)	GetSchoolSystemCapacity__20cSC3ResidentialLayer	libSimRCI.so	vtable:__vt_20cSC3ResidentialLayer
+020ffb	cSC3ResidentialLayer::GetCollegeSystemCapacity(void)	GetCollegeSystemCapacity__20cSC3ResidentialLayer	libSimRCI.so	vtable:__vt_20cSC3ResidentialLayer
+021002	cSC3ResidentialLayer::GetLibrarySystemCapacity(void)	GetLibrarySystemCapacity__20cSC3ResidentialLayer	libSimRCI.so	vtable:__vt_20cSC3ResidentialLayer
+021009	cSC3ResidentialLayer::GetMuseumSystemCapacity(void)	GetMuseumSystemCapacity__20cSC3ResidentialLayer	libSimRCI.so	vtable:__vt_20cSC3ResidentialLayer
+021010	cSC3ResidentialLayer::GetDevelopmentCap(void)	GetDevelopmentCap__20cSC3ResidentialLayer	libSimRCI.so	vtable:__vt_20cSC3ResidentialLayer
+021018	cSC3ResidentialLayer::GetTotalCityEducationUpkeep(void)	GetTotalCityEducationUpkeep__20cSC3ResidentialLayer	libSimRCI.so	vtable:__vt_20cSC3ResidentialLayer
+02101f	cSC3ResidentialLayer::GetTotalCityHealthUpkeep(void)	GetTotalCityHealthUpkeep__20cSC3ResidentialLayer	libSimRCI.so	vtable:__vt_20cSC3ResidentialLayer
+021165	cSC3ResidentialLayer::Init(cISC3City *)	Init__20cSC3ResidentialLayerP9cISC3City	libSimRCI.so	caller
+0214e0	cSC3ResidentialLayer::createHistoryObjects(void)	createHistoryObjects__20cSC3ResidentialLayer	libSimRCI.so	tokens:66.4
+022537	cSC3ResidentialLayer::SimulationBegin(void)	SimulationBegin__20cSC3ResidentialLayer	libSimRCI.so	tokens:16.8
+024046	cSC3ResidentialLayer::ChanceOfSchoolStrike(void)	ChanceOfSchoolStrike__20cSC3ResidentialLayer	libSimRCI.so	vtable:__vt_20cSC3ResidentialLayer
+0240a1	cSC3ResidentialLayer::ChanceOfHealthStrike(void)	ChanceOfHealthStrike__20cSC3ResidentialLayer	libSimRCI.so	vtable:__vt_20cSC3ResidentialLayer
+0240fc	cSC3ResidentialLayer::ChanceOfCollegeStrike(void)	ChanceOfCollegeStrike__20cSC3ResidentialLayer	libSimRCI.so	vtable:__vt_20cSC3ResidentialLayer
+024157	cSC3ResidentialLayer::EndSchoolStrike(void)	EndSchoolStrike__20cSC3ResidentialLayer	libSimRCI.so	vtable:__vt_20cSC3ResidentialLayer
+024196	cSC3ResidentialLayer::EndCollegeStrike(void)	EndCollegeStrike__20cSC3ResidentialLayer	libSimRCI.so	vtable:__vt_20cSC3ResidentialLayer
+0241d5	cSC3ResidentialLayer::EndHealthStrike(void)	EndHealthStrike__20cSC3ResidentialLayer	libSimRCI.so	vtable:__vt_20cSC3ResidentialLayer
+024214	cSC3ResidentialLayer::QueryInterface(unsigned int, void **)	QueryInterface__20cSC3ResidentialLayerUiPPv	libSimRCI.so	vtable:__vt_20cSC3ResidentialLayer
+024347	cSC3ResidentialLayer::EndOfMonth(void)	EndOfMonth__20cSC3ResidentialLayer	libSimRCI.so	tokens:57.5
+025199	cSC3ResidentialLayer::GetPopulation(void)	GetPopulation__20cSC3ResidentialLayer	libSimRCI.so	vtable:__vt_20cSC3ResidentialLayer
+0251a8	cSC3ResidentialLayer::GetWorkforcePopPct(void)	GetWorkforcePopPct__20cSC3ResidentialLayer	libSimRCI.so	vtable:__vt_20cSC3ResidentialLayer
+0251b5	cSC3ResidentialLayer::GetAgeCohortPopPct(unsigned char, unsigned char)	GetAgeCohortPopPct__20cSC3ResidentialLayerUcUc	libSimRCI.so	vtable:__vt_20cSC3ResidentialLayer
+0251f6	cSC3ResidentialLayer::GetWorkforceEQ(void)	GetWorkforceEQ__20cSC3ResidentialLayer	libSimRCI.so	vtable:__vt_20cSC3ResidentialLayer
+025203	cSC3ResidentialLayer::GetAgeCohortEQ(unsigned char, unsigned char)	GetAgeCohortEQ__20cSC3ResidentialLayerUcUc	libSimRCI.so	vtable:__vt_20cSC3ResidentialLayer
+025292	cSC3ResidentialLayer::GetWorkforceLE(void)	GetWorkforceLE__20cSC3ResidentialLayer	libSimRCI.so	vtable:__vt_20cSC3ResidentialLayer
+02529f	cSC3ResidentialLayer::GetAgeCohortLE(unsigned char, unsigned char)	GetAgeCohortLE__20cSC3ResidentialLayerUcUc	libSimRCI.so	vtable:__vt_20cSC3ResidentialLayer
+02532e	cSC3ResidentialLayer::resetDemographics(void)	resetDemographics__20cSC3ResidentialLayer	libSimRCI.so	tokens:8.4
+025451	cSC3ResidentialLayer::SetEducationFundingPercentage(unsigned char)	SetEducationFundingPercentage__20cSC3ResidentialLayerUc	libSimRCI.so	vtable:__vt_20cSC3ResidentialLayer
+0254ff	cSC3ResidentialLayer::SetHealthFundingPercentage(unsigned char)	SetHealthFundingPercentage__20cSC3ResidentialLayerUc	libSimRCI.so	vtable:__vt_20cSC3ResidentialLayer
+02555b	cSC3ResidentialLayer::GetStrikingSchoolBuildings(cISC3Occupant **, unsigned int, unsigned int &)	GetStrikingSchoolBuildings__20cSC3ResidentialLayerPP13cISC3OccupantUiRUi	libSimRCI.so	vtable:__vt_20cSC3ResidentialLayer
+025605	cSC3ResidentialLayer::GetStrikingCollegeBuildings(cISC3Occupant **, unsigned int, unsigned int &)	GetStrikingCollegeBuildings__20cSC3ResidentialLayerPP13cISC3OccupantUiRUi	libSimRCI.so	vtable:__vt_20cSC3ResidentialLayer
+0256af	cSC3ResidentialLayer::GetStrikingHealthBuildings(cISC3Occupant **, unsigned int, unsigned int &)	GetStrikingHealthBuildings__20cSC3ResidentialLayerPP13cISC3OccupantUiRUi	libSimRCI.so	vtable:__vt_20cSC3ResidentialLayer
+025c84	cSC3ResAreaManipulator::Apply(cISC3CityAgent &)	Apply__22cSC3ResAreaManipulatorR14cISC3CityAgent	libSimRCI.so	caller
+025cba	cSC3ResidentialValve::~cSC3ResidentialValve(void)	_._20cSC3ResidentialValve	libSimRCI.so	vtable:__vt_20cSC3ResidentialValve
+025d41	cSC3ResidentialValve::Init(cISC3City *, unsigned int, cISC3CityLayer *)	Init__20cSC3ResidentialValveP9cISC3CityUiP14cISC3CityLayer	libSimRCI.so	tokens:15.0
+025dcd	cSC3ResidentialValve::Shutdown(void)	Shutdown__20cSC3ResidentialValve	libSimRCI.so	vtable:__vt_20cSC3ResidentialValve
+025e04	cSC3ResidentialValve::SimulationBegin(void)	SimulationBegin__20cSC3ResidentialValve	libSimRCI.so	vtable:__vt_20cSC3ResidentialValve
+025e2f	cSC3ResidentialValve::SerialRead(cISC3City *, cIGZDBSerialRecord &)	SerialRead__20cSC3ResidentialValveP9cISC3CityR18cIGZDBSerialRecord	libSimRCI.so	vtable:__vt_20cSC3ResidentialValve
+025e3f	cSC3ResidentialValve::SerialWrite(cISC3City *, cIGZDBSerialRecord &) const	SerialWrite__C20cSC3ResidentialValveP9cISC3CityR18cIGZDBSerialRecord	libSimRCI.so	vtable:__vt_20cSC3ResidentialValve
+025e4f	cSC3ResidentialValve::EndOfMonth(void)	EndOfMonth__20cSC3ResidentialValve	libSimRCI.so	vtable:__vt_20cSC3ResidentialValve
+025e57	cSC3ResidentialValve::AddToSupplyValue(int)	AddToSupplyValue__20cSC3ResidentialValvei	libSimRCI.so	vtable:__vt_20cSC3ResidentialValve
+025e9a	cSC3ResidentialValve::AddToDemandValue(int)	AddToDemandValue__20cSC3ResidentialValvei	libSimRCI.so	vtable:__vt_20cSC3ResidentialValve
+02df70	virtual function thunk (delta:-4) for cSC3BuildingHospital::GetMonthlyUpkeep(void)	__thunk_4_GetMonthlyUpkeep__20cSC3BuildingHospital	libSimRCI.so	vtable:__vt_20cSC3BuildingHospital.19cISC3BuildingBudget
+02dff3	cSC3ValveLayer::StaticInit(cISC3CityDefinition *)	StaticInit__14cSC3ValveLayerP19cISC3CityDefinition	libSimRCI.so	tokens:8.4
+02e9ab	cSC3CityCellMapSized<unsigned char>::QueryInterface(unsigned int, void **)	QueryInterface__t20cSC3CityCellMapSized1ZUcUiPPv	libSimRCI.so	vtable:__vt_t20cSC3CityCellMapSized1ZUc
+03035a	cSC3ZoneLayer::SerialRead(cIGZDBSerialRecord &)	SerialRead__13cSC3ZoneLayerR18cIGZDBSerialRecord	libSimRCI.so	vtable:__vt_13cSC3ZoneLayer
+030369	cSC3ZoneLayer::SerialWrite(cIGZDBSerialRecord &) const	SerialWrite__C13cSC3ZoneLayerR18cIGZDBSerialRecord	libSimRCI.so	vtable:__vt_13cSC3ZoneLayer
+0312c2	cSC3ZoneLayer::CellCountX(void) const	CellCountX__C13cSC3ZoneLayer	libSimRCI.so	vtable:__vt_13cSC3ZoneLayer
+0312c9	cSC3ZoneLayer::CellCountZ(void) const	CellCountZ__C13cSC3ZoneLayer	libSimRCI.so	vtable:__vt_13cSC3ZoneLayer
+0312d0	cSC3ZoneLayer::GetValueSint32(unsigned int, unsigned int, int &) const	GetValueSint32__C13cSC3ZoneLayerUiUiRi	libSimRCI.so	vtable:__vt_13cSC3ZoneLayer
+0312ee	cSC3ZoneLayer::GetValue(unsigned int, unsigned int, unsigned char &) const	GetValue__C13cSC3ZoneLayerUiUiRUc	libSimRCI.so	vtable:__vt_13cSC3ZoneLayer
+031315	cSC3ZoneLayer::Init(cISC3City *, unsigned char const &)	Init__13cSC3ZoneLayerP9cISC3CityRCUc	libSimRCI.so	vtable:__vt_13cSC3ZoneLayer
+031325	cSC3ZoneLayer::~cSC3ZoneLayer(void)	_._13cSC3ZoneLayer	libSimRCI.so	vtable:__vt_13cSC3ZoneLayer
+031499	virtual function thunk (delta:-4) for cSC3BuildingPier::Simulate(int)	__thunk_4_Simulate__16cSC3BuildingPieri	libSimRCI.so	vtable:__vt_16cSC3BuildingPier.14cISC3CityAgent
+0314ae	virtual function thunk (delta:-4) for cSC3BuildingPier::MinimumExecutionInterval(void)	__thunk_4_MinimumExecutionInterval__16cSC3BuildingPier	libSimRCI.so	vtable:__vt_16cSC3BuildingPier.14cISC3CityAgent
+0314b2	cSC3ZoneLayer::DoMessage(cGZMessage &)	DoMessage__13cSC3ZoneLayerR10cGZMessage	libSimRCI.so	tokens:15.2
+03189c	cSC3OccTestDefault::QueryInterface(unsigned int, void **)	QueryInterface__18cSC3OccTestDefaultUiPPv	libSimRCI.so	tokens:8.4
+0318c1	cSC3OccTestDefault::AddRef(void)	AddRef__18cSC3OccTestDefault	libSimRCI.so	vtable:__vt_18cSC3OccTestDefault
+0318c8	cSC3OccTestDefault::Release(void)	Release__18cSC3OccTestDefault	libSimRCI.so	vtable:__vt_18cSC3OccTestDefault
+0318e8	cSC3ZoneLayer::Init(cISC3City *)	Init__13cSC3ZoneLayerP9cISC3City	libSimRCI.so	tokens:84.1
+031b1d	cSC3SimTransportFilter::Test(cISC3Occupant *)	Test__22cSC3SimTransportFilterP13cISC3Occupant	libSimRCI.so	tokens:40.8
+031ba8	cSC3OccTestDefault::~cSC3OccTestDefault(void)	_._18cSC3OccTestDefault	libSimRCI.so	vtable:__vt_18cSC3OccTestDefault
+032479	cSC3ZoneLayer::QueryInterface(unsigned int, void **)	QueryInterface__13cSC3ZoneLayerUiPPv	libSimRCI.so	tokens:31.3
+03250f	cSC3ZoneLayer::ReadZoneDeveloperDescriptions(bool)	ReadZoneDeveloperDescriptions__13cSC3ZoneLayerb	libSimRCI.so	tokens:8.4
+032719	cSC3ZoneLayer::Shutdown(void)	Shutdown__13cSC3ZoneLayer	libSimRCI.so	vtable:__vt_13cSC3ZoneLayer
+032a96	cSC3ZoneLayer::SetAllCells(unsigned char const &)	SetAllCells__13cSC3ZoneLayerRCUc	libSimRCI.so	vtable:__vt_13cSC3ZoneLayer
+03372a	cSC3BuildingPier::Simulate(int)	Simulate__16cSC3BuildingPieri	libSimRCI.so	vtable-thunk:__vt_16cSC3BuildingPier.14cISC3CityAgent
+0342e2	virtual function thunk (delta:-16) for cSC3ZoneLayer::CellCountX(void) const	__thunk_16_CellCountX__C13cSC3ZoneLayer	libSimRCI.so	caller
+0342ea	virtual function thunk (delta:-16) for cSC3ZoneLayer::CellCountZ(void) const	__thunk_16_CellCountZ__C13cSC3ZoneLayer	libSimRCI.so	caller
+0342f2	virtual function thunk (delta:-16) for cSC3ZoneLayer::GetValueSint32(unsigned int, unsigned int, int &) const	__thunk_16_GetValueSint32__C13cSC3ZoneLayerUiUiRi	libSimRCI.so	caller
+034312	virtual function thunk (delta:-16) for cSC3ZoneLayer::SerialRead(cIGZDBSerialRecord &)	__thunk_16_SerialRead__13cSC3ZoneLayerR18cIGZDBSerialRecord	libSimRCI.so	caller
+03431a	virtual function thunk (delta:-16) for cSC3ZoneLayer::SerialWrite(cIGZDBSerialRecord &) const	__thunk_16_SerialWrite__C13cSC3ZoneLayerR18cIGZDBSerialRecord	libSimRCI.so	caller
+034322	virtual function thunk (delta:-16) for cSC3ZoneLayer::Init(cISC3City *, unsigned char const &)	__thunk_16_Init__13cSC3ZoneLayerP9cISC3CityRCUc	libSimRCI.so	caller
+034332	virtual function thunk (delta:-16) for cSC3ZoneLayer::GetValue(unsigned int, unsigned int, unsigned char &) const	__thunk_16_GetValue__C13cSC3ZoneLayerUiUiRUc	libSimRCI.so	caller
+034342	virtual function thunk (delta:-16) for cSC3ZoneLayer::SetAllCells(unsigned char const &)	__thunk_16_SetAllCells__13cSC3ZoneLayerRCUc	libSimRCI.so	caller
+03438a	virtual function thunk (delta:-24) for cSC3ZoneLayer::~cSC3ZoneLayer(void)	__thunk_24__._13cSC3ZoneLayer	libSimRCI.so	caller
+034392	virtual function thunk (delta:-4) for cSC3BuildingPier::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__16cSC3BuildingPierUiPPv	libSimRCI.so	vtable:__vt_16cSC3BuildingPier.14cISC3CityAgent
+03439a	virtual function thunk (delta:-4) for cSC3BuildingPier::AddRef(void)	__thunk_4_AddRef__16cSC3BuildingPier	libSimRCI.so	vtable:__vt_16cSC3BuildingPier.14cISC3CityAgent
+0343a2	virtual function thunk (delta:-4) for cSC3BuildingPier::Release(void)	__thunk_4_Release__16cSC3BuildingPier	libSimRCI.so	vtable:__vt_16cSC3BuildingPier.14cISC3CityAgent
+034402	cSC3ZoneLayer::StaticInit(cISC3CityDefinition *)	StaticInit__13cSC3ZoneLayerP19cISC3CityDefinition	libSimRCI.so	caller
+03591f	cSC3ZoneLayer::PlaceZone(int, cSC3CityBounds const &, int &, bool)	PlaceZone__13cSC3ZoneLayeriRC14cSC3CityBoundsRib	libSimRCI.so	tokens:14.9
+0361a4	cSC3ZoneLayer::static_init_RCIui(void)	static_init_RCIui__13cSC3ZoneLayer	libSimRCI.so	tokens:16.8
+036357	cSC3CityCellMapSized<short>::AddRef(void)	AddRef__t20cSC3CityCellMapSized1Zs	libSimRCI.so	vtable-thunk:__vt_t20cSC3CityCellMapSized1Zs
+036382	RZGetCOMDllDirector_SimRCI(void)	RZGetCOMDllDirector_SimRCI__Fv	libSimRCI.so	tokens:302.9
+036655	cSRCOMDirector::GetDirectorID(void) const	GetDirectorID__C14cSRCOMDirector	libSimRCI.so	tokens:8.4
+03665b	cSRCOMDirector::AppRegister(cIGZRegistry *)	AppRegister__14cSRCOMDirectorP12cIGZRegistry	libSimRCI.so	vtable:__vt_14cSRCOMDirector
+036702	cSRCOMDirector::CreatecSC3LandValueLayer(void)	CreatecSC3LandValueLayer__14cSRCOMDirector	libSimRCI.so	caller
+036d3a	cSRCOMDirector::CreatecSC3BuildingSchool(void)	CreatecSC3BuildingSchool__14cSRCOMDirector	libSimRCI.so	caller
+036db0	cSRCOMDirector::CreatecSC3BuildingMuseum(void)	CreatecSC3BuildingMuseum__14cSRCOMDirector	libSimRCI.so	caller
+036deb	cSRCOMDirector::CreatecSC3BuildingCollege(void)	CreatecSC3BuildingCollege__14cSRCOMDirector	libSimRCI.so	caller
+036e26	cSRCOMDirector::CreatecSC3BuildingHospital(void)	CreatecSC3BuildingHospital__14cSRCOMDirector	libSimRCI.so	caller
+036e93	cSRCOMDirector::~cSRCOMDirector(void)	_._14cSRCOMDirector	libSimRCI.so	vtable:__vt_14cSRCOMDirector
+036ecb	virtual function thunk (delta:-4) for cRZCOMDllDirector::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__17cRZCOMDllDirectorUiPPv	libSimRCI.so	caller
+039cb5	cRZCOMDllDirector::OnStart(cIGZCOM *)	OnStart__17cRZCOMDllDirectorP7cIGZCOM	libSimRCI.so	tokens:16.8
+03af8b	cRZCOMDllDirector::QueryInterface(unsigned int, void **)	QueryInterface__17cRZCOMDllDirectorUiPPv	libSimRCI.so	tokens:16.8
+03afcc	cRZCOMDllDirector::FrameWork(void)	FrameWork__17cRZCOMDllDirector	libSimRCI.so	vtable:__vt_14cSRCOMDirector
+03afd5	cRZCOMDllDirector::RemoveRef(void)	RemoveRef__17cRZCOMDllDirector	libSimRCI.so	vtable:__vt_14cSRCOMDirector
+03afe4	cRZCOMDllDirector::RefCount(void)	RefCount__17cRZCOMDllDirector	libSimRCI.so	vtable:__vt_14cSRCOMDirector
+03afe8	cRZCOMDllDirector::InitializeCOM(cIGZCOM *, cIGZString &)	InitializeCOM__17cRZCOMDllDirectorP7cIGZCOMR10cIGZString	libSimRCI.so	vtable:__vt_14cSRCOMDirector
+03b0b6	cRZCOMDllDirector::GetClassObject(unsigned int, unsigned int, void **)	GetClassObject__17cRZCOMDllDirectorUiUiPPv	libSimRCI.so	vtable:__vt_14cSRCOMDirector
+03b137	cRZCOMDllDirector::EnumClassObjects(void (*)(unsigned int, unsigned int, void *), void *)	EnumClassObjects__17cRZCOMDllDirectorPFUiUiPv_vPv	libSimRCI.so	vtable:__vt_14cSRCOMDirector
+03b18b	cRZCOMDllDirector::ModuleName(cIGZString &)	ModuleName__17cRZCOMDllDirectorR10cIGZString	libSimRCI.so	vtable:__vt_14cSRCOMDirector
+03b19f	cRZCOMDllDirector::AddDirector(cRZCOMDllDirector *)	AddDirector__17cRZCOMDllDirectorP17cRZCOMDllDirector	libSimRCI.so	vtable:__vt_14cSRCOMDirector
+03b1e9	cRZCOMDllDirector::CanUnloadNow(void)	CanUnloadNow__17cRZCOMDllDirector	libSimRCI.so	vtable:__vt_14cSRCOMDirector
+03e2f4	cSC3BuildingSchool::AddRef(void)	AddRef__18cSC3BuildingSchool	libSimRCI.so	vtable-thunk:__vt_18cSC3BuildingSchool
+03e2fc	cSC3BuildingSchool::Release(void)	Release__18cSC3BuildingSchool	libSimRCI.so	vtable-thunk:__vt_18cSC3BuildingSchool
+03e313	cSC3BuildingSchool::Init(cISC3City *, cISC3OccPersistInfo *)	Init__18cSC3BuildingSchoolP9cISC3CityP19cISC3OccPersistInfo	libSimRCI.so	vtable-thunk:__vt_18cSC3BuildingSchool.12cSC3Occupant
+03ee43	cSC3BuildingMuseum::DoDebugQueryViewInfo(cGZMessage &, cISC3WinQueryListView *)	DoDebugQueryViewInfo__18cSC3BuildingMuseumR10cGZMessageP21cISC3WinQueryListView	libSimRCI.so	vtable-thunk:__vt_18cSC3BuildingMuseum.12cSC3Occupant
+03ee53	cSC3BuildingMuseum::SerialRead(cISC3City *, cIGZDBSerialRecord &)	SerialRead__18cSC3BuildingMuseumP9cISC3CityR18cIGZDBSerialRecord	libSimRCI.so	vtable-thunk:__vt_18cSC3BuildingMuseum.12cSC3Occupant
+03ee9a	cSC3BuildingMuseum::SerialWrite(cISC3City *, cIGZDBSerialRecord &)	SerialWrite__18cSC3BuildingMuseumP9cISC3CityR18cIGZDBSerialRecord	libSimRCI.so	vtable-thunk:__vt_18cSC3BuildingMuseum.12cSC3Occupant
+042dde	cRZCOMDllDirector::GZCOM(void)	GZCOM__17cRZCOMDllDirector	libSimRCI.so	vtable:__vt_14cSRCOMDirector
+042de2	virtual function thunk (delta:-4) for cSC3BuildingLibrary::EQEffect(void)	__thunk_4_EQEffect__19cSC3BuildingLibrary	libSimRCI.so	vtable:__vt_19cSC3BuildingLibrary.15cISC3EQModifier

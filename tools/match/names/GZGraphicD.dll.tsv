@@ -1,0 +1,19 @@
+rva	demangled	mangled	source	method
+0010dc	cRZCOMDllDirector::OnUnload(void)	OnUnload__17cRZCOMDllDirector	libGZGraphicD.so	vtable:__vt_24cGZGraphicDllCOMDirector
+0010df	cGZGraphicDllCOMDirector::GetDirectorID(void) const	GetDirectorID__C24cGZGraphicDllCOMDirector	libGZGraphicD.so	tokens:6.8
+0010e5	cGZGraphicDllCOMDirector::OnStart(cIGZCOM *)	OnStart__24cGZGraphicDllCOMDirectorP7cIGZCOM	libGZGraphicD.so	vtable:__vt_24cGZGraphicDllCOMDirector
+0011ac	virtual function thunk (delta:-4) for cRZCOMDllDirector::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__17cRZCOMDllDirectorUiPPv	libGZGraphicD.so	caller
+009a84	cGZGraphicDllCOMDirector::~cGZGraphicDllCOMDirector(void)	_._24cGZGraphicDllCOMDirector	libGZGraphicD.so	vtable:__vt_24cGZGraphicDllCOMDirector
+019ee4	cRZCOMDllDirector::QueryInterface(unsigned int, void **)	QueryInterface__17cRZCOMDllDirectorUiPPv	libGZGraphicD.so	tokens:13.6
+019f25	cRZCOMDllDirector::FrameWork(void)	FrameWork__17cRZCOMDllDirector	libGZGraphicD.so	vtable:__vt_24cGZGraphicDllCOMDirector
+019f35	cRZCOMDllDirector::RemoveRef(void)	RemoveRef__17cRZCOMDllDirector	libGZGraphicD.so	vtable:__vt_24cGZGraphicDllCOMDirector
+019f44	cRZCOMDllDirector::RefCount(void)	RefCount__17cRZCOMDllDirector	libGZGraphicD.so	vtable:__vt_24cGZGraphicDllCOMDirector
+019f48	cRZCOMDllDirector::InitializeCOM(cIGZCOM *, cIGZString &)	InitializeCOM__17cRZCOMDllDirectorP7cIGZCOMR10cIGZString	libGZGraphicD.so	vtable:__vt_24cGZGraphicDllCOMDirector
+01a016	cRZCOMDllDirector::GetClassObject(unsigned int, unsigned int, void **)	GetClassObject__17cRZCOMDllDirectorUiUiPPv	libGZGraphicD.so	vtable:__vt_24cGZGraphicDllCOMDirector
+01a097	cRZCOMDllDirector::EnumClassObjects(void (*)(unsigned int, unsigned int, void *), void *)	EnumClassObjects__17cRZCOMDllDirectorPFUiUiPv_vPv	libGZGraphicD.so	vtable:__vt_24cGZGraphicDllCOMDirector
+01a0eb	cRZCOMDllDirector::ModuleName(cIGZString &)	ModuleName__17cRZCOMDllDirectorR10cIGZString	libGZGraphicD.so	vtable:__vt_24cGZGraphicDllCOMDirector
+01a0ff	cRZCOMDllDirector::AddDirector(cRZCOMDllDirector *)	AddDirector__17cRZCOMDllDirectorP17cRZCOMDllDirector	libGZGraphicD.so	vtable:__vt_24cGZGraphicDllCOMDirector
+01a149	cRZCOMDllDirector::CanUnloadNow(void)	CanUnloadNow__17cRZCOMDllDirector	libGZGraphicD.so	vtable:__vt_24cGZGraphicDllCOMDirector
+01a1a0	cRZCOMDllDirector::AppRegister(cIGZRegistry *)	AppRegister__17cRZCOMDllDirectorP12cIGZRegistry	libGZGraphicD.so	vtable:__vt_24cGZGraphicDllCOMDirector
+01a1d0	cRZCOMDllDirector::GZCOM(void)	GZCOM__17cRZCOMDllDirector	libGZGraphicD.so	vtable:__vt_24cGZGraphicDllCOMDirector
+01a23f	cRZCOMDllDirector::OnStart(cIGZCOM *)	OnStart__17cRZCOMDllDirectorP7cIGZCOM	libGZGraphicD.so	tokens:13.6

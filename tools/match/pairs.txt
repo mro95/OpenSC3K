@@ -1,0 +1,33 @@
+# Windows binary        Linux binary (Loki v2.0 demo); a Windows binary may list several sources
+SC3U.exe                sc3u_demo.x86
+AUDIO.DLL               libAudio.so
+GIMEX.DLL               libGimex.so
+GZGraphicD.dll          libGZGraphicD.so
+GZResourceD.dll         libGZResourceD.so
+GZServiceD.dll          libGZServiceD.so
+GZSOUNDD.DLL            libGZSoundD.so
+GZTOOLSD.DLL            libGZToolsD.so
+GZWIND.DLL              libGZWinD.so
+GZWWWD.DLL              libGZWWWD.so
+SCENARIO.DLL            libScenario.so
+SIMADV.DLL              libSimAdv.so
+SIMCITY.DLL             libSimCity.so
+SIMDIRT.DLL             libSimDirt.so
+SIMDSTR.DLL             libSimDstr.so
+SIMECO.DLL              libSimEco.so
+SIMGEOM.DLL             libSimGeom.so
+SIMINIT.DLL             libSimInit.so
+SIMMISC.DLL             libSimMisc.so
+SIMNTWRK.DLL            libSimNtwrk.so
+SIMRCI.DLL              libSimRCI.so
+SIMSERV.DLL             libSimServ.so
+SIMSPR.DLL              libSimSpr.so
+SIMUI.DLL               libSimUI.so
+SIMUTIL.DLL             libSimUtil.so
+SimTransit.dll          libSimTransit.so
+simvariables.dll        libSimVariables.so
+STRTSIM.DLL             libStrtSim.so
+# No Linux library of their own; try the main executable.
+SIMBABLD.DLL            sc3u_demo.x86
+UV.DLL                  sc3u_demo.x86
+MaxisAddOn.dll          sc3u_demo.x86

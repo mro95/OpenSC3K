@@ -1,0 +1,22 @@
+rva	demangled	mangled	source	method
+001019	cGZGameCOMDirector::GetDirectorID(void) const	GetDirectorID__C18cGZGameCOMDirector	sc3u_demo.x86	vtable:__vt_18cGZGameCOMDirector
+00101f	cGZGameCOMDirector::~cGZGameCOMDirector(void)	_._18cGZGameCOMDirector	sc3u_demo.x86	vtable:__vt_18cGZGameCOMDirector
+001082	virtual function thunk (delta:-4) for cRZCOMDllDirector::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__17cRZCOMDllDirectorUiPPv	sc3u_demo.x86	caller
+00109a	cRZCOMDllDirector::OnUnload(void)	OnUnload__17cRZCOMDllDirector	sc3u_demo.x86	vtable:__vt_18cGZGameCOMDirector
+0011f0	cRZCOMDllDirector::QueryInterface(unsigned int, void **)	QueryInterface__17cRZCOMDllDirectorUiPPv	sc3u_demo.x86	tokens:18.6
+001231	cRZCOMDllDirector::FrameWork(void)	FrameWork__17cRZCOMDllDirector	sc3u_demo.x86	vtable:__vt_18cGZGameCOMDirector
+001241	cRZCOMDllDirector::RemoveRef(void)	RemoveRef__17cRZCOMDllDirector	sc3u_demo.x86	vtable:__vt_18cGZGameCOMDirector
+001250	cRZCOMDllDirector::RefCount(void)	RefCount__17cRZCOMDllDirector	sc3u_demo.x86	vtable:__vt_18cGZGameCOMDirector
+001254	cRZCOMDllDirector::InitializeCOM(cIGZCOM *, cIGZString &)	InitializeCOM__17cRZCOMDllDirectorP7cIGZCOMR10cIGZString	sc3u_demo.x86	vtable:__vt_18cGZGameCOMDirector
+0012dd	cGZGameCOMDirector::OnStart(cIGZCOM *)	OnStart__18cGZGameCOMDirectorP7cIGZCOM	sc3u_demo.x86	vtable:__vt_18cGZGameCOMDirector
+001322	cRZCOMDllDirector::GetClassObject(unsigned int, unsigned int, void **)	GetClassObject__17cRZCOMDllDirectorUiUiPPv	sc3u_demo.x86	vtable:__vt_18cGZGameCOMDirector
+0013a3	cRZCOMDllDirector::EnumClassObjects(void (*)(unsigned int, unsigned int, void *), void *)	EnumClassObjects__17cRZCOMDllDirectorPFUiUiPv_vPv	sc3u_demo.x86	vtable:__vt_18cGZGameCOMDirector
+0013f7	cRZCOMDllDirector::ModuleName(cIGZString &)	ModuleName__17cRZCOMDllDirectorR10cIGZString	sc3u_demo.x86	vtable:__vt_18cGZGameCOMDirector
+00140b	cRZCOMDllDirector::AddDirector(cRZCOMDllDirector *)	AddDirector__17cRZCOMDllDirectorP17cRZCOMDllDirector	sc3u_demo.x86	vtable:__vt_18cGZGameCOMDirector
+001455	cRZCOMDllDirector::CanUnloadNow(void)	CanUnloadNow__17cRZCOMDllDirector	sc3u_demo.x86	vtable:__vt_18cGZGameCOMDirector
+001480	cRZCOMDllDirector::AppRegister(cIGZRegistry *)	AppRegister__17cRZCOMDllDirectorP12cIGZRegistry	sc3u_demo.x86	vtable:__vt_18cGZGameCOMDirector
+0014b0	cRZCOMDllDirector::GZCOM(void)	GZCOM__17cRZCOMDllDirector	sc3u_demo.x86	vtable:__vt_18cGZGameCOMDirector
+001c6a	cRZNetManager::AddRef(void)	AddRef__13cRZNetManager	sc3u_demo.x86	vtable:__vt_13cRZNetManager
+001d34	cRZNetManager::QueryInterface(unsigned int, void **)	QueryInterface__13cRZNetManagerUiPPv	sc3u_demo.x86	vtable:__vt_13cRZNetManager
+001d50	cRZString::~cRZString(void)	_._9cRZString	sc3u_demo.x86	vtable:__vt_9cRZString
+0020ac	lzo_memcmp	lzo_memcmp	sc3u_demo.x86	tokens:9.3

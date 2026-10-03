@@ -1,0 +1,757 @@
+addr	mangled	demangled
+00015360	_init	_init
+00016324	RZGetCOMDllDirector_SimCity__Fv	RZGetCOMDllDirector_SimCity(void)
+00016474	__8cSC3City	cSC3City::cSC3City(void)
+00016de4	_._8cSC3City	cSC3City::~cSC3City(void)
+00017154	StaticInit__8cSC3CityP19cISC3CityDefinition	cSC3City::StaticInit(cISC3CityDefinition *)
+000172d0	StaticShutdown__8cSC3City	cSC3City::StaticShutdown(void)
+00017404	DoMessage__8cSC3CityR10cGZMessage	cSC3City::DoMessage(cGZMessage &)
+00017734	Init__8cSC3CityP13cISC2Importer	cSC3City::Init(cISC2Importer *)
+00018018	Init__8cSC3CityP13cIGZDBSegment	cSC3City::Init(cIGZDBSegment *)
+000192c4	Init__8cSC3CityR16cISC3NewCityInfo	cSC3City::Init(cISC3NewCityInfo &)
+00019974	Init__8cSC3CityUiUiUiP18cISC3DirtGenerator	cSC3City::Init(unsigned int, unsigned int, unsigned int, cISC3DirtGenerator *)
+0001a1d4	Save__8cSC3CityP13cIGZDBSegment	cSC3City::Save(cIGZDBSegment *)
+0001ae24	SaveThumbnail__8cSC3CityP13cIGZDBSegment	cSC3City::SaveThumbnail(cIGZDBSegment *)
+0001b414	LoadGoldVersionInfo__8cSC3CityP13cIGZDBSegment	cSC3City::LoadGoldVersionInfo(cIGZDBSegment *)
+0001b530	SaveGoldVersionInfo__8cSC3CityP13cIGZDBSegment	cSC3City::SaveGoldVersionInfo(cIGZDBSegment *)
+0001b690	SaveCitySchemeInfo__8cSC3CityP13cIGZDBSegment	cSC3City::SaveCitySchemeInfo(cIGZDBSegment *)
+0001b820	Shutdown__8cSC3City	cSC3City::Shutdown(void)
+0001bd70	SetDate__8cSC3CityUiUiUi	cSC3City::SetDate(unsigned int, unsigned int, unsigned int)
+0001be90	GetYearBorn__8cSC3City	cSC3City::GetYearBorn(void)
+0001bf50	GetYearLoaded__8cSC3City	cSC3City::GetYearLoaded(void)
+0001c010	SetDate__8cSC3CityUiUi	cSC3City::SetDate(unsigned int, unsigned int)
+0001c130	SimCalendarNotification__8cSC3Cityi	cSC3City::SimCalendarNotification(int)
+0001c368	Pause__8cSC3City	cSC3City::Pause(void)
+0001c4a0	Unpause__8cSC3City	cSC3City::Unpause(void)
+0001c620	IsPaused__8cSC3City	cSC3City::IsPaused(void)
+0001c6e0	PauseCount__8cSC3City	cSC3City::PauseCount(void)
+0001c7a0	SimHiddenPauseCount__8cSC3City	cSC3City::SimHiddenPauseCount(void)
+0001c860	TotalPauseCount__8cSC3City	cSC3City::TotalPauseCount(void)
+0001c920	GetGameSpeed__8cSC3City	cSC3City::GetGameSpeed(void)
+0001ca10	SetGameSpeed__8cSC3CityQ29cISC3City10tGameSpeed	cSC3City::SetGameSpeed(cISC3City::tGameSpeed)
+0001cbd4	CreateLayers__8cSC3City	cSC3City::CreateLayers(void)
+0001da34	ReleaseLayers__8cSC3City	cSC3City::ReleaseLayers(void)
+0001df20	ShutdownLayers__8cSC3City	cSC3City::ShutdownLayers(void)
+0001df8c	StartCitySimulation__8cSC3City	cSC3City::StartCitySimulation(void)
+0001e8c0	EndCitySimulation__8cSC3City	cSC3City::EndCitySimulation(void)
+0001e9c0	DirtGenerator__8cSC3City	cSC3City::DirtGenerator(void)
+0001ea80	SetCityName__8cSC3CityRC10cIGZString	cSC3City::SetCityName(cIGZString const &)
+0001ed48	SetMayorName__8cSC3CityRC10cIGZString	cSC3City::SetMayorName(cIGZString const &)
+0001efd4	SetCityDescription__8cSC3CityRC10cIGZString	cSC3City::SetCityDescription(cIGZString const &)
+0001f264	GetFilePath__8cSC3City	cSC3City::GetFilePath(void)
+0001f320	SetFilePath__8cSC3CityRC10cIGZString	cSC3City::SetFilePath(cIGZString const &)
+0001f630	GetEditMode__8cSC3City	cSC3City::GetEditMode(void)
+0001f6e4	IsDisasterActive__8cSC3City	cSC3City::IsDisasterActive(void)
+0001f7a0	SetDisasterActive__8cSC3Cityb	cSC3City::SetDisasterActive(bool)
+0001f8c4	SetScenarioActive__8cSC3Cityb	cSC3City::SetScenarioActive(bool)
+0001fa18	SetCityModeFlag__8cSC3CityUi	cSC3City::SetCityModeFlag(unsigned int)
+0001fb38	ClearCityModeFlag__8cSC3CityUi	cSC3City::ClearCityModeFlag(unsigned int)
+0001fc58	AddTickerMessage__8cSC3CityUi	cSC3City::AddTickerMessage(unsigned int)
+0001ffd4	ReadCityTypeFromDBSegment__8cSC3CityP13cIGZDBSegment	cSC3City::ReadCityTypeFromDBSegment(cIGZDBSegment *)
+000200b4	WriteCityTypeRecordToDBSegment__8cSC3CityP13cIGZDBSegment	cSC3City::WriteCityTypeRecordToDBSegment(cIGZDBSegment *)
+000201b0	ReadCityIDFromDBSegment__8cSC3CityP13cIGZDBSegment	cSC3City::ReadCityIDFromDBSegment(cIGZDBSegment *)
+00020360	WriteCityIDRecordToDBSegment__8cSC3CityP13cIGZDBSegment	cSC3City::WriteCityIDRecordToDBSegment(cIGZDBSegment *)
+00020514	DoNewCity__8cSC3Cityb	cSC3City::DoNewCity(bool)
+00020634	DoLoadCity__8cSC3Cityb	cSC3City::DoLoadCity(bool)
+00020930	CanPlayerPauseUnpause__C8cSC3City	cSC3City::CanPlayerPauseUnpause(void) const
+00020940	CanPlayerChangeSpeed__C8cSC3City	cSC3City::CanPlayerChangeSpeed(void) const
+00020950	CanPlayerLoadSave__C8cSC3City	cSC3City::CanPlayerLoadSave(void) const
+00020960	SetPlayerLoadSaveEnabled__8cSC3Cityb	cSC3City::SetPlayerLoadSaveEnabled(bool)
+00020974	GetCityType__8cSC3City	cSC3City::GetCityType(void)
+00020984	GetSerialNumber__8cSC3City	cSC3City::GetSerialNumber(void)
+00020994	SetSerialNumber__8cSC3CityUi	cSC3City::SetSerialNumber(unsigned int)
+000209a4	GetOriginalLanguageAndCountry__8cSC3CityRiT1	cSC3City::GetOriginalLanguageAndCountry(int &, int &)
+000209c4	GetLastLanguageAndCountry__8cSC3CityRiT1	cSC3City::GetLastLanguageAndCountry(int &, int &)
+000209e4	GetCityID__8cSC3City	cSC3City::GetCityID(void)
+000209f4	CellCountX__C8cSC3City	cSC3City::CellCountX(void) const
+00020a04	CellCountZ__C8cSC3City	cSC3City::CellCountZ(void) const
+00020a14	CellCountY__C8cSC3City	cSC3City::CellCountY(void) const
+00020a24	AnimCellCountX__C8cSC3City	cSC3City::AnimCellCountX(void) const
+00020a34	AnimCellCountZ__C8cSC3City	cSC3City::AnimCellCountZ(void) const
+00020a44	AnimCellCountY__C8cSC3City	cSC3City::AnimCellCountY(void) const
+00020a54	CellSizeInAnimUnitsX__C8cSC3City	cSC3City::CellSizeInAnimUnitsX(void) const
+00020a60	CellSizeInAnimUnitsZ__C8cSC3City	cSC3City::CellSizeInAnimUnitsZ(void) const
+00020a6c	CellSizeInAnimUnitsY__C8cSC3City	cSC3City::CellSizeInAnimUnitsY(void) const
+00020a7c	GetTileSize__8cSC3City	cSC3City::GetTileSize(void)
+00020acc	CellSizeInWorldUnitsX__C8cSC3City	cSC3City::CellSizeInWorldUnitsX(void) const
+00020aec	CellSizeInWorldUnitsZ__C8cSC3City	cSC3City::CellSizeInWorldUnitsZ(void) const
+00020b0c	CellSizeInWorldUnitsY__C8cSC3City	cSC3City::CellSizeInWorldUnitsY(void) const
+00020b2c	SizeX__8cSC3City	cSC3City::SizeX(void)
+00020b80	SizeZ__8cSC3City	cSC3City::SizeZ(void)
+00020bd4	SizeY__8cSC3City	cSC3City::SizeY(void)
+00020c28	WorldToMeter__C8cSC3Cityf	cSC3City::WorldToMeter(float) const
+00020c4c	WorldToFeet__C8cSC3Cityf	cSC3City::WorldToFeet(float) const
+00020c70	MeterToWorld__C8cSC3Cityf	cSC3City::MeterToWorld(float) const
+00020c94	FeetToWorld__C8cSC3Cityf	cSC3City::FeetToWorld(float) const
+00020cb4	NumberOfLayers__8cSC3City	cSC3City::NumberOfLayers(void)
+00020cd0	SurfaceOccupantManager__8cSC3City	cSC3City::SurfaceOccupantManager(void)
+00020ce0	UndergroundOccupantManagerLevelOne__8cSC3City	cSC3City::UndergroundOccupantManagerLevelOne(void)
+00020cf0	UndergroundOccupantManagerLevelTwo__8cSC3City	cSC3City::UndergroundOccupantManagerLevelTwo(void)
+00020d00	AnimOccupantManager__8cSC3City	cSC3City::AnimOccupantManager(void)
+00020d10	BuildingLayer__8cSC3City	cSC3City::BuildingLayer(void)
+00020d20	DirtBag__8cSC3City	cSC3City::DirtBag(void)
+00020d30	TransitLayer__8cSC3City	cSC3City::TransitLayer(void)
+00020d40	TrafficLayer__8cSC3City	cSC3City::TrafficLayer(void)
+00020d50	FloraLayer__8cSC3City	cSC3City::FloraLayer(void)
+00020d60	ZoneLayer__8cSC3City	cSC3City::ZoneLayer(void)
+00020d70	PowerLayer__8cSC3City	cSC3City::PowerLayer(void)
+00020d80	PlumbingLayer__8cSC3City	cSC3City::PlumbingLayer(void)
+00020d90	OrdinanceLayer__8cSC3City	cSC3City::OrdinanceLayer(void)
+00020da0	BudgetLayer__8cSC3City	cSC3City::BudgetLayer(void)
+00020db0	WorldLayer__8cSC3City	cSC3City::WorldLayer(void)
+00020dc0	StrtSimLayer__8cSC3City	cSC3City::StrtSimLayer(void)
+00020dd0	DisasterLayer__8cSC3City	cSC3City::DisasterLayer(void)
+00020de0	PollutionLayer__8cSC3City	cSC3City::PollutionLayer(void)
+00020df0	CrimeLayer__8cSC3City	cSC3City::CrimeLayer(void)
+00020e00	PoliceLayer__8cSC3City	cSC3City::PoliceLayer(void)
+00020e10	FireLayer__8cSC3City	cSC3City::FireLayer(void)
+00020e20	ResidentialLayer__8cSC3City	cSC3City::ResidentialLayer(void)
+00020e30	CommercialLayer__8cSC3City	cSC3City::CommercialLayer(void)
+00020e40	IndustrialLayer__8cSC3City	cSC3City::IndustrialLayer(void)
+00020e50	LandValueLayer__8cSC3City	cSC3City::LandValueLayer(void)
+00020e60	NeighborsLayer__8cSC3City	cSC3City::NeighborsLayer(void)
+00020e70	WeatherLayer__8cSC3City	cSC3City::WeatherLayer(void)
+00020e80	DemolitionLayer__8cSC3City	cSC3City::DemolitionLayer(void)
+00020e90	ScenarioLayer__8cSC3City	cSC3City::ScenarioLayer(void)
+00020ea0	GetUtilityAdvisor__8cSC3City	cSC3City::GetUtilityAdvisor(void)
+00020eb0	GetDemographicsAdvisor__8cSC3City	cSC3City::GetDemographicsAdvisor(void)
+00020ec0	GetPublicSafetyAdvisor__8cSC3City	cSC3City::GetPublicSafetyAdvisor(void)
+00020ed0	GetEnvironmentAdvisor__8cSC3City	cSC3City::GetEnvironmentAdvisor(void)
+00020ee0	GetCityPlanningAdvisor__8cSC3City	cSC3City::GetCityPlanningAdvisor(void)
+00020ef0	GetTransportationAdvisor__8cSC3City	cSC3City::GetTransportationAdvisor(void)
+00020f00	GetBudgetAdvisor__8cSC3City	cSC3City::GetBudgetAdvisor(void)
+00020f10	GetPetitionerManager__8cSC3City	cSC3City::GetPetitionerManager(void)
+00020f20	CitySimulator__8cSC3City	cSC3City::CitySimulator(void)
+00020f30	IsTipOfTheDayNeeded__8cSC3City	cSC3City::IsTipOfTheDayNeeded(void)
+00020f44	__16_autoProgressBarUiR9cRZString	_autoProgressBar::_autoProgressBar(unsigned int, cRZString &)
+00020fa0	_._16_autoProgressBar	_autoProgressBar::~_autoProgressBar(void)
+0002102c	Tick__16_autoProgressBar	_autoProgressBar::Tick(void)
+00021078	QueryInterface__8cSC3CityUiPPv	cSC3City::QueryInterface(unsigned int, void **)
+00021128	AddRef__8cSC3City	cSC3City::AddRef(void)
+00021180	Release__8cSC3City	cSC3City::Release(void)
+0002120c	DoQueryInfo__8cSC3CityR10cGZMessageP11cIGZUnknown	cSC3City::DoQueryInfo(cGZMessage &, cIGZUnknown *)
+0002121c	GetDate__8cSC3CityRUiT1	cSC3City::GetDate(unsigned int &, unsigned int &)
+000212e4	GetDate__8cSC3CityRUiN21	cSC3City::GetDate(unsigned int &, unsigned int &, unsigned int &)
+000213c4	SetYearBorn__8cSC3CityUi	cSC3City::SetYearBorn(unsigned int)
+00021480	SetYearLoaded__8cSC3CityUi	cSC3City::SetYearLoaded(unsigned int)
+00021540	SimHiddenPause__8cSC3City	cSC3City::SimHiddenPause(void)
+000215dc	SimHiddenUnpause__8cSC3City	cSC3City::SimHiddenUnpause(void)
+00021688	HiddenClockPause__8cSC3City	cSC3City::HiddenClockPause(void)
+00021700	HiddenClockUnpause__8cSC3City	cSC3City::HiddenClockUnpause(void)
+00021780	GetSimulationClock__8cSC3City	cSC3City::GetSimulationClock(void)
+00021794	GetLayerList__8cSC3CityUiPP14cISC3CityLayer	cSC3City::GetLayerList(unsigned int, cISC3CityLayer **)
+00021824	GetLayer__8cSC3CityUiUiPPv	cSC3City::GetLayer(unsigned int, unsigned int, void **)
+000218c0	GetLayerByIndex__8cSC3CityUiUiPPv	cSC3City::GetLayerByIndex(unsigned int, unsigned int, void **)
+00021914	GetSpecificLayer__8cSC3CityUi	cSC3City::GetSpecificLayer(unsigned int)
+000219a0	GetAdvisorListLength__8cSC3City	cSC3City::GetAdvisorListLength(void)
+00021a28	GetAdvisor__8cSC3CityUiRP16cISC3BaseAdvisor	cSC3City::GetAdvisor(unsigned int, cISC3BaseAdvisor *&)
+00021acc	GetAdvisorList__8cSC3CityUiPP16cISC3BaseAdvisor	cSC3City::GetAdvisorList(unsigned int, cISC3BaseAdvisor **)
+00021b50	CreateSingleLayer__8cSC3CityUiPP14cISC3CityLayerUiPPv	cSC3City::CreateSingleLayer(unsigned int, cISC3CityLayer **, unsigned int, void **)
+00021bd4	BaseInitLayers__8cSC3City	cSC3City::BaseInitLayers(void)
+00021c7c	DoEnumLayers__8cSC3CityR10cGZMessageR19cISC3CityEnumerator	cSC3City::DoEnumLayers(cGZMessage &, cISC3CityEnumerator &)
+00021d08	CreateOccupant__8cSC3CityR14cGZResourceKeyUiPPv	cSC3City::CreateOccupant(cGZResourceKey &, unsigned int, void **)
+00021dc0	CreateOccupant__8cSC3CityP19cISC3OccupantAttribUiPPv	cSC3City::CreateOccupant(cISC3OccupantAttrib *, unsigned int, void **)
+00021e7c	RemoveAllOccupants__8cSC3City	cSC3City::RemoveAllOccupants(void)
+00021f18	Lock__8cSC3City	cSC3City::Lock(void)
+00021f48	Unlock__8cSC3City	cSC3City::Unlock(void)
+00021f74	GetCriticalSection__8cSC3City	cSC3City::GetCriticalSection(void)
+00021f88	LockGraphics__8cSC3City	cSC3City::LockGraphics(void)
+00021fb8	UnlockGraphics__8cSC3City	cSC3City::UnlockGraphics(void)
+00021fe4	GetGraphicsCriticalSection__8cSC3City	cSC3City::GetGraphicsCriticalSection(void)
+00021ff8	OnIdle__8cSC3City	cSC3City::OnIdle(void)
+0002202c	CanCitySave__C8cSC3City	cSC3City::CanCitySave(void) const
+00022038	GetVersionComponent__C8cSC3CityUc	cSC3City::GetVersionComponent(unsigned char) const
+00022058	GetVersionComponentFromSaveFile__C8cSC3CityUc	cSC3City::GetVersionComponentFromSaveFile(unsigned char) const
+00022078	IsFileVersionMoreRecentThan__8cSC3Cityiii	cSC3City::IsFileVersionMoreRecentThan(int, int, int)
+000220c4	IsWriteCitySaveFileDebug__C8cSC3City	cSC3City::IsWriteCitySaveFileDebug(void) const
+000220d4	IsReadCitySaveFileDebug__C8cSC3City	cSC3City::IsReadCitySaveFileDebug(void) const
+000220e4	GetCityName__8cSC3City	cSC3City::GetCityName(void)
+000220f4	GetMayorName__8cSC3City	cSC3City::GetMayorName(void)
+00022104	GetCityDescription__8cSC3City	cSC3City::GetCityDescription(void)
+00022114	GetDifficulty__8cSC3City	cSC3City::GetDifficulty(void)
+00022124	SetDifficulty__8cSC3Cityi	cSC3City::SetDifficulty(int)
+00022138	GetNewSerialNumber__8cSC3City	cSC3City::GetNewSerialNumber(void)
+000221e4	SetEditMode__8cSC3Cityi	cSC3City::SetEditMode(int)
+00022248	IsScenarioActive__8cSC3City	cSC3City::IsScenarioActive(void)
+0002225c	IsTutorialActive__8cSC3City	cSC3City::IsTutorialActive(void)
+00022270	IsDemoActive__8cSC3City	cSC3City::IsDemoActive(void)
+00022284	AreHolidayFeaturesEnabled__8cSC3City	cSC3City::AreHolidayFeaturesEnabled(void)
+00022298	SetTutorialActive__8cSC3Cityb	cSC3City::SetTutorialActive(bool)
+0002230c	SetDemoActive__8cSC3Cityb	cSC3City::SetDemoActive(bool)
+00022380	EnableHolidayFeatures__8cSC3Cityb	cSC3City::EnableHolidayFeatures(bool)
+000223e8	IsModeFlagActive__8cSC3CityUi	cSC3City::IsModeFlagActive(unsigned int)
+000224ac	DoSaveCity__8cSC3Cityb	cSC3City::DoSaveCity(bool)
+000224bc	DoQuitGame__8cSC3Cityb	cSC3City::DoQuitGame(bool)
+00022500	SetTipOfTheDayNeeded__8cSC3Cityb	cSC3City::SetTipOfTheDayNeeded(bool)
+00022514	IsAutoBudgetEnabled__C8cSC3City	cSC3City::IsAutoBudgetEnabled(void) const
+00022528	SetAutoBudgetEnabled__8cSC3Cityb	cSC3City::SetAutoBudgetEnabled(bool)
+00022590	AreDisastersEnabled__C8cSC3City	cSC3City::AreDisastersEnabled(void) const
+000225a4	SetDisastersEnabled__8cSC3Cityb	cSC3City::SetDisastersEnabled(bool)
+00022644	__16cCSCitySimulator	cCSCitySimulator::cCSCitySimulator(void)
+00023028	_._16cCSCitySimulator	cCSCitySimulator::~cCSCitySimulator(void)
+00023364	AddRef__16cCSCitySimulator	cCSCitySimulator::AddRef(void)
+00023430	Init__16cCSCitySimulatorP9cISC3City	cCSCitySimulator::Init(cISC3City *)
+00023574	Shutdown__16cCSCitySimulator	cCSCitySimulator::Shutdown(void)
+000236f8	StartFunction__16cCSCitySimulatorPv	cCSCitySimulator::StartFunction(void *)
+00023854	DoSimImmediatePause__16cCSCitySimulator	cCSCitySimulator::DoSimImmediatePause(void)
+00023980	ProcessMessage__16cCSCitySimulatorP10cGZMessage	cCSCitySimulator::ProcessMessage(cGZMessage *)
+00023ad4	safeStart__16cCSCitySimulator	cCSCitySimulator::safeStart(void)
+00023bc4	safeStop__16cCSCitySimulator	cCSCitySimulator::safeStop(void)
+00023cb8	DoSimulation__16cCSCitySimulatori	cCSCitySimulator::DoSimulation(int)
+00023ff4	AddAgent__16cCSCitySimulatorP14cISC3CityAgent	cCSCitySimulator::AddAgent(cISC3CityAgent *)
+00024170	RemoveAgent__16cCSCitySimulatorP14cISC3CityAgent	cCSCitySimulator::RemoveAgent(cISC3CityAgent *)
+000242f0	ProcessAddRemoveList__16cCSCitySimulator	cCSCitySimulator::ProcessAddRemoveList(void)
+00024418	AddAgentToItsBin__16cCSCitySimulatorP14cISC3CityAgenti	cCSCitySimulator::AddAgentToItsBin(cISC3CityAgent *, int)
+00024624	RemoveAgentFromItsBin__16cCSCitySimulatorP14cISC3CityAgenti	cCSCitySimulator::RemoveAgentFromItsBin(cISC3CityAgent *, int)
+000247dc	GetLayerType__16cCSCitySimulator	cCSCitySimulator::GetLayerType(void)
+000247e8	MessageQueue__16cCSCitySimulator	cCSCitySimulator::MessageQueue(void)
+000247fc	lock__16cCSCitySimulator	cCSCitySimulator::lock(void)
+0002482c	unlock__16cCSCitySimulator	cCSCitySimulator::unlock(void)
+0002485c	QueryInterface__16cCSCitySimulatorUiPPv	cCSCitySimulator::QueryInterface(unsigned int, void **)
+000248b0	Release__16cCSCitySimulator	cCSCitySimulator::Release(void)
+00024940	OnIdle__16cCSCitySimulator	cCSCitySimulator::OnIdle(void)
+0002494c	doSimSpeedGovernor__16cCSCitySimulator	cCSCitySimulator::doSimSpeedGovernor(void)
+00024a64	doSimImmediatePause__16cCSCitySimulator	cCSCitySimulator::doSimImmediatePause(void)
+00024af8	CommandSimHiddenUnpause__16cCSCitySimulatorP10cGZMessage	cCSCitySimulator::CommandSimHiddenUnpause(cGZMessage *)
+00024b30	CommandStart__16cCSCitySimulatorP10cGZMessage	cCSCitySimulator::CommandStart(cGZMessage *)
+00024bc0	CommandStop__16cCSCitySimulatorP10cGZMessage	cCSCitySimulator::CommandStop(cGZMessage *)
+00024c2c	AgentListIsLocked__16cCSCitySimulatori	cCSCitySimulator::AgentListIsLocked(int)
+00024ce4	ResetAgentListLocks__16cCSCitySimulator	cCSCitySimulator::ResetAgentListLocks(void)
+00024d24	LockAgentList__16cCSCitySimulatori	cCSCitySimulator::LockAgentList(int)
+00024d88	UnlockAgentList__16cCSCitySimulatori	cCSCitySimulator::UnlockAgentList(int)
+00024de8	HasAgentRequestedToBeRemoved__16cCSCitySimulatorP14cISC3CityAgent	cCSCitySimulator::HasAgentRequestedToBeRemoved(cISC3CityAgent *)
+00024e24	__17cRZCOMDllDirector	cRZCOMDllDirector::cRZCOMDllDirector(void)
+000250b4	_._17cRZCOMDllDirector	cRZCOMDllDirector::~cRZCOMDllDirector(void)
+000251f4	InitializeCOM__17cRZCOMDllDirectorP7cIGZCOMR10cIGZString	cRZCOMDllDirector::InitializeCOM(cIGZCOM *, cIGZString &)
+000254e4	OnStart__17cRZCOMDllDirectorP7cIGZCOM	cRZCOMDllDirector::OnStart(cIGZCOM *)
+00025640	GetClassObject__17cRZCOMDllDirectorUiUiPPv	cRZCOMDllDirector::GetClassObject(unsigned int, unsigned int, void **)
+00025758	EnumClassObjects__17cRZCOMDllDirectorPFUiUiPv_vPv	cRZCOMDllDirector::EnumClassObjects(void (*)(unsigned int, unsigned int, void *), void *)
+00025838	AddDirector__17cRZCOMDllDirectorP17cRZCOMDllDirector	cRZCOMDllDirector::AddDirector(cRZCOMDllDirector *)
+000258e0	OnUnload__17cRZCOMDllDirector	cRZCOMDllDirector::OnUnload(void)
+000258f0	GZCOM__Fv	GZCOM(void)
+00025920	GZDllGetGZCOMDirector	GZDllGetGZCOMDirector
+00025940	QueryInterface__17cRZCOMDllDirectorUiPPv	cRZCOMDllDirector::QueryInterface(unsigned int, void **)
+000259bc	FrameWork__17cRZCOMDllDirector	cRZCOMDllDirector::FrameWork(void)
+000259cc	AddRef__17cRZCOMDllDirector	cRZCOMDllDirector::AddRef(void)
+000259e8	Release__17cRZCOMDllDirector	cRZCOMDllDirector::Release(void)
+00025a10	RemoveRef__17cRZCOMDllDirector	cRZCOMDllDirector::RemoveRef(void)
+00025a28	RefCount__17cRZCOMDllDirector	cRZCOMDllDirector::RefCount(void)
+00025a3c	ModuleName__17cRZCOMDllDirectorR10cIGZString	cRZCOMDllDirector::ModuleName(cIGZString &)
+00025a70	CanUnloadNow__17cRZCOMDllDirector	cRZCOMDllDirector::CanUnloadNow(void)
+00025ac8	AddCls__17cRZCOMDllDirectorUiPFv_P11cIGZUnknownUi	cRZCOMDllDirector::AddCls(unsigned int, cIGZUnknown *(*)(void), unsigned int)
+00025b1c	AppRegister__17cRZCOMDllDirectorP12cIGZRegistry	cRZCOMDllDirector::AppRegister(cIGZRegistry *)
+00025b74	PreFrameWorkInit__17cRZCOMDllDirector	cRZCOMDllDirector::PreFrameWorkInit(void)
+00025b80	PreAppInit__17cRZCOMDllDirector	cRZCOMDllDirector::PreAppInit(void)
+00025b8c	PostAppInit__17cRZCOMDllDirector	cRZCOMDllDirector::PostAppInit(void)
+00025b98	PreAppShutdown__17cRZCOMDllDirector	cRZCOMDllDirector::PreAppShutdown(void)
+00025ba4	PostAppShutdown__17cRZCOMDllDirector	cRZCOMDllDirector::PostAppShutdown(void)
+00025bb0	PostSystemServiceShutdown__17cRZCOMDllDirector	cRZCOMDllDirector::PostSystemServiceShutdown(void)
+00025bbc	AbortiveQuit__17cRZCOMDllDirector	cRZCOMDllDirector::AbortiveQuit(void)
+00025bc8	OnInstall__17cRZCOMDllDirector	cRZCOMDllDirector::OnInstall(void)
+00025bd4	GZCOM__17cRZCOMDllDirector	cRZCOMDllDirector::GZCOM(void)
+00025bf0	__out_of_range__FPCc	__out_of_range(char const *)
+00025e58	__length_error__FPCc	__length_error(char const *)
+000260b8	__11logic_errorRCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0	logic_error::logic_error(basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &)
+00026114	what__C11logic_error	logic_error::what(void) const
+0002613c	__12domain_errorRCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0	domain_error::domain_error(basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &)
+0002619c	__16invalid_argumentRCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0	invalid_argument::invalid_argument(basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &)
+000261fc	__12length_errorRCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0	length_error::length_error(basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &)
+0002625c	__12out_of_rangeRCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0	out_of_range::out_of_range(basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &)
+000262bc	__13runtime_errorRCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0	runtime_error::runtime_error(basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &)
+0002631c	what__C13runtime_error	runtime_error::what(void) const
+00026340	__13runtime_error	runtime_error::runtime_error(void)
+000263a4	__11range_errorRCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0	range_error::range_error(basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &)
+000263fc	__14overflow_errorRCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0	overflow_error::overflow_error(basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &)
+0002645c	__15underflow_errorRCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0	underflow_error::underflow_error(basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &)
+000264c0	__7istreamiP9streambufP7ostream	istream::istream(int, streambuf *, ostream *)
+00026574	skip_ws__FP9streambuf	skip_ws(streambuf *)
+000265a8	get__7istreamRc	istream::get(char &)
+00026688	peek__7istream	istream::peek(void)
+000266e4	ignore__7istreamii	istream::ignore(int, int)
+000267dc	read__7istreamPci	istream::read(char *, int)
+000268b4	sync__7istream	istream::sync(void)
+000268f4	seekg__7istreamx	istream::seekg(long long)
+0002692c	seekg__7istreamxQ23ios8seek_dir	istream::seekg(long long, ios::seek_dir)
+0002696c	tellg__7istream	istream::tellg(void)
+000269ac	__rs__7istreamRc	istream::operator>>(char &)
+00026a94	__rs__7istreamPc	istream::operator>>(char *)
+00026eb0	__rs__7istreamRs	istream::operator>>(short &)
+00026ef4	__rs__7istreamRUs	istream::operator>>(unsigned short &)
+00026f38	__rs__7istreamRi	istream::operator>>(int &)
+00026f78	__rs__7istreamRUi	istream::operator>>(unsigned int &)
+00026fb8	__rs__7istreamRl	istream::operator>>(long &)
+00026ff8	__rs__7istreamRUl	istream::operator>>(unsigned long &)
+00027038	__rs__7istreamRx	istream::operator>>(long long &)
+00027080	__rs__7istreamRUx	istream::operator>>(unsigned long long &)
+000270c8	__rs__7istreamRb	istream::operator>>(bool &)
+00027114	__rs__7istreamRr	istream::operator>>(long double &)
+000271e8	__rs__7istreamRd	istream::operator>>(double &)
+000272b8	__rs__7istreamRf	istream::operator>>(float &)
+00027388	__rs__7istreamP9streambuf	istream::operator>>(streambuf *)
+0002748c	__ls__7ostreamc	ostream::operator<<(char)
+000277fc	__ls__7ostreami	ostream::operator<<(int)
+000278a8	__ls__7ostreamUi	ostream::operator<<(unsigned int)
+00027938	__ls__7ostreaml	ostream::operator<<(long)
+000279e4	__ls__7ostreamUl	ostream::operator<<(unsigned long)
+00027a74	__ls__7ostreamx	ostream::operator<<(long long)
+00027b28	__ls__7ostreamUx	ostream::operator<<(unsigned long long)
+00027bb8	__ls__7ostreamd	ostream::operator<<(double)
+00027d68	__ls__7ostreamr	ostream::operator<<(long double)
+00027f1c	__ls__7ostreamPCc	ostream::operator<<(char const *)
+000280a8	__ls__7ostreamP9streambuf	ostream::operator<<(streambuf *)
+000281c0	__7ostreamiP9streambufP7ostream	ostream::ostream(int, streambuf *, ostream *)
+0002826c	seekp__7ostreamx	ostream::seekp(long long)
+000282a4	seekp__7ostreamxQ23ios8seek_dir	ostream::seekp(long long, ios::seek_dir)
+000282e4	tellp__7ostream	ostream::tellp(void)
+00028324	flush__7ostream	ostream::flush(void)
+00028354	flush__FR7ostream	flush(ostream &)
+0002836c	ws__FR7istream	ws(istream &)
+00028448	_skip_ws__7istream	istream::_skip_ws(void)
+00028490	ends__FR7ostream	ends(ostream &)
+000284b4	endl__FR7ostream	endl(ostream &)
+000284e0	lock__FR7istream	lock(istream &)
+00028500	unlock__FR7istream	unlock(istream &)
+00028520	lock__FR7ostream	lock(ostream &)
+00028540	unlock__FR7ostream	unlock(ostream &)
+00028560	write__7ostreamPCci	ostream::write(char const *, int)
+00028634	do_osfx__7ostream	ostream::do_osfx(void)
+00028680	__8iostreamiP9streambufP7ostream	iostream::iostream(int, streambuf *, ostream *)
+00028744	close__3ios	ios::close(void)
+00028788	skip__7istreami	istream::skip(int)
+000287b0	__7ostreami	ostream::ostream(int)
+00028810	opfx__7ostream	ostream::opfx(void)
+00028854	osfx__7ostream	ostream::osfx(void)
+00028888	put__7ostreamc	ostream::put(char)
+000288b0	put__7ostreamUc	ostream::put(unsigned char)
+000288d8	put__7ostreamSc	ostream::put(signed char)
+00028900	write__7ostreamPCUci	ostream::write(unsigned char const *, int)
+00028920	write__7ostreamPCSci	ostream::write(signed char const *, int)
+00028940	write__7ostreamPCvi	ostream::write(void const *, int)
+00028960	__ls__7ostreamUc	ostream::operator<<(unsigned char)
+0002897c	__ls__7ostreamSc	ostream::operator<<(signed char)
+00028998	__ls__7ostreamPCUc	ostream::operator<<(unsigned char const *)
+000289b4	__ls__7ostreamPCSc	ostream::operator<<(signed char const *)
+000289d0	__ls__7ostreams	ostream::operator<<(short)
+000289ec	__ls__7ostreamUs	ostream::operator<<(unsigned short)
+00028a08	__ls__7ostreamb	ostream::operator<<(bool)
+00028a24	__ls__7ostreamf	ostream::operator<<(float)
+00028a44	__ls__7ostreamPFR7ostream_R7ostream	ostream::operator<<(ostream &(*)(ostream &))
+00028a5c	__ls__7ostreamPFR3ios_R3ios	ostream::operator<<(ios &(*)(ios &))
+00028a7c	ostreambuf__C7ostream	ostream::ostreambuf(void) const
+00028a8c	__7istreami	istream::istream(int)
+00028af4	get__7istreamPUcic	istream::get(unsigned char *, int, char)
+00028b18	get__7istreamRUc	istream::get(unsigned char &)
+00028b34	getline__7istreamPUcic	istream::getline(unsigned char *, int, char)
+00028b58	get__7istreamRSc	istream::get(signed char &)
+00028b74	get__7istreamPScic	istream::get(signed char *, int, char)
+00028b98	getline__7istreamPScic	istream::getline(signed char *, int, char)
+00028bbc	read__7istreamPUci	istream::read(unsigned char *, int)
+00028bdc	read__7istreamPSci	istream::read(signed char *, int)
+00028bfc	read__7istreamPvi	istream::read(void *, int)
+00028c1c	ipfx__7istreami	istream::ipfx(int)
+00028ca0	ipfx0__7istream	istream::ipfx0(void)
+00028d04	ipfx1__7istream	istream::ipfx1(void)
+00028d58	isfx__7istream	istream::isfx(void)
+00028d74	get__7istream	istream::get(void)
+00028df8	gcount__7istream	istream::gcount(void)
+00028e08	putback__7istreamc	istream::putback(char)
+00028e40	unget__7istream	istream::unget(void)
+00028e74	unget__7istreamc	istream::unget(char)
+00028eac	istreambuf__C7istream	istream::istreambuf(void) const
+00028ebc	__rs__7istreamPUc	istream::operator>>(unsigned char *)
+00028ed8	__rs__7istreamPSc	istream::operator>>(signed char *)
+00028ef4	__rs__7istreamRUc	istream::operator>>(unsigned char &)
+00028f10	__rs__7istreamRSc	istream::operator>>(signed char &)
+00028f2c	__rs__7istreamPFR3ios_R3ios	istream::operator>>(ios &(*)(ios &))
+00028f4c	__rs__7istreamPFR7istream_R7istream	istream::operator>>(istream &(*)(istream &))
+00028f64	__8iostreami	iostream::iostream(int)
+00028fe4	__as__22_IO_istream_withassignR22_IO_istream_withassign	_IO_istream_withassign::operator=(_IO_istream_withassign &)
+00029000	__as__22_IO_ostream_withassignR22_IO_ostream_withassign	_IO_ostream_withassign::operator=(_IO_ostream_withassign &)
+0002901c	dec__FR3ios	dec(ios &)
+00029034	hex__FR3ios	hex(ios &)
+0002904c	oct__FR3ios	oct(ios &)
+00029070	getline__7istreamPcic	istream::getline(char *, int, char)
+000291dc	get__7istreamPcic	istream::get(char *, int, char)
+000292e8	_sb_readline__FP9streambufRlc	_sb_readline(streambuf *, long &, char)
+00029404	gets__7istreamPPcc	istream::gets(char **, char)
+00029510	scan__7istreamPCce	istream::scan(char const *,...)
+000295e8	vscan__7istreamPCcPv	istream::vscan(char const *, void *)
+000296b8	vscan__9streambufPCcPvP3ios	streambuf::vscan(char const *, void *, ios *)
+000296f4	scan__9streambufPCce	streambuf::scan(char const *,...)
+00029714	sync_with_stdio__3iosi	ios::sync_with_stdio(int)
+00029720	_un_link__9streambuf	streambuf::_un_link(void)
+00029738	_link_in__9streambuf	streambuf::_link_in(void)
+00029750	switch_to_get_mode__9streambuf	streambuf::switch_to_get_mode(void)
+00029768	free_backup_area__9streambuf	streambuf::free_backup_area(void)
+00029780	__overflow__FP9streambufi	__overflow(streambuf *, int)
+000297a0	underflow__9streambuf	streambuf::underflow(void)
+000297ac	uflow__9streambuf	streambuf::uflow(void)
+000297c4	overflow__9streambufi	streambuf::overflow(int)
+000297d0	xsputn__9streambufPCci	streambuf::xsputn(char const *, int)
+000297f0	xsgetn__9streambufPci	streambuf::xsgetn(char *, int)
+00029810	ignore__9streambufi	streambuf::ignore(int)
+00029860	sync__9streambuf	streambuf::sync(void)
+0002986c	pbackfail__9streambufi	streambuf::pbackfail(int)
+00029888	setbuf__9streambufPci	streambuf::setbuf(char *, int)
+00029928	seekpos__9streambufxi	streambuf::seekpos(long long, int)
+00029958	sseekpos__9streambufxi	streambuf::sseekpos(long long, int)
+00029978	setb__9streambufPcT1i	streambuf::setb(char *, char *, int)
+0002999c	doallocate__9streambuf	streambuf::doallocate(void)
+000299b4	doallocbuf__9streambuf	streambuf::doallocbuf(void)
+000299cc	__9streambufi	streambuf::streambuf(int)
+00029a08	_._9streambuf	streambuf::~streambuf(void)
+00029a68	seekoff__9streambufxQ23ios8seek_diri	streambuf::seekoff(long long, ios::seek_dir, int)
+00029a7c	sseekoff__9streambufxQ23ios8seek_diri	streambuf::sseekoff(long long, ios::seek_dir, int)
+00029aa4	sputbackc__9streambufc	streambuf::sputbackc(char)
+00029ac0	sungetc__9streambuf	streambuf::sungetc(void)
+00029ad8	get_column__9streambuf	streambuf::get_column(void)
+00029b0c	set_column__9streambufi	streambuf::set_column(int)
+00029b20	flush_all__9streambuf	streambuf::flush_all(void)
+00029b30	flush_all_linebuffered__9streambuf	streambuf::flush_all_linebuffered(void)
+00029b40	sys_stat__9streambufPv	streambuf::sys_stat(void *)
+00029b5c	sys_read__9streambufPci	streambuf::sys_read(char *, int)
+00029b68	sys_write__9streambufPCci	streambuf::sys_write(char const *, int)
+00029b74	sys_seek__9streambufxQ23ios8seek_dir	streambuf::sys_seek(long long, ios::seek_dir)
+00029b88	sys_close__9streambuf	streambuf::sys_close(void)
+00029b94	showmanyc__9streambuf	streambuf::showmanyc(void)
+00029ba0	imbue__9streambufPv	streambuf::imbue(void *)
+00029ba8	__12streammarkerP9streambuf	streammarker::streammarker(streambuf *)
+00029bc8	_._12streammarker	streammarker::~streammarker(void)
+00029bfc	delta__12streammarkerR12streammarker	streammarker::delta(streammarker &)
+00029c18	delta__12streammarker	streammarker::delta(void)
+00029c30	seekmark__9streambufR12streammarkeri	streambuf::seekmark(streammarker &, int)
+00029c50	unsave_markers__9streambuf	streambuf::unsave_markers(void)
+00029c68	readable__3ios	ios::readable(void)
+00029c80	writable__3ios	ios::writable(void)
+00029c98	is_open__3ios	ios::is_open(void)
+00029cbc	tie__C3ios	ios::tie(void) const
+00029ccc	tie__3iosP7ostream	ios::tie(ostream *)
+00029ce4	fill__C3ios	ios::fill(void) const
+00029cf4	fill__3iosw	ios::fill(wchar_t)
+00029d0c	flags__C3ios	ios::flags(void) const
+00029d1c	flags__3iosUl	ios::flags(unsigned long)
+00029d34	precision__C3ios	ios::precision(void) const
+00029d44	precision__3iosi	ios::precision(int)
+00029d5c	setf__3iosUl	ios::setf(unsigned long)
+00029d74	setf__3iosUlUl	ios::setf(unsigned long, unsigned long)
+00029d98	unsetf__3iosUl	ios::unsetf(unsigned long)
+00029db4	width__C3ios	ios::width(void) const
+00029dc4	width__3iosi	ios::width(int)
+00029ddc	_throw_failure__C3ios	ios::_throw_failure(void) const
+00029de4	clear__3iosi	ios::clear(int)
+00029e00	set__3iosi	ios::set(int)
+00029e10	setstate__3iosi	ios::setstate(int)
+00029e20	good__C3ios	ios::good(void) const
+00029e34	eof__C3ios	ios::eof(void) const
+00029e48	fail__C3ios	ios::fail(void) const
+00029e5c	bad__C3ios	ios::bad(void) const
+00029e70	rdstate__C3ios	ios::rdstate(void) const
+00029e80	__opPv__C3ios	ios::operator void *(void) const
+00029e9c	__nt__C3ios	ios::operator!(void) const
+00029eb0	exceptions__C3ios	ios::exceptions(void) const
+00029ec0	exceptions__3iosi	ios::exceptions(int)
+00029ed0	rdbuf__C3ios	ios::rdbuf(void) const
+00029edc	rdbuf__3iosP9streambuf	ios::rdbuf(streambuf *)
+00029efc	sync_with_stdio__3ios	ios::sync_with_stdio(void)
+00029f10	unset__3ios11state_value	ios::unset(state_value)
+00029f24	__Q23ios4Init	ios::Init::Init(void)
+00029f30	set_offset__12streammarkeri	streammarker::set_offset(int)
+00029f40	saving__12streammarker	streammarker::saving(void)
+00029f4c	_vtable__9streambuf	streambuf::_vtable(void)
+00029f5c	xchain__9streambuf	streambuf::xchain(void)
+00029f6c	gptr__C9streambuf	streambuf::gptr(void) const
+00029f88	pptr__C9streambuf	streambuf::pptr(void) const
+00029f98	egptr__C9streambuf	streambuf::egptr(void) const
+00029fb8	epptr__C9streambuf	streambuf::epptr(void) const
+00029fc8	pbase__C9streambuf	streambuf::pbase(void) const
+00029fd8	eback__C9streambuf	streambuf::eback(void) const
+00029ff8	base__C9streambuf	streambuf::base(void) const
+0002a008	ebuf__C9streambuf	streambuf::ebuf(void) const
+0002a018	blen__C9streambuf	streambuf::blen(void) const
+0002a02c	xput_char__9streambufc	streambuf::xput_char(char)
+0002a044	xflags__9streambuf	streambuf::xflags(void)
+0002a050	xflags__9streambufi	streambuf::xflags(int)
+0002a064	xsetflags__9streambufi	streambuf::xsetflags(int)
+0002a074	xsetflags__9streambufii	streambuf::xsetflags(int, int)
+0002a090	gbump__9streambufi	streambuf::gbump(int)
+0002a0ac	pbump__9streambufi	streambuf::pbump(int)
+0002a0c0	setp__9streambufPcT1	streambuf::setp(char *, char *)
+0002a0dc	setg__9streambufPcN21	streambuf::setg(char *, char *, char *)
+0002a110	shortbuf__9streambuf	streambuf::shortbuf(void)
+0002a120	in_backup__9streambuf	streambuf::in_backup(void)
+0002a134	Gbase__9streambuf	streambuf::Gbase(void)
+0002a14c	eGptr__9streambuf	streambuf::eGptr(void)
+0002a168	Bbase__9streambuf	streambuf::Bbase(void)
+0002a188	Bptr__9streambuf	streambuf::Bptr(void)
+0002a198	eBptr__9streambuf	streambuf::eBptr(void)
+0002a1b8	Nbase__9streambuf	streambuf::Nbase(void)
+0002a1c8	eNptr__9streambuf	streambuf::eNptr(void)
+0002a1d8	have_backup__9streambuf	streambuf::have_backup(void)
+0002a1ec	have_markers__9streambuf	streambuf::have_markers(void)
+0002a200	put_mode__9streambuf	streambuf::put_mode(void)
+0002a214	pubseekoff__9streambufxQ23ios8seek_diri	streambuf::pubseekoff(long long, ios::seek_dir, int)
+0002a23c	pubseekpos__9streambufxi	streambuf::pubseekpos(long long, int)
+0002a25c	unbuffered__9streambuf	streambuf::unbuffered(void)
+0002a270	linebuffered__9streambuf	streambuf::linebuffered(void)
+0002a284	unbuffered__9streambufi	streambuf::unbuffered(int)
+0002a29c	linebuffered__9streambufi	streambuf::linebuffered(int)
+0002a2b8	allocate__9streambuf	streambuf::allocate(void)
+0002a2e4	allocbuf__9streambuf	streambuf::allocbuf(void)
+0002a300	in_avail__9streambuf	streambuf::in_avail(void)
+0002a314	out_waiting__9streambuf	streambuf::out_waiting(void)
+0002a328	sputn__9streambufPCci	streambuf::sputn(char const *, int)
+0002a350	padn__9streambufci	streambuf::padn(char, int)
+0002a370	sgetn__9streambufPci	streambuf::sgetn(char *, int)
+0002a390	sputc__9streambufi	streambuf::sputc(int)
+0002a3ac	sbumpc__9streambuf	streambuf::sbumpc(void)
+0002a3c4	sgetc__9streambuf	streambuf::sgetc(void)
+0002a3dc	snextc__9streambuf	streambuf::snextc(void)
+0002a414	stossc__9streambuf	streambuf::stossc(void)
+0002a42c	is_open__C7filebuf	filebuf::is_open(void) const
+0002a440	fd__C7filebuf	filebuf::fd(void) const
+0002a45c	is_reading__7filebuf	filebuf::is_reading(void)
+0002a490	cur_ptr__7filebuf	filebuf::cur_ptr(void)
+0002a4d0	file_ptr__7filebuf	filebuf::file_ptr(void)
+0002a4e8	init__3iosP9streambufP7ostream	ios::init(streambuf *, ostream *)
+0002a538	__3iosP9streambufP7ostream	ios::ios(streambuf *, ostream *)
+0002a58c	_._3ios	ios::~ios(void)
+0002a5d0	init__7filebuf	filebuf::init(void)
+0002a5e8	__7filebuf	filebuf::filebuf(void)
+0002a648	__7filebufi	filebuf::filebuf(int)
+0002a6ac	__7filebufiPci	filebuf::filebuf(int, char *, int)
+0002a72c	_._7filebuf	filebuf::~filebuf(void)
+0002a788	open__7filebufPCcii	filebuf::open(char const *, int, int)
+0002a838	open__7filebufPCcT1	filebuf::open(char const *, char const *)
+0002a858	attach__7filebufi	filebuf::attach(int)
+0002a874	setbuf__7filebufPci	filebuf::setbuf(char *, int)
+0002a894	doallocate__7filebuf	filebuf::doallocate(void)
+0002a8ac	overflow__7filebufi	filebuf::overflow(int)
+0002a8c8	underflow__7filebuf	filebuf::underflow(void)
+0002a8e0	sync__7filebuf	filebuf::sync(void)
+0002a8f8	seekoff__7filebufxQ23ios8seek_diri	filebuf::seekoff(long long, ios::seek_dir, int)
+0002a920	close__7filebuf	filebuf::close(void)
+0002a944	sys_read__7filebufPci	filebuf::sys_read(char *, int)
+0002a964	sys_seek__7filebufxQ23ios8seek_dir	filebuf::sys_seek(long long, ios::seek_dir)
+0002a984	sys_write__7filebufPCci	filebuf::sys_write(char const *, int)
+0002a9a4	sys_stat__7filebufPv	filebuf::sys_stat(void *)
+0002a9c0	sys_close__7filebuf	filebuf::sys_close(void)
+0002a9d8	xsputn__7filebufPCci	filebuf::xsputn(char const *, int)
+0002a9f8	xsgetn__7filebufPci	filebuf::xsgetn(char *, int)
+0002aa20	__as__22_IO_istream_withassignR7istream	_IO_istream_withassign::operator=(istream &)
+0002aa84	__as__22_IO_ostream_withassignR7ostream	_IO_ostream_withassign::operator=(ostream &)
+0002aae4	__default_terminate	__default_terminate
+0002ab00	__terminate	__terminate
+0002ab28	__throw_type_match	__throw_type_match
+0002ab5c	__empty	__empty
+0002abb8	__get_eh_context	__get_eh_context
+0002abdc	__get_eh_info	__get_eh_info
+0002ac8c	__get_dynamic_handler_chain	__get_dynamic_handler_chain
+0002acb4	__sjthrow	__sjthrow
+0002adc4	__sjpopnthrow	__sjpopnthrow
+0002aebc	__eh_rtime_match	__eh_rtime_match
+0002af14	__get_eh_table_version	__get_eh_table_version
+0002af24	__get_eh_table_language	__get_eh_table_language
+0002b1c8	__unwinding_cleanup	__unwinding_cleanup
+0002b538	__throw	__throw
+0002b5f8	__rethrow	__rethrow
+0002b6c4	__pure_virtual	__pure_virtual
+0002b700	__udivdi3	__udivdi3
+0002b820	__umoddi3	__umoddi3
+0002b9b4	terminate__Fv	terminate(void)
+0002b9d4	__default_unexpected__Fv	__default_unexpected(void)
+0002b9f0	set_terminate__FPFv_v	set_terminate(void (*)(void))
+0002ba18	set_unexpected__FPFv_v	set_unexpected(void (*)(void))
+0002ba44	unexpected__Fv	unexpected(void)
+0002ba64	__cp_exception_info	__cp_exception_info
+0002ba8c	__cp_eh_info	__cp_eh_info
+0002bab0	__start_cp_handler	__start_cp_handler
+0002badc	__eh_alloc	__eh_alloc
+0002bb14	__eh_free	__eh_free
+0002bb40	__cplus_type_matcher	__cplus_type_matcher
+0002bbac	__cp_push_exception	__cp_push_exception
+0002bc20	__cp_pop_exception	__cp_pop_exception
+0002bcd0	__uncatch_exception	__uncatch_exception
+0002bd00	__check_eh_spec	__check_eh_spec
+0002bed4	__throw_bad_cast	__throw_bad_cast
+0002bf78	__throw_bad_typeid	__throw_bad_typeid
+0002c018	uncaught_exception__Fv	uncaught_exception(void)
+0002c04c	what__C9exception	exception::what(void) const
+0002c074	__9exception	exception::exception(void)
+0002c09c	_._9exception	exception::~exception(void)
+0002c0d4	__13bad_exception	bad_exception::bad_exception(void)
+0002c104	_._13bad_exception	bad_exception::~bad_exception(void)
+0002cbc4	__register_frame_info	__register_frame_info
+0002cc10	__register_frame	__register_frame
+0002cc48	__register_frame_info_table	__register_frame_info_table
+0002cc90	__register_frame_table	__register_frame_table
+0002ccc8	__deregister_frame_info	__deregister_frame_info
+0002cd30	__deregister_frame	__deregister_frame
+0002cd64	__frame_state_for	__frame_state_for
+0002cfe4	__builtin_delete	__builtin_delete
+0002d084	__builtin_new	__builtin_new
+0002d1e4	__builtin_vec_delete	__builtin_vec_delete
+0002d284	__builtin_vec_new	__builtin_vec_new
+0002d334	_._9type_info	type_info::~type_info(void)
+0002d36c	__eq__C9type_infoRC9type_info	type_info::operator==(type_info const &) const
+0002d3b0	__rtti_class	__rtti_class
+0002d3fc	__rtti_si	__rtti_si
+0002d444	__rtti_user	__rtti_user
+0002d47c	dcast__C16__user_type_infoRC9type_infoiPvPC9type_infoT3	__user_type_info::dcast(type_info const &, int, void *, type_info const *, void *) const
+0002d4b4	dcast__C14__si_type_infoRC9type_infoiPvPC9type_infoT3	__si_type_info::dcast(type_info const &, int, void *, type_info const *, void *) const
+0002d514	dcast__C17__class_type_infoRC9type_infoiPvPC9type_infoT3	__class_type_info::dcast(type_info const &, int, void *, type_info const *, void *) const
+0002d664	__9type_infoPCc	type_info::type_info(char const *)
+0002d68c	name__C9type_info	type_info::name(void) const
+0002d69c	__ne__C9type_infoRC9type_info	type_info::operator!=(type_info const &) const
+0002d6cc	__8bad_cast	bad_cast::bad_cast(void)
+0002d6fc	_._8bad_cast	bad_cast::~bad_cast(void)
+0002d73c	__10bad_typeid	bad_typeid::bad_typeid(void)
+0002d76c	_._10bad_typeid	bad_typeid::~bad_typeid(void)
+0002d7ac	__16__user_type_infoPCc	__user_type_info::__user_type_info(char const *)
+0002d7e0	__14__si_type_infoPCcRC16__user_type_info	__si_type_info::__si_type_info(char const *, __user_type_info const &)
+0002d828	__17__class_type_infoPCcPCQ217__class_type_info9base_infoUi	__class_type_info::__class_type_info(char const *, __class_type_info::base_info const *, unsigned int)
+0002d884	before__C9type_infoRC9type_info	type_info::before(type_info const &) const
+0002d8b8	__throw_type_match_rtti	__throw_type_match_rtti
+0002dd50	__is_pointer__FPv	__is_pointer(void *)
+0002dda4	__rtti_ptr	__rtti_ptr
+0002dde0	__rtti_attr	__rtti_attr
+0002de24	__rtti_func	__rtti_func
+0002de5c	__rtti_ptmf	__rtti_ptmf
+0002de94	__rtti_ptmd	__rtti_ptmd
+0002decc	__rtti_array	__rtti_array
+0002df04	__dynamic_cast	__dynamic_cast
+0002df58	__tfv	void type_info function
+0002dfa0	__tfx	long long type_info function
+0002dfe8	__tfl	long type_info function
+0002e030	__tfi	int type_info function
+0002e078	__tfs	short type_info function
+0002e0c0	__tfb	bool type_info function
+0002e108	__tfc	char type_info function
+0002e150	__tfw	wchar_t type_info function
+0002e198	__tfr	long double type_info function
+0002e1e0	__tfd	double type_info function
+0002e228	__tff	float type_info function
+0002e270	__tfUi	unsigned int type_info function
+0002e2b8	__tfUl	unsigned long type_info function
+0002e300	__tfUx	unsigned long long type_info function
+0002e348	__tfUs	unsigned short type_info function
+0002e390	__tfUc	unsigned char type_info function
+0002e3d8	__tfSc	signed char type_info function
+0002e420	set_new_handler__FPFv_v	set_new_handler(void (*)(void))
+0002e448	what__C9bad_alloc	bad_alloc::what(void) const
+0002e468	__nw__FUiPv	operator new(unsigned int, void *)
+0002e484	__vn__FUiPv	operator new [](unsigned int, void *)
+0002e514	_S_chunk_alloc__t24__default_alloc_template2b1i0UiRi	__default_alloc_template<true, 0>::_S_chunk_alloc(unsigned int, int &)
+0002e6c4	clone__Q2t12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0_3Rep	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >::Rep::clone(void)
+0002e8e4	alloc__t12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0Uib	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >::alloc(unsigned int, bool)
+0002ebc4	replace__t12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0UiUiUic	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >::replace(unsigned int, unsigned int, unsigned int, char)
+0002ef94	replace__t12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0UiUiPCcUi	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >::replace(unsigned int, unsigned int, char const *, unsigned int)
+0002f374	replace__t12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0UiUiRCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0UiUi	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >::replace(unsigned int, unsigned int, basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &, unsigned int, unsigned int)
+0002f4d4	replace__H1ZPCc_t12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0PcT1X00X00_Rt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > & basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >::replace<char const *>(char *, char *, char const *, char const *)
+0002f8d4	compare__Ct12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0RCt12basic_string3ZcZt18string_char_traits1ZcZt24__default_alloc_template2b1i0UiUi	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >::compare(basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > const &, unsigned int, unsigned int) const
+0002f97c	GetDirectorID__C14cCSCOMDirector	cCSCOMDirector::GetDirectorID(void) const
+0002f988	AppRegister__14cCSCOMDirectorP12cIGZRegistry	cCSCOMDirector::AppRegister(cIGZRegistry *)
+0002f998	_._14cCSCOMDirector	cCSCOMDirector::~cCSCOMDirector(void)
+0002f9e4	CreatecCSCitySimulator__14cCSCOMDirector	cCSCOMDirector::CreatecCSCitySimulator(void)
+0002fa54	CreatecSC3BaseCityAgentType__14cCSCOMDirector	cCSCOMDirector::CreatecSC3BaseCityAgentType(void)
+0002fad4	CreatecSC3BaseCityAgent__14cCSCOMDirector	cCSCOMDirector::CreatecSC3BaseCityAgent(void)
+0002fb44	CreatecSC3City__14cCSCOMDirector	cCSCOMDirector::CreatecSC3City(void)
+0002fbb4	_M_insert_aux__t6vector2ZUiZt9allocator1ZUiPUiRCUi	vector<unsigned int, allocator<unsigned int> >::_M_insert_aux(unsigned int *, unsigned int const &)
+0002fee4	_M_insert_aux__t6vector2ZP14cISC3CityLayerZt9allocator1ZP14cISC3CityLayerPP14cISC3CityLayerRCP14cISC3CityLayer	vector<cISC3CityLayer *, allocator<cISC3CityLayer *> >::_M_insert_aux(cISC3CityLayer **, cISC3CityLayer *const &)
+0003020c	__thunk_4_QueryInterface__8cSC3CityUiPPv	virtual function thunk (delta:-4) for cSC3City::QueryInterface(unsigned int, void **)
+00030228	__thunk_4_AddRef__8cSC3City	virtual function thunk (delta:-4) for cSC3City::AddRef(void)
+00030244	__thunk_4_Release__8cSC3City	virtual function thunk (delta:-4) for cSC3City::Release(void)
+00030260	__thunk_4_CreateOccupant__8cSC3CityR14cGZResourceKeyUiPPv	virtual function thunk (delta:-4) for cSC3City::CreateOccupant(cGZResourceKey &, unsigned int, void **)
+0003027c	__thunk_4_CreateOccupant__8cSC3CityP19cISC3OccupantAttribUiPPv	virtual function thunk (delta:-4) for cSC3City::CreateOccupant(cISC3OccupantAttrib *, unsigned int, void **)
+0003029c	_._7cRZLock	cRZLock::~cRZLock(void)
+000302f4	GetDepthFromColorType__18cGZBufferColorTypeQ218cGZBufferColorType10eColorType	cGZBufferColorType::GetDepthFromColorType(cGZBufferColorType::eColorType)
+00030394	_S_oom_malloc__t23__malloc_alloc_template1i0Ui	__malloc_alloc_template<0>::_S_oom_malloc(unsigned int)
+00030414	_S_refill__t24__default_alloc_template2b1i0Ui	__default_alloc_template<true, 0>::_S_refill(unsigned int)
+000304a4	clear__t10_List_base2ZP14cISC3CityAgentZt9allocator1ZP14cISC3CityAgent	_List_base<cISC3CityAgent *, allocator<cISC3CityAgent *> >::clear(void)
+00030524	erase__t4list2ZP14cISC3CityAgentZt9allocator1ZP14cISC3CityAgentGt14_List_iterator3ZP14cISC3CityAgentZRP14cISC3CityAgentZPP14cISC3CityAgentT1	list<cISC3CityAgent *, allocator<cISC3CityAgent *> >::erase(_List_iterator<cISC3CityAgent *, cISC3CityAgent *&, cISC3CityAgent **>, _List_iterator<cISC3CityAgent *, cISC3CityAgent *&, cISC3CityAgent **>)
+000305d4	__uninitialized_copy_aux__H2ZPQ216cCSCitySimulator14tAddRemoveItemZPQ216cCSCitySimulator14tAddRemoveItem_X01X01X11G12__false_type_X11	cCSCitySimulator::tAddRemoveItem * __uninitialized_copy_aux<cCSCitySimulator::tAddRemoveItem *, cCSCitySimulator::tAddRemoveItem *>(cCSCitySimulator::tAddRemoveItem *, cCSCitySimulator::tAddRemoveItem *, cCSCitySimulator::tAddRemoveItem *, __false_type)
+00030624	_M_insert_aux__t6vector2ZQ216cCSCitySimulator14tAddRemoveItemZt9allocator1ZQ216cCSCitySimulator14tAddRemoveItemPQ216cCSCitySimulator14tAddRemoveItemRCQ216cCSCitySimulator14tAddRemoveItem	vector<cCSCitySimulator::tAddRemoveItem, allocator<cCSCitySimulator::tAddRemoveItem> >::_M_insert_aux(cCSCitySimulator::tAddRemoveItem *, cCSCitySimulator::tAddRemoveItem const &)
+000309ac	__thunk_4_StartFunction__16cCSCitySimulatorPv	virtual function thunk (delta:-4) for cCSCitySimulator::StartFunction(void *)
+000309cc	FW__2RZ	RZ::FW(void)
+00030a14	_M_erase__t8_Rb_tree5Zt4pair2ZCUiZUiZt4pair2ZCt4pair2ZCUiZUiZPFv_P11cIGZUnknownZt10_Select1st1Zt4pair2ZCt4pair2ZCUiZUiZPFv_P11cIGZUnknownZt4less1Zt4pair2ZCUiZUiZt9allocator1ZPFv_P11cIGZUnknownPt13_Rb_tree_node1Zt4pair2ZCt4pair2ZCUiZUiZPFv_P11cIGZUnknown	_Rb_tree<pair<unsigned int const, unsigned int>, pair<pair<unsigned int const, unsigned int> const, cIGZUnknown *(*)(void)>, _Select1st<pair<pair<unsigned int const, unsigned int> const, cIGZUnknown *(*)(void)> >, less<pair<unsigned int const, unsigned int> >, allocator<cIGZUnknown *(*)(void)> >::_M_erase(_Rb_tree_node<pair<pair<unsigned int const, unsigned int> const, cIGZUnknown *(*)(void)> > *)
+00030a94	_M_insert_aux__t6vector2ZP17cRZCOMDllDirectorZt9allocator1ZP17cRZCOMDllDirectorPP17cRZCOMDllDirectorRCP17cRZCOMDllDirector	vector<cRZCOMDllDirector *, allocator<cRZCOMDllDirector *> >::_M_insert_aux(cRZCOMDllDirector **, cRZCOMDllDirector *const &)
+00030dc4	_M_insert__t8_Rb_tree5Zt4pair2ZCUiZUiZt4pair2ZCt4pair2ZCUiZUiZPFv_P11cIGZUnknownZt10_Select1st1Zt4pair2ZCt4pair2ZCUiZUiZPFv_P11cIGZUnknownZt4less1Zt4pair2ZCUiZUiZt9allocator1ZPFv_P11cIGZUnknownP18_Rb_tree_node_baseT1RCt4pair2ZCt4pair2ZCUiZUiZPFv_P11cIGZUnknown	_Rb_tree<pair<unsigned int const, unsigned int>, pair<pair<unsigned int const, unsigned int> const, cIGZUnknown *(*)(void)>, _Select1st<pair<pair<unsigned int const, unsigned int> const, cIGZUnknown *(*)(void)> >, less<pair<unsigned int const, unsigned int> >, allocator<cIGZUnknown *(*)(void)> >::_M_insert(_Rb_tree_node_base *, _Rb_tree_node_base *, pair<pair<unsigned int const, unsigned int> const, cIGZUnknown *(*)(void)> const &)
+000311e4	insert_unique__t8_Rb_tree5Zt4pair2ZCUiZUiZt4pair2ZCt4pair2ZCUiZUiZPFv_P11cIGZUnknownZt10_Select1st1Zt4pair2ZCt4pair2ZCUiZUiZPFv_P11cIGZUnknownZt4less1Zt4pair2ZCUiZUiZt9allocator1ZPFv_P11cIGZUnknownRCt4pair2ZCt4pair2ZCUiZUiZPFv_P11cIGZUnknown	_Rb_tree<pair<unsigned int const, unsigned int>, pair<pair<unsigned int const, unsigned int> const, cIGZUnknown *(*)(void)>, _Select1st<pair<pair<unsigned int const, unsigned int> const, cIGZUnknown *(*)(void)> >, less<pair<unsigned int const, unsigned int> >, allocator<cIGZUnknown *(*)(void)> >::insert_unique(pair<pair<unsigned int const, unsigned int> const, cIGZUnknown *(*)(void)> const &)
+0003133c	__thunk_4_QueryInterface__17cRZCOMDllDirectorUiPPv	virtual function thunk (delta:-4) for cRZCOMDllDirector::QueryInterface(unsigned int, void **)
+00031358	__thunk_4_AddRef__17cRZCOMDllDirector	virtual function thunk (delta:-4) for cRZCOMDllDirector::AddRef(void)
+00031374	__thunk_4_Release__17cRZCOMDllDirector	virtual function thunk (delta:-4) for cRZCOMDllDirector::Release(void)
+00031390	__thunk_4_PreFrameWorkInit__17cRZCOMDllDirector	virtual function thunk (delta:-4) for cRZCOMDllDirector::PreFrameWorkInit(void)
+000313ac	__thunk_4_PreAppInit__17cRZCOMDllDirector	virtual function thunk (delta:-4) for cRZCOMDllDirector::PreAppInit(void)
+000313c8	__thunk_4_PostAppInit__17cRZCOMDllDirector	virtual function thunk (delta:-4) for cRZCOMDllDirector::PostAppInit(void)
+000313e4	__thunk_4_PreAppShutdown__17cRZCOMDllDirector	virtual function thunk (delta:-4) for cRZCOMDllDirector::PreAppShutdown(void)
+00031400	__thunk_4_PostAppShutdown__17cRZCOMDllDirector	virtual function thunk (delta:-4) for cRZCOMDllDirector::PostAppShutdown(void)
+0003141c	__thunk_4_PostSystemServiceShutdown__17cRZCOMDllDirector	virtual function thunk (delta:-4) for cRZCOMDllDirector::PostSystemServiceShutdown(void)
+00031438	__thunk_4_AbortiveQuit__17cRZCOMDllDirector	virtual function thunk (delta:-4) for cRZCOMDllDirector::AbortiveQuit(void)
+00031454	__thunk_4_OnInstall__17cRZCOMDllDirector	virtual function thunk (delta:-4) for cRZCOMDllDirector::OnInstall(void)
+00031474	_._t3map4Zt4pair2ZCUiZUiZPFv_P11cIGZUnknownZt4less1Zt4pair2ZCUiZUiZt9allocator1ZPFv_P11cIGZUnknown	map<pair<unsigned int const, unsigned int>, cIGZUnknown *(*)(void), less<pair<unsigned int const, unsigned int> >, allocator<cIGZUnknown *(*)(void)> >::~map(void)
+00031520	_._11logic_error	logic_error::~logic_error(void)
+000315d0	__11logic_errorRC11logic_error	logic_error::logic_error(logic_error const &)
+0003162c	__tf11logic_error	logic_error type_info function
+00031664	_._12domain_error	domain_error::~domain_error(void)
+00031680	__tf12domain_error	domain_error type_info function
+000316d8	_._16invalid_argument	invalid_argument::~invalid_argument(void)
+000316f4	__tf16invalid_argument	invalid_argument type_info function
+0003174c	_._12length_error	length_error::~length_error(void)
+00031768	__tf12length_error	length_error type_info function
+000317c0	_._12out_of_range	out_of_range::~out_of_range(void)
+000317dc	__tf12out_of_range	out_of_range type_info function
+00031840	_._13runtime_error	runtime_error::~runtime_error(void)
+000318e4	__tf13runtime_error	runtime_error type_info function
+0003191c	_._11range_error	range_error::~range_error(void)
+00031938	__tf11range_error	range_error type_info function
+00031990	_._14overflow_error	overflow_error::~overflow_error(void)
+000319ac	__tf14overflow_error	overflow_error type_info function
+00031a04	_._15underflow_error	underflow_error::~underflow_error(void)
+00031a20	__tf15underflow_error	underflow_error type_info function
+00031a78	__thunk_4__._22_IO_ostream_withassign	virtual function thunk (delta:-4) for _IO_ostream_withassign::~_IO_ostream_withassign(void)
+00031a84	__thunk_8__._22_IO_istream_withassign	virtual function thunk (delta:-8) for _IO_istream_withassign::~_IO_istream_withassign(void)
+00031a90	__thunk_12__._8iostream	virtual function thunk (delta:-12) for iostream::~iostream(void)
+00031a9c	__thunk_8__._7istream	virtual function thunk (delta:-8) for istream::~istream(void)
+00031aa8	__thunk_4__._7ostream	virtual function thunk (delta:-4) for ostream::~ostream(void)
+00031ab4	_._8iostream	iostream::~iostream(void)
+00031b18	_._7ostream	ostream::~ostream(void)
+00031b6c	__tf7ostream	ostream type_info function
+00031ba4	_._7istream	istream::~istream(void)
+00031bf8	__tf7istream	istream type_info function
+00031c30	__tf8iostream	iostream type_info function
+00031cac	_._22_IO_istream_withassign	_IO_istream_withassign::~_IO_istream_withassign(void)
+00031d08	__tf22_IO_istream_withassign	_IO_istream_withassign type_info function
+00031d60	_._22_IO_ostream_withassign	_IO_ostream_withassign::~_IO_ostream_withassign(void)
+00031dbc	__tf22_IO_ostream_withassign	_IO_ostream_withassign type_info function
+00031e14	__tf3ios	ios type_info function
+00031e4c	__tf9streambuf	streambuf type_info function
+00031e84	__tf7filebuf	filebuf type_info function
+00031edc	__tf11_ios_fields	_ios_fields type_info function
+00031f08	__tf8_IO_FILE	_IO_FILE type_info function
+00031f38	__tf9exception	exception type_info function
+00031f78	__tf13bad_exception	bad_exception type_info function
+00031fe4	__tf9type_info	type_info type_info function
+00032024	__tf8bad_cast	bad_cast type_info function
+00032070	__tf10bad_typeid	bad_typeid type_info function
+000320bc	_._16__user_type_info	__user_type_info::~__user_type_info(void)
+000320ec	__tf16__user_type_info	__user_type_info type_info function
+00032158	_._14__si_type_info	__si_type_info::~__si_type_info(void)
+00032188	__tf14__si_type_info	__si_type_info type_info function
+00032224	_._17__class_type_info	__class_type_info::~__class_type_info(void)
+00032254	__tf17__class_type_info	__class_type_info type_info function
+000322f0	_._19__pointer_type_info	__pointer_type_info::~__pointer_type_info(void)
+00032320	__tf19__pointer_type_info	__pointer_type_info type_info function
+0003236c	_._16__attr_type_info	__attr_type_info::~__attr_type_info(void)
+0003239c	__tf16__attr_type_info	__attr_type_info type_info function
+000323e8	_._19__builtin_type_info	__builtin_type_info::~__builtin_type_info(void)
+00032418	__tf19__builtin_type_info	__builtin_type_info type_info function
+00032464	_._16__func_type_info	__func_type_info::~__func_type_info(void)
+00032494	__tf16__func_type_info	__func_type_info type_info function
+000324e0	_._16__ptmf_type_info	__ptmf_type_info::~__ptmf_type_info(void)
+00032510	__tf16__ptmf_type_info	__ptmf_type_info type_info function
+0003255c	_._16__ptmd_type_info	__ptmd_type_info::~__ptmd_type_info(void)
+0003258c	__tf16__ptmd_type_info	__ptmd_type_info type_info function
+000325d8	_._17__array_type_info	__array_type_info::~__array_type_info(void)
+00032608	__tf17__array_type_info	__array_type_info type_info function
+00032654	_._9bad_alloc	bad_alloc::~bad_alloc(void)
+0003268c	__tf9bad_alloc	bad_alloc type_info function
+000326d4	_fini	_fini

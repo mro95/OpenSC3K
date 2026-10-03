@@ -1,0 +1,6 @@
+/target
+/out
+*.png
+*.wav
+/ghidra-project
+__pycache__/

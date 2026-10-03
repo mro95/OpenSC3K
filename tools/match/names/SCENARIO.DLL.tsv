@@ -1,0 +1,88 @@
+rva	demangled	mangled	source	method
+0010b1	RZGetCOMDllDirector_Scenario(void)	RZGetCOMDllDirector_Scenario__Fv	libScenario.so	tokens:14.7
+00110d	cRZCOMDllDirector::OnUnload(void)	OnUnload__17cRZCOMDllDirector	libScenario.so	vtable:__vt_15cSCNComDirector
+001110	cSCNComDirector::GetDirectorID(void) const	GetDirectorID__C15cSCNComDirector	libScenario.so	tokens:7.4
+00117d	cSCNComDirector::~cSCNComDirector(void)	_._15cSCNComDirector	libScenario.so	vtable:__vt_15cSCNComDirector
+00120f	virtual function thunk (delta:-4) for cRZCOMDllDirector::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__17cRZCOMDllDirectorUiPPv	libScenario.so	caller
+001289	cSCNOccFilterBase::QueryInterface(unsigned int, void **)	QueryInterface__17cSCNOccFilterBaseUiPPv	libScenario.so	tokens:7.4
+0012ae	cSCNOccFilterBase::AddRef(void)	AddRef__17cSCNOccFilterBase	libScenario.so	vtable:__vt_20cSCNOccFilterForType
+0012b5	cSCNOccFilterBase::Release(void)	Release__17cSCNOccFilterBase	libScenario.so	vtable:__vt_20cSCNOccFilterForType
+0012d5	cSCNOccFilterForType::cSCNOccFilterForType(unsigned int)	__20cSCNOccFilterForTypeUi	libScenario.so	vtable-user:__vt_20cSCNOccFilterForType
+001337	cSCNOccFilterForType::~cSCNOccFilterForType(void)	_._20cSCNOccFilterForType	libScenario.so	vtable:__vt_20cSCNOccFilterForType
+00135a	cSCNOccFilterForType::Test(cISC3Occupant *)	Test__20cSCNOccFilterForTypeP13cISC3Occupant	libScenario.so	vtable:__vt_20cSCNOccFilterForType
+0013e5	cSCNPopUpMsg::CreateWin(cIGZWin *&, cIGZString const *, bool)	CreateWin__12cSCNPopUpMsgRP7cIGZWinPC10cIGZStringb	libScenario.so	tokens:19.2
+0016ba	cSCNPopUpMsg::DoWinMsg(cIGZWin *, unsigned int, unsigned int, unsigned int, unsigned int)	DoWinMsg__12cSCNPopUpMsgP7cIGZWinUiUiUiUi	libScenario.so	caller
+001859	cSCNPopUpMsg::OnInit(cIGZWin *)	OnInit__12cSCNPopUpMsgP7cIGZWin	libScenario.so	tokens:136.7
+002197	cSCNPopUpMsg::Release(void)	Release__12cSCNPopUpMsg	libScenario.so	vtable:__vt_12cSCNPopUpMsg
+002a9a	cSCNProgressDlg::AddRef(void)	AddRef__15cSCNProgressDlg	libScenario.so	vtable:__vt_15cSCNProgressDlg
+002b2a	cSCNProgressDlg::CreateMayorNameEntryBox(cIGZWin *, cIGZFont *, cIGZFont *)	CreateMayorNameEntryBox__15cSCNProgressDlgP7cIGZWinP8cIGZFontT2	libScenario.so	tokens:41.0
+002e13	cSCNProgressDlg::CreateWin(cIGZWin *&, bool)	CreateWin__15cSCNProgressDlgRP7cIGZWinb	libScenario.so	tokens:19.2
+002f45	virtual function thunk (delta:-4) for cSCNProgressDlg::DoMessage(cGZMessage &)	__thunk_4_DoMessage__15cSCNProgressDlgR10cGZMessage	libScenario.so	vtable:__vt_15cSCNProgressDlg.17cIGZMessageTarget
+002f4a	cSCNProgressDlg::DoWinMsg(cIGZWin *, unsigned int, unsigned int, unsigned int, unsigned int)	DoWinMsg__15cSCNProgressDlgP7cIGZWinUiUiUiUi	libScenario.so	caller
+003174	cSCNProgressDlg::GetAdvisorFaceAndName(unsigned int, int, bool, cGZResourceKey &, unsigned int &, cRZString &, cRZString &)	GetAdvisorFaceAndName__15cSCNProgressDlgUiibR14cGZResourceKeyRUiR9cRZStringT6	libScenario.so	tokens:71.2
+0032fe	cSCNScenarioLayer::GetCustomPresenterFaceAndName(unsigned int, cGZResourceKey &, unsigned int &, cRZString &, cRZString &)	GetCustomPresenterFaceAndName__17cSCNScenarioLayerUiR14cGZResourceKeyRUiR9cRZStringT4	libScenario.so	callee
+003496	cSCNProgressDlg::MakePresenterButton(unsigned int, int, cGZResourceKey const &, cISC3WinAdvBtn *&)	MakePresenterButton__15cSCNProgressDlgUiiRC14cGZResourceKeyRP14cISC3WinAdvBtn	libScenario.so	tokens:35.1
+003659	cSCNProgressDlg::OnBtnClicked(cIGZWin *, unsigned int)	OnBtnClicked__15cSCNProgressDlgP7cIGZWinUi	libScenario.so	tokens:13.6
+0036a1	cSCNProgressDlg::OnInit(cIGZWin *)	OnInit__15cSCNProgressDlgP7cIGZWin	libScenario.so	tokens:143.0
+004008	cSCNProgressDlg::Release(void)	Release__15cSCNProgressDlg	libScenario.so	vtable:__vt_15cSCNProgressDlg
+0040b3	virtual function thunk (delta:-4) for cSCNProgressDlg::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__15cSCNProgressDlgUiPPv	libScenario.so	vtable:__vt_15cSCNProgressDlg.17cIGZMessageTarget
+0040bb	virtual function thunk (delta:-4) for cSCNProgressDlg::AddRef(void)	__thunk_4_AddRef__15cSCNProgressDlg	libScenario.so	caller
+0040c3	virtual function thunk (delta:-4) for cSCNProgressDlg::Release(void)	__thunk_4_Release__15cSCNProgressDlg	libScenario.so	caller
+00412d	cSCNResultsDlg::CreateWin(cIGZWin *&)	CreateWin__14cSCNResultsDlgRP7cIGZWin	libScenario.so	tokens:19.2
+0044c7	cSCNResultsDlg::OnInit(cIGZWin *)	OnInit__14cSCNResultsDlgP7cIGZWin	libScenario.so	tokens:193.4
+005b6f	cSCNScenarioLayer::AddRef(void)	AddRef__17cSCNScenarioLayer	libScenario.so	vtable:__vt_17cSCNScenarioLayer
+005c57	cSCNScenarioLayer::AndConditionScriptFn(cSCNScript::tInstruction *, cSCNScenarioLayer::tProcessingStyle)	AndConditionScriptFn__17cSCNScenarioLayerPQ210cSCNScript12tInstructionQ217cSCNScenarioLayer16tProcessingStyle	libScenario.so	tokens:7.4
+005d47	cSCNScenarioLayer::BeginBlockScriptFn(cSCNScript::tInstruction *, cSCNScenarioLayer::tProcessingStyle)	BeginBlockScriptFn__17cSCNScenarioLayerPQ210cSCNScript12tInstructionQ217cSCNScenarioLayer16tProcessingStyle	libScenario.so	tokens:7.4
+005dde	cSCNScenarioLayer::CloseScenario(void)	CloseScenario__17cSCNScenarioLayer	libScenario.so	caller
+0065c6	cSCNScenarioLayer::CreateProgressDlgWin(cIGZWin *&, bool)	CreateProgressDlgWin__17cSCNScenarioLayerRP7cIGZWinb	libScenario.so	vtable:__vt_17cSCNScenarioLayer
+0067bb	cSCNScenarioLayer::IsScenarioRunning(void)	IsScenarioRunning__17cSCNScenarioLayer	libScenario.so	vtable:__vt_17cSCNScenarioLayer
+006984	cSCNScenarioLayer::DisplayGoalsDialog(bool)	DisplayGoalsDialog__17cSCNScenarioLayerb	libScenario.so	tokens:14.0
+006a14	cSCNScenarioLayer::DisplayPopUpMsg(cGZMessage &)	DisplayPopUpMsg__17cSCNScenarioLayerR10cGZMessage	libScenario.so	caller
+006cb6	cSCNScenarioLayer::DoMessage(cGZMessage &)	DoMessage__17cSCNScenarioLayerR10cGZMessage	libScenario.so	caller
+006db8	cSCNScenarioLayer::EndScenarioScriptFn(cSCNScript::tInstruction *, cSCNScenarioLayer::tProcessingStyle)	EndScenarioScriptFn__17cSCNScenarioLayerPQ210cSCNScript12tInstructionQ217cSCNScenarioLayer16tProcessingStyle	libScenario.so	caller
+007398	cSCNScenarioLayer::GetManipulator(cISC3CityAgentType const &, cISC3CityLayerManipulator **, int &)	GetManipulator__17cSCNScenarioLayerRC18cISC3CityAgentTypePP25cISC3CityLayerManipulatorRi	libScenario.so	tokens:14.7
+0076bb	cSCNScenarioLayer::GetScenarioFilePath(cIGZString &)	GetScenarioFilePath__17cSCNScenarioLayerR10cIGZString	libScenario.so	vtable:__vt_17cSCNScenarioLayer
+007a0b	cSCNScenarioLayer::HandleModalDialogs(cGZMessage &)	HandleModalDialogs__17cSCNScenarioLayerR10cGZMessage	libScenario.so	caller
+007bd5	cSCNScenarioLayer::Init(cISC3City *)	Init__17cSCNScenarioLayerP9cISC3City	libScenario.so	tokens:38.2
+007ec2	cSCNScenarioLayer::Init(cISC3City *, cIGZDBSegment *)	Init__17cSCNScenarioLayerP9cISC3CityP13cIGZDBSegment	libScenario.so	tokens:27.8
+00820a	cSCNScenarioLayer::IsSCNVariableToken(cRZString const &, int, unsigned int &, cRZString &, int &)	IsSCNVariableToken__17cSCNScenarioLayerRC9cRZStringiRUiR9cRZStringRi	libScenario.so	tokens:20.0
+008721	cSCNScenarioLayer::MoveCameraScriptFn(cSCNScript::tInstruction *, cSCNScenarioLayer::tProcessingStyle)	MoveCameraScriptFn__17cSCNScenarioLayerPQ210cSCNScript12tInstructionQ217cSCNScenarioLayer16tProcessingStyle	libScenario.so	tokens:22.1
+0089e4	cSCNScenarioLayer::OrConditionScriptFn(cSCNScript::tInstruction *, cSCNScenarioLayer::tProcessingStyle)	OrConditionScriptFn__17cSCNScenarioLayerPQ210cSCNScript12tInstructionQ217cSCNScenarioLayer16tProcessingStyle	libScenario.so	tokens:7.4
+008a85	cSCNScenarioLayer::PlayScenario(cRZString *)	PlayScenario__17cSCNScenarioLayerP9cRZString	libScenario.so	tokens:21.4
+008d58	cSCNScenarioLayer::ProcessSubRoutine(cSCNScript *)	ProcessSubRoutine__17cSCNScenarioLayerP10cSCNScript	libScenario.so	tokens:7.4
+008e0b	cSCNScenarioLayer::QueryInterface(unsigned int, void **)	QueryInterface__17cSCNScenarioLayerUiPPv	libScenario.so	tokens:13.8
+0092dd	cSCNScenarioLayer::RegisterTickerAttributes(cIGZDBSegment *)	RegisterTickerAttributes__17cSCNScenarioLayerP13cIGZDBSegment	libScenario.so	tokens:25.2
+0099a1	cSCNScenarioLayer::Release(void)	Release__17cSCNScenarioLayer	libScenario.so	vtable:__vt_17cSCNScenarioLayer
+0099cc	cSCNScenarioLayer::RemoveNewstickerMessages(void)	RemoveNewstickerMessages__17cSCNScenarioLayer	libScenario.so	tokens:7.4
+009ae3	cSCNScenarioLayer::ReplaceToken(cRZString const &, int, cSC3StringTokenData &)	ReplaceToken__17cSCNScenarioLayerRC9cRZStringiR19cSC3StringTokenData	libScenario.so	caller
+009ffb	cSCNScenarioLayer::SaveUncompressedScenarioRelatedRecords(cIGZDBSegment *)	SaveUncompressedScenarioRelatedRecords__17cSCNScenarioLayerP13cIGZDBSegment	libScenario.so	tokens:11.1
+00a514	cSCNScenarioLayer::ShowNewstickerScriptFn(cSCNScript::tInstruction *, cSCNScenarioLayer::tProcessingStyle)	ShowNewstickerScriptFn__17cSCNScenarioLayerPQ210cSCNScript12tInstructionQ217cSCNScenarioLayer16tProcessingStyle	libScenario.so	tokens:20.4
+00ab97	cSCNScenarioLayer::StartLocustsScriptFn(cSCNScript::tInstruction *, cSCNScenarioLayer::tProcessingStyle)	StartLocustsScriptFn__17cSCNScenarioLayerPQ210cSCNScript12tInstructionQ217cSCNScenarioLayer16tProcessingStyle	libScenario.so	tokens:14.7
+00ac11	cSCNScenarioLayer::StartRiotScriptFn(cSCNScript::tInstruction *, cSCNScenarioLayer::tProcessingStyle)	StartRiotScriptFn__17cSCNScenarioLayerPQ210cSCNScript12tInstructionQ217cSCNScenarioLayer16tProcessingStyle	libScenario.so	tokens:14.7
+00ad3e	cSCNScenarioLayer::StartSpaceJunkScriptFn(cSCNScript::tInstruction *, cSCNScenarioLayer::tProcessingStyle)	StartSpaceJunkScriptFn__17cSCNScenarioLayerPQ210cSCNScript12tInstructionQ217cSCNScenarioLayer16tProcessingStyle	libScenario.so	tokens:21.0
+00ae04	cSCNScenarioLayer::StartTornadoScriptFn(cSCNScript::tInstruction *, cSCNScenarioLayer::tProcessingStyle)	StartTornadoScriptFn__17cSCNScenarioLayerPQ210cSCNScript12tInstructionQ217cSCNScenarioLayer16tProcessingStyle	libScenario.so	tokens:14.7
+00afec	cSCNScenarioLayer::StartToxicCloudScriptFn(cSCNScript::tInstruction *, cSCNScenarioLayer::tProcessingStyle)	StartToxicCloudScriptFn__17cSCNScenarioLayerPQ210cSCNScript12tInstructionQ217cSCNScenarioLayer16tProcessingStyle	libScenario.so	tokens:14.7
+00b0bb	cSCNScenarioLayer::StartUFOAttackScriptFn(cSCNScript::tInstruction *, cSCNScenarioLayer::tProcessingStyle)	StartUFOAttackScriptFn__17cSCNScenarioLayerPQ210cSCNScript12tInstructionQ217cSCNScenarioLayer16tProcessingStyle	libScenario.so	tokens:14.7
+00b135	cSCNScenarioLayer::StartWhirlpoolScriptFn(cSCNScript::tInstruction *, cSCNScenarioLayer::tProcessingStyle)	StartWhirlpoolScriptFn__17cSCNScenarioLayerPQ210cSCNScript12tInstructionQ217cSCNScenarioLayer16tProcessingStyle	libScenario.so	tokens:21.0
+00c742	cSCNScenarioLayer::SubRoutineScriptFn(cSCNScript::tInstruction *, cSCNScenarioLayer::tProcessingStyle)	SubRoutineScriptFn__17cSCNScenarioLayerPQ210cSCNScript12tInstructionQ217cSCNScenarioLayer16tProcessingStyle	libScenario.so	tokens:12.2
+00c949	cSCNScenarioLayerManipulator::Apply(cISC3CityAgent &)	Apply__28cSCNScenarioLayerManipulatorR14cISC3CityAgent	libScenario.so	vtable:__vt_28cSCNScenarioLayerManipulator
+00c976	cSCNScenarioLayerManipulator::IsLockingCity(void)	IsLockingCity__28cSCNScenarioLayerManipulator	libScenario.so	vtable:__vt_28cSCNScenarioLayerManipulator
+00c979	cSCNScenarioLayerManipulator::DebugInstanceTag(cIGZString &)	DebugInstanceTag__28cSCNScenarioLayerManipulatorR10cIGZString	libScenario.so	vtable:__vt_28cSCNScenarioLayerManipulator
+00c97e	cSCNScenarioLayerManipulator::QueryInterface(unsigned int, void **)	QueryInterface__28cSCNScenarioLayerManipulatorUiPPv	libScenario.so	vtable:__vt_28cSCNScenarioLayerManipulator
+00c9a7	cSCNScenarioLayerManipulator::Release(void)	Release__28cSCNScenarioLayerManipulator	libScenario.so	vtable:__vt_28cSCNScenarioLayerManipulator
+00f60a	virtual function thunk (delta:-4) for cSCNScenarioLayer::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__17cSCNScenarioLayerUiPPv	libScenario.so	vtable:__vt_17cSCNScenarioLayer.14cISC3CityLayer
+00f612	virtual function thunk (delta:-4) for cSCNScenarioLayer::AddRef(void)	__thunk_4_AddRef__17cSCNScenarioLayer	libScenario.so	vtable:__vt_17cSCNScenarioLayer.14cISC3CityLayer
+00f61a	virtual function thunk (delta:-4) for cSCNScenarioLayer::Release(void)	__thunk_4_Release__17cSCNScenarioLayer	libScenario.so	caller
+00fa81	cRZCOMDllDirector::QueryInterface(unsigned int, void **)	QueryInterface__17cRZCOMDllDirectorUiPPv	libScenario.so	tokens:14.7
+00fac2	cRZCOMDllDirector::FrameWork(void)	FrameWork__17cRZCOMDllDirector	libScenario.so	vtable:__vt_15cSCNComDirector
+00fad2	cRZCOMDllDirector::RemoveRef(void)	RemoveRef__17cRZCOMDllDirector	libScenario.so	vtable:__vt_15cSCNComDirector
+00fae1	cRZCOMDllDirector::RefCount(void)	RefCount__17cRZCOMDllDirector	libScenario.so	vtable:__vt_15cSCNComDirector
+00fae5	cRZCOMDllDirector::InitializeCOM(cIGZCOM *, cIGZString &)	InitializeCOM__17cRZCOMDllDirectorP7cIGZCOMR10cIGZString	libScenario.so	vtable:__vt_15cSCNComDirector
+00fbb3	cRZCOMDllDirector::GetClassObject(unsigned int, unsigned int, void **)	GetClassObject__17cRZCOMDllDirectorUiUiPPv	libScenario.so	vtable:__vt_15cSCNComDirector
+00fc34	cRZCOMDllDirector::EnumClassObjects(void (*)(unsigned int, unsigned int, void *), void *)	EnumClassObjects__17cRZCOMDllDirectorPFUiUiPv_vPv	libScenario.so	vtable:__vt_15cSCNComDirector
+00fc88	cRZCOMDllDirector::ModuleName(cIGZString &)	ModuleName__17cRZCOMDllDirectorR10cIGZString	libScenario.so	vtable:__vt_15cSCNComDirector
+00fc9c	cRZCOMDllDirector::AddDirector(cRZCOMDllDirector *)	AddDirector__17cRZCOMDllDirectorP17cRZCOMDllDirector	libScenario.so	vtable:__vt_15cSCNComDirector
+00fce6	cRZCOMDllDirector::CanUnloadNow(void)	CanUnloadNow__17cRZCOMDllDirector	libScenario.so	vtable:__vt_15cSCNComDirector
+00fd3d	cRZCOMDllDirector::AppRegister(cIGZRegistry *)	AppRegister__17cRZCOMDllDirectorP12cIGZRegistry	libScenario.so	vtable:__vt_15cSCNComDirector
+00fd6d	cRZCOMDllDirector::GZCOM(void)	GZCOM__17cRZCOMDllDirector	libScenario.so	vtable:__vt_15cSCNComDirector
+00fdce	cRZCOMDllDirector::OnStart(cIGZCOM *)	OnStart__17cRZCOMDllDirectorP7cIGZCOM	libScenario.so	tokens:14.7

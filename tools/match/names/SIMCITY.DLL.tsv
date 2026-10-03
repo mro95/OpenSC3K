@@ -1,0 +1,60 @@
+rva	demangled	mangled	source	method
+001154	cCSCitySimulator::GetLayerType(void)	GetLayerType__16cCSCitySimulator	libSimCity.so	tokens:7.1
+00115a	cCSCitySimulator::MessageQueue(void)	MessageQueue__16cCSCitySimulator	libSimCity.so	vtable:__vt_16cCSCitySimulator
+00115e	cCSCitySimulator::~cCSCitySimulator(void)	_._16cCSCitySimulator	libSimCity.so	vtable:__vt_16cCSCitySimulator
+001252	cCSCitySimulator::QueryInterface(unsigned int, void **)	QueryInterface__16cCSCitySimulatorUiPPv	libSimCity.so	vtable:__vt_16cCSCitySimulator
+00127d	cCSCitySimulator::AddRef(void)	AddRef__16cCSCitySimulator	libSimCity.so	vtable:__vt_16cCSCitySimulator
+0012e0	cRZLock::~cRZLock(void)	_._7cRZLock	libSimCity.so	vtable:__vt_7cRZLock
+001305	cCSCitySimulator::Release(void)	Release__16cCSCitySimulator	libSimCity.so	vtable:__vt_16cCSCitySimulator
+00134c	cCSCitySimulator::Init(cISC3City *)	Init__16cCSCitySimulatorP9cISC3City	libSimCity.so	vtable:__vt_16cCSCitySimulator
+001414	cCSCitySimulator::Shutdown(void)	Shutdown__16cCSCitySimulator	libSimCity.so	vtable:__vt_16cCSCitySimulator
+0014db	cCSCitySimulator::OnIdle(void)	OnIdle__16cCSCitySimulator	libSimCity.so	vtable:__vt_16cCSCitySimulator
+0015e8	cCSCitySimulator::DoSimImmediatePause(void)	DoSimImmediatePause__16cCSCitySimulator	libSimCity.so	vtable:__vt_16cCSCitySimulator
+001675	cCSCitySimulator::ProcessMessage(cGZMessage *)	ProcessMessage__16cCSCitySimulatorP10cGZMessage	libSimCity.so	vtable:__vt_16cCSCitySimulator
+001752	cCSCitySimulator::CommandStart(cGZMessage *)	CommandStart__16cCSCitySimulatorP10cGZMessage	libSimCity.so	vtable:__vt_16cCSCitySimulator
+0017a3	cCSCitySimulator::CommandStop(cGZMessage *)	CommandStop__16cCSCitySimulatorP10cGZMessage	libSimCity.so	vtable:__vt_16cCSCitySimulator
+0017e2	cCSCitySimulator::safeStart(void)	safeStart__16cCSCitySimulator	libSimCity.so	tokens:7.1
+001a1b	cCSCitySimulator::AddAgent(cISC3CityAgent *)	AddAgent__16cCSCitySimulatorP14cISC3CityAgent	libSimCity.so	vtable:__vt_16cCSCitySimulator
+001ab0	cCSCitySimulator::RemoveAgent(cISC3CityAgent *)	RemoveAgent__16cCSCitySimulatorP14cISC3CityAgent	libSimCity.so	vtable:__vt_16cCSCitySimulator
+002491	RZGetCOMDllDirector_SimCity(void)	RZGetCOMDllDirector_SimCity__Fv	libSimCity.so	tokens:27.0
+002512	cCSCOMDirector::GetDirectorID(void) const	GetDirectorID__C14cCSCOMDirector	libSimCity.so	tokens:7.1
+002518	cCSCOMDirector::AppRegister(cIGZRegistry *)	AppRegister__14cCSCOMDirectorP12cIGZRegistry	libSimCity.so	vtable:__vt_14cCSCOMDirector
+0025bf	cCSCOMDirector::CreatecSC3City(void)	CreatecSC3City__14cCSCOMDirector	libSimCity.so	caller
+0025f4	cCSCOMDirector::~cCSCOMDirector(void)	_._14cCSCOMDirector	libSimCity.so	vtable:__vt_14cCSCOMDirector
+00262c	virtual function thunk (delta:-4) for cRZCOMDllDirector::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__17cRZCOMDllDirectorUiPPv	libSimCity.so	caller
+002644	cRZCOMDllDirector::OnUnload(void)	OnUnload__17cRZCOMDllDirector	libSimCity.so	vtable:__vt_14cCSCOMDirector
+002709	cSC3City::cSC3City(void)	__8cSC3City	libSimCity.so	caller
+002a4a	cSC3City::CellSizeInWorldUnitsY(void) const	CellSizeInWorldUnitsY__C8cSC3City	libSimCity.so	tokens:14.2
+002d3d	cSC3City::QueryInterface(unsigned int, void **)	QueryInterface__8cSC3CityUiPPv	libSimCity.so	tokens:13.1
+003178	cSC3City::Init(cISC2Importer *)	Init__8cSC3CityP13cISC2Importer	libSimCity.so	tokens:12.8
+003ea6	cSC3City::Init(unsigned int, unsigned int, unsigned int, cISC3DirtGenerator *)	Init__8cSC3CityUiUiUiP18cISC3DirtGenerator	libSimCity.so	tokens:213.0
+00429d	cSC3City::Save(cIGZDBSegment *)	Save__8cSC3CityP13cIGZDBSegment	libSimCity.so	tokens:32.4
+004851	cSC3City::SaveThumbnail(cIGZDBSegment *)	SaveThumbnail__8cSC3CityP13cIGZDBSegment	libSimCity.so	tokens:14.2
+004c17	cSC3City::SaveGoldVersionInfo(cIGZDBSegment *)	SaveGoldVersionInfo__8cSC3CityP13cIGZDBSegment	libSimCity.so	callee
+004ccd	cSC3City::SaveCitySchemeInfo(cIGZDBSegment *)	SaveCitySchemeInfo__8cSC3CityP13cIGZDBSegment	libSimCity.so	tokens:20.6
+0056bb	cSC3City::Pause(void)	Pause__8cSC3City	libSimCity.so	tokens:7.1
+005773	cSC3City::Unpause(void)	Unpause__8cSC3City	libSimCity.so	tokens:13.1
+005ada	cSC3City::SetGameSpeed(cISC3City::tGameSpeed)	SetGameSpeed__8cSC3CityQ29cISC3City10tGameSpeed	libSimCity.so	tokens:7.1
+005e3e	cSC3City::CreateLayers(void)	CreateLayers__8cSC3City	libSimCity.so	tokens:496.4
+006655	cSC3City::CreateSingleLayer(unsigned int, cISC3CityLayer **, unsigned int, void **)	CreateSingleLayer__8cSC3CityUiPP14cISC3CityLayerUiPPv	libSimCity.so	tokens:7.1
+006bfa	cSC3City::StartCitySimulation(void)	StartCitySimulation__8cSC3City	libSimCity.so	tokens:32.4
+006fe8	cSC3City::SetCityName(cIGZString const &)	SetCityName__8cSC3CityRC10cIGZString	libSimCity.so	tokens:7.1
+0071ce	cSC3City::GetNewSerialNumber(void)	GetNewSerialNumber__8cSC3City	libSimCity.so	tokens:13.8
+007383	cSC3City::SetScenarioActive(bool)	SetScenarioActive__8cSC3Cityb	libSimCity.so	tokens:7.1
+007635	cSC3City::AddTickerMessage(unsigned int)	AddTickerMessage__8cSC3CityUi	libSimCity.so	tokens:14.2
+007b28	cSC3City::DoLoadCity(bool)	DoLoadCity__8cSC3Cityb	libSimCity.so	tokens:39.5
+007cc9	cSC3City::SetAutoBudgetEnabled(bool)	SetAutoBudgetEnabled__8cSC3Cityb	libSimCity.so	tokens:7.1
+007d10	cSC3City::SetDisastersEnabled(bool)	SetDisastersEnabled__8cSC3Cityb	libSimCity.so	tokens:7.1
+008636	virtual function thunk (delta:-4) for cSC3City::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__8cSC3CityUiPPv	libSimCity.so	caller
+0087f7	cRZCOMDllDirector::OnStart(cIGZCOM *)	OnStart__17cRZCOMDllDirectorP7cIGZCOM	libSimCity.so	tokens:14.2
+008aae	cRZCOMDllDirector::QueryInterface(unsigned int, void **)	QueryInterface__17cRZCOMDllDirectorUiPPv	libSimCity.so	tokens:14.2
+008aef	cRZCOMDllDirector::FrameWork(void)	FrameWork__17cRZCOMDllDirector	libSimCity.so	vtable:__vt_14cCSCOMDirector
+008af8	cRZCOMDllDirector::RemoveRef(void)	RemoveRef__17cRZCOMDllDirector	libSimCity.so	vtable:__vt_14cCSCOMDirector
+008b07	cRZCOMDllDirector::RefCount(void)	RefCount__17cRZCOMDllDirector	libSimCity.so	vtable:__vt_14cCSCOMDirector
+008b0b	cRZCOMDllDirector::InitializeCOM(cIGZCOM *, cIGZString &)	InitializeCOM__17cRZCOMDllDirectorP7cIGZCOMR10cIGZString	libSimCity.so	vtable:__vt_14cCSCOMDirector
+008bd9	cRZCOMDllDirector::GetClassObject(unsigned int, unsigned int, void **)	GetClassObject__17cRZCOMDllDirectorUiUiPPv	libSimCity.so	vtable:__vt_14cCSCOMDirector
+008c5a	cRZCOMDllDirector::EnumClassObjects(void (*)(unsigned int, unsigned int, void *), void *)	EnumClassObjects__17cRZCOMDllDirectorPFUiUiPv_vPv	libSimCity.so	vtable:__vt_14cCSCOMDirector
+008cae	cRZCOMDllDirector::ModuleName(cIGZString &)	ModuleName__17cRZCOMDllDirectorR10cIGZString	libSimCity.so	vtable:__vt_14cCSCOMDirector
+008cc2	cRZCOMDllDirector::AddDirector(cRZCOMDllDirector *)	AddDirector__17cRZCOMDllDirectorP17cRZCOMDllDirector	libSimCity.so	vtable:__vt_14cCSCOMDirector
+008d0c	cRZCOMDllDirector::CanUnloadNow(void)	CanUnloadNow__17cRZCOMDllDirector	libSimCity.so	vtable:__vt_14cCSCOMDirector
+008d93	cRZCOMDllDirector::GZCOM(void)	GZCOM__17cRZCOMDllDirector	libSimCity.so	vtable:__vt_14cCSCOMDirector

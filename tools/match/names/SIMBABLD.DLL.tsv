@@ -1,0 +1,268 @@
+rva	demangled	mangled	source	method
+0010c9	cGZRESIDtoExtensionMap::AddRef(void)	AddRef__22cGZRESIDtoExtensionMap	sc3u_demo.x86	vtable-thunk:__vt_22cGZRESIDtoExtensionMap
+0019a0	cSLCityViewSelection::Next(unsigned int, cSC3CityCoord *, unsigned int &)	Next__20cSLCityViewSelectionUiP13cSC3CityCoordRUi	sc3u_demo.x86	vtable:__vt_20cSLCityViewSelection
+001a18	cSLCityViewSelection::Release(void)	Release__20cSLCityViewSelection	sc3u_demo.x86	vtable:__vt_20cSLCityViewSelection
+001b91	cSLCityViewSelection::Skip(unsigned int)	Skip__20cSLCityViewSelectionUi	sc3u_demo.x86	vtable:__vt_20cSLCityViewSelection
+001b95	cSLCityViewSelection::Clone(cISC3EnumCityViewSelection **)	Clone__20cSLCityViewSelectionPP26cISC3EnumCityViewSelection	sc3u_demo.x86	vtable:__vt_20cSLCityViewSelection
+001b9c	cSLCityViewSelection::Region(cSC3CityBounds &)	Region__20cSLCityViewSelectionR14cSC3CityBounds	sc3u_demo.x86	vtable:__vt_20cSLCityViewSelection
+001c12	virtual function thunk (delta:-4) for cRZCOMDllDirector::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__17cRZCOMDllDirectorUiPPv	sc3u_demo.x86	caller
+001c74	cSC3SysInfoWindow::AddRef(void)	AddRef__17cSC3SysInfoWindow	sc3u_demo.x86	vtable-thunk:__vt_17cSC3SysInfoWindow
+002c67	cRZSocketError::GetErrorString(cRZString &)	GetErrorString__14cRZSocketErrorR9cRZString	sc3u_demo.x86	vtable:__vt_14cRZSocketError
+002de7	cRZSystemService::OnIdle(unsigned int)	OnIdle__16cRZSystemServiceUi	sc3u_demo.x86	vtable:__vt_6cGZApp
+007327	cRZNetManager::AddRef(void)	AddRef__13cRZNetManager	sc3u_demo.x86	vtable:__vt_13cRZNetManager
+007331	cRZNetManager::QueryInterface(unsigned int, void **)	QueryInterface__13cRZNetManagerUiPPv	sc3u_demo.x86	vtable:__vt_13cRZNetManager
+007ab0	cRZSocketError::~cRZSocketError(void)	_._14cRZSocketError	sc3u_demo.x86	vtable:__vt_14cRZSocketError
+007ab8	cRZSocketError::Init(int)	Init__14cRZSocketErrori	sc3u_demo.x86	vtable:__vt_14cRZSocketError
+007ac0	cRZSocketError::GetErrorValue(void)	GetErrorValue__14cRZSocketError	sc3u_demo.x86	vtable:__vt_14cRZSocketError
+007ac8	cRZSocketError::GetErrorStringCStr(void)	GetErrorStringCStr__14cRZSocketError	sc3u_demo.x86	vtable:__vt_14cRZSocketError
+007b37	cGZRESIDtoExtensionMap::Size(void) const	Size__C22cGZRESIDtoExtensionMap	sc3u_demo.x86	vtable:__vt_22cGZRESIDtoExtensionMap
+007b5a	cGZRESIDtoExtensionMap::QueryInterface(unsigned int, void **)	QueryInterface__22cGZRESIDtoExtensionMapUiPPv	sc3u_demo.x86	vtable:__vt_22cGZRESIDtoExtensionMap
+007b7c	cGZRESIDtoExtensionMap::ExtensionToRESID(cIGZString const &, unsigned int &)	ExtensionToRESID__22cGZRESIDtoExtensionMapRC10cIGZStringRUi	sc3u_demo.x86	vtable:__vt_22cGZRESIDtoExtensionMap
+007fce	cGZRESIDtoExtensionMap::AddRESIDtoExtensionAssociation(unsigned int, cIGZString const &)	AddRESIDtoExtensionAssociation__22cGZRESIDtoExtensionMapUiRC10cIGZString	sc3u_demo.x86	vtable:__vt_22cGZRESIDtoExtensionMap
+008027	cGZRESIDtoExtensionMap::EraseAll(void)	EraseAll__22cGZRESIDtoExtensionMap	sc3u_demo.x86	vtable:__vt_22cGZRESIDtoExtensionMap
+00805e	cSC3WinGraphicsViewer::cSC3WinGraphicsViewer(void)	__21cSC3WinGraphicsViewer	sc3u_demo.x86	tokens:16.9
+00837f	cGZRESIDtoExtensionMap::Copy(cIGZRESIDtoExtensionMap *)	Copy__22cGZRESIDtoExtensionMapP23cIGZRESIDtoExtensionMap	sc3u_demo.x86	vtable:__vt_22cGZRESIDtoExtensionMap
+0083b0	cGZRESIDtoExtensionMap::~cGZRESIDtoExtensionMap(void)	_._22cGZRESIDtoExtensionMap	sc3u_demo.x86	vtable:__vt_22cGZRESIDtoExtensionMap
+008818	cGZRESIDtoExtensionMap::Release(void)	Release__22cGZRESIDtoExtensionMap	sc3u_demo.x86	vtable:__vt_22cGZRESIDtoExtensionMap
+00975b	grab_audiodevice	grab_audiodevice	sc3u_demo.x86	tokens:9.5
+015023	cRZSystemService::Init(void)	Init__16cRZSystemService	sc3u_demo.x86	vtable:__vt_6cGZApp
+01a066	cGZWinScrollbar::Shutdown(void)	Shutdown__15cGZWinScrollbar	sc3u_demo.x86	caller
+01a09e	cWinSC3::DoShowWinCityView(void)	DoShowWinCityView__7cWinSC3	sc3u_demo.x86	tokens:45.6
+01a180	cGZWinSlider::CalculateAllMetrics(void)	CalculateAllMetrics__12cGZWinSlider	sc3u_demo.x86	vtable:__vt_12cGZWinSlider
+01a187	cGZWinSlider::CalculateThumbPosition(void)	CalculateThumbPosition__12cGZWinSlider	sc3u_demo.x86	vtable:__vt_12cGZWinSlider
+01a705	cGZWinSlider::ConvertCursorPositionToValue(int &, int, int)	ConvertCursorPositionToValue__12cGZWinSliderRiii	sc3u_demo.x86	vtable:__vt_12cGZWinSlider
+01aae1	cGZWinSlider::~cGZWinSlider(void)	_._12cGZWinSlider	sc3u_demo.x86	vtable:__vt_12cGZWinSlider
+01ab17	cGZWinSlider::Shutdown(void)	Shutdown__12cGZWinSlider	sc3u_demo.x86	vtable:__vt_12cGZWinSlider
+01d501	SDL_CalculatePitch	SDL_CalculatePitch	sc3u_demo.x86	tokens:9.5
+020860	cSC3WinCredits::cSC3WinCredits(void)	__14cSC3WinCredits	sc3u_demo.x86	tokens:9.5
+02c18b	cSC3SysInfoWindow::~cSC3SysInfoWindow(void)	_._17cSC3SysInfoWindow	sc3u_demo.x86	vtable:__vt_17cSC3SysInfoWindow
+02c1ae	cSC3SysInfoWindow::QueryInterface(unsigned int, void **)	QueryInterface__17cSC3SysInfoWindowUiPPv	sc3u_demo.x86	vtable:__vt_17cSC3SysInfoWindow
+02c1d5	cSC3SysInfoWindow::Release(void)	Release__17cSC3SysInfoWindow	sc3u_demo.x86	vtable:__vt_17cSC3SysInfoWindow
+02c1f6	cSC3SysInfoWindow::CreateSysInfoWindow(cIGZWin *&)	CreateSysInfoWindow__17cSC3SysInfoWindowRP7cIGZWin	sc3u_demo.x86	vtable:__vt_17cSC3SysInfoWindow
+02c2bd	cSC3SysInfoWindow::DoWinMsg(cIGZWin *, unsigned int, unsigned int, unsigned int, unsigned int)	DoWinMsg__17cSC3SysInfoWindowP7cIGZWinUiUiUiUi	sc3u_demo.x86	vtable:__vt_17cSC3SysInfoWindow
+02ce14	cRZGameCommandFactory::AddRef(void)	AddRef__21cRZGameCommandFactory	sc3u_demo.x86	vtable:__vt_21cRZGameCommandFactory
+02d0cf	cGZWin::GZOnMouseExit(cIGZWin *)	GZOnMouseExit__6cGZWinP7cIGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+02d129	cGZWinTextEdit::~cGZWinTextEdit(void)	_._14cGZWinTextEdit	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+02d13b	cGZWinTextEdit::InitializeMemberVariables(int)	InitializeMemberVariables__14cGZWinTextEditi	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+02d175	cGZWinTextEdit::IncrementInsertionPositionByWord(int)	IncrementInsertionPositionByWord__14cGZWinTextEditi	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+02d195	cGZWinTextEdit::SetSelection(unsigned int, unsigned int)	SetSelection__14cGZWinTextEditUiUi	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+02d1a1	cGZWinTextEdit::DoMessage(cGZMessage &)	DoMessage__14cGZWinTextEditR10cGZMessage	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+02d1f0	cGZWinTextEdit::GZPaint(void)	GZPaint__14cGZWinTextEdit	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+02d284	cGZWin::IsPointInWindowScreenCoordinates(int, int) const	IsPointInWindowScreenCoordinates__C6cGZWinii	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+02d2dd	cGZWin::IsPointInWindowWindowCoordinates(int, int) const	IsPointInWindowWindowCoordinates__C6cGZWinii	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+02d2f8	cGZWinTextEdit::GZOnMouseDownL(int, int, unsigned int)	GZOnMouseDownL__14cGZWinTextEditiiUi	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+02d309	cGZWin::GZOnMouseDownR(int, int, unsigned int)	GZOnMouseDownR__6cGZWiniiUi	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+02d36d	cGZWin::GZOnMouseUpM(int, int, unsigned int)	GZOnMouseUpM__6cGZWiniiUi	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+02d3c0	cGZWinTextEdit::GZOnMouseMove(int, int, unsigned int)	GZOnMouseMove__14cGZWinTextEditiiUi	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+02d583	cSC3WinHTMLView::~cSC3WinHTMLView(void)	_._15cSC3WinHTMLView	sc3u_demo.x86	vtable:__vt_15cSC3WinHTMLView
+02d5a6	cSC3WinHTMLView::QueryInterface(unsigned int, void **)	QueryInterface__15cSC3WinHTMLViewUiPPv	sc3u_demo.x86	vtable:__vt_15cSC3WinHTMLView
+02d5d0	cSC3WinHTMLView::AddRef(void)	AddRef__15cSC3WinHTMLView	sc3u_demo.x86	vtable:__vt_15cSC3WinHTMLView
+02d5e0	cSC3WinHTMLView::Release(void)	Release__15cSC3WinHTMLView	sc3u_demo.x86	vtable:__vt_15cSC3WinHTMLView
+02d6a3	cSC3WinHTMLView::DoWinMsg(cIGZWin *, unsigned int, unsigned int, unsigned int, unsigned int)	DoWinMsg__15cSC3WinHTMLViewP7cIGZWinUiUiUiUi	sc3u_demo.x86	tokens:15.8
+02e0ad	__pure_virtual	__pure_virtual	sc3u_demo.x86	vtable:__vt_21cRZGameCommandFactory
+02e0d0	cRZGameCommandFactory::Release(void)	Release__21cRZGameCommandFactory	sc3u_demo.x86	vtable:__vt_21cRZGameCommandFactory
+02e100	cRZGameCommandFactory::AddCommandFactory(cIGZGameCommandFactory *)	AddCommandFactory__21cRZGameCommandFactoryP22cIGZGameCommandFactory	sc3u_demo.x86	vtable:__vt_21cRZGameCommandFactory
+02e18d	cRZGameCommandFactory::~cRZGameCommandFactory(void)	_._21cRZGameCommandFactory	sc3u_demo.x86	vtable:__vt_21cRZGameCommandFactory
+02e280	cRZGameCommandFactory::GetCommand(unsigned int, unsigned int, void **)	GetCommand__21cRZGameCommandFactoryUiUiPPv	sc3u_demo.x86	vtable:__vt_21cRZGameCommandFactory
+02f120	cGZWinSlider::GZPaint(void)	GZPaint__12cGZWinSlider	sc3u_demo.x86	vtable:__vt_12cGZWinSlider
+034c17	cGZWinSlider::GetThumbWidth(void) const	GetThumbWidth__C12cGZWinSlider	sc3u_demo.x86	vtable:__vt_12cGZWinSlider
+034ce7	cGZWinSlider::GetThumbHeight(void) const	GetThumbHeight__C12cGZWinSlider	sc3u_demo.x86	vtable:__vt_12cGZWinSlider
+034dd7	cGZWin::GZOnMouseEnter(cIGZWin *)	GZOnMouseEnter__6cGZWinP7cIGZWin	sc3u_demo.x86	vtable:__vt_12cGZWinSlider
+034e41	cGZWinSlider::GZOnKeyDown(unsigned int, unsigned int)	GZOnKeyDown__12cGZWinSliderUiUi	sc3u_demo.x86	vtable:__vt_12cGZWinSlider
+034ebf	cGZWinSlider::GZOnKeyUp(unsigned int, unsigned int)	GZOnKeyUp__12cGZWinSliderUiUi	sc3u_demo.x86	vtable:__vt_12cGZWinSlider
+036841	cGZWinSlider::GZOnMouseDownL(int, int, unsigned int)	GZOnMouseDownL__12cGZWinSlideriiUi	sc3u_demo.x86	vtable:__vt_12cGZWinSlider
+0377c6	cGZWinSlider::GZOnMouseUpL(int, int, unsigned int)	GZOnMouseUpL__12cGZWinSlideriiUi	sc3u_demo.x86	vtable:__vt_12cGZWinSlider
+037881	cGZWin::GZOnCaptureChanged(cIGZWin *)	GZOnCaptureChanged__6cGZWinP7cIGZWin	sc3u_demo.x86	vtable:__vt_12cGZWinSlider
+037a02	cGZWin::DoMessage(cGZMessage &)	DoMessage__6cGZWinR10cGZMessage	sc3u_demo.x86	vtable:__vt_12cGZWinSlider
+03d0ee	cRZSystemService::GetServiceID(void) const	GetServiceID__C16cRZSystemService	sc3u_demo.x86	vtable:__vt_6cGZApp
+041a79	cRZGameCommandFactory::QueryInterface(unsigned int, void **)	QueryInterface__21cRZGameCommandFactoryUiPPv	sc3u_demo.x86	vtable:__vt_21cRZGameCommandFactory
+043589	virtual function thunk (delta:-156) for cGZWinTextEdit::AddRef(void)	__thunk_156_AddRef__14cGZWinTextEdit	sc3u_demo.x86	caller
+043b1a	virtual function thunk (delta:-156) for cGZWinTextEdit::Release(void)	__thunk_156_Release__14cGZWinTextEdit	sc3u_demo.x86	caller
+045c77	cGZMLContainerElement::ComposeDrawRect(void)	ComposeDrawRect__21cGZMLContainerElement	sc3u_demo.x86	vtable:__vt_11cGZMLAnchor
+045c83	cGZMLContainerElement::ResetDrawRectRecursive(void)	ResetDrawRectRecursive__21cGZMLContainerElement	sc3u_demo.x86	vtable:__vt_11cGZMLAnchor
+045e47	cGZMLAnchor::Selectable(void)	Selectable__11cGZMLAnchor	sc3u_demo.x86	vtable:__vt_11cGZMLAnchor
+045e53	cGZMLContainerElement::Pick(cGZMLElement *&, int, int)	Pick__21cGZMLContainerElementRP12cGZMLElementii	sc3u_demo.x86	vtable:__vt_11cGZMLAnchor
+045e7c	cGZMLAnchor::OnMouseDownL(cGZMLDrawContext &)	OnMouseDownL__11cGZMLAnchorR16cGZMLDrawContext	sc3u_demo.x86	vtable:__vt_11cGZMLAnchor
+045ec2	cGZMLContainerElement::SetTextColor(unsigned int)	SetTextColor__21cGZMLContainerElementUi	sc3u_demo.x86	vtable:__vt_11cGZMLAnchor
+0463ec	cGZMLAnchor::~cGZMLAnchor(void)	_._11cGZMLAnchor	sc3u_demo.x86	vtable:__vt_11cGZMLAnchor
+0463f7	cGZMLContainerElement::Append(cGZMLElement *)	Append__21cGZMLContainerElementP12cGZMLElement	sc3u_demo.x86	vtable:__vt_11cGZMLAnchor
+046402	cGZMLContainerElement::IsContainer(void)	IsContainer__21cGZMLContainerElement	sc3u_demo.x86	vtable:__vt_11cGZMLAnchor
+047c14	cGZWin::GZOnCommand(unsigned int, unsigned int)	GZOnCommand__6cGZWinUiUi	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+04830f	cSC3Buffer::cSC3Buffer(unsigned int, unsigned int, cIGZBuffer::eVRAMRequestType, cGZBufferColorType const &)	__10cSC3BufferUiUiQ210cIGZBuffer16eVRAMRequestTypeRC18cGZBufferColorType	sc3u_demo.x86	tokens:16.3
+04972b	cGZWin::GZOnMouseUpR(int, int, unsigned int)	GZOnMouseUpR__6cGZWiniiUi	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+04df40	cSLCityViewSelection::~cSLCityViewSelection(void)	_._20cSLCityViewSelection	sc3u_demo.x86	vtable:__vt_20cSLCityViewSelection
+04e071	MPEGaction::Loop(bool)	Loop__10MPEGactionb	sc3u_demo.x86	vtable:__vt_15MPEGaudioaction
+04e130	MPEGaction::Pause(void)	Pause__10MPEGaction	sc3u_demo.x86	vtable:__vt_15MPEGaudioaction
+04fb24	cRZMutex::~cRZMutex(void)	_._8cRZMutex	sc3u_demo.x86	vtable:__vt_8cRZMutex
+04fb54	cRZSystemService::IsServiceRunning(void) const	IsServiceRunning__C16cRZSystemService	sc3u_demo.x86	vtable:__vt_6cGZApp
+050522	cRZMutex::Release(void)	Release__8cRZMutex	sc3u_demo.x86	vtable:__vt_8cRZMutex
+05052a	cRZMutex::Lock(void)	Lock__8cRZMutex	sc3u_demo.x86	vtable:__vt_8cRZMutex
+050532	cRZMutex::Unlock(void)	Unlock__8cRZMutex	sc3u_demo.x86	vtable:__vt_8cRZMutex
+05053a	cRZMutex::TryLock(void)	TryLock__8cRZMutex	sc3u_demo.x86	vtable:__vt_8cRZMutex
+050542	cRZMutex::IsValid(void)	IsValid__8cRZMutex	sc3u_demo.x86	vtable:__vt_8cRZMutex
+051b05	cGZWin::~cGZWin(void)	_._6cGZWin	sc3u_demo.x86	caller
+051b87	cGZWinTextEdit::QueryInterface(unsigned int, void **)	QueryInterface__14cGZWinTextEditUiPPv	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+051bb6	cGZWinTextEdit::AddRef(void)	AddRef__14cGZWinTextEdit	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+051bbd	cGZWinTextEdit::Release(void)	Release__14cGZWinTextEdit	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+051bd6	cGZWinTextEdit::Init(void)	Init__14cGZWinTextEdit	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+051c0b	cGZWinTextEdit::Shutdown(void)	Shutdown__14cGZWinTextEdit	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+051c36	cGZWin::SetFlag(cIGZWin::tWinFlag, bool)	SetFlag__6cGZWinQ27cIGZWin8tWinFlagb	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+051d18	cGZWin::CalcAbsoluteArea(void)	CalcAbsoluteArea__6cGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+051e9f	cGZWin::GetParentWin(void) const	GetParentWin__C6cGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+051ea3	cGZWin::SetParentWin(cIGZWin *)	SetParentWin__6cGZWinP7cIGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+051ebe	cGZWin::ChildAdd(cIGZWin *)	ChildAdd__6cGZWinP7cIGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+051eca	cGZWin::ChildRemove(cIGZWin *)	ChildRemove__6cGZWinP7cIGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+051ed6	cGZWin::ChildDelete(cIGZWin *)	ChildDelete__6cGZWinP7cIGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+051ee5	cGZWin::ChildDeleteAll(void)	ChildDeleteAll__6cGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+0520a7	cGZWin::ChildDeleteAbsolute(cIGZWin *)	ChildDeleteAbsolute__6cGZWinP7cIGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+0521a6	cGZWin::ChildToBack(cIGZWin *)	ChildToBack__6cGZWinP7cIGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+052212	cGZWin::PullToFront(void)	PullToFront__6cGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+052225	cGZWin::SendToBack(void)	SendToBack__6cGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+052238	cGZWin::GetChildCount(void) const	GetChildCount__C6cGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+0522ff	cGZWin::GetChildWindowFromID(unsigned int)	GetChildWindowFromID__6cGZWinUi	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+052368	cGZWin::GetChildWindowFromIDRecursive(unsigned int)	GetChildWindowFromIDRecursive__6cGZWinUi	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+0523d7	cGZWin::GetChildWindowFromPoint(int, int)	GetChildWindowFromPoint__6cGZWinii	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+05246b	cGZWin::GetChildAs(unsigned int, unsigned int, void **)	GetChildAs__6cGZWinUiUiPPv	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+052492	cGZWin::GetChildAsRecursive(unsigned int, unsigned int, void **)	GetChildAsRecursive__6cGZWinUiUiPPv	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+0524b9	cGZWin::WindowToWindowCoordinates(cIGZWin *, int &, int &) const	WindowToWindowCoordinates__C6cGZWinP7cIGZWinRiT2	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+0524ed	cGZWin::SetID(unsigned int)	SetID__6cGZWinUi	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+0524f7	cGZWin::IsWinInParentChain(cIGZWin *)	IsWinInParentChain__6cGZWinP7cIGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+052518	cGZWin::IsWinInChildChain(cIGZWin *)	IsWinInChildChain__6cGZWinP7cIGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+052563	cGZWin::FitRectToWindow(cRZRect &, int)	FitRectToWindow__6cGZWinR7cRZRecti	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+052804	cGZWinTextEdit::GZOnSetFocus(cIGZWin *)	GZOnSetFocus__14cGZWinTextEditP7cIGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+052825	cGZWin::EnumParams(bool (*)(cIGZWin *, unsigned int, cIGZVariant *, void *))	EnumParams__6cGZWinPFP7cIGZWinUiP11cIGZVariantPv_b	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+052836	cGZWin::GetKeyboardAccelerator(void) const	GetKeyboardAccelerator__C6cGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+05283a	cGZWin::SetKeyboardAccelerator(cIGZWinKeyAccelerator *)	SetKeyboardAccelerator__6cGZWinP21cIGZWinKeyAccelerator	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+05285d	cGZWin::AccelerateKeyboardMsg(cGZMessage &)	AccelerateKeyboardMsg__6cGZWinR10cGZMessage	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+052874	cGZWin::UpdateCursor(void)	UpdateCursor__6cGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+052898	cGZWin::SetCursor(cIGZCursor *, bool)	SetCursor__6cGZWinP10cIGZCursorb	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+0528b1	cGZWin::ProcessCursorMessage(cGZMessage &)	ProcessCursorMessage__6cGZWinR10cGZMessage	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+0529d2	cGZWin::Plot(void)	Plot__6cGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+052aac	cGZWin::SetBufferToDrawTo(void)	SetBufferToDrawTo__6cGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+052b10	cGZWin::SetBufferToDrawToRecursive(void)	SetBufferToDrawToRecursive__6cGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+052b3a	cGZWin::SetAreaToDrawTo(void)	SetAreaToDrawTo__6cGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+052bed	cGZWin::SetAreaToDrawToRecursive(void)	SetAreaToDrawToRecursive__6cGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+052c1b	cGZWin::IsChildKeyEquivalent(unsigned int, unsigned int)	IsChildKeyEquivalent__6cGZWinUiUi	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+052c6e	cGZWin::PrivateBuffer(bool)	PrivateBuffer__6cGZWinb	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+053073	cGZWin::EnumChildren(unsigned int, bool (*)(cIGZWin *, unsigned int, void *, void *), void *)	EnumChildren__6cGZWinUiPFP7cIGZWinUiPvPv_bPv	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+053152	cGZWin::SortChildren(bool (*)(cIGZWin *, cIGZWin *, void *), void *, bool)	SortChildren__6cGZWinPFP7cIGZWinP7cIGZWinPv_bPvb	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+05325a	cGZWin::GetW(void) const	GetW__C6cGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+053269	cGZWin::GetH(void) const	GetH__C6cGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+053276	cGZWin::GetL(void) const	GetL__C6cGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+05327d	cGZWin::GetT(void) const	GetT__C6cGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+053284	cGZWin::GetR(void) const	GetR__C6cGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+05328b	cGZWin::GetB(void) const	GetB__C6cGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+05333a	cGZWin::SetW(int)	SetW__6cGZWini	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+053361	cGZWin::SetH(int)	SetH__6cGZWini	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+0533f9	cGZWin::GZWinMoveTo(int, int)	GZWinMoveTo__6cGZWinii	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+053429	cGZWin::GZWinOffset(int, int)	GZWinOffset__6cGZWinii	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+053460	cGZWin::WindowToScreenCoordinates(int &, int &) const	WindowToScreenCoordinates__C6cGZWinRiT1	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+0534a8	cGZWin::ScreenToWindowCoordinates(int &, int &) const	ScreenToWindowCoordinates__C6cGZWinRiT1	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+05354a	cGZWin::IsPointInWindowParentCoordinates(int, int) const	IsPointInWindowParentCoordinates__C6cGZWinii	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+0535f7	cGZWin::GetFlag(cIGZWin::tWinFlag) const	GetFlag__C6cGZWinQ27cIGZWin8tWinFlag	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+05360a	cGZWin::ShowWindow(void)	ShowWindow__6cGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+053617	cGZWin::HideWindow(void)	HideWindow__6cGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+053624	cGZWin::IsVisible(void) const	IsVisible__C6cGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+05362f	cGZWin::IsEnabled(void) const	IsEnabled__C6cGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+0536a9	cGZWin::GetMainWindow(void)	GetMainWindow__6cGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+0536c0	cGZWin::GetWindowFromPoint(int, int)	GetWindowFromPoint__6cGZWinii	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+0536d3	cGZWin::SetNotificationTarget(cIGZWin *)	SetNotificationTarget__6cGZWinP7cIGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+0536dd	cGZWin::SetParam(unsigned int, cIGZVariant *)	SetParam__6cGZWinUiP11cIGZVariant	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+0536e6	cGZWin::SetCaption(cIGZString const &)	SetCaption__6cGZWinRC10cIGZString	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+05373c	cGZWin::GetID(void) const	GetID__C6cGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+053740	cGZWin::GetKeyEquivalent(void)	GetKeyEquivalent__6cGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+053744	cGZWin::SetKeyEquivalent(unsigned int)	SetKeyEquivalent__6cGZWinUi	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+05374e	cGZWin::CheckKeyEquivalent(unsigned int, unsigned int)	CheckKeyEquivalent__6cGZWinUiUi	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+05376d	cGZWin::MakeKeyEquivalent(unsigned int, unsigned int)	MakeKeyEquivalent__6cGZWinUiUi	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+053783	cGZWin::InvalidateSelf(void)	InvalidateSelf__6cGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+053788	cGZWin::InvalidateSelfAndParents(void)	InvalidateSelfAndParents__6cGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+05379c	cGZWin::GetBufferToDrawTo(void)	GetBufferToDrawTo__6cGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+0537a0	cGZWin::GetPrivateBuffer(void)	GetPrivateBuffer__6cGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+0537a4	cGZWin::SetWindowManager(cIGZWinMgr *)	SetWindowManager__6cGZWinP10cIGZWinMgr	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+0537b0	cGZWin::GetKeyboard(void)	GetKeyboard__6cGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+0537b4	cGZWin::SetKeyboard(cIGZKeyboard *)	SetKeyboard__6cGZWinP12cIGZKeyboard	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+053867	cGZWin::MakeFillColor(unsigned char, unsigned char, unsigned char)	MakeFillColor__6cGZWinUcUcUc	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+05388b	cGZWin::GZOnMouseDownM(int, int, unsigned int)	GZOnMouseDownM__6cGZWiniiUi	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+053fc3	cGZWinBtn::GetGZClassName(cIGZString &) const	GetGZClassName__C9cGZWinBtnR10cIGZString	sc3u_demo.x86	tokens:9.5
+053ff4	cGZMLContainerElement::Draw(cGZMLDrawContext &)	Draw__21cGZMLContainerElementR16cGZMLDrawContext	sc3u_demo.x86	vtable:__vt_11cGZMLAnchor
+053ffb	cGZWinBtn::SetKeyEquivalent(unsigned int)	SetKeyEquivalent__9cGZWinBtnUi	sc3u_demo.x86	caller
+055924	cRZCOMDllDirector::QueryInterface(unsigned int, void **)	QueryInterface__17cRZCOMDllDirectorUiPPv	sc3u_demo.x86	tokens:18.9
+055965	cGZWin::GetNotificationTarget(void) const	GetNotificationTarget__C6cGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+055fed	cSLCityViewSelection::QueryInterface(unsigned int, void **)	QueryInterface__20cSLCityViewSelectionUiPPv	sc3u_demo.x86	vtable:__vt_20cSLCityViewSelection
+055ff4	cSLCityViewSelection::AddRef(void)	AddRef__20cSLCityViewSelection	sc3u_demo.x86	vtable:__vt_20cSLCityViewSelection
+05600f	cSLCityViewSelection::Append(cISC3EnumCityViewSelection *)	Append__20cSLCityViewSelectionP26cISC3EnumCityViewSelection	sc3u_demo.x86	vtable:__vt_20cSLCityViewSelection
+05620b	cSLCityViewSelection::Unique(void)	Unique__20cSLCityViewSelection	sc3u_demo.x86	vtable:__vt_20cSLCityViewSelection
+0567f4	RZ::SS(void)	SS__2RZ	sc3u_demo.x86	tokens:18.1
+05684a	RZ::FS(void)	FS__2RZ	sc3u_demo.x86	tokens:18.1
+0568a0	RZ::LM(void)	LM__2RZ	sc3u_demo.x86	tokens:18.1
+0569cd	cRZIniFile::~cRZIniFile(void)	_._10cRZIniFile	sc3u_demo.x86	vtable:__vt_10cRZIniFile
+056a63	cRZIniFile::GetPath(void) const	GetPath__C10cRZIniFile	sc3u_demo.x86	vtable:__vt_10cRZIniFile
+056a67	cRZIniFile::SetPath(cRZString const &)	SetPath__10cRZIniFileRC9cRZString	sc3u_demo.x86	vtable:__vt_10cRZIniFile
+056a85	cRZIniFile::Open(bool)	Open__10cRZIniFileb	sc3u_demo.x86	vtable:__vt_10cRZIniFile
+056b1b	cRZIniFile::Close(void)	Close__10cRZIniFile	sc3u_demo.x86	vtable:__vt_10cRZIniFile
+056b46	cRZIniFile::WriteNumber(cRZString const &, cRZString const &, int)	WriteNumber__10cRZIniFileRC9cRZStringT1i	sc3u_demo.x86	vtable:__vt_10cRZIniFile
+056bd4	cRZIniFile::WriteBinaryEntry(cRZString const &, cRZString const &, unsigned char const *, unsigned int)	WriteBinaryEntry__10cRZIniFileRC9cRZStringT1PCUcUi	sc3u_demo.x86	vtable:__vt_10cRZIniFile
+056d99	cRZIniFile::ReadNumber(cRZString const &, cRZString const &, int &)	ReadNumber__10cRZIniFileRC9cRZStringT1Ri	sc3u_demo.x86	vtable:__vt_10cRZIniFile
+056e1a	cRZIniFile::WriteEntry(cRZString const &, cRZString const &, cRZString const &)	WriteEntry__10cRZIniFileRC9cRZStringN21	sc3u_demo.x86	tokens:28.4
+05777c	cRZIniFile::ReadEntry(cRZString const &, cRZString const &, cRZString &)	ReadEntry__10cRZIniFileRC9cRZStringT1R9cRZString	sc3u_demo.x86	vtable:__vt_10cRZIniFile
+057a19	cRZIniFile::EnumEntries(cRZString const &, void (*)(cRZString const &, cRZString const &, void *), void *)	EnumEntries__10cRZIniFileRC9cRZStringPFRC9cRZStringRC9cRZStringPv_vPv	sc3u_demo.x86	vtable:__vt_10cRZIniFile
+057d46	cRZIniFile::EnumSections(void (*)(cRZString const &, cRZString const &, void *), void *)	EnumSections__10cRZIniFilePFRC9cRZStringRC9cRZStringPv_vPv	sc3u_demo.x86	vtable:__vt_10cRZIniFile
+057e29	cRZIniFile::LoadSectionNames(void)	LoadSectionNames__10cRZIniFile	sc3u_demo.x86	vtable:__vt_10cRZIniFile
+057f8e	cRZIniFile::GetFileLine(cRZString &)	GetFileLine__10cRZIniFileR9cRZString	sc3u_demo.x86	vtable:__vt_10cRZIniFile
+058101	cRZIniFile::SectionExists(cIGZString const &)	SectionExists__10cRZIniFileRC10cIGZString	sc3u_demo.x86	vtable:__vt_10cRZIniFile
+058189	cRZIniFile::SetLeaveFileOpenBetweenOperations(bool)	SetLeaveFileOpenBetweenOperations__10cRZIniFileb	sc3u_demo.x86	vtable:__vt_10cRZIniFile
+058f4c	cRZVariant::RefSint8(signed char const *, unsigned int)	RefSint8__10cRZVariantPCScUi	sc3u_demo.x86	tokens:9.5
+058fbd	cRZVariant::RefSint32(int const *, unsigned int)	RefSint32__10cRZVariantPCiUi	sc3u_demo.x86	tokens:9.5
+059037	cRZVariant::RefFloat32(float const *, unsigned int)	RefFloat32__10cRZVariantPCfUi	sc3u_demo.x86	tokens:9.5
+0590b1	cRZVariant::Refbool(bool const *, unsigned int)	Refbool__10cRZVariantPCbUi	sc3u_demo.x86	tokens:9.5
+05911d	cRZVariant::ReftagRZRect(tagRZRect const *)	ReftagRZRect__10cRZVariantPC9tagRZRect	sc3u_demo.x86	tokens:9.5
+059e1c	cRZFastCompression3::~cRZFastCompression3(void)	_._19cRZFastCompression3	sc3u_demo.x86	vtable:__vt_19cRZFastCompression3
+059e3f	cRZFastCompression3::QueryInterface(unsigned int, void **)	QueryInterface__19cRZFastCompression3UiPPv	sc3u_demo.x86	vtable:__vt_19cRZFastCompression3
+059e64	cRZFastCompression3::AddRef(void)	AddRef__19cRZFastCompression3	sc3u_demo.x86	vtable:__vt_19cRZFastCompression3
+059e6b	cRZFastCompression3::Release(void)	Release__19cRZFastCompression3	sc3u_demo.x86	vtable:__vt_19cRZFastCompression3
+059e86	cRZFastCompression3::CompressData(void const *, unsigned int, unsigned char *, unsigned int &)	CompressData__19cRZFastCompression3PCvUiPUcRUi	sc3u_demo.x86	vtable:__vt_19cRZFastCompression3
+059ebe	cRZFastCompression3::DecompressData(unsigned char const *, unsigned int, void *, unsigned int &)	DecompressData__19cRZFastCompression3PCUcUiPvRUi	sc3u_demo.x86	vtable:__vt_19cRZFastCompression3
+059f0f	cRZFastCompression3::GetMaxLengthRequiredForCompressedData(unsigned int)	GetMaxLengthRequiredForCompressedData__19cRZFastCompression3Ui	sc3u_demo.x86	vtable:__vt_19cRZFastCompression3
+059f27	cRZFastCompression3::GetLengthOfCompressedData(unsigned char const *)	GetLengthOfCompressedData__19cRZFastCompression3PCUc	sc3u_demo.x86	vtable:__vt_19cRZFastCompression3
+059f30	cRZFastCompression3::GetLengthOfDecompressedData(unsigned char const *)	GetLengthOfDecompressedData__19cRZFastCompression3PCUc	sc3u_demo.x86	vtable:__vt_19cRZFastCompression3
+059f6c	cRZFastCompression3::GetCompressionVersionString(cIGZString &)	GetCompressionVersionString__19cRZFastCompression3R10cIGZString	sc3u_demo.x86	vtable:__vt_19cRZFastCompression3
+05a81b	cRZDate::NameOfDayString(cRZString &, unsigned int) const	NameOfDayString__C7cRZDateR9cRZStringUi	sc3u_demo.x86	vtable:__vt_7cRZDate
+05a81e	cRZDate::DateString(cRZString &, unsigned int) const	DateString__C7cRZDateR9cRZStringUi	sc3u_demo.x86	tokens:28.4
+05aa12	cGZWin::GetWindowManager(void)	GetWindowManager__6cGZWin	sc3u_demo.x86	vtable:__vt_14cGZWinTextEdit
+05aa8c	cGZApp::QueryInterface(unsigned int, void **)	QueryInterface__6cGZAppUiPPv	sc3u_demo.x86	vtable:__vt_6cGZApp
+05aab5	MPEGaction::Time(void)	Time__10MPEGaction	sc3u_demo.x86	vtable:__vt_15MPEGaudioaction
+05aabd	cGZApp::Release(void)	Release__6cGZApp	sc3u_demo.x86	vtable:__vt_6cGZApp
+05aac5	cRZSystemService::SetServiceID(unsigned int)	SetServiceID__16cRZSystemServiceUi	sc3u_demo.x86	vtable:__vt_6cGZApp
+05aacf	cRZSystemService::SetServiceRunning(bool)	SetServiceRunning__16cRZSystemServiceb	sc3u_demo.x86	vtable:__vt_6cGZApp
+05c222	cRZFile::IsOpen(void) const	IsOpen__C7cRZFile	sc3u_demo.x86	vtable:__vt_7cRZFile
+05c226	cRZFile::~cRZFile(void)	_._7cRZFile	sc3u_demo.x86	vtable:__vt_7cRZFile
+05c3a0	cRZFile::QueryInterface(unsigned int, void **)	QueryInterface__7cRZFileUiPPv	sc3u_demo.x86	tokens:9.5
+05c3c5	cRZFile::Release(void)	Release__7cRZFile	sc3u_demo.x86	vtable:__vt_7cRZFile
+05c3e0	cRZFile::Open(int, cIGZFile::eCreationDistribution, int)	Open__7cRZFileiQ28cIGZFile21eCreationDistributioni	sc3u_demo.x86	vtable:__vt_7cRZFile
+05c4db	cRZFile::Close(void)	Close__7cRZFile	sc3u_demo.x86	vtable:__vt_7cRZFile
+05c508	cRZFile::Position(void)	Position__7cRZFile	sc3u_demo.x86	vtable:__vt_7cRZFile
+05c536	cRZFile::Length(void)	Length__7cRZFile	sc3u_demo.x86	vtable:__vt_7cRZFile
+05c561	cRZFile::SetLength(unsigned int)	SetLength__7cRZFileUi	sc3u_demo.x86	vtable:__vt_7cRZFile
+05c59d	cRZFile::SeekToBegin(void)	SeekToBegin__7cRZFile	sc3u_demo.x86	vtable:__vt_7cRZFile
+05c5a7	cRZFile::SeekToEnd(void)	SeekToEnd__7cRZFile	sc3u_demo.x86	vtable:__vt_7cRZFile
+05c5b1	cRZFile::SeekToRelativePosition(int)	SeekToRelativePosition__7cRZFilei	sc3u_demo.x86	vtable:__vt_7cRZFile
+05c5bf	cRZFile::SeekToPosition(unsigned int)	SeekToPosition__7cRZFileUi	sc3u_demo.x86	vtable:__vt_7cRZFile
+05c5cd	cRZFile::Read(void *, unsigned int)	Read__7cRZFilePvUi	sc3u_demo.x86	vtable:__vt_7cRZFile
+05c611	cRZFile::ReadWithCount(void *, unsigned int &)	ReadWithCount__7cRZFilePvRUi	sc3u_demo.x86	vtable:__vt_7cRZFile
+05c64e	cRZFile::Write(void const *, unsigned int)	Write__7cRZFilePCvUi	sc3u_demo.x86	vtable:__vt_7cRZFile
+05c692	cRZFile::WriteWithCount(void const *, unsigned int &)	WriteWithCount__7cRZFilePCvRUi	sc3u_demo.x86	vtable:__vt_7cRZFile
+05c6cf	cRZFile::Flush(void)	Flush__7cRZFile	sc3u_demo.x86	vtable:__vt_7cRZFile
+05c6fd	cRZFile::Remove(void)	Remove__7cRZFile	sc3u_demo.x86	vtable:__vt_7cRZFile
+05c731	cRZFile::Rename(cIGZString const &)	Rename__7cRZFileRC10cIGZString	sc3u_demo.x86	vtable:__vt_7cRZFile
+05c7b7	cRZFile::Exists(void)	Exists__7cRZFile	sc3u_demo.x86	vtable:__vt_7cRZFile
+05c873	cRZFile::Seek(int, cIGZFile::eSeekMethod)	Seek__7cRZFileiQ28cIGZFile11eSeekMethod	sc3u_demo.x86	vtable:__vt_7cRZFile
+05cc8b	cRZFile::SaveLastError(void)	SaveLastError__7cRZFile	sc3u_demo.x86	tokens:18.9
+05e913	cRZCriticalSection::Release(void)	Release__18cRZCriticalSection	sc3u_demo.x86	vtable:__vt_18cRZCriticalSection
+05e921	cRZCriticalSection::GetCriticalSectionHandle(SDL_mutex **)	GetCriticalSectionHandle__18cRZCriticalSectionPP9SDL_mutex	sc3u_demo.x86	vtable:__vt_18cRZCriticalSection
+05e937	cRZCriticalSection::IsValid(void)	IsValid__18cRZCriticalSection	sc3u_demo.x86	vtable:__vt_18cRZCriticalSection
+05e93b	cRZCriticalSection::IsLocked(void)	IsLocked__18cRZCriticalSection	sc3u_demo.x86	vtable:__vt_18cRZCriticalSection
+05e93f	cRZCriticalSection::~cRZCriticalSection(void)	_._18cRZCriticalSection	sc3u_demo.x86	vtable:__vt_18cRZCriticalSection
+05e96c	cRZCriticalSection::Lock(void)	Lock__18cRZCriticalSection	sc3u_demo.x86	vtable:__vt_18cRZCriticalSection
+05ea0a	cRZCriticalSection::TryLock(void)	TryLock__18cRZCriticalSection	sc3u_demo.x86	vtable:__vt_18cRZCriticalSection
+05ea3c	cRZCriticalSection::Unlock(void)	Unlock__18cRZCriticalSection	sc3u_demo.x86	vtable:__vt_18cRZCriticalSection
+0630e0	cSC3App::LoadRegistry(void)	LoadRegistry__7cSC3App	sc3u_demo.x86	tokens:27.5

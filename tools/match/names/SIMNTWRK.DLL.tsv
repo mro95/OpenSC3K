@@ -1,0 +1,372 @@
+rva	demangled	mangled	source	method
+0010d1	RZGetCOMDllDirector_SimNtwrk(void)	RZGetCOMDllDirector_SimNtwrk__Fv	libSimNtwrk.so	tokens:14.1
+00112d	cSNCOMDirector::GetDirectorID(void) const	GetDirectorID__C14cSNCOMDirector	libSimNtwrk.so	tokens:7.7
+001133	cSNCOMDirector::AppRegister(cIGZRegistry *)	AppRegister__14cSNCOMDirectorP12cIGZRegistry	libSimNtwrk.so	vtable:__vt_14cSNCOMDirector
+00116a	cSNCOMDirector::CreateSTTransitBlockAttrib(void)	CreateSTTransitBlockAttrib__14cSNCOMDirector	libSimNtwrk.so	caller
+00119f	cSNCOMDirector::~cSNCOMDirector(void)	_._14cSNCOMDirector	libSimNtwrk.so	vtable:__vt_14cSNCOMDirector
+0011d7	virtual function thunk (delta:-4) for cRZCOMDllDirector::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__17cRZCOMDllDirectorUiPPv	libSimNtwrk.so	vtable:__vt_17cRZCOMDllDirector.18cIGZFrameWorkHooks
+0011df	virtual function thunk (delta:-4) for cRZCOMDllDirector::AddRef(void)	__thunk_4_AddRef__17cRZCOMDllDirector	libSimNtwrk.so	vtable:__vt_17cRZCOMDllDirector.18cIGZFrameWorkHooks
+0011ef	cRZCOMDllDirector::OnUnload(void)	OnUnload__17cRZCOMDllDirector	libSimNtwrk.so	vtable:__vt_14cSNCOMDirector
+00122a	cSTTransitLayer::PrepareAndPlaceBridges(cISC3OccupantManager *, list<cSC3CityCoord, allocator<cSC3CityCoord> > &, int, vector<unsigned int, allocator<unsigned int> > *, list<cSC3CityCoord, allocator<cSC3CityCoord> > &, unsigned int &)	PrepareAndPlaceBridges__15cSTTransitLayerP20cISC3OccupantManagerRt4list2Z13cSC3CityCoordZt9allocator1Z13cSC3CityCoordiPt6vector2ZUiZt9allocator1ZUiT2RUi	libSimNtwrk.so	tokens:7.7
+002693	cSTTransitLayer::PrepareAndPlaceBridgesforHway(cISC3OccupantManager *, list<cSC3CityCoord, allocator<cSC3CityCoord> > &, int, vector<unsigned int, allocator<unsigned int> > *, list<cSC3CityCoord, allocator<cSC3CityCoord> > &, unsigned int &)	PrepareAndPlaceBridgesforHway__15cSTTransitLayerP20cISC3OccupantManagerRt4list2Z13cSC3CityCoordZt9allocator1Z13cSC3CityCoordiPt6vector2ZUiZt9allocator1ZUiT2RUi	libSimNtwrk.so	tokens:7.7
+00488d	cSLCityViewLineAlgorithm::DrawLine(cSC3CityCoord const &, cSC3CityCoord const &, cISC3EnumCityViewSelection **, cSC3CityBounds &)	DrawLine__24cSLCityViewLineAlgorithmRC13cSC3CityCoordT1PP26cISC3EnumCityViewSelectionR14cSC3CityBounds	libSimNtwrk.so	vtable:__vt_24cSLCityViewLineAlgorithm
+006018	cSTTransitLayer::EngineersDialog(unsigned int, int)	EngineersDialog__15cSTTransitLayerUii	libSimNtwrk.so	tokens:35.8
+006321	cSimpleModalWin::DoDialog(void)	DoDialog__15cSimpleModalWin	libSimNtwrk.so	tokens:15.5
+00645b	cSimpleModalWin::~cSimpleModalWin(void)	_._15cSimpleModalWin	libSimNtwrk.so	vtable:__vt_15cSimpleModalWin
+0064d0	cSimpleModalWin::QueryInterface(unsigned int, void **)	QueryInterface__15cSimpleModalWinUiPPv	libSimNtwrk.so	vtable:__vt_15cSimpleModalWin
+0064f2	cSimpleModalWin::AddRef(void)	AddRef__15cSimpleModalWin	libSimNtwrk.so	vtable:__vt_15cSimpleModalWin
+0064f9	cSimpleModalWin::Release(void)	Release__15cSimpleModalWin	libSimNtwrk.so	vtable:__vt_15cSimpleModalWin
+006508	cSimpleModalWin::DoWinMsg(cIGZWin *, unsigned int, unsigned int, unsigned int, unsigned int)	DoWinMsg__15cSimpleModalWinP7cIGZWinUiUiUiUi	libSimNtwrk.so	tokens:43.6
+006727	cSimpleModalWin::on_init(cIGZWin *)	on_init__15cSimpleModalWinP7cIGZWin	libSimNtwrk.so	tokens:97.1
+006f76	cSimpleModalWin::createResizableButton(cIGZWinBtn *&, unsigned int, unsigned int)	createResizableButton__15cSimpleModalWinRP10cIGZWinBtnUiUi	libSimNtwrk.so	tokens:7.7
+007791	cSTTransitLayer::SameNet(unsigned int, cISC3Occupant *)	SameNet__15cSTTransitLayerUiP13cISC3Occupant	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+0077e7	cSTTransitLayer::myPrepareForRoad(unsigned int, cISC3EnumCityViewSelection *, cSC3CityBounds &, unsigned int &, list<cSC3CityCoord, allocator<cSC3CityCoord> > &, bool, bool)	myPrepareForRoad__15cSTTransitLayerUiP26cISC3EnumCityViewSelectionR14cSC3CityBoundsRUiRt4list2Z13cSC3CityCoordZt9allocator1Z13cSC3CityCoordbT6	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+007d32	cSTTransitLayer::myPrepareForHighway(unsigned int, cISC3EnumCityViewSelection *, cSC3CityBounds &, unsigned int &, list<cSC3CityCoord, allocator<cSC3CityCoord> > &, bool, bool)	myPrepareForHighway__15cSTTransitLayerUiP26cISC3EnumCityViewSelectionR14cSC3CityBoundsRUiRt4list2Z13cSC3CityCoordZt9allocator1Z13cSC3CityCoordbT6	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+008064	cSTTransitLayer::DoPrepare(unsigned short, unsigned short, unsigned short, unsigned short, short, short, unsigned short, list<cSC3CityCoord, allocator<cSC3CityCoord> > &, bool)	DoPrepare__15cSTTransitLayerUsUsUsUsssUsRt4list2Z13cSC3CityCoordZt9allocator1Z13cSC3CityCoordb	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+0086c8	cSTTransitLayer::FlattenCellIfYouCan(cSC3CityCoord, cSC3CityCoord, unsigned int &, int)	FlattenCellIfYouCan__15cSTTransitLayerG13cSC3CityCoordT1RUii	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+008a47	cSTTransitLayer::DidATunnelCollapsed(unsigned int, unsigned int)	DidATunnelCollapsed__15cSTTransitLayerUiUi	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+008a4a	cSTTransitLayer::PrepareAndPlaceConnection(list<cSC3CityCoord, allocator<cSC3CityCoord> > &, int, unsigned int)	PrepareAndPlaceConnection__15cSTTransitLayerRt4list2Z13cSC3CityCoordZt9allocator1Z13cSC3CityCoordiUi	libSimNtwrk.so	tokens:15.5
+00909f	cSTTransitLayer::RemoveConnectionInteractive(cISC3OccupantManager *, cISC3Occupant *)	RemoveConnectionInteractive__15cSTTransitLayerP20cISC3OccupantManagerP13cISC3Occupant	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+0090f4	cSTTransitLayer::ShouldWeRemoveConnection(cISC3Occupant *, int &, bool)	ShouldWeRemoveConnection__15cSTTransitLayerP13cISC3OccupantRib	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+00938b	cSTTransitLayer::FullDoPrepare(list<cSC3CityCoord, allocator<cSC3CityCoord> > &, list<cSC3CityCoord, allocator<cSC3CityCoord> > &, int, bool, int &)	FullDoPrepare__15cSTTransitLayerRt4list2Z13cSC3CityCoordZt9allocator1Z13cSC3CityCoordT1ibRi	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+009d20	cSLCityViewLineAlgorithmForRamps::DrawLine(cSC3CityCoord const &, cSC3CityCoord const &, cISC3EnumCityViewSelection **, cSC3CityBounds &)	DrawLine__32cSLCityViewLineAlgorithmForRampsRC13cSC3CityCoordT1PP26cISC3EnumCityViewSelectionR14cSC3CityBounds	libSimNtwrk.so	tokens:20.1
+00abde	cSTTransitLayer::PlaceOnramp(cISC3EnumCityViewSelection *, unsigned int &, cSC3CityBounds &, cSC3CityCoord &)	PlaceOnramp__15cSTTransitLayerP26cISC3EnumCityViewSelectionRUiR14cSC3CityBoundsR13cSC3CityCoord	libSimNtwrk.so	tokens:59.8
+00c2fc	cSTNetworkOcc::GetSubTypeData(unsigned int)	GetSubTypeData__13cSTNetworkOccUi	libSimNtwrk.so	vtable-thunk:__vt_10cSTPipeOcc.12cSC3Occupant
+00c306	cSTRoadOcc::GetGeomFlag(void)	GetGeomFlag__10cSTRoadOcc	libSimNtwrk.so	tokens:7.7
+00c30c	virtual function thunk (delta:-4) for cSTRoadOcc::~cSTRoadOcc(void)	__thunk_4__._10cSTRoadOcc	libSimNtwrk.so	vtable:__vt_10cSTRoadOcc.12cSC3Occupant
+00c344	virtual function thunk (delta:-4) for cSTPipeOcc::DebugClassTag(cIGZString &)	__thunk_4_DebugClassTag__10cSTPipeOccR10cIGZString	libSimNtwrk.so	vtable:__vt_10cSTPipeOcc.12cSC3Occupant
+00c3ef	cSTPipeOcc::GetGeomFlag(void)	GetGeomFlag__10cSTPipeOcc	libSimNtwrk.so	tokens:7.7
+00c3f5	virtual function thunk (delta:-4) for cSTPipeOcc::GetOccLayerFlag(void)	__thunk_4_GetOccLayerFlag__10cSTPipeOcc	libSimNtwrk.so	vtable:__vt_10cSTPipeOcc.12cSC3Occupant
+00c3f9	virtual function thunk (delta:-4) for cSTPipeOcc::MajorType(void) const	__thunk_4_MajorType__C10cSTPipeOcc	libSimNtwrk.so	vtable:__vt_10cSTPipeOcc.12cSC3Occupant
+00c3fc	virtual function thunk (delta:-4) for cSTPipeOcc::~cSTPipeOcc(void)	__thunk_4__._10cSTPipeOcc	libSimNtwrk.so	vtable:__vt_10cSTPipeOcc.12cSC3Occupant
+00c42e	cSTWireOcc::GetGeomFlag(void)	GetGeomFlag__10cSTWireOcc	libSimNtwrk.so	tokens:7.7
+00c434	virtual function thunk (delta:-4) for cSTWireOcc::~cSTWireOcc(void)	__thunk_4__._10cSTWireOcc	libSimNtwrk.so	vtable:__vt_10cSTWireOcc.12cSC3Occupant
+00c54a	cSTPowerRoadOcc::GetGeomFlag(void)	GetGeomFlag__15cSTPowerRoadOcc	libSimNtwrk.so	tokens:7.7
+00c550	virtual function thunk (delta:-4) for cSTPowerRoadOcc::~cSTPowerRoadOcc(void)	__thunk_4__._15cSTPowerRoadOcc	libSimNtwrk.so	vtable:__vt_15cSTPowerRoadOcc.12cSC3Occupant
+00c582	cSTPowerRailOcc::GetGeomFlag(void)	GetGeomFlag__15cSTPowerRailOcc	libSimNtwrk.so	tokens:7.7
+00c588	virtual function thunk (delta:-4) for cSTPowerRailOcc::~cSTPowerRailOcc(void)	__thunk_4__._15cSTPowerRailOcc	libSimNtwrk.so	vtable:__vt_15cSTPowerRailOcc.12cSC3Occupant
+00c5ba	cSTPowerHighwayOcc::GetGeomFlag(void)	GetGeomFlag__18cSTPowerHighwayOcc	libSimNtwrk.so	tokens:7.7
+00c5c0	virtual function thunk (delta:-4) for cSTRoadOcc::GetOccLayerFlag(void)	__thunk_4_GetOccLayerFlag__10cSTRoadOcc	libSimNtwrk.so	vtable:__vt_10cSTRoadOcc.12cSC3Occupant
+00c5c4	virtual function thunk (delta:-4) for cSTPowerHighwayOcc::~cSTPowerHighwayOcc(void)	__thunk_4__._18cSTPowerHighwayOcc	libSimNtwrk.so	vtable:__vt_18cSTPowerHighwayOcc.12cSC3Occupant
+00c5f6	cSTOnRampRoadOcc::GetGeomFlag(void)	GetGeomFlag__16cSTOnRampRoadOcc	libSimNtwrk.so	tokens:7.7
+00c5fc	virtual function thunk (delta:-4) for cSTOnRampRoadOcc::~cSTOnRampRoadOcc(void)	__thunk_4__._16cSTOnRampRoadOcc	libSimNtwrk.so	vtable:__vt_16cSTOnRampRoadOcc.12cSC3Occupant
+00c62e	cSTOnRampHwyOcc::GetGeomFlag(void)	GetGeomFlag__15cSTOnRampHwyOcc	libSimNtwrk.so	tokens:7.7
+00c634	virtual function thunk (delta:-4) for cSTOnRampHwyOcc::~cSTOnRampHwyOcc(void)	__thunk_4__._15cSTOnRampHwyOcc	libSimNtwrk.so	vtable:__vt_15cSTOnRampHwyOcc.12cSC3Occupant
+00c70e	cSTWireBridgeOcc::GetGeomFlag(void)	GetGeomFlag__16cSTWireBridgeOcc	libSimNtwrk.so	tokens:7.7
+00c714	virtual function thunk (delta:-4) for cSTWireBridgeOcc::~cSTWireBridgeOcc(void)	__thunk_4__._16cSTWireBridgeOcc	libSimNtwrk.so	vtable:__vt_16cSTWireBridgeOcc.12cSC3Occupant
+00c746	cSTRoadTunnelOcc::GetGeomFlag(void)	GetGeomFlag__16cSTRoadTunnelOcc	libSimNtwrk.so	tokens:7.7
+00c74c	virtual function thunk (delta:-4) for cSTRoadTunnelOcc::~cSTRoadTunnelOcc(void)	__thunk_4__._16cSTRoadTunnelOcc	libSimNtwrk.so	vtable:__vt_16cSTRoadTunnelOcc.12cSC3Occupant
+00c77e	cSTRailTunnelOcc::GetGeomFlag(void)	GetGeomFlag__16cSTRailTunnelOcc	libSimNtwrk.so	tokens:7.7
+00c784	virtual function thunk (delta:-4) for cSTRailTunnelOcc::~cSTRailTunnelOcc(void)	__thunk_4__._16cSTRailTunnelOcc	libSimNtwrk.so	vtable:__vt_16cSTRailTunnelOcc.12cSC3Occupant
+00c7b6	cSTHighwayTunnelOcc::GetGeomFlag(void)	GetGeomFlag__19cSTHighwayTunnelOcc	libSimNtwrk.so	tokens:7.7
+00c7bc	virtual function thunk (delta:-4) for cSTHighwayTunnelOcc::~cSTHighwayTunnelOcc(void)	__thunk_4__._19cSTHighwayTunnelOcc	libSimNtwrk.so	vtable:__vt_19cSTHighwayTunnelOcc.12cSC3Occupant
+00ca2c	virtual function thunk (delta:-4) for cSTNetworkOcc::Save(cISC3City *, cISC3OccPersistInfo &)	__thunk_4_Save__13cSTNetworkOccP9cISC3CityR19cISC3OccPersistInfo	libSimNtwrk.so	vtable:__vt_10cSTPipeOcc.12cSC3Occupant
+00cb18	virtual function thunk (delta:-4) for cSTNetworkOcc::Shutdown(void)	__thunk_4_Shutdown__13cSTNetworkOcc	libSimNtwrk.so	vtable:__vt_10cSTPipeOcc.12cSC3Occupant
+00cb34	virtual function thunk (delta:-4) for cSTNetworkOcc::SerialRead(cISC3City *, cIGZDBSerialRecord &)	__thunk_4_SerialRead__13cSTNetworkOccP9cISC3CityR18cIGZDBSerialRecord	libSimNtwrk.so	vtable:__vt_10cSTPipeOcc.12cSC3Occupant
+00cb87	virtual function thunk (delta:-4) for cSTNetworkOcc::SerialWrite(cISC3City *, cIGZDBSerialRecord &)	__thunk_4_SerialWrite__13cSTNetworkOccP9cISC3CityR18cIGZDBSerialRecord	libSimNtwrk.so	vtable:__vt_10cSTPipeOcc.12cSC3Occupant
+00cd9d	cSC3TransitBlockPersistInfo::HasNameField(void) const	HasNameField__C27cSC3TransitBlockPersistInfo	libSimNtwrk.so	vtable:__vt_27cSC3TransitBlockPersistInfo
+00cda0	virtual function thunk (delta:-4) for cSTNetworkOcc::DebugInstanceTag(cIGZString &)	__thunk_4_DebugInstanceTag__13cSTNetworkOccR10cIGZString	libSimNtwrk.so	vtable:__vt_10cSTPipeOcc.12cSC3Occupant
+00cdac	cSTNetworkOcc::QueryInterface(unsigned int, void **)	QueryInterface__13cSTNetworkOccUiPPv	libSimNtwrk.so	vtable-thunk:__vt_10cSTPipeOcc.12cSC3Occupant
+00cdd8	virtual function thunk (delta:-4) for cSTNetworkOcc::DoDebugQueryViewInfo(cGZMessage &, cISC3WinQueryListView *)	__thunk_4_DoDebugQueryViewInfo__13cSTNetworkOccR10cGZMessageP21cISC3WinQueryListView	libSimNtwrk.so	vtable:__vt_10cSTPipeOcc.12cSC3Occupant
+00cde8	cSTNetworkOcc::DoStandardQueryViewInfo(cGZMessage &, cISC3WinQueryListView *)	DoStandardQueryViewInfo__13cSTNetworkOccR10cGZMessageP21cISC3WinQueryListView	libSimNtwrk.so	tokens:41.5
+00d0ec	cSTNetworkOcc::AddRef(void)	AddRef__13cSTNetworkOcc	libSimNtwrk.so	vtable-thunk:__vt_10cSTPipeOcc.12cSC3Occupant
+00d0f4	cSTNetworkOcc::Release(void)	Release__13cSTNetworkOcc	libSimNtwrk.so	vtable-thunk:__vt_10cSTPipeOcc.12cSC3Occupant
+00d1cf	cSTNetworkOccTransit::GetSSAttribKey(cGZResourceKey &)	GetSSAttribKey__20cSTNetworkOccTransitR14cGZResourceKey	libSimNtwrk.so	tokens:21.9
+00d225	cSTNetworkOccTransit::GetStreetSimPart(void)	GetStreetSimPart__20cSTNetworkOccTransit	libSimNtwrk.so	tokens:28.2
+00d37e	cSC3TransitBlockPersistInfo::~cSC3TransitBlockPersistInfo(void)	_._27cSC3TransitBlockPersistInfo	libSimNtwrk.so	vtable:__vt_27cSC3TransitBlockPersistInfo
+00d3a1	cSC3TransitBlockPersistInfo::Clear(void)	Clear__27cSC3TransitBlockPersistInfo	libSimNtwrk.so	vtable:__vt_27cSC3TransitBlockPersistInfo
+00d3ac	cSC3TransitBlockPersistInfo::QueryInterface(unsigned int, void **)	QueryInterface__27cSC3TransitBlockPersistInfoUiPPv	libSimNtwrk.so	vtable:__vt_27cSC3TransitBlockPersistInfo
+00d3ce	cSC3TransitBlockPersistInfo::AddRef(void)	AddRef__27cSC3TransitBlockPersistInfo	libSimNtwrk.so	vtable:__vt_27cSC3TransitBlockPersistInfo
+00d3e5	cSC3TransitBlockPersistInfo::Release(void)	Release__27cSC3TransitBlockPersistInfo	libSimNtwrk.so	vtable:__vt_27cSC3TransitBlockPersistInfo
+00d42b	cSC3TransitBlockPersistInfo::GetNeedsRepair(void) const	GetNeedsRepair__C27cSC3TransitBlockPersistInfo	libSimNtwrk.so	vtable:__vt_27cSC3TransitBlockPersistInfo
+00d435	cSC3TransitBlockPersistInfo::HasTeleportData(void) const	HasTeleportData__C27cSC3TransitBlockPersistInfo	libSimNtwrk.so	vtable:__vt_27cSC3TransitBlockPersistInfo
+00d43f	cSC3TransitBlockPersistInfo::TeleportDirection(int) const	TeleportDirection__C27cSC3TransitBlockPersistInfoi	libSimNtwrk.so	vtable:__vt_27cSC3TransitBlockPersistInfo
+00d44f	cSC3TransitBlockPersistInfo::GetLocationInCells(unsigned int &, unsigned int &, unsigned int &) const	GetLocationInCells__C27cSC3TransitBlockPersistInfoRUiN21	libSimNtwrk.so	vtable:__vt_27cSC3TransitBlockPersistInfo
+00d485	cSC3TransitBlockPersistInfo::GetAttribKey(cGZResourceKey &) const	GetAttribKey__C27cSC3TransitBlockPersistInfoR14cGZResourceKey	libSimNtwrk.so	vtable:__vt_27cSC3TransitBlockPersistInfo
+00d4a7	cSC3TransitBlockPersistInfo::GetRotationFlag(unsigned int &) const	GetRotationFlag__C27cSC3TransitBlockPersistInfoRUi	libSimNtwrk.so	vtable:__vt_27cSC3TransitBlockPersistInfo
+00d4b8	cSC3TransitBlockPersistInfo::SetAttribKey(cGZResourceKey const &)	SetAttribKey__27cSC3TransitBlockPersistInfoRC14cGZResourceKey	libSimNtwrk.so	vtable:__vt_27cSC3TransitBlockPersistInfo
+00d4cf	cSC3TransitBlockPersistInfo::SetTypeId(unsigned int)	SetTypeId__27cSC3TransitBlockPersistInfoUi	libSimNtwrk.so	vtable:__vt_27cSC3TransitBlockPersistInfo
+00d4d2	cSC3TransitBlockPersistInfo::SetLocationInCells(unsigned int, unsigned int, unsigned int)	SetLocationInCells__27cSC3TransitBlockPersistInfoUiUiUi	libSimNtwrk.so	vtable:__vt_27cSC3TransitBlockPersistInfo
+00d50b	cSC3TransitBlockPersistInfo::SetRotationFlag(unsigned int)	SetRotationFlag__27cSC3TransitBlockPersistInfoUi	libSimNtwrk.so	vtable:__vt_27cSC3TransitBlockPersistInfo
+00d522	cSC3TransitBlockPersistInfo::GetCanSimRemoveFlag(void) const	GetCanSimRemoveFlag__C27cSC3TransitBlockPersistInfo	libSimNtwrk.so	vtable:__vt_27cSC3TransitBlockPersistInfo
+00d52c	cSC3TransitBlockPersistInfo::GetCanUserRemoveFlag(void) const	GetCanUserRemoveFlag__C27cSC3TransitBlockPersistInfo	libSimNtwrk.so	vtable:__vt_27cSC3TransitBlockPersistInfo
+00d536	cSC3TransitBlockPersistInfo::SetRemoveFlags(bool, bool)	SetRemoveFlags__27cSC3TransitBlockPersistInfobT1	libSimNtwrk.so	vtable:__vt_27cSC3TransitBlockPersistInfo
+00d55c	cSC3TransitBlockPersistInfo::GetLayerData1(unsigned int &) const	GetLayerData1__C27cSC3TransitBlockPersistInfoRUi	libSimNtwrk.so	vtable:__vt_27cSC3TransitBlockPersistInfo
+00d56a	cSC3TransitBlockPersistInfo::SetLayerData1(unsigned int)	SetLayerData1__27cSC3TransitBlockPersistInfoUi	libSimNtwrk.so	vtable:__vt_27cSC3TransitBlockPersistInfo
+00d576	cSC3TransitBlockPersistInfo::GetLayerData2(unsigned int &) const	GetLayerData2__C27cSC3TransitBlockPersistInfoRUi	libSimNtwrk.so	vtable:__vt_27cSC3TransitBlockPersistInfo
+00d584	cSC3TransitBlockPersistInfo::SetLayerData2(unsigned int)	SetLayerData2__27cSC3TransitBlockPersistInfoUi	libSimNtwrk.so	vtable:__vt_27cSC3TransitBlockPersistInfo
+00d590	cSC3TransitBlockPersistInfo::GetIntDataCount(void) const	GetIntDataCount__C27cSC3TransitBlockPersistInfo	libSimNtwrk.so	vtable:__vt_27cSC3TransitBlockPersistInfo
+00d594	cSC3TransitBlockPersistInfo::GetIntData(unsigned int, unsigned int &)	GetIntData__27cSC3TransitBlockPersistInfoUiRUi	libSimNtwrk.so	vtable:__vt_27cSC3TransitBlockPersistInfo
+00d5f5	cSC3TransitBlockPersistInfo::SetIntData(unsigned int, unsigned int)	SetIntData__27cSC3TransitBlockPersistInfoUiUi	libSimNtwrk.so	vtable:__vt_27cSC3TransitBlockPersistInfo
+00d688	cSC3TransitBlockPersistInfo::SerialWrite(cISC3City *, cIGZDBSerialRecord &)	SerialWrite__27cSC3TransitBlockPersistInfoP9cISC3CityR18cIGZDBSerialRecord	libSimNtwrk.so	vtable:__vt_27cSC3TransitBlockPersistInfo
+00d6b3	cSC3TransitBlockPersistInfo::SerialRead(cISC3City *, unsigned int, cIGZDBSerialRecord &)	SerialRead__27cSC3TransitBlockPersistInfoP9cISC3CityUiR18cIGZDBSerialRecord	libSimNtwrk.so	vtable:__vt_27cSC3TransitBlockPersistInfo
+00d6e5	virtual function thunk (delta:-4) for cSTNetworkOcc::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__13cSTNetworkOccUiPPv	libSimNtwrk.so	vtable:__vt_10cSTPipeOcc.12cSC3Occupant
+00d6ed	virtual function thunk (delta:-4) for cSTNetworkOcc::AddRef(void)	__thunk_4_AddRef__13cSTNetworkOcc	libSimNtwrk.so	vtable:__vt_10cSTPipeOcc.12cSC3Occupant
+00d6f5	virtual function thunk (delta:-4) for cSTNetworkOcc::Release(void)	__thunk_4_Release__13cSTNetworkOcc	libSimNtwrk.so	vtable:__vt_10cSTPipeOcc.12cSC3Occupant
+00d6fd	virtual function thunk (delta:-4) for cSTNetworkOcc::GetSubTypeData(unsigned int)	__thunk_4_GetSubTypeData__13cSTNetworkOccUi	libSimNtwrk.so	vtable:__vt_10cSTPipeOcc.12cSC3Occupant
+00d73d	cSTTransitBlockAttrib::GetConnectivity(int, bool, int, int, bool &, bool &, bool &, bool &) const	GetConnectivity__C21cSTTransitBlockAttribibiiRbN35	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib
+00d7e4	cSTTransitBlockAttrib::SetConnectivity(unsigned int)	SetConnectivity__21cSTTransitBlockAttribUi	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib
+00d7f1	cSTTransitBlockAttrib::IsDiagonal(void) const	IsDiagonal__C21cSTTransitBlockAttrib	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib
+00d802	cSTTransitBlockAttrib::SetDiagonal(bool)	SetDiagonal__21cSTTransitBlockAttribb	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib
+00d81f	cSTTransitBlockAttrib::IsCollapse(void) const	IsCollapse__C21cSTTransitBlockAttrib	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib
+00d830	cSTTransitBlockAttrib::SetCollapse(bool)	SetCollapse__21cSTTransitBlockAttribb	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib
+00d968	cSTTransitBlockAttrib::MajorType(void) const	MajorType__C21cSTTransitBlockAttrib	libSimNtwrk.so	vtable-thunk:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00d96b	cSTTransitBlockAttrib::Key(void) const	Key__C21cSTTransitBlockAttrib	libSimNtwrk.so	vtable-thunk:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00d973	cSTTransitBlockAttrib::SubTypeInfo(void) const	SubTypeInfo__C21cSTTransitBlockAttrib	libSimNtwrk.so	vtable-thunk:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00d97b	cSTTransitBlockAttrib::TypeId(void) const	TypeId__C21cSTTransitBlockAttrib	libSimNtwrk.so	vtable-thunk:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00d983	cSTTransitBlockAttrib::SizeInCellsX(void)	SizeInCellsX__21cSTTransitBlockAttrib	libSimNtwrk.so	vtable-thunk:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00d98b	cSTTransitBlockAttrib::SizeInCellsZ(void)	SizeInCellsZ__21cSTTransitBlockAttrib	libSimNtwrk.so	vtable-thunk:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00d993	cSTTransitBlockAttrib::SizeInCellsY(void)	SizeInCellsY__21cSTTransitBlockAttrib	libSimNtwrk.so	vtable-thunk:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00d99b	cSTTransitBlockAttrib::CityAgentType(void)	CityAgentType__21cSTTransitBlockAttrib	libSimNtwrk.so	vtable-thunk:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00d9ba	cSTTransitBlockAttrib::GetOriginalSpriteAttrib(void)	GetOriginalSpriteAttrib__21cSTTransitBlockAttrib	libSimNtwrk.so	vtable-thunk:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00d9c2	cSTTransitBlockAttrib::GetDefaultLayerFlag(void) const	GetDefaultLayerFlag__C21cSTTransitBlockAttrib	libSimNtwrk.so	vtable-thunk:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00d9ca	cSTTransitBlockAttrib::SetDefaultLayerFlag(unsigned int)	SetDefaultLayerFlag__21cSTTransitBlockAttribUi	libSimNtwrk.so	vtable-thunk:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00d9d9	cSTTransitBlockAttrib::GetPeopleProducerAttrib(void)	GetPeopleProducerAttrib__21cSTTransitBlockAttrib	libSimNtwrk.so	vtable-thunk:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00d9e1	cSTTransitBlockAttrib::GetVehicleProducerAttrib(void)	GetVehicleProducerAttrib__21cSTTransitBlockAttrib	libSimNtwrk.so	vtable-thunk:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00d9e9	cSTTransitBlockAttrib::Flammability(void)	Flammability__21cSTTransitBlockAttrib	libSimNtwrk.so	vtable-thunk:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00d9f1	cSTTransitBlockAttrib::GetName(cIGZString &)	GetName__21cSTTransitBlockAttribR10cIGZString	libSimNtwrk.so	vtable-thunk:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00da00	cSTTransitBlockAttrib::GetNameKey(cGZResourceKey &)	GetNameKey__21cSTTransitBlockAttribR14cGZResourceKey	libSimNtwrk.so	vtable-thunk:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00da20	cSTTransitBlockAttrib::GetQueryDialogClass(void)	GetQueryDialogClass__21cSTTransitBlockAttrib	libSimNtwrk.so	vtable-thunk:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00da28	cSTTransitBlockAttrib::SetQueryDialogClass(unsigned int)	SetQueryDialogClass__21cSTTransitBlockAttribUi	libSimNtwrk.so	vtable-thunk:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00da37	cSTTransitBlockAttrib::IsGeomFlag(unsigned int)	IsGeomFlag__21cSTTransitBlockAttribUi	libSimNtwrk.so	vtable-thunk:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00da46	cSTTransitBlockAttrib::SetGeomFlag(unsigned int)	SetGeomFlag__21cSTTransitBlockAttribUi	libSimNtwrk.so	vtable-thunk:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00da55	cSTTransitBlockAttrib::ClearGeomFlag(unsigned int)	ClearGeomFlag__21cSTTransitBlockAttribUi	libSimNtwrk.so	vtable-thunk:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00da64	cSTTransitBlockAttrib::GetGeomFlag(void)	GetGeomFlag__21cSTTransitBlockAttrib	libSimNtwrk.so	vtable-thunk:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00da6c	cSTTransitBlockAttrib::GetOccLayerFlag(void)	GetOccLayerFlag__21cSTTransitBlockAttrib	libSimNtwrk.so	vtable-thunk:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00da74	cSTTransitBlockAttrib::SetOccLayerFlag(unsigned char)	SetOccLayerFlag__21cSTTransitBlockAttribUc	libSimNtwrk.so	vtable-thunk:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00da83	cSTTransitBlockAttrib::GetSoundObjectId(int &)	GetSoundObjectId__21cSTTransitBlockAttribRi	libSimNtwrk.so	vtable-thunk:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00da92	cSTTransitBlockAttrib::GetSoundKeyA(cGZResourceKey &)	GetSoundKeyA__21cSTTransitBlockAttribR14cGZResourceKey	libSimNtwrk.so	vtable-thunk:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00daa1	cSTTransitBlockAttrib::GetSoundKeyB(cGZResourceKey &)	GetSoundKeyB__21cSTTransitBlockAttribR14cGZResourceKey	libSimNtwrk.so	vtable-thunk:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dab0	cSTTransitBlockAttrib::GetPlopCursorKey(cGZResourceKey &)	GetPlopCursorKey__21cSTTransitBlockAttribR14cGZResourceKey	libSimNtwrk.so	vtable-thunk:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dabf	cSTTransitBlockAttrib::GetQueryDescKey(cGZResourceKey &)	GetQueryDescKey__21cSTTransitBlockAttribR14cGZResourceKey	libSimNtwrk.so	vtable-thunk:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dace	cSTTransitBlockAttrib::GetQueryFormatFlags(unsigned int &)	GetQueryFormatFlags__21cSTTransitBlockAttribRUi	libSimNtwrk.so	vtable-thunk:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dadd	cSTTransitBlockAttrib::DebugInstanceTag(cIGZString &)	DebugInstanceTag__21cSTTransitBlockAttribR10cIGZString	libSimNtwrk.so	vtable-thunk:__vt_21cSTTransitBlockAttrib.18cSC3OccupantAttrib
+00daec	cSTTransitBlockAttrib::cSTTransitBlockAttrib(void)	__21cSTTransitBlockAttrib	libSimNtwrk.so	vtable-user:__vt_21cSTTransitBlockAttrib.18cSC3OccupantAttrib
+00db39	virtual function thunk (delta:-4) for cSTTransitBlockAttrib::~cSTTransitBlockAttrib(void)	__thunk_4__._21cSTTransitBlockAttrib	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.18cSC3OccupantAttrib
+00db59	cSTTransitBlockAttrib::~cSTTransitBlockAttrib(void)	_._21cSTTransitBlockAttrib	libSimNtwrk.so	callee
+00dbb0	cSTTransitBlockAttrib::AddRef(void)	AddRef__21cSTTransitBlockAttrib	libSimNtwrk.so	vtable-thunk:__vt_21cSTTransitBlockAttrib.18cSC3OccupantAttrib
+00dbb8	cSTTransitBlockAttrib::Release(void)	Release__21cSTTransitBlockAttrib	libSimNtwrk.so	vtable-thunk:__vt_21cSTTransitBlockAttrib.18cSC3OccupantAttrib
+00dbc0	cSTTransitBlockAttrib::SetOverRideAttrib(cISC3OccAttribOverRide *)	SetOverRideAttrib__21cSTTransitBlockAttribP22cISC3OccAttribOverRide	libSimNtwrk.so	vtable-thunk:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dbcf	cSTTransitBlockAttrib::GetOverRideAttrib(void)	GetOverRideAttrib__21cSTTransitBlockAttrib	libSimNtwrk.so	vtable-thunk:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dbd7	cSTTransitBlockAttrib::GetArchitectName(cIGZString &)	GetArchitectName__21cSTTransitBlockAttribR10cIGZString	libSimNtwrk.so	vtable-thunk:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dbe6	virtual function thunk (delta:-4) for cSTTransitBlockAttrib::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__21cSTTransitBlockAttribUiPPv	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.18cSC3OccupantAttrib
+00dbee	virtual function thunk (delta:-4) for cSTTransitBlockAttrib::AddRef(void)	__thunk_4_AddRef__21cSTTransitBlockAttrib	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.18cSC3OccupantAttrib
+00dbf6	virtual function thunk (delta:-4) for cSTTransitBlockAttrib::Release(void)	__thunk_4_Release__21cSTTransitBlockAttrib	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.18cSC3OccupantAttrib
+00dc06	virtual function thunk (delta:-4) for cSTTransitBlockAttrib::DebugInstanceTag(cIGZString &)	__thunk_4_DebugInstanceTag__21cSTTransitBlockAttribR10cIGZString	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.18cSC3OccupantAttrib
+00dc0e	virtual function thunk (delta:-4) for cSTTransitBlockAttrib::DebugClassTag(cIGZString &)	__thunk_4_DebugClassTag__21cSTTransitBlockAttribR10cIGZString	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.18cSC3OccupantAttrib
+00dc16	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::QueryInterface(unsigned int, void **)	__thunk_24_QueryInterface__21cSTTransitBlockAttribUiPPv	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dc1e	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::AddRef(void)	__thunk_24_AddRef__21cSTTransitBlockAttrib	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dc26	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::Release(void)	__thunk_24_Release__21cSTTransitBlockAttrib	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dc2e	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::GetOccupantGZCLSID(unsigned int &) const	__thunk_24_GetOccupantGZCLSID__C21cSTTransitBlockAttribRUi	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dc36	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::Key(void) const	__thunk_24_Key__C21cSTTransitBlockAttrib	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dc3e	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::IsGeomFlag(unsigned int)	__thunk_24_IsGeomFlag__21cSTTransitBlockAttribUi	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dc46	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::SetGeomFlag(unsigned int)	__thunk_24_SetGeomFlag__21cSTTransitBlockAttribUi	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dc4e	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::ClearGeomFlag(unsigned int)	__thunk_24_ClearGeomFlag__21cSTTransitBlockAttribUi	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dc56	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::GetGeomFlag(void)	__thunk_24_GetGeomFlag__21cSTTransitBlockAttrib	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dc5e	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::GetOccLayerFlag(void)	__thunk_24_GetOccLayerFlag__21cSTTransitBlockAttrib	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dc66	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::SetOccLayerFlag(unsigned char)	__thunk_24_SetOccLayerFlag__21cSTTransitBlockAttribUc	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dc6e	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::MajorType(void) const	__thunk_24_MajorType__C21cSTTransitBlockAttrib	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dc76	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::SubTypeInfo(void) const	__thunk_24_SubTypeInfo__C21cSTTransitBlockAttrib	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dc7e	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::GetName(cIGZString &)	__thunk_24_GetName__21cSTTransitBlockAttribR10cIGZString	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dc86	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::SizeInCellsX(void)	__thunk_24_SizeInCellsX__21cSTTransitBlockAttrib	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dc8e	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::SizeInCellsZ(void)	__thunk_24_SizeInCellsZ__21cSTTransitBlockAttrib	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dc96	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::SizeInCellsY(void)	__thunk_24_SizeInCellsY__21cSTTransitBlockAttrib	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dc9e	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::CityAgentType(void)	__thunk_24_CityAgentType__21cSTTransitBlockAttrib	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dca6	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::TypeId(void) const	__thunk_24_TypeId__C21cSTTransitBlockAttrib	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dcbe	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::GetOriginalSpriteAttrib(void)	__thunk_24_GetOriginalSpriteAttrib__21cSTTransitBlockAttrib	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dcc6	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::GetDefaultLayerFlag(void) const	__thunk_24_GetDefaultLayerFlag__C21cSTTransitBlockAttrib	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dcce	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::SetDefaultLayerFlag(unsigned int)	__thunk_24_SetDefaultLayerFlag__21cSTTransitBlockAttribUi	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dcd6	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::GetPeopleProducerAttrib(void)	__thunk_24_GetPeopleProducerAttrib__21cSTTransitBlockAttrib	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dcde	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::GetVehicleProducerAttrib(void)	__thunk_24_GetVehicleProducerAttrib__21cSTTransitBlockAttrib	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dce6	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::Flammability(void)	__thunk_24_Flammability__21cSTTransitBlockAttrib	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dcee	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::GetSoundObjectId(int &)	__thunk_24_GetSoundObjectId__21cSTTransitBlockAttribRi	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dcf6	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::GetSoundKeyA(cGZResourceKey &)	__thunk_24_GetSoundKeyA__21cSTTransitBlockAttribR14cGZResourceKey	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dcfe	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::GetSoundKeyB(cGZResourceKey &)	__thunk_24_GetSoundKeyB__21cSTTransitBlockAttribR14cGZResourceKey	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dd06	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::GetPlopCursorKey(cGZResourceKey &)	__thunk_24_GetPlopCursorKey__21cSTTransitBlockAttribR14cGZResourceKey	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dd0e	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::GetQueryDescKey(cGZResourceKey &)	__thunk_24_GetQueryDescKey__21cSTTransitBlockAttribR14cGZResourceKey	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dd16	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::GetQueryFormatFlags(unsigned int &)	__thunk_24_GetQueryFormatFlags__21cSTTransitBlockAttribRUi	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dd1e	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::GetQueryDialogClass(void)	__thunk_24_GetQueryDialogClass__21cSTTransitBlockAttrib	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dd26	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::SetQueryDialogClass(unsigned int)	__thunk_24_SetQueryDialogClass__21cSTTransitBlockAttribUi	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dd2e	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::DebugInstanceTag(cIGZString &)	__thunk_24_DebugInstanceTag__21cSTTransitBlockAttribR10cIGZString	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dd36	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::DebugClassTag(cIGZString &)	__thunk_24_DebugClassTag__21cSTTransitBlockAttribR10cIGZString	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dd3e	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::GetNameKey(cGZResourceKey &)	__thunk_24_GetNameKey__21cSTTransitBlockAttribR14cGZResourceKey	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dd46	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::SetOverRideAttrib(cISC3OccAttribOverRide *)	__thunk_24_SetOverRideAttrib__21cSTTransitBlockAttribP22cISC3OccAttribOverRide	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dd4e	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::GetOverRideAttrib(void)	__thunk_24_GetOverRideAttrib__21cSTTransitBlockAttrib	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00dd56	virtual function thunk (delta:-24) for cSTTransitBlockAttrib::GetArchitectName(cIGZString &)	__thunk_24_GetArchitectName__21cSTTransitBlockAttribR10cIGZString	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.19cISC3OccupantAttrib
+00ddae	cSTTransitLayer::GetTransitDamage(void) const	GetTransitDamage__C15cSTTransitLayer	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+00de17	cSTTransitLayer::SetTransitDamage(float)	SetTransitDamage__15cSTTransitLayerf	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+00e537	cCTPlaceRoad::Execute(void)	Execute__12cCTPlaceRoad	libSimNtwrk.so	tokens:13.1
+00e6f9	cCTPlaceRoad::ExecuteOnMouseDrag(cISC3EnumCityViewSelection *)	ExecuteOnMouseDrag__12cCTPlaceRoadP26cISC3EnumCityViewSelection	libSimNtwrk.so	vtable:__vt_12cCTPlaceRoad
+00e72a	cCTPlaceRoad::ExecuteOnMouseUp(cISC3EnumCityViewSelection *)	ExecuteOnMouseUp__12cCTPlaceRoadP26cISC3EnumCityViewSelection	libSimNtwrk.so	vtable:__vt_12cCTPlaceRoad
+00e845	cCTPlacePipe::ExecuteLineDraw(cSC3CityCoord const &, cSC3CityCoord const &, cISC3EnumCityViewSelection **)	ExecuteLineDraw__12cCTPlacePipeRC13cSC3CityCoordT1PP26cISC3EnumCityViewSelection	libSimNtwrk.so	vtable:__vt_12cCTPlacePipe
+00e881	cCTPlaceRoad::CVActiveCursor(unsigned int &)	CVActiveCursor__12cCTPlaceRoadRUi	libSimNtwrk.so	tokens:7.7
+00e890	cCTPlacePipe::AddRef(void)	AddRef__12cCTPlacePipe	libSimNtwrk.so	vtable:__vt_12cCTPlacePipe
+00e898	cCTPlacePipe::Release(void)	Release__12cCTPlacePipe	libSimNtwrk.so	vtable:__vt_12cCTPlacePipe
+00e90f	cCTPlaceRoad::~cCTPlaceRoad(void)	_._12cCTPlaceRoad	libSimNtwrk.so	vtable:__vt_12cCTPlaceRoad
+00eba9	cCTPlaceHighway::CVActiveCursor(unsigned int &)	CVActiveCursor__15cCTPlaceHighwayRUi	libSimNtwrk.so	tokens:7.7
+00ebb8	cCTPlaceHighway::ExecuteOnMouseDrag(cISC3EnumCityViewSelection *)	ExecuteOnMouseDrag__15cCTPlaceHighwayP26cISC3EnumCityViewSelection	libSimNtwrk.so	vtable:__vt_15cCTPlaceHighway
+00ebe9	cCTPlaceHighway::ExecuteOnMouseUp(cISC3EnumCityViewSelection *)	ExecuteOnMouseUp__15cCTPlaceHighwayP26cISC3EnumCityViewSelection	libSimNtwrk.so	vtable:__vt_15cCTPlaceHighway
+00ed73	cCTPlaceHighway::~cCTPlaceHighway(void)	_._15cCTPlaceHighway	libSimNtwrk.so	vtable:__vt_15cCTPlaceHighway
+00ee4b	cCTPlaceRail::Execute(void)	Execute__12cCTPlaceRail	libSimNtwrk.so	tokens:13.1
+00f00d	cCTPlaceRail::ExecuteOnMouseDrag(cISC3EnumCityViewSelection *)	ExecuteOnMouseDrag__12cCTPlaceRailP26cISC3EnumCityViewSelection	libSimNtwrk.so	vtable:__vt_12cCTPlaceRail
+00f041	cCTPlaceRail::ExecuteOnMouseUp(cISC3EnumCityViewSelection *)	ExecuteOnMouseUp__12cCTPlaceRailP26cISC3EnumCityViewSelection	libSimNtwrk.so	vtable:__vt_12cCTPlaceRail
+00f15c	cCTPlaceRail::CVActiveCursor(unsigned int &)	CVActiveCursor__12cCTPlaceRailRUi	libSimNtwrk.so	tokens:7.7
+00f16b	cCTPlaceRail::CVIsValidHandlerByView(int, unsigned int) const	CVIsValidHandlerByView__C12cCTPlaceRailiUi	libSimNtwrk.so	vtable:__vt_12cCTPlaceRail
+00f1ef	cCTPlaceRail::~cCTPlaceRail(void)	_._12cCTPlaceRail	libSimNtwrk.so	vtable:__vt_12cCTPlaceRail
+00f2c7	cCTPlaceSubway::Execute(void)	Execute__14cCTPlaceSubway	libSimNtwrk.so	tokens:12.9
+00f47a	cCTPlaceSubway::ExecuteOnMouseDrag(cISC3EnumCityViewSelection *)	ExecuteOnMouseDrag__14cCTPlaceSubwayP26cISC3EnumCityViewSelection	libSimNtwrk.so	vtable:__vt_14cCTPlaceSubway
+00f4ae	cCTPlaceSubway::ExecuteOnMouseUp(cISC3EnumCityViewSelection *)	ExecuteOnMouseUp__14cCTPlaceSubwayP26cISC3EnumCityViewSelection	libSimNtwrk.so	vtable:__vt_14cCTPlaceSubway
+00f5c9	cCTPlaceSubway::CVActiveCursor(unsigned int &)	CVActiveCursor__14cCTPlaceSubwayRUi	libSimNtwrk.so	tokens:7.7
+00f5d8	cCTPlaceSubway::CVIsValidHandlerByView(int, unsigned int) const	CVIsValidHandlerByView__C14cCTPlaceSubwayiUi	libSimNtwrk.so	vtable:__vt_14cCTPlaceSubway
+00f654	cCTPlaceSubway::~cCTPlaceSubway(void)	_._14cCTPlaceSubway	libSimNtwrk.so	vtable:__vt_14cCTPlaceSubway
+00f72c	cCTPlaceOnramp::ExecuteOnMouseDrag(cISC3EnumCityViewSelection *)	ExecuteOnMouseDrag__14cCTPlaceOnrampP26cISC3EnumCityViewSelection	libSimNtwrk.so	vtable:__vt_14cCTPlaceOnramp
+00f760	cCTPlaceOnramp::ExecuteLineDraw(cSC3CityCoord const &, cSC3CityCoord const &, cISC3EnumCityViewSelection **)	ExecuteLineDraw__14cCTPlaceOnrampRC13cSC3CityCoordT1PP26cISC3EnumCityViewSelection	libSimNtwrk.so	vtable:__vt_14cCTPlaceOnramp
+00f79c	cCTPlaceOnramp::Execute(void)	Execute__14cCTPlaceOnramp	libSimNtwrk.so	caller
+00f969	cSLCityViewLineAlgorithmForRamps::QueryInterface(unsigned int, void **)	QueryInterface__32cSLCityViewLineAlgorithmForRampsUiPPv	libSimNtwrk.so	vtable-thunk:__vt_32cSLCityViewLineAlgorithmForRamps.20cSLCityViewSelection
+00f983	virtual function thunk (delta:-4) for cSLCityViewLineAlgorithmForRamps::~cSLCityViewLineAlgorithmForRamps(void)	__thunk_4__._32cSLCityViewLineAlgorithmForRamps	libSimNtwrk.so	vtable:__vt_32cSLCityViewLineAlgorithmForRamps.20cSLCityViewSelection
+00f9a8	cCTPlaceOnramp::CVActiveCursor(unsigned int &)	CVActiveCursor__14cCTPlaceOnrampRUi	libSimNtwrk.so	tokens:7.7
+00f9b7	cCTPlaceOnramp::ExecuteOnMouseUp(cISC3EnumCityViewSelection *)	ExecuteOnMouseUp__14cCTPlaceOnrampP26cISC3EnumCityViewSelection	libSimNtwrk.so	vtable:__vt_14cCTPlaceOnramp
+00fad2	cCTPlacePipe::QueryInterface(unsigned int, void **)	QueryInterface__12cCTPlacePipeUiPPv	libSimNtwrk.so	vtable:__vt_12cCTPlacePipe
+00fb6d	cCTPlaceOnramp::~cCTPlaceOnramp(void)	_._14cCTPlaceOnramp	libSimNtwrk.so	vtable:__vt_14cCTPlaceOnramp
+00fe02	cCTPlacePower::ExecuteOnMouseDrag(cISC3EnumCityViewSelection *)	ExecuteOnMouseDrag__13cCTPlacePowerP26cISC3EnumCityViewSelection	libSimNtwrk.so	vtable:__vt_13cCTPlacePower
+00fe36	cCTPlacePower::ExecuteOnMouseUp(cISC3EnumCityViewSelection *)	ExecuteOnMouseUp__13cCTPlacePowerP26cISC3EnumCityViewSelection	libSimNtwrk.so	vtable:__vt_13cCTPlacePower
+00ff51	cCTPlacePower::CVActiveCursor(unsigned int &)	CVActiveCursor__13cCTPlacePowerRUi	libSimNtwrk.so	tokens:7.7
+00ff60	cCTPlacePower::CVIsValidHandlerByView(int, unsigned int) const	CVIsValidHandlerByView__C13cCTPlacePoweriUi	libSimNtwrk.so	vtable:__vt_13cCTPlacePower
+00ffe4	cCTPlacePower::~cCTPlacePower(void)	_._13cCTPlacePower	libSimNtwrk.so	vtable:__vt_13cCTPlacePower
+0100bc	cCTPlacePipe::Execute(void)	Execute__12cCTPlacePipe	libSimNtwrk.so	tokens:12.9
+01026f	cCTPlacePipe::ExecuteOnMouseDrag(cISC3EnumCityViewSelection *)	ExecuteOnMouseDrag__12cCTPlacePipeP26cISC3EnumCityViewSelection	libSimNtwrk.so	vtable:__vt_12cCTPlacePipe
+0102a3	cCTPlacePipe::ExecuteOnMouseUp(cISC3EnumCityViewSelection *)	ExecuteOnMouseUp__12cCTPlacePipeP26cISC3EnumCityViewSelection	libSimNtwrk.so	vtable:__vt_12cCTPlacePipe
+0103be	cCTPlacePipe::CVActiveCursor(unsigned int &)	CVActiveCursor__12cCTPlacePipeRUi	libSimNtwrk.so	tokens:7.7
+0103cd	cCTPlacePipe::CVIsValidHandlerByView(int, unsigned int) const	CVIsValidHandlerByView__C12cCTPlacePipeiUi	libSimNtwrk.so	vtable:__vt_12cCTPlacePipe
+010449	cCTPlacePipe::~cCTPlacePipe(void)	_._12cCTPlacePipe	libSimNtwrk.so	vtable:__vt_12cCTPlacePipe
+010521	cSC3TransitCommandFactory::CreateCommand(unsigned int, unsigned int, void **)	CreateCommand__25cSC3TransitCommandFactoryUiUiPPv	libSimNtwrk.so	tokens:54.2
+0106b8	cSLCityViewLineAlgorithm::Setup(unsigned int, cISC3OccupantManager *, cISC3OccManIteratorTest *, cISC3OccManIteratorTest *, cISC3OccManIteratorTest *, cISC3DirtBag *, unsigned int, unsigned int, bool, bool, int, unsigned int)	Setup__24cSLCityViewLineAlgorithmUiP20cISC3OccupantManagerP23cISC3OccManIteratorTestN23P12cISC3DirtBagUiUibT9iUi	libSimNtwrk.so	vtable:__vt_24cSLCityViewLineAlgorithm
+010b86	cSLCityViewLineAlgorithm::QueryInterface(unsigned int, void **)	QueryInterface__24cSLCityViewLineAlgorithmUiPPv	libSimNtwrk.so	tokens:14.6
+010bc7	cSLCityViewLineAlgorithm::AddRef(void)	AddRef__24cSLCityViewLineAlgorithm	libSimNtwrk.so	vtable:__vt_24cSLCityViewLineAlgorithm
+010bce	cSLCityViewLineAlgorithm::Release(void)	Release__24cSLCityViewLineAlgorithm	libSimNtwrk.so	vtable:__vt_24cSLCityViewLineAlgorithm
+010be8	cSLCityViewLineAlgorithm::cSLCityViewLineAlgorithm(void)	__24cSLCityViewLineAlgorithm	libSimNtwrk.so	vtable-user:__vt_24cSLCityViewLineAlgorithm
+010ce8	virtual function thunk (delta:-4) for cSLCityViewLineAlgorithm::~cSLCityViewLineAlgorithm(void)	__thunk_4__._24cSLCityViewLineAlgorithm	libSimNtwrk.so	vtable:__vt_24cSLCityViewLineAlgorithm.20cSLCityViewSelection
+010d08	cSLCityViewLineAlgorithm::~cSLCityViewLineAlgorithm(void)	_._24cSLCityViewLineAlgorithm	libSimNtwrk.so	callee
+010d25	virtual function thunk (delta:-4) for cSLCityViewLineAlgorithmForRamps::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__32cSLCityViewLineAlgorithmForRampsUiPPv	libSimNtwrk.so	vtable:__vt_32cSLCityViewLineAlgorithmForRamps.20cSLCityViewSelection
+010d2d	virtual function thunk (delta:-4) for cSLCityViewLineAlgorithmForRamps::AddRef(void)	__thunk_4_AddRef__32cSLCityViewLineAlgorithmForRamps	libSimNtwrk.so	vtable:__vt_32cSLCityViewLineAlgorithmForRamps.20cSLCityViewSelection
+010d35	virtual function thunk (delta:-4) for cSLCityViewLineAlgorithmForRamps::Release(void)	__thunk_4_Release__32cSLCityViewLineAlgorithmForRamps	libSimNtwrk.so	vtable:__vt_32cSLCityViewLineAlgorithmForRamps.20cSLCityViewSelection
+010d3d	virtual function thunk (delta:-100) for cCTPlaceOnramp::AddRef(void)	__thunk_100_AddRef__14cCTPlaceOnramp	libSimNtwrk.so	vtable:__vt_14cCTPlaceOnramp.14cRZGameCommand
+010d45	virtual function thunk (delta:-104) for cCTPlaceOnramp::~cCTPlaceOnramp(void)	__thunk_104__._14cCTPlaceOnramp	libSimNtwrk.so	caller
+010d4d	virtual function thunk (delta:-104) for cCTPlaceSubway::~cCTPlaceSubway(void)	__thunk_104__._14cCTPlaceSubway	libSimNtwrk.so	caller
+010d55	virtual function thunk (delta:-104) for cCTPlaceRoad::~cCTPlaceRoad(void)	__thunk_104__._12cCTPlaceRoad	libSimNtwrk.so	caller
+010d5d	virtual function thunk (delta:-104) for cCTPlacePipe::~cCTPlacePipe(void)	__thunk_104__._12cCTPlacePipe	libSimNtwrk.so	caller
+010d65	virtual function thunk (delta:-104) for cCTPlaceRail::~cCTPlaceRail(void)	__thunk_104__._12cCTPlaceRail	libSimNtwrk.so	caller
+010d6d	virtual function thunk (delta:-100) for cCTPlacePipe::QueryInterface(unsigned int, void **)	__thunk_100_QueryInterface__12cCTPlacePipeUiPPv	libSimNtwrk.so	vtable:__vt_12cCTPlacePipe.14cRZGameCommand
+010d75	virtual function thunk (delta:-100) for cCTPlacePipe::AddRef(void)	__thunk_100_AddRef__12cCTPlacePipe	libSimNtwrk.so	vtable:__vt_12cCTPlacePipe.14cRZGameCommand
+010d7d	virtual function thunk (delta:-100) for cCTPlacePipe::Release(void)	__thunk_100_Release__12cCTPlacePipe	libSimNtwrk.so	vtable:__vt_12cCTPlacePipe.14cRZGameCommand
+010d85	virtual function thunk (delta:-104) for cCTPlacePower::~cCTPlacePower(void)	__thunk_104__._13cCTPlacePower	libSimNtwrk.so	caller
+010d8d	virtual function thunk (delta:-104) for cCTPlacePipe::Release(void)	__thunk_104_Release__12cCTPlacePipe	libSimNtwrk.so	caller
+010d95	virtual function thunk (delta:-104) for cCTPlacePipe::AddRef(void)	__thunk_104_AddRef__12cCTPlacePipe	libSimNtwrk.so	vtable:__vt_12cCTPlacePipe.11cRZRefCount
+010d9d	virtual function thunk (delta:-104) for cCTPlaceHighway::~cCTPlaceHighway(void)	__thunk_104__._15cCTPlaceHighway	libSimNtwrk.so	caller
+010da5	virtual function thunk (delta:-4) for cSLCityViewLineAlgorithm::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__24cSLCityViewLineAlgorithmUiPPv	libSimNtwrk.so	vtable:__vt_24cSLCityViewLineAlgorithm.20cSLCityViewSelection
+010dad	virtual function thunk (delta:-4) for cSLCityViewLineAlgorithm::AddRef(void)	__thunk_4_AddRef__24cSLCityViewLineAlgorithm	libSimNtwrk.so	vtable:__vt_24cSLCityViewLineAlgorithm.20cSLCityViewSelection
+010db5	virtual function thunk (delta:-4) for cSLCityViewLineAlgorithm::Release(void)	__thunk_4_Release__24cSLCityViewLineAlgorithm	libSimNtwrk.so	vtable:__vt_24cSLCityViewLineAlgorithm.20cSLCityViewSelection
+010df5	cSTTransitLayer::SetmDebugRules(bool)	SetmDebugRules__15cSTTransitLayerb	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+0119ba	cSTTransitTest::~cSTTransitTest(void)	_._14cSTTransitTest	libSimNtwrk.so	vtable:__vt_14cSTTransitTest
+0119e0	cSTTransitLayer::StaticShutdown(void)	StaticShutdown__15cSTTransitLayer	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+01272e	cSTTransitLayer::Init(cISC3City *, cISC2Importer *)	Init__15cSTTransitLayerP9cISC3CityP13cISC2Importer	libSimNtwrk.so	tokens:13.5
+012dff	cSTTransitLayer::Save(cISC3City *, cIGZDBSegment *)	Save__15cSTTransitLayerP9cISC3CityP13cIGZDBSegment	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+012fc3	cSTTransitLayer::WriteOccupants(cIGZDBSegment *, cISC3OccupantManager *, cISC3OccManIteratorTest *, cGZResourceKey &, unsigned int &)	WriteOccupants__15cSTTransitLayerP13cIGZDBSegmentP20cISC3OccupantManagerP23cISC3OccManIteratorTestR14cGZResourceKeyRUi	libSimNtwrk.so	caller
+0130e9	cSTTransitLayer::Init(cISC3City *, cIGZDBSegment *)	Init__15cSTTransitLayerP9cISC3CityP13cIGZDBSegment	libSimNtwrk.so	caller
+013497	cSTTransitLayer::Shutdown(void)	Shutdown__15cSTTransitLayer	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+013589	cSTTransitLayer::SimulationBegin(void)	SimulationBegin__15cSTTransitLayer	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+01369f	cSTTransitLayer::CreateOccupant(cISC3OccPersistInfo &, unsigned int, void **)	CreateOccupant__15cSTTransitLayerR19cISC3OccPersistInfoUiPPv	libSimNtwrk.so	tokens:12.1
+013771	cSTTransitLayer::CreateOccupantTest(void **, unsigned int, int)	CreateOccupantTest__15cSTTransitLayerPPvUii	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+013965	cSTTransitLayer::GetLayerType(void)	GetLayerType__15cSTTransitLayer	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+01396b	cSTTransitLayer::QueryInterface(unsigned int, void **)	QueryInterface__15cSTTransitLayerUiPPv	libSimNtwrk.so	tokens:30.6
+0139e6	cSTTransitLayer::Release(void)	Release__15cSTTransitLayer	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+013a13	cSTTransitLayer::AddRef(void)	AddRef__15cSTTransitLayer	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+013afe	cSTTransitLayer::DoMessage(cGZMessage &)	DoMessage__15cSTTransitLayerR10cGZMessage	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+013c26	cSTTransitLayer::GetManipulator(cISC3CityAgentType const &, cISC3CityLayerManipulator **, int &)	GetManipulator__15cSTTransitLayerRC18cISC3CityAgentTypePP25cISC3CityLayerManipulatorRi	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+013c32	cSTTransitLayer::HasTransit(cSC3CityCoord const &) const	HasTransit__C15cSTTransitLayerRC13cSC3CityCoord	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+013c80	cSTTransitLayer::HasRoad(cSC3CityCoord const &) const	HasRoad__C15cSTTransitLayerRC13cSC3CityCoord	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+013cbc	cSTTransitLayer::HasHighway(cSC3CityCoord const &) const	HasHighway__C15cSTTransitLayerRC13cSC3CityCoord	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+013cf8	cSTTransitLayer::HasRail(cSC3CityCoord const &) const	HasRail__C15cSTTransitLayerRC13cSC3CityCoord	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+013d34	cSTTransitLayer::HasSubway(cSC3CityCoord const &) const	HasSubway__C15cSTTransitLayerRC13cSC3CityCoord	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+013d70	cSTTransitLayer::HasPower(cSC3CityCoord const &) const	HasPower__C15cSTTransitLayerRC13cSC3CityCoord	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+013dac	cSTTransitLayer::HasPipe(cSC3CityCoord const &) const	HasPipe__C15cSTTransitLayerRC13cSC3CityCoord	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+013de8	cSTTransitLayer::HasTunnel(cSC3CityCoord const &) const	HasTunnel__C15cSTTransitLayerRC13cSC3CityCoord	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+013e24	cSTTransitLayer::CanPlaceRoad(cISC3EnumCityViewSelection *, unsigned int &) const	CanPlaceRoad__C15cSTTransitLayerP26cISC3EnumCityViewSelectionRUi	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+013f65	cSTTransitLayer::CanPlaceHighway(cISC3EnumCityViewSelection *, unsigned int &) const	CanPlaceHighway__C15cSTTransitLayerP26cISC3EnumCityViewSelectionRUi	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+0140a6	cSTTransitLayer::CanPlaceRail(cISC3EnumCityViewSelection *, unsigned int &) const	CanPlaceRail__C15cSTTransitLayerP26cISC3EnumCityViewSelectionRUi	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+0141e7	cSTTransitLayer::CanPlaceSubway(cISC3EnumCityViewSelection *, unsigned int &) const	CanPlaceSubway__C15cSTTransitLayerP26cISC3EnumCityViewSelectionRUi	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+014328	cSTTransitLayer::CanPlacePipe(cISC3EnumCityViewSelection *, unsigned int &) const	CanPlacePipe__C15cSTTransitLayerP26cISC3EnumCityViewSelectionRUi	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+014469	cSTTransitLayer::CanPlacePower(cISC3EnumCityViewSelection *, unsigned int &) const	CanPlacePower__C15cSTTransitLayerP26cISC3EnumCityViewSelectionRUi	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+0146aa	cSTTransitLayer::PlaceRoad(cISC3EnumCityViewSelection *, unsigned int &, cSC3CityBounds &, cSC3CityCoord &)	PlaceRoad__15cSTTransitLayerP26cISC3EnumCityViewSelectionRUiR14cSC3CityBoundsR13cSC3CityCoord	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+0146c7	cSTTransitLayer::PlaceHighway(cISC3EnumCityViewSelection *, unsigned int &, cSC3CityBounds &, cSC3CityCoord &)	PlaceHighway__15cSTTransitLayerP26cISC3EnumCityViewSelectionRUiR14cSC3CityBoundsR13cSC3CityCoord	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+0146e4	cSTTransitLayer::PlaceRail(cISC3EnumCityViewSelection *, unsigned int &, cSC3CityBounds &, cSC3CityCoord &)	PlaceRail__15cSTTransitLayerP26cISC3EnumCityViewSelectionRUiR14cSC3CityBoundsR13cSC3CityCoord	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+014701	cSTTransitLayer::PlaceSubway(cISC3EnumCityViewSelection *, unsigned int &, cSC3CityBounds &, cSC3CityCoord &)	PlaceSubway__15cSTTransitLayerP26cISC3EnumCityViewSelectionRUiR14cSC3CityBoundsR13cSC3CityCoord	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+01471e	cSTTransitLayer::PlacePower(cISC3EnumCityViewSelection *, unsigned int &, cSC3CityBounds &, cSC3CityCoord &)	PlacePower__15cSTTransitLayerP26cISC3EnumCityViewSelectionRUiR14cSC3CityBoundsR13cSC3CityCoord	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+01473b	cSTTransitLayer::PlacePipe(cISC3EnumCityViewSelection *, unsigned int &, cSC3CityBounds &, cSC3CityCoord &)	PlacePipe__15cSTTransitLayerP26cISC3EnumCityViewSelectionRUiR14cSC3CityBoundsR13cSC3CityCoord	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+014758	cSTTransitLayer::ReloadTileRules(void)	ReloadTileRules__15cSTTransitLayer	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+014771	cSTTransitLayer::canEdit(int, int, int)	canEdit__15cSTTransitLayeriii	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+014807	cSTTransitLayer::PlaceNetwork(cISC3EnumCityViewSelection *, int, unsigned int &, cSC3CityBounds &, cSC3CityCoord &)	PlaceNetwork__15cSTTransitLayerP26cISC3EnumCityViewSelectioniRUiR14cSC3CityBoundsR13cSC3CityCoord	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+014939	cSTTransitLayer::mustStaySurfOcc(unsigned int, cSC3CityCoord)	mustStaySurfOcc__15cSTTransitLayerUiG13cSC3CityCoord	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+014a23	cSTTransitLayer::PlaceNetworkEx(cISC3OccupantManager *, cISC3EnumCityViewSelection *, int, unsigned int, cSC3CityBounds &, cSC3CityCoord *, unsigned int, cSC3CityCoord &)	PlaceNetworkEx__15cSTTransitLayerP20cISC3OccupantManagerP26cISC3EnumCityViewSelectioniUiR14cSC3CityBoundsP13cSC3CityCoordUiR13cSC3CityCoord	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+0151f1	cSTTransitLayer::RefreshNetwork(cSC3CityBounds const &, unsigned int)	RefreshNetwork__15cSTTransitLayerRC14cSC3CityBoundsUi	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+01746e	cSTTransitLayer::GrokFileTileSet(cRZFile *, char *, vector<cGZResourceKey, allocator<cGZResourceKey> > *)	GrokFileTileSet__15cSTTransitLayerP7cRZFilePcPt6vector2Z14cGZResourceKeyZt9allocator1Z14cGZResourceKey	libSimNtwrk.so	tokens:33.7
+0175ed	cSTTransitLayer::ReadTilingFamilies(void)	ReadTilingFamilies__15cSTTransitLayer	libSimNtwrk.so	tokens:22.0
+01a1a3	cSTTransitLayer::NumRoadOccs(void) const	NumRoadOccs__C15cSTTransitLayer	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+01a1a7	cSTTransitLayer::NumHighwayOccs(void) const	NumHighwayOccs__C15cSTTransitLayer	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+01a1ab	cSTTransitLayer::NumRailOccs(void) const	NumRailOccs__C15cSTTransitLayer	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+01a1af	cSTTransitLayer::NumSubwayOccs(void) const	NumSubwayOccs__C15cSTTransitLayer	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+01a1b3	cSTTransitLayer::NumPlumbingOccs(void) const	NumPlumbingOccs__C15cSTTransitLayer	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+01a1b7	cSTTransitLayer::NumPowerOccs(void) const	NumPowerOccs__C15cSTTransitLayer	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+01a1bb	cSTTransitLayer::~cSTTransitLayer(void)	_._15cSTTransitLayer	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+01a719	cSTTransitLayer::isRoad(unsigned int)	isRoad__15cSTTransitLayerUi	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+01a73e	cSTTransitLayer::isHighway(unsigned int)	isHighway__15cSTTransitLayerUi	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+01a763	cSTTransitLayer::isRail(unsigned int)	isRail__15cSTTransitLayerUi	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+01a788	cSTTransitLayer::isSubway(unsigned int)	isSubway__15cSTTransitLayerUi	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+01a7ad	cSTTransitLayer::isPipe(unsigned int)	isPipe__15cSTTransitLayerUi	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+01a7d2	cSTTransitLayer::isPower(unsigned int)	isPower__15cSTTransitLayerUi	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+01a9bb	cSTOccTest::QueryInterface(unsigned int, void **)	QueryInterface__10cSTOccTestUiPPv	libSimNtwrk.so	vtable:__vt_14cSTTransitTest
+01a9e0	cSTOccTest::AddRef(void)	AddRef__10cSTOccTest	libSimNtwrk.so	vtable:__vt_14cSTTransitTest
+01a9e7	cSTOccTest::Release(void)	Release__10cSTOccTest	libSimNtwrk.so	vtable:__vt_14cSTTransitTest
+01aa6a	cSTTransitTest::Test(cISC3Occupant *)	Test__14cSTTransitTestP13cISC3Occupant	libSimNtwrk.so	tokens:7.7
+01b4ff	cSTTransitLayer::StaticInit(cISC3CityDefinition *)	StaticInit__15cSTTransitLayerP19cISC3CityDefinition	libSimNtwrk.so	tokens:15.5
+01c04d	virtual function thunk (delta:-4) for cSTTransitLayer::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__15cSTTransitLayerUiPPv	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer.21cISC3MapSpriteFactory
+01c055	virtual function thunk (delta:-4) for cSTTransitLayer::AddRef(void)	__thunk_4_AddRef__15cSTTransitLayer	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer.21cISC3MapSpriteFactory
+01c05d	virtual function thunk (delta:-4) for cSTTransitLayer::Release(void)	__thunk_4_Release__15cSTTransitLayer	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer.21cISC3MapSpriteFactory
+01c0c2	virtual function thunk (delta:-4) for cSTTransitLayer::GetMapSpriteCount(void)	__thunk_4_GetMapSpriteCount__15cSTTransitLayer	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer.21cISC3MapSpriteFactory
+01c0c5	virtual function thunk (delta:-4) for cSTTransitLayer::CreateMapSprite(unsigned int, unsigned int, void **)	__thunk_4_CreateMapSprite__15cSTTransitLayerUiUiPPv	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer.21cISC3MapSpriteFactory
+01c102	cSTTransitLayer::PrepareAndPlaceTunnel(cISC3OccupantManager *, unsigned int, int, cSC3CityCoord, cSC3CityCoord, cSC3CityCoord, cSC3CityCoord &, short, short)	PrepareAndPlaceTunnel__15cSTTransitLayerP20cISC3OccupantManagerUiiG13cSC3CityCoordN24R13cSC3CityCoordss	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+01ca1a	cSTTransitLayer::PrepareAndPlaceTunnelforHighways(cISC3OccupantManager *, unsigned int, int, cSC3CityCoord, cSC3CityCoord, cSC3CityCoord, cSC3CityCoord, short, short)	PrepareAndPlaceTunnelforHighways__15cSTTransitLayerP20cISC3OccupantManagerUiiG13cSC3CityCoordN34ss	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+01da5f	cSTTransitLayer::collapseStructure(cISC3OccupantManager *, cSC3CityCoord, unsigned short, unsigned char, cSC3CityBounds &, int &, bool, list<cSC3CityCoord, allocator<cSC3CityCoord> > &)	collapseStructure__15cSTTransitLayerP20cISC3OccupantManagerG13cSC3CityCoordUsUcR14cSC3CityBoundsRibRt4list2Z13cSC3CityCoordZt9allocator1Z13cSC3CityCoord	libSimNtwrk.so	tokens:31.0
+01e2ea	cSTTransitLayer::myRemoveOccupantIfMatch(cISC3OccupantManager *, unsigned int, unsigned int, unsigned int, int, int &, bool, list<cSC3CityCoord, allocator<cSC3CityCoord> > &)	myRemoveOccupantIfMatch__15cSTTransitLayerP20cISC3OccupantManagerUiUiUiiRibRt4list2Z13cSC3CityCoordZt9allocator1Z13cSC3CityCoord	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+01e5e1	cRZCOMDllDirector::QueryInterface(unsigned int, void **)	QueryInterface__17cRZCOMDllDirectorUiPPv	libSimNtwrk.so	tokens:15.5
+01e622	cRZCOMDllDirector::FrameWork(void)	FrameWork__17cRZCOMDllDirector	libSimNtwrk.so	vtable:__vt_14cSNCOMDirector
+01e62b	cRZCOMDllDirector::RemoveRef(void)	RemoveRef__17cRZCOMDllDirector	libSimNtwrk.so	vtable:__vt_14cSNCOMDirector
+01e63a	cRZCOMDllDirector::InitializeCOM(cIGZCOM *, cIGZString &)	InitializeCOM__17cRZCOMDllDirectorP7cIGZCOMR10cIGZString	libSimNtwrk.so	vtable:__vt_14cSNCOMDirector
+01e708	cRZCOMDllDirector::GetClassObject(unsigned int, unsigned int, void **)	GetClassObject__17cRZCOMDllDirectorUiUiPPv	libSimNtwrk.so	vtable:__vt_14cSNCOMDirector
+01e789	cRZCOMDllDirector::EnumClassObjects(void (*)(unsigned int, unsigned int, void *), void *)	EnumClassObjects__17cRZCOMDllDirectorPFUiUiPv_vPv	libSimNtwrk.so	vtable:__vt_14cSNCOMDirector
+01e7dd	cRZCOMDllDirector::ModuleName(cIGZString &)	ModuleName__17cRZCOMDllDirectorR10cIGZString	libSimNtwrk.so	vtable:__vt_14cSNCOMDirector
+01e7f1	cRZCOMDllDirector::AddDirector(cRZCOMDllDirector *)	AddDirector__17cRZCOMDllDirectorP17cRZCOMDllDirector	libSimNtwrk.so	vtable:__vt_14cSNCOMDirector
+01e83b	cRZCOMDllDirector::CanUnloadNow(void)	CanUnloadNow__17cRZCOMDllDirector	libSimNtwrk.so	vtable:__vt_14cSNCOMDirector
+01e8bf	virtual function thunk (delta:-4) for cRZCOMDllDirector::PreFrameWorkInit(void)	__thunk_4_PreFrameWorkInit__17cRZCOMDllDirector	libSimNtwrk.so	vtable:__vt_17cRZCOMDllDirector.18cIGZFrameWorkHooks
+01e92d	cRZCOMDllDirector::OnStart(cIGZCOM *)	OnStart__17cRZCOMDllDirectorP7cIGZCOM	libSimNtwrk.so	tokens:15.5
+01f463	cCTPlaceRail::AddRef(void)	AddRef__12cCTPlaceRail	libSimNtwrk.so	vtable-thunk:__vt_12cCTPlaceRail
+020340	cCTPlaceRail::Release(void)	Release__12cCTPlaceRail	libSimNtwrk.so	vtable-thunk:__vt_12cCTPlaceRail
+020eb0	virtual function thunk (delta:-4) for cSTTransitBlockAttrib::Key(void) const	__thunk_4_Key__C21cSTTransitBlockAttrib	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.18cSC3OccupantAttrib
+023beb	cSTNetworkOcc::Shutdown(void)	Shutdown__13cSTNetworkOcc	libSimNtwrk.so	callee
+024279	cSTNetworkOcc::SerialRead(cISC3City *, cIGZDBSerialRecord &)	SerialRead__13cSTNetworkOccP9cISC3CityR18cIGZDBSerialRecord	libSimNtwrk.so	callee
+024412	cSTNetworkOcc::SerialWrite(cISC3City *, cIGZDBSerialRecord &)	SerialWrite__13cSTNetworkOccP9cISC3CityR18cIGZDBSerialRecord	libSimNtwrk.so	callee
+0245d6	cSTNetworkOcc::DebugInstanceTag(cIGZString &)	DebugInstanceTag__13cSTNetworkOccR10cIGZString	libSimNtwrk.so	vtable-thunk:__vt_10cSTPipeOcc.12cSC3Occupant
+0248b9	cSTNetworkOcc::DoDebugQueryViewInfo(cGZMessage &, cISC3WinQueryListView *)	DoDebugQueryViewInfo__13cSTNetworkOccR10cGZMessageP21cISC3WinQueryListView	libSimNtwrk.so	vtable-thunk:__vt_10cSTPipeOcc.12cSC3Occupant
+024bc8	cSTTransitBlockAttrib::QueryInterface(unsigned int, void **)	QueryInterface__21cSTTransitBlockAttribUiPPv	libSimNtwrk.so	vtable-thunk:__vt_21cSTTransitBlockAttrib.17cISLTokenResource
+024c48	cRZCOMDllDirector::RefCount(void)	RefCount__17cRZCOMDllDirector	libSimNtwrk.so	vtable:__vt_14cSNCOMDirector
+024c90	virtual function thunk (delta:-28) for cSTTransitBlockAttrib::SetIsTextRecord(bool)	__thunk_28_SetIsTextRecord__21cSTTransitBlockAttribb	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.17cISLTokenResource
+024c9d	virtual function thunk (delta:-28) for cSTTransitBlockAttrib::IsTextRecord(void) const	__thunk_28_IsTextRecord__C21cSTTransitBlockAttrib	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.17cISLTokenResource
+024d62	cSC3TransitBlockPersistInfo::GetPersistRecordVersion(void) const	GetPersistRecordVersion__C27cSC3TransitBlockPersistInfo	libSimNtwrk.so	vtable:__vt_27cSC3TransitBlockPersistInfo
+024e00	cRZCOMDllDirector::GZCOM(void)	GZCOM__17cRZCOMDllDirector	libSimNtwrk.so	vtable:__vt_14cSNCOMDirector
+024e10	virtual function thunk (delta:-28) for cSTTransitBlockAttrib::TokenRead(cISLTokenRecord &)	__thunk_28_TokenRead__21cSTTransitBlockAttribR15cISLTokenRecord	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.17cISLTokenResource
+0251aa	virtual function thunk (delta:-28) for cSTTransitBlockAttrib::TokenWrite(cISLTokenRecord &)	__thunk_28_TokenWrite__21cSTTransitBlockAttribR15cISLTokenRecord	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.17cISLTokenResource
+025648	virtual function thunk (delta:-28) for cSTTransitBlockAttrib::QueryInterface(unsigned int, void **)	__thunk_28_QueryInterface__21cSTTransitBlockAttribUiPPv	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.17cISLTokenResource
+025650	virtual function thunk (delta:-28) for cSTTransitBlockAttrib::AddRef(void)	__thunk_28_AddRef__21cSTTransitBlockAttrib	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.17cISLTokenResource
+025658	virtual function thunk (delta:-28) for cSTTransitBlockAttrib::Release(void)	__thunk_28_Release__21cSTTransitBlockAttrib	libSimNtwrk.so	vtable:__vt_21cSTTransitBlockAttrib.17cISLTokenResource
+025820	cSTTransitLayer::DoQueryInfo(cGZMessage &, cIGZUnknown *)	DoQueryInfo__15cSTTransitLayerR10cGZMessageP11cIGZUnknown	libSimNtwrk.so	vtable:__vt_15cSTTransitLayer
+025e83	cSC3TransitBlockPersistInfo::GetTransitTileId(unsigned int) const	GetTransitTileId__C27cSC3TransitBlockPersistInfoUi	libSimNtwrk.so	vtable:__vt_27cSC3TransitBlockPersistInfo

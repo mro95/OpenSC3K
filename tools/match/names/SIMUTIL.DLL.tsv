@@ -1,0 +1,198 @@
+rva	demangled	mangled	source	method
+001082	cSC3BuildingWaterTreatment::cSC3BuildingWaterTreatment(void)	__26cSC3BuildingWaterTreatment	libSimUtil.so	tokens:7.7
+0015ac	virtual function thunk (delta:-44) for cSC3BuildingWaterTreatment::GetUnusedCapacity(void)	__thunk_44_GetUnusedCapacity__26cSC3BuildingWaterTreatment	libSimUtil.so	vtable:__vt_26cSC3BuildingWaterTreatment.27cISC3BuildingWaterTreatment
+0015f2	virtual function thunk (delta:-44) for cSC3BuildingWaterTreatment::SetMaxLifeSpan(unsigned int)	__thunk_44_SetMaxLifeSpan__26cSC3BuildingWaterTreatmentUi	libSimUtil.so	vtable:__vt_26cSC3BuildingWaterTreatment.27cISC3BuildingWaterTreatment
+0015fe	virtual function thunk (delta:-44) for cSC3BuildingWaterTreatment::GetMaxLifeSpan(void)	__thunk_44_GetMaxLifeSpan__26cSC3BuildingWaterTreatment	libSimUtil.so	vtable:__vt_26cSC3BuildingWaterTreatment.27cISC3BuildingWaterTreatment
+001604	virtual function thunk (delta:-44) for cSC3BuildingWaterTreatment::SetDeclineAge(unsigned int)	__thunk_44_SetDeclineAge__26cSC3BuildingWaterTreatmentUi	libSimUtil.so	vtable:__vt_26cSC3BuildingWaterTreatment.27cISC3BuildingWaterTreatment
+001610	virtual function thunk (delta:-44) for cSC3BuildingWaterTreatment::GetDeclineAge(void)	__thunk_44_GetDeclineAge__26cSC3BuildingWaterTreatment	libSimUtil.so	vtable:__vt_26cSC3BuildingWaterTreatment.27cISC3BuildingWaterTreatment
+001616	virtual function thunk (delta:-44) for cSC3BuildingWaterTreatment::Kill(void)	__thunk_44_Kill__26cSC3BuildingWaterTreatment	libSimUtil.so	vtable:__vt_26cSC3BuildingWaterTreatment.27cISC3BuildingWaterTreatment
+00161b	virtual function thunk (delta:-44) for cSC3BuildingWaterTreatment::IsDead(void)	__thunk_44_IsDead__26cSC3BuildingWaterTreatment	libSimUtil.so	vtable:__vt_26cSC3BuildingWaterTreatment.27cISC3BuildingWaterTreatment
+001757	virtual function thunk (delta:-44) for cSC3BuildingWaterTreatment::GetAge(void)	__thunk_44_GetAge__26cSC3BuildingWaterTreatment	libSimUtil.so	vtable:__vt_26cSC3BuildingWaterTreatment.27cISC3BuildingWaterTreatment
+0017ae	virtual function thunk (delta:-44) for cSC3BuildingWaterTreatment::IsAging(void)	__thunk_44_IsAging__26cSC3BuildingWaterTreatment	libSimUtil.so	vtable:__vt_26cSC3BuildingWaterTreatment.27cISC3BuildingWaterTreatment
+002563	cSC3PowerPlant::ActualCapacity(void)	ActualCapacity__14cSC3PowerPlant	libSimUtil.so	vtable:__vt_18cSC3WindPowerPlant
+002567	virtual function thunk (delta:-44) for cSC3BuildingWaterTreatment::SetDailyPollutionCapacityUsage(unsigned int)	__thunk_44_SetDailyPollutionCapacityUsage__26cSC3BuildingWaterTreatmentUi	libSimUtil.so	vtable:__vt_26cSC3BuildingWaterTreatment.27cISC3BuildingWaterTreatment
+002571	cSC3BuildingWaterTreatment::Simulate(int)	Simulate__26cSC3BuildingWaterTreatmenti	libSimUtil.so	vtable-thunk:__vt_26cSC3BuildingWaterTreatment.14cISC3CityAgent
+002693	virtual function thunk (delta:-44) for cSC3BuildingWaterTreatment::AsISC3Building(void)	__thunk_44_AsISC3Building__26cSC3BuildingWaterTreatment	libSimUtil.so	vtable:__vt_26cSC3BuildingWaterTreatment.27cISC3BuildingWaterTreatment
+002697	cSC3BuildingWaterTreatment::AsISC3Occupant(void)	AsISC3Occupant__26cSC3BuildingWaterTreatment	libSimUtil.so	vtable-thunk:__vt_26cSC3BuildingWaterTreatment.27cISC3BuildingWaterTreatment
+0026ad	cSC3BuildingWaterTreatment::QueryInterface(unsigned int, void **)	QueryInterface__26cSC3BuildingWaterTreatmentUiPPv	libSimUtil.so	tokens:13.3
+002fad	virtual function thunk (delta:-4) for cSC3BuildingWaterTreatment::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__26cSC3BuildingWaterTreatmentUiPPv	libSimUtil.so	vtable:__vt_26cSC3BuildingWaterTreatment.14cISC3CityAgent
+002fb5	virtual function thunk (delta:-4) for cSC3BuildingWaterTreatment::Simulate(int)	__thunk_4_Simulate__26cSC3BuildingWaterTreatmenti	libSimUtil.so	vtable:__vt_26cSC3BuildingWaterTreatment.14cISC3CityAgent
+002fcd	virtual function thunk (delta:-8) for cSC3BuildingWaterTreatment::QueryInterface(unsigned int, void **)	__thunk_8_QueryInterface__26cSC3BuildingWaterTreatmentUiPPv	libSimUtil.so	caller
+002ff5	virtual function thunk (delta:-44) for cSC3BuildingWaterTreatment::QueryInterface(unsigned int, void **)	__thunk_44_QueryInterface__26cSC3BuildingWaterTreatmentUiPPv	libSimUtil.so	vtable:__vt_26cSC3BuildingWaterTreatment.27cISC3BuildingWaterTreatment
+00324b	virtual function thunk (delta:-28) for cSC3PowerLayer::CellChangedAll(unsigned int)	__thunk_28_CellChangedAll__14cSC3PowerLayerUi	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.23cISC3CityChangeReceiver
+003391	cSC3CityCellMap<bool>::QueryInterface(unsigned int, void **)	QueryInterface__t15cSC3CityCellMap1ZbUiPPv	libSimUtil.so	vtable:__vt_t15cSC3CityCellMap1Zb
+0033c0	virtual function thunk (delta:-16) for cSC3PowerLayer::GetLayerType(void)	__thunk_16_GetLayerType__14cSC3PowerLayer	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.14cISC3CityLayer
+0033c6	virtual function thunk (delta:-20) for cSC3PowerLayer::GetTotalCityPowerProduced(void)	__thunk_20_GetTotalCityPowerProduced__14cSC3PowerLayer	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.15cISC3PowerLayer
+0033ca	virtual function thunk (delta:-20) for cSC3PowerLayer::GetNumberOfAgingPowerPlants(void)	__thunk_20_GetNumberOfAgingPowerPlants__14cSC3PowerLayer	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.15cISC3PowerLayer
+0033d1	virtual function thunk (delta:-20) for cSC3PowerLayer::GetNumberOfAgingNuclearPlants(void)	__thunk_20_GetNumberOfAgingNuclearPlants__14cSC3PowerLayer	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.15cISC3PowerLayer
+0033d8	virtual function thunk (delta:-28) for cSC3PowerLayer::OccupantMoved(unsigned int, cISC3Occupant *, cSC3CityCoord const &)	__thunk_28_OccupantMoved__14cSC3PowerLayerUiP13cISC3OccupantRC13cSC3CityCoord	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.23cISC3CityChangeReceiver
+0033dd	virtual function thunk (delta:-28) for cSC3PowerLayer::OccupantChanged(unsigned int, cISC3Occupant *, int, void *)	__thunk_28_OccupantChanged__14cSC3PowerLayerUiP13cISC3OccupantiPv	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.23cISC3CityChangeReceiver
+0033e2	cSC3PowerLayer::CellCountX(void) const	CellCountX__C14cSC3PowerLayer	libSimUtil.so	vtable:__vt_14cSC3PowerLayer
+0033e9	cSC3PowerLayer::GetValue(unsigned int, unsigned int, bool &) const	GetValue__C14cSC3PowerLayerUiUiRb	libSimUtil.so	vtable:__vt_14cSC3PowerLayer
+003418	cSC3PowerLayer::SetAllCells(bool const &)	SetAllCells__14cSC3PowerLayerRCb	libSimUtil.so	vtable:__vt_14cSC3PowerLayer
+00342f	cSC3CityCellMap<bool>::SetAllCells(bool const &)	SetAllCells__t15cSC3CityCellMap1ZbRCb	libSimUtil.so	vtable-thunk:__vt_t15cSC3CityCellMap1Zb
+003520	cSC3CityCellMap<bool>::SerialRead(cIGZDBSerialRecord &)	SerialRead__t15cSC3CityCellMap1ZbR18cIGZDBSerialRecord	libSimUtil.so	vtable-thunk:__vt_t15cSC3CityCellMap1Zb
+00356e	cSC3CityCellMap<bool>::SerialWrite(cIGZDBSerialRecord &) const	SerialWrite__Ct15cSC3CityCellMap1ZbR18cIGZDBSerialRecord	libSimUtil.so	vtable-thunk:__vt_t15cSC3CityCellMap1Zb
+0035bf	cSC3PowerLayer::Init(cISC3City *, bool const &)	Init__14cSC3PowerLayerP9cISC3CityRCb	libSimUtil.so	vtable:__vt_14cSC3PowerLayer
+0035cf	cSC3PowerLayer::~cSC3PowerLayer(void)	_._14cSC3PowerLayer	libSimUtil.so	vtable:__vt_14cSC3PowerLayer
+0036af	virtual function thunk (delta:-16) for cSC3PowerLayer::DoMessage(cGZMessage &)	__thunk_16_DoMessage__14cSC3PowerLayerR10cGZMessage	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.14cISC3CityLayer
+003724	cSC3PowerLayer::ExamineNeighborDeals(void)	ExamineNeighborDeals__14cSC3PowerLayer	libSimUtil.so	callee
+00380f	virtual function thunk (delta:-20) for cSC3PowerLayer::GetAnnualConsumptionOfPowerType(cISC3PowerLayer::tPowerSourceType)	__thunk_20_GetAnnualConsumptionOfPowerType__14cSC3PowerLayerQ215cISC3PowerLayer16tPowerSourceType	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.15cISC3PowerLayer
+00381d	virtual function thunk (delta:-16) for cSC3PowerLayer::GetManipulator(cISC3CityAgentType const &, cISC3CityLayerManipulator **, int &)	__thunk_16_GetManipulator__14cSC3PowerLayerRC18cISC3CityAgentTypePP25cISC3CityLayerManipulatorRi	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.14cISC3CityLayer
+0038a9	virtual function thunk (delta:-20) for cSC3PowerLayer::GetNumberOfPoweredConsumers(void)	__thunk_20_GetNumberOfPoweredConsumers__14cSC3PowerLayer	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.15cISC3PowerLayer
+0038b0	virtual function thunk (delta:-20) for cSC3PowerLayer::GetNumberOfUnpoweredConsumers(void)	__thunk_20_GetNumberOfUnpoweredConsumers__14cSC3PowerLayer	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.15cISC3PowerLayer
+0038b7	virtual function thunk (delta:-20) for cSC3PowerLayer::GetPlantCapacity(unsigned int, unsigned int &)	__thunk_20_GetPlantCapacity__14cSC3PowerLayerUiRUi	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.15cISC3PowerLayer
+0038e9	virtual function thunk (delta:-20) for cSC3PowerLayer::GetTotalAnnualConsumption(void)	__thunk_20_GetTotalAnnualConsumption__14cSC3PowerLayer	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.15cISC3PowerLayer
+0038fd	virtual function thunk (delta:-20) for cSC3PowerLayer::GetTotalPowerNeededByTheCity(void)	__thunk_20_GetTotalPowerNeededByTheCity__14cSC3PowerLayer	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.15cISC3PowerLayer
+003904	cSC3PowerLayer::Init(cISC3City *)	Init__14cSC3PowerLayerP9cISC3City	libSimUtil.so	tokens:35.9
+00406b	cSC3PowerLayer::InitInfoAboutNeighborDeals(void)	InitInfoAboutNeighborDeals__14cSC3PowerLayer	libSimUtil.so	caller
+00410a	cSC3PowerLayer::MakeBuyingDealWithNeighbor(int, unsigned int)	MakeBuyingDealWithNeighbor__14cSC3PowerLayeriUi	libSimUtil.so	tokens:7.7
+00411e	cSC3PowerLayer::MakeSellingDealWithNeighbor(int, unsigned int)	MakeSellingDealWithNeighbor__14cSC3PowerLayeriUi	libSimUtil.so	callee
+0041ce	virtual function thunk (delta:-28) for cSC3PowerLayer::OccupantInserted(unsigned int, cISC3Occupant *)	__thunk_28_OccupantInserted__14cSC3PowerLayerUiP13cISC3Occupant	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.23cISC3CityChangeReceiver
+004340	virtual function thunk (delta:-28) for cSC3PowerLayer::OccupantRemoved(unsigned int, cISC3Occupant *)	__thunk_28_OccupantRemoved__14cSC3PowerLayerUiP13cISC3Occupant	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.23cISC3CityChangeReceiver
+0044dd	cSC3PowerLayer::QueryInterface(unsigned int, void **)	QueryInterface__14cSC3PowerLayerUiPPv	libSimUtil.so	vtable:__vt_14cSC3PowerLayer
+0045ec	virtual function thunk (delta:-16) for cSC3PowerLayer::Save(cISC3City *, cIGZDBSegment *)	__thunk_16_Save__14cSC3PowerLayerP9cISC3CityP13cIGZDBSegment	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.14cISC3CityLayer
+0047e1	cSC3PowerLayer::Shutdown(void)	Shutdown__14cSC3PowerLayer	libSimUtil.so	vtable:__vt_14cSC3PowerLayer
+004979	virtual function thunk (delta:-16) for cSC3PowerLayer::StaticInit(cISC3CityDefinition *)	__thunk_16_StaticInit__14cSC3PowerLayerP19cISC3CityDefinition	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.14cISC3CityLayer
+004c0d	virtual function thunk (delta:-16) for cSC3PowerLayer::StaticShutdown(void)	__thunk_16_StaticShutdown__14cSC3PowerLayer	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.14cISC3CityLayer
+004c1f	cSC3PowerLayer::UpdateLayer(void)	UpdateLayer__14cSC3PowerLayer	libSimUtil.so	tokens:23.1
+004e57	cSC3PowerLayer::UpdatePowerGrid(unsigned int, unsigned int)	UpdatePowerGrid__14cSC3PowerLayerUiUi	libSimUtil.so	tokens:7.7
+005388	cSUPlumbingLayerManipulatorBase::IsLockingCity(void)	IsLockingCity__31cSUPlumbingLayerManipulatorBase	libSimUtil.so	vtable:__vt_34cSUPlumbingLayerMonthlyManipulator
+00538b	cSUPlumbingLayerMonthlyManipulator::~cSUPlumbingLayerMonthlyManipulator(void)	_._34cSUPlumbingLayerMonthlyManipulator	libSimUtil.so	vtable:__vt_34cSUPlumbingLayerMonthlyManipulator
+0053ce	cSUPlumbingLayerManipulatorBase::QueryInterface(unsigned int, void **)	QueryInterface__31cSUPlumbingLayerManipulatorBaseUiPPv	libSimUtil.so	vtable:__vt_31cSUPlumbingLayerManipulatorBase
+005631	cSC3PowerLayer::StaticShutdown(void)	StaticShutdown__14cSC3PowerLayer	libSimUtil.so	callee
+0056b8	cSC3PowerLayer::AddRef(void)	AddRef__14cSC3PowerLayer	libSimUtil.so	vtable-thunk:__vt_14cSC3PowerLayer.14cISC3CityLayer
+0056cf	cSC3PowerLayer::Release(void)	Release__14cSC3PowerLayer	libSimUtil.so	vtable-thunk:__vt_14cSC3PowerLayer.14cISC3CityLayer
+0056ff	cSC3CityCellMap<bool>::Init(cISC3City *, bool const &)	Init__t15cSC3CityCellMap1ZbP9cISC3CityRCb	libSimUtil.so	vtable:__vt_t15cSC3CityCellMap1Zb
+005827	cSC3CityCellMap<bool>::Shutdown(void)	Shutdown__t15cSC3CityCellMap1Zb	libSimUtil.so	vtable:__vt_t15cSC3CityCellMap1Zb
+005849	cSC3PowerLayer::CellCountZ(void) const	CellCountZ__C14cSC3PowerLayer	libSimUtil.so	vtable:__vt_14cSC3PowerLayer
+005850	cSC3PowerLayer::GetValueSint32(unsigned int, unsigned int, int &) const	GetValueSint32__C14cSC3PowerLayerUiUiRi	libSimUtil.so	vtable:__vt_14cSC3PowerLayer
+0058c3	cSC3PowerLayer::ValidRect(unsigned int, unsigned int, unsigned int, unsigned int) const	ValidRect__C14cSC3PowerLayerUiUiUiUi	libSimUtil.so	vtable:__vt_14cSC3PowerLayer
+0058e1	cSC3PowerLayer::SerialRead(cIGZDBSerialRecord &)	SerialRead__14cSC3PowerLayerR18cIGZDBSerialRecord	libSimUtil.so	vtable:__vt_14cSC3PowerLayer
+0058f0	cSC3PowerLayer::SerialWrite(cIGZDBSerialRecord &) const	SerialWrite__C14cSC3PowerLayerR18cIGZDBSerialRecord	libSimUtil.so	vtable:__vt_14cSC3PowerLayer
+005aad	cSC3PowerLayer::GetPlantCapacity(unsigned int, unsigned int &)	GetPlantCapacity__14cSC3PowerLayerUiRUi	libSimUtil.so	callee
+005b27	cSC3CityCellMap<bool>::~cSC3CityCellMap(void)	_._t15cSC3CityCellMap1Zb	libSimUtil.so	vtable:__vt_t15cSC3CityCellMap1Zb
+005db9	virtual function thunk (delta:-16) for cSC3PowerLayer::QueryInterface(unsigned int, void **)	__thunk_16_QueryInterface__14cSC3PowerLayerUiPPv	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.14cISC3CityLayer
+005dc1	virtual function thunk (delta:-16) for cSC3PowerLayer::AddRef(void)	__thunk_16_AddRef__14cSC3PowerLayer	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.14cISC3CityLayer
+005dc9	virtual function thunk (delta:-16) for cSC3PowerLayer::Release(void)	__thunk_16_Release__14cSC3PowerLayer	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.14cISC3CityLayer
+005dd1	virtual function thunk (delta:-16) for cSC3PowerLayer::Shutdown(void)	__thunk_16_Shutdown__14cSC3PowerLayer	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.14cISC3CityLayer
+005dd9	virtual function thunk (delta:-20) for cSC3PowerLayer::QueryInterface(unsigned int, void **)	__thunk_20_QueryInterface__14cSC3PowerLayerUiPPv	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.15cISC3PowerLayer
+005de1	virtual function thunk (delta:-20) for cSC3PowerLayer::AddRef(void)	__thunk_20_AddRef__14cSC3PowerLayer	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.15cISC3PowerLayer
+005de9	virtual function thunk (delta:-20) for cSC3PowerLayer::Release(void)	__thunk_20_Release__14cSC3PowerLayer	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.15cISC3PowerLayer
+005df1	virtual function thunk (delta:-20) for cSC3PowerLayer::CellCountX(void) const	__thunk_20_CellCountX__C14cSC3PowerLayer	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.15cISC3PowerLayer
+005df9	virtual function thunk (delta:-20) for cSC3PowerLayer::CellCountZ(void) const	__thunk_20_CellCountZ__C14cSC3PowerLayer	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.15cISC3PowerLayer
+005e01	virtual function thunk (delta:-20) for cSC3PowerLayer::GetValueSint32(unsigned int, unsigned int, int &) const	__thunk_20_GetValueSint32__C14cSC3PowerLayerUiUiRi	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.15cISC3PowerLayer
+005e19	virtual function thunk (delta:-20) for cSC3PowerLayer::ValidRect(unsigned int, unsigned int, unsigned int, unsigned int) const	__thunk_20_ValidRect__C14cSC3PowerLayerUiUiUiUi	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.15cISC3PowerLayer
+005e21	virtual function thunk (delta:-20) for cSC3PowerLayer::SerialRead(cIGZDBSerialRecord &)	__thunk_20_SerialRead__14cSC3PowerLayerR18cIGZDBSerialRecord	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.15cISC3PowerLayer
+005e29	virtual function thunk (delta:-20) for cSC3PowerLayer::SerialWrite(cIGZDBSerialRecord &) const	__thunk_20_SerialWrite__C14cSC3PowerLayerR18cIGZDBSerialRecord	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.15cISC3PowerLayer
+005e31	virtual function thunk (delta:-20) for cSC3PowerLayer::Init(cISC3City *, bool const &)	__thunk_20_Init__14cSC3PowerLayerP9cISC3CityRCb	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.15cISC3PowerLayer
+005e39	virtual function thunk (delta:-20) for cSC3PowerLayer::Shutdown(void)	__thunk_20_Shutdown__14cSC3PowerLayer	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.15cISC3PowerLayer
+005e41	virtual function thunk (delta:-20) for cSC3PowerLayer::GetValue(unsigned int, unsigned int, bool &) const	__thunk_20_GetValue__C14cSC3PowerLayerUiUiRb	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.15cISC3PowerLayer
+005e51	virtual function thunk (delta:-20) for cSC3PowerLayer::SetAllCells(bool const &)	__thunk_20_SetAllCells__14cSC3PowerLayerRCb	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.15cISC3PowerLayer
+005e61	virtual function thunk (delta:-24) for cSC3PowerLayer::QueryInterface(unsigned int, void **)	__thunk_24_QueryInterface__14cSC3PowerLayerUiPPv	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.21cISC3MapSpriteFactory
+005e69	virtual function thunk (delta:-24) for cSC3PowerLayer::AddRef(void)	__thunk_24_AddRef__14cSC3PowerLayer	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.21cISC3MapSpriteFactory
+005e71	virtual function thunk (delta:-24) for cSC3PowerLayer::Release(void)	__thunk_24_Release__14cSC3PowerLayer	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.21cISC3MapSpriteFactory
+005e79	virtual function thunk (delta:-28) for cSC3PowerLayer::QueryInterface(unsigned int, void **)	__thunk_28_QueryInterface__14cSC3PowerLayerUiPPv	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.23cISC3CityChangeReceiver
+005e81	virtual function thunk (delta:-28) for cSC3PowerLayer::AddRef(void)	__thunk_28_AddRef__14cSC3PowerLayer	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.23cISC3CityChangeReceiver
+005e89	virtual function thunk (delta:-28) for cSC3PowerLayer::Release(void)	__thunk_28_Release__14cSC3PowerLayer	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.23cISC3CityChangeReceiver
+005ef3	cSC3PowerLayer::DoQueryInfo(cGZMessage &, cIGZUnknown *)	DoQueryInfo__14cSC3PowerLayerR10cGZMessageP11cIGZUnknown	libSimUtil.so	tokens:61.6
+0063d0	virtual function thunk (delta:-4) for cSUPlumbingLayer::GetMapSpriteCount(void)	__thunk_4_GetMapSpriteCount__16cSUPlumbingLayer	libSimUtil.so	vtable:__vt_16cSUPlumbingLayer.21cISC3MapSpriteFactory
+0063d4	virtual function thunk (delta:-24) for cSC3PowerLayer::GetSpriteIdFromIndex(unsigned int, unsigned int &)	__thunk_24_GetSpriteIdFromIndex__14cSC3PowerLayerUiRUi	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.21cISC3MapSpriteFactory
+0063ee	virtual function thunk (delta:-24) for cSC3PowerLayer::CreateMapSprite(unsigned int, unsigned int, void **)	__thunk_24_CreateMapSprite__14cSC3PowerLayerUiUiPPv	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.21cISC3MapSpriteFactory
+00690c	cSC3PowerPlant::BecomeDefunctDueToAge(void)	BecomeDefunctDueToAge__14cSC3PowerPlant	libSimUtil.so	vtable:__vt_18cSC3WindPowerPlant
+0069fb	cSC3PowerPlant::CalculateCapacityBasedOnAge(unsigned int)	CalculateCapacityBasedOnAge__14cSC3PowerPlantUi	libSimUtil.so	vtable:__vt_18cSC3WindPowerPlant
+006b42	cSC3PowerPlant::IsDead(void)	IsDead__14cSC3PowerPlant	libSimUtil.so	vtable:__vt_18cSC3WindPowerPlant
+006b63	cRZCOMDllDirector::RefCount(void)	RefCount__17cRZCOMDllDirector	libSimUtil.so	vtable:__vt_14cSUCOMDirector
+006b67	cSC3PowerPlant::MaxCapacity(void)	MaxCapacity__14cSC3PowerPlant	libSimUtil.so	vtable:__vt_18cSC3WindPowerPlant
+006b6b	cSC3PowerPlant::Usage(void)	Usage__14cSC3PowerPlant	libSimUtil.so	vtable:__vt_18cSC3WindPowerPlant
+006ba6	cSC3PowerPlant::DecideLifeSpanAndDeclineAge(unsigned int, unsigned int, float)	DecideLifeSpanAndDeclineAge__14cSC3PowerPlantUiUif	libSimUtil.so	vtable:__vt_18cSC3WindPowerPlant
+006c27	cSC3PowerPlant::DecideWhetherToExplode(void)	DecideWhetherToExplode__14cSC3PowerPlant	libSimUtil.so	vtable:__vt_18cSC3WindPowerPlant
+006c57	cSC3PowerPlant::DetermineActualCapacity(void)	DetermineActualCapacity__14cSC3PowerPlant	libSimUtil.so	vtable:__vt_21cSC3NuclearPowerPlant
+006c67	cSC3PowerPlant::Explode(void)	Explode__14cSC3PowerPlant	libSimUtil.so	tokens:22.4
+006d98	cSC3PowerPlant::IsAging(void)	IsAging__14cSC3PowerPlant	libSimUtil.so	vtable:__vt_18cSC3WindPowerPlant
+0078c1	cSC3PowerPlant::SetUsage(unsigned int)	SetUsage__14cSC3PowerPlantUi	libSimUtil.so	vtable:__vt_18cSC3WindPowerPlant
+007afb	cSC3PowerPlant::Update(void)	Update__14cSC3PowerPlant	libSimUtil.so	vtable:__vt_18cSC3WindPowerPlant
+007dfe	cSC3PowerBuildingAnim::Save(cISC3City *, cISC3OccPersistInfo &)	Save__21cSC3PowerBuildingAnimP9cISC3CityR19cISC3OccPersistInfo	libSimUtil.so	vtable:__vt_18cSC3WindPowerPlant
+007e28	cSC3PowerBuildingAnim::QueryInterface(unsigned int, void **)	QueryInterface__21cSC3PowerBuildingAnimUiPPv	libSimUtil.so	vtable:__vt_18cSC3WindPowerPlant
+007e54	cSC3PowerBuildingAnim::AddRef(void)	AddRef__21cSC3PowerBuildingAnim	libSimUtil.so	vtable:__vt_18cSC3WindPowerPlant
+007e5c	cSC3PowerBuildingAnim::Release(void)	Release__21cSC3PowerBuildingAnim	libSimUtil.so	vtable:__vt_18cSC3WindPowerPlant
+00813f	cSC3PowerBuildingAnim::Init(cISC3City *, cISC3OccPersistInfo *)	Init__21cSC3PowerBuildingAnimP9cISC3CityP19cISC3OccPersistInfo	libSimUtil.so	vtable:__vt_18cSC3WindPowerPlant
+00817c	cSC3PowerBuildingAnim::AsISC3Occupant(void)	AsISC3Occupant__21cSC3PowerBuildingAnim	libSimUtil.so	vtable:__vt_18cSC3WindPowerPlant
+008188	cSC3PowerBuildingAnim::AsISC3Building(void)	AsISC3Building__21cSC3PowerBuildingAnim	libSimUtil.so	vtable:__vt_18cSC3WindPowerPlant
+008194	cSC3PowerBuildingAnim::AsISC3CityAgent(void)	AsISC3CityAgent__21cSC3PowerBuildingAnim	libSimUtil.so	vtable:__vt_18cSC3WindPowerPlant
+0082f9	cSC3PowerBuildingAnim::GetBirthdate(cIGZDate &) const	GetBirthdate__C21cSC3PowerBuildingAnimR8cIGZDate	libSimUtil.so	vtable:__vt_18cSC3WindPowerPlant
+008305	cSC3PowerBuildingAnim::SetBirthdate(cIGZDate const &)	SetBirthdate__21cSC3PowerBuildingAnimRC8cIGZDate	libSimUtil.so	vtable:__vt_18cSC3WindPowerPlant
+0091ff	cSC3NuclearPowerPlant::cSC3NuclearPowerPlant(void)	__21cSC3NuclearPowerPlant	libSimUtil.so	vtable-user:__vt_21cSC3NuclearPowerPlant
+009291	cSC3NuclearPowerPlant::PowerSourceType(void)	PowerSourceType__21cSC3NuclearPowerPlant	libSimUtil.so	vtable:__vt_21cSC3NuclearPowerPlant
+009295	cSC3NuclearPowerPlant::Explode(void)	Explode__21cSC3NuclearPowerPlant	libSimUtil.so	tokens:22.4
+009fbd	cSC3PowerPlant::SetMaxLifeSpan(unsigned int)	SetMaxLifeSpan__14cSC3PowerPlantUi	libSimUtil.so	vtable:__vt_18cSC3WindPowerPlant
+009fc7	cSC3PowerPlant::SetDeclineAge(unsigned int)	SetDeclineAge__14cSC3PowerPlantUi	libSimUtil.so	vtable:__vt_18cSC3WindPowerPlant
+009ff3	cSC3NuclearPowerPlant::~cSC3NuclearPowerPlant(void)	_._21cSC3NuclearPowerPlant	libSimUtil.so	vtable:__vt_21cSC3NuclearPowerPlant
+00adaa	virtual function thunk (delta:-4) for cSC3BuildingWaterTreatment::MinimumExecutionInterval(void)	__thunk_4_MinimumExecutionInterval__26cSC3BuildingWaterTreatment	libSimUtil.so	vtable:__vt_26cSC3BuildingWaterTreatment.14cISC3CityAgent
+00af82	cSC3WindPowerPlant::PowerSourceType(void)	PowerSourceType__18cSC3WindPowerPlant	libSimUtil.so	vtable:__vt_18cSC3WindPowerPlant
+00af86	cSC3WindPowerPlant::~cSC3WindPowerPlant(void)	_._18cSC3WindPowerPlant	libSimUtil.so	vtable:__vt_18cSC3WindPowerPlant
+00afc2	cSC3WindPowerPlant::DetermineActualCapacity(void)	DetermineActualCapacity__18cSC3WindPowerPlant	libSimUtil.so	tokens:38.4
+00b47f	virtual function thunk (delta:-40) for cSC3PowerBuildingAnim::AsISC3CityAgent(void)	__thunk_40_AsISC3CityAgent__21cSC3PowerBuildingAnim	libSimUtil.so	caller
+00b49f	virtual function thunk (delta:-40) for cSC3PowerBuildingAnim::GetBirthdate(cIGZDate &) const	__thunk_40_GetBirthdate__C21cSC3PowerBuildingAnimR8cIGZDate	libSimUtil.so	caller
+00b4a7	virtual function thunk (delta:-40) for cSC3PowerBuildingAnim::SetBirthdate(cIGZDate const &)	__thunk_40_SetBirthdate__21cSC3PowerBuildingAnimRC8cIGZDate	libSimUtil.so	caller
+00b4af	virtual function thunk (delta:-44) for cSC3PowerBuildingAnim::QueryInterface(unsigned int, void **)	__thunk_44_QueryInterface__21cSC3PowerBuildingAnimUiPPv	libSimUtil.so	vtable:__vt_21cSC3PowerBuildingAnim.14cISC3CityAgent
+00b4b7	virtual function thunk (delta:-44) for cSC3PowerBuildingAnim::AddRef(void)	__thunk_44_AddRef__21cSC3PowerBuildingAnim	libSimUtil.so	vtable:__vt_21cSC3PowerBuildingAnim.14cISC3CityAgent
+00b4bf	virtual function thunk (delta:-44) for cSC3PowerBuildingAnim::Release(void)	__thunk_44_Release__21cSC3PowerBuildingAnim	libSimUtil.so	vtable:__vt_21cSC3PowerBuildingAnim.14cISC3CityAgent
+00b4f7	virtual function thunk (delta:-48) for cSC3WindPowerPlant::~cSC3WindPowerPlant(void)	__thunk_48__._18cSC3WindPowerPlant	libSimUtil.so	caller
+00b547	virtual function thunk (delta:-48) for cSC3NuclearPowerPlant::~cSC3NuclearPowerPlant(void)	__thunk_48__._21cSC3NuclearPowerPlant	libSimUtil.so	caller
+00c049	cSC3CityCellMap<bool>::AddRef(void)	AddRef__t15cSC3CityCellMap1Zb	libSimUtil.so	vtable-thunk:__vt_t15cSC3CityCellMap1Zb
+00c1bb	cSUCOMDirector::GetDirectorID(void) const	GetDirectorID__C14cSUCOMDirector	libSimUtil.so	tokens:7.7
+00c1c1	cSUCOMDirector::AppRegister(cIGZRegistry *)	AppRegister__14cSUCOMDirectorP12cIGZRegistry	libSimUtil.so	vtable:__vt_14cSUCOMDirector
+00c2cf	cSUCOMDirector::CreatecSC3NuclearPowerPlant(void)	CreatecSC3NuclearPowerPlant__14cSUCOMDirector	libSimUtil.so	caller
+00c4ac	cSUCOMDirector::CreatecSC3BuildingWaterTreatment(void)	CreatecSC3BuildingWaterTreatment__14cSUCOMDirector	libSimUtil.so	caller
+00c4de	cSUCOMDirector::~cSUCOMDirector(void)	_._14cSUCOMDirector	libSimUtil.so	vtable:__vt_14cSUCOMDirector
+00c516	virtual function thunk (delta:-4) for cRZCOMDllDirector::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__17cRZCOMDllDirectorUiPPv	libSimUtil.so	caller
+00c5fc	cSUPlumbingLayerManipulatorBase::Release(void)	Release__31cSUPlumbingLayerManipulatorBase	libSimUtil.so	vtable:__vt_31cSUPlumbingLayerManipulatorBase
+00c62e	cSUPlumbingLayerManipulatorBase::AddRef(void)	AddRef__31cSUPlumbingLayerManipulatorBase	libSimUtil.so	vtable:__vt_31cSUPlumbingLayerManipulatorBase
+00c7bc	cSUPlumbingLayer::GetNumPumpsAging(void)	GetNumPumpsAging__16cSUPlumbingLayer	libSimUtil.so	vtable:__vt_16cSUPlumbingLayer
+00c7c0	cSUPlumbingLayer::~cSUPlumbingLayer(void)	_._16cSUPlumbingLayer	libSimUtil.so	vtable:__vt_16cSUPlumbingLayer
+00c825	cSUPlumbingLayer::GetLayerType(void)	GetLayerType__16cSUPlumbingLayer	libSimUtil.so	vtable:__vt_16cSUPlumbingLayer
+00c82b	cSUPlumbingLayer::QueryInterface(unsigned int, void **)	QueryInterface__16cSUPlumbingLayerUiPPv	libSimUtil.so	tokens:20.4
+00c866	cSUPlumbingLayer::AddRef(void)	AddRef__16cSUPlumbingLayer	libSimUtil.so	vtable:__vt_16cSUPlumbingLayer
+00c88d	cSUPlumbingLayer::Release(void)	Release__16cSUPlumbingLayer	libSimUtil.so	vtable:__vt_16cSUPlumbingLayer
+00c8e2	cSUPlumbingLayer::StaticInit(cISC3CityDefinition *)	StaticInit__16cSUPlumbingLayerP19cISC3CityDefinition	libSimUtil.so	tokens:7.7
+00d9ec	cSUPlumbingLayer::Save(cISC3City *, cIGZDBSegment *)	Save__16cSUPlumbingLayerP9cISC3CityP13cIGZDBSegment	libSimUtil.so	vtable:__vt_16cSUPlumbingLayer
+00dbeb	cSUPlumbingLayer::Shutdown(void)	Shutdown__16cSUPlumbingLayer	libSimUtil.so	vtable:__vt_16cSUPlumbingLayer
+00dcfe	cSUPlumbingLayer::DoMessage(cGZMessage &)	DoMessage__16cSUPlumbingLayerR10cGZMessage	libSimUtil.so	vtable:__vt_16cSUPlumbingLayer
+00de4f	cSUPlumbingLayer::GetManipulator(cISC3CityAgentType const &, cISC3CityLayerManipulator **, int &)	GetManipulator__16cSUPlumbingLayerRC18cISC3CityAgentTypePP25cISC3CityLayerManipulatorRi	libSimUtil.so	vtable:__vt_16cSUPlumbingLayer
+00de9a	cSUPlumbingLayerMonthlyManipulator::Apply(cISC3CityAgent &)	Apply__34cSUPlumbingLayerMonthlyManipulatorR14cISC3CityAgent	libSimUtil.so	caller
+00dea7	cSUPlumbingLayerManipulatorBase::~cSUPlumbingLayerManipulatorBase(void)	_._31cSUPlumbingLayerManipulatorBase	libSimUtil.so	vtable:__vt_31cSUPlumbingLayerManipulatorBase
+00e8c4	cSUPlumbingLayer::do_plumbinglayer_monthly_sim(void)	do_plumbinglayer_monthly_sim__16cSUPlumbingLayer	libSimUtil.so	tokens:15.4
+00f066	cSUPlumbingLayer::GetWaterData(unsigned int &, long long &, long long &, unsigned int &, unsigned int &)	GetWaterData__16cSUPlumbingLayerRUiRxT2T1T1	libSimUtil.so	vtable:__vt_16cSUPlumbingLayer
+00f6e1	cSUPlumbingLayer::GetAverageWaterPollutionInPumps(void)	GetAverageWaterPollutionInPumps__16cSUPlumbingLayer	libSimUtil.so	vtable:__vt_16cSUPlumbingLayer
+0100bb	cSUPlumbingLayer::GetProductionCapacity(unsigned int)	GetProductionCapacity__16cSUPlumbingLayerUi	libSimUtil.so	vtable:__vt_16cSUPlumbingLayer
+0100ea	cSUPlumbingLayer::GetDiffMap(unsigned int *, unsigned int)	GetDiffMap__16cSUPlumbingLayerPUiUi	libSimUtil.so	vtable:__vt_16cSUPlumbingLayer
+010326	virtual function thunk (delta:-4) for cSUPlumbingLayer::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__16cSUPlumbingLayerUiPPv	libSimUtil.so	vtable:__vt_16cSUPlumbingLayer.21cISC3MapSpriteFactory
+01032e	virtual function thunk (delta:-4) for cSUPlumbingLayer::AddRef(void)	__thunk_4_AddRef__16cSUPlumbingLayer	libSimUtil.so	vtable:__vt_16cSUPlumbingLayer.21cISC3MapSpriteFactory
+010336	virtual function thunk (delta:-4) for cSUPlumbingLayer::Release(void)	__thunk_4_Release__16cSUPlumbingLayer	libSimUtil.so	vtable:__vt_16cSUPlumbingLayer.21cISC3MapSpriteFactory
+0103c5	cSUPlumbingLayer::DoQueryInfo(cGZMessage &, cIGZUnknown *)	DoQueryInfo__16cSUPlumbingLayerR10cGZMessageP11cIGZUnknown	libSimUtil.so	vtable:__vt_16cSUPlumbingLayer
+010e57	virtual function thunk (delta:-4) for cSUPlumbingLayer::GetSpriteIdFromIndex(unsigned int, unsigned int &)	__thunk_4_GetSpriteIdFromIndex__16cSUPlumbingLayerUiRUi	libSimUtil.so	vtable:__vt_16cSUPlumbingLayer.21cISC3MapSpriteFactory
+010e71	virtual function thunk (delta:-4) for cSUPlumbingLayer::CreateMapSprite(unsigned int, unsigned int, void **)	__thunk_4_CreateMapSprite__16cSUPlumbingLayerUiUiPPv	libSimUtil.so	vtable:__vt_16cSUPlumbingLayer.21cISC3MapSpriteFactory
+011df8	virtual function thunk (delta:-16) for cSC3PowerLayer::SimulationEnd(void)	__thunk_16_SimulationEnd__14cSC3PowerLayer	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.14cISC3CityLayer
+0120a1	cSC3PowerPlant::GetAge(void)	GetAge__14cSC3PowerPlant	libSimUtil.so	vtable:__vt_18cSC3WindPowerPlant
+013352	virtual function thunk (delta:-4) for cSC3BuildingWaterTreatment::AddRef(void)	__thunk_4_AddRef__26cSC3BuildingWaterTreatment	libSimUtil.so	vtable:__vt_26cSC3BuildingWaterTreatment.14cISC3CityAgent
+01335a	virtual function thunk (delta:-4) for cSC3BuildingWaterTreatment::Release(void)	__thunk_4_Release__26cSC3BuildingWaterTreatment	libSimUtil.so	vtable:__vt_26cSC3BuildingWaterTreatment.14cISC3CityAgent
+0133c2	virtual function thunk (delta:-44) for cSC3BuildingWaterTreatment::AddRef(void)	__thunk_44_AddRef__26cSC3BuildingWaterTreatment	libSimUtil.so	vtable:__vt_26cSC3BuildingWaterTreatment.27cISC3BuildingWaterTreatment
+0133ca	virtual function thunk (delta:-44) for cSC3BuildingWaterTreatment::Release(void)	__thunk_44_Release__26cSC3BuildingWaterTreatment	libSimUtil.so	vtable:__vt_26cSC3BuildingWaterTreatment.27cISC3BuildingWaterTreatment
+0133d2	virtual function thunk (delta:-44) for cSC3BuildingWaterTreatment::AsISC3Occupant(void)	__thunk_44_AsISC3Occupant__26cSC3BuildingWaterTreatment	libSimUtil.so	vtable:__vt_26cSC3BuildingWaterTreatment.27cISC3BuildingWaterTreatment
+016e87	cRZCOMDllDirector::OnStart(cIGZCOM *)	OnStart__17cRZCOMDllDirectorP7cIGZCOM	libSimUtil.so	tokens:15.4
+0171bd	cRZCOMDllDirector::QueryInterface(unsigned int, void **)	QueryInterface__17cRZCOMDllDirectorUiPPv	libSimUtil.so	tokens:15.4
+0171fe	cRZCOMDllDirector::FrameWork(void)	FrameWork__17cRZCOMDllDirector	libSimUtil.so	vtable:__vt_14cSUCOMDirector
+017207	cRZCOMDllDirector::RemoveRef(void)	RemoveRef__17cRZCOMDllDirector	libSimUtil.so	vtable:__vt_14cSUCOMDirector
+017216	cRZCOMDllDirector::InitializeCOM(cIGZCOM *, cIGZString &)	InitializeCOM__17cRZCOMDllDirectorP7cIGZCOMR10cIGZString	libSimUtil.so	vtable:__vt_14cSUCOMDirector
+0172e4	cRZCOMDllDirector::GetClassObject(unsigned int, unsigned int, void **)	GetClassObject__17cRZCOMDllDirectorUiUiPPv	libSimUtil.so	vtable:__vt_14cSUCOMDirector
+017365	cRZCOMDllDirector::EnumClassObjects(void (*)(unsigned int, unsigned int, void *), void *)	EnumClassObjects__17cRZCOMDllDirectorPFUiUiPv_vPv	libSimUtil.so	vtable:__vt_14cSUCOMDirector
+0173b9	cRZCOMDllDirector::ModuleName(cIGZString &)	ModuleName__17cRZCOMDllDirectorR10cIGZString	libSimUtil.so	vtable:__vt_14cSUCOMDirector
+0173cd	cRZCOMDllDirector::AddDirector(cRZCOMDllDirector *)	AddDirector__17cRZCOMDllDirectorP17cRZCOMDllDirector	libSimUtil.so	vtable:__vt_14cSUCOMDirector
+017417	cRZCOMDllDirector::CanUnloadNow(void)	CanUnloadNow__17cRZCOMDllDirector	libSimUtil.so	vtable:__vt_14cSUCOMDirector
+01749b	cRZCOMDllDirector::GZCOM(void)	GZCOM__17cRZCOMDllDirector	libSimUtil.so	vtable:__vt_14cSUCOMDirector
+018822	cSC3BuildingWaterTreatment::AddRef(void)	AddRef__26cSC3BuildingWaterTreatment	libSimUtil.so	vtable-thunk:__vt_26cSC3BuildingWaterTreatment.14cISC3CityAgent
+01882a	cSC3BuildingWaterTreatment::Release(void)	Release__26cSC3BuildingWaterTreatment	libSimUtil.so	vtable-thunk:__vt_26cSC3BuildingWaterTreatment.14cISC3CityAgent
+018c4f	cSC3BuildingWaterTreatment::MinimumExecutionInterval(void)	MinimumExecutionInterval__26cSC3BuildingWaterTreatment	libSimUtil.so	vtable-thunk:__vt_26cSC3BuildingWaterTreatment.14cISC3CityAgent
+0194f8	virtual function thunk (delta:-16) for cSC3PowerLayer::SimulationBegin(void)	__thunk_16_SimulationBegin__14cSC3PowerLayer	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.14cISC3CityLayer
+01b5d6	virtual function thunk (delta:-20) for cSC3PowerLayer::GetTotalCityPowerUsed(void)	__thunk_20_GetTotalCityPowerUsed__14cSC3PowerLayer	libSimUtil.so	vtable:__vt_14cSC3PowerLayer.15cISC3PowerLayer

@@ -1,0 +1,20 @@
+rva	demangled	mangled	source	method
+001104	cRZCOMDllDirector::OnUnload(void)	OnUnload__17cRZCOMDllDirector	libGZWWWD.so	vtable:__vt_20cGZWWWDllCOMDirector
+001107	cGZWWWDllCOMDirector::GetDirectorID(void) const	GetDirectorID__C20cGZWWWDllCOMDirector	libGZWWWD.so	tokens:7.1
+00110d	cGZWWWDllCOMDirector::OnStart(cIGZCOM *)	OnStart__20cGZWWWDllCOMDirectorP7cIGZCOM	libGZWWWD.so	vtable:__vt_20cGZWWWDllCOMDirector
+00118a	cGZWWWDllCOMDirector::~cGZWWWDllCOMDirector(void)	_._20cGZWWWDllCOMDirector	libGZWWWD.so	vtable:__vt_20cGZWWWDllCOMDirector
+001202	virtual function thunk (delta:-4) for cRZCOMDllDirector::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__17cRZCOMDllDirectorUiPPv	libGZWWWD.so	caller
+00a0b9	cRZCOMDllDirector::QueryInterface(unsigned int, void **)	QueryInterface__17cRZCOMDllDirectorUiPPv	libGZWWWD.so	tokens:14.2
+00a0fa	cRZCOMDllDirector::FrameWork(void)	FrameWork__17cRZCOMDllDirector	libGZWWWD.so	vtable:__vt_20cGZWWWDllCOMDirector
+00a10a	cRZCOMDllDirector::RemoveRef(void)	RemoveRef__17cRZCOMDllDirector	libGZWWWD.so	vtable:__vt_20cGZWWWDllCOMDirector
+00a119	cRZCOMDllDirector::RefCount(void)	RefCount__17cRZCOMDllDirector	libGZWWWD.so	vtable:__vt_20cGZWWWDllCOMDirector
+00a11d	cRZCOMDllDirector::InitializeCOM(cIGZCOM *, cIGZString &)	InitializeCOM__17cRZCOMDllDirectorP7cIGZCOMR10cIGZString	libGZWWWD.so	vtable:__vt_20cGZWWWDllCOMDirector
+00a1eb	cRZCOMDllDirector::GetClassObject(unsigned int, unsigned int, void **)	GetClassObject__17cRZCOMDllDirectorUiUiPPv	libGZWWWD.so	vtable:__vt_20cGZWWWDllCOMDirector
+00a26c	cRZCOMDllDirector::EnumClassObjects(void (*)(unsigned int, unsigned int, void *), void *)	EnumClassObjects__17cRZCOMDllDirectorPFUiUiPv_vPv	libGZWWWD.so	vtable:__vt_20cGZWWWDllCOMDirector
+00a2c0	cRZCOMDllDirector::ModuleName(cIGZString &)	ModuleName__17cRZCOMDllDirectorR10cIGZString	libGZWWWD.so	vtable:__vt_20cGZWWWDllCOMDirector
+00a2d4	cRZCOMDllDirector::AddDirector(cRZCOMDllDirector *)	AddDirector__17cRZCOMDllDirectorP17cRZCOMDllDirector	libGZWWWD.so	vtable:__vt_20cGZWWWDllCOMDirector
+00a31e	cRZCOMDllDirector::CanUnloadNow(void)	CanUnloadNow__17cRZCOMDllDirector	libGZWWWD.so	vtable:__vt_20cGZWWWDllCOMDirector
+00a375	cRZCOMDllDirector::AppRegister(cIGZRegistry *)	AppRegister__17cRZCOMDllDirectorP12cIGZRegistry	libGZWWWD.so	vtable:__vt_20cGZWWWDllCOMDirector
+00a3a2	cRZCOMDllDirector::GZCOM(void)	GZCOM__17cRZCOMDllDirector	libGZWWWD.so	vtable:__vt_20cGZWWWDllCOMDirector
+00a403	cRZCOMDllDirector::OnStart(cIGZCOM *)	OnStart__17cRZCOMDllDirectorP7cIGZCOM	libGZWWWD.so	tokens:14.2
+014709	ostream::operator<<(streambuf *)	__ls__7ostreamP9streambuf	libGZWWWD.so	tokens:7.1

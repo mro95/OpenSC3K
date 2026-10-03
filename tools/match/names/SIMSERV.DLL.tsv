@@ -1,0 +1,299 @@
+rva	demangled	mangled	source	method
+001561	cSC3BuildingPoliceStation::GetMaxCoverage(void)	GetMaxCoverage__25cSC3BuildingPoliceStation	libSimServ.so	vtable:__vt_25cSC3BuildingPoliceStation
+001565	cSC3BuildingPoliceStation::GetMinCoverage(void)	GetMinCoverage__25cSC3BuildingPoliceStation	libSimServ.so	vtable:__vt_25cSC3BuildingPoliceStation
+001569	virtual function thunk (delta:-4) for cSC3BuildingPoliceStation::GetMonthlyUpkeep(void)	__thunk_4_GetMonthlyUpkeep__25cSC3BuildingPoliceStation	libSimServ.so	vtable:__vt_25cSC3BuildingPoliceStation.19cISC3BuildingBudget
+00156d	virtual function thunk (delta:-16) for cSC3BuildingFireStation::~cSC3BuildingFireStation(void)	__thunk_16__._23cSC3BuildingFireStation	libSimServ.so	vtable:__vt_23cSC3BuildingFireStation.12cSC3Occupant
+001633	cSC3BuildingFireStation::Save(cISC3City *, cISC3OccPersistInfo &)	Save__23cSC3BuildingFireStationP9cISC3CityR19cISC3OccPersistInfo	libSimServ.so	vtable-thunk:__vt_23cSC3BuildingFireStation.12cSC3Occupant
+0016a4	virtual function thunk (delta:-16) for cSC3BuildingPoliceStation::SerialRead(cISC3City *, cIGZDBSerialRecord &)	__thunk_16_SerialRead__25cSC3BuildingPoliceStationP9cISC3CityR18cIGZDBSerialRecord	libSimServ.so	vtable:__vt_25cSC3BuildingPoliceStation.12cSC3Occupant
+001706	virtual function thunk (delta:-16) for cSC3BuildingPoliceStation::SerialWrite(cISC3City *, cIGZDBSerialRecord &)	__thunk_16_SerialWrite__25cSC3BuildingPoliceStationP9cISC3CityR18cIGZDBSerialRecord	libSimServ.so	vtable:__vt_25cSC3BuildingPoliceStation.12cSC3Occupant
+00176c	virtual function thunk (delta:-4) for cSC3BuildingFireStation::SetFundingPercentage(unsigned char)	__thunk_4_SetFundingPercentage__23cSC3BuildingFireStationUc	libSimServ.so	vtable:__vt_23cSC3BuildingFireStation.19cISC3BuildingBudget
+001832	cSC3BuildingFireStation::QueryInterface(unsigned int, void **)	QueryInterface__23cSC3BuildingFireStationUiPPv	libSimServ.so	vtable:__vt_23cSC3BuildingFireStation
+001886	virtual function thunk (delta:-16) for cSC3BuildingFireStation::DoStandardQueryViewInfo(cGZMessage &, cISC3WinQueryListView *)	__thunk_16_DoStandardQueryViewInfo__23cSC3BuildingFireStationR10cGZMessageP21cISC3WinQueryListView	libSimServ.so	vtable:__vt_23cSC3BuildingFireStation.12cSC3Occupant
+00291f	virtual function thunk (delta:-16) for cSC3BuildingFireStation::DoQueryViews(cGZMessage &, cISC3WinQuery *)	__thunk_16_DoQueryViews__23cSC3BuildingFireStationR10cGZMessageP13cISC3WinQuery	libSimServ.so	vtable:__vt_23cSC3BuildingFireStation.12cSC3Occupant
+003302	virtual function thunk (delta:-4) for cSC3BuildingFireStation::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__23cSC3BuildingFireStationUiPPv	libSimServ.so	vtable:__vt_23cSC3BuildingFireStation.19cISC3BuildingBudget
+00330a	virtual function thunk (delta:-4) for cSC3BuildingJail::AddRef(void)	__thunk_4_AddRef__16cSC3BuildingJail	libSimServ.so	vtable:__vt_16cSC3BuildingJail.19cISC3BuildingBudget
+003312	virtual function thunk (delta:-4) for cSC3BuildingJail::Release(void)	__thunk_4_Release__16cSC3BuildingJail	libSimServ.so	vtable:__vt_16cSC3BuildingJail.19cISC3BuildingBudget
+00331a	virtual function thunk (delta:-4) for cSC3BuildingJail::AsISC3Occupant(void)	__thunk_4_AsISC3Occupant__16cSC3BuildingJail	libSimServ.so	vtable:__vt_16cSC3BuildingJail.19cISC3BuildingBudget
+003322	virtual function thunk (delta:-8) for cSC3BuildingFireStation::QueryInterface(unsigned int, void **)	__thunk_8_QueryInterface__23cSC3BuildingFireStationUiPPv	libSimServ.so	caller
+003342	virtual function thunk (delta:-12) for cSC3BuildingFireStation::QueryInterface(unsigned int, void **)	__thunk_12_QueryInterface__23cSC3BuildingFireStationUiPPv	libSimServ.so	vtable:__vt_23cSC3BuildingFireStation.14cISC3CityAgent
+00334a	virtual function thunk (delta:-12) for cSC3BuildingJail::AddRef(void)	__thunk_12_AddRef__16cSC3BuildingJail	libSimServ.so	vtable:__vt_16cSC3BuildingJail.14cISC3CityAgent
+003352	virtual function thunk (delta:-12) for cSC3BuildingJail::Release(void)	__thunk_12_Release__16cSC3BuildingJail	libSimServ.so	vtable:__vt_16cSC3BuildingJail.14cISC3CityAgent
+00336a	virtual function thunk (delta:-24) for cSC3FlammabilityLayer::DebugClassTag(cIGZString &)	__thunk_24_DebugClassTag__21cSC3FlammabilityLayerR10cIGZString	libSimServ.so	vtable:__vt_21cSC3FlammabilityLayer.14cISC3CityAgent
+003372	virtual function thunk (delta:-16) for cSC3BuildingFireStation::QueryInterface(unsigned int, void **)	__thunk_16_QueryInterface__23cSC3BuildingFireStationUiPPv	libSimServ.so	vtable:__vt_23cSC3BuildingFireStation.12cSC3Occupant
+00338a	virtual function thunk (delta:-16) for cSC3BuildingJail::Init(cISC3City *, cISC3OccPersistInfo *)	__thunk_16_Init__16cSC3BuildingJailP9cISC3CityP19cISC3OccPersistInfo	libSimServ.so	vtable:__vt_16cSC3BuildingJail.12cSC3Occupant
+00339a	virtual function thunk (delta:-16) for cSC3BuildingFireStation::Save(cISC3City *, cISC3OccPersistInfo &)	__thunk_16_Save__23cSC3BuildingFireStationP9cISC3CityR19cISC3OccPersistInfo	libSimServ.so	vtable:__vt_23cSC3BuildingFireStation.12cSC3Occupant
+00357e	cSC3BuildingJail::cSC3BuildingJail(void)	__16cSC3BuildingJail	libSimServ.so	tokens:35.1
+003859	virtual function thunk (delta:-16) for cSC3BuildingJail::~cSC3BuildingJail(void)	__thunk_16__._16cSC3BuildingJail	libSimServ.so	vtable:__vt_16cSC3BuildingJail.12cSC3Occupant
+003879	cSC3BuildingJail::~cSC3BuildingJail(void)	_._16cSC3BuildingJail	libSimServ.so	vtable-user:__vt_16cSC3BuildingJail
+0038f3	cSC3BuildingJail::Save(cISC3City *, cISC3OccPersistInfo &)	Save__16cSC3BuildingJailP9cISC3CityR19cISC3OccPersistInfo	libSimServ.so	vtable-thunk:__vt_16cSC3BuildingJail.12cSC3Occupant
+003936	virtual function thunk (delta:-16) for cSC3BuildingJail::SerialRead(cISC3City *, cIGZDBSerialRecord &)	__thunk_16_SerialRead__16cSC3BuildingJailP9cISC3CityR18cIGZDBSerialRecord	libSimServ.so	vtable:__vt_16cSC3BuildingJail.12cSC3Occupant
+00395c	virtual function thunk (delta:-16) for cSC3BuildingJail::SerialWrite(cISC3City *, cIGZDBSerialRecord &)	__thunk_16_SerialWrite__16cSC3BuildingJailP9cISC3CityR18cIGZDBSerialRecord	libSimServ.so	vtable:__vt_16cSC3BuildingJail.12cSC3Occupant
+003984	cSC3BuildingJail::AsISC3Building(void)	AsISC3Building__16cSC3BuildingJail	libSimServ.so	vtable:__vt_16cSC3BuildingJail
+0039ac	cSC3BuildingJail::QueryInterface(unsigned int, void **)	QueryInterface__16cSC3BuildingJailUiPPv	libSimServ.so	vtable:__vt_16cSC3BuildingJail
+003a00	cSC3BuildingJail::GetInmateCapacity(void)	GetInmateCapacity__16cSC3BuildingJail	libSimServ.so	vtable:__vt_16cSC3BuildingJail
+003a06	cSC3BuildingJail::GetInmateCount(void)	GetInmateCount__16cSC3BuildingJail	libSimServ.so	vtable:__vt_16cSC3BuildingJail
+003a0a	cSC3BuildingJail::SetInmateCount(unsigned int)	SetInmateCount__16cSC3BuildingJailUi	libSimServ.so	vtable:__vt_16cSC3BuildingJail
+003a14	virtual function thunk (delta:-4) for cSC3BuildingJail::GetMonthlyUpkeep(void)	__thunk_4_GetMonthlyUpkeep__16cSC3BuildingJail	libSimServ.so	vtable:__vt_16cSC3BuildingJail.19cISC3BuildingBudget
+003a1a	virtual function thunk (delta:-4) for cSC3BuildingJail::SetFundingPercentage(unsigned char)	__thunk_4_SetFundingPercentage__16cSC3BuildingJailUc	libSimServ.so	vtable:__vt_16cSC3BuildingJail.19cISC3BuildingBudget
+003a56	cSC3BuildingJail::DoStandardQueryViewInfo(cGZMessage &, cISC3WinQueryListView *)	DoStandardQueryViewInfo__16cSC3BuildingJailR10cGZMessageP21cISC3WinQueryListView	libSimServ.so	tokens:28.9
+0043ae	virtual function thunk (delta:-16) for cSC3BuildingJail::DoDebugQueryViewInfo(cGZMessage &, cISC3WinQueryListView *)	__thunk_16_DoDebugQueryViewInfo__16cSC3BuildingJailR10cGZMessageP21cISC3WinQueryListView	libSimServ.so	vtable:__vt_16cSC3BuildingJail.12cSC3Occupant
+0043be	cSC3BuildingJail::GetDebugInfoStringCount(void)	GetDebugInfoStringCount__16cSC3BuildingJail	libSimServ.so	vtable:__vt_16cSC3BuildingJail
+0043c1	cSC3BuildingJail::GetDebugInfoStrings(cIGZString &, cIGZString &, unsigned int)	GetDebugInfoStrings__16cSC3BuildingJailR10cIGZStringT1Ui	libSimServ.so	vtable:__vt_16cSC3BuildingJail
+0043c6	virtual function thunk (delta:-4) for cSC3BuildingJail::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__16cSC3BuildingJailUiPPv	libSimServ.so	vtable:__vt_16cSC3BuildingJail.19cISC3BuildingBudget
+0043ce	virtual function thunk (delta:-8) for cSC3BuildingJail::QueryInterface(unsigned int, void **)	__thunk_8_QueryInterface__16cSC3BuildingJailUiPPv	libSimServ.so	caller
+0043d6	virtual function thunk (delta:-12) for cSC3BuildingJail::QueryInterface(unsigned int, void **)	__thunk_12_QueryInterface__16cSC3BuildingJailUiPPv	libSimServ.so	vtable:__vt_16cSC3BuildingJail.14cISC3CityAgent
+0043de	virtual function thunk (delta:-16) for cSC3BuildingJail::QueryInterface(unsigned int, void **)	__thunk_16_QueryInterface__16cSC3BuildingJailUiPPv	libSimServ.so	vtable:__vt_16cSC3BuildingJail.12cSC3Occupant
+0043e6	virtual function thunk (delta:-16) for cSC3BuildingJail::AddRef(void)	__thunk_16_AddRef__16cSC3BuildingJail	libSimServ.so	vtable:__vt_16cSC3BuildingJail.12cSC3Occupant
+0043ee	virtual function thunk (delta:-16) for cSC3BuildingJail::Release(void)	__thunk_16_Release__16cSC3BuildingJail	libSimServ.so	vtable:__vt_16cSC3BuildingJail.12cSC3Occupant
+0043fe	virtual function thunk (delta:-16) for cSC3BuildingJail::Save(cISC3City *, cISC3OccPersistInfo &)	__thunk_16_Save__16cSC3BuildingJailP9cISC3CityR19cISC3OccPersistInfo	libSimServ.so	vtable:__vt_16cSC3BuildingJail.12cSC3Occupant
+0049e3	cSC3BuildingPoliceStation::GetCoverageRadius(void)	GetCoverageRadius__25cSC3BuildingPoliceStation	libSimServ.so	vtable:__vt_25cSC3BuildingPoliceStation
+0049e7	virtual function thunk (delta:-16) for cSC3BuildingPoliceStation::~cSC3BuildingPoliceStation(void)	__thunk_16__._25cSC3BuildingPoliceStation	libSimServ.so	vtable:__vt_25cSC3BuildingPoliceStation.12cSC3Occupant
+004aad	cSC3BuildingPoliceStation::Save(cISC3City *, cISC3OccPersistInfo &)	Save__25cSC3BuildingPoliceStationP9cISC3CityR19cISC3OccPersistInfo	libSimServ.so	vtable-thunk:__vt_25cSC3BuildingPoliceStation.12cSC3Occupant
+004b1e	virtual function thunk (delta:-4) for cSC3BuildingPoliceStation::SetFundingPercentage(unsigned char)	__thunk_4_SetFundingPercentage__25cSC3BuildingPoliceStationUc	libSimServ.so	vtable:__vt_25cSC3BuildingPoliceStation.19cISC3BuildingBudget
+004bea	cSC3BuildingPoliceStation::QueryInterface(unsigned int, void **)	QueryInterface__25cSC3BuildingPoliceStationUiPPv	libSimServ.so	vtable:__vt_25cSC3BuildingPoliceStation
+004c3e	virtual function thunk (delta:-16) for cSC3BuildingPoliceStation::DoStandardQueryViewInfo(cGZMessage &, cISC3WinQueryListView *)	__thunk_16_DoStandardQueryViewInfo__25cSC3BuildingPoliceStationR10cGZMessageP21cISC3WinQueryListView	libSimServ.so	vtable:__vt_25cSC3BuildingPoliceStation.12cSC3Occupant
+004dbd	cSC3BuildingPoliceStation::GetInfoStringCount(void)	GetInfoStringCount__25cSC3BuildingPoliceStation	libSimServ.so	vtable:__vt_25cSC3BuildingPoliceStation
+004dc1	cSC3BuildingPoliceStation::GetInfoStrings(cIGZString &, cIGZString &, unsigned int, bool *)	GetInfoStrings__25cSC3BuildingPoliceStationR10cIGZStringT1UiPb	libSimServ.so	vtable:__vt_25cSC3BuildingPoliceStation
+005e07	virtual function thunk (delta:-16) for cSC3BuildingPoliceStation::DoQueryViews(cGZMessage &, cISC3WinQuery *)	__thunk_16_DoQueryViews__25cSC3BuildingPoliceStationR10cGZMessageP13cISC3WinQuery	libSimServ.so	vtable:__vt_25cSC3BuildingPoliceStation.12cSC3Occupant
+005f2a	virtual function thunk (delta:-4) for cSC3BuildingPoliceStation::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__25cSC3BuildingPoliceStationUiPPv	libSimServ.so	vtable:__vt_25cSC3BuildingPoliceStation.19cISC3BuildingBudget
+005f32	virtual function thunk (delta:-8) for cSC3BuildingPoliceStation::QueryInterface(unsigned int, void **)	__thunk_8_QueryInterface__25cSC3BuildingPoliceStationUiPPv	libSimServ.so	caller
+005f3a	virtual function thunk (delta:-12) for cSC3BuildingPoliceStation::QueryInterface(unsigned int, void **)	__thunk_12_QueryInterface__25cSC3BuildingPoliceStationUiPPv	libSimServ.so	vtable:__vt_25cSC3BuildingPoliceStation.14cISC3CityAgent
+005f42	virtual function thunk (delta:-16) for cSC3BuildingPoliceStation::QueryInterface(unsigned int, void **)	__thunk_16_QueryInterface__25cSC3BuildingPoliceStationUiPPv	libSimServ.so	vtable:__vt_25cSC3BuildingPoliceStation.12cSC3Occupant
+005f52	virtual function thunk (delta:-16) for cSC3BuildingPoliceStation::Save(cISC3City *, cISC3OccPersistInfo &)	__thunk_16_Save__25cSC3BuildingPoliceStationP9cISC3CityR19cISC3OccPersistInfo	libSimServ.so	vtable:__vt_25cSC3BuildingPoliceStation.12cSC3Occupant
+0060f3	cSC3CrimeLayer::GetLayerType(void)	GetLayerType__14cSC3CrimeLayer	libSimServ.so	tokens:7.7
+0060f9	cRZCOMDllDirector::OnUnload(void)	OnUnload__17cRZCOMDllDirector	libSimServ.so	vtable:__vt_14cSVCOMDirector
+0060fc	cSC3FireLayer::SerialRead(cIGZDBSerialRecord &)	SerialRead__13cSC3FireLayerR18cIGZDBSerialRecord	libSimServ.so	vtable-thunk:__vt_13cSC3FireLayer.14cISC3FireLayer
+00610b	cSC3CrimeLayer::~cSC3CrimeLayer(void)	_._14cSC3CrimeLayer	libSimServ.so	vtable:__vt_14cSC3CrimeLayer
+0061e7	cSC3PoliceLayer::SerialRead(cIGZDBSerialRecord &)	SerialRead__15cSC3PoliceLayerR18cIGZDBSerialRecord	libSimServ.so	vtable-thunk:__vt_15cSC3PoliceLayer
+00621c	cSC3FireLayer::SerialWrite(cIGZDBSerialRecord &) const	SerialWrite__C13cSC3FireLayerR18cIGZDBSerialRecord	libSimServ.so	vtable-thunk:__vt_13cSC3FireLayer.14cISC3FireLayer
+006251	cSC3CityCellMap<unsigned char>::QueryInterface(unsigned int, void **)	QueryInterface__t15cSC3CityCellMap1ZUcUiPPv	libSimServ.so	vtable:__vt_t15cSC3CityCellMap1ZUc
+006280	cSC3CityCellMapSized<short>::QueryInterface(unsigned int, void **)	QueryInterface__t20cSC3CityCellMapSized1ZsUiPPv	libSimServ.so	tokens:13.7
+0062af	cSC3CrimeLayer::StaticInit(cISC3CityDefinition *)	StaticInit__14cSC3CrimeLayerP19cISC3CityDefinition	libSimServ.so	tokens:34.2
+006a8d	virtual function thunk (delta:-32) for cSC3CrimeLayer::StaticShutdown(void)	__thunk_32_StaticShutdown__14cSC3CrimeLayer	libSimServ.so	vtable:__vt_14cSC3CrimeLayer.14cISC3CityLayer
+0073b0	virtual function thunk (delta:-32) for cSC3CrimeLayer::Save(cISC3City *, cIGZDBSegment *)	__thunk_32_Save__14cSC3CrimeLayerP9cISC3CityP13cIGZDBSegment	libSimServ.so	vtable:__vt_14cSC3CrimeLayer.14cISC3CityLayer
+00759b	cSC3CrimeLayer::Shutdown(void)	Shutdown__14cSC3CrimeLayer	libSimServ.so	vtable-thunk:__vt_14cSC3CrimeLayer.14cISC3CityLayer
+007635	virtual function thunk (delta:-32) for cSC3CrimeLayer::SimulationBegin(void)	__thunk_32_SimulationBegin__14cSC3CrimeLayer	libSimServ.so	vtable:__vt_14cSC3CrimeLayer.14cISC3CityLayer
+007811	virtual function thunk (delta:-32) for cSC3CrimeLayer::SimulationEnd(void)	__thunk_32_SimulationEnd__14cSC3CrimeLayer	libSimServ.so	vtable:__vt_14cSC3CrimeLayer.14cISC3CityLayer
+007a8d	cSC3CrimeLayer::QueryInterface(unsigned int, void **)	QueryInterface__14cSC3CrimeLayerUiPPv	libSimServ.so	vtable-thunk:__vt_14cSC3CrimeLayer.14cISC3CityLayer
+007b25	virtual function thunk (delta:-36) for cSC3CrimeLayer::Simulate(int)	__thunk_36_Simulate__14cSC3CrimeLayeri	libSimServ.so	vtable:__vt_14cSC3CrimeLayer.14cISC3CityAgent
+007d35	cSC3CrimeLayer::OccupantInserted(unsigned int, cISC3Occupant *)	OccupantInserted__14cSC3CrimeLayerUiP13cISC3Occupant	libSimServ.so	vtable-thunk:__vt_14cSC3CrimeLayer.23cISC3CityChangeReceiver
+007f2a	virtual function thunk (delta:-40) for cSC3CrimeLayer::OccupantInserted(unsigned int, cISC3Occupant *)	__thunk_40_OccupantInserted__14cSC3CrimeLayerUiP13cISC3Occupant	libSimServ.so	vtable:__vt_14cSC3CrimeLayer.23cISC3CityChangeReceiver
+007f3b	virtual function thunk (delta:-40) for cSC3CrimeLayer::OccupantRemoved(unsigned int, cISC3Occupant *)	__thunk_40_OccupantRemoved__14cSC3CrimeLayerUiP13cISC3Occupant	libSimServ.so	vtable:__vt_14cSC3CrimeLayer.23cISC3CityChangeReceiver
+008351	cSC3PoliceLayer::Init(cISC3City *, unsigned char const &)	Init__15cSC3PoliceLayerP9cISC3CityRCUc	libSimServ.so	vtable-thunk:__vt_15cSC3PoliceLayer
+0083ce	cSC3CityCellMapSized<int>::Shutdown(void)	Shutdown__t20cSC3CityCellMapSized1Zi	libSimServ.so	vtable:__vt_t20cSC3CityCellMapSized1Zi
+0083f0	cSC3CityCellMapSized<unsigned char>::GetValueSint32(unsigned int, unsigned int, int &) const	GetValueSint32__Ct20cSC3CityCellMapSized1ZUcUiUiRi	libSimServ.so	vtable:__vt_t20cSC3CityCellMapSized1ZUc
+00846d	cSC3FireLayer::ValidRect(unsigned int, unsigned int, unsigned int, unsigned int) const	ValidRect__C13cSC3FireLayerUiUiUiUi	libSimServ.so	vtable-thunk:__vt_13cSC3FireLayer.14cISC3FireLayer
+0084a9	cSC3FireLayer::Release(void)	Release__13cSC3FireLayer	libSimServ.so	vtable-thunk:__vt_13cSC3FireLayer.14cISC3CityLayer
+0084d9	cSC3CityCellMapSized<short>::Init(cISC3City *, short const &)	Init__t20cSC3CityCellMapSized1ZsP9cISC3CityRCs	libSimServ.so	vtable:__vt_t20cSC3CityCellMapSized1Zs
+008556	cSC3CityCellMapSized<short>::GetValueSint32(unsigned int, unsigned int, int &) const	GetValueSint32__Ct20cSC3CityCellMapSized1ZsUiUiRi	libSimServ.so	vtable:__vt_t20cSC3CityCellMapSized1Zs
+00857f	cSC3CityCellMapSized<short>::GetValue(unsigned int, unsigned int, short &) const	GetValue__Ct20cSC3CityCellMapSized1ZsUiUiRs	libSimServ.so	vtable:__vt_t20cSC3CityCellMapSized1Zs
+008601	cSC3CityCellMapSized<short>::SetAllCells(short const &)	SetAllCells__t20cSC3CityCellMapSized1ZsRCs	libSimServ.so	vtable:__vt_t20cSC3CityCellMapSized1Zs
+00863a	cSC3CityCellMapSized<short>::SerialRead(cIGZDBSerialRecord &)	SerialRead__t20cSC3CityCellMapSized1ZsR18cIGZDBSerialRecord	libSimServ.so	vtable:__vt_t20cSC3CityCellMapSized1Zs
+008649	cSC3CityCellMapSized<short>::SerialWrite(cIGZDBSerialRecord &) const	SerialWrite__Ct20cSC3CityCellMapSized1ZsR18cIGZDBSerialRecord	libSimServ.so	vtable:__vt_t20cSC3CityCellMapSized1Zs
+008895	cSC3CityCellMapSized<unsigned char>::~cSC3CityCellMapSized(void)	_._t20cSC3CityCellMapSized1ZUc	libSimServ.so	vtable:__vt_t20cSC3CityCellMapSized1ZUc
+0088b2	cSC3CityCellMapSized<short>::~cSC3CityCellMapSized(void)	_._t20cSC3CityCellMapSized1Zs	libSimServ.so	vtable:__vt_t20cSC3CityCellMapSized1Zs
+009098	virtual function thunk (delta:-28) for cSC3CrimeLayer::QueryInterface(unsigned int, void **)	__thunk_28_QueryInterface__14cSC3CrimeLayerUiPPv	libSimServ.so	vtable:__vt_14cSC3CrimeLayer.15cISC3CrimeLayer
+0090a0	virtual function thunk (delta:-28) for cSC3CrimeLayer::AddRef(void)	__thunk_28_AddRef__14cSC3CrimeLayer	libSimServ.so	vtable:__vt_14cSC3CrimeLayer.15cISC3CrimeLayer
+0090a8	virtual function thunk (delta:-28) for cSC3CrimeLayer::Release(void)	__thunk_28_Release__14cSC3CrimeLayer	libSimServ.so	vtable:__vt_14cSC3CrimeLayer.15cISC3CrimeLayer
+0090b0	virtual function thunk (delta:-28) for cSC3FireLayer::CellCountX(void) const	__thunk_28_CellCountX__C13cSC3FireLayer	libSimServ.so	vtable:__vt_13cSC3FireLayer.14cISC3FireLayer
+0090b8	virtual function thunk (delta:-28) for cSC3FireLayer::CellCountZ(void) const	__thunk_28_CellCountZ__C13cSC3FireLayer	libSimServ.so	vtable:__vt_13cSC3FireLayer.14cISC3FireLayer
+0090c8	virtual function thunk (delta:-28) for cSC3FireLayer::ValidRect(unsigned int, unsigned int, unsigned int, unsigned int) const	__thunk_28_ValidRect__C13cSC3FireLayerUiUiUiUi	libSimServ.so	vtable:__vt_13cSC3FireLayer.14cISC3FireLayer
+0090d0	virtual function thunk (delta:-28) for cSC3FireLayer::SerialRead(cIGZDBSerialRecord &)	__thunk_28_SerialRead__13cSC3FireLayerR18cIGZDBSerialRecord	libSimServ.so	vtable:__vt_13cSC3FireLayer.14cISC3FireLayer
+0090d8	virtual function thunk (delta:-28) for cSC3FireLayer::SerialWrite(cIGZDBSerialRecord &) const	__thunk_28_SerialWrite__C13cSC3FireLayerR18cIGZDBSerialRecord	libSimServ.so	vtable:__vt_13cSC3FireLayer.14cISC3FireLayer
+0090e0	virtual function thunk (delta:-28) for cSC3CrimeLayer::Shutdown(void)	__thunk_28_Shutdown__14cSC3CrimeLayer	libSimServ.so	vtable:__vt_14cSC3CrimeLayer.15cISC3CrimeLayer
+0090e8	virtual function thunk (delta:-32) for cSC3CrimeLayer::QueryInterface(unsigned int, void **)	__thunk_32_QueryInterface__14cSC3CrimeLayerUiPPv	libSimServ.so	vtable:__vt_14cSC3CrimeLayer.14cISC3CityLayer
+0090f0	virtual function thunk (delta:-32) for cSC3CrimeLayer::AddRef(void)	__thunk_32_AddRef__14cSC3CrimeLayer	libSimServ.so	vtable:__vt_14cSC3CrimeLayer.14cISC3CityLayer
+0090f8	virtual function thunk (delta:-32) for cSC3CrimeLayer::Release(void)	__thunk_32_Release__14cSC3CrimeLayer	libSimServ.so	vtable:__vt_14cSC3CrimeLayer.14cISC3CityLayer
+009100	virtual function thunk (delta:-32) for cSC3CrimeLayer::Shutdown(void)	__thunk_32_Shutdown__14cSC3CrimeLayer	libSimServ.so	vtable:__vt_14cSC3CrimeLayer.14cISC3CityLayer
+009108	virtual function thunk (delta:-36) for cSC3CrimeLayer::QueryInterface(unsigned int, void **)	__thunk_36_QueryInterface__14cSC3CrimeLayerUiPPv	libSimServ.so	vtable:__vt_14cSC3CrimeLayer.14cISC3CityAgent
+009110	virtual function thunk (delta:-36) for cSC3CrimeLayer::AddRef(void)	__thunk_36_AddRef__14cSC3CrimeLayer	libSimServ.so	vtable:__vt_14cSC3CrimeLayer.14cISC3CityAgent
+009118	virtual function thunk (delta:-36) for cSC3CrimeLayer::Release(void)	__thunk_36_Release__14cSC3CrimeLayer	libSimServ.so	vtable:__vt_14cSC3CrimeLayer.14cISC3CityAgent
+009120	virtual function thunk (delta:-40) for cSC3CrimeLayer::QueryInterface(unsigned int, void **)	__thunk_40_QueryInterface__14cSC3CrimeLayerUiPPv	libSimServ.so	vtable:__vt_14cSC3CrimeLayer.23cISC3CityChangeReceiver
+009128	virtual function thunk (delta:-40) for cSC3CrimeLayer::AddRef(void)	__thunk_40_AddRef__14cSC3CrimeLayer	libSimServ.so	vtable:__vt_14cSC3CrimeLayer.23cISC3CityChangeReceiver
+009130	virtual function thunk (delta:-40) for cSC3CrimeLayer::Release(void)	__thunk_40_Release__14cSC3CrimeLayer	libSimServ.so	vtable:__vt_14cSC3CrimeLayer.23cISC3CityChangeReceiver
+009138	virtual function thunk (delta:-44) for cSC3CrimeLayer::QueryInterface(unsigned int, void **)	__thunk_44_QueryInterface__14cSC3CrimeLayerUiPPv	libSimServ.so	vtable:__vt_14cSC3CrimeLayer.20cISC3QueryInfoString
+009140	virtual function thunk (delta:-44) for cSC3CrimeLayer::AddRef(void)	__thunk_44_AddRef__14cSC3CrimeLayer	libSimServ.so	vtable:__vt_14cSC3CrimeLayer.20cISC3QueryInfoString
+009148	virtual function thunk (delta:-44) for cSC3CrimeLayer::Release(void)	__thunk_44_Release__14cSC3CrimeLayer	libSimServ.so	vtable:__vt_14cSC3CrimeLayer.20cISC3QueryInfoString
+009150	virtual function thunk (delta:-48) for cSC3CrimeLayer::QueryInterface(unsigned int, void **)	__thunk_48_QueryInterface__14cSC3CrimeLayerUiPPv	libSimServ.so	vtable:__vt_14cSC3CrimeLayer.21cISC3MapSpriteFactory
+009158	virtual function thunk (delta:-48) for cSC3CrimeLayer::AddRef(void)	__thunk_48_AddRef__14cSC3CrimeLayer	libSimServ.so	vtable:__vt_14cSC3CrimeLayer.21cISC3MapSpriteFactory
+009160	virtual function thunk (delta:-48) for cSC3CrimeLayer::Release(void)	__thunk_48_Release__14cSC3CrimeLayer	libSimServ.so	vtable:__vt_14cSC3CrimeLayer.21cISC3MapSpriteFactory
+009168	cSC3CrimeLayer::DoQueryInfo(cGZMessage &, cIGZUnknown *)	DoQueryInfo__14cSC3CrimeLayerR10cGZMessageP11cIGZUnknown	libSimServ.so	tokens:29.2
+009358	virtual function thunk (delta:-40) for cSC3PoliceLayer::GetInfoStringCount(unsigned int)	__thunk_40_GetInfoStringCount__15cSC3PoliceLayerUi	libSimServ.so	vtable:__vt_15cSC3PoliceLayer.20cISC3QueryInfoString
+009928	virtual function thunk (delta:-48) for cSC3CrimeLayer::GetSpriteIdFromIndex(unsigned int, unsigned int &)	__thunk_48_GetSpriteIdFromIndex__14cSC3CrimeLayerUiRUi	libSimServ.so	vtable:__vt_14cSC3CrimeLayer.21cISC3MapSpriteFactory
+009942	virtual function thunk (delta:-48) for cSC3CrimeLayer::CreateMapSprite(unsigned int, unsigned int, void **)	__thunk_48_CreateMapSprite__14cSC3CrimeLayerUiUiPPv	libSimServ.so	vtable:__vt_14cSC3CrimeLayer.21cISC3MapSpriteFactory
+009ca2	cSC3CityCellMapSized<int>::QueryInterface(unsigned int, void **)	QueryInterface__t20cSC3CityCellMapSized1ZiUiPPv	libSimServ.so	tokens:13.7
+009cd1	virtual function thunk (delta:-28) for cSC3FireLayer::GetTotalCityFireUpkeep(void)	__thunk_28_GetTotalCityFireUpkeep__13cSC3FireLayer	libSimServ.so	vtable:__vt_13cSC3FireLayer.14cISC3FireLayer
+009cd8	virtual function thunk (delta:-28) for cSC3FireLayer::IsOnStrike(void)	__thunk_28_IsOnStrike__13cSC3FireLayer	libSimServ.so	vtable:__vt_13cSC3FireLayer.14cISC3FireLayer
+009cdf	virtual function thunk (delta:-28) for cSC3FireLayer::GetAverageCoverage(void)	__thunk_28_GetAverageCoverage__13cSC3FireLayer	libSimServ.so	vtable:__vt_13cSC3FireLayer.14cISC3FireLayer
+009ce6	virtual function thunk (delta:-28) for cSC3FireLayer::GetPercentCoverage(void)	__thunk_28_GetPercentCoverage__13cSC3FireLayer	libSimServ.so	vtable:__vt_13cSC3FireLayer.14cISC3FireLayer
+009cf2	cSC3FireLayer::GetLayerType(void)	GetLayerType__13cSC3FireLayer	libSimServ.so	tokens:7.7
+009cf8	cSC3FireLayer::GetValueSint32(unsigned int, unsigned int, int &) const	GetValueSint32__C13cSC3FireLayerUiUiRi	libSimServ.so	vtable-thunk:__vt_13cSC3FireLayer.14cISC3FireLayer
+009d4f	cSC3FireLayer::~cSC3FireLayer(void)	_._13cSC3FireLayer	libSimServ.so	vtable:__vt_13cSC3FireLayer
+009df5	virtual function thunk (delta:-32) for cSC3FireLayer::StaticInit(cISC3CityDefinition *)	__thunk_32_StaticInit__13cSC3FireLayerP19cISC3CityDefinition	libSimServ.so	vtable:__vt_13cSC3FireLayer.14cISC3CityLayer
+00a619	virtual function thunk (delta:-32) for cSC3FireLayer::Save(cISC3City *, cIGZDBSegment *)	__thunk_32_Save__13cSC3FireLayerP9cISC3CityP13cIGZDBSegment	libSimServ.so	vtable:__vt_13cSC3FireLayer.14cISC3CityLayer
+00a7c6	cSC3FireLayer::Shutdown(void)	Shutdown__13cSC3FireLayer	libSimServ.so	vtable-thunk:__vt_13cSC3FireLayer.14cISC3CityLayer
+00a970	cSC3FireLayer::SimulationBegin(void)	SimulationBegin__13cSC3FireLayer	libSimServ.so	tokens:7.7
+00a9c6	cSC3FireLayer::DispatchCrew(unsigned int, unsigned int)	DispatchCrew__13cSC3FireLayerUiUi	libSimServ.so	tokens:14.7
+00abda	virtual function thunk (delta:-28) for cSC3FireLayer::RevokeDispatch(unsigned int, unsigned int)	__thunk_28_RevokeDispatch__13cSC3FireLayerUiUi	libSimServ.so	vtable:__vt_13cSC3FireLayer.14cISC3FireLayer
+00acbc	virtual function thunk (delta:-28) for cSC3FireLayer::RevokeAllDispatches(void)	__thunk_28_RevokeAllDispatches__13cSC3FireLayer	libSimServ.so	vtable:__vt_13cSC3FireLayer.14cISC3FireLayer
+00adf5	virtual function thunk (delta:-28) for cSC3FireLayer::SetFundingPercentage(unsigned char)	__thunk_28_SetFundingPercentage__13cSC3FireLayerUc	libSimServ.so	vtable:__vt_13cSC3FireLayer.14cISC3FireLayer
+00af08	virtual function thunk (delta:-28) for cSC3FireLayer::ChanceOfStrike(void)	__thunk_28_ChanceOfStrike__13cSC3FireLayer	libSimServ.so	vtable:__vt_13cSC3FireLayer.14cISC3FireLayer
+00af62	virtual function thunk (delta:-28) for cSC3FireLayer::EndStrike(void)	__thunk_28_EndStrike__13cSC3FireLayer	libSimServ.so	vtable:__vt_13cSC3FireLayer.14cISC3FireLayer
+00afa1	virtual function thunk (delta:-28) for cSC3FireLayer::GetStrikingBuildings(cISC3Occupant **, unsigned int, unsigned int &)	__thunk_28_GetStrikingBuildings__13cSC3FireLayerPP13cISC3OccupantUiRUi	libSimServ.so	vtable:__vt_13cSC3FireLayer.14cISC3FireLayer
+00b045	cSC3FireLayer::QueryInterface(unsigned int, void **)	QueryInterface__13cSC3FireLayerUiPPv	libSimServ.so	vtable-thunk:__vt_13cSC3FireLayer.14cISC3CityLayer
+00b13e	cSC3FireLayer::occupantChanged(cSC3FireLayer::tChangeType, cISC3Occupant *)	occupantChanged__13cSC3FireLayerQ213cSC3FireLayer11tChangeTypeP13cISC3Occupant	libSimServ.so	tokens:20.6
+00b36a	cSC3FireLayer::SetFundingPercentage(unsigned char)	SetFundingPercentage__13cSC3FireLayerUc	libSimServ.so	callee
+00b53e	virtual function thunk (delta:-36) for cSC3FireLayer::OccupantInserted(unsigned int, cISC3Occupant *)	__thunk_36_OccupantInserted__13cSC3FireLayerUiP13cISC3Occupant	libSimServ.so	vtable:__vt_13cSC3FireLayer.23cISC3CityChangeReceiver
+00b54f	virtual function thunk (delta:-36) for cSC3FireLayer::OccupantRemoved(unsigned int, cISC3Occupant *)	__thunk_36_OccupantRemoved__13cSC3FireLayerUiP13cISC3Occupant	libSimServ.so	vtable:__vt_13cSC3FireLayer.23cISC3CityChangeReceiver
+00b560	virtual function thunk (delta:-36) for cSC3PoliceLayer::OccupantChanged(unsigned int, cISC3Occupant *, int, void *)	__thunk_36_OccupantChanged__15cSC3PoliceLayerUiP13cISC3OccupantiPv	libSimServ.so	vtable:__vt_15cSC3PoliceLayer.23cISC3CityChangeReceiver
+00b5d0	cSC3DailyFireManipulator::AddRef(void)	AddRef__24cSC3DailyFireManipulator	libSimServ.so	vtable:__vt_24cSC3DailyFireManipulator
+00b5d8	cSC3DailyFireManipulator::Release(void)	Release__24cSC3DailyFireManipulator	libSimServ.so	vtable:__vt_24cSC3DailyFireManipulator
+00b6f7	cSC3DailyFireManipulator::Apply(cISC3CityAgent &)	Apply__24cSC3DailyFireManipulatorR14cISC3CityAgent	libSimServ.so	tokens:13.3
+00ba17	cSC3CityCellMapSized<int>::Init(cISC3City *, int const &)	Init__t20cSC3CityCellMapSized1ZiP9cISC3CityRCi	libSimServ.so	vtable:__vt_t20cSC3CityCellMapSized1Zi
+00ba9c	cSC3CityCellMapSized<int>::GetValueSint32(unsigned int, unsigned int, int &) const	GetValueSint32__Ct20cSC3CityCellMapSized1ZiUiUiRi	libSimServ.so	vtable:__vt_t20cSC3CityCellMapSized1Zi
+00bb1a	cSC3CityCellMapSized<int>::SetAllCells(int const &)	SetAllCells__t20cSC3CityCellMapSized1ZiRCi	libSimServ.so	vtable:__vt_t20cSC3CityCellMapSized1Zi
+00bb77	cSC3CityCellMapSized<int>::SerialRead(cIGZDBSerialRecord &)	SerialRead__t20cSC3CityCellMapSized1ZiR18cIGZDBSerialRecord	libSimServ.so	vtable:__vt_t20cSC3CityCellMapSized1Zi
+00bb86	cSC3CityCellMapSized<int>::SerialWrite(cIGZDBSerialRecord &) const	SerialWrite__Ct20cSC3CityCellMapSized1ZiR18cIGZDBSerialRecord	libSimServ.so	vtable:__vt_t20cSC3CityCellMapSized1Zi
+00bc0b	cSC3CityCellMapSized<int>::~cSC3CityCellMapSized(void)	_._t20cSC3CityCellMapSized1Zi	libSimServ.so	vtable:__vt_t20cSC3CityCellMapSized1Zi
+00bdb8	virtual function thunk (delta:-28) for cSC3FireLayer::QueryInterface(unsigned int, void **)	__thunk_28_QueryInterface__13cSC3FireLayerUiPPv	libSimServ.so	vtable:__vt_13cSC3FireLayer.14cISC3FireLayer
+00bdc0	virtual function thunk (delta:-28) for cSC3FireLayer::Shutdown(void)	__thunk_28_Shutdown__13cSC3FireLayer	libSimServ.so	vtable:__vt_13cSC3FireLayer.14cISC3FireLayer
+00bdc8	virtual function thunk (delta:-32) for cSC3FireLayer::QueryInterface(unsigned int, void **)	__thunk_32_QueryInterface__13cSC3FireLayerUiPPv	libSimServ.so	vtable:__vt_13cSC3FireLayer.14cISC3CityLayer
+00bdd0	virtual function thunk (delta:-32) for cSC3FireLayer::Shutdown(void)	__thunk_32_Shutdown__13cSC3FireLayer	libSimServ.so	vtable:__vt_13cSC3FireLayer.14cISC3CityLayer
+00bdd8	virtual function thunk (delta:-36) for cSC3FireLayer::QueryInterface(unsigned int, void **)	__thunk_36_QueryInterface__13cSC3FireLayerUiPPv	libSimServ.so	vtable:__vt_13cSC3FireLayer.23cISC3CityChangeReceiver
+00bde0	virtual function thunk (delta:-40) for cSC3FireLayer::QueryInterface(unsigned int, void **)	__thunk_40_QueryInterface__13cSC3FireLayerUiPPv	libSimServ.so	vtable:__vt_13cSC3FireLayer.20cISC3QueryInfoString
+00bde8	virtual function thunk (delta:-44) for cSC3FireLayer::QueryInterface(unsigned int, void **)	__thunk_44_QueryInterface__13cSC3FireLayerUiPPv	libSimServ.so	vtable:__vt_13cSC3FireLayer.21cISC3MapSpriteFactory
+00bdf0	virtual function thunk (delta:-44) for cSC3PoliceLayer::AddRef(void)	__thunk_44_AddRef__15cSC3PoliceLayer	libSimServ.so	vtable:__vt_15cSC3PoliceLayer.21cISC3MapSpriteFactory
+00be18	virtual function thunk (delta:-32) for cSC3FireLayer::DoQueryInfo(cGZMessage &, cIGZUnknown *)	__thunk_32_DoQueryInfo__13cSC3FireLayerR10cGZMessageP11cIGZUnknown	libSimServ.so	vtable:__vt_13cSC3FireLayer.14cISC3CityLayer
+00bf6b	virtual function thunk (delta:-44) for cSC3PoliceLayer::GetMapSpriteCount(void)	__thunk_44_GetMapSpriteCount__15cSC3PoliceLayer	libSimServ.so	vtable:__vt_15cSC3PoliceLayer.21cISC3MapSpriteFactory
+00bf6f	virtual function thunk (delta:-44) for cSC3FireLayer::GetSpriteIdFromIndex(unsigned int, unsigned int &)	__thunk_44_GetSpriteIdFromIndex__13cSC3FireLayerUiRUi	libSimServ.so	vtable:__vt_13cSC3FireLayer.21cISC3MapSpriteFactory
+00bf89	virtual function thunk (delta:-44) for cSC3FireLayer::CreateMapSprite(unsigned int, unsigned int, void **)	__thunk_44_CreateMapSprite__13cSC3FireLayerUiUiPPv	libSimServ.so	vtable:__vt_13cSC3FireLayer.21cISC3MapSpriteFactory
+00c126	cSC3FlammabilityLayer::StaticInit(cISC3CityDefinition *)	StaticInit__21cSC3FlammabilityLayerP19cISC3CityDefinition	libSimServ.so	tokens:27.4
+00c3df	cSC3FlammabilityLayer::AddRef(void)	AddRef__21cSC3FlammabilityLayer	libSimServ.so	vtable:__vt_21cSC3FlammabilityLayer
+00c469	virtual function thunk (delta:-24) for cSC3FlammabilityLayer::TypeId(void) const	__thunk_24_TypeId__C21cSC3FlammabilityLayer	libSimServ.so	vtable:__vt_21cSC3FlammabilityLayer.14cISC3CityAgent
+00c46f	virtual function thunk (delta:-24) for cSC3FlammabilityLayer::IsAgentLocking(void)	__thunk_24_IsAgentLocking__21cSC3FlammabilityLayer	libSimServ.so	vtable:__vt_21cSC3FlammabilityLayer.14cISC3CityAgent
+00c472	virtual function thunk (delta:-24) for cSC3FlammabilityLayer::AgentType(void)	__thunk_24_AgentType__21cSC3FlammabilityLayer	libSimServ.so	vtable:__vt_21cSC3FlammabilityLayer.14cISC3CityAgent
+00c475	cSC3FlammabilityLayer::~cSC3FlammabilityLayer(void)	_._21cSC3FlammabilityLayer	libSimServ.so	vtable:__vt_21cSC3FlammabilityLayer
+00c4fe	virtual function thunk (delta:-32) for cSC3CrimeLayer::GetManipulator(cISC3CityAgentType const &, cISC3CityLayerManipulator **, int &)	__thunk_32_GetManipulator__14cSC3CrimeLayerRC18cISC3CityAgentTypePP25cISC3CityLayerManipulatorRi	libSimServ.so	vtable:__vt_14cSC3CrimeLayer.14cISC3CityLayer
+00c50a	virtual function thunk (delta:-24) for cSC3FlammabilityLayer::Simulate(int)	__thunk_24_Simulate__21cSC3FlammabilityLayeri	libSimServ.so	vtable:__vt_21cSC3FlammabilityLayer.14cISC3CityAgent
+00c51f	virtual function thunk (delta:-24) for cSC3FlammabilityLayer::MinimumExecutionInterval(void)	__thunk_24_MinimumExecutionInterval__21cSC3FlammabilityLayer	libSimServ.so	vtable:__vt_21cSC3FlammabilityLayer.14cISC3CityAgent
+00c523	cSC3FlammabilityLayer::Simulate(int)	Simulate__21cSC3FlammabilityLayeri	libSimServ.so	vtable-thunk:__vt_21cSC3FlammabilityLayer.14cISC3CityAgent
+00c608	cSC3FlammabilityLayer::calculateValue(unsigned int, unsigned int)	calculateValue__21cSC3FlammabilityLayerUiUi	libSimServ.so	tokens:15.4
+00c6dd	cSC3FlammabilityLayer::Init(cISC3City *)	Init__21cSC3FlammabilityLayerP9cISC3City	libSimServ.so	caller
+00c8be	virtual function thunk (delta:-20) for cSC3FlammabilityLayer::Save(cISC3City *, cIGZDBSegment *)	__thunk_20_Save__21cSC3FlammabilityLayerP9cISC3CityP13cIGZDBSegment	libSimServ.so	vtable:__vt_21cSC3FlammabilityLayer.14cISC3CityLayer
+00c9b0	virtual function thunk (delta:-20) for cSC3FlammabilityLayer::SimulationBegin(void)	__thunk_20_SimulationBegin__21cSC3FlammabilityLayer	libSimServ.so	vtable:__vt_21cSC3FlammabilityLayer.14cISC3CityLayer
+00ca34	cSC3FlammabilityLayer::QueryInterface(unsigned int, void **)	QueryInterface__21cSC3FlammabilityLayerUiPPv	libSimServ.so	tokens:19.5
+00cab6	cSC3FlammabilityLayer::Release(void)	Release__21cSC3FlammabilityLayer	libSimServ.so	vtable:__vt_21cSC3FlammabilityLayer
+00cad6	cSC3FlammabilityLayer::Shutdown(void)	Shutdown__21cSC3FlammabilityLayer	libSimServ.so	vtable:__vt_21cSC3FlammabilityLayer
+00cb58	virtual function thunk (delta:-20) for cSC3FlammabilityLayer::DoMessage(cGZMessage &)	__thunk_20_DoMessage__21cSC3FlammabilityLayerR10cGZMessage	libSimServ.so	vtable:__vt_21cSC3FlammabilityLayer.14cISC3CityLayer
+00cc29	cSC3CityCellMap<unsigned char>::Init(cISC3City *, unsigned char const &)	Init__t15cSC3CityCellMap1ZUcP9cISC3CityRCUc	libSimServ.so	vtable:__vt_21cSC3FlammabilityLayer
+00cc97	cSC3CityCellMap<unsigned char>::Shutdown(void)	Shutdown__t15cSC3CityCellMap1ZUc	libSimServ.so	vtable:__vt_t15cSC3CityCellMap1ZUc
+00ccb9	cSC3CityCellMap<unsigned char>::CellCountX(void) const	CellCountX__Ct15cSC3CityCellMap1ZUc	libSimServ.so	vtable:__vt_21cSC3FlammabilityLayer
+00ccc0	cSC3CityCellMap<unsigned char>::CellCountZ(void) const	CellCountZ__Ct15cSC3CityCellMap1ZUc	libSimServ.so	vtable:__vt_21cSC3FlammabilityLayer
+00ccc7	cSC3CityCellMap<unsigned char>::GetValueSint32(unsigned int, unsigned int, int &) const	GetValueSint32__Ct15cSC3CityCellMap1ZUcUiUiRi	libSimServ.so	vtable:__vt_21cSC3FlammabilityLayer
+00cce5	cSC3CityCellMap<unsigned char>::GetValue(unsigned int, unsigned int, unsigned char &) const	GetValue__Ct15cSC3CityCellMap1ZUcUiUiRUc	libSimServ.so	vtable:__vt_21cSC3FlammabilityLayer
+00cd3e	cSC3CityCellMap<unsigned char>::SetAllCells(unsigned char const &)	SetAllCells__t15cSC3CityCellMap1ZUcRCUc	libSimServ.so	vtable:__vt_21cSC3FlammabilityLayer
+00cd9c	cSC3CityCellMap<unsigned char>::SerialRead(cIGZDBSerialRecord &)	SerialRead__t15cSC3CityCellMap1ZUcR18cIGZDBSerialRecord	libSimServ.so	vtable:__vt_21cSC3FlammabilityLayer
+00cdab	cSC3CityCellMap<unsigned char>::SerialWrite(cIGZDBSerialRecord &) const	SerialWrite__Ct15cSC3CityCellMap1ZUcR18cIGZDBSerialRecord	libSimServ.so	vtable:__vt_21cSC3FlammabilityLayer
+00cdba	cSC3CityCellMap<unsigned char>::~cSC3CityCellMap(void)	_._t15cSC3CityCellMap1ZUc	libSimServ.so	vtable:__vt_t15cSC3CityCellMap1ZUc
+00ce1b	virtual function thunk (delta:-20) for cSC3FlammabilityLayer::QueryInterface(unsigned int, void **)	__thunk_20_QueryInterface__21cSC3FlammabilityLayerUiPPv	libSimServ.so	vtable:__vt_21cSC3FlammabilityLayer.14cISC3CityLayer
+00ce23	virtual function thunk (delta:-20) for cSC3FlammabilityLayer::AddRef(void)	__thunk_20_AddRef__21cSC3FlammabilityLayer	libSimServ.so	vtable:__vt_21cSC3FlammabilityLayer.14cISC3CityLayer
+00ce2b	virtual function thunk (delta:-20) for cSC3FlammabilityLayer::Release(void)	__thunk_20_Release__21cSC3FlammabilityLayer	libSimServ.so	vtable:__vt_21cSC3FlammabilityLayer.14cISC3CityLayer
+00ce33	virtual function thunk (delta:-20) for cSC3FlammabilityLayer::Shutdown(void)	__thunk_20_Shutdown__21cSC3FlammabilityLayer	libSimServ.so	vtable:__vt_21cSC3FlammabilityLayer.14cISC3CityLayer
+00ce3b	virtual function thunk (delta:-24) for cSC3FlammabilityLayer::QueryInterface(unsigned int, void **)	__thunk_24_QueryInterface__21cSC3FlammabilityLayerUiPPv	libSimServ.so	vtable:__vt_21cSC3FlammabilityLayer.14cISC3CityAgent
+00ce43	virtual function thunk (delta:-24) for cSC3FlammabilityLayer::AddRef(void)	__thunk_24_AddRef__21cSC3FlammabilityLayer	libSimServ.so	vtable:__vt_21cSC3FlammabilityLayer.14cISC3CityAgent
+00ce4b	virtual function thunk (delta:-24) for cSC3FlammabilityLayer::Release(void)	__thunk_24_Release__21cSC3FlammabilityLayer	libSimServ.so	vtable:__vt_21cSC3FlammabilityLayer.14cISC3CityAgent
+00ce6b	virtual function thunk (delta:-32) for cSC3FlammabilityLayer::QueryInterface(unsigned int, void **)	__thunk_32_QueryInterface__21cSC3FlammabilityLayerUiPPv	libSimServ.so	vtable:__vt_21cSC3FlammabilityLayer.20cISC3QueryInfoString
+00ce73	virtual function thunk (delta:-32) for cSC3FlammabilityLayer::AddRef(void)	__thunk_32_AddRef__21cSC3FlammabilityLayer	libSimServ.so	vtable:__vt_21cSC3FlammabilityLayer.20cISC3QueryInfoString
+00ce7b	virtual function thunk (delta:-32) for cSC3FlammabilityLayer::Release(void)	__thunk_32_Release__21cSC3FlammabilityLayer	libSimServ.so	vtable:__vt_21cSC3FlammabilityLayer.20cISC3QueryInfoString
+00ce83	virtual function thunk (delta:-20) for cSC3FlammabilityLayer::DoQueryInfo(cGZMessage &, cIGZUnknown *)	__thunk_20_DoQueryInfo__21cSC3FlammabilityLayerR10cGZMessageP11cIGZUnknown	libSimServ.so	vtable:__vt_21cSC3FlammabilityLayer.14cISC3CityLayer
+00cfd6	cSC3FlammabilityLayer::DoStandardQueryViewInfo(cGZMessage &, cISC3WinQueryListView *)	DoStandardQueryViewInfo__21cSC3FlammabilityLayerR10cGZMessageP21cISC3WinQueryListView	libSimServ.so	tokens:13.4
+00d5aa	virtual function thunk (delta:-40) for cSC3PoliceLayer::GetInfoStrings(unsigned int, unsigned int, unsigned int, unsigned int, unsigned int &, cIGZString &, cIGZString &)	__thunk_40_GetInfoStrings__15cSC3PoliceLayerUiUiUiUiRUiR10cIGZStringT6	libSimServ.so	vtable:__vt_15cSC3PoliceLayer.20cISC3QueryInfoString
+00d944	virtual function thunk (delta:-28) for cSC3PoliceLayer::IsOnStrike(void)	__thunk_28_IsOnStrike__15cSC3PoliceLayer	libSimServ.so	vtable:__vt_15cSC3PoliceLayer.16cISC3PoliceLayer
+00d948	virtual function thunk (delta:-28) for cSC3PoliceLayer::GetAverageCoverage(void)	__thunk_28_GetAverageCoverage__15cSC3PoliceLayer	libSimServ.so	vtable:__vt_15cSC3PoliceLayer.16cISC3PoliceLayer
+00d94f	virtual function thunk (delta:-28) for cSC3PoliceLayer::GetPercentCoverage(void)	__thunk_28_GetPercentCoverage__15cSC3PoliceLayer	libSimServ.so	vtable:__vt_15cSC3PoliceLayer.16cISC3PoliceLayer
+00d956	virtual function thunk (delta:-28) for cSC3PoliceLayer::GetTotalJailCapacity(void)	__thunk_28_GetTotalJailCapacity__15cSC3PoliceLayer	libSimServ.so	vtable:__vt_15cSC3PoliceLayer.16cISC3PoliceLayer
+00d964	virtual function thunk (delta:-28) for cSC3PoliceLayer::GetCriminalsAtLarge(void)	__thunk_28_GetCriminalsAtLarge__15cSC3PoliceLayer	libSimServ.so	vtable:__vt_15cSC3PoliceLayer.16cISC3PoliceLayer
+00d970	virtual function thunk (delta:-32) for cSC3PoliceLayer::GetLayerType(void)	__thunk_32_GetLayerType__15cSC3PoliceLayer	libSimServ.so	vtable:__vt_15cSC3PoliceLayer.14cISC3CityLayer
+00d986	cSC3FireLayer::GetValue(unsigned int, unsigned int, unsigned char &) const	GetValue__C13cSC3FireLayerUiUiRUc	libSimServ.so	vtable-thunk:__vt_13cSC3FireLayer.14cISC3FireLayer
+00d9e7	virtual function thunk (delta:-32) for cSC3FireLayer::DoMessage(cGZMessage &)	__thunk_32_DoMessage__13cSC3FireLayerR10cGZMessage	libSimServ.so	vtable:__vt_13cSC3FireLayer.14cISC3CityLayer
+00d9ec	cSVCOMDirector::AppRegister(cIGZRegistry *)	AppRegister__14cSVCOMDirectorP12cIGZRegistry	libSimServ.so	vtable:__vt_14cSVCOMDirector
+00d9f1	virtual function thunk (delta:-36) for cSC3PoliceLayer::OccupantMoved(unsigned int, cISC3Occupant *, cSC3CityCoord const &)	__thunk_36_OccupantMoved__15cSC3PoliceLayerUiP13cISC3OccupantRC13cSC3CityCoord	libSimServ.so	vtable:__vt_15cSC3PoliceLayer.23cISC3CityChangeReceiver
+00d9fb	cSC3PoliceLayer::~cSC3PoliceLayer(void)	_._15cSC3PoliceLayer	libSimServ.so	vtable:__vt_15cSC3PoliceLayer
+00dab0	virtual function thunk (delta:-32) for cSC3PoliceLayer::StaticInit(cISC3CityDefinition *)	__thunk_32_StaticInit__15cSC3PoliceLayerP19cISC3CityDefinition	libSimServ.so	vtable:__vt_15cSC3PoliceLayer.14cISC3CityLayer
+00e581	virtual function thunk (delta:-32) for cSC3PoliceLayer::Save(cISC3City *, cIGZDBSegment *)	__thunk_32_Save__15cSC3PoliceLayerP9cISC3CityP13cIGZDBSegment	libSimServ.so	vtable:__vt_15cSC3PoliceLayer.14cISC3CityLayer
+00e728	cSC3PoliceLayer::Shutdown(void)	Shutdown__15cSC3PoliceLayer	libSimServ.so	vtable:__vt_15cSC3PoliceLayer
+00e928	cSC3PoliceLayer::SimulationBegin(void)	SimulationBegin__15cSC3PoliceLayer	libSimServ.so	tokens:7.7
+00e97e	virtual function thunk (delta:-32) for cSC3FireLayer::StaticShutdown(void)	__thunk_32_StaticShutdown__13cSC3FireLayer	libSimServ.so	vtable:__vt_13cSC3FireLayer.14cISC3CityLayer
+00e981	cSC3PoliceLayer::DispatchCrew(unsigned int, unsigned int)	DispatchCrew__15cSC3PoliceLayerUiUi	libSimServ.so	tokens:14.7
+00eb70	virtual function thunk (delta:-28) for cSC3PoliceLayer::RevokeDispatch(unsigned int, unsigned int)	__thunk_28_RevokeDispatch__15cSC3PoliceLayerUiUi	libSimServ.so	vtable:__vt_15cSC3PoliceLayer.16cISC3PoliceLayer
+00ec52	virtual function thunk (delta:-28) for cSC3PoliceLayer::RevokeAllDispatches(void)	__thunk_28_RevokeAllDispatches__15cSC3PoliceLayer	libSimServ.so	vtable:__vt_15cSC3PoliceLayer.16cISC3PoliceLayer
+00ece1	virtual function thunk (delta:-28) for cSC3PoliceLayer::SetFundingPercentage(unsigned char)	__thunk_28_SetFundingPercentage__15cSC3PoliceLayerUc	libSimServ.so	vtable:__vt_15cSC3PoliceLayer.16cISC3PoliceLayer
+00edf4	virtual function thunk (delta:-28) for cSC3PoliceLayer::ChanceOfStrike(void)	__thunk_28_ChanceOfStrike__15cSC3PoliceLayer	libSimServ.so	vtable:__vt_15cSC3PoliceLayer.16cISC3PoliceLayer
+00ee4b	virtual function thunk (delta:-28) for cSC3PoliceLayer::EndStrike(void)	__thunk_28_EndStrike__15cSC3PoliceLayer	libSimServ.so	vtable:__vt_15cSC3PoliceLayer.16cISC3PoliceLayer
+00ee83	virtual function thunk (delta:-28) for cSC3PoliceLayer::GetStrikingBuildings(cISC3Occupant **, unsigned int, unsigned int &)	__thunk_28_GetStrikingBuildings__15cSC3PoliceLayerPP13cISC3OccupantUiRUi	libSimServ.so	vtable:__vt_15cSC3PoliceLayer.16cISC3PoliceLayer
+00ef24	cSC3PoliceLayer::QueryInterface(unsigned int, void **)	QueryInterface__15cSC3PoliceLayerUiPPv	libSimServ.so	tokens:19.9
+00ef86	virtual function thunk (delta:-32) for cSC3PoliceLayer::GetManipulator(cISC3CityAgentType const &, cISC3CityLayerManipulator **, int &)	__thunk_32_GetManipulator__15cSC3PoliceLayerRC18cISC3CityAgentTypePP25cISC3CityLayerManipulatorRi	libSimServ.so	vtable:__vt_15cSC3PoliceLayer.14cISC3CityLayer
+00f006	cSC3PoliceLayer::occupantChanged(cSC3PoliceLayer::tChangeType, cISC3Occupant *)	occupantChanged__15cSC3PoliceLayerQ215cSC3PoliceLayer11tChangeTypeP13cISC3Occupant	libSimServ.so	tokens:35.3
+00f557	cSC3PoliceLayer::SetFundingPercentage(unsigned char)	SetFundingPercentage__15cSC3PoliceLayerUc	libSimServ.so	callee
+00f751	virtual function thunk (delta:-36) for cSC3PoliceLayer::OccupantInserted(unsigned int, cISC3Occupant *)	__thunk_36_OccupantInserted__15cSC3PoliceLayerUiP13cISC3Occupant	libSimServ.so	vtable:__vt_15cSC3PoliceLayer.23cISC3CityChangeReceiver
+00f762	virtual function thunk (delta:-36) for cSC3PoliceLayer::OccupantRemoved(unsigned int, cISC3Occupant *)	__thunk_36_OccupantRemoved__15cSC3PoliceLayerUiP13cISC3Occupant	libSimServ.so	vtable:__vt_15cSC3PoliceLayer.23cISC3CityChangeReceiver
+00f829	cSC3PoliceLayer::GetManipulator(cISC3CityAgentType const &, cISC3CityLayerManipulator **, int &)	GetManipulator__15cSC3PoliceLayerRC18cISC3CityAgentTypePP25cISC3CityLayerManipulatorRi	libSimServ.so	callee
+00f8d4	cSC3DailyPoliceManipulator::Init(cISC3City *)	Init__26cSC3DailyPoliceManipulatorP9cISC3City	libSimServ.so	tokens:14.0
+00fa07	cSC3DailyPoliceManipulator::Apply(cISC3CityAgent &)	Apply__26cSC3DailyPoliceManipulatorR14cISC3CityAgent	libSimServ.so	tokens:13.3
+00fd81	cSC3DailyFireManipulator::QueryInterface(unsigned int, void **)	QueryInterface__24cSC3DailyFireManipulatorUiPPv	libSimServ.so	vtable:__vt_24cSC3DailyFireManipulator
+00fe9b	virtual function thunk (delta:-4) for cSC3DailyFireManipulator::Release(void)	__thunk_4_Release__24cSC3DailyFireManipulator	libSimServ.so	caller
+00fea3	virtual function thunk (delta:-4) for cSC3DailyFireManipulator::AddRef(void)	__thunk_4_AddRef__24cSC3DailyFireManipulator	libSimServ.so	caller
+00feab	virtual function thunk (delta:-28) for cSC3PoliceLayer::QueryInterface(unsigned int, void **)	__thunk_28_QueryInterface__15cSC3PoliceLayerUiPPv	libSimServ.so	vtable:__vt_15cSC3PoliceLayer.16cISC3PoliceLayer
+00feb3	virtual function thunk (delta:-28) for cSC3FireLayer::AddRef(void)	__thunk_28_AddRef__13cSC3FireLayer	libSimServ.so	vtable:__vt_13cSC3FireLayer.14cISC3FireLayer
+00febb	virtual function thunk (delta:-28) for cSC3FireLayer::Release(void)	__thunk_28_Release__13cSC3FireLayer	libSimServ.so	vtable:__vt_13cSC3FireLayer.14cISC3FireLayer
+00fec3	virtual function thunk (delta:-28) for cSC3FireLayer::GetValueSint32(unsigned int, unsigned int, int &) const	__thunk_28_GetValueSint32__C13cSC3FireLayerUiUiRi	libSimServ.so	vtable:__vt_13cSC3FireLayer.14cISC3FireLayer
+00fed3	virtual function thunk (delta:-28) for cSC3FireLayer::Init(cISC3City *, unsigned char const &)	__thunk_28_Init__13cSC3FireLayerP9cISC3CityRCUc	libSimServ.so	vtable:__vt_13cSC3FireLayer.14cISC3FireLayer
+00fedb	virtual function thunk (delta:-28) for cSC3PoliceLayer::Shutdown(void)	__thunk_28_Shutdown__15cSC3PoliceLayer	libSimServ.so	vtable:__vt_15cSC3PoliceLayer.16cISC3PoliceLayer
+00fee3	virtual function thunk (delta:-28) for cSC3FireLayer::GetValue(unsigned int, unsigned int, unsigned char &) const	__thunk_28_GetValue__C13cSC3FireLayerUiUiRUc	libSimServ.so	vtable:__vt_13cSC3FireLayer.14cISC3FireLayer
+00fef3	virtual function thunk (delta:-28) for cSC3FireLayer::SetAllCells(unsigned char const &)	__thunk_28_SetAllCells__13cSC3FireLayerRCUc	libSimServ.so	vtable:__vt_13cSC3FireLayer.14cISC3FireLayer
+00ff03	virtual function thunk (delta:-32) for cSC3PoliceLayer::QueryInterface(unsigned int, void **)	__thunk_32_QueryInterface__15cSC3PoliceLayerUiPPv	libSimServ.so	vtable:__vt_15cSC3PoliceLayer.14cISC3CityLayer
+00ff0b	virtual function thunk (delta:-32) for cSC3FireLayer::AddRef(void)	__thunk_32_AddRef__13cSC3FireLayer	libSimServ.so	vtable:__vt_13cSC3FireLayer.14cISC3CityLayer
+00ff13	virtual function thunk (delta:-32) for cSC3FireLayer::Release(void)	__thunk_32_Release__13cSC3FireLayer	libSimServ.so	vtable:__vt_13cSC3FireLayer.14cISC3CityLayer
+00ff1b	virtual function thunk (delta:-32) for cSC3PoliceLayer::Shutdown(void)	__thunk_32_Shutdown__15cSC3PoliceLayer	libSimServ.so	vtable:__vt_15cSC3PoliceLayer.14cISC3CityLayer
+00ff23	virtual function thunk (delta:-36) for cSC3PoliceLayer::QueryInterface(unsigned int, void **)	__thunk_36_QueryInterface__15cSC3PoliceLayerUiPPv	libSimServ.so	vtable:__vt_15cSC3PoliceLayer.23cISC3CityChangeReceiver
+00ff2b	virtual function thunk (delta:-36) for cSC3PoliceLayer::AddRef(void)	__thunk_36_AddRef__15cSC3PoliceLayer	libSimServ.so	vtable:__vt_15cSC3PoliceLayer.23cISC3CityChangeReceiver
+00ff33	virtual function thunk (delta:-36) for cSC3PoliceLayer::Release(void)	__thunk_36_Release__15cSC3PoliceLayer	libSimServ.so	vtable:__vt_15cSC3PoliceLayer.23cISC3CityChangeReceiver
+00ff3b	virtual function thunk (delta:-40) for cSC3PoliceLayer::QueryInterface(unsigned int, void **)	__thunk_40_QueryInterface__15cSC3PoliceLayerUiPPv	libSimServ.so	vtable:__vt_15cSC3PoliceLayer.20cISC3QueryInfoString
+00ff43	virtual function thunk (delta:-40) for cSC3PoliceLayer::AddRef(void)	__thunk_40_AddRef__15cSC3PoliceLayer	libSimServ.so	vtable:__vt_15cSC3PoliceLayer.20cISC3QueryInfoString
+00ff4b	virtual function thunk (delta:-40) for cSC3PoliceLayer::Release(void)	__thunk_40_Release__15cSC3PoliceLayer	libSimServ.so	vtable:__vt_15cSC3PoliceLayer.20cISC3QueryInfoString
+00ff53	virtual function thunk (delta:-44) for cSC3PoliceLayer::QueryInterface(unsigned int, void **)	__thunk_44_QueryInterface__15cSC3PoliceLayerUiPPv	libSimServ.so	vtable:__vt_15cSC3PoliceLayer.21cISC3MapSpriteFactory
+00ff5b	virtual function thunk (delta:-44) for cSC3PoliceLayer::Release(void)	__thunk_44_Release__15cSC3PoliceLayer	libSimServ.so	vtable:__vt_15cSC3PoliceLayer.21cISC3MapSpriteFactory
+00ff83	virtual function thunk (delta:-32) for cSC3PoliceLayer::DoQueryInfo(cGZMessage &, cIGZUnknown *)	__thunk_32_DoQueryInfo__15cSC3PoliceLayerR10cGZMessageP11cIGZUnknown	libSimServ.so	vtable:__vt_15cSC3PoliceLayer.14cISC3CityLayer
+0100d6	virtual function thunk (delta:-44) for cSC3PoliceLayer::GetSpriteIdFromIndex(unsigned int, unsigned int &)	__thunk_44_GetSpriteIdFromIndex__15cSC3PoliceLayerUiRUi	libSimServ.so	vtable:__vt_15cSC3PoliceLayer.21cISC3MapSpriteFactory
+0100f0	virtual function thunk (delta:-44) for cSC3PoliceLayer::CreateMapSprite(unsigned int, unsigned int, void **)	__thunk_44_CreateMapSprite__15cSC3PoliceLayerUiUiPPv	libSimServ.so	vtable:__vt_15cSC3PoliceLayer.21cISC3MapSpriteFactory
+0103fb	cSC3CityCellMapSized<int>::AddRef(void)	AddRef__t20cSC3CityCellMapSized1Zi	libSimServ.so	vtable-thunk:__vt_t20cSC3CityCellMapSized1Zi
+010426	RZGetCOMDllDirector_SimServ(void)	RZGetCOMDllDirector_SimServ__Fv	libSimServ.so	tokens:49.3
+0104dd	cSVCOMDirector::GetDirectorID(void) const	GetDirectorID__C14cSVCOMDirector	libSimServ.so	tokens:7.7
+01064e	cSVCOMDirector::CreatecSC3BuildingJail(void)	CreatecSC3BuildingJail__14cSVCOMDirector	libSimServ.so	caller
+010689	cSVCOMDirector::~cSVCOMDirector(void)	_._14cSVCOMDirector	libSimServ.so	vtable:__vt_14cSVCOMDirector
+0106c1	virtual function thunk (delta:-4) for cRZCOMDllDirector::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__17cRZCOMDllDirectorUiPPv	libSimServ.so	vtable:__vt_17cRZCOMDllDirector.18cIGZFrameWorkHooks
+0106c9	virtual function thunk (delta:-4) for cRZCOMDllDirector::AddRef(void)	__thunk_4_AddRef__17cRZCOMDllDirector	libSimServ.so	vtable:__vt_17cRZCOMDllDirector.18cIGZFrameWorkHooks
+0106d1	virtual function thunk (delta:-4) for cRZCOMDllDirector::Release(void)	__thunk_4_Release__17cRZCOMDllDirector	libSimServ.so	vtable:__vt_17cRZCOMDllDirector.18cIGZFrameWorkHooks
+01325b	cSC3FireLayer::EndStrike(void)	EndStrike__13cSC3FireLayer	libSimServ.so	callee
+013361	cRZCOMDllDirector::OnStart(cIGZCOM *)	OnStart__17cRZCOMDllDirectorP7cIGZCOM	libSimServ.so	tokens:15.4
+0135a7	cSC3DailyPoliceManipulator::Release(void)	Release__26cSC3DailyPoliceManipulator	libSimServ.so	vtable-thunk:__vt_26cSC3DailyPoliceManipulator
+0135cb	cSC3DailyPoliceManipulator::AddRef(void)	AddRef__26cSC3DailyPoliceManipulator	libSimServ.so	vtable-thunk:__vt_26cSC3DailyPoliceManipulator
+0136fa	cRZCOMDllDirector::QueryInterface(unsigned int, void **)	QueryInterface__17cRZCOMDllDirectorUiPPv	libSimServ.so	tokens:15.4
+01373b	cRZCOMDllDirector::FrameWork(void)	FrameWork__17cRZCOMDllDirector	libSimServ.so	vtable:__vt_14cSVCOMDirector
+013744	cRZCOMDllDirector::RemoveRef(void)	RemoveRef__17cRZCOMDllDirector	libSimServ.so	vtable:__vt_14cSVCOMDirector
+013753	cRZCOMDllDirector::RefCount(void)	RefCount__17cRZCOMDllDirector	libSimServ.so	vtable:__vt_14cSVCOMDirector
+013757	cRZCOMDllDirector::InitializeCOM(cIGZCOM *, cIGZString &)	InitializeCOM__17cRZCOMDllDirectorP7cIGZCOMR10cIGZString	libSimServ.so	vtable:__vt_14cSVCOMDirector
+013825	cRZCOMDllDirector::GetClassObject(unsigned int, unsigned int, void **)	GetClassObject__17cRZCOMDllDirectorUiUiPPv	libSimServ.so	vtable:__vt_14cSVCOMDirector
+0138a6	cRZCOMDllDirector::EnumClassObjects(void (*)(unsigned int, unsigned int, void *), void *)	EnumClassObjects__17cRZCOMDllDirectorPFUiUiPv_vPv	libSimServ.so	vtable:__vt_14cSVCOMDirector
+0138fa	cRZCOMDllDirector::ModuleName(cIGZString &)	ModuleName__17cRZCOMDllDirectorR10cIGZString	libSimServ.so	vtable:__vt_14cSVCOMDirector
+01390e	cRZCOMDllDirector::AddDirector(cRZCOMDllDirector *)	AddDirector__17cRZCOMDllDirectorP17cRZCOMDllDirector	libSimServ.so	vtable:__vt_14cSVCOMDirector
+013958	cRZCOMDllDirector::CanUnloadNow(void)	CanUnloadNow__17cRZCOMDllDirector	libSimServ.so	vtable:__vt_14cSVCOMDirector
+0139dc	cRZCOMDllDirector::GZCOM(void)	GZCOM__17cRZCOMDllDirector	libSimServ.so	vtable:__vt_14cSVCOMDirector
+015d62	cSC3BuildingJail::AddRef(void)	AddRef__16cSC3BuildingJail	libSimServ.so	vtable-thunk:__vt_16cSC3BuildingJail.14cISC3CityAgent
+015d6a	cSC3BuildingJail::Release(void)	Release__16cSC3BuildingJail	libSimServ.so	vtable-thunk:__vt_16cSC3BuildingJail.14cISC3CityAgent
+015d81	cSC3BuildingJail::Init(cISC3City *, cISC3OccPersistInfo *)	Init__16cSC3BuildingJailP9cISC3CityP19cISC3OccPersistInfo	libSimServ.so	vtable-thunk:__vt_16cSC3BuildingJail.12cSC3Occupant
+0168b4	cSC3BuildingJail::DoDebugQueryViewInfo(cGZMessage &, cISC3WinQueryListView *)	DoDebugQueryViewInfo__16cSC3BuildingJailR10cGZMessageP21cISC3WinQueryListView	libSimServ.so	vtable-thunk:__vt_16cSC3BuildingJail.12cSC3Occupant
+0168c4	cSC3BuildingJail::SerialRead(cISC3City *, cIGZDBSerialRecord &)	SerialRead__16cSC3BuildingJailP9cISC3CityR18cIGZDBSerialRecord	libSimServ.so	callee
+01690b	cSC3BuildingJail::SerialWrite(cISC3City *, cIGZDBSerialRecord &)	SerialWrite__16cSC3BuildingJailP9cISC3CityR18cIGZDBSerialRecord	libSimServ.so	callee
+018c1f	virtual function thunk (delta:-4) for cSC3DailyPoliceManipulator::AddRef(void)	__thunk_4_AddRef__26cSC3DailyPoliceManipulator	libSimServ.so	caller
+018c27	virtual function thunk (delta:-4) for cSC3DailyPoliceManipulator::Release(void)	__thunk_4_Release__26cSC3DailyPoliceManipulator	libSimServ.so	caller

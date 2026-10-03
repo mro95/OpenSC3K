@@ -1,0 +1,3164 @@
+binary	class	methods
+libAudio.so	__array_type_info	1
+libAudio.so	__attr_type_info	1
+libAudio.so	bad_alloc	2
+libAudio.so	bad_cast	2
+libAudio.so	bad_exception	2
+libAudio.so	bad_typeid	2
+libAudio.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	7
+libAudio.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > & basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	1
+libAudio.so	__builtin_type_info	1
+libAudio.so	c1ShotSfx	17
+libAudio.so	c3D1ShotSfx	16
+libAudio.so	cActorSfx	23
+libAudio.so	cAmbienceEntry	1
+libAudio.so	cAudioCOMDirector	13
+libAudio.so	cAudioFactory	13
+libAudio.so	cAudioIniFile	16
+libAudio.so	cBoxX	36
+libAudio.so	cBoxxBuildingCache	6
+libAudio.so	cC2HCache	18
+libAudio.so	cC2HCacheLoop	3
+libAudio.so	cCachedFile	2
+libAudio.so	cDisasterSfx	22
+libAudio.so	cFadingSfx	19
+libAudio.so	cFreshCell	3
+libAudio.so	cFreshCellPlayer	9
+libAudio.so	cFreshMusicSource	17
+libAudio.so	cFreshPlayer	55
+libAudio.so	cFreshPlayerViewer	15
+libAudio.so	cFreshScore	5
+libAudio.so	cFreshTimer	11
+libAudio.so	cIMusicSource	1
+libAudio.so	cISfx	1
+libAudio.so	__class_type_info	3
+libAudio.so	cListener	8
+libAudio.so	cMusicPlayer	34
+libAudio.so	cMusicSource	20
+libAudio.so	cRZCOMDllDirector	27
+libAudio.so	cRZLock	1
+libAudio.so	cRZPath	1
+libAudio.so	cSampleFileMusicSource	14
+libAudio.so	cSC3AudioInfo	49
+libAudio.so	cSC3CmdSound	3
+libAudio.so	cSC3CmdSoundFactory	2
+libAudio.so	cSfx	16
+libAudio.so	cSndChanMgr	6
+libAudio.so	cSparseSfx	18
+libAudio.so	__default_alloc_template<true, 0>	2
+libAudio.so	domain_error	2
+libAudio.so	exception	3
+libAudio.so	filebuf	27
+libAudio.so	FreshnessRadioStation	17
+libAudio.so	__func_type_info	1
+libAudio.so	invalid_argument	2
+libAudio.so	_IO_istream_withassign	3
+libAudio.so	_IO_ostream_withassign	3
+libAudio.so	ios	39
+libAudio.so	iostream	3
+libAudio.so	istream	58
+libAudio.so	length_error	2
+libAudio.so	_List_base<bool, allocator<bool> >	1
+libAudio.so	_List_base<cCachedFile *, allocator<cCachedFile *> >	1
+libAudio.so	_List_base<cFreshPlayer *, allocator<cFreshPlayer *> >	1
+libAudio.so	_List_base<cIMusicSource *, allocator<cIMusicSource *> >	1
+libAudio.so	_List_base<cRZPoint, allocator<cRZPoint> >	1
+libAudio.so	_List_base<int, allocator<int> >	1
+libAudio.so	list<cCachedFile *, allocator<cCachedFile *> >	1
+libAudio.so	list<cFreshPlayer *, allocator<cFreshPlayer *> >	1
+libAudio.so	list<cIMusicSource *, allocator<cIMusicSource *> >	1
+libAudio.so	logic_error	4
+libAudio.so	__malloc_alloc_template<0>	1
+libAudio.so	ostream	39
+libAudio.so	out_of_range	2
+libAudio.so	overflow_error	2
+libAudio.so	__pointer_type_info	1
+libAudio.so	__ptmd_type_info	1
+libAudio.so	__ptmf_type_info	1
+libAudio.so	range_error	2
+libAudio.so	runtime_error	4
+libAudio.so	__si_type_info	3
+libAudio.so	streambuf	89
+libAudio.so	streammarker	6
+libAudio.so	type_info	6
+libAudio.so	underflow_error	2
+libAudio.so	__user_type_info	3
+libAudio.so	vector<cRZCOMDllDirector *, allocator<cRZCOMDllDirector *> >	1
+libGimex.so	__array_type_info	1
+libGimex.so	__attr_type_info	1
+libGimex.so	bad_alloc	2
+libGimex.so	bad_cast	2
+libGimex.so	bad_exception	2
+libGimex.so	bad_typeid	2
+libGimex.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	7
+libGimex.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > & basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	1
+libGimex.so	__builtin_type_info	1
+libGimex.so	cGXCOMDirector	4
+libGimex.so	cGZGimexFactory	16
+libGimex.so	cGZGimexLib	51
+libGimex.so	__class_type_info	3
+libGimex.so	cRZCOMDllDirector	27
+libGimex.so	__default_alloc_template<true, 0>	2
+libGimex.so	domain_error	2
+libGimex.so	exception	3
+libGimex.so	filebuf	27
+libGimex.so	__func_type_info	1
+libGimex.so	invalid_argument	2
+libGimex.so	_IO_istream_withassign	3
+libGimex.so	_IO_ostream_withassign	3
+libGimex.so	ios	39
+libGimex.so	iostream	3
+libGimex.so	istream	58
+libGimex.so	length_error	2
+libGimex.so	logic_error	4
+libGimex.so	__malloc_alloc_template<0>	1
+libGimex.so	ostream	39
+libGimex.so	out_of_range	2
+libGimex.so	overflow_error	2
+libGimex.so	__pointer_type_info	1
+libGimex.so	__ptmd_type_info	1
+libGimex.so	__ptmf_type_info	1
+libGimex.so	range_error	2
+libGimex.so	runtime_error	4
+libGimex.so	__si_type_info	3
+libGimex.so	streambuf	89
+libGimex.so	streammarker	6
+libGimex.so	type_info	6
+libGimex.so	underflow_error	2
+libGimex.so	__user_type_info	3
+libGimex.so	vector<cRZCOMDllDirector *, allocator<cRZCOMDllDirector *> >	1
+libGZGraphicD.so	__array_type_info	1
+libGZGraphicD.so	__attr_type_info	1
+libGZGraphicD.so	bad_alloc	2
+libGZGraphicD.so	bad_cast	2
+libGZGraphicD.so	bad_exception	2
+libGZGraphicD.so	bad_typeid	2
+libGZGraphicD.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	6
+libGZGraphicD.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > & basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	1
+libGZGraphicD.so	__builtin_type_info	1
+libGZGraphicD.so	cGZGraphicDllCOMDirector	3
+libGZGraphicD.so	__class_type_info	3
+libGZGraphicD.so	cRZCOMDllDirector	27
+libGZGraphicD.so	__default_alloc_template<true, 0>	2
+libGZGraphicD.so	domain_error	2
+libGZGraphicD.so	exception	3
+libGZGraphicD.so	filebuf	27
+libGZGraphicD.so	__func_type_info	1
+libGZGraphicD.so	invalid_argument	2
+libGZGraphicD.so	_IO_istream_withassign	3
+libGZGraphicD.so	_IO_ostream_withassign	3
+libGZGraphicD.so	ios	39
+libGZGraphicD.so	iostream	3
+libGZGraphicD.so	istream	58
+libGZGraphicD.so	length_error	2
+libGZGraphicD.so	logic_error	4
+libGZGraphicD.so	__malloc_alloc_template<0>	1
+libGZGraphicD.so	ostream	39
+libGZGraphicD.so	out_of_range	2
+libGZGraphicD.so	overflow_error	2
+libGZGraphicD.so	__pointer_type_info	1
+libGZGraphicD.so	__ptmd_type_info	1
+libGZGraphicD.so	__ptmf_type_info	1
+libGZGraphicD.so	range_error	2
+libGZGraphicD.so	runtime_error	4
+libGZGraphicD.so	__si_type_info	3
+libGZGraphicD.so	streambuf	89
+libGZGraphicD.so	streammarker	6
+libGZGraphicD.so	type_info	6
+libGZGraphicD.so	underflow_error	2
+libGZGraphicD.so	__user_type_info	3
+libGZGraphicD.so	vector<cRZCOMDllDirector *, allocator<cRZCOMDllDirector *> >	1
+libGZResourceD.so	__array_type_info	1
+libGZResourceD.so	__attr_type_info	1
+libGZResourceD.so	bad_alloc	2
+libGZResourceD.so	bad_cast	2
+libGZResourceD.so	bad_exception	2
+libGZResourceD.so	bad_typeid	2
+libGZResourceD.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	6
+libGZResourceD.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > & basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	1
+libGZResourceD.so	__builtin_type_info	1
+libGZResourceD.so	cGZResourceDCOMDirector	3
+libGZResourceD.so	__class_type_info	3
+libGZResourceD.so	cRZCOMDllDirector	27
+libGZResourceD.so	__default_alloc_template<true, 0>	2
+libGZResourceD.so	domain_error	2
+libGZResourceD.so	exception	3
+libGZResourceD.so	filebuf	27
+libGZResourceD.so	__func_type_info	1
+libGZResourceD.so	invalid_argument	2
+libGZResourceD.so	_IO_istream_withassign	3
+libGZResourceD.so	_IO_ostream_withassign	3
+libGZResourceD.so	ios	39
+libGZResourceD.so	iostream	3
+libGZResourceD.so	istream	58
+libGZResourceD.so	length_error	2
+libGZResourceD.so	logic_error	4
+libGZResourceD.so	__malloc_alloc_template<0>	1
+libGZResourceD.so	ostream	39
+libGZResourceD.so	out_of_range	2
+libGZResourceD.so	overflow_error	2
+libGZResourceD.so	__pointer_type_info	1
+libGZResourceD.so	__ptmd_type_info	1
+libGZResourceD.so	__ptmf_type_info	1
+libGZResourceD.so	range_error	2
+libGZResourceD.so	runtime_error	4
+libGZResourceD.so	__si_type_info	3
+libGZResourceD.so	streambuf	89
+libGZResourceD.so	streammarker	6
+libGZResourceD.so	type_info	6
+libGZResourceD.so	underflow_error	2
+libGZResourceD.so	__user_type_info	3
+libGZResourceD.so	vector<cRZCOMDllDirector *, allocator<cRZCOMDllDirector *> >	1
+libGZServiceD.so	__array_type_info	1
+libGZServiceD.so	__attr_type_info	1
+libGZServiceD.so	bad_alloc	2
+libGZServiceD.so	bad_cast	2
+libGZServiceD.so	bad_exception	2
+libGZServiceD.so	bad_typeid	2
+libGZServiceD.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	6
+libGZServiceD.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > & basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	1
+libGZServiceD.so	__builtin_type_info	1
+libGZServiceD.so	cGZServiceCOMDirector	7
+libGZServiceD.so	__class_type_info	3
+libGZServiceD.so	cRZCOMDllDirector	27
+libGZServiceD.so	__default_alloc_template<true, 0>	2
+libGZServiceD.so	domain_error	2
+libGZServiceD.so	exception	3
+libGZServiceD.so	filebuf	27
+libGZServiceD.so	__func_type_info	1
+libGZServiceD.so	invalid_argument	2
+libGZServiceD.so	_IO_istream_withassign	3
+libGZServiceD.so	_IO_ostream_withassign	3
+libGZServiceD.so	ios	39
+libGZServiceD.so	iostream	3
+libGZServiceD.so	istream	58
+libGZServiceD.so	length_error	2
+libGZServiceD.so	logic_error	4
+libGZServiceD.so	__malloc_alloc_template<0>	1
+libGZServiceD.so	ostream	39
+libGZServiceD.so	out_of_range	2
+libGZServiceD.so	overflow_error	2
+libGZServiceD.so	__pointer_type_info	1
+libGZServiceD.so	__ptmd_type_info	1
+libGZServiceD.so	__ptmf_type_info	1
+libGZServiceD.so	range_error	2
+libGZServiceD.so	runtime_error	4
+libGZServiceD.so	__si_type_info	3
+libGZServiceD.so	streambuf	89
+libGZServiceD.so	streammarker	6
+libGZServiceD.so	type_info	6
+libGZServiceD.so	underflow_error	2
+libGZServiceD.so	__user_type_info	3
+libGZServiceD.so	vector<cRZCOMDllDirector *, allocator<cRZCOMDllDirector *> >	1
+libGZSoundD.so	__array_type_info	1
+libGZSoundD.so	__attr_type_info	1
+libGZSoundD.so	bad_alloc	2
+libGZSoundD.so	bad_cast	2
+libGZSoundD.so	bad_exception	2
+libGZSoundD.so	bad_typeid	2
+libGZSoundD.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	6
+libGZSoundD.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > & basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	1
+libGZSoundD.so	__builtin_type_info	1
+libGZSoundD.so	cGZSoundDllCOMDirector	3
+libGZSoundD.so	__class_type_info	3
+libGZSoundD.so	cRZCOMDllDirector	27
+libGZSoundD.so	__default_alloc_template<true, 0>	2
+libGZSoundD.so	domain_error	2
+libGZSoundD.so	exception	3
+libGZSoundD.so	filebuf	27
+libGZSoundD.so	__func_type_info	1
+libGZSoundD.so	invalid_argument	2
+libGZSoundD.so	_IO_istream_withassign	3
+libGZSoundD.so	_IO_ostream_withassign	3
+libGZSoundD.so	ios	39
+libGZSoundD.so	iostream	3
+libGZSoundD.so	istream	58
+libGZSoundD.so	length_error	2
+libGZSoundD.so	logic_error	4
+libGZSoundD.so	__malloc_alloc_template<0>	1
+libGZSoundD.so	ostream	39
+libGZSoundD.so	out_of_range	2
+libGZSoundD.so	overflow_error	2
+libGZSoundD.so	__pointer_type_info	1
+libGZSoundD.so	__ptmd_type_info	1
+libGZSoundD.so	__ptmf_type_info	1
+libGZSoundD.so	range_error	2
+libGZSoundD.so	runtime_error	4
+libGZSoundD.so	__si_type_info	3
+libGZSoundD.so	streambuf	89
+libGZSoundD.so	streammarker	6
+libGZSoundD.so	type_info	6
+libGZSoundD.so	underflow_error	2
+libGZSoundD.so	__user_type_info	3
+libGZSoundD.so	vector<cRZCOMDllDirector *, allocator<cRZCOMDllDirector *> >	1
+libGZToolsD.so	__array_type_info	1
+libGZToolsD.so	__attr_type_info	1
+libGZToolsD.so	bad_alloc	2
+libGZToolsD.so	bad_cast	2
+libGZToolsD.so	bad_exception	2
+libGZToolsD.so	bad_typeid	2
+libGZToolsD.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	6
+libGZToolsD.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > & basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	1
+libGZToolsD.so	__builtin_type_info	1
+libGZToolsD.so	cGZBufferColorType	1
+libGZToolsD.so	cGZCmdActivateTestWin	3
+libGZToolsD.so	cGZRealtimeDebugDisplay	18
+libGZToolsD.so	cGZRTDEntry	6
+libGZToolsD.so	cGZRTDValueEntry	7
+libGZToolsD.so	cGZToolsCOMDirector	8
+libGZToolsD.so	cGZToolsCommandFactory	3
+libGZToolsD.so	cGZWinDebugDisplay	12
+libGZToolsD.so	cGZWinRTDEntry	5
+libGZToolsD.so	cGZWinRTDGraphEntry	5
+libGZToolsD.so	__class_type_info	3
+libGZToolsD.so	cRZCOMDllDirector	27
+libGZToolsD.so	__default_alloc_template<true, 0>	2
+libGZToolsD.so	domain_error	2
+libGZToolsD.so	exception	3
+libGZToolsD.so	filebuf	27
+libGZToolsD.so	__func_type_info	1
+libGZToolsD.so	invalid_argument	2
+libGZToolsD.so	_IO_istream_withassign	3
+libGZToolsD.so	_IO_ostream_withassign	3
+libGZToolsD.so	ios	39
+libGZToolsD.so	iostream	3
+libGZToolsD.so	istream	58
+libGZToolsD.so	length_error	2
+libGZToolsD.so	_List_base<cGZRTDEntry *, allocator<cGZRTDEntry *> >	1
+libGZToolsD.so	_List_base<cGZWinRTDEntry *, allocator<cGZWinRTDEntry *> >	1
+libGZToolsD.so	list<cGZRTDEntry *, allocator<cGZRTDEntry *> >	1
+libGZToolsD.so	list<cGZWinRTDEntry *, allocator<cGZWinRTDEntry *> >	1
+libGZToolsD.so	logic_error	4
+libGZToolsD.so	__malloc_alloc_template<0>	1
+libGZToolsD.so	ostream	39
+libGZToolsD.so	out_of_range	2
+libGZToolsD.so	overflow_error	2
+libGZToolsD.so	__pointer_type_info	1
+libGZToolsD.so	__ptmd_type_info	1
+libGZToolsD.so	__ptmf_type_info	1
+libGZToolsD.so	range_error	2
+libGZToolsD.so	runtime_error	4
+libGZToolsD.so	__si_type_info	3
+libGZToolsD.so	streambuf	89
+libGZToolsD.so	streammarker	6
+libGZToolsD.so	type_info	6
+libGZToolsD.so	underflow_error	2
+libGZToolsD.so	__user_type_info	3
+libGZToolsD.so	vector<cRZCOMDllDirector *, allocator<cRZCOMDllDirector *> >	1
+libGZToolsD.so	vector<cRZString *, allocator<cRZString *> >	1
+libGZWinD.so	__array_type_info	1
+libGZWinD.so	__attr_type_info	1
+libGZWinD.so	bad_alloc	2
+libGZWinD.so	bad_cast	2
+libGZWinD.so	bad_exception	2
+libGZWinD.so	bad_typeid	2
+libGZWinD.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	6
+libGZWinD.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > & basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	1
+libGZWinD.so	__builtin_type_info	1
+libGZWinD.so	cGZWinDllCOMDirector	5
+libGZWinD.so	__class_type_info	3
+libGZWinD.so	cRZCOMDllDirector	27
+libGZWinD.so	__default_alloc_template<true, 0>	2
+libGZWinD.so	domain_error	2
+libGZWinD.so	exception	3
+libGZWinD.so	filebuf	27
+libGZWinD.so	__func_type_info	1
+libGZWinD.so	invalid_argument	2
+libGZWinD.so	_IO_istream_withassign	3
+libGZWinD.so	_IO_ostream_withassign	3
+libGZWinD.so	ios	39
+libGZWinD.so	iostream	3
+libGZWinD.so	istream	58
+libGZWinD.so	length_error	2
+libGZWinD.so	logic_error	4
+libGZWinD.so	__malloc_alloc_template<0>	1
+libGZWinD.so	ostream	39
+libGZWinD.so	out_of_range	2
+libGZWinD.so	overflow_error	2
+libGZWinD.so	__pointer_type_info	1
+libGZWinD.so	__ptmd_type_info	1
+libGZWinD.so	__ptmf_type_info	1
+libGZWinD.so	range_error	2
+libGZWinD.so	runtime_error	4
+libGZWinD.so	__si_type_info	3
+libGZWinD.so	streambuf	89
+libGZWinD.so	streammarker	6
+libGZWinD.so	type_info	6
+libGZWinD.so	underflow_error	2
+libGZWinD.so	__user_type_info	3
+libGZWinD.so	vector<cRZCOMDllDirector *, allocator<cRZCOMDllDirector *> >	1
+libGZWWWD.so	__array_type_info	1
+libGZWWWD.so	__attr_type_info	1
+libGZWWWD.so	bad_alloc	2
+libGZWWWD.so	bad_cast	2
+libGZWWWD.so	bad_exception	2
+libGZWWWD.so	bad_typeid	2
+libGZWWWD.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	6
+libGZWWWD.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > & basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	1
+libGZWWWD.so	__builtin_type_info	1
+libGZWWWD.so	cGZWWWDllCOMDirector	4
+libGZWWWD.so	__class_type_info	3
+libGZWWWD.so	cRZCOMDllDirector	27
+libGZWWWD.so	__default_alloc_template<true, 0>	2
+libGZWWWD.so	domain_error	2
+libGZWWWD.so	exception	3
+libGZWWWD.so	filebuf	27
+libGZWWWD.so	__func_type_info	1
+libGZWWWD.so	invalid_argument	2
+libGZWWWD.so	_IO_istream_withassign	3
+libGZWWWD.so	_IO_ostream_withassign	3
+libGZWWWD.so	ios	39
+libGZWWWD.so	iostream	3
+libGZWWWD.so	istream	58
+libGZWWWD.so	length_error	2
+libGZWWWD.so	logic_error	4
+libGZWWWD.so	__malloc_alloc_template<0>	1
+libGZWWWD.so	ostream	39
+libGZWWWD.so	out_of_range	2
+libGZWWWD.so	overflow_error	2
+libGZWWWD.so	__pointer_type_info	1
+libGZWWWD.so	__ptmd_type_info	1
+libGZWWWD.so	__ptmf_type_info	1
+libGZWWWD.so	range_error	2
+libGZWWWD.so	runtime_error	4
+libGZWWWD.so	__si_type_info	3
+libGZWWWD.so	streambuf	89
+libGZWWWD.so	streammarker	6
+libGZWWWD.so	type_info	6
+libGZWWWD.so	underflow_error	2
+libGZWWWD.so	__user_type_info	3
+libGZWWWD.so	vector<cRZCOMDllDirector *, allocator<cRZCOMDllDirector *> >	1
+libScenario.so	__array_type_info	1
+libScenario.so	__attr_type_info	1
+libScenario.so	bad_alloc	2
+libScenario.so	bad_cast	2
+libScenario.so	bad_exception	2
+libScenario.so	bad_typeid	2
+libScenario.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	7
+libScenario.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > & basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	1
+libScenario.so	__builtin_type_info	1
+libScenario.so	cGZBufferColorType	1
+libScenario.so	__class_type_info	3
+libScenario.so	cRZCOMDllDirector	27
+libScenario.so	cRZLock	1
+libScenario.so	cRZPath	1
+libScenario.so	cRZTriple<float, float, float>	2
+libScenario.so	cSC3StringTokenData	1
+libScenario.so	cSCNComDirector	4
+libScenario.so	cSCNGoal	6
+libScenario.so	cSCNOccFilterBase	5
+libScenario.so	cSCNOccFilterForType	3
+libScenario.so	cSCNPopUpMsg	14
+libScenario.so	cSCNProgressDlg	21
+libScenario.so	cSCNResultsDlg	14
+libScenario.so	cSCNScenarioLayer	156
+libScenario.so	cSCNScenarioLayerManipulator	10
+libScenario.so	cSCNScript	11
+libScenario.so	cSCNScriptFactory	4
+libScenario.so	__default_alloc_template<true, 0>	2
+libScenario.so	_Deque_base<cGZMessage, __default_alloc_template<true, 0>, 0>	4
+libScenario.so	deque<cGZMessage, __default_alloc_template<true, 0>, 0>	3
+libScenario.so	domain_error	2
+libScenario.so	exception	3
+libScenario.so	filebuf	27
+libScenario.so	__func_type_info	1
+libScenario.so	invalid_argument	2
+libScenario.so	_IO_istream_withassign	3
+libScenario.so	_IO_ostream_withassign	3
+libScenario.so	ios	39
+libScenario.so	iostream	3
+libScenario.so	istream	58
+libScenario.so	length_error	2
+libScenario.so	logic_error	4
+libScenario.so	__malloc_alloc_template<0>	1
+libScenario.so	map<cRZString, unsigned int, less<cRZString>, __default_alloc_template<true, 0> >	1
+libScenario.so	map<unsigned int, cSCNGoal, less<unsigned int>, __default_alloc_template<true, 0> >	1
+libScenario.so	map<unsigned int, cSCNScenarioLayer::tPresenterInfo, less<unsigned int>, __default_alloc_template<true, 0> >	1
+libScenario.so	map<unsigned int, cSCNScenarioLayer::tSCNRankStruct, less<unsigned int>, __default_alloc_template<true, 0> >	1
+libScenario.so	map<unsigned int, tTickerInfo, less<unsigned int>, __default_alloc_template<true, 0> >	1
+libScenario.so	ostream	39
+libScenario.so	out_of_range	2
+libScenario.so	overflow_error	2
+libScenario.so	pair<cRZString const, unsigned int>	2
+libScenario.so	__pointer_type_info	1
+libScenario.so	__ptmd_type_info	1
+libScenario.so	__ptmf_type_info	1
+libScenario.so	queue<cGZMessage, deque<cGZMessage, __default_alloc_template<true, 0>, 0> >	1
+libScenario.so	range_error	2
+libScenario.so	_Rb_tree<cRZString, pair<cRZString const, unsigned int>, _Select1st<pair<cRZString const, unsigned int> >, less<cRZString>, __default_alloc_template<true, 0> >	6
+libScenario.so	_Rb_tree<unsigned int, pair<unsigned int const, cSCNGoal>, _Select1st<pair<unsigned int const, cSCNGoal> >, less<unsigned int>, __default_alloc_template<true, 0> >	6
+libScenario.so	_Rb_tree<unsigned int, pair<unsigned int const, cSCNScenarioLayer::tPresenterInfo>, _Select1st<pair<unsigned int const, cSCNScenarioLayer::tPresenterInfo> >, less<unsigned int>, __default_alloc_template<true, 0> >	4
+libScenario.so	_Rb_tree<unsigned int, pair<unsigned int const, cSCNScenarioLayer::tSCNRankStruct>, _Select1st<pair<unsigned int const, cSCNScenarioLayer::tSCNRankStruct> >, less<unsigned int>, __default_alloc_template<true, 0> >	6
+libScenario.so	_Rb_tree<unsigned int, pair<unsigned int const, tTickerInfo>, _Select1st<pair<unsigned int const, tTickerInfo> >, less<unsigned int>, __default_alloc_template<true, 0> >	6
+libScenario.so	runtime_error	4
+libScenario.so	__si_type_info	3
+libScenario.so	streambuf	89
+libScenario.so	streammarker	6
+libScenario.so	type_info	6
+libScenario.so	underflow_error	2
+libScenario.so	__user_type_info	3
+libScenario.so	vector<cRZCOMDllDirector *, __default_alloc_template<true, 0> >	1
+libScenario.so	vector<cRZString, __default_alloc_template<true, 0> >	1
+libScenario.so	vector<cSCNScenarioLayer::tSCNGoalStruct, __default_alloc_template<true, 0> >	1
+libScenario.so	vector<cSCNScenarioLayer::tSCNRecordKeyInfo, __default_alloc_template<true, 0> >	1
+libScenario.so	vector<cSCNScenarioLayer::tScriptStackItem, __default_alloc_template<true, 0> >	1
+libScenario.so	vector<cSCNScript *, __default_alloc_template<true, 0> >	1
+libScenario.so	vector<unsigned int, __default_alloc_template<true, 0> >	1
+libSimAdv.so	AdviceStringSet	5
+libSimAdv.so	__array_type_info	1
+libSimAdv.so	__attr_type_info	1
+libSimAdv.so	bad_alloc	2
+libSimAdv.so	bad_cast	2
+libSimAdv.so	bad_exception	2
+libSimAdv.so	bad_typeid	2
+libSimAdv.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	6
+libSimAdv.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > & basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	1
+libSimAdv.so	__builtin_type_info	1
+libSimAdv.so	__class_type_info	3
+libSimAdv.so	cRZCOMDllDirector	27
+libSimAdv.so	cRZLock	1
+libSimAdv.so	cSACOMDirector	10
+libSimAdv.so	cSC3AdviceQueue	31
+libSimAdv.so	cSC3AdvisorForBudget	41
+libSimAdv.so	cSC3AdvisorForCityPlanning	49
+libSimAdv.so	cSC3AdvisorForDemographics	27
+libSimAdv.so	cSC3AdvisorForEnvironment	33
+libSimAdv.so	cSC3AdvisorForPublicSafety	43
+libSimAdv.so	cSC3AdvisorForTransportation	30
+libSimAdv.so	cSC3AdvisorForUtilities	46
+libSimAdv.so	cSC3AdvisorHeaderRecord	11
+libSimAdv.so	cSC3AdvisorMessageRecord	20
+libSimAdv.so	cSC3BaseAdvisor	81
+libSimAdv.so	cSC3BusinessDealRecord	15
+libSimAdv.so	cSC3EducationDeptBudget	14
+libSimAdv.so	cSC3FireDeptBudget	14
+libSimAdv.so	cSC3GarbageBuildingRecord	19
+libSimAdv.so	cSC3HealthDeptBudget	14
+libSimAdv.so	cSC3MonthlyBudgetAdvisorManip	11
+libSimAdv.so	cSC3MonthlyCityPlanningAdvisorManip	11
+libSimAdv.so	cSC3MonthlyDemographicsAdvisorManip	11
+libSimAdv.so	cSC3MonthlyEnvironmentAdvisorManip	11
+libSimAdv.so	cSC3MonthlyPublicSafetyAdvisorManip	11
+libSimAdv.so	cSC3MonthlyTransportationAdvisorManip	11
+libSimAdv.so	cSC3MonthlyUtilityAdvisorManip	11
+libSimAdv.so	cSC3PetitionerManager	67
+libSimAdv.so	cSC3PetitionerQueue	31
+libSimAdv.so	cSC3PoliceDeptBudget	14
+libSimAdv.so	cSC3RailDeptBudget	14
+libSimAdv.so	cSC3RoadDeptBudget	14
+libSimAdv.so	cSC3SpecialBuildingRecord	22
+libSimAdv.so	cSC3StringTokenData	2
+libSimAdv.so	cSC3UtilityBuildingRecord	19
+libSimAdv.so	cSC3UtilityDeptBudget	10
+libSimAdv.so	cSC3WeeklyBudgetAdvisorManip	11
+libSimAdv.so	cSC3WeeklyCityPlanningAdvisorManip	11
+libSimAdv.so	cSC3WeeklyDemographicsAdvisorManip	11
+libSimAdv.so	cSC3WeeklyEnvironmentAdvisorManip	11
+libSimAdv.so	cSC3WeeklyPublicSafetyAdvisorManip	11
+libSimAdv.so	cSC3WeeklyTransportationAdvisorManip	11
+libSimAdv.so	cSC3WeeklyUtilityAdvisorManip	11
+libSimAdv.so	__default_alloc_template<true, 0>	2
+libSimAdv.so	domain_error	2
+libSimAdv.so	exception	3
+libSimAdv.so	filebuf	27
+libSimAdv.so	__func_type_info	1
+libSimAdv.so	invalid_argument	2
+libSimAdv.so	_IO_istream_withassign	3
+libSimAdv.so	_IO_ostream_withassign	3
+libSimAdv.so	ios	39
+libSimAdv.so	iostream	3
+libSimAdv.so	istream	58
+libSimAdv.so	length_error	2
+libSimAdv.so	_List_base<AdviceStringSet *, allocator<AdviceStringSet *> >	1
+libSimAdv.so	_List_base<cISC3BusinessDealRecord *, allocator<cISC3BusinessDealRecord *> >	1
+libSimAdv.so	_List_base<cISC3GarbageBuildingRecord *, allocator<cISC3GarbageBuildingRecord *> >	1
+libSimAdv.so	_List_base<cISC3UtilityBuildingRecord *, allocator<cISC3UtilityBuildingRecord *> >	1
+libSimAdv.so	_List_base<cSC3StringTokenData, allocator<cSC3StringTokenData> >	1
+libSimAdv.so	_List_base<PetitionerStringSet *, allocator<PetitionerStringSet *> >	1
+libSimAdv.so	_List_base<unsigned int, allocator<unsigned int> >	1
+libSimAdv.so	list<cISC3GarbageBuildingRecord *, allocator<cISC3GarbageBuildingRecord *> >	1
+libSimAdv.so	list<cISC3UtilityBuildingRecord *, allocator<cISC3UtilityBuildingRecord *> >	1
+libSimAdv.so	list<cSC3StringTokenData, allocator<cSC3StringTokenData> >	1
+libSimAdv.so	logic_error	4
+libSimAdv.so	__malloc_alloc_template<0>	1
+libSimAdv.so	map<cGZResourceKey, cISC3SpecialBuildingRecord *, less<cGZResourceKey>, allocator<cISC3SpecialBuildingRecord *> >	1
+libSimAdv.so	map<cISC3DisasterInstance *, cSC3AdvisorForPublicSafety::tDisasterRecord, less<cISC3DisasterInstance *>, allocator<cSC3AdvisorForPublicSafety::tDisasterRecord> >	1
+libSimAdv.so	map<unsigned int, cISC3SpecialBuildingRecord *, less<unsigned int>, allocator<cISC3SpecialBuildingRecord *> >	1
+libSimAdv.so	ostream	39
+libSimAdv.so	out_of_range	2
+libSimAdv.so	overflow_error	2
+libSimAdv.so	PetitionerStringSet	5
+libSimAdv.so	__pointer_type_info	1
+libSimAdv.so	__ptmd_type_info	1
+libSimAdv.so	__ptmf_type_info	1
+libSimAdv.so	range_error	2
+libSimAdv.so	_Rb_tree<cGZResourceKey, pair<cGZResourceKey const, cISC3SpecialBuildingRecord *>, _Select1st<pair<cGZResourceKey const, cISC3SpecialBuildingRecord *> >, less<cGZResourceKey>, allocator<cISC3SpecialBuildingRecord *> >	8
+libSimAdv.so	_Rb_tree<cISC3DisasterInstance *, pair<cISC3DisasterInstance *const, cSC3AdvisorForPublicSafety::tDisasterRecord>, _Select1st<pair<cISC3DisasterInstance *const, cSC3AdvisorForPublicSafety::tDisasterRecord> >, less<cISC3DisasterInstance *>, allocator<cSC3AdvisorForPublicSafety::tDisasterRecord> >	7
+libSimAdv.so	_Rb_tree<unsigned int, pair<unsigned int const, cISC3SpecialBuildingRecord *>, _Select1st<pair<unsigned int const, cISC3SpecialBuildingRecord *> >, less<unsigned int>, allocator<cISC3SpecialBuildingRecord *> >	6
+libSimAdv.so	runtime_error	4
+libSimAdv.so	__si_type_info	3
+libSimAdv.so	streambuf	89
+libSimAdv.so	streammarker	6
+libSimAdv.so	type_info	6
+libSimAdv.so	underflow_error	2
+libSimAdv.so	__user_type_info	3
+libSimAdv.so	vector<cISC3SpecialBuildingRecord *, allocator<cISC3SpecialBuildingRecord *> >	1
+libSimAdv.so	vector<cRZCOMDllDirector *, allocator<cRZCOMDllDirector *> >	1
+libSimAdv.so	vector<cRZString, allocator<cRZString> >	1
+libSimAdv.so	vector<unsigned int, allocator<unsigned int> >	1
+libSimCity.so	__array_type_info	1
+libSimCity.so	__attr_type_info	1
+libSimCity.so	_autoProgressBar	3
+libSimCity.so	bad_alloc	2
+libSimCity.so	bad_cast	2
+libSimCity.so	bad_exception	2
+libSimCity.so	bad_typeid	2
+libSimCity.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	6
+libSimCity.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > & basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	1
+libSimCity.so	__builtin_type_info	1
+libSimCity.so	cCSCitySimulator	34
+libSimCity.so	cCSCOMDirector	7
+libSimCity.so	cGZBufferColorType	1
+libSimCity.so	__class_type_info	3
+libSimCity.so	cRZCOMDllDirector	27
+libSimCity.so	cRZLock	1
+libSimCity.so	cSC3City	183
+libSimCity.so	__default_alloc_template<true, 0>	2
+libSimCity.so	domain_error	2
+libSimCity.so	exception	3
+libSimCity.so	filebuf	27
+libSimCity.so	__func_type_info	1
+libSimCity.so	invalid_argument	2
+libSimCity.so	_IO_istream_withassign	3
+libSimCity.so	_IO_ostream_withassign	3
+libSimCity.so	ios	39
+libSimCity.so	iostream	3
+libSimCity.so	istream	58
+libSimCity.so	length_error	2
+libSimCity.so	_List_base<cISC3CityAgent *, allocator<cISC3CityAgent *> >	1
+libSimCity.so	list<cISC3CityAgent *, allocator<cISC3CityAgent *> >	1
+libSimCity.so	logic_error	4
+libSimCity.so	__malloc_alloc_template<0>	1
+libSimCity.so	ostream	39
+libSimCity.so	out_of_range	2
+libSimCity.so	overflow_error	2
+libSimCity.so	__pointer_type_info	1
+libSimCity.so	__ptmd_type_info	1
+libSimCity.so	__ptmf_type_info	1
+libSimCity.so	range_error	2
+libSimCity.so	runtime_error	4
+libSimCity.so	RZ	1
+libSimCity.so	__si_type_info	3
+libSimCity.so	streambuf	89
+libSimCity.so	streammarker	6
+libSimCity.so	type_info	6
+libSimCity.so	underflow_error	2
+libSimCity.so	__user_type_info	3
+libSimCity.so	vector<cCSCitySimulator::tAddRemoveItem, allocator<cCSCitySimulator::tAddRemoveItem> >	1
+libSimCity.so	vector<cISC3CityLayer *, allocator<cISC3CityLayer *> >	1
+libSimCity.so	vector<cRZCOMDllDirector *, allocator<cRZCOMDllDirector *> >	1
+libSimCity.so	vector<unsigned int, allocator<unsigned int> >	1
+libSimDirt.so	__array_type_info	1
+libSimDirt.so	__attr_type_info	1
+libSimDirt.so	bad_alloc	2
+libSimDirt.so	bad_cast	2
+libSimDirt.so	bad_exception	2
+libSimDirt.so	bad_typeid	2
+libSimDirt.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	6
+libSimDirt.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > & basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	1
+libSimDirt.so	__builtin_type_info	1
+libSimDirt.so	cGZBufferColorType	1
+libSimDirt.so	__class_type_info	3
+libSimDirt.so	cRZCellMap<bool>	2
+libSimDirt.so	cRZCellMap<unsigned char>	11
+libSimDirt.so	cRZCOMDllDirector	27
+libSimDirt.so	cRZLock	1
+libSimDirt.so	cSC3CityToolLevelDirt	15
+libSimDirt.so	cSC3CityToolLowerDirt	15
+libSimDirt.so	cSC3CityToolPlaceWater	12
+libSimDirt.so	cSC3CityToolRaiseDirt	15
+libSimDirt.so	cSC3ConvexContour	17
+libSimDirt.so	cSC3DirtBag	124
+libSimDirt.so	cSC3DirtClodColorLightTable	9
+libSimDirt.so	cSC3DirtClodCursor	7
+libSimDirt.so	cSC3DirtClodEdge	10
+libSimDirt.so	cSC3DirtClodFactory	29
+libSimDirt.so	cSC3DirtClodLand	7
+libSimDirt.so	cSC3DirtClodShore	7
+libSimDirt.so	cSC3DirtClodWater	7
+libSimDirt.so	cSC3DirtClodX	32
+libSimDirt.so	cSC3DirtCommandFactory	3
+libSimDirt.so	cSC3DirtGenerator	20
+libSimDirt.so	cSC3NeighborMapGen	10
+libSimDirt.so	cSC3TerrainMapSprite	3
+libSimDirt.so	cSDBCOMDirector	7
+libSimDirt.so	__default_alloc_template<true, 0>	2
+libSimDirt.so	domain_error	2
+libSimDirt.so	exception	3
+libSimDirt.so	FastFixedAllocator	2
+libSimDirt.so	filebuf	27
+libSimDirt.so	__func_type_info	1
+libSimDirt.so	invalid_argument	2
+libSimDirt.so	_IO_istream_withassign	3
+libSimDirt.so	_IO_ostream_withassign	3
+libSimDirt.so	ios	39
+libSimDirt.so	iostream	3
+libSimDirt.so	istream	58
+libSimDirt.so	length_error	2
+libSimDirt.so	logic_error	4
+libSimDirt.so	__malloc_alloc_template<0>	1
+libSimDirt.so	ostream	39
+libSimDirt.so	out_of_range	2
+libSimDirt.so	overflow_error	2
+libSimDirt.so	__pointer_type_info	1
+libSimDirt.so	__ptmd_type_info	1
+libSimDirt.so	__ptmf_type_info	1
+libSimDirt.so	range_error	2
+libSimDirt.so	runtime_error	4
+libSimDirt.so	__si_type_info	3
+libSimDirt.so	streambuf	89
+libSimDirt.so	streammarker	6
+libSimDirt.so	type_info	6
+libSimDirt.so	underflow_error	2
+libSimDirt.so	__user_type_info	3
+libSimDirt.so	vector<cRZCOMDllDirector *, allocator<cRZCOMDllDirector *> >	1
+libSimDstr.so	__array_type_info	1
+libSimDstr.so	__attr_type_info	1
+libSimDstr.so	bad_alloc	2
+libSimDstr.so	bad_cast	2
+libSimDstr.so	bad_exception	2
+libSimDstr.so	bad_typeid	2
+libSimDstr.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	6
+libSimDstr.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > & basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	1
+libSimDstr.so	__builtin_type_info	1
+libSimDstr.so	cISC3DisasterEarthquakeInstance	1
+libSimDstr.so	cISC3DisasterLocustsInstance	1
+libSimDstr.so	cISC3DisasterSmiteInstance	1
+libSimDstr.so	cISC3DisasterSpaceDebrisInstance	1
+libSimDstr.so	cISC3DisasterUFOInstance	1
+libSimDstr.so	cISC3DisasterWhirlpoolInstance	1
+libSimDstr.so	__class_type_info	3
+libSimDstr.so	cRZCellMap<bool>	2
+libSimDstr.so	cRZCOMDllDirector	27
+libSimDstr.so	cRZLock	1
+libSimDstr.so	cRZTriple<float, float, float>	6
+libSimDstr.so	cRZTriple<int, int, int>	6
+libSimDstr.so	cSC3ActiveDisasterIterator	3
+libSimDstr.so	cSC3DisasterInstanceDayTickManipulator	6
+libSimDstr.so	cSC3DisasterInstanceMinuteTickManipulator	6
+libSimDstr.so	cSC3DisasterLayer	70
+libSimDstr.so	cSC3DisasterLayerManipulator	11
+libSimDstr.so	cSC3DisasterListIterator	3
+libSimDstr.so	cSC3DisasterManagerManipulator	6
+libSimDstr.so	cSC3EarthquakeDisasterInstance	37
+libSimDstr.so	cSC3EarthquakeDisasterManager	25
+libSimDstr.so	cSC3FireDisasterInstance	20
+libSimDstr.so	cSC3FireDisasterManager	31
+libSimDstr.so	cSC3FireDisasterOccTest	2
+libSimDstr.so	cSC3LocustsDisasterInstance	34
+libSimDstr.so	cSC3LocustsDisasterManager	27
+libSimDstr.so	cSC3OccTestDefault	5
+libSimDstr.so	cSC3ParadeEventInstance	38
+libSimDstr.so	cSC3ParadeEventManager	47
+libSimDstr.so	cSC3RiotDisasterInstance	34
+libSimDstr.so	cSC3RiotDisasterManager	36
+libSimDstr.so	cSC3SmiteDisasterInstance	30
+libSimDstr.so	cSC3SmiteDisasterManager	24
+libSimDstr.so	cSC3SpaceDebrisDisasterInstance	36
+libSimDstr.so	cSC3SpaceDebrisDisasterManager	24
+libSimDstr.so	cSC3TornadoDisasterInstance	32
+libSimDstr.so	cSC3TornadoDisasterManager	28
+libSimDstr.so	cSC3ToxicCloudDisasterInstance	35
+libSimDstr.so	cSC3ToxicCloudDisasterManager	37
+libSimDstr.so	cSC3UFODisasterInstance	33
+libSimDstr.so	cSC3UFODisasterManager	23
+libSimDstr.so	cSC3WhirlpoolDisasterInstance	37
+libSimDstr.so	cSC3WhirlpoolDisasterManager	27
+libSimDstr.so	cSDICOMDirector	14
+libSimDstr.so	__default_alloc_template<true, 0>	2
+libSimDstr.so	domain_error	2
+libSimDstr.so	exception	3
+libSimDstr.so	filebuf	27
+libSimDstr.so	__func_type_info	1
+libSimDstr.so	invalid_argument	2
+libSimDstr.so	_IO_istream_withassign	3
+libSimDstr.so	_IO_ostream_withassign	3
+libSimDstr.so	ios	39
+libSimDstr.so	iostream	3
+libSimDstr.so	istream	58
+libSimDstr.so	length_error	2
+libSimDstr.so	_List_base<cISC3ToxicCloudDisplay *, allocator<cISC3ToxicCloudDisplay *> >	1
+libSimDstr.so	_List_base<cSC3DisasterLayer::tCallbackFunctionData, allocator<cSC3DisasterLayer::tCallbackFunctionData> >	1
+libSimDstr.so	_List_base<cSC3DisasterLayer::tUnprocessedInstInfo, allocator<cSC3DisasterLayer::tUnprocessedInstInfo> >	1
+libSimDstr.so	_List_base<cSC3LocustsDisasterInstance::tDispatchInstance, allocator<cSC3LocustsDisasterInstance::tDispatchInstance> >	1
+libSimDstr.so	logic_error	4
+libSimDstr.so	__malloc_alloc_template<0>	1
+libSimDstr.so	map<unsigned int, cSC3DisasterLayer::tDisasterInfo, less<unsigned int>, allocator<cSC3DisasterLayer::tDisasterInfo> >	1
+libSimDstr.so	map<unsigned int, cSC3ParadeEventInstance::tOccupiedTileInfo, less<unsigned int>, allocator<cSC3ParadeEventInstance::tOccupiedTileInfo> >	1
+libSimDstr.so	map<unsigned int, cSC3RiotDisasterInstance::tOccupiedTileInfo, less<unsigned int>, allocator<cSC3RiotDisasterInstance::tOccupiedTileInfo> >	1
+libSimDstr.so	ostream	39
+libSimDstr.so	out_of_range	2
+libSimDstr.so	overflow_error	2
+libSimDstr.so	__pointer_type_info	1
+libSimDstr.so	__ptmd_type_info	1
+libSimDstr.so	__ptmf_type_info	1
+libSimDstr.so	RandomIterator	1
+libSimDstr.so	range_error	2
+libSimDstr.so	_Rb_tree<cISC3DisasterInstance *, cISC3DisasterInstance *, _Identity<cISC3DisasterInstance *>, less<cISC3DisasterInstance *>, allocator<cISC3DisasterInstance *> >	4
+libSimDstr.so	_Rb_tree<cISC3Occupant *, cISC3Occupant *, _Identity<cISC3Occupant *>, less<cISC3Occupant *>, allocator<cISC3Occupant *> >	4
+libSimDstr.so	_Rb_tree<unsigned int, pair<unsigned int const, cSC3DisasterLayer::tDisasterInfo>, _Select1st<pair<unsigned int const, cSC3DisasterLayer::tDisasterInfo> >, less<unsigned int>, allocator<cSC3DisasterLayer::tDisasterInfo> >	6
+libSimDstr.so	_Rb_tree<unsigned int, pair<unsigned int const, cSC3ParadeEventInstance::tOccupiedTileInfo>, _Select1st<pair<unsigned int const, cSC3ParadeEventInstance::tOccupiedTileInfo> >, less<unsigned int>, allocator<cSC3ParadeEventInstance::tOccupiedTileInfo> >	6
+libSimDstr.so	_Rb_tree<unsigned int, pair<unsigned int const, cSC3RiotDisasterInstance::tOccupiedTileInfo>, _Select1st<pair<unsigned int const, cSC3RiotDisasterInstance::tOccupiedTileInfo> >, less<unsigned int>, allocator<cSC3RiotDisasterInstance::tOccupiedTileInfo> >	6
+libSimDstr.so	runtime_error	4
+libSimDstr.so	ScanningIterator	1
+libSimDstr.so	set<cISC3DisasterInstance *, less<cISC3DisasterInstance *>, allocator<cISC3DisasterInstance *> >	1
+libSimDstr.so	set<cISC3Occupant *, less<cISC3Occupant *>, allocator<cISC3Occupant *> >	1
+libSimDstr.so	__si_type_info	3
+libSimDstr.so	SpiralIterator	3
+libSimDstr.so	streambuf	89
+libSimDstr.so	streammarker	6
+libSimDstr.so	type_info	6
+libSimDstr.so	underflow_error	2
+libSimDstr.so	__user_type_info	3
+libSimDstr.so	vector<cISC3DisasterEarthquakeInstance::EarthquakeRecord, allocator<cISC3DisasterEarthquakeInstance::EarthquakeRecord> >	1
+libSimDstr.so	vector<cISC3DisasterLocustsInstance::LocustsVisitationRecord, allocator<cISC3DisasterLocustsInstance::LocustsVisitationRecord> >	1
+libSimDstr.so	vector<cISC3DisasterSmiteInstance::SmiteRecord, allocator<cISC3DisasterSmiteInstance::SmiteRecord> >	1
+libSimDstr.so	vector<cISC3DisasterSpaceDebrisInstance::SpaceDebrisRecord, allocator<cISC3DisasterSpaceDebrisInstance::SpaceDebrisRecord> >	1
+libSimDstr.so	vector<cISC3DisasterUFOInstance::UFOVisitationRecord, allocator<cISC3DisasterUFOInstance::UFOVisitationRecord> >	1
+libSimDstr.so	vector<cISC3DisasterWhirlpoolInstance::WhirlpoolRecord, allocator<cISC3DisasterWhirlpoolInstance::WhirlpoolRecord> >	1
+libSimDstr.so	vector<cISC3Occupant *, allocator<cISC3Occupant *> >	1
+libSimDstr.so	vector<cRZCOMDllDirector *, allocator<cRZCOMDllDirector *> >	1
+libSimDstr.so	vector<cRZPoint, allocator<cRZPoint> >	1
+libSimDstr.so	vector<cRZRect, allocator<cRZRect> >	1
+libSimDstr.so	vector<cSC3FireDisasterManager::tSavedFireInstance, allocator<cSC3FireDisasterManager::tSavedFireInstance> >	1
+libSimDstr.so	vector<cSC3ParadeEventManager::tParadeBlockDef, allocator<cSC3ParadeEventManager::tParadeBlockDef> >	1
+libSimDstr.so	vector<cSC3ParadeEventManager::tParadeDef, allocator<cSC3ParadeEventManager::tParadeDef> >	1
+libSimDstr.so	vector<cSC3RiotDisasterManager::tSavedRiotInstance, allocator<cSC3RiotDisasterManager::tSavedRiotInstance> >	1
+libSimDstr.so	vector<cSC3TornadoDisasterManager::tSavedTornadoInstance, allocator<cSC3TornadoDisasterManager::tSavedTornadoInstance> >	1
+libSimDstr.so	vector<cSC3ToxicCloudDisasterManager::tSavedToxicCloudInstance, allocator<cSC3ToxicCloudDisasterManager::tSavedToxicCloudInstance> >	1
+libSimDstr.so	vector<unsigned int, allocator<unsigned int> >	3
+libSimDstr.so	vector<unsigned short, allocator<unsigned short> >	1
+libSimEco.so	__array_type_info	1
+libSimEco.so	__attr_type_info	1
+libSimEco.so	bad_alloc	2
+libSimEco.so	bad_cast	2
+libSimEco.so	bad_exception	2
+libSimEco.so	bad_typeid	2
+libSimEco.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	6
+libSimEco.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > & basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	1
+libSimEco.so	__builtin_type_info	1
+libSimEco.so	__class_type_info	3
+libSimEco.so	cRandomIteratorSerializable	1
+libSimEco.so	cRZCellMap<int>	1
+libSimEco.so	cRZCellMap<short>	1
+libSimEco.so	cRZCellMap<unsigned int>	1
+libSimEco.so	cRZCellMap<unsigned short>	1
+libSimEco.so	cRZCOMDllDirector	27
+libSimEco.so	cSC3BuildingIncinerator	31
+libSimEco.so	cSC3BuildingRecyclingCenter	30
+libSimEco.so	cSC3CityCellMapSized<int>	19
+libSimEco.so	cSC3CityCellMapSized<short>	19
+libSimEco.so	cSC3CityCellMapSized<unsigned int>	19
+libSimEco.so	cSC3CityCellMap<unsigned short>	19
+libSimEco.so	cSC3GarbageValve	6
+libSimEco.so	cSC3PollutionAirMapSprite	3
+libSimEco.so	cSC3PollutionGarbageMapSprite	3
+libSimEco.so	cSC3PollutionLayer	117
+libSimEco.so	cSC3PollutionMapSprite	2
+libSimEco.so	cSC3PollutionRadiationMapSprite	3
+libSimEco.so	cSC3PollutionWaterMapSprite	3
+libSimEco.so	cSECOMDirector	6
+libSimEco.so	__default_alloc_template<true, 0>	2
+libSimEco.so	domain_error	2
+libSimEco.so	exception	3
+libSimEco.so	filebuf	27
+libSimEco.so	__func_type_info	1
+libSimEco.so	invalid_argument	2
+libSimEco.so	_IO_istream_withassign	3
+libSimEco.so	_IO_ostream_withassign	3
+libSimEco.so	ios	39
+libSimEco.so	iostream	3
+libSimEco.so	istream	58
+libSimEco.so	length_error	2
+libSimEco.so	_List_base<cISC3BuildingIncinerator *, allocator<cISC3BuildingIncinerator *> >	1
+libSimEco.so	_List_base<cISC3BuildingRecyclingCenter *, allocator<cISC3BuildingRecyclingCenter *> >	1
+libSimEco.so	_List_base<cISC3BuildingWaterTreatment *, allocator<cISC3BuildingWaterTreatment *> >	1
+libSimEco.so	_List_base<pair<unsigned int, unsigned int>, allocator<pair<unsigned int, unsigned int> > >	1
+libSimEco.so	list<cISC3BuildingIncinerator *, allocator<cISC3BuildingIncinerator *> >	1
+libSimEco.so	list<cISC3BuildingRecyclingCenter *, allocator<cISC3BuildingRecyclingCenter *> >	2
+libSimEco.so	list<cISC3BuildingWaterTreatment *, allocator<cISC3BuildingWaterTreatment *> >	1
+libSimEco.so	logic_error	4
+libSimEco.so	__malloc_alloc_template<0>	1
+libSimEco.so	map<unsigned int, cSC3PollutionLayer::_tpe, less<unsigned int>, allocator<cSC3PollutionLayer::_tpe> >	1
+libSimEco.so	ostream	39
+libSimEco.so	out_of_range	2
+libSimEco.so	overflow_error	2
+libSimEco.so	__pointer_type_info	1
+libSimEco.so	__ptmd_type_info	1
+libSimEco.so	__ptmf_type_info	1
+libSimEco.so	RandomIterator	1
+libSimEco.so	range_error	2
+libSimEco.so	_Rb_tree<unsigned int, pair<unsigned int const, cSC3PollutionLayer::_tpe>, _Select1st<pair<unsigned int const, cSC3PollutionLayer::_tpe> >, less<unsigned int>, allocator<cSC3PollutionLayer::_tpe> >	8
+libSimEco.so	runtime_error	4
+libSimEco.so	__si_type_info	3
+libSimEco.so	streambuf	89
+libSimEco.so	streammarker	6
+libSimEco.so	type_info	6
+libSimEco.so	underflow_error	2
+libSimEco.so	__user_type_info	3
+libSimEco.so	vector<cRZCOMDllDirector *, allocator<cRZCOMDllDirector *> >	1
+libSimEco.so	vector<unsigned int, allocator<unsigned int> >	1
+libSimEco.so	vector<unsigned short, allocator<unsigned short> >	1
+libSimGeom.so	__array_type_info	1
+libSimGeom.so	__attr_type_info	1
+libSimGeom.so	bad_alloc	2
+libSimGeom.so	bad_cast	2
+libSimGeom.so	bad_exception	2
+libSimGeom.so	bad_typeid	2
+libSimGeom.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	7
+libSimGeom.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > & basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	1
+libSimGeom.so	__builtin_type_info	1
+libSimGeom.so	cCTPlaceTree	12
+libSimGeom.so	cISC3BuildingFamily	1
+libSimGeom.so	__class_type_info	3
+libSimGeom.so	cRZCellMap<cSC3OccupantManager::tOccCell>	1
+libSimGeom.so	cRZCellMap<unsigned char>	5
+libSimGeom.so	cRZCOMDllDirector	27
+libSimGeom.so	cRZLock	1
+libSimGeom.so	cSC3BuildingCmdFactory	2
+libSimGeom.so	cSC3BuildingFamily	16
+libSimGeom.so	cSC3BuildingFamilyFactory	4
+libSimGeom.so	cSC3BuildingLayer	67
+libSimGeom.so	cSC3BuildingLayerStaticInfo	8
+libSimGeom.so	cSC3CityCellMapSized<unsigned char>	18
+libSimGeom.so	cSC3CityToolDemolish	15
+libSimGeom.so	cSC3CityToolPlaceBuilding	13
+libSimGeom.so	cSC3CityToolPlaceBuildingOnWater	7
+libSimGeom.so	cSC3CityToolPlaceMultiBuilding	13
+libSimGeom.so	cSC3CityToolPlacePlumbingBuilding	8
+libSimGeom.so	cSC3CityToolPlaceSubwayBuilding	8
+libSimGeom.so	cSC3CityToolQuery	9
+libSimGeom.so	cSC3Flora	15
+libSimGeom.so	cSC3FloraAttrib	5
+libSimGeom.so	cSC3FloraCommandFactory	6
+libSimGeom.so	cSC3FloraLayer	33
+libSimGeom.so	cSC3OccFilterForAgentType	6
+libSimGeom.so	cSC3OccManIterator	11
+libSimGeom.so	cSC3OccManSparseIterator	10
+libSimGeom.so	cSC3OccTestAnimNew	2
+libSimGeom.so	cSC3OccTestBuilding	2
+libSimGeom.so	cSC3OccTestDefault	5
+libSimGeom.so	cSC3OccTestFlora	2
+libSimGeom.so	cSC3OccupantManager	48
+libSimGeom.so	cSC3OccupantManagerSparse	38
+libSimGeom.so	cSC3PortAttrib	56
+libSimGeom.so	cSC3PortLayer	55
+libSimGeom.so	cSC3StringTokenData	1
+libSimGeom.so	cSGCOMDirector	17
+libSimGeom.so	cSGDemolitionLayer	33
+libSimGeom.so	cSGDemolitionTest	6
+libSimGeom.so	__default_alloc_template<true, 0>	2
+libSimGeom.so	domain_error	2
+libSimGeom.so	exception	3
+libSimGeom.so	filebuf	27
+libSimGeom.so	__func_type_info	1
+libSimGeom.so	invalid_argument	2
+libSimGeom.so	_IO_istream_withassign	3
+libSimGeom.so	_IO_ostream_withassign	3
+libSimGeom.so	ios	39
+libSimGeom.so	iostream	3
+libSimGeom.so	istream	58
+libSimGeom.so	length_error	2
+libSimGeom.so	logic_error	4
+libSimGeom.so	__malloc_alloc_template<0>	1
+libSimGeom.so	map<cSC3BuildingLayerStaticInfo::_tddk, vector<cISC3BuildingAttrib *, allocator<cISC3BuildingAttrib *> >, less<cSC3BuildingLayerStaticInfo::_tddk>, allocator<vector<cISC3BuildingAttrib *, allocator<cISC3BuildingAttrib *> > > >	1
+libSimGeom.so	map<cSC3OccManKey, cISC3Occupant *, less<cSC3OccManKey>, allocator<cISC3Occupant *> >	1
+libSimGeom.so	map<unsigned int, int, less<unsigned int>, allocator<int> >	1
+libSimGeom.so	map<unsigned int, vector<unsigned int, allocator<unsigned int> >, less<unsigned int>, allocator<vector<unsigned int, allocator<unsigned int> > > >	1
+libSimGeom.so	ostream	39
+libSimGeom.so	out_of_range	2
+libSimGeom.so	overflow_error	2
+libSimGeom.so	pair<cSC3BuildingLayerStaticInfo::_tddk const, vector<cISC3BuildingAttrib *, allocator<cISC3BuildingAttrib *> > >	2
+libSimGeom.so	pair<unsigned int const, vector<unsigned int, allocator<unsigned int> > >	2
+libSimGeom.so	__pointer_type_info	1
+libSimGeom.so	__ptmd_type_info	1
+libSimGeom.so	__ptmf_type_info	1
+libSimGeom.so	range_error	2
+libSimGeom.so	_Rb_tree<cSC3BuildingLayerStaticInfo::_tddk, pair<cSC3BuildingLayerStaticInfo::_tddk const, vector<cISC3BuildingAttrib *, allocator<cISC3BuildingAttrib *> > >, _Select1st<pair<cSC3BuildingLayerStaticInfo::_tddk const, vector<cISC3BuildingAttrib *, allocator<cISC3BuildingAttrib *> > > >, less<cSC3BuildingLayerStaticInfo::_tddk>, allocator<vector<cISC3BuildingAttrib *, allocator<cISC3BuildingAttrib *> > > >	7
+libSimGeom.so	_Rb_tree<cSC3OccManKey, pair<cSC3OccManKey const, cISC3Occupant *>, _Select1st<pair<cSC3OccManKey const, cISC3Occupant *> >, less<cSC3OccManKey>, allocator<cISC3Occupant *> >	6
+libSimGeom.so	_Rb_tree<unsigned int, pair<unsigned int const, int>, _Select1st<pair<unsigned int const, int> >, less<unsigned int>, allocator<int> >	6
+libSimGeom.so	_Rb_tree<unsigned int, pair<unsigned int const, vector<unsigned int, allocator<unsigned int> > >, _Select1st<pair<unsigned int const, vector<unsigned int, allocator<unsigned int> > > >, less<unsigned int>, allocator<vector<unsigned int, allocator<unsigned int> > > >	6
+libSimGeom.so	_Rb_tree<unsigned int, unsigned int, _Identity<unsigned int>, greater<unsigned int>, allocator<unsigned int> >	3
+libSimGeom.so	runtime_error	4
+libSimGeom.so	set<unsigned int, greater<unsigned int>, allocator<unsigned int> >	1
+libSimGeom.so	__si_type_info	3
+libSimGeom.so	streambuf	89
+libSimGeom.so	streammarker	6
+libSimGeom.so	type_info	6
+libSimGeom.so	underflow_error	2
+libSimGeom.so	__user_type_info	3
+libSimGeom.so	vector<cISC3Building *, allocator<cISC3Building *> >	1
+libSimGeom.so	vector<cISC3BuildingAttrib *, allocator<cISC3BuildingAttrib *> >	2
+libSimGeom.so	vector<cISC3BuildingFamily::tFamilyMember, allocator<cISC3BuildingFamily::tFamilyMember> >	1
+libSimGeom.so	vector<cISC3CityChangeReceiver *, allocator<cISC3CityChangeReceiver *> >	1
+libSimGeom.so	vector<cISC3Occupant *, allocator<cISC3Occupant *> >	2
+libSimGeom.so	vector<cRZCOMDllDirector *, allocator<cRZCOMDllDirector *> >	1
+libSimGeom.so	vector<cSC3CityCoord, allocator<cSC3CityCoord> >	1
+libSimGeom.so	vector<unsigned int, allocator<unsigned int> >	2
+libSimInit.so	__array_type_info	1
+libSimInit.so	__attr_type_info	1
+libSimInit.so	bad_alloc	2
+libSimInit.so	bad_cast	2
+libSimInit.so	bad_exception	2
+libSimInit.so	bad_typeid	2
+libSimInit.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	8
+libSimInit.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > & basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	1
+libSimInit.so	__builtin_type_info	1
+libSimInit.so	cGZBufferColorType	1
+libSimInit.so	__class_type_info	3
+libSimInit.so	cRZCOMDllDirector	27
+libSimInit.so	cRZDirectory	1
+libSimInit.so	cRZDirectoryEntry	1
+libSimInit.so	cRZPath	1
+libSimInit.so	cSC2Importer	26
+libSimInit.so	cSC3AgentTypeTree	19
+libSimInit.so	cSC3AgentTypeTreeIterator	6
+libSimInit.so	cSC3CityDefinition	17
+libSimInit.so	cSC3CitySchemeMgr	88
+libSimInit.so	cSC3CmdCloseCity	3
+libSimInit.so	cSC3CmdLoadCity	10
+libSimInit.so	cSC3CmdLoadSaveDialog	4
+libSimInit.so	cSC3CmdNewCity	4
+libSimInit.so	cSC3CmdSaveCity	4
+libSimInit.so	cSC3CmdSimInitFactory	2
+libSimInit.so	cSC3LoadSaveWindow	35
+libSimInit.so	cSC3NewCityInfo	32
+libSimInit.so	cSC3OccTestDefault	5
+libSimInit.so	cSC3OccTestForKey	2
+libSimInit.so	cSC3OccupantAttribCache	39
+libSimInit.so	cSC3OccupantAttribCacheIterator	6
+libSimInit.so	cSC3PluginBuildingMgr	12
+libSimInit.so	cSICOMDirector	10
+libSimInit.so	__default_alloc_template<true, 0>	2
+libSimInit.so	domain_error	2
+libSimInit.so	exception	3
+libSimInit.so	filebuf	27
+libSimInit.so	__func_type_info	1
+libSimInit.so	hashtable<pair<cGZResourceKey const, cGZDBSegmentIndexedFile::RecordInfo>, cGZResourceKey, hash<cGZResourceKey>, _Select1st<pair<cGZResourceKey const, cGZDBSegmentIndexedFile::RecordInfo> >, equal_to<cGZResourceKey>, allocator<cGZDBSegmentIndexedFile::RecordInfo> >	1
+libSimInit.so	invalid_argument	2
+libSimInit.so	_IO_istream_withassign	3
+libSimInit.so	_IO_ostream_withassign	3
+libSimInit.so	ios	39
+libSimInit.so	iostream	3
+libSimInit.so	istream	58
+libSimInit.so	length_error	2
+libSimInit.so	_List_base<cIGZWinBtn *, allocator<cIGZWinBtn *> >	1
+libSimInit.so	_List_base<cRZDirectory::DriveType, allocator<cRZDirectory::DriveType> >	1
+libSimInit.so	_List_base<cRZDirectoryEntry, allocator<cRZDirectoryEntry> >	1
+libSimInit.so	_List_base<cRZString, allocator<cRZString> >	1
+libSimInit.so	list<cRZString, allocator<cRZString> >	3
+libSimInit.so	logic_error	4
+libSimInit.so	__malloc_alloc_template<0>	1
+libSimInit.so	map<cGZResourceKey, cGZResourceKey, less<cGZResourceKey>, allocator<cGZResourceKey> >	1
+libSimInit.so	map<cGZResourceKey, cISC3OccupantAttrib *, less<cGZResourceKey>, allocator<cISC3OccupantAttrib *> >	1
+libSimInit.so	map<cSC3AgentTypeTree::IDPair, cSC3AgentTypeTree::AncestorData, less<cSC3AgentTypeTree::IDPair>, allocator<cSC3AgentTypeTree::AncestorData> >	1
+libSimInit.so	map<cSC3OccupantAttribCache::_tLotSize, vector<unsigned int, allocator<unsigned int> > *, less<cSC3OccupantAttribCache::_tLotSize>, allocator<vector<unsigned int, allocator<unsigned int> > *> >	1
+libSimInit.so	map<unsigned int, cISC3CityAgentType *, less<unsigned int>, allocator<cISC3CityAgentType *> >	1
+libSimInit.so	map<unsigned int, map<cSC3OccupantAttribCache::_tLotSize, vector<unsigned int, allocator<unsigned int> > *, less<cSC3OccupantAttribCache::_tLotSize>, allocator<vector<unsigned int, allocator<unsigned int> > *> > *, less<unsigned int>, allocator<map<cSC3OccupantAttribCache::_tLotSize, vector<unsigned int, allocator<unsigned int> > *, less<cSC3OccupantAttribCache::_tLotSize>, allocator<vector<unsigned int, allocator<unsigned int> > *> > *> >	1
+libSimInit.so	ostream	39
+libSimInit.so	out_of_range	2
+libSimInit.so	overflow_error	2
+libSimInit.so	__pointer_type_info	1
+libSimInit.so	__ptmd_type_info	1
+libSimInit.so	__ptmf_type_info	1
+libSimInit.so	range_error	2
+libSimInit.so	_Rb_tree<cGZResourceKey, cGZResourceKey, _Identity<cGZResourceKey>, cSC3CitySchemeMgr::cLessResKey, allocator<cGZResourceKey> >	4
+libSimInit.so	_Rb_tree<cGZResourceKey, cGZResourceKey, _Identity<cGZResourceKey>, less<cGZResourceKey>, allocator<cGZResourceKey> >	3
+libSimInit.so	_Rb_tree<cGZResourceKey, pair<cGZResourceKey const, cGZResourceKey>, _Select1st<pair<cGZResourceKey const, cGZResourceKey> >, less<cGZResourceKey>, allocator<cGZResourceKey> >	6
+libSimInit.so	_Rb_tree<cGZResourceKey, pair<cGZResourceKey const, cISC3OccupantAttrib *>, _Select1st<pair<cGZResourceKey const, cISC3OccupantAttrib *> >, less<cGZResourceKey>, allocator<cISC3OccupantAttrib *> >	4
+libSimInit.so	_Rb_tree<cRZString, cRZString, _Identity<cRZString>, less<cRZString>, allocator<cRZString> >	4
+libSimInit.so	_Rb_tree<cSC3AgentTypeTree::IDPair, pair<cSC3AgentTypeTree::IDPair const, cSC3AgentTypeTree::AncestorData>, _Select1st<pair<cSC3AgentTypeTree::IDPair const, cSC3AgentTypeTree::AncestorData> >, less<cSC3AgentTypeTree::IDPair>, allocator<cSC3AgentTypeTree::AncestorData> >	5
+libSimInit.so	_Rb_tree<cSC3OccupantAttribCache::_tLotSize, pair<cSC3OccupantAttribCache::_tLotSize const, vector<unsigned int, allocator<unsigned int> > *>, _Select1st<pair<cSC3OccupantAttribCache::_tLotSize const, vector<unsigned int, allocator<unsigned int> > *> >, less<cSC3OccupantAttribCache::_tLotSize>, allocator<vector<unsigned int, allocator<unsigned int> > *> >	7
+libSimInit.so	_Rb_tree<unsigned int, pair<unsigned int const, cISC3CityAgentType *>, _Select1st<pair<unsigned int const, cISC3CityAgentType *> >, less<unsigned int>, allocator<cISC3CityAgentType *> >	5
+libSimInit.so	_Rb_tree<unsigned int, pair<unsigned int const, map<cSC3OccupantAttribCache::_tLotSize, vector<unsigned int, allocator<unsigned int> > *, less<cSC3OccupantAttribCache::_tLotSize>, allocator<vector<unsigned int, allocator<unsigned int> > *> > *>, _Select1st<pair<unsigned int const, map<cSC3OccupantAttribCache::_tLotSize, vector<unsigned int, allocator<unsigned int> > *, less<cSC3OccupantAttribCache::_tLotSize>, allocator<vector<unsigned int, allocator<unsigned int> > *> > *> >, less<unsigned int>, allocator<map<cSC3OccupantAttribCache::_tLotSize, vector<unsigned int, allocator<unsigned int> > *, less<cSC3OccupantAttribCache::_tLotSize>, allocator<vector<unsigned int, allocator<unsigned int> > *> > *> >	7
+libSimInit.so	runtime_error	4
+libSimInit.so	set<cGZResourceKey, cSC3CitySchemeMgr::cLessResKey, allocator<cGZResourceKey> >	1
+libSimInit.so	set<cGZResourceKey, less<cGZResourceKey>, allocator<cGZResourceKey> >	1
+libSimInit.so	set<cRZString, less<cRZString>, allocator<cRZString> >	1
+libSimInit.so	__si_type_info	3
+libSimInit.so	streambuf	89
+libSimInit.so	streammarker	6
+libSimInit.so	type_info	6
+libSimInit.so	underflow_error	2
+libSimInit.so	__user_type_info	3
+libSimInit.so	vector<cGZResourceKey, allocator<cGZResourceKey> >	1
+libSimInit.so	vector<cISC3Occupant *, allocator<cISC3Occupant *> >	1
+libSimInit.so	vector<cRZCOMDllDirector *, allocator<cRZCOMDllDirector *> >	1
+libSimInit.so	vector<cSC3CitySchemeMgr::tBuildingSetInfo, allocator<cSC3CitySchemeMgr::tBuildingSetInfo> >	1
+libSimInit.so	vector<cSC3CitySchemeMgr::tFloraSetInfo, allocator<cSC3CitySchemeMgr::tFloraSetInfo> >	1
+libSimInit.so	vector<cSC3CitySchemeMgr::tLandScapeInfo, allocator<cSC3CitySchemeMgr::tLandScapeInfo> >	1
+libSimInit.so	vector<cSC3CitySchemeMgr::tSegmentInfo, allocator<cSC3CitySchemeMgr::tSegmentInfo> >	1
+libSimInit.so	vector<cSC3LoadSaveWindow::ExtensionAndIcon, allocator<cSC3LoadSaveWindow::ExtensionAndIcon> >	1
+libSimInit.so	vector<cSC3OccupantAttribCache::tOccAttribInfo, allocator<cSC3OccupantAttribCache::tOccAttribInfo> >	1
+libSimInit.so	vector<unsigned int, allocator<unsigned int> >	1
+libSimMisc.so	__array_type_info	1
+libSimMisc.so	__attr_type_info	1
+libSimMisc.so	bad_alloc	2
+libSimMisc.so	bad_cast	2
+libSimMisc.so	bad_exception	2
+libSimMisc.so	bad_typeid	2
+libSimMisc.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	6
+libSimMisc.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > & basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	1
+libSimMisc.so	__builtin_type_info	1
+libSimMisc.so	cGZBufferColorType	1
+libSimMisc.so	__class_type_info	3
+libSimMisc.so	cRZCellMap<short>	1
+libSimMisc.so	cRZCellMap<signed char>	1
+libSimMisc.so	cRZCOMDllDirector	27
+libSimMisc.so	cSC3Airport	3
+libSimMisc.so	cSC3AuraLayer	64
+libSimMisc.so	cSC3AuraMapSprite	4
+libSimMisc.so	cSC3BallPark	4
+libSimMisc.so	cSC3BondsDialogProc	12
+libSimMisc.so	cSC3BudgetExpenseViewProc	14
+libSimMisc.so	cSC3BudgetIncomeViewProc	12
+libSimMisc.so	cSC3BudgetLayer	73
+libSimMisc.so	cSC3BudgetWinProc	17
+libSimMisc.so	cSC3BusinessDealBuilding	15
+libSimMisc.so	cSC3BusinessDealBuildingAnim	15
+libSimMisc.so	cSC3Casino	3
+libSimMisc.so	cSC3CityCellMapSized<short>	19
+libSimMisc.so	cSC3CityCellMapSized<signed char>	19
+libSimMisc.so	cSC3CityHall	7
+libSimMisc.so	cSC3CmdShowBudgetWin	2
+libSimMisc.so	cSC3CmdSimMiscFactory	2
+libSimMisc.so	cSC3CountryClub	7
+libSimMisc.so	cSC3Courthouse	7
+libSimMisc.so	cSC3DefenseContractor	7
+libSimMisc.so	cSC3EasterCastle	4
+libSimMisc.so	cSC3GeyserPark	7
+libSimMisc.so	cSC3Gigamall	3
+libSimMisc.so	cSC3LandmarkBuilding	3
+libSimMisc.so	cSC3Lighthouse	7
+libSimMisc.so	cSC3Marina	4
+libSimMisc.so	cSC3MaximumSecurityPrison	3
+libSimMisc.so	cSC3MayorsHouse	7
+libSimMisc.so	cSC3MedicalResearchCenter	7
+libSimMisc.so	cSC3MilitaryBase	8
+libSimMisc.so	cSC3MiscOcc	16
+libSimMisc.so	cSC3MiscOccAnim	16
+libSimMisc.so	cSC3MonthlyBudgetManipulator	12
+libSimMisc.so	cSC3MonthlyOrdinanceLayerManip	11
+libSimMisc.so	cSC3NeighborDeal	30
+libSimMisc.so	cSC3NeighborsLayer	90
+libSimMisc.so	cSC3OrdinanceLayer	41
+libSimMisc.so	cSC3Park	4
+libSimMisc.so	cSC3PerformingArtsCenter	7
+libSimMisc.so	cSC3ScienceCenter	7
+libSimMisc.so	cSC3Seaport	3
+libSimMisc.so	cSC3Spaceport	7
+libSimMisc.so	cSC3Stadium	10
+libSimMisc.so	cSC3Statue	7
+libSimMisc.so	cSC3StockExchange	7
+libSimMisc.so	cSC3ThemePark	8
+libSimMisc.so	cSC3ToxicWastePlant	3
+libSimMisc.so	cSC3University	8
+libSimMisc.so	cSC3WeatherLayer	40
+libSimMisc.so	cSC3WeatherLayerManip	11
+libSimMisc.so	cSC3WorkforceValve	19
+libSimMisc.so	cSC3WorldLayer	46
+libSimMisc.so	cSC3Zoo	4
+libSimMisc.so	cSMCOMDirector	39
+libSimMisc.so	__default_alloc_template<true, 0>	2
+libSimMisc.so	domain_error	2
+libSimMisc.so	exception	3
+libSimMisc.so	filebuf	27
+libSimMisc.so	__func_type_info	1
+libSimMisc.so	invalid_argument	2
+libSimMisc.so	_IO_istream_withassign	3
+libSimMisc.so	_IO_ostream_withassign	3
+libSimMisc.so	ios	39
+libSimMisc.so	iostream	3
+libSimMisc.so	istream	58
+libSimMisc.so	length_error	2
+libSimMisc.so	_List_base<cRZAutoRefCount<cSC3NeighborDeal>, allocator<cRZAutoRefCount<cSC3NeighborDeal> > >	1
+libSimMisc.so	logic_error	4
+libSimMisc.so	__malloc_alloc_template<0>	1
+libSimMisc.so	map<cISC3BudgetLayer::tDevelopmentCostID, unsigned int, less<cISC3BudgetLayer::tDevelopmentCostID>, allocator<unsigned int> >	1
+libSimMisc.so	map<unsigned int, cSC3AuraLayer::tModifier, less<unsigned int>, allocator<cSC3AuraLayer::tModifier> >	1
+libSimMisc.so	map<unsigned int, cSC3BudgetLayer::tLineItem, less<unsigned int>, allocator<cSC3BudgetLayer::tLineItem> >	1
+libSimMisc.so	map<unsigned int, cSC3BudgetLayer::tValveModifier, less<unsigned int>, allocator<cSC3BudgetLayer::tValveModifier> >	1
+libSimMisc.so	map<unsigned int, cSC3OrdinanceLayer::cSC3OrdinanceStruct *, less<unsigned int>, allocator<cSC3OrdinanceLayer::cSC3OrdinanceStruct *> >	1
+libSimMisc.so	map<unsigned int, cSC3WorldLayer::tPhaseEffect, less<unsigned int>, allocator<cSC3WorldLayer::tPhaseEffect> >	1
+libSimMisc.so	map<unsigned int, unsigned int, less<unsigned int>, allocator<unsigned int> >	1
+libSimMisc.so	ostream	39
+libSimMisc.so	out_of_range	2
+libSimMisc.so	overflow_error	2
+libSimMisc.so	__pointer_type_info	1
+libSimMisc.so	__ptmd_type_info	1
+libSimMisc.so	__ptmf_type_info	1
+libSimMisc.so	range_error	2
+libSimMisc.so	_Rb_tree<cISC3BudgetLayer::tDevelopmentCostID, pair<cISC3BudgetLayer::tDevelopmentCostID const, unsigned int>, _Select1st<pair<cISC3BudgetLayer::tDevelopmentCostID const, unsigned int> >, less<cISC3BudgetLayer::tDevelopmentCostID>, allocator<unsigned int> >	6
+libSimMisc.so	_Rb_tree<unsigned int, pair<unsigned int const, cSC3AuraLayer::tModifier>, _Select1st<pair<unsigned int const, cSC3AuraLayer::tModifier> >, less<unsigned int>, allocator<cSC3AuraLayer::tModifier> >	7
+libSimMisc.so	_Rb_tree<unsigned int, pair<unsigned int const, cSC3BudgetLayer::tLineItem>, _Select1st<pair<unsigned int const, cSC3BudgetLayer::tLineItem> >, less<unsigned int>, allocator<cSC3BudgetLayer::tLineItem> >	6
+libSimMisc.so	_Rb_tree<unsigned int, pair<unsigned int const, cSC3BudgetLayer::tValveModifier>, _Select1st<pair<unsigned int const, cSC3BudgetLayer::tValveModifier> >, less<unsigned int>, allocator<cSC3BudgetLayer::tValveModifier> >	5
+libSimMisc.so	_Rb_tree<unsigned int, pair<unsigned int const, cSC3OrdinanceLayer::cSC3OrdinanceStruct *>, _Select1st<pair<unsigned int const, cSC3OrdinanceLayer::cSC3OrdinanceStruct *> >, less<unsigned int>, allocator<cSC3OrdinanceLayer::cSC3OrdinanceStruct *> >	6
+libSimMisc.so	_Rb_tree<unsigned int, pair<unsigned int const, cSC3WorldLayer::tPhaseEffect>, _Select1st<pair<unsigned int const, cSC3WorldLayer::tPhaseEffect> >, less<unsigned int>, allocator<cSC3WorldLayer::tPhaseEffect> >	7
+libSimMisc.so	_Rb_tree<unsigned int, pair<unsigned int const, unsigned int>, _Select1st<pair<unsigned int const, unsigned int> >, less<unsigned int>, allocator<unsigned int> >	7
+libSimMisc.so	_Rb_tree<unsigned int, unsigned int, _Identity<unsigned int>, less<unsigned int>, allocator<unsigned int> >	4
+libSimMisc.so	runtime_error	4
+libSimMisc.so	set<unsigned int, less<unsigned int>, allocator<unsigned int> >	1
+libSimMisc.so	__si_type_info	3
+libSimMisc.so	streambuf	89
+libSimMisc.so	streammarker	6
+libSimMisc.so	type_info	6
+libSimMisc.so	underflow_error	2
+libSimMisc.so	__user_type_info	3
+libSimMisc.so	vector<cRZCOMDllDirector *, allocator<cRZCOMDllDirector *> >	1
+libSimMisc.so	vector<cSC3WorldLayer::eraEffect, allocator<cSC3WorldLayer::eraEffect> >	2
+libSimMisc.so	vector<cSC3WorldLayer::tWorldValveEraData, allocator<cSC3WorldLayer::tWorldValveEraData> >	2
+libSimNtwrk.so	__array_type_info	1
+libSimNtwrk.so	__attr_type_info	1
+libSimNtwrk.so	bad_alloc	2
+libSimNtwrk.so	bad_cast	2
+libSimNtwrk.so	bad_exception	2
+libSimNtwrk.so	bad_typeid	2
+libSimNtwrk.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	6
+libSimNtwrk.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > & basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	1
+libSimNtwrk.so	__builtin_type_info	1
+libSimNtwrk.so	cCTPlaceHighway	12
+libSimNtwrk.so	cCTPlaceOnramp	12
+libSimNtwrk.so	cCTPlacePipe	12
+libSimNtwrk.so	cCTPlacePower	12
+libSimNtwrk.so	cCTPlaceRail	12
+libSimNtwrk.so	cCTPlaceRoad	12
+libSimNtwrk.so	cCTPlaceSubway	12
+libSimNtwrk.so	cGZBufferColorType	1
+libSimNtwrk.so	__class_type_info	3
+libSimNtwrk.so	cRZCOMDllDirector	27
+libSimNtwrk.so	cSC3TransitBlockPersistInfo	53
+libSimNtwrk.so	cSC3TransitCommandFactory	2
+libSimNtwrk.so	cSimpleModalWin	9
+libSimNtwrk.so	cSLCityViewLineAlgorithm	22
+libSimNtwrk.so	cSLCityViewLineAlgorithmForRamps	5
+libSimNtwrk.so	cSNCOMDirector	5
+libSimNtwrk.so	cSTCanDamageTest	2
+libSimNtwrk.so	cSTDamagedTest	2
+libSimNtwrk.so	cSTHighwayBridgeOcc	6
+libSimNtwrk.so	cSTHighwayEditTest	2
+libSimNtwrk.so	cSTHighwayEditTestWconstrain	2
+libSimNtwrk.so	cSTHighwayOcc	6
+libSimNtwrk.so	cSTHighwayTest	2
+libSimNtwrk.so	cSTHighwayTraverseHorizontalTest	2
+libSimNtwrk.so	cSTHighwayTraverseVerticalTest	2
+libSimNtwrk.so	cSTHighwayTunnelOcc	6
+libSimNtwrk.so	cSTNetworkOcc	39
+libSimNtwrk.so	cSTNetworkOccTransit	7
+libSimNtwrk.so	cSTNetworkTest	2
+libSimNtwrk.so	cSTNotAHighwayTest	2
+libSimNtwrk.so	cSTNotANetworkTest	2
+libSimNtwrk.so	cSTNotAPipeTest	2
+libSimNtwrk.so	cSTNotAPowerTest	2
+libSimNtwrk.so	cSTNotARailTest	2
+libSimNtwrk.so	cSTNotARoadTest	2
+libSimNtwrk.so	cSTNotASubwayTest	2
+libSimNtwrk.so	cSTOccTest	6
+libSimNtwrk.so	cSTOnRampHwyOcc	6
+libSimNtwrk.so	cSTOnRampRoadOcc	6
+libSimNtwrk.so	cSTPipeEditTest	2
+libSimNtwrk.so	cSTPipeEditTestWconstrain	2
+libSimNtwrk.so	cSTPipeOcc	6
+libSimNtwrk.so	cSTPipeTest	2
+libSimNtwrk.so	cSTPipeTraverseHorizontalTest	2
+libSimNtwrk.so	cSTPipeTraverseVerticalTest	2
+libSimNtwrk.so	cSTPowerEditTest	2
+libSimNtwrk.so	cSTPowerEditTestWconstrain	2
+libSimNtwrk.so	cSTPowerHighwayOcc	6
+libSimNtwrk.so	cSTPowerRailOcc	6
+libSimNtwrk.so	cSTPowerRoadOcc	6
+libSimNtwrk.so	cSTPowerTest	2
+libSimNtwrk.so	cSTPowerTraverseHorizontalTest	2
+libSimNtwrk.so	cSTPowerTraverseVerticalTest	2
+libSimNtwrk.so	cSTRailBridgeOcc	6
+libSimNtwrk.so	cSTRailEditTest	2
+libSimNtwrk.so	cSTRailEditTestWconstrain	2
+libSimNtwrk.so	cSTRailHighwayOcc	6
+libSimNtwrk.so	cSTRailOcc	6
+libSimNtwrk.so	cSTRailTest	2
+libSimNtwrk.so	cSTRailTraverseHorizontalTest	2
+libSimNtwrk.so	cSTRailTraverseVerticalTest	2
+libSimNtwrk.so	cSTRailTunnelOcc	6
+libSimNtwrk.so	cSTRoadBridgeOcc	6
+libSimNtwrk.so	cSTRoadEditTest	2
+libSimNtwrk.so	cSTRoadEditTestWconstrain	2
+libSimNtwrk.so	cSTRoadHighwayOcc	6
+libSimNtwrk.so	cSTRoadOcc	6
+libSimNtwrk.so	cSTRoadRailOcc	6
+libSimNtwrk.so	cSTRoadTest	2
+libSimNtwrk.so	cSTRoadTraverseHorizontalTest	2
+libSimNtwrk.so	cSTRoadTraverseVerticalTest	2
+libSimNtwrk.so	cSTRoadTunnelOcc	6
+libSimNtwrk.so	cSTSubwayEditTest	2
+libSimNtwrk.so	cSTSubwayEditTestWconstrain	2
+libSimNtwrk.so	cSTSubwayOcc	6
+libSimNtwrk.so	cSTSubwayRailOcc	6
+libSimNtwrk.so	cSTSubwayTest	2
+libSimNtwrk.so	cSTSubwayTraverseHorizontalTest	2
+libSimNtwrk.so	cSTSubwayTraverseVerticalTest	2
+libSimNtwrk.so	cSTTransitBlockAttrib	56
+libSimNtwrk.so	cSTTransitLayer	143
+libSimNtwrk.so	cSTTransitTest	2
+libSimNtwrk.so	cSTTreeTest	2
+libSimNtwrk.so	cSTWireBridgeOcc	6
+libSimNtwrk.so	cSTWireOcc	6
+libSimNtwrk.so	cTileIdentityArray	1
+libSimNtwrk.so	__default_alloc_template<true, 0>	2
+libSimNtwrk.so	domain_error	2
+libSimNtwrk.so	exception	3
+libSimNtwrk.so	filebuf	27
+libSimNtwrk.so	__func_type_info	1
+libSimNtwrk.so	invalid_argument	2
+libSimNtwrk.so	_IO_istream_withassign	3
+libSimNtwrk.so	_IO_ostream_withassign	3
+libSimNtwrk.so	ios	39
+libSimNtwrk.so	iostream	3
+libSimNtwrk.so	istream	58
+libSimNtwrk.so	length_error	2
+libSimNtwrk.so	_List_base<cSC3CityCoord, allocator<cSC3CityCoord> >	1
+libSimNtwrk.so	list<cSC3CityCoord, allocator<cSC3CityCoord> >	3
+libSimNtwrk.so	logic_error	4
+libSimNtwrk.so	__malloc_alloc_template<0>	1
+libSimNtwrk.so	ostream	39
+libSimNtwrk.so	out_of_range	2
+libSimNtwrk.so	overflow_error	2
+libSimNtwrk.so	__pointer_type_info	1
+libSimNtwrk.so	__ptmd_type_info	1
+libSimNtwrk.so	__ptmf_type_info	1
+libSimNtwrk.so	range_error	2
+libSimNtwrk.so	runtime_error	4
+libSimNtwrk.so	__si_type_info	3
+libSimNtwrk.so	streambuf	89
+libSimNtwrk.so	streammarker	6
+libSimNtwrk.so	type_info	6
+libSimNtwrk.so	underflow_error	2
+libSimNtwrk.so	__user_type_info	3
+libSimNtwrk.so	vector<cGZResourceKey, allocator<cGZResourceKey> >	1
+libSimNtwrk.so	vector<cISC3Occupant *, allocator<cISC3Occupant *> >	1
+libSimNtwrk.so	vector<cRZCOMDllDirector *, allocator<cRZCOMDllDirector *> >	1
+libSimNtwrk.so	vector<cSC3CityCoord, allocator<cSC3CityCoord> >	1
+libSimNtwrk.so	vector<tSTTileConvert, allocator<tSTTileConvert> >	1
+libSimNtwrk.so	vector<unsigned int, allocator<unsigned int> >	1
+libSimRCI.so	__array_type_info	1
+libSimRCI.so	__attr_type_info	1
+libSimRCI.so	bad_alloc	2
+libSimRCI.so	bad_cast	2
+libSimRCI.so	bad_exception	2
+libSimRCI.so	bad_typeid	2
+libSimRCI.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	6
+libSimRCI.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > & basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	1
+libSimRCI.so	__builtin_type_info	1
+libSimRCI.so	__class_type_info	3
+libSimRCI.so	cRandomIteratorSerializable	1
+libSimRCI.so	cRZCellMap<bool>	2
+libSimRCI.so	cRZCellMap<short>	1
+libSimRCI.so	cRZCellMap<unsigned char>	8
+libSimRCI.so	cRZCOMDllDirector	27
+libSimRCI.so	cSC3AgDeveloperRule	12
+libSimRCI.so	cSC3AirparkDeveloperRule	17
+libSimRCI.so	cSC3AirportZoneDeveloper	15
+libSimRCI.so	cSC3BuildingCollege	24
+libSimRCI.so	cSC3BuildingHospital	19
+libSimRCI.so	cSC3BuildingLibrary	23
+libSimRCI.so	cSC3BuildingMuseum	21
+libSimRCI.so	cSC3BuildingPier	15
+libSimRCI.so	cSC3BuildingSchool	24
+libSimRCI.so	cSC3CityCellMapSized<short>	19
+libSimRCI.so	cSC3CityCellMapSized<unsigned char>	19
+libSimRCI.so	cSC3CityCellMap<unsigned char>	18
+libSimRCI.so	cSC3CityToolPlaceZone	13
+libSimRCI.so	cSC3ComAreaManipulator	12
+libSimRCI.so	cSC3ComHDDeveloperRule	12
+libSimRCI.so	cSC3ComLDDeveloperRule	12
+libSimRCI.so	cSC3ComMDDeveloperRule	12
+libSimRCI.so	cSC3CommercialLayer	23
+libSimRCI.so	cSC3ComZoneDeveloper	21
+libSimRCI.so	cSC3DailyLandValueManipulator	12
+libSimRCI.so	cSC3DensityMapSprite	4
+libSimRCI.so	cSC3EstateDeveloperRule	13
+libSimRCI.so	cSC3HousingProjectDeveloperRule	16
+libSimRCI.so	cSC3IndAreaManipulator	12
+libSimRCI.so	cSC3IndHDDeveloperRule	12
+libSimRCI.so	cSC3IndLDDeveloperRule	12
+libSimRCI.so	cSC3IndMDDeveloperRule	12
+libSimRCI.so	cSC3IndustrialLayer	23
+libSimRCI.so	cSC3IndZoneDeveloper	22
+libSimRCI.so	cSC3LandfillZoneDeveloper	23
+libSimRCI.so	cSC3LandValueLayer	62
+libSimRCI.so	cSC3LandValueMapSprite	3
+libSimRCI.so	cSC3LandValueModifierMapSprite	3
+libSimRCI.so	cSC3OccTestDefault	5
+libSimRCI.so	cSC3RCICmdFactory	2
+libSimRCI.so	cSC3ResAreaManipulator	12
+libSimRCI.so	cSC3ResHDDeveloperRule	12
+libSimRCI.so	cSC3ResidentialLayer	72
+libSimRCI.so	cSC3ResidentialValve	10
+libSimRCI.so	cSC3ResLDDeveloperRule	12
+libSimRCI.so	cSC3ResMDDeveloperRule	12
+libSimRCI.so	cSC3ResZoneDeveloper	21
+libSimRCI.so	cSC3RowHouseDeveloperRule	12
+libSimRCI.so	cSC3RunwayDeveloperRule	14
+libSimRCI.so	cSC3SeaportYardDeveloperRule	12
+libSimRCI.so	cSC3SeaportZoneDeveloper	14
+libSimRCI.so	cSC3SeawallDeveloperRule	12
+libSimRCI.so	cSC3SimRoadFilter	2
+libSimRCI.so	cSC3SimTransportFilter	2
+libSimRCI.so	cSC3ValveAreaManipulator	12
+libSimRCI.so	cSC3ValveLayer	42
+libSimRCI.so	cSC3ValveManipulator	13
+libSimRCI.so	cSC3ZoneLayer	87
+libSimRCI.so	cSC3ZoneMapSprite	3
+libSimRCI.so	cSRCOMDirector	40
+libSimRCI.so	cTileIdentityArray	1
+libSimRCI.so	__default_alloc_template<true, 0>	2
+libSimRCI.so	domain_error	2
+libSimRCI.so	exception	3
+libSimRCI.so	filebuf	27
+libSimRCI.so	__func_type_info	1
+libSimRCI.so	invalid_argument	2
+libSimRCI.so	_IO_istream_withassign	3
+libSimRCI.so	_IO_ostream_withassign	3
+libSimRCI.so	ios	39
+libSimRCI.so	iostream	3
+libSimRCI.so	istream	58
+libSimRCI.so	length_error	2
+libSimRCI.so	_List_base<cISC3BuildingBudget *, allocator<cISC3BuildingBudget *> >	1
+libSimRCI.so	_List_base<cISC3EQModifier *, allocator<cISC3EQModifier *> >	1
+libSimRCI.so	_List_base<cISC3HQModifier *, allocator<cISC3HQModifier *> >	1
+libSimRCI.so	_List_base<cSC3LandfillZoneDeveloper::tGarbageHeap, allocator<cSC3LandfillZoneDeveloper::tGarbageHeap> >	1
+libSimRCI.so	_List_base<cSC3ValveLayer::tOrdEffect, allocator<cSC3ValveLayer::tOrdEffect> >	1
+libSimRCI.so	_List_base<cSC3ValveLayer::ValveEffect, allocator<cSC3ValveLayer::ValveEffect> >	1
+libSimRCI.so	_List_base<cSC3ValveManipulator::ValveAndEffect, allocator<cSC3ValveManipulator::ValveAndEffect> >	1
+libSimRCI.so	_List_base<sIGZPointXZUint32, allocator<sIGZPointXZUint32> >	1
+libSimRCI.so	list<cISC3BuildingBudget *, allocator<cISC3BuildingBudget *> >	1
+libSimRCI.so	list<cISC3HQModifier *, allocator<cISC3HQModifier *> >	1
+libSimRCI.so	list<cSC3ValveLayer::tOrdEffect, allocator<cSC3ValveLayer::tOrdEffect> >	2
+libSimRCI.so	list<cSC3ValveLayer::ValveEffect, allocator<cSC3ValveLayer::ValveEffect> >	2
+libSimRCI.so	list<cSC3ValveManipulator::ValveAndEffect, allocator<cSC3ValveManipulator::ValveAndEffect> >	1
+libSimRCI.so	list<sIGZPointXZUint32, allocator<sIGZPointXZUint32> >	2
+libSimRCI.so	logic_error	4
+libSimRCI.so	__malloc_alloc_template<0>	1
+libSimRCI.so	map<cSC3ZoneLayer::_rzp, unsigned int, less<cSC3ZoneLayer::_rzp>, allocator<unsigned int> >	1
+libSimRCI.so	map<unsigned int, cISC3Valve *, less<unsigned int>, allocator<cISC3Valve *> >	1
+libSimRCI.so	map<unsigned int, cSC3ComZoneDeveloper::tLandUseInfo, less<unsigned int>, allocator<cSC3ComZoneDeveloper::tLandUseInfo> >	1
+libSimRCI.so	map<unsigned int, cSC3IndZoneDeveloper::tLandUseInfo, less<unsigned int>, allocator<cSC3IndZoneDeveloper::tLandUseInfo> >	1
+libSimRCI.so	map<unsigned int, cSC3LandValueLayer::tCCEffect, less<unsigned int>, allocator<cSC3LandValueLayer::tCCEffect> >	1
+libSimRCI.so	map<unsigned int, cSC3LandValueLayer::tModifier, less<unsigned int>, allocator<cSC3LandValueLayer::tModifier> >	1
+libSimRCI.so	map<unsigned int, cSC3ResidentialLayer::tEQModStruct, less<unsigned int>, allocator<cSC3ResidentialLayer::tEQModStruct> >	1
+libSimRCI.so	map<unsigned int, cSC3ResZoneDeveloper::tLandUseInfo, less<unsigned int>, allocator<cSC3ResZoneDeveloper::tLandUseInfo> >	1
+libSimRCI.so	map<unsigned int, cSC3ValveManipulator *, less<unsigned int>, allocator<cSC3ValveManipulator *> >	1
+libSimRCI.so	map<unsigned int, int, less<unsigned int>, allocator<int> >	1
+libSimRCI.so	map<unsigned int, list<cSC3ValveLayer::tOrdEffect, allocator<cSC3ValveLayer::tOrdEffect> >, less<unsigned int>, allocator<list<cSC3ValveLayer::tOrdEffect, allocator<cSC3ValveLayer::tOrdEffect> > > >	1
+libSimRCI.so	map<unsigned int, list<cSC3ValveLayer::ValveEffect, allocator<cSC3ValveLayer::ValveEffect> >, less<unsigned int>, allocator<list<cSC3ValveLayer::ValveEffect, allocator<cSC3ValveLayer::ValveEffect> > > >	1
+libSimRCI.so	multimap<unsigned int, unsigned int, less<unsigned int>, allocator<unsigned int> >	1
+libSimRCI.so	ostream	39
+libSimRCI.so	out_of_range	2
+libSimRCI.so	overflow_error	2
+libSimRCI.so	pair<unsigned int const, list<cSC3ValveLayer::tOrdEffect, allocator<cSC3ValveLayer::tOrdEffect> > >	2
+libSimRCI.so	pair<unsigned int const, list<cSC3ValveLayer::ValveEffect, allocator<cSC3ValveLayer::ValveEffect> > >	2
+libSimRCI.so	__pointer_type_info	1
+libSimRCI.so	__ptmd_type_info	1
+libSimRCI.so	__ptmf_type_info	1
+libSimRCI.so	RandomIterator	1
+libSimRCI.so	range_error	2
+libSimRCI.so	_Rb_tree<cSC3ZoneLayer::_rzp, pair<cSC3ZoneLayer::_rzp const, unsigned int>, _Select1st<pair<cSC3ZoneLayer::_rzp const, unsigned int> >, less<cSC3ZoneLayer::_rzp>, allocator<unsigned int> >	8
+libSimRCI.so	_Rb_tree<unsigned int, pair<unsigned int const, cISC3Valve *>, _Select1st<pair<unsigned int const, cISC3Valve *> >, less<unsigned int>, allocator<cISC3Valve *> >	6
+libSimRCI.so	_Rb_tree<unsigned int, pair<unsigned int const, cSC3ComZoneDeveloper::tLandUseInfo>, _Select1st<pair<unsigned int const, cSC3ComZoneDeveloper::tLandUseInfo> >, less<unsigned int>, allocator<cSC3ComZoneDeveloper::tLandUseInfo> >	7
+libSimRCI.so	_Rb_tree<unsigned int, pair<unsigned int const, cSC3IndZoneDeveloper::tLandUseInfo>, _Select1st<pair<unsigned int const, cSC3IndZoneDeveloper::tLandUseInfo> >, less<unsigned int>, allocator<cSC3IndZoneDeveloper::tLandUseInfo> >	7
+libSimRCI.so	_Rb_tree<unsigned int, pair<unsigned int const, cSC3LandValueLayer::tCCEffect>, _Select1st<pair<unsigned int const, cSC3LandValueLayer::tCCEffect> >, less<unsigned int>, allocator<cSC3LandValueLayer::tCCEffect> >	6
+libSimRCI.so	_Rb_tree<unsigned int, pair<unsigned int const, cSC3LandValueLayer::tModifier>, _Select1st<pair<unsigned int const, cSC3LandValueLayer::tModifier> >, less<unsigned int>, allocator<cSC3LandValueLayer::tModifier> >	7
+libSimRCI.so	_Rb_tree<unsigned int, pair<unsigned int const, cSC3ResidentialLayer::tEQModStruct>, _Select1st<pair<unsigned int const, cSC3ResidentialLayer::tEQModStruct> >, less<unsigned int>, allocator<cSC3ResidentialLayer::tEQModStruct> >	7
+libSimRCI.so	_Rb_tree<unsigned int, pair<unsigned int const, cSC3ResZoneDeveloper::tLandUseInfo>, _Select1st<pair<unsigned int const, cSC3ResZoneDeveloper::tLandUseInfo> >, less<unsigned int>, allocator<cSC3ResZoneDeveloper::tLandUseInfo> >	7
+libSimRCI.so	_Rb_tree<unsigned int, pair<unsigned int const, cSC3ValveManipulator *>, _Select1st<pair<unsigned int const, cSC3ValveManipulator *> >, less<unsigned int>, allocator<cSC3ValveManipulator *> >	6
+libSimRCI.so	_Rb_tree<unsigned int, pair<unsigned int const, int>, _Select1st<pair<unsigned int const, int> >, less<unsigned int>, allocator<int> >	6
+libSimRCI.so	_Rb_tree<unsigned int, pair<unsigned int const, list<cSC3ValveLayer::tOrdEffect, allocator<cSC3ValveLayer::tOrdEffect> > >, _Select1st<pair<unsigned int const, list<cSC3ValveLayer::tOrdEffect, allocator<cSC3ValveLayer::tOrdEffect> > > >, less<unsigned int>, allocator<list<cSC3ValveLayer::tOrdEffect, allocator<cSC3ValveLayer::tOrdEffect> > > >	6
+libSimRCI.so	_Rb_tree<unsigned int, pair<unsigned int const, list<cSC3ValveLayer::ValveEffect, allocator<cSC3ValveLayer::ValveEffect> > >, _Select1st<pair<unsigned int const, list<cSC3ValveLayer::ValveEffect, allocator<cSC3ValveLayer::ValveEffect> > > >, less<unsigned int>, allocator<list<cSC3ValveLayer::ValveEffect, allocator<cSC3ValveLayer::ValveEffect> > > >	7
+libSimRCI.so	_Rb_tree<unsigned int, pair<unsigned int const, unsigned int>, _Select1st<pair<unsigned int const, unsigned int> >, less<unsigned int>, allocator<unsigned int> >	5
+libSimRCI.so	runtime_error	4
+libSimRCI.so	__si_type_info	3
+libSimRCI.so	streambuf	89
+libSimRCI.so	streammarker	6
+libSimRCI.so	type_info	6
+libSimRCI.so	underflow_error	2
+libSimRCI.so	__user_type_info	3
+libSimRCI.so	vector<cISC3BuildingAttrib *, allocator<cISC3BuildingAttrib *> >	2
+libSimRCI.so	vector<cISC3DeveloperRule *, allocator<cISC3DeveloperRule *> >	1
+libSimRCI.so	vector<cISC3PortAttrib *, allocator<cISC3PortAttrib *> >	2
+libSimRCI.so	vector<cRZCOMDllDirector *, allocator<cRZCOMDllDirector *> >	1
+libSimRCI.so	vector<cSC3AgDeveloperRule::tFamily, allocator<cSC3AgDeveloperRule::tFamily> >	1
+libSimRCI.so	vector<cSC3AirparkDeveloperRule::tFamily, allocator<cSC3AirparkDeveloperRule::tFamily> >	1
+libSimRCI.so	vector<cSC3ComHDDeveloperRule::tFamily, allocator<cSC3ComHDDeveloperRule::tFamily> >	1
+libSimRCI.so	vector<cSC3ComLDDeveloperRule::tFamily, allocator<cSC3ComLDDeveloperRule::tFamily> >	1
+libSimRCI.so	vector<cSC3ComMDDeveloperRule::tFamily, allocator<cSC3ComMDDeveloperRule::tFamily> >	1
+libSimRCI.so	vector<cSC3EstateDeveloperRule::tFamily, allocator<cSC3EstateDeveloperRule::tFamily> >	1
+libSimRCI.so	vector<cSC3HousingProjectDeveloperRule::tFamily, allocator<cSC3HousingProjectDeveloperRule::tFamily> >	1
+libSimRCI.so	vector<cSC3IndHDDeveloperRule::tFamily, allocator<cSC3IndHDDeveloperRule::tFamily> >	1
+libSimRCI.so	vector<cSC3IndLDDeveloperRule::tFamily, allocator<cSC3IndLDDeveloperRule::tFamily> >	1
+libSimRCI.so	vector<cSC3IndMDDeveloperRule::tFamily, allocator<cSC3IndMDDeveloperRule::tFamily> >	1
+libSimRCI.so	vector<cSC3ResHDDeveloperRule::tFamily, allocator<cSC3ResHDDeveloperRule::tFamily> >	1
+libSimRCI.so	vector<cSC3ResLDDeveloperRule::tFamily, allocator<cSC3ResLDDeveloperRule::tFamily> >	1
+libSimRCI.so	vector<cSC3ResMDDeveloperRule::tFamily, allocator<cSC3ResMDDeveloperRule::tFamily> >	1
+libSimRCI.so	vector<cSC3RowHouseDeveloperRule::tFamily, allocator<cSC3RowHouseDeveloperRule::tFamily> >	1
+libSimRCI.so	vector<cSC3RunwayDeveloperRule::tFamily, allocator<cSC3RunwayDeveloperRule::tFamily> >	1
+libSimRCI.so	vector<cSC3SeaportYardDeveloperRule::tFamily, allocator<cSC3SeaportYardDeveloperRule::tFamily> >	1
+libSimRCI.so	vector<cSC3SeawallDeveloperRule::tFamily, allocator<cSC3SeawallDeveloperRule::tFamily> >	1
+libSimRCI.so	vector<unsigned int, allocator<unsigned int> >	1
+libSimRCI.so	vector<unsigned short, allocator<unsigned short> >	1
+libSimServ.so	__array_type_info	1
+libSimServ.so	__attr_type_info	1
+libSimServ.so	bad_alloc	2
+libSimServ.so	bad_cast	2
+libSimServ.so	bad_exception	2
+libSimServ.so	bad_typeid	2
+libSimServ.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	6
+libSimServ.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > & basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	1
+libSimServ.so	__builtin_type_info	1
+libSimServ.so	__class_type_info	3
+libSimServ.so	cRandomIteratorSerializable	1
+libSimServ.so	cRZCellMap<int>	2
+libSimServ.so	cRZCellMap<short>	1
+libSimServ.so	cRZCellMap<unsigned char>	5
+libSimServ.so	cRZCOMDllDirector	27
+libSimServ.so	cSC3BuildingFireStation	23
+libSimServ.so	cSC3BuildingJail	20
+libSimServ.so	cSC3BuildingPoliceStation	23
+libSimServ.so	cSC3CityCellMapSized<int>	18
+libSimServ.so	cSC3CityCellMapSized<short>	19
+libSimServ.so	cSC3CityCellMapSized<unsigned char>	19
+libSimServ.so	cSC3CityCellMap<unsigned char>	19
+libSimServ.so	cSC3CrimeLayer	67
+libSimServ.so	cSC3CrimeMapSprite	3
+libSimServ.so	cSC3DailyFireManipulator	12
+libSimServ.so	cSC3DailyPoliceManipulator	14
+libSimServ.so	cSC3FireLayer	67
+libSimServ.so	cSC3FireMapSprite	4
+libSimServ.so	cSC3FlammabilityLayer	44
+libSimServ.so	cSC3FlammabilityMapSprite	3
+libSimServ.so	cSC3PoliceLayer	71
+libSimServ.so	cSC3PoliceMapSprite	4
+libSimServ.so	cSVCOMDirector	10
+libSimServ.so	__default_alloc_template<true, 0>	2
+libSimServ.so	domain_error	2
+libSimServ.so	exception	3
+libSimServ.so	filebuf	27
+libSimServ.so	__func_type_info	1
+libSimServ.so	invalid_argument	2
+libSimServ.so	_IO_istream_withassign	3
+libSimServ.so	_IO_ostream_withassign	3
+libSimServ.so	ios	39
+libSimServ.so	iostream	3
+libSimServ.so	istream	58
+libSimServ.so	length_error	2
+libSimServ.so	_List_base<cISC3BuildingBudget *, allocator<cISC3BuildingBudget *> >	1
+libSimServ.so	_List_base<cISC3BuildingFireStation *, allocator<cISC3BuildingFireStation *> >	1
+libSimServ.so	_List_base<cISC3BuildingJail *, allocator<cISC3BuildingJail *> >	1
+libSimServ.so	_List_base<cISC3BuildingPoliceStation *, allocator<cISC3BuildingPoliceStation *> >	1
+libSimServ.so	_List_base<cSC3FireLayer::tDispatchInstance, allocator<cSC3FireLayer::tDispatchInstance> >	1
+libSimServ.so	_List_base<cSC3PoliceLayer::tDispatchInstance, allocator<cSC3PoliceLayer::tDispatchInstance> >	1
+libSimServ.so	list<cISC3BuildingBudget *, allocator<cISC3BuildingBudget *> >	1
+libSimServ.so	list<cISC3BuildingFireStation *, allocator<cISC3BuildingFireStation *> >	1
+libSimServ.so	list<cISC3BuildingJail *, allocator<cISC3BuildingJail *> >	1
+libSimServ.so	list<cISC3BuildingPoliceStation *, allocator<cISC3BuildingPoliceStation *> >	1
+libSimServ.so	logic_error	4
+libSimServ.so	__malloc_alloc_template<0>	1
+libSimServ.so	map<unsigned int, cSC3CrimeLayer::_tmod, less<unsigned int>, allocator<cSC3CrimeLayer::_tmod> >	1
+libSimServ.so	ostream	39
+libSimServ.so	out_of_range	2
+libSimServ.so	overflow_error	2
+libSimServ.so	__pointer_type_info	1
+libSimServ.so	__ptmd_type_info	1
+libSimServ.so	__ptmf_type_info	1
+libSimServ.so	RandomIterator	1
+libSimServ.so	range_error	2
+libSimServ.so	_Rb_tree<unsigned int, pair<unsigned int const, cSC3CrimeLayer::_tmod>, _Select1st<pair<unsigned int const, cSC3CrimeLayer::_tmod> >, less<unsigned int>, allocator<cSC3CrimeLayer::_tmod> >	8
+libSimServ.so	runtime_error	4
+libSimServ.so	__si_type_info	3
+libSimServ.so	streambuf	89
+libSimServ.so	streammarker	6
+libSimServ.so	type_info	6
+libSimServ.so	underflow_error	2
+libSimServ.so	__user_type_info	3
+libSimServ.so	vector<cRZCOMDllDirector *, allocator<cRZCOMDllDirector *> >	1
+libSimServ.so	vector<unsigned int, allocator<unsigned int> >	1
+libSimServ.so	vector<unsigned short, allocator<unsigned short> >	1
+libSimSpr.so	__array_type_info	1
+libSimSpr.so	__attr_type_info	1
+libSimSpr.so	bad_alloc	2
+libSimSpr.so	bad_cast	2
+libSimSpr.so	bad_exception	2
+libSimSpr.so	bad_typeid	2
+libSimSpr.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	9
+libSimSpr.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > & basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	1
+libSimSpr.so	__builtin_type_info	1
+libSimSpr.so	cGZBufferColorType	1
+libSimSpr.so	cISC3Pick	2
+libSimSpr.so	__class_type_info	3
+libSimSpr.so	cRZCellMap<bool>	2
+libSimSpr.so	cRZCellMap<unsigned char>	6
+libSimSpr.so	cRZCOMDllDirector	27
+libSimSpr.so	cRZDirectory	1
+libSimSpr.so	cRZDirectoryEntry	1
+libSimSpr.so	cRZHotSpot	1
+libSimSpr.so	cRZLock	1
+libSimSpr.so	cRZTriple<float, float, float>	8
+libSimSpr.so	cRZTriple<int, int, int>	2
+libSimSpr.so	cSC3AcidRainDisplay	22
+libSimSpr.so	cSC3CityCellMap<unsigned char>	18
+libSimSpr.so	cSC3CitySprFrame	2
+libSimSpr.so	cSC3CitySpriteAttrib	41
+libSimSpr.so	cSC3CitySpriteAttribAnim	14
+libSimSpr.so	cSC3CitySpriteAttribFactory	4
+libSimSpr.so	cSC3CitySpriteCellMap	216
+libSimSpr.so	cSC3CitySpriteFire	7
+libSimSpr.so	cSC3CitySpriteImageMgr	25
+libSimSpr.so	cSC3CitySpriteInstAnim	31
+libSimSpr.so	cSC3CitySpriteInstBasic	31
+libSimSpr.so	cSC3CitySpriteInstGenericBuilding	15
+libSimSpr.so	cSC3CitySpriteInstLayered	16
+libSimSpr.so	cSC3CitySpriteInstSloped<-1, 0, 1>	4
+libSimSpr.so	cSC3CitySpriteInstSloped<1, 2, 3>	4
+libSimSpr.so	cSC3CitySpriteInstSloped<-2, 0, 1>	4
+libSimSpr.so	cSC3CitySpriteInstSloped<2, 2, 3>	4
+libSimSpr.so	cSC3CitySpriteInstSpecialFactory	9
+libSimSpr.so	cSC3CitySpriteInstUseCSMTerrain	15
+libSimSpr.so	cSC3CitySpriteInstUseCSMTerrainSloped<-1, 0, 1>	13
+libSimSpr.so	cSC3CitySpriteInstUseCSMTerrainSloped<1, 2, 3>	13
+libSimSpr.so	cSC3CitySpriteInstUseCSMTerrainSloped<-2, 0, 1>	13
+libSimSpr.so	cSC3CitySpriteInstUseCSMTerrainSloped<2, 2, 3>	13
+libSimSpr.so	cSC3CitySpriteManager	94
+libSimSpr.so	cSC3CityViewEffectsOccupant	78
+libSimSpr.so	cSC3CityViewIso	53
+libSimSpr.so	cSC3CloudSprite	8
+libSimSpr.so	cSC3CrimeTest	1
+libSimSpr.so	cSC3DBSegmentSprite	47
+libSimSpr.so	cSC3DeathSpray	14
+libSimSpr.so	cSC3EarthquakeSimulator	12
+libSimSpr.so	cSC3EffectsManager	29
+libSimSpr.so	cSC3EmptyTest	5
+libSimSpr.so	cSC3ExplosionDebrisSimulator	13
+libSimSpr.so	cSC3ExplosionSimulator	20
+libSimSpr.so	cSC3FireSimulator	19
+libSimSpr.so	cSC3FlammabilityTest	1
+libSimSpr.so	cSC3ImageInfo	2
+libSimSpr.so	cSC3LightningSprite	11
+libSimSpr.so	cSC3LocustsGroupSimulator	31
+libSimSpr.so	cSC3LocustsSimulator	34
+libSimSpr.so	cSC3NeighborTileDisplay	18
+libSimSpr.so	cSC3NeighborTileSprite	4
+libSimSpr.so	cSC3NuclearExplosionSimulator	14
+libSimSpr.so	cSC3ObjectShadow	1
+libSimSpr.so	cSC3ParticleSimulator	7
+libSimSpr.so	cSC3PipeTest	1
+libSimSpr.so	cSC3PowerOuttageDisplay	31
+libSimSpr.so	cSC3PowerOuttageDisplaySprite	13
+libSimSpr.so	cSC3PowerTest	1
+libSimSpr.so	cSC3PrecipitationSprite	8
+libSimSpr.so	cSC3RadiationDisplay	15
+libSimSpr.so	cSC3RadiationSprite	3
+libSimSpr.so	cSC3SpaceDebrisDisplay	16
+libSimSpr.so	cSC3SpaceDebrisImpactDisplay	17
+libSimSpr.so	cSC3SubwayTest	1
+libSimSpr.so	cSC3SurfaceTest	3
+libSimSpr.so	cSC3TornadoDebris	5
+libSimSpr.so	cSC3TornadoSimulator	24
+libSimSpr.so	cSC3ToxicCloudDisplay	17
+libSimSpr.so	cSC3ToxicSteamDisplay	12
+libSimSpr.so	cSC3TrafficTest	1
+libSimSpr.so	cSC3TrailingSmoke	14
+libSimSpr.so	cSC3TrajectoryObject	25
+libSimSpr.so	cSC3UFOGroupSimulator	31
+libSimSpr.so	cSC3UFOSimulator	40
+libSimSpr.so	cSC3WaterDebris	15
+libSimSpr.so	cSC3WaterSparkleSprite	34
+libSimSpr.so	cSC3WaterSplashSimulator	13
+libSimSpr.so	cSC3WeatherViewSimulator	36
+libSimSpr.so	cSC3WhirlpoolDebris	18
+libSimSpr.so	cSC3WhirlpoolSimulator	30
+libSimSpr.so	cSC3WinCitySprite	36
+libSimSpr.so	cSC3WinCityView	80
+libSimSpr.so	cSC3WinCityViewCellCursor	31
+libSimSpr.so	cSPCOMDirector	34
+libSimSpr.so	__default_alloc_template<true, 0>	2
+libSimSpr.so	domain_error	2
+libSimSpr.so	exception	3
+libSimSpr.so	FastFixedAllocator	2
+libSimSpr.so	filebuf	27
+libSimSpr.so	__func_type_info	1
+libSimSpr.so	hash_map<cGZResourceKey, cGZDBSegmentIndexedFile::RecordInfo, hash<cGZResourceKey>, equal_to<cGZResourceKey>, allocator<cGZDBSegmentIndexedFile::RecordInfo> >	1
+libSimSpr.so	hash_map<SmallResKey, cSC3ImageInfo *, hash<SmallResKey>, equal_to<SmallResKey>, allocator<cSC3ImageInfo *> >	2
+libSimSpr.so	hash_set<cISC3Occupant *, hash<cISC3Occupant *>, equal_to<cISC3Occupant *>, allocator<cISC3Occupant *> >	1
+libSimSpr.so	hash_set<DynamicSpriteRecord *, hash<DynamicSpriteRecord *>, equal_to<DynamicSpriteRecord *>, allocator<DynamicSpriteRecord *> >	1
+libSimSpr.so	hashtable<cISC3Occupant *, cISC3Occupant *, hash<cISC3Occupant *>, _Identity<cISC3Occupant *>, equal_to<cISC3Occupant *>, allocator<cISC3Occupant *> >	4
+libSimSpr.so	_Hashtable_const_iterator<DynamicSpriteRecord *, DynamicSpriteRecord *, hash<DynamicSpriteRecord *>, _Identity<DynamicSpriteRecord *>, equal_to<DynamicSpriteRecord *>, allocator<DynamicSpriteRecord *> >	1
+libSimSpr.so	hashtable<DynamicSpriteRecord *, DynamicSpriteRecord *, hash<DynamicSpriteRecord *>, _Identity<DynamicSpriteRecord *>, equal_to<DynamicSpriteRecord *>, allocator<DynamicSpriteRecord *> >	4
+libSimSpr.so	_Hashtable_iterator<pair<cGZResourceKey const, cGZDBSegmentIndexedFile::RecordInfo>, cGZResourceKey, hash<cGZResourceKey>, _Select1st<pair<cGZResourceKey const, cGZDBSegmentIndexedFile::RecordInfo> >, equal_to<cGZResourceKey>, allocator<cGZDBSegmentIndexedFile::RecordInfo> >	1
+libSimSpr.so	_Hashtable_iterator<pair<SmallResKey const, cSC3ImageInfo *>, SmallResKey, hash<SmallResKey>, _Select1st<pair<SmallResKey const, cSC3ImageInfo *> >, equal_to<SmallResKey>, allocator<cSC3ImageInfo *> >	1
+libSimSpr.so	hashtable<pair<cGZResourceKey const, cGZDBSegmentIndexedFile::RecordInfo>, cGZResourceKey, hash<cGZResourceKey>, _Select1st<pair<cGZResourceKey const, cGZDBSegmentIndexedFile::RecordInfo> >, equal_to<cGZResourceKey>, allocator<cGZDBSegmentIndexedFile::RecordInfo> >	1
+libSimSpr.so	hashtable<pair<SmallResKey const, cSC3ImageInfo *>, SmallResKey, hash<SmallResKey>, _Select1st<pair<SmallResKey const, cSC3ImageInfo *> >, equal_to<SmallResKey>, allocator<cSC3ImageInfo *> >	4
+libSimSpr.so	invalid_argument	2
+libSimSpr.so	_IO_istream_withassign	3
+libSimSpr.so	_IO_ostream_withassign	3
+libSimSpr.so	ios	39
+libSimSpr.so	iostream	3
+libSimSpr.so	istream	58
+libSimSpr.so	LandModificationChangeDetector	4
+libSimSpr.so	length_error	2
+libSimSpr.so	LightParticle	11
+libSimSpr.so	LightParticleSprite	22
+libSimSpr.so	LinearRandomIterator	1
+libSimSpr.so	_List_base<cGZMessage, allocator<cGZMessage> >	1
+libSimSpr.so	_List_base<cISC3Occupant *, allocator<cISC3Occupant *> >	1
+libSimSpr.so	_List_base<cRZDirectoryEntry, allocator<cRZDirectoryEntry> >	1
+libSimSpr.so	_List_base<cRZString, allocator<cRZString> >	1
+libSimSpr.so	_List_base<cSC3DBSegmentSprite *, allocator<cSC3DBSegmentSprite *> >	1
+libSimSpr.so	_List_base<cSC3LocustsSimulator::InstructionData, allocator<cSC3LocustsSimulator::InstructionData> >	1
+libSimSpr.so	_List_base<cSC3UFOSimulator::InstructionData, allocator<cSC3UFOSimulator::InstructionData> >	1
+libSimSpr.so	_List_base<cSC3WhirlpoolSimulator::AbductedObject, allocator<cSC3WhirlpoolSimulator::AbductedObject> >	1
+libSimSpr.so	_List_base<LightParticle *, allocator<LightParticle *> >	1
+libSimSpr.so	_List_base<MatrixCell<cSC3CitySpriteInstBasic *>, allocator<MatrixCell<cSC3CitySpriteInstBasic *> > >	1
+libSimSpr.so	_List_base<MatrixCell<cSC3NeighborTileSprite *>, allocator<MatrixCell<cSC3NeighborTileSprite *> > >	1
+libSimSpr.so	_List_base<MatrixCell<cSC3PowerOuttageDisplay::OSAssociation>, allocator<MatrixCell<cSC3PowerOuttageDisplay::OSAssociation> > >	1
+libSimSpr.so	_List_base<MatrixRow<cSC3CitySpriteInstBasic *>, allocator<MatrixRow<cSC3CitySpriteInstBasic *> > >	1
+libSimSpr.so	_List_base<MatrixRow<cSC3NeighborTileSprite *>, allocator<MatrixRow<cSC3NeighborTileSprite *> > >	1
+libSimSpr.so	_List_base<MatrixRow<cSC3PowerOuttageDisplay::OSAssociation>, allocator<MatrixRow<cSC3PowerOuttageDisplay::OSAssociation> > >	1
+libSimSpr.so	_List_base<pair<cRZString, hash_map<SmallResKey, cSC3ImageInfo *, hash<SmallResKey>, equal_to<SmallResKey>, allocator<cSC3ImageInfo *> > >, allocator<pair<cRZString, hash_map<SmallResKey, cSC3ImageInfo *, hash<SmallResKey>, equal_to<SmallResKey>, allocator<cSC3ImageInfo *> > > > >	1
+libSimSpr.so	list<cGZMessage, allocator<cGZMessage> >	1
+libSimSpr.so	list<cRZString, allocator<cRZString> >	1
+libSimSpr.so	list<cSC3DBSegmentSprite *, allocator<cSC3DBSegmentSprite *> >	2
+libSimSpr.so	list<LightParticle *, allocator<LightParticle *> >	2
+libSimSpr.so	list<pair<cRZString, hash_map<SmallResKey, cSC3ImageInfo *, hash<SmallResKey>, equal_to<SmallResKey>, allocator<cSC3ImageInfo *> > >, allocator<pair<cRZString, hash_map<SmallResKey, cSC3ImageInfo *, hash<SmallResKey>, equal_to<SmallResKey>, allocator<cSC3ImageInfo *> > > > >	1
+libSimSpr.so	logic_error	4
+libSimSpr.so	__malloc_alloc_template<0>	1
+libSimSpr.so	MatrixRow<cSC3CitySpriteInstBasic *>	2
+libSimSpr.so	MatrixRow<cSC3NeighborTileSprite *>	2
+libSimSpr.so	MatrixRow<cSC3PowerOuttageDisplay::OSAssociation>	2
+libSimSpr.so	ostream	39
+libSimSpr.so	out_of_range	2
+libSimSpr.so	overflow_error	2
+libSimSpr.so	pair<cRZString, hash_map<SmallResKey, cSC3ImageInfo *, hash<SmallResKey>, equal_to<SmallResKey>, allocator<cSC3ImageInfo *> > >	2
+libSimSpr.so	ParticleBlastGenerator	3
+libSimSpr.so	__pointer_type_info	1
+libSimSpr.so	__ptmd_type_info	1
+libSimSpr.so	__ptmf_type_info	1
+libSimSpr.so	RandomIterator	1
+libSimSpr.so	range_error	2
+libSimSpr.so	_Rb_tree<cSC3TrajectoryObject *, cSC3TrajectoryObject *, _Identity<cSC3TrajectoryObject *>, less<cSC3TrajectoryObject *>, allocator<cSC3TrajectoryObject *> >	5
+libSimSpr.so	runtime_error	4
+libSimSpr.so	sAnimMachine	2
+libSimSpr.so	set<cSC3TrajectoryObject *, less<cSC3TrajectoryObject *>, allocator<cSC3TrajectoryObject *> >	1
+libSimSpr.so	__si_type_info	3
+libSimSpr.so	SpiralIterator	3
+libSimSpr.so	streambuf	89
+libSimSpr.so	streammarker	6
+libSimSpr.so	type_info	6
+libSimSpr.so	underflow_error	2
+libSimSpr.so	__user_type_info	3
+libSimSpr.so	vector<cISC3LocustsSimulator *, allocator<cISC3LocustsSimulator *> >	1
+libSimSpr.so	vector<cISC3Pick::SelectedItem, allocator<cISC3Pick::SelectedItem> >	1
+libSimSpr.so	vector<cISC3UFOSimulator *, allocator<cISC3UFOSimulator *> >	1
+libSimSpr.so	vector<cRZ3DPointUint32, allocator<cRZ3DPointUint32> >	1
+libSimSpr.so	vector<cRZCOMDllDirector *, allocator<cRZCOMDllDirector *> >	1
+libSimSpr.so	vector<cRZPoint, allocator<cRZPoint> >	1
+libSimSpr.so	vector<cRZRect, __default_alloc_template<true, 0> >	1
+libSimSpr.so	vector<cRZString, allocator<cRZString> >	1
+libSimSpr.so	vector<cSC3CityCoord, allocator<cSC3CityCoord> >	1
+libSimSpr.so	vector<cSC3CitySpriteCellMap::BackgroundOpInfo, allocator<cSC3CitySpriteCellMap::BackgroundOpInfo> >	1
+libSimSpr.so	vector<cSC3CitySpriteCellMap::CellListEntry, allocator<cSC3CitySpriteCellMap::CellListEntry> >	1
+libSimSpr.so	vector<cSC3CitySpriteCellMap::DirtyRect, __default_alloc_template<true, 0> >	1
+libSimSpr.so	vector<cSC3CitySpriteCellMap::DisplayListEntry, __default_alloc_template<true, 0> >	1
+libSimSpr.so	vector<cSC3CitySpriteCellMap::OverlayBufferAssociation, allocator<cSC3CitySpriteCellMap::OverlayBufferAssociation> >	1
+libSimSpr.so	vector<cSC3CloudSprite *, allocator<cSC3CloudSprite *> >	1
+libSimSpr.so	vector<cSC3LocustsSimulator::tBigLocustInstance, allocator<cSC3LocustsSimulator::tBigLocustInstance> >	1
+libSimSpr.so	vector<cSC3PowerOuttageDisplaySprite *, allocator<cSC3PowerOuttageDisplaySprite *> >	2
+libSimSpr.so	vector<_Hashtable_node<cISC3Occupant *> *, allocator<cISC3Occupant *> >	1
+libSimSpr.so	vector<_Hashtable_node<DynamicSpriteRecord *> *, allocator<DynamicSpriteRecord *> >	1
+libSimSpr.so	vector<_Hashtable_node<pair<SmallResKey const, cSC3ImageInfo *> > *, allocator<cSC3ImageInfo *> >	1
+libSimSpr.so	vector<int, allocator<int> >	1
+libSimSpr.so	vector<LightParticle *, allocator<LightParticle *> >	1
+libSimSpr.so	VectorPlus<cRZRect, __default_alloc_template<true, 0> >	2
+libSimSpr.so	VectorPlus<cSC3CitySpriteCellMap::DirtyRect, __default_alloc_template<true, 0> >	2
+libSimSpr.so	VectorPlus<cSC3CitySpriteCellMap::DisplayListEntry, __default_alloc_template<true, 0> >	2
+libSimSpr.so	VectorPlus<unsigned int, __default_alloc_template<true, 0> >	2
+libSimSpr.so	vector<sDSpriteInfo *, allocator<sDSpriteInfo *> >	1
+libSimSpr.so	vector<sScriptAnimSchedule *, allocator<sScriptAnimSchedule *> >	1
+libSimSpr.so	vector<sSScriptOP *, allocator<sSScriptOP *> >	1
+libSimSpr.so	vector<unsigned int, allocator<unsigned int> >	2
+libSimSpr.so	vector<unsigned int, __default_alloc_template<true, 0> >	1
+libSimSpr.so	vector<unsigned short, allocator<unsigned short> >	1
+libSimSpr.so	vector<vector<sSScriptOP *, allocator<sSScriptOP *> > *, allocator<vector<sSScriptOP *, allocator<sSScriptOP *> > *> >	1
+libSimSpr.so	ViewChangeDetector	4
+libSimTransit.so	__array_type_info	1
+libSimTransit.so	__attr_type_info	1
+libSimTransit.so	bad_alloc	2
+libSimTransit.so	bad_cast	2
+libSimTransit.so	bad_exception	2
+libSimTransit.so	bad_typeid	2
+libSimTransit.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	7
+libSimTransit.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > & basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	1
+libSimTransit.so	__builtin_type_info	1
+libSimTransit.so	__class_type_info	3
+libSimTransit.so	cRZCellMap<bool>	2
+libSimTransit.so	cRZCellMap<unsigned char>	6
+libSimTransit.so	cRZCellMap<unsigned short>	4
+libSimTransit.so	cRZCOMDllDirector	27
+libSimTransit.so	cSC3TransitBuilding	25
+libSimTransit.so	cSC3TransitBuildingBusStop	3
+libSimTransit.so	cSC3TransitBuildingRailStation	3
+libSimTransit.so	cSC3TransitBuildingSubwayRailStation	6
+libSimTransit.so	cSC3TransitBuildingSubwayStation	6
+libSimTransit.so	cSTBuildingTrafficMonthly	11
+libSimTransit.so	cSTCOMDirector	8
+libSimTransit.so	cSTTrafficLayer	90
+libSimTransit.so	cSTTrafficLayerMonthlyAlgo	11
+libSimTransit.so	cSTTrafficMapSprite	4
+libSimTransit.so	__default_alloc_template<true, 0>	2
+libSimTransit.so	_Deque_base<cSTTrafficLayer::cTripData, allocator<cSTTrafficLayer::cTripData>, 0>	4
+libSimTransit.so	deque<cSTTrafficLayer::cTripData, allocator<cSTTrafficLayer::cTripData>, 0>	3
+libSimTransit.so	domain_error	2
+libSimTransit.so	exception	3
+libSimTransit.so	filebuf	27
+libSimTransit.so	__func_type_info	1
+libSimTransit.so	invalid_argument	2
+libSimTransit.so	_IO_istream_withassign	3
+libSimTransit.so	_IO_ostream_withassign	3
+libSimTransit.so	ios	39
+libSimTransit.so	iostream	3
+libSimTransit.so	istream	58
+libSimTransit.so	length_error	2
+libSimTransit.so	_List_base<cISC3BuildingBudget *, allocator<cISC3BuildingBudget *> >	1
+libSimTransit.so	list<cISC3BuildingBudget *, allocator<cISC3BuildingBudget *> >	1
+libSimTransit.so	logic_error	4
+libSimTransit.so	__malloc_alloc_template<0>	1
+libSimTransit.so	ostream	39
+libSimTransit.so	out_of_range	2
+libSimTransit.so	overflow_error	2
+libSimTransit.so	__pointer_type_info	1
+libSimTransit.so	__ptmd_type_info	1
+libSimTransit.so	__ptmf_type_info	1
+libSimTransit.so	RandomIterator	1
+libSimTransit.so	range_error	2
+libSimTransit.so	runtime_error	4
+libSimTransit.so	__si_type_info	3
+libSimTransit.so	stack<cSTTrafficLayer::cTripData, deque<cSTTrafficLayer::cTripData, allocator<cSTTrafficLayer::cTripData>, 0> >	1
+libSimTransit.so	streambuf	89
+libSimTransit.so	streammarker	6
+libSimTransit.so	type_info	6
+libSimTransit.so	underflow_error	2
+libSimTransit.so	__user_type_info	3
+libSimTransit.so	vector<cRZCOMDllDirector *, allocator<cRZCOMDllDirector *> >	1
+libSimTransit.so	vector<unsigned int, allocator<unsigned int> >	1
+libSimTransit.so	vector<unsigned short, allocator<unsigned short> >	1
+libSimUI.so	__array_type_info	1
+libSimUI.so	__attr_type_info	1
+libSimUI.so	bad_alloc	2
+libSimUI.so	bad_cast	2
+libSimUI.so	bad_exception	2
+libSimUI.so	bad_typeid	2
+libSimUI.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	10
+libSimUI.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > & basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	1
+libSimUI.so	__builtin_type_info	1
+libSimUI.so	cGZBufferColorType	1
+libSimUI.so	cGZWinLineInputWIExtra	6
+libSimUI.so	__class_type_info	3
+libSimUI.so	cRZCOMDllDirector	27
+libSimUI.so	cRZDirectory	1
+libSimUI.so	cRZDirectoryEntry	1
+libSimUI.so	cRZEllipsizer	3
+libSimUI.so	cRZLock	1
+libSimUI.so	cRZPath	1
+libSimUI.so	cRZTime	3
+libSimUI.so	cSC3AdvDlgMain	20
+libSimUI.so	cSC3AdvDlgMgr	29
+libSimUI.so	cSC3AdvDlgTopic	18
+libSimUI.so	cSC3AdvMsgBox	16
+libSimUI.so	cSC3BATReplacementShared	10
+libSimUI.so	cSC3Catalog	12
+libSimUI.so	cSC3CatalogEntry	16
+libSimUI.so	cSC3CatalogEntryField	7
+libSimUI.so	cSC3CatalogIterator	9
+libSimUI.so	cSC3CmdAdvisorDlg	3
+libSimUI.so	cSC3CmdBuildingReplacementMgrDialog	6
+libSimUI.so	cSC3CmdCityImageThumbnail	14
+libSimUI.so	cSC3CmdCityImageThumbnail_Bulk	6
+libSimUI.so	cSC3CmdEditOverRidesDialog	5
+libSimUI.so	cSC3CmdGameSpeed	3
+libSimUI.so	cSC3CmdMapView	3
+libSimUI.so	cSC3CmdMsgBox	7
+libSimUI.so	cSC3CmdOptsPrefsDialog	3
+libSimUI.so	cSC3CmdPerformQuery	5
+libSimUI.so	cSC3CmdProgress	8
+libSimUI.so	cSC3CmdReplaceBuildingDialog	5
+libSimUI.so	cSC3CmdSCNProgressDlg	3
+libSimUI.so	cSC3CmdSelectABuilding	5
+libSimUI.so	cSC3CmdSelectCityScheme	20
+libSimUI.so	cSC3CmdSimUIFactory	2
+libSimUI.so	cSC3CmdWinBusinessDeals	4
+libSimUI.so	cSC3CmdWinLayers	4
+libSimUI.so	cSC3CmdWinNeighbor	3
+libSimUI.so	cSC3CmdWinTipOfTheDay	4
+libSimUI.so	cSC3CtrlCreator	30
+libSimUI.so	cSC3FixedBtnOptGrp	17
+libSimUI.so	cSC3MainUIMgr	13
+libSimUI.so	cSC3MeetMenu	17
+libSimUI.so	cSC3MenuBtnDef	9
+libSimUI.so	cSC3MenuDesc	13
+libSimUI.so	cSC3MenuItemInfo	16
+libSimUI.so	cSC3MenuMgr	29
+libSimUI.so	cSC3MenuSet	13
+libSimUI.so	cSC3NavCurrentViewMapSprite	4
+libSimUI.so	cSC3OccDataToStringPairDisp	3
+libSimUI.so	cSC3OptionsPreferencesWindow	33
+libSimUI.so	cSC3OrdDlg	19
+libSimUI.so	cSC3PetDlg	14
+libSimUI.so	cSC3StringTokenData	1
+libSimUI.so	cSC3WinAdvBtn	25
+libSimUI.so	cSC3WinAdvOrd	21
+libSimUI.so	cSC3WinBudgetSlider	27
+libSimUI.so	cSC3WinBusinessDeals	18
+libSimUI.so	cSC3WinChartsView	33
+libSimUI.so	cSC3WinChatAllUsers	17
+libSimUI.so	cSC3WinChatControls	17
+libSimUI.so	cSC3WinChatCreateRoom	19
+libSimUI.so	cSC3WinChatFriends	25
+libSimUI.so	cSC3WinChatGeneral	33
+libSimUI.so	cSC3WinChatLarge	30
+libSimUI.so	cSC3WinChatMedium	31
+libSimUI.so	cSC3WinChatPrivateMessage	16
+libSimUI.so	cSC3WinChatRoomProperties	17
+libSimUI.so	cSC3WinChatSmall	30
+libSimUI.so	cSC3WinDateCashTitle	24
+libSimUI.so	cSC3WinGen	52
+libSimUI.so	cSC3WinGenTitleBar	16
+libSimUI.so	cSC3WinGraphsView	28
+libSimUI.so	cSC3WinInternetConfig	14
+libSimUI.so	cSC3WinInternetDialup	14
+libSimUI.so	cSC3WinLayers	36
+libSimUI.so	cSC3WinMapCtrl	68
+libSimUI.so	cSC3WinMapCtrlFilter_IGZBuffer	19
+libSimUI.so	cSC3WinMapCtrlFilter_SC3MapSpr	19
+libSimUI.so	cSC3WinMapsAndGraphs	44
+libSimUI.so	cSC3WinMapsAndGraphsView	35
+libSimUI.so	cSC3WinMapView	49
+libSimUI.so	cSC3WinMapView_Aura	2
+libSimUI.so	cSC3WinMapView_Crime	2
+libSimUI.so	cSC3WinMapView_Flammability	2
+libSimUI.so	cSC3WinMapView_LandValue	2
+libSimUI.so	cSC3WinMapView_Pollution	2
+libSimUI.so	cSC3WinMapView_Population	2
+libSimUI.so	cSC3WinMapView_Power	2
+libSimUI.so	cSC3WinMapView_Traffic	2
+libSimUI.so	cSC3WinMapView_WaterSupply	2
+libSimUI.so	cSC3WinMapView_Zone	2
+libSimUI.so	cSC3WinMenuBtn	25
+libSimUI.so	cSC3WinMenuBtnLevel2	10
+libSimUI.so	cSC3WinMenuBtnLevelX	10
+libSimUI.so	cSC3WinMenuBtnMain	13
+libSimUI.so	cSC3WinMenuPanel	31
+libSimUI.so	cSC3WinMenuPanelLevel2	4
+libSimUI.so	cSC3WinMenuPanelLevelX	11
+libSimUI.so	cSC3WinMenuPanelMain	11
+libSimUI.so	cSC3WinMinMaxBtn	27
+libSimUI.so	cSC3WinNav	28
+libSimUI.so	cSC3WinNeighbor	55
+libSimUI.so	cSC3WinNorthIndicator	7
+libSimUI.so	cSC3WinOrdList	31
+libSimUI.so	cSC3WinPauseToggle	8
+libSimUI.so	cSC3WinPauseToggle_Pause	5
+libSimUI.so	cSC3WinPauseToggle_Play	5
+libSimUI.so	cSC3WinPeekBuilding	23
+libSimUI.so	cSC3WinProc	21
+libSimUI.so	cSC3WinProcBuildingReplacementMgr	35
+libSimUI.so	cSC3WinProcCityScheme	32
+libSimUI.so	cSC3WinProcEditOverRidesDialog	35
+libSimUI.so	cSC3WinProcMinMax	11
+libSimUI.so	cSC3WinProcMsgBox	24
+libSimUI.so	cSC3WinProcReplaceBuildingDialog	24
+libSimUI.so	cSC3WinProcTerrEdit	21
+libSimUI.so	cSC3WinProgress	15
+libSimUI.so	cSC3WinQuery	62
+libSimUI.so	cSC3WinQueryListView	29
+libSimUI.so	cSC3WinRCI	19
+libSimUI.so	cSC3WinSelectABuilding	21
+libSimUI.so	cSC3WinSlides	24
+libSimUI.so	cSC3WinSlidesOnly	20
+libSimUI.so	cSC3WinSpeed	10
+libSimUI.so	cSC3WinStringPairDisp	28
+libSimUI.so	cSC3WinTerrConfig	23
+libSimUI.so	cSC3WinTipOfTheDay	20
+libSimUI.so	cSC3WinTransfer	23
+libSimUI.so	cSC3WinTransferProgress	2
+libSimUI.so	cSC3WinTransferRequest	18
+libSimUI.so	cSC3WinUserInput	19
+libSimUI.so	cSC3WPRBDInstanceData	2
+libSimUI.so	cStringPair	2
+libSimUI.so	cSUICOMDirector	18
+libSimUI.so	cWinListBoxCursorEvent	15
+libSimUI.so	cWinListBoxInfoCursorEvent	18
+libSimUI.so	cWinListBoxIRC	10
+libSimUI.so	__default_alloc_template<true, 0>	2
+libSimUI.so	domain_error	2
+libSimUI.so	EditBATBldgListSettings	2
+libSimUI.so	exception	3
+libSimUI.so	filebuf	27
+libSimUI.so	__func_type_info	1
+libSimUI.so	invalid_argument	2
+libSimUI.so	_IO_istream_withassign	3
+libSimUI.so	_IO_ostream_withassign	3
+libSimUI.so	ios	39
+libSimUI.so	iostream	3
+libSimUI.so	IRCUserInfo	1
+libSimUI.so	istream	58
+libSimUI.so	length_error	2
+libSimUI.so	LineGraphSeriesInfo	1
+libSimUI.so	_List_base<cGZDisplayMetrics, allocator<cGZDisplayMetrics> >	1
+libSimUI.so	_List_base<cISC3WinMapCtrlFilter *, allocator<cISC3WinMapCtrlFilter *> >	1
+libSimUI.so	_List_base<cRZDirectory::DriveType, allocator<cRZDirectory::DriveType> >	1
+libSimUI.so	_List_base<cRZDirectoryEntry, allocator<cRZDirectoryEntry> >	1
+libSimUI.so	_List_base<cRZString, allocator<cRZString> >	1
+libSimUI.so	_List_base<cSC3WinAdvOrd::tOrdLine *, allocator<cSC3WinAdvOrd::tOrdLine *> >	1
+libSimUI.so	_List_base<cSC3WinMenuBtn *, allocator<cSC3WinMenuBtn *> >	1
+libSimUI.so	_List_base<IRCUserInfo, allocator<IRCUserInfo> >	1
+libSimUI.so	_List_base<pair<unsigned int, cIGZPalette *>, allocator<pair<unsigned int, cIGZPalette *> > >	1
+libSimUI.so	_List_base<pair<unsigned int, pair<cIGZString *, cIGZString *> >, allocator<pair<unsigned int, pair<cIGZString *, cIGZString *> > > >	1
+libSimUI.so	_List_base<unsigned int, allocator<unsigned int> >	1
+libSimUI.so	list<cISC3WinMapCtrlFilter *, allocator<cISC3WinMapCtrlFilter *> >	1
+libSimUI.so	list<cRZString, allocator<cRZString> >	3
+libSimUI.so	list<cSC3WinMenuBtn *, allocator<cSC3WinMenuBtn *> >	1
+libSimUI.so	list<pair<unsigned int, cIGZPalette *>, allocator<pair<unsigned int, cIGZPalette *> > >	1
+libSimUI.so	list<unsigned int, allocator<unsigned int> >	1
+libSimUI.so	logic_error	4
+libSimUI.so	__malloc_alloc_template<0>	1
+libSimUI.so	map<unsigned int, bool, less<unsigned int>, allocator<bool> >	1
+libSimUI.so	map<unsigned int, cIGZBuffer *, less<unsigned int>, allocator<cIGZBuffer *> >	1
+libSimUI.so	map<unsigned int, cISC3CatalogEntryField *, less<unsigned int>, allocator<cISC3CatalogEntryField *> >	1
+libSimUI.so	map<unsigned int, cISC3MenuBtnDef *, less<unsigned int>, allocator<cISC3MenuBtnDef *> >	1
+libSimUI.so	map<unsigned int, cISC3MenuDesc *, less<unsigned int>, allocator<cISC3MenuDesc *> >	1
+libSimUI.so	map<unsigned int, cISC3MenuItemInfo *, less<unsigned int>, allocator<cISC3MenuItemInfo *> >	1
+libSimUI.so	map<unsigned int, cISC3MenuSet *, less<unsigned int>, allocator<cISC3MenuSet *> >	1
+libSimUI.so	map<unsigned int, cSC3WinNeighbor::_neighbor *, less<unsigned int>, allocator<cSC3WinNeighbor::_neighbor *> >	1
+libSimUI.so	map<unsigned int, unsigned int, less<unsigned int>, allocator<unsigned int> >	1
+libSimUI.so	ostream	39
+libSimUI.so	out_of_range	2
+libSimUI.so	overflow_error	2
+libSimUI.so	__pointer_type_info	1
+libSimUI.so	__ptmd_type_info	1
+libSimUI.so	__ptmf_type_info	1
+libSimUI.so	range_error	2
+libSimUI.so	_Rb_tree<unsigned int, pair<unsigned int const, bool>, _Select1st<pair<unsigned int const, bool> >, less<unsigned int>, allocator<bool> >	5
+libSimUI.so	_Rb_tree<unsigned int, pair<unsigned int const, cIGZBuffer *>, _Select1st<pair<unsigned int const, cIGZBuffer *> >, less<unsigned int>, allocator<cIGZBuffer *> >	5
+libSimUI.so	_Rb_tree<unsigned int, pair<unsigned int const, cISC3CatalogEntryField *>, _Select1st<pair<unsigned int const, cISC3CatalogEntryField *> >, less<unsigned int>, allocator<cISC3CatalogEntryField *> >	5
+libSimUI.so	_Rb_tree<unsigned int, pair<unsigned int const, cISC3MenuBtnDef *>, _Select1st<pair<unsigned int const, cISC3MenuBtnDef *> >, less<unsigned int>, allocator<cISC3MenuBtnDef *> >	4
+libSimUI.so	_Rb_tree<unsigned int, pair<unsigned int const, cISC3MenuDesc *>, _Select1st<pair<unsigned int const, cISC3MenuDesc *> >, less<unsigned int>, allocator<cISC3MenuDesc *> >	4
+libSimUI.so	_Rb_tree<unsigned int, pair<unsigned int const, cISC3MenuItemInfo *>, _Select1st<pair<unsigned int const, cISC3MenuItemInfo *> >, less<unsigned int>, allocator<cISC3MenuItemInfo *> >	4
+libSimUI.so	_Rb_tree<unsigned int, pair<unsigned int const, cISC3MenuSet *>, _Select1st<pair<unsigned int const, cISC3MenuSet *> >, less<unsigned int>, allocator<cISC3MenuSet *> >	4
+libSimUI.so	_Rb_tree<unsigned int, pair<unsigned int const, cSC3WinNeighbor::_neighbor *>, _Select1st<pair<unsigned int const, cSC3WinNeighbor::_neighbor *> >, less<unsigned int>, allocator<cSC3WinNeighbor::_neighbor *> >	5
+libSimUI.so	_Rb_tree<unsigned int, pair<unsigned int const, unsigned int>, _Select1st<pair<unsigned int const, unsigned int> >, less<unsigned int>, allocator<unsigned int> >	5
+libSimUI.so	_Rb_tree<unsigned int, unsigned int, _Identity<unsigned int>, less<unsigned int>, allocator<unsigned int> >	4
+libSimUI.so	runtime_error	4
+libSimUI.so	RZ	1
+libSimUI.so	set<unsigned int, less<unsigned int>, allocator<unsigned int> >	1
+libSimUI.so	__si_type_info	3
+libSimUI.so	streambuf	89
+libSimUI.so	streammarker	6
+libSimUI.so	TransferInfo	1
+libSimUI.so	tSectionInfo	2
+libSimUI.so	type_info	6
+libSimUI.so	underflow_error	2
+libSimUI.so	__user_type_info	3
+libSimUI.so	vector<cGZResourceKey, allocator<cGZResourceKey> >	1
+libSimUI.so	vector<cISC3CatalogEntry *, allocator<cISC3CatalogEntry *> >	1
+libSimUI.so	vector<cISC3MapSprite *, allocator<cISC3MapSprite *> >	1
+libSimUI.so	vector<cISC3WinMapsAndGraphsView *, allocator<cISC3WinMapsAndGraphsView *> >	1
+libSimUI.so	vector<cISC3WinQueryView *, allocator<cISC3WinQueryView *> >	1
+libSimUI.so	vector<cRZCOMDllDirector *, allocator<cRZCOMDllDirector *> >	1
+libSimUI.so	vector<cRZString, allocator<cRZString> >	1
+libSimUI.so	vector<cSC3OptionsPreferencesWindow::videoResolutionEntry, allocator<cSC3OptionsPreferencesWindow::videoResolutionEntry> >	1
+libSimUI.so	vector<cSC3WinGraphsView::tLineData, allocator<cSC3WinGraphsView::tLineData> >	1
+libSimUI.so	vector<cSC3WinNeighbor::_deal, allocator<cSC3WinNeighbor::_deal> >	1
+libSimUI.so	vector<cSC3WinProcBuildingReplacementMgr::tOccAttribInfo, allocator<cSC3WinProcBuildingReplacementMgr::tOccAttribInfo> >	1
+libSimUI.so	vector<cSC3WinProcEditOverRidesDialog::mBuildingInfo *, allocator<cSC3WinProcEditOverRidesDialog::mBuildingInfo *> >	1
+libSimUI.so	vector<cSC3WinSlidesOnly::tSlideInfo, allocator<cSC3WinSlidesOnly::tSlideInfo> >	1
+libSimUI.so	vector<float, allocator<float> >	1
+libSimUI.so	vector<pair<unsigned int, cIGZPalette *>, allocator<pair<unsigned int, cIGZPalette *> > >	1
+libSimUI.so	vector<unsigned int, allocator<unsigned int> >	1
+libSimUtil.so	__array_type_info	1
+libSimUtil.so	__attr_type_info	1
+libSimUtil.so	bad_alloc	2
+libSimUtil.so	bad_cast	2
+libSimUtil.so	bad_exception	2
+libSimUtil.so	bad_typeid	2
+libSimUtil.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	6
+libSimUtil.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > & basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	1
+libSimUtil.so	__builtin_type_info	1
+libSimUtil.so	__class_type_info	3
+libSimUtil.so	cRZCellMap<bool>	2
+libSimUtil.so	cRZCOMDllDirector	27
+libSimUtil.so	cSC3BuildingWaterTreatment	35
+libSimUtil.so	cSC3CityCellMap<bool>	18
+libSimUtil.so	cSC3CoalPowerPlant	4
+libSimUtil.so	cSC3FusionPowerPlant	4
+libSimUtil.so	cSC3GasPowerPlant	4
+libSimUtil.so	cSC3MicroWavePowerPlant	4
+libSimUtil.so	cSC3NuclearPowerPlant	5
+libSimUtil.so	cSC3OilPowerPlant	4
+libSimUtil.so	cSC3PlumbingBuilding	38
+libSimUtil.so	cSC3PlumbingBuildingAnim	38
+libSimUtil.so	cSC3PlumbingBuildingDesalPlant	3
+libSimUtil.so	cSC3PlumbingBuildingWaterPump	2
+libSimUtil.so	cSC3PlumbingBuildingWaterTower	2
+libSimUtil.so	cSC3PowerBuilding	20
+libSimUtil.so	cSC3PowerBuildingAnim	20
+libSimUtil.so	cSC3PowerLayer	87
+libSimUtil.so	cSC3PowerManipulator	10
+libSimUtil.so	cSC3PowerMapSprite	3
+libSimUtil.so	cSC3PowerPlant	36
+libSimUtil.so	cSC3SolarPowerPlant	4
+libSimUtil.so	cSC3WastePowerPlant	29
+libSimUtil.so	cSC3WindPowerPlant	5
+libSimUtil.so	cSUCOMDirector	18
+libSimUtil.so	cSUPlumbingLayer	79
+libSimUtil.so	cSUPlumbingLayerManipulatorBase	10
+libSimUtil.so	cSUPlumbingLayerMonthlyManipulator	2
+libSimUtil.so	cSUPlumbingMapSprite	3
+libSimUtil.so	__default_alloc_template<true, 0>	2
+libSimUtil.so	domain_error	2
+libSimUtil.so	exception	3
+libSimUtil.so	filebuf	27
+libSimUtil.so	__func_type_info	1
+libSimUtil.so	invalid_argument	2
+libSimUtil.so	_IO_istream_withassign	3
+libSimUtil.so	_IO_ostream_withassign	3
+libSimUtil.so	ios	39
+libSimUtil.so	iostream	3
+libSimUtil.so	istream	58
+libSimUtil.so	length_error	2
+libSimUtil.so	_List_base<cSC3PowerLayer::tNeighborLink, allocator<cSC3PowerLayer::tNeighborLink> >	1
+libSimUtil.so	_List_base<cSC3PowerLayer::tPowerPlantNode, allocator<cSC3PowerLayer::tPowerPlantNode> >	1
+libSimUtil.so	_List_base<cSUPlumbingLayer::SUPumps, allocator<cSUPlumbingLayer::SUPumps> >	1
+libSimUtil.so	list<cSC3PowerLayer::tPowerPlantNode, allocator<cSC3PowerLayer::tPowerPlantNode> >	1
+libSimUtil.so	list<cSUPlumbingLayer::SUPumps, allocator<cSUPlumbingLayer::SUPumps> >	1
+libSimUtil.so	logic_error	4
+libSimUtil.so	__malloc_alloc_template<0>	1
+libSimUtil.so	map<unsigned int, unsigned int, less<unsigned int>, allocator<unsigned int> >	1
+libSimUtil.so	ostream	39
+libSimUtil.so	out_of_range	2
+libSimUtil.so	overflow_error	2
+libSimUtil.so	__pointer_type_info	1
+libSimUtil.so	__ptmd_type_info	1
+libSimUtil.so	__ptmf_type_info	1
+libSimUtil.so	range_error	2
+libSimUtil.so	_Rb_tree<unsigned int, pair<unsigned int const, unsigned int>, _Select1st<pair<unsigned int const, unsigned int> >, less<unsigned int>, allocator<unsigned int> >	6
+libSimUtil.so	runtime_error	4
+libSimUtil.so	__si_type_info	3
+libSimUtil.so	streambuf	89
+libSimUtil.so	streammarker	6
+libSimUtil.so	type_info	6
+libSimUtil.so	underflow_error	2
+libSimUtil.so	__user_type_info	3
+libSimUtil.so	vector<cRZCOMDllDirector *, allocator<cRZCOMDllDirector *> >	1
+libSimVariables.so	__array_type_info	1
+libSimVariables.so	__attr_type_info	1
+libSimVariables.so	bad_alloc	2
+libSimVariables.so	bad_cast	2
+libSimVariables.so	bad_exception	2
+libSimVariables.so	bad_typeid	2
+libSimVariables.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	7
+libSimVariables.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > & basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	1
+libSimVariables.so	__builtin_type_info	1
+libSimVariables.so	cGZBufferColorType	1
+libSimVariables.so	__class_type_info	3
+libSimVariables.so	cRZCOMDllDirector	27
+libSimVariables.so	cRZDirectory	1
+libSimVariables.so	cRZDirectoryEntry	1
+libSimVariables.so	cRZPath	1
+libSimVariables.so	cSC3SimVariablesCmdFactory	2
+libSimVariables.so	cSC3VariableMgr	17
+libSimVariables.so	cSC3WinLoadSaveTuningConfiguration	23
+libSimVariables.so	cSimVariablesCOMDirector	6
+libSimVariables.so	__default_alloc_template<true, 0>	2
+libSimVariables.so	domain_error	2
+libSimVariables.so	exception	3
+libSimVariables.so	filebuf	27
+libSimVariables.so	__func_type_info	1
+libSimVariables.so	invalid_argument	2
+libSimVariables.so	_IO_istream_withassign	3
+libSimVariables.so	_IO_ostream_withassign	3
+libSimVariables.so	ios	39
+libSimVariables.so	iostream	3
+libSimVariables.so	istream	58
+libSimVariables.so	length_error	2
+libSimVariables.so	_List_base<cIGZWinBtn *, allocator<cIGZWinBtn *> >	1
+libSimVariables.so	_List_base<cRZDirectory::DriveType, allocator<cRZDirectory::DriveType> >	1
+libSimVariables.so	_List_base<cRZDirectoryEntry, allocator<cRZDirectoryEntry> >	1
+libSimVariables.so	_List_base<cRZString, allocator<cRZString> >	1
+libSimVariables.so	list<cRZString, allocator<cRZString> >	3
+libSimVariables.so	logic_error	4
+libSimVariables.so	__malloc_alloc_template<0>	1
+libSimVariables.so	ostream	39
+libSimVariables.so	out_of_range	2
+libSimVariables.so	overflow_error	2
+libSimVariables.so	__pointer_type_info	1
+libSimVariables.so	__ptmd_type_info	1
+libSimVariables.so	__ptmf_type_info	1
+libSimVariables.so	range_error	2
+libSimVariables.so	runtime_error	4
+libSimVariables.so	__si_type_info	3
+libSimVariables.so	streambuf	89
+libSimVariables.so	streammarker	6
+libSimVariables.so	type_info	6
+libSimVariables.so	underflow_error	2
+libSimVariables.so	__user_type_info	3
+libSimVariables.so	vector<cRZCOMDllDirector *, allocator<cRZCOMDllDirector *> >	1
+libSimVariables.so	vector<cSC3TweakableVariable, allocator<cSC3TweakableVariable> >	1
+libStrtSim.so	__array_type_info	1
+libStrtSim.so	__attr_type_info	1
+libStrtSim.so	bad_alloc	2
+libStrtSim.so	bad_cast	2
+libStrtSim.so	bad_exception	2
+libStrtSim.so	bad_typeid	2
+libStrtSim.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	7
+libStrtSim.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > & basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	1
+libStrtSim.so	__builtin_type_info	1
+libStrtSim.so	cISSPeoplePath	1
+libStrtSim.so	__class_type_info	3
+libStrtSim.so	cRZCOMDllDirector	27
+libStrtSim.so	cRZTriple<float, float, float>	2
+libStrtSim.so	cSSAeroplane	47
+libStrtSim.so	cSSAirTrafficManager	34
+libStrtSim.so	cSSAirTrafficManagerAttrib	9
+libStrtSim.so	cSSAirTrafficManagerAttribFactory	4
+libStrtSim.so	cSSAnimSpriteAttrib	13
+libStrtSim.so	cSSAnimSpriteAttribFactory	4
+libStrtSim.so	cSSBoat	30
+libStrtSim.so	cSSBoatProducer	27
+libStrtSim.so	cSSCOMDirector	15
+libStrtSim.so	cSSDependentVehicle	3
+libStrtSim.so	cSSHelicopter	25
+libStrtSim.so	cSSHelicopterProducer	16
+libStrtSim.so	cSSOccFilterAutomata	5
+libStrtSim.so	cSSOccFilterBoat	2
+libStrtSim.so	cSSOccFilterNonEmergencyRoadVehicle	2
+libStrtSim.so	cSSOccFilterPeople	2
+libStrtSim.so	cSSOccFilterPeopleAndRoadVehicles	2
+libStrtSim.so	cSSOccFilterPeopleRectSet	3
+libStrtSim.so	cSSOccFilterRailVehicle	2
+libStrtSim.so	cSSOccFilterRoadVehicle	2
+libStrtSim.so	cSSOccFilterRoadVehicleRectSet	4
+libStrtSim.so	cSSOccFilterSubwayVehicle	2
+libStrtSim.so	cSSParadeBlock	38
+libStrtSim.so	cSSPeopleBackwardPath	10
+libStrtSim.so	cSSPeopleForwardPath	10
+libStrtSim.so	cSSPeoplePathAttrib	8
+libStrtSim.so	cSSPeoplePathAttribFactory	4
+libStrtSim.so	cSSPeopleProducer	20
+libStrtSim.so	cSSPeopleProducerAttrib	18
+libStrtSim.so	cSSPeopleStraightPath	9
+libStrtSim.so	cSSPerson	80
+libStrtSim.so	cSSPersonAttrib	9
+libStrtSim.so	cSSPersonAttribFactory	4
+libStrtSim.so	cSSPPathGraphAttrib	9
+libStrtSim.so	cSSRailVehicle	10
+libStrtSim.so	cSSRiotCrowd	32
+libStrtSim.so	cSSShip	37
+libStrtSim.so	cSSShipProducer	24
+libStrtSim.so	cSSStrikeCrowd	12
+libStrtSim.so	cSSStrikeCrowdProducer	26
+libStrtSim.so	cSSStrtSimLayer	114
+libStrtSim.so	cSSStrtSimLayerManipulator	10
+libStrtSim.so	cSSStrtSimOccupant	72
+libStrtSim.so	cSSStrtSimScript	8
+libStrtSim.so	cSSStrtSimScriptFactory	4
+libStrtSim.so	cSSStrtSimTrBlock	19
+libStrtSim.so	cSSStrtSimTrBlockAttrib	11
+libStrtSim.so	cSSStrtSimTrBlockAttribFactory	4
+libStrtSim.so	cSSStrtSimTrBlockFactory	5
+libStrtSim.so	cSSSubwayProducer	16
+libStrtSim.so	cSSSubwayVehicle	10
+libStrtSim.so	cSSTrainProducer	16
+libStrtSim.so	cSSTrainProducerAttrib	12
+libStrtSim.so	cSSTrainProducerAttribFactory	4
+libStrtSim.so	cSSVehicle	146
+libStrtSim.so	cSSVehicleAttrib	13
+libStrtSim.so	cSSVehicleAttribFactory	4
+libStrtSim.so	cSSVehicleBackwardPath	29
+libStrtSim.so	cSSVehicleForwardPath	29
+libStrtSim.so	cSSVehiclePathAttrib	9
+libStrtSim.so	cSSVehiclePathAttribFactory	4
+libStrtSim.so	cSSVehiclePathWithAttrib	27
+libStrtSim.so	cSSVehicleProducer	27
+libStrtSim.so	cSSVehicleProducerAttrib	15
+libStrtSim.so	cSSVehicleProducerAttribFactory	4
+libStrtSim.so	cSSVehicleStraightPath	27
+libStrtSim.so	cSSVPathGraphAttrib	12
+libStrtSim.so	__default_alloc_template<true, 0>	2
+libStrtSim.so	domain_error	2
+libStrtSim.so	exception	3
+libStrtSim.so	filebuf	27
+libStrtSim.so	__func_type_info	1
+libStrtSim.so	invalid_argument	2
+libStrtSim.so	_IO_istream_withassign	3
+libStrtSim.so	_IO_ostream_withassign	3
+libStrtSim.so	ios	39
+libStrtSim.so	iostream	3
+libStrtSim.so	istream	58
+libStrtSim.so	length_error	2
+libStrtSim.so	_List_base<cISC3Occupant *, allocator<cISC3Occupant *> >	1
+libStrtSim.so	_List_base<cSSAeroplane *, allocator<cSSAeroplane *> >	1
+libStrtSim.so	_List_base<cSSAeroplane::tTargetLoc, allocator<cSSAeroplane::tTargetLoc> >	1
+libStrtSim.so	_List_base<cSSAirTrafficManager *, allocator<cSSAirTrafficManager *> >	1
+libStrtSim.so	_List_base<cSSBoat *, allocator<cSSBoat *> >	1
+libStrtSim.so	_List_base<unsigned int, allocator<unsigned int> >	1
+libStrtSim.so	logic_error	4
+libStrtSim.so	__malloc_alloc_template<0>	1
+libStrtSim.so	map<cISC3Occupant *, cSSPeopleProducer *, less<cISC3Occupant *>, allocator<cSSPeopleProducer *> >	1
+libStrtSim.so	map<cISC3Occupant *, cSSShipProducer *, less<cISC3Occupant *>, allocator<cSSShipProducer *> >	1
+libStrtSim.so	map<cISC3Occupant *, cSSSubwayProducer *, less<cISC3Occupant *>, allocator<cSSSubwayProducer *> >	1
+libStrtSim.so	map<cISC3Occupant *, cSSTrainProducer *, less<cISC3Occupant *>, allocator<cSSTrainProducer *> >	1
+libStrtSim.so	map<unsigned int, cIGZResource *, less<unsigned int>, allocator<cIGZResource *> >	1
+libStrtSim.so	map<unsigned int, cSSStrtSimTrBlockAttrib *, less<unsigned int>, allocator<cSSStrtSimTrBlockAttrib *> >	1
+libStrtSim.so	map<unsigned int, cSSVehicleProducer::tFrequencyInfo, less<unsigned int>, allocator<cSSVehicleProducer::tFrequencyInfo> >	1
+libStrtSim.so	ostream	39
+libStrtSim.so	out_of_range	2
+libStrtSim.so	overflow_error	2
+libStrtSim.so	__pointer_type_info	1
+libStrtSim.so	__ptmd_type_info	1
+libStrtSim.so	__ptmf_type_info	1
+libStrtSim.so	range_error	2
+libStrtSim.so	_Rb_tree<cISC3Occupant *, cISC3Occupant *, _Identity<cISC3Occupant *>, less<cISC3Occupant *>, allocator<cISC3Occupant *> >	4
+libStrtSim.so	_Rb_tree<cISC3Occupant *, pair<cISC3Occupant *const, cSSPeopleProducer *>, _Select1st<pair<cISC3Occupant *const, cSSPeopleProducer *> >, less<cISC3Occupant *>, allocator<cSSPeopleProducer *> >	5
+libStrtSim.so	_Rb_tree<cISC3Occupant *, pair<cISC3Occupant *const, cSSShipProducer *>, _Select1st<pair<cISC3Occupant *const, cSSShipProducer *> >, less<cISC3Occupant *>, allocator<cSSShipProducer *> >	4
+libStrtSim.so	_Rb_tree<cISC3Occupant *, pair<cISC3Occupant *const, cSSSubwayProducer *>, _Select1st<pair<cISC3Occupant *const, cSSSubwayProducer *> >, less<cISC3Occupant *>, allocator<cSSSubwayProducer *> >	4
+libStrtSim.so	_Rb_tree<cISC3Occupant *, pair<cISC3Occupant *const, cSSTrainProducer *>, _Select1st<pair<cISC3Occupant *const, cSSTrainProducer *> >, less<cISC3Occupant *>, allocator<cSSTrainProducer *> >	4
+libStrtSim.so	_Rb_tree<unsigned int, pair<unsigned int const, cIGZResource *>, _Select1st<pair<unsigned int const, cIGZResource *> >, less<unsigned int>, allocator<cIGZResource *> >	6
+libStrtSim.so	_Rb_tree<unsigned int, pair<unsigned int const, cSSStrtSimTrBlockAttrib *>, _Select1st<pair<unsigned int const, cSSStrtSimTrBlockAttrib *> >, less<unsigned int>, allocator<cSSStrtSimTrBlockAttrib *> >	6
+libStrtSim.so	_Rb_tree<unsigned int, pair<unsigned int const, cSSVehicleProducer::tFrequencyInfo>, _Select1st<pair<unsigned int const, cSSVehicleProducer::tFrequencyInfo> >, less<unsigned int>, allocator<cSSVehicleProducer::tFrequencyInfo> >	4
+libStrtSim.so	runtime_error	4
+libStrtSim.so	set<cISC3Occupant *, less<cISC3Occupant *>, allocator<cISC3Occupant *> >	1
+libStrtSim.so	__si_type_info	3
+libStrtSim.so	SpiralIterator	3
+libStrtSim.so	streambuf	89
+libStrtSim.so	streammarker	6
+libStrtSim.so	tPPathGraphEdge	3
+libStrtSim.so	tPPathGraphNode	6
+libStrtSim.so	tVPathGraphEdge	3
+libStrtSim.so	tVPathGraphNode	7
+libStrtSim.so	type_info	6
+libStrtSim.so	underflow_error	2
+libStrtSim.so	__user_type_info	3
+libStrtSim.so	vector<cISC3Occupant *, allocator<cISC3Occupant *> >	1
+libStrtSim.so	vector<cRZCOMDllDirector *, allocator<cRZCOMDllDirector *> >	1
+libStrtSim.so	vector<cSSPeopleProducerAttrib::tCountryModeGroup, allocator<cSSPeopleProducerAttrib::tCountryModeGroup> >	1
+libStrtSim.so	vector<cSSStrikeCrowd *, allocator<cSSStrikeCrowd *> >	1
+libStrtSim.so	vector<cSSTrainProducerAttrib::tTrainType, allocator<cSSTrainProducerAttrib::tTrainType> >	1
+libStrtSim.so	vector<signed char, allocator<signed char> >	2
+libStrtSim.so	vector<tPPathGraphEdge, allocator<tPPathGraphEdge> >	2
+libStrtSim.so	vector<tPPathGraphNode, allocator<tPPathGraphNode> >	1
+libStrtSim.so	vector<tVPathGraphEdge, allocator<tVPathGraphEdge> >	2
+libStrtSim.so	vector<tVPathGraphNode *, allocator<tVPathGraphNode *> >	1
+libStrtSim.so	vector<tVPathGraphNode, allocator<tVPathGraphNode> >	1
+libStrtSim.so	vector<unsigned int, allocator<unsigned int> >	2
+libWebCam.so	__array_type_info	1
+libWebCam.so	__attr_type_info	1
+libWebCam.so	bad_alloc	2
+libWebCam.so	bad_cast	2
+libWebCam.so	bad_exception	2
+libWebCam.so	bad_typeid	2
+libWebCam.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	6
+libWebCam.so	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > & basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	1
+libWebCam.so	__builtin_type_info	1
+libWebCam.so	cGZBufferColorType	1
+libWebCam.so	__class_type_info	3
+libWebCam.so	cRZCOMDllDirector	27
+libWebCam.so	cRZStd	1
+libWebCam.so	cSC3CmdWebCam	4
+libWebCam.so	cSC3CmdWebCamFactory	2
+libWebCam.so	cSC3CmdWinWebCam	3
+libWebCam.so	cSC3PublishCity	26
+libWebCam.so	cSC3WinWebCam	8
+libWebCam.so	cWebCamCOMDirector	5
+libWebCam.so	cWebCamManager	8
+libWebCam.so	__default_alloc_template<true, 0>	2
+libWebCam.so	domain_error	2
+libWebCam.so	exception	3
+libWebCam.so	filebuf	27
+libWebCam.so	__func_type_info	1
+libWebCam.so	invalid_argument	2
+libWebCam.so	_IO_istream_withassign	3
+libWebCam.so	_IO_ostream_withassign	3
+libWebCam.so	ios	39
+libWebCam.so	iostream	3
+libWebCam.so	istream	58
+libWebCam.so	length_error	2
+libWebCam.so	logic_error	4
+libWebCam.so	__malloc_alloc_template<0>	1
+libWebCam.so	ostream	39
+libWebCam.so	out_of_range	2
+libWebCam.so	overflow_error	2
+libWebCam.so	__pointer_type_info	1
+libWebCam.so	__ptmd_type_info	1
+libWebCam.so	__ptmf_type_info	1
+libWebCam.so	range_error	2
+libWebCam.so	runtime_error	4
+libWebCam.so	__si_type_info	3
+libWebCam.so	streambuf	89
+libWebCam.so	streammarker	6
+libWebCam.so	type_info	6
+libWebCam.so	underflow_error	2
+libWebCam.so	__user_type_info	3
+libWebCam.so	vector<cRZCOMDllDirector *, allocator<cRZCOMDllDirector *> >	1
+sc3u_demo.x86	__array_type_info	1
+sc3u_demo.x86	__attr_type_info	1
+sc3u_demo.x86	bad_alloc	2
+sc3u_demo.x86	bad_cast	2
+sc3u_demo.x86	bad_exception	2
+sc3u_demo.x86	bad_typeid	2
+sc3u_demo.x86	BarGraphSeriesInfo	3
+sc3u_demo.x86	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	15
+sc3u_demo.x86	basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > & basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >	1
+sc3u_demo.x86	__builtin_type_info	1
+sc3u_demo.x86	CacheData	1
+sc3u_demo.x86	cAudioEffectsBus	5
+sc3u_demo.x86	cChangeFontDebugCommand	2
+sc3u_demo.x86	cFrameworkException	2
+sc3u_demo.x86	cGZ3DSoundTestWindow	16
+sc3u_demo.x86	cGZAlphaBlt	35
+sc3u_demo.x86	cGZAnimationPlayer	31
+sc3u_demo.x86	cGZAnimationPlayer2	36
+sc3u_demo.x86	cGZApp	19
+sc3u_demo.x86	cGZBarGraph	45
+sc3u_demo.x86	cGZBuffer	142
+sc3u_demo.x86	cGZBufferColorSurfaceSDL	11
+sc3u_demo.x86	cGZBufferColorType	1
+sc3u_demo.x86	cGZBufferComplexColorSurfaceSDL	6
+sc3u_demo.x86	cGZBufferDepthSurfaceSDL	8
+sc3u_demo.x86	cGZBufferFrontAndBackSurfaceSDL	2
+sc3u_demo.x86	cGZBufferPrimaryAndBackSurfaceSDL	3
+sc3u_demo.x86	cGZBufferPrimarySurfaceSDL	2
+sc3u_demo.x86	cGZBufferResource	28
+sc3u_demo.x86	cGZBufferResourceFactory	20
+sc3u_demo.x86	cGZBufferSurfaceSDL	29
+sc3u_demo.x86	cGZCanvasSDL	38
+sc3u_demo.x86	cGZCheatCodeManager	30
+sc3u_demo.x86	cGZCOM	21
+sc3u_demo.x86	cGZCOMDirector	3
+sc3u_demo.x86	cGZCOMDirectorSDL	2
+sc3u_demo.x86	cGZCOMLibrary	17
+sc3u_demo.x86	cGZDate	58
+sc3u_demo.x86	cGZDBFont	65
+sc3u_demo.x86	cGZDBRecordIndexedFile	14
+sc3u_demo.x86	cGZDBRecordMIFF	5
+sc3u_demo.x86	cGZDBSDFRecord	20
+sc3u_demo.x86	cGZDBSegmentDirectoryFiles	30
+sc3u_demo.x86	cGZDBSegmentIndexedFile	29
+sc3u_demo.x86	cGZDBSegmentMIFF	21
+sc3u_demo.x86	cGZDebugStream	16
+sc3u_demo.x86	cGZDebugStreamSDL	9
+sc3u_demo.x86	cGZDlgInputLine	7
+sc3u_demo.x86	cGZFileSystem	24
+sc3u_demo.x86	cGZFont	60
+sc3u_demo.x86	cGZFontSys	20
+sc3u_demo.x86	cGZFrameWork	58
+sc3u_demo.x86	cGZFrameWorkSDL	15
+sc3u_demo.x86	cGZGameCOMDirector	4
+sc3u_demo.x86	cGZGameCommandService	7
+sc3u_demo.x86	cGZGenericResourceFactory	4
+sc3u_demo.x86	cGZGraph	88
+sc3u_demo.x86	cGZGraphDemoWindow	12
+sc3u_demo.x86	cGZGraphicCOMDirector	4
+sc3u_demo.x86	cGZGraphicSDLCOMDirector	3
+sc3u_demo.x86	cGZGraphicSystem	59
+sc3u_demo.x86	cGZGraphicSystemSDL	59
+sc3u_demo.x86	cGZInfoListBoxWindow	64
+sc3u_demo.x86	cGZLineGraph	40
+sc3u_demo.x86	cGZMessageQueue	31
+sc3u_demo.x86	cGZMessageQueue2	26
+sc3u_demo.x86	cGZMessageQueueManager	14
+sc3u_demo.x86	cGZMessageQueueManager2	14
+sc3u_demo.x86	cGZMessageServer	21
+sc3u_demo.x86	cGZMessageServer2	21
+sc3u_demo.x86	cGZMLAnchor	10
+sc3u_demo.x86	cGZMLAREA	1
+sc3u_demo.x86	cGZMLBlockQuote	3
+sc3u_demo.x86	cGZMLBODY	6
+sc3u_demo.x86	cGZMLBR	3
+sc3u_demo.x86	cGZMLContainerElement	12
+sc3u_demo.x86	cGZMLDD	3
+sc3u_demo.x86	cGZMLDIV	3
+sc3u_demo.x86	cGZMLDocument	120
+sc3u_demo.x86	cGZMLDrawContext	18
+sc3u_demo.x86	cGZMLDT	3
+sc3u_demo.x86	cGZMLElement	18
+sc3u_demo.x86	cGZMLFORM	1
+sc3u_demo.x86	cGZMLFRAME	1
+sc3u_demo.x86	cGZMLFRAMESET	1
+sc3u_demo.x86	cGZMLHeading	4
+sc3u_demo.x86	cGZMLHR	3
+sc3u_demo.x86	cGZMLIMG	11
+sc3u_demo.x86	cGZMLINPUT	1
+sc3u_demo.x86	cGZMLLink	2
+sc3u_demo.x86	cGZMLList	3
+sc3u_demo.x86	cGZMLListItem	3
+sc3u_demo.x86	cGZMLMAP	1
+sc3u_demo.x86	cGZMLMETA	8
+sc3u_demo.x86	cGZMLOPTION	1
+sc3u_demo.x86	cGZMLP	3
+sc3u_demo.x86	cGZMLSELECT	1
+sc3u_demo.x86	cGZMLShared	8
+sc3u_demo.x86	cGZMLTABLE	12
+sc3u_demo.x86	cGZMLTD	2
+sc3u_demo.x86	cGZMLTextSegment	16
+sc3u_demo.x86	cGZMLTH	1
+sc3u_demo.x86	cGZMLTR	3
+sc3u_demo.x86	cGZPaletteFactory	10
+sc3u_demo.x86	cGZPaletteResource	7
+sc3u_demo.x86	cGZPieGraph	34
+sc3u_demo.x86	cGZRegistry	10
+sc3u_demo.x86	cGZRESIDtoExtensionMap	11
+sc3u_demo.x86	cGZResManCOMDirector	16
+sc3u_demo.x86	cGZResourceCOMDirectorSDL	3
+sc3u_demo.x86	cGZResourceManager	48
+sc3u_demo.x86	cGZScatterGraph	36
+sc3u_demo.x86	cGZScreenBuffer	46
+sc3u_demo.x86	cGZSnd	56
+sc3u_demo.x86	cGZSnd3D	54
+sc3u_demo.x86	cGZSnd3DListener	22
+sc3u_demo.x86	cGZSndSDLCOMDirector	3
+sc3u_demo.x86	cGZSndSys	55
+sc3u_demo.x86	cGZSoundRenderServer	27
+sc3u_demo.x86	cGZSpanBlt	7
+sc3u_demo.x86	cGZSpanBuffer	161
+sc3u_demo.x86	cGZTestObject	9
+sc3u_demo.x86	cGZWave	11
+sc3u_demo.x86	cGZWin	159
+sc3u_demo.x86	cGZWin32COMDirector	3
+sc3u_demo.x86	cGZWinBMP	19
+sc3u_demo.x86	cGZWinBtn	74
+sc3u_demo.x86	cGZWinCombo	50
+sc3u_demo.x86	cGZWinCOMDirector	14
+sc3u_demo.x86	cGZWinCtrlMgr	39
+sc3u_demo.x86	cGZWinDlg	9
+sc3u_demo.x86	cGZWinFlatRect	27
+sc3u_demo.x86	cGZWinFolderRow	21
+sc3u_demo.x86	cGZWinFolders	13
+sc3u_demo.x86	cGZWinGenDlg	31
+sc3u_demo.x86	cGZWinGZML	31
+sc3u_demo.x86	cGZWinHelp	14
+sc3u_demo.x86	cGZWinIconicInfoListBox	37
+sc3u_demo.x86	cGZWinIMECandidate	8
+sc3u_demo.x86	cGZWinIMEComposition	6
+sc3u_demo.x86	cGZWinKeyAcceleratorResFactory	4
+sc3u_demo.x86	cGZWinLineInput	59
+sc3u_demo.x86	cGZWinListBox	82
+sc3u_demo.x86	cGZWinListBoxToggle	30
+sc3u_demo.x86	cGZWinMgrSDL	80
+sc3u_demo.x86	cGZWinMsgBox	23
+sc3u_demo.x86	cGZWinOptGrp	54
+sc3u_demo.x86	cGZWinOutline	20
+sc3u_demo.x86	cGZWinScrollbar	43
+sc3u_demo.x86	cGZWinSlider	31
+sc3u_demo.x86	cGZWinSpinner	45
+sc3u_demo.x86	cGZWinText	34
+sc3u_demo.x86	cGZWinTextEdit	127
+sc3u_demo.x86	cGZWinTextEditGVExtra	3
+sc3u_demo.x86	cGZWinTextTicker	27
+sc3u_demo.x86	cGZWinToolTip	18
+sc3u_demo.x86	cGZWinToolTipMgr	20
+sc3u_demo.x86	cGZWinTree	54
+sc3u_demo.x86	cGZWWWCOMDirector	2
+sc3u_demo.x86	cGZWWWSDLCOMDirector	2
+sc3u_demo.x86	cGZWWWSystem	43
+sc3u_demo.x86	ChatSimMessage	2
+sc3u_demo.x86	cIGZFontSys	1
+sc3u_demo.x86	cIGZWWWSystem	4
+sc3u_demo.x86	cISC3ImageList	6
+sc3u_demo.x86	cISC3ListItem	18
+sc3u_demo.x86	__class_type_info	3
+sc3u_demo.x86	CookieData	4
+sc3u_demo.x86	cPersistantTilingFamily	4
+sc3u_demo.x86	cRandomIteratorSerializable	2
+sc3u_demo.x86	cRZArchive	11
+sc3u_demo.x86	cRZAutoCmd	10
+sc3u_demo.x86	cRZAutoCursor	2
+sc3u_demo.x86	cRZAutoInitFWAccessor	1
+sc3u_demo.x86	cRZBIFF	36
+sc3u_demo.x86	cRZCallbackThread	9
+sc3u_demo.x86	cRZCallbackTimer	14
+sc3u_demo.x86	cRZClock	30
+sc3u_demo.x86	cRZCmdLine	24
+sc3u_demo.x86	cRZCOMDllDirector	27
+sc3u_demo.x86	cRZConsoleDebugStream	6
+sc3u_demo.x86	cRZCookieManager	28
+sc3u_demo.x86	cRZCriticalSection	9
+sc3u_demo.x86	cRZCursor	11
+sc3u_demo.x86	cRZCursorManager	17
+sc3u_demo.x86	cRZDate	54
+sc3u_demo.x86	cRZDBRecord	9
+sc3u_demo.x86	cRZDBRecordMemoryUseHeap	15
+sc3u_demo.x86	cRZDBRecordMemoryUseSegment	15
+sc3u_demo.x86	cRZDBSegment	12
+sc3u_demo.x86	cRZDBSegmentCompressed	46
+sc3u_demo.x86	cRZDBSegmentMemory	29
+sc3u_demo.x86	cRZDBSerialRecord	47
+sc3u_demo.x86	cRZDebugCommand	4
+sc3u_demo.x86	cRZDebugStream	5
+sc3u_demo.x86	cRZDebugTag	6
+sc3u_demo.x86	cRZDirectory	22
+sc3u_demo.x86	cRZDirectoryEntry	14
+sc3u_demo.x86	cRZDiskRadioStation	25
+sc3u_demo.x86	cRZExceptionBase	2
+sc3u_demo.x86	cRZExceptionNotification	6
+sc3u_demo.x86	cRZExceptionVerifyBase	1
+sc3u_demo.x86	cRZFastCompression	9
+sc3u_demo.x86	cRZFastCompression3	20
+sc3u_demo.x86	cRZFile	58
+sc3u_demo.x86	cRZFileTextOStream	7
+sc3u_demo.x86	cRZFTPClient	28
+sc3u_demo.x86	cRZFTPClientLowLevel	59
+sc3u_demo.x86	cRZGameCommand	15
+sc3u_demo.x86	cRZGameCommandFactory	7
+sc3u_demo.x86	cRZGraphEdge	9
+sc3u_demo.x86	cRZGraphStructure	15
+sc3u_demo.x86	cRZGraphVertex	15
+sc3u_demo.x86	cRZGraphVertexEdgeIterator	2
+sc3u_demo.x86	cRZGraphVertexIterator	2
+sc3u_demo.x86	cRZHotSpot	11
+sc3u_demo.x86	cRZHTTPClient	59
+sc3u_demo.x86	cRZINetSocketAddress	30
+sc3u_demo.x86	cRZIniFile	20
+sc3u_demo.x86	cRZIRCClient	157
+sc3u_demo.x86	cRZIStream	33
+sc3u_demo.x86	cRZKeyboard	16
+sc3u_demo.x86	cRZLanguageManager	49
+sc3u_demo.x86	cRZLanguageUtility	41
+sc3u_demo.x86	cRZLock	1
+sc3u_demo.x86	cRZMath	11
+sc3u_demo.x86	cRZMessageCOMDirector	5
+sc3u_demo.x86	cRZMessageStandard	33
+sc3u_demo.x86	cRZMIFF	45
+sc3u_demo.x86	cRZMRSWLock	10
+sc3u_demo.x86	cRZMutex	9
+sc3u_demo.x86	cRZNameLookup	27
+sc3u_demo.x86	cRZNetDatagramSocket	12
+sc3u_demo.x86	cRZNetManager	32
+sc3u_demo.x86	cRZNetPing	21
+sc3u_demo.x86	cRZNetSocket	55
+sc3u_demo.x86	cRZNetSocketInfo	1
+sc3u_demo.x86	cRZNetStreamSocket	21
+sc3u_demo.x86	cRZNullIStream	5
+sc3u_demo.x86	cRZNullOStream	4
+sc3u_demo.x86	cRZOStream	34
+sc3u_demo.x86	cRZPalette	16
+sc3u_demo.x86	cRZPath	25
+sc3u_demo.x86	cRZPOPClient	49
+sc3u_demo.x86	cRZRadio	47
+sc3u_demo.x86	cRZRandom	26
+sc3u_demo.x86	cRZRefCount	6
+sc3u_demo.x86	cRZResource	17
+sc3u_demo.x86	cRZResourceFactory	8
+sc3u_demo.x86	cRZResourceKeyList	14
+sc3u_demo.x86	cRZSemaphore	12
+sc3u_demo.x86	cRZSerializable	1
+sc3u_demo.x86	cRZSerializableStream	25
+sc3u_demo.x86	cRZSimpleFileTransfer	43
+sc3u_demo.x86	cRZSMTPClient	49
+sc3u_demo.x86	cRZSocketAddress	10
+sc3u_demo.x86	cRZSocketError	6
+sc3u_demo.x86	cRZSpreadsheet	11
+sc3u_demo.x86	cRZStd	1
+sc3u_demo.x86	cRZString	43
+sc3u_demo.x86	cRZStringResource	15
+sc3u_demo.x86	cRZStringResourceFactory	5
+sc3u_demo.x86	cRZStringSerial	12
+sc3u_demo.x86	cRZSystemCursorSDL	8
+sc3u_demo.x86	cRZSystemService	15
+sc3u_demo.x86	cRZTextFile	5
+sc3u_demo.x86	cRZTextOStream	31
+sc3u_demo.x86	cRZThread	24
+sc3u_demo.x86	cRZThreadSafeObject	2
+sc3u_demo.x86	cRZThreadSignal	10
+sc3u_demo.x86	cRZTime	4
+sc3u_demo.x86	cRZTimer	39
+sc3u_demo.x86	cRZTokenVariant	8
+sc3u_demo.x86	cRZTreeNode	41
+sc3u_demo.x86	cRZTriple<float, float, float>	3
+sc3u_demo.x86	cRZUnknown	7
+sc3u_demo.x86	cRZUnknownList	19
+sc3u_demo.x86	cRZURL	60
+sc3u_demo.x86	cRZVariant	151
+sc3u_demo.x86	cRZVersion	26
+sc3u_demo.x86	cRZWinKeyAccelerator	11
+sc3u_demo.x86	cRZWinKeyAcceleratorRes	12
+sc3u_demo.x86	cSC3App	88
+sc3u_demo.x86	cSC3AppPreferences	41
+sc3u_demo.x86	cSC3AppStateManager	14
+sc3u_demo.x86	cSC3BaseCityAgent	14
+sc3u_demo.x86	cSC3BaseCityAgentType	60
+sc3u_demo.x86	cSC3Buffer	8
+sc3u_demo.x86	cSC3Building	48
+sc3u_demo.x86	cSC3BuildingAttrib	54
+sc3u_demo.x86	cSC3BuildingStaticAnim	5
+sc3u_demo.x86	cSC3ChatSystem	68
+sc3u_demo.x86	cSC3CheatCodeEntryDialog	7
+sc3u_demo.x86	cSC3CityChangeSender	14
+sc3u_demo.x86	cSC3CitySpriteInst	28
+sc3u_demo.x86	cSC3CitySpriteInstAddGetSetNext	27
+sc3u_demo.x86	cSC3CitySpriteViewFilterCommandFactory	3
+sc3u_demo.x86	cSC3CityViewInfoIso	21
+sc3u_demo.x86	cSC3CmdDispatchFirefighters	9
+sc3u_demo.x86	cSC3CmdDispatchPlane	9
+sc3u_demo.x86	cSC3CmdDispatchPolice	9
+sc3u_demo.x86	cSC3CmdEarthquakeDisaster	3
+sc3u_demo.x86	cSC3CmdEmergencyWarning	4
+sc3u_demo.x86	cSC3CmdFactory	2
+sc3u_demo.x86	cSC3CmdFireDisaster	3
+sc3u_demo.x86	cSC3CmdGridToggle	3
+sc3u_demo.x86	cSC3CmdLocustsDisaster	3
+sc3u_demo.x86	cSC3CmdMainMenu	2
+sc3u_demo.x86	cSC3CmdParadeEvent	3
+sc3u_demo.x86	cSC3CmdQuit	3
+sc3u_demo.x86	cSC3CmdRiotDisaster	3
+sc3u_demo.x86	cSC3CmdSmiteDisaster	3
+sc3u_demo.x86	cSC3CmdSpaceDebrisDisaster	3
+sc3u_demo.x86	cSC3CmdToolBar	2
+sc3u_demo.x86	cSC3CmdTornadoDisaster	3
+sc3u_demo.x86	cSC3CmdToxicCloudDisaster	3
+sc3u_demo.x86	cSC3CmdUFODisaster	3
+sc3u_demo.x86	cSC3CmdViewChat	2
+sc3u_demo.x86	cSC3CmdWhirlpoolDisaster	3
+sc3u_demo.x86	cSC3COMDirector	9
+sc3u_demo.x86	cSC3CompressibleINIFile	16
+sc3u_demo.x86	cSC3GraphInfo	38
+sc3u_demo.x86	cSC3IdleStateDetector	3
+sc3u_demo.x86	cSC3Internet	56
+sc3u_demo.x86	cSC3MainMenu	10
+sc3u_demo.x86	cSC3MapSprite	34
+sc3u_demo.x86	cSC3Newscast	28
+sc3u_demo.x86	cSC3OccAttribOverRide	22
+sc3u_demo.x86	cSC3OccAttribOverRideContainer	11
+sc3u_demo.x86	cSC3OccManAnimIterator	10
+sc3u_demo.x86	cSC3OccPersistInfo	49
+sc3u_demo.x86	cSC3Occupant	83
+sc3u_demo.x86	cSC3OccupantAttrib	53
+sc3u_demo.x86	cSC3OccupantManagerAnim	63
+sc3u_demo.x86	cSC3String	26
+sc3u_demo.x86	cSC3StringTokenData	8
+sc3u_demo.x86	cSC3SysInfoWindow	14
+sc3u_demo.x86	cSC3Thumbnail	10
+sc3u_demo.x86	cSC3TransferSystem	36
+sc3u_demo.x86	cSC3Valve	37
+sc3u_demo.x86	cSC3WinCredits	7
+sc3u_demo.x86	cSC3WinDancingBear	15
+sc3u_demo.x86	cSC3WinGraphicsViewer	69
+sc3u_demo.x86	cSC3WinHTMLView	22
+sc3u_demo.x86	cSC3WinListView	40
+sc3u_demo.x86	cSC3WinLogo	18
+sc3u_demo.x86	cSC3WinMainMenuBtn	29
+sc3u_demo.x86	cSC3WinMainMenuLabel	17
+sc3u_demo.x86	cSC3WinScrollBar	50
+sc3u_demo.x86	cSC3WinSnapshotTaker	23
+sc3u_demo.x86	cSCToolBar	2
+sc3u_demo.x86	cSLAutoDBRecord	6
+sc3u_demo.x86	cSLAutoDBSerialRecord	5
+sc3u_demo.x86	cSLAutoSaveRecordVersionInfo	10
+sc3u_demo.x86	cSLCityViewLineSelectionHandler	16
+sc3u_demo.x86	cSLCityViewOccupantAreaSelectionHandler	17
+sc3u_demo.x86	cSLCityViewOccupantSelectionHandler	16
+sc3u_demo.x86	cSLCityViewPointSelectionHandler	16
+sc3u_demo.x86	cSLCityViewRectSelectionHandler	16
+sc3u_demo.x86	cSLCityViewSelection	13
+sc3u_demo.x86	cSLCityViewSelectionHandler	21
+sc3u_demo.x86	cSLDBSegmentHardCode	17
+sc3u_demo.x86	cSLSaveRecordVersionInfo	1
+sc3u_demo.x86	cSLTokenFieldBase	1
+sc3u_demo.x86	cSLTokenField<cGZResourceKey>	19
+sc3u_demo.x86	cSLTokenField<cRZString>	19
+sc3u_demo.x86	cSLTokenField<float>	19
+sc3u_demo.x86	cSLTokenField<int>	19
+sc3u_demo.x86	cSLTokenField<long long>	19
+sc3u_demo.x86	cSLTokenField<unsigned char>	19
+sc3u_demo.x86	cSLTokenField<unsigned int>	19
+sc3u_demo.x86	cSLTokenField<unsigned short>	19
+sc3u_demo.x86	cSLTokenRecord	37
+sc3u_demo.x86	cSLTokenResourceFactory	6
+sc3u_demo.x86	cSLTokenSerialRecordIO	19
+sc3u_demo.x86	cSLTokenSerialRecordIO_Text	24
+sc3u_demo.x86	cStringPair	2
+sc3u_demo.x86	cTileBase	2
+sc3u_demo.x86	cTileBits	7
+sc3u_demo.x86	cTileEvaluator	6
+sc3u_demo.x86	cTileID	2
+sc3u_demo.x86	cTileIdentity	5
+sc3u_demo.x86	cTileIdentityArray	9
+sc3u_demo.x86	cTileNeighborhood	6
+sc3u_demo.x86	cTilePos	3
+sc3u_demo.x86	cTileRule	9
+sc3u_demo.x86	cTilingFamily	6
+sc3u_demo.x86	cTilingSet	8
+sc3u_demo.x86	cWaveXA	17
+sc3u_demo.x86	cWinBMPView	48
+sc3u_demo.x86	cWinBMPViewGVExtra	9
+sc3u_demo.x86	cWinSC3	29
+sc3u_demo.x86	DebugMultiThreadAccessDetector	5
+sc3u_demo.x86	__default_alloc_template<true, 0>	2
+sc3u_demo.x86	_Deque_base<cIGZCursor *, allocator<cIGZCursor *>, 0>	4
+sc3u_demo.x86	_Deque_base<cIGZDBSegment *, allocator<cIGZDBSegment *>, 0>	4
+sc3u_demo.x86	_Deque_base<cIGZVariant *, allocator<cIGZVariant *>, 0>	4
+sc3u_demo.x86	_Deque_base<cRZString, allocator<cRZString>, 0>	4
+sc3u_demo.x86	_Deque_base<pair<int, unsigned int>, allocator<pair<int, unsigned int> >, 0>	4
+sc3u_demo.x86	_Deque_base<unsigned int, allocator<unsigned int>, 0>	4
+sc3u_demo.x86	deque<cIGZCursor *, allocator<cIGZCursor *>, 0>	3
+sc3u_demo.x86	deque<cIGZDBSegment *, allocator<cIGZDBSegment *>, 0>	7
+sc3u_demo.x86	deque<cIGZVariant *, allocator<cIGZVariant *>, 0>	3
+sc3u_demo.x86	deque<pair<int, unsigned int>, allocator<pair<int, unsigned int> >, 0>	2
+sc3u_demo.x86	deque<unsigned int, allocator<unsigned int>, 0>	5
+sc3u_demo.x86	domain_error	2
+sc3u_demo.x86	DynamicGraphObject	2
+sc3u_demo.x86	EditBATBldgListSettings	1
+sc3u_demo.x86	Encryption	12
+sc3u_demo.x86	exception	3
+sc3u_demo.x86	FastFixedAllocator	1
+sc3u_demo.x86	filebuf	27
+sc3u_demo.x86	FTPDirEntry	3
+sc3u_demo.x86	__func_type_info	1
+sc3u_demo.x86	GraphsSettings	10
+sc3u_demo.x86	hash_map<cGZResourceKey, cGZDBSegmentIndexedFile::RecordInfo, hash<cGZResourceKey>, equal_to<cGZResourceKey>, allocator<cGZDBSegmentIndexedFile::RecordInfo> >	1
+sc3u_demo.x86	hash_map<cRZString, NetworkFileCacheInfo, hash<cRZString>, equal_to<cRZString>, allocator<NetworkFileCacheInfo> >	1
+sc3u_demo.x86	hash_map<int, cIGZBuffer *, hash<int>, equal_to<int>, allocator<cIGZBuffer *> >	1
+sc3u_demo.x86	hash_map<int, cIGZFont *, hash<int>, equal_to<int>, allocator<cIGZFont *> >	1
+sc3u_demo.x86	hash_map<int, cIGZPalette *, hash<int>, equal_to<int>, allocator<cIGZPalette *> >	1
+sc3u_demo.x86	hash_map<int, cIGZSnd *, hash<int>, equal_to<int>, allocator<cIGZSnd *> >	1
+sc3u_demo.x86	hash_map<int, cIGZString *, hash<int>, equal_to<int>, allocator<cIGZString *> >	1
+sc3u_demo.x86	hash_map<int, unsigned int, hash<int>, equal_to<int>, allocator<unsigned int> >	1
+sc3u_demo.x86	hash_map<unsigned int, cIGZMessageTarget *, hash<unsigned int>, equal_to<unsigned int>, allocator<cIGZMessageTarget *> >	1
+sc3u_demo.x86	hash_map<unsigned int, list<cIGZMessageTarget *, allocator<cIGZMessageTarget *> > *, hash<unsigned int>, equal_to<unsigned int>, allocator<list<cIGZMessageTarget *, allocator<cIGZMessageTarget *> > *> >	1
+sc3u_demo.x86	hash_map<unsigned int, list<cRZAutoRefCount<cIGZMessageTarget2>, allocator<cRZAutoRefCount<cIGZMessageTarget2> > > *, hash<unsigned int>, equal_to<unsigned int>, allocator<list<cRZAutoRefCount<cIGZMessageTarget2>, allocator<cRZAutoRefCount<cIGZMessageTarget2> > > *> >	1
+sc3u_demo.x86	hash_set<cIGZWin *, hash<cIGZWin *>, equal_to<cIGZWin *>, allocator<cIGZWin *> >	1
+sc3u_demo.x86	hash_set<OccupantInfo, hash<OccupantInfo>, equal_to<OccupantInfo>, allocator<OccupantInfo> >	1
+sc3u_demo.x86	hash_set<unsigned int, hash<unsigned int>, equal_to<unsigned int>, allocator<unsigned int> >	1
+sc3u_demo.x86	hashtable<cIGZWin *, cIGZWin *, hash<cIGZWin *>, _Identity<cIGZWin *>, equal_to<cIGZWin *>, allocator<cIGZWin *> >	4
+sc3u_demo.x86	_Hashtable_const_iterator<cIGZWin *, cIGZWin *, hash<cIGZWin *>, _Identity<cIGZWin *>, equal_to<cIGZWin *>, allocator<cIGZWin *> >	1
+sc3u_demo.x86	_Hashtable_const_iterator<OccupantInfo, OccupantInfo, hash<OccupantInfo>, _Identity<OccupantInfo>, equal_to<OccupantInfo>, allocator<OccupantInfo> >	1
+sc3u_demo.x86	_Hashtable_const_iterator<pair<int const, cIGZFont *>, int, hash<int>, _Select1st<pair<int const, cIGZFont *> >, equal_to<int>, allocator<cIGZFont *> >	1
+sc3u_demo.x86	_Hashtable_const_iterator<pair<int const, cIGZPalette *>, int, hash<int>, _Select1st<pair<int const, cIGZPalette *> >, equal_to<int>, allocator<cIGZPalette *> >	1
+sc3u_demo.x86	_Hashtable_iterator<pair<cGZResourceKey const, cGZDBSegmentIndexedFile::RecordInfo>, cGZResourceKey, hash<cGZResourceKey>, _Select1st<pair<cGZResourceKey const, cGZDBSegmentIndexedFile::RecordInfo> >, equal_to<cGZResourceKey>, allocator<cGZDBSegmentIndexedFile::RecordInfo> >	1
+sc3u_demo.x86	_Hashtable_iterator<pair<cRZString const, NetworkFileCacheInfo>, cRZString, hash<cRZString>, _Select1st<pair<cRZString const, NetworkFileCacheInfo> >, equal_to<cRZString>, allocator<NetworkFileCacheInfo> >	1
+sc3u_demo.x86	_Hashtable_iterator<pair<int const, cIGZBuffer *>, int, hash<int>, _Select1st<pair<int const, cIGZBuffer *> >, equal_to<int>, allocator<cIGZBuffer *> >	1
+sc3u_demo.x86	_Hashtable_iterator<pair<int const, cIGZSnd *>, int, hash<int>, _Select1st<pair<int const, cIGZSnd *> >, equal_to<int>, allocator<cIGZSnd *> >	1
+sc3u_demo.x86	_Hashtable_iterator<pair<int const, cIGZString *>, int, hash<int>, _Select1st<pair<int const, cIGZString *> >, equal_to<int>, allocator<cIGZString *> >	1
+sc3u_demo.x86	_Hashtable_iterator<pair<int const, unsigned int>, int, hash<int>, _Select1st<pair<int const, unsigned int> >, equal_to<int>, allocator<unsigned int> >	1
+sc3u_demo.x86	_Hashtable_iterator<pair<unsigned int const, cIGZMessageTarget *>, unsigned int, hash<unsigned int>, _Select1st<pair<unsigned int const, cIGZMessageTarget *> >, equal_to<unsigned int>, allocator<cIGZMessageTarget *> >	1
+sc3u_demo.x86	_Hashtable_iterator<pair<unsigned int const, list<cIGZMessageTarget *, allocator<cIGZMessageTarget *> > *>, unsigned int, hash<unsigned int>, _Select1st<pair<unsigned int const, list<cIGZMessageTarget *, allocator<cIGZMessageTarget *> > *> >, equal_to<unsigned int>, allocator<list<cIGZMessageTarget *, allocator<cIGZMessageTarget *> > *> >	1
+sc3u_demo.x86	_Hashtable_iterator<pair<unsigned int const, list<cRZAutoRefCount<cIGZMessageTarget2>, allocator<cRZAutoRefCount<cIGZMessageTarget2> > > *>, unsigned int, hash<unsigned int>, _Select1st<pair<unsigned int const, list<cRZAutoRefCount<cIGZMessageTarget2>, allocator<cRZAutoRefCount<cIGZMessageTarget2> > > *> >, equal_to<unsigned int>, allocator<list<cRZAutoRefCount<cIGZMessageTarget2>, allocator<cRZAutoRefCount<cIGZMessageTarget2> > > *> >	1
+sc3u_demo.x86	hashtable<OccupantInfo, OccupantInfo, hash<OccupantInfo>, _Identity<OccupantInfo>, equal_to<OccupantInfo>, allocator<OccupantInfo> >	5
+sc3u_demo.x86	hashtable<pair<cGZResourceKey const, cGZDBSegmentIndexedFile::RecordInfo>, cGZResourceKey, hash<cGZResourceKey>, _Select1st<pair<cGZResourceKey const, cGZDBSegmentIndexedFile::RecordInfo> >, equal_to<cGZResourceKey>, allocator<cGZDBSegmentIndexedFile::RecordInfo> >	4
+sc3u_demo.x86	hashtable<pair<cRZString const, NetworkFileCacheInfo>, cRZString, hash<cRZString>, _Select1st<pair<cRZString const, NetworkFileCacheInfo> >, equal_to<cRZString>, allocator<NetworkFileCacheInfo> >	4
+sc3u_demo.x86	hashtable<pair<int const, cIGZBuffer *>, int, hash<int>, _Select1st<pair<int const, cIGZBuffer *> >, equal_to<int>, allocator<cIGZBuffer *> >	8
+sc3u_demo.x86	hashtable<pair<int const, cIGZFont *>, int, hash<int>, _Select1st<pair<int const, cIGZFont *> >, equal_to<int>, allocator<cIGZFont *> >	8
+sc3u_demo.x86	hashtable<pair<int const, cIGZPalette *>, int, hash<int>, _Select1st<pair<int const, cIGZPalette *> >, equal_to<int>, allocator<cIGZPalette *> >	8
+sc3u_demo.x86	hashtable<pair<int const, cIGZSnd *>, int, hash<int>, _Select1st<pair<int const, cIGZSnd *> >, equal_to<int>, allocator<cIGZSnd *> >	4
+sc3u_demo.x86	hashtable<pair<int const, cIGZString *>, int, hash<int>, _Select1st<pair<int const, cIGZString *> >, equal_to<int>, allocator<cIGZString *> >	7
+sc3u_demo.x86	hashtable<pair<int const, unsigned int>, int, hash<int>, _Select1st<pair<int const, unsigned int> >, equal_to<int>, allocator<unsigned int> >	8
+sc3u_demo.x86	hashtable<pair<unsigned int const, cIGZMessageTarget *>, unsigned int, hash<unsigned int>, _Select1st<pair<unsigned int const, cIGZMessageTarget *> >, equal_to<unsigned int>, allocator<cIGZMessageTarget *> >	8
+sc3u_demo.x86	hashtable<pair<unsigned int const, list<cIGZMessageTarget *, allocator<cIGZMessageTarget *> > *>, unsigned int, hash<unsigned int>, _Select1st<pair<unsigned int const, list<cIGZMessageTarget *, allocator<cIGZMessageTarget *> > *> >, equal_to<unsigned int>, allocator<list<cIGZMessageTarget *, allocator<cIGZMessageTarget *> > *> >	4
+sc3u_demo.x86	hashtable<pair<unsigned int const, list<cRZAutoRefCount<cIGZMessageTarget2>, allocator<cRZAutoRefCount<cIGZMessageTarget2> > > *>, unsigned int, hash<unsigned int>, _Select1st<pair<unsigned int const, list<cRZAutoRefCount<cIGZMessageTarget2>, allocator<cRZAutoRefCount<cIGZMessageTarget2> > > *> >, equal_to<unsigned int>, allocator<list<cRZAutoRefCount<cIGZMessageTarget2>, allocator<cRZAutoRefCount<cIGZMessageTarget2> > > *> >	4
+sc3u_demo.x86	hashtable<unsigned int, unsigned int, hash<unsigned int>, _Identity<unsigned int>, equal_to<unsigned int>, allocator<unsigned int> >	6
+sc3u_demo.x86	HTTPMessage	25
+sc3u_demo.x86	invalid_argument	2
+sc3u_demo.x86	_IO_istream_withassign	3
+sc3u_demo.x86	_IO_ostream_withassign	3
+sc3u_demo.x86	ios	39
+sc3u_demo.x86	iostream	3
+sc3u_demo.x86	IRCChannelInfo	3
+sc3u_demo.x86	IRCChannelInfoBasic	3
+sc3u_demo.x86	IRCJoinLeaveStruct	2
+sc3u_demo.x86	IRCUserInfo	3
+sc3u_demo.x86	IRCUserMessageStruct	2
+sc3u_demo.x86	istream	58
+sc3u_demo.x86	length_error	2
+sc3u_demo.x86	LineGraphSeriesInfo	3
+sc3u_demo.x86	_List_base<basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >, allocator<basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > > >	1
+sc3u_demo.x86	_List_base<bool, allocator<bool> >	1
+sc3u_demo.x86	_List_base<cGZCheatCodeManager::CheatCodeNotificationAssocation, allocator<cGZCheatCodeManager::CheatCodeNotificationAssocation> >	1
+sc3u_demo.x86	_List_base<cGZCheatCodeManager::CheatCodeStringAssociation, allocator<cGZCheatCodeManager::CheatCodeStringAssociation> >	1
+sc3u_demo.x86	_List_base<cGZMessage, allocator<cGZMessage> >	1
+sc3u_demo.x86	_List_base<cGZMessageServer2::DelayedAddOrRemove, allocator<cGZMessageServer2::DelayedAddOrRemove> >	1
+sc3u_demo.x86	_List_base<cGZMessageServer2::GeneralMessageTargetInfo, allocator<cGZMessageServer2::GeneralMessageTargetInfo> >	1
+sc3u_demo.x86	_List_base<cGZMessageServer::DelayedAddOrRemove, allocator<cGZMessageServer::DelayedAddOrRemove> >	1
+sc3u_demo.x86	_List_base<cGZMessageServer::GeneralMessageTargetInfo, allocator<cGZMessageServer::GeneralMessageTargetInfo> >	1
+sc3u_demo.x86	_List_base<cGZMLInlineElement *, allocator<cGZMLInlineElement *> >	1
+sc3u_demo.x86	_List_base<cGZWinIconicInfoListBox::tListItem, allocator<cGZWinIconicInfoListBox::tListItem> >	1
+sc3u_demo.x86	_List_base<cGZWinMgrSDL::MessageTargetInfo, allocator<cGZWinMgrSDL::MessageTargetInfo> >	1
+sc3u_demo.x86	_List_base<cIGZCtrlCreator *, allocator<cIGZCtrlCreator *> >	1
+sc3u_demo.x86	_List_base<cIGZFont *, allocator<cIGZFont *> >	1
+sc3u_demo.x86	_List_base<cIGZGraphicSystemHook *, allocator<cIGZGraphicSystemHook *> >	1
+sc3u_demo.x86	_List_base<cIGZGraphVertex *, allocator<cIGZGraphVertex *> >	1
+sc3u_demo.x86	_List_base<cIGZMessageTarget *, allocator<cIGZMessageTarget *> >	1
+sc3u_demo.x86	_List_base<cIGZSoundRenderClient *, allocator<cIGZSoundRenderClient *> >	1
+sc3u_demo.x86	_List_base<cIGZTreeNode *, allocator<cIGZTreeNode *> >	1
+sc3u_demo.x86	_List_base<cIGZWin *, allocator<cIGZWin *> >	1
+sc3u_demo.x86	_List_base<cIGZWinFolderRow *, allocator<cIGZWinFolderRow *> >	1
+sc3u_demo.x86	_List_base<cIGZWWWSystem::Job, allocator<cIGZWWWSystem::Job> >	1
+sc3u_demo.x86	_List_base<cISC3CityChangeReceiver *, allocator<cISC3CityChangeReceiver *> >	1
+sc3u_demo.x86	_List_base<cRZAutoRefCount<cIGZFrameWorkHooks>, allocator<cRZAutoRefCount<cIGZFrameWorkHooks> > >	1
+sc3u_demo.x86	_List_base<cRZAutoRefCount<cIGZMessage2>, allocator<cRZAutoRefCount<cIGZMessage2> > >	1
+sc3u_demo.x86	_List_base<cRZAutoRefCount<cIGZMessageTarget2>, allocator<cRZAutoRefCount<cIGZMessageTarget2> > >	1
+sc3u_demo.x86	_List_base<cRZAutoRefCount<cIGZSystemService>, allocator<cRZAutoRefCount<cIGZSystemService> > >	1
+sc3u_demo.x86	_List_base<cRZAutoRefCount<cIGZUnknown>, allocator<cRZAutoRefCount<cIGZUnknown> > >	1
+sc3u_demo.x86	_List_base<cRZClockMessageAssociation, allocator<cRZClockMessageAssociation> >	1
+sc3u_demo.x86	_List_base<cRZDBSegmentCompressed::_openRecordObj, allocator<cRZDBSegmentCompressed::_openRecordObj> >	1
+sc3u_demo.x86	_List_base<cRZDBSegmentMemory::_autoRec, allocator<cRZDBSegmentMemory::_autoRec> >	1
+sc3u_demo.x86	_List_base<cRZDirectoryEntry, allocator<cRZDirectoryEntry> >	1
+sc3u_demo.x86	_List_base<cRZFTPClient::Job, allocator<cRZFTPClient::Job> >	1
+sc3u_demo.x86	_List_base<cRZHTTPClient::Job, allocator<cRZHTTPClient::Job> >	1
+sc3u_demo.x86	_List_base<cRZIRCClient::AutoOnlineInfo, allocator<cRZIRCClient::AutoOnlineInfo> >	1
+sc3u_demo.x86	_List_base<cRZIRCClient::OutgoingItem, allocator<cRZIRCClient::OutgoingItem> >	1
+sc3u_demo.x86	_List_base<cRZNameLookup::LookupEntry, allocator<cRZNameLookup::LookupEntry> >	1
+sc3u_demo.x86	_List_base<cRZString, allocator<cRZString> >	1
+sc3u_demo.x86	_List_base<cSC3OccupantManagerAnim::TickEntry, allocator<cSC3OccupantManagerAnim::TickEntry> >	1
+sc3u_demo.x86	_List_base<cStringPair, allocator<cStringPair> >	1
+sc3u_demo.x86	_List_base<DynamicGraphObject *, allocator<DynamicGraphObject *> >	1
+sc3u_demo.x86	_List_base<FTPDirEntry, allocator<FTPDirEntry> >	1
+sc3u_demo.x86	_List_base<int, allocator<int> >	1
+sc3u_demo.x86	_List_base<IRCChannelInfoBasic, allocator<IRCChannelInfoBasic> >	1
+sc3u_demo.x86	_List_base<IRCUserInfo, allocator<IRCUserInfo> >	1
+sc3u_demo.x86	_List_base<MatrixCell<cRZVariant>, allocator<MatrixCell<cRZVariant> > >	1
+sc3u_demo.x86	_List_base<MatrixRow<cRZVariant>, allocator<MatrixRow<cRZVariant> > >	1
+sc3u_demo.x86	_List_base<sCallbackEvent, allocator<sCallbackEvent> >	1
+sc3u_demo.x86	_List_base<tFolderTab, allocator<tFolderTab> >	1
+sc3u_demo.x86	_List_base<tHelpChapter *, allocator<tHelpChapter *> >	1
+sc3u_demo.x86	_List_base<TickerMessage *, allocator<TickerMessage *> >	1
+sc3u_demo.x86	_List_base<unsigned int, allocator<unsigned int> >	1
+sc3u_demo.x86	_List_base<VideoDriverInformation, allocator<VideoDriverInformation> >	1
+sc3u_demo.x86	list<basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >, allocator<basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > > >	2
+sc3u_demo.x86	list<cGZCheatCodeManager::CheatCodeNotificationAssocation, allocator<cGZCheatCodeManager::CheatCodeNotificationAssocation> >	1
+sc3u_demo.x86	list<cIGZFont *, allocator<cIGZFont *> >	2
+sc3u_demo.x86	list<cIGZGraphVertex *, allocator<cIGZGraphVertex *> >	1
+sc3u_demo.x86	list<cIGZMessageTarget *, allocator<cIGZMessageTarget *> >	1
+sc3u_demo.x86	list<cIGZSoundRenderClient *, allocator<cIGZSoundRenderClient *> >	1
+sc3u_demo.x86	list<cIGZWin *, allocator<cIGZWin *> >	2
+sc3u_demo.x86	list<cIGZWinFolderRow *, allocator<cIGZWinFolderRow *> >	2
+sc3u_demo.x86	list<cRZAutoRefCount<cIGZMessageTarget2>, allocator<cRZAutoRefCount<cIGZMessageTarget2> > >	1
+sc3u_demo.x86	list<cRZDirectory::DriveType, allocator<cRZDirectory::DriveType> >	1
+sc3u_demo.x86	list<cRZDirectoryEntry, allocator<cRZDirectoryEntry> >	1
+sc3u_demo.x86	list<cRZString, allocator<cRZString> >	5
+sc3u_demo.x86	list<cStringPair, allocator<cStringPair> >	1
+sc3u_demo.x86	list<DynamicGraphObject *, allocator<DynamicGraphObject *> >	1
+sc3u_demo.x86	list<FTPDirEntry, allocator<FTPDirEntry> >	1
+sc3u_demo.x86	list<int, allocator<int> >	2
+sc3u_demo.x86	list<IRCChannelInfoBasic, allocator<IRCChannelInfoBasic> >	2
+sc3u_demo.x86	list<IRCUserInfo, allocator<IRCUserInfo> >	2
+sc3u_demo.x86	list<unsigned int, allocator<unsigned int> >	2
+sc3u_demo.x86	list<VideoDriverInformation, allocator<VideoDriverInformation> >	1
+sc3u_demo.x86	logic_error	4
+sc3u_demo.x86	__malloc_alloc_template<0>	1
+sc3u_demo.x86	map<cGZResourceKey, cGZDBSDFRecord *, less<cGZResourceKey>, allocator<cGZDBSDFRecord *> >	1
+sc3u_demo.x86	map<cGZResourceKey, cIGZDBRecord *, less<cGZResourceKey>, allocator<cIGZDBRecord *> >	1
+sc3u_demo.x86	map<cGZResourceKey, cIGZResource *, less<cGZResourceKey>, allocator<cIGZResource *> >	1
+sc3u_demo.x86	map<cGZResourceKey, unsigned int, less<cGZResourceKey>, allocator<unsigned int> >	1
+sc3u_demo.x86	map<cRZString, cGZMLDocument::tURLToImageMapItem, less<cRZString>, allocator<cGZMLDocument::tURLToImageMapItem> >	1
+sc3u_demo.x86	map<cRZString, cRZNameLookup::CacheEntry, less<cRZString>, allocator<cRZNameLookup::CacheEntry> >	1
+sc3u_demo.x86	map<cRZString, cRZString, less<cRZString>, allocator<cRZString> >	1
+sc3u_demo.x86	map<cRZString, cSC3Internet::URLMessageData, less<cRZString>, allocator<cSC3Internet::URLMessageData> >	1
+sc3u_demo.x86	map<cRZString, unsigned int, less<cRZString>, allocator<unsigned int> >	1
+sc3u_demo.x86	map<int, cIGZBuffer *, less<int>, allocator<cIGZBuffer *> >	1
+sc3u_demo.x86	map<int, cISC3ListItem *, less<int>, allocator<cISC3ListItem *> >	1
+sc3u_demo.x86	map<tTickerKey, tTickerInfo, less<tTickerKey>, allocator<tTickerInfo> >	1
+sc3u_demo.x86	map<unsigned int, bool, less<unsigned int>, allocator<bool> >	1
+sc3u_demo.x86	map<unsigned int, cGZMessage, less<unsigned int>, allocator<cGZMessage> >	1
+sc3u_demo.x86	map<unsigned int, cGZResourceKey, less<unsigned int>, allocator<cGZResourceKey> >	1
+sc3u_demo.x86	map<unsigned int, cGZWinMgrSDL::tRegWinInfo, less<unsigned int>, allocator<cGZWinMgrSDL::tRegWinInfo> >	1
+sc3u_demo.x86	map<unsigned int, cIGZCursor *, less<unsigned int>, allocator<cIGZCursor *> >	1
+sc3u_demo.x86	map<unsigned int, cIGZMessageQueue *, less<unsigned int>, allocator<cIGZMessageQueue *> >	1
+sc3u_demo.x86	map<unsigned int, cRZAutoRefCount<cIGZMessageQueue2>, less<unsigned int>, allocator<cRZAutoRefCount<cIGZMessageQueue2> > >	1
+sc3u_demo.x86	map<unsigned int, cRZAutoRefCount<cIGZSystemService>, less<unsigned int>, allocator<cRZAutoRefCount<cIGZSystemService> > >	1
+sc3u_demo.x86	map<unsigned int, cRZString, less<unsigned int>, allocator<cRZString> >	1
+sc3u_demo.x86	map<unsigned int, cSLTokenFieldBase *, less<unsigned int>, allocator<cSLTokenFieldBase *> >	1
+sc3u_demo.x86	map<unsigned int, float, less<unsigned int>, allocator<float> >	1
+sc3u_demo.x86	map<unsigned int, pair<unsigned int, cGZCOMLibrary *>, less<unsigned int>, allocator<pair<unsigned int, cGZCOMLibrary *> > >	1
+sc3u_demo.x86	map<unsigned int, unsigned int, less<unsigned int>, allocator<unsigned int> >	1
+sc3u_demo.x86	MatrixRow<cRZVariant>	2
+sc3u_demo.x86	MiscGraphArrow	3
+sc3u_demo.x86	MiscGraphLine	3
+sc3u_demo.x86	MiscGraphPicture	5
+sc3u_demo.x86	MiscGraphRect	3
+sc3u_demo.x86	MiscGraphTextInfo	5
+sc3u_demo.x86	MPEG	34
+sc3u_demo.x86	MPEGaction	3
+sc3u_demo.x86	MPEGaudio	57
+sc3u_demo.x86	MPEGaudioaction	1
+sc3u_demo.x86	Mpegbitwindow	1
+sc3u_demo.x86	MPEGerror	2
+sc3u_demo.x86	MPEGlist	5
+sc3u_demo.x86	MPEG_ring	11
+sc3u_demo.x86	MPEGstream	17
+sc3u_demo.x86	MPEGsystem	27
+sc3u_demo.x86	MPEGvideo	20
+sc3u_demo.x86	MPEGvideoaction	2
+sc3u_demo.x86	multimap<cRZString, pair<cRZString, cRZString>, less<cRZString>, allocator<pair<cRZString, cRZString> > >	1
+sc3u_demo.x86	multimap<int, cRZAutoRefCount<cIGZSystemService>, less<int>, allocator<cRZAutoRefCount<cIGZSystemService> > >	1
+sc3u_demo.x86	multimap<unsigned int, cIGZResourceFactory *, less<unsigned int>, allocator<cIGZResourceFactory *> >	1
+sc3u_demo.x86	multimap<unsigned int, cRZString, less<unsigned int>, allocator<cRZString> >	1
+sc3u_demo.x86	multimap<unsigned int, unsigned int, less<unsigned int>, allocator<unsigned int> >	1
+sc3u_demo.x86	NetworkFileCache	39
+sc3u_demo.x86	NetworkFileCacheInfo	4
+sc3u_demo.x86	ostream	39
+sc3u_demo.x86	out_of_range	2
+sc3u_demo.x86	overflow_error	2
+sc3u_demo.x86	pair<basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >, basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > >	3
+sc3u_demo.x86	pair<cRZString const, cGZMLDocument::tURLToImageMapItem>	2
+sc3u_demo.x86	pair<cRZString const, cRZNameLookup::CacheEntry>	2
+sc3u_demo.x86	pair<cRZString const, cRZString>	2
+sc3u_demo.x86	pair<cRZString const, cSC3Internet::URLMessageData>	2
+sc3u_demo.x86	pair<cRZString const, NetworkFileCacheInfo>	2
+sc3u_demo.x86	pair<cRZString const, pair<cRZString, cRZString> >	2
+sc3u_demo.x86	pair<cRZString const, unsigned int>	2
+sc3u_demo.x86	pair<cRZString, cRZString>	3
+sc3u_demo.x86	pair<unsigned int const, cRZString>	2
+sc3u_demo.x86	PieGraphSeriesInfo	3
+sc3u_demo.x86	__pointer_type_info	1
+sc3u_demo.x86	__ptmd_type_info	1
+sc3u_demo.x86	__ptmf_type_info	1
+sc3u_demo.x86	RandomInteger	1
+sc3u_demo.x86	range_error	2
+sc3u_demo.x86	_Rb_tree<cGZCOMLibrary, cGZCOMLibrary, _Identity<cGZCOMLibrary>, less<cGZCOMLibrary>, allocator<cGZCOMLibrary> >	4
+sc3u_demo.x86	_Rb_tree<cGZResourceKey, cGZResourceKey, _Identity<cGZResourceKey>, less<cGZResourceKey>, allocator<cGZResourceKey> >	6
+sc3u_demo.x86	_Rb_tree<cGZResourceKey, pair<cGZResourceKey const, cGZDBSDFRecord *>, _Select1st<pair<cGZResourceKey const, cGZDBSDFRecord *> >, less<cGZResourceKey>, allocator<cGZDBSDFRecord *> >	7
+sc3u_demo.x86	_Rb_tree<cGZResourceKey, pair<cGZResourceKey const, cIGZDBRecord *>, _Select1st<pair<cGZResourceKey const, cIGZDBRecord *> >, less<cGZResourceKey>, allocator<cIGZDBRecord *> >	5
+sc3u_demo.x86	_Rb_tree<cGZResourceKey, pair<cGZResourceKey const, cIGZResource *>, _Select1st<pair<cGZResourceKey const, cIGZResource *> >, less<cGZResourceKey>, allocator<cIGZResource *> >	5
+sc3u_demo.x86	_Rb_tree<cGZResourceKey, pair<cGZResourceKey const, unsigned int>, _Select1st<pair<cGZResourceKey const, unsigned int> >, less<cGZResourceKey>, allocator<unsigned int> >	4
+sc3u_demo.x86	_Rb_tree<cRZCallbackTimer *, cRZCallbackTimer *, _Identity<cRZCallbackTimer *>, less<cRZCallbackTimer *>, allocator<cRZCallbackTimer *> >	4
+sc3u_demo.x86	_Rb_tree<cRZString, pair<cRZString const, cGZMLDocument::tURLToImageMapItem>, _Select1st<pair<cRZString const, cGZMLDocument::tURLToImageMapItem> >, less<cRZString>, allocator<cGZMLDocument::tURLToImageMapItem> >	4
+sc3u_demo.x86	_Rb_tree<cRZString, pair<cRZString const, cRZNameLookup::CacheEntry>, _Select1st<pair<cRZString const, cRZNameLookup::CacheEntry> >, less<cRZString>, allocator<cRZNameLookup::CacheEntry> >	4
+sc3u_demo.x86	_Rb_tree<cRZString, pair<cRZString const, cRZString>, _Select1st<pair<cRZString const, cRZString> >, less<cRZString>, allocator<cRZString> >	4
+sc3u_demo.x86	_Rb_tree<cRZString, pair<cRZString const, cSC3Internet::URLMessageData>, _Select1st<pair<cRZString const, cSC3Internet::URLMessageData> >, less<cRZString>, allocator<cSC3Internet::URLMessageData> >	4
+sc3u_demo.x86	_Rb_tree<cRZString, pair<cRZString const, pair<cRZString, cRZString> >, _Select1st<pair<cRZString const, pair<cRZString, cRZString> > >, less<cRZString>, allocator<pair<cRZString, cRZString> > >	4
+sc3u_demo.x86	_Rb_tree<cRZString, pair<cRZString const, unsigned int>, _Select1st<pair<cRZString const, unsigned int> >, less<cRZString>, allocator<unsigned int> >	4
+sc3u_demo.x86	_Rb_tree<int, int, _Identity<int>, less<int>, allocator<int> >	6
+sc3u_demo.x86	_Rb_tree<int, pair<int const, cIGZBuffer *>, _Select1st<pair<int const, cIGZBuffer *> >, less<int>, allocator<cIGZBuffer *> >	4
+sc3u_demo.x86	_Rb_tree<int, pair<int const, cISC3ListItem *>, _Select1st<pair<int const, cISC3ListItem *> >, less<int>, allocator<cISC3ListItem *> >	4
+sc3u_demo.x86	_Rb_tree<int, pair<int const, cRZAutoRefCount<cIGZSystemService> >, _Select1st<pair<int const, cRZAutoRefCount<cIGZSystemService> > >, less<int>, allocator<cRZAutoRefCount<cIGZSystemService> > >	3
+sc3u_demo.x86	_Rb_tree<tTickerKey, pair<tTickerKey const, tTickerInfo>, _Select1st<pair<tTickerKey const, tTickerInfo> >, less<tTickerKey>, allocator<tTickerInfo> >	4
+sc3u_demo.x86	_Rb_tree<unsigned int, pair<unsigned int const, bool>, _Select1st<pair<unsigned int const, bool> >, less<unsigned int>, allocator<bool> >	6
+sc3u_demo.x86	_Rb_tree<unsigned int, pair<unsigned int const, cGZMessage>, _Select1st<pair<unsigned int const, cGZMessage> >, less<unsigned int>, allocator<cGZMessage> >	4
+sc3u_demo.x86	_Rb_tree<unsigned int, pair<unsigned int const, cGZResourceKey>, _Select1st<pair<unsigned int const, cGZResourceKey> >, less<unsigned int>, allocator<cGZResourceKey> >	5
+sc3u_demo.x86	_Rb_tree<unsigned int, pair<unsigned int const, cGZWinMgrSDL::tRegWinInfo>, _Select1st<pair<unsigned int const, cGZWinMgrSDL::tRegWinInfo> >, less<unsigned int>, allocator<cGZWinMgrSDL::tRegWinInfo> >	6
+sc3u_demo.x86	_Rb_tree<unsigned int, pair<unsigned int const, cIGZCursor *>, _Select1st<pair<unsigned int const, cIGZCursor *> >, less<unsigned int>, allocator<cIGZCursor *> >	5
+sc3u_demo.x86	_Rb_tree<unsigned int, pair<unsigned int const, cIGZMessageQueue *>, _Select1st<pair<unsigned int const, cIGZMessageQueue *> >, less<unsigned int>, allocator<cIGZMessageQueue *> >	6
+sc3u_demo.x86	_Rb_tree<unsigned int, pair<unsigned int const, cIGZResourceFactory *>, _Select1st<pair<unsigned int const, cIGZResourceFactory *> >, less<unsigned int>, allocator<cIGZResourceFactory *> >	5
+sc3u_demo.x86	_Rb_tree<unsigned int, pair<unsigned int const, cRZAutoRefCount<cIGZMessageQueue2> >, _Select1st<pair<unsigned int const, cRZAutoRefCount<cIGZMessageQueue2> > >, less<unsigned int>, allocator<cRZAutoRefCount<cIGZMessageQueue2> > >	4
+sc3u_demo.x86	_Rb_tree<unsigned int, pair<unsigned int const, cRZAutoRefCount<cIGZSystemService> >, _Select1st<pair<unsigned int const, cRZAutoRefCount<cIGZSystemService> > >, less<unsigned int>, allocator<cRZAutoRefCount<cIGZSystemService> > >	4
+sc3u_demo.x86	_Rb_tree<unsigned int, pair<unsigned int const, cRZString>, _Select1st<pair<unsigned int const, cRZString> >, less<unsigned int>, allocator<cRZString> >	8
+sc3u_demo.x86	_Rb_tree<unsigned int, pair<unsigned int const, cSLTokenFieldBase *>, _Select1st<pair<unsigned int const, cSLTokenFieldBase *> >, less<unsigned int>, allocator<cSLTokenFieldBase *> >	5
+sc3u_demo.x86	_Rb_tree<unsigned int, pair<unsigned int const, float>, _Select1st<pair<unsigned int const, float> >, less<unsigned int>, allocator<float> >	4
+sc3u_demo.x86	_Rb_tree<unsigned int, pair<unsigned int const, pair<unsigned int, cGZCOMLibrary *> >, _Select1st<pair<unsigned int const, pair<unsigned int, cGZCOMLibrary *> > >, less<unsigned int>, allocator<pair<unsigned int, cGZCOMLibrary *> > >	4
+sc3u_demo.x86	_Rb_tree<unsigned int, pair<unsigned int const, unsigned int>, _Select1st<pair<unsigned int const, unsigned int> >, less<unsigned int>, allocator<unsigned int> >	5
+sc3u_demo.x86	_Rb_tree<unsigned int, unsigned int, _Identity<unsigned int>, less<unsigned int>, allocator<unsigned int> >	6
+sc3u_demo.x86	runtime_error	4
+sc3u_demo.x86	RZ	18
+sc3u_demo.x86	RZDateTime	36
+sc3u_demo.x86	ScatterGraphSeriesInfo	3
+sc3u_demo.x86	set<cGZCOMLibrary, less<cGZCOMLibrary>, allocator<cGZCOMLibrary> >	1
+sc3u_demo.x86	set<cGZResourceKey, less<cGZResourceKey>, allocator<cGZResourceKey> >	1
+sc3u_demo.x86	set<cRZCallbackTimer *, less<cRZCallbackTimer *>, allocator<cRZCallbackTimer *> >	1
+sc3u_demo.x86	set<int, less<int>, allocator<int> >	1
+sc3u_demo.x86	set<unsigned int, less<unsigned int>, allocator<unsigned int> >	1
+sc3u_demo.x86	SFixed16	1
+sc3u_demo.x86	SimSettings	1
+sc3u_demo.x86	__si_type_info	3
+sc3u_demo.x86	SL	28
+sc3u_demo.x86	stack<cIGZCursor *, deque<cIGZCursor *, allocator<cIGZCursor *>, 0> >	1
+sc3u_demo.x86	stack<unsigned int, deque<unsigned int, allocator<unsigned int>, 0> >	1
+sc3u_demo.x86	streambuf	89
+sc3u_demo.x86	streammarker	6
+sc3u_demo.x86	SystemPerformanceInfo	1
+sc3u_demo.x86	tFolderTab	3
+sc3u_demo.x86	TickerMessage	3
+sc3u_demo.x86	tRZBasicIStream<cRZArchive>	24
+sc3u_demo.x86	tRZBasicOStream<cRZArchive>	24
+sc3u_demo.x86	type_info	6
+sc3u_demo.x86	UFixed16	1
+sc3u_demo.x86	underflow_error	2
+sc3u_demo.x86	__user_type_info	3
+sc3u_demo.x86	vector<BarGraphSeriesInfo, allocator<BarGraphSeriesInfo> >	2
+sc3u_demo.x86	vector<basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >, allocator<basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > > >	3
+sc3u_demo.x86	vector<cGZCheatCodeManager::CheatCodeHistoryRecord, allocator<cGZCheatCodeManager::CheatCodeHistoryRecord> >	1
+sc3u_demo.x86	vector<cGZDisplayMetrics, allocator<cGZDisplayMetrics> >	2
+sc3u_demo.x86	vector<cGZMLDocument::tBulletInfo, allocator<cGZMLDocument::tBulletInfo> >	1
+sc3u_demo.x86	vector<cGZMLDrawContext::tLeftMarginStackItem, allocator<cGZMLDrawContext::tLeftMarginStackItem> >	1
+sc3u_demo.x86	vector<cGZMLDrawContext::tRightMarginStackItem, allocator<cGZMLDrawContext::tRightMarginStackItem> >	1
+sc3u_demo.x86	vector<cGZMLElement *, allocator<cGZMLElement *> >	1
+sc3u_demo.x86	vector<cGZMLImageRequester *, allocator<cGZMLImageRequester *> >	1
+sc3u_demo.x86	vector<cGZMLLink *, allocator<cGZMLLink *> >	1
+sc3u_demo.x86	vector<cGZMLMETA *, allocator<cGZMLMETA *> >	1
+sc3u_demo.x86	vector<cGZMLTextSegment::tRenderAreaInfo, allocator<cGZMLTextSegment::tRenderAreaInfo> >	1
+sc3u_demo.x86	vector<cGZMLTR *, allocator<cGZMLTR *> >	1
+sc3u_demo.x86	vector<cGZWinTextEdit::UndoRedoAction, allocator<cGZWinTextEdit::UndoRedoAction> >	1
+sc3u_demo.x86	vector<cIGZDebugCommand *, allocator<cIGZDebugCommand *> >	1
+sc3u_demo.x86	vector<cIGZFontSys::tOutputStyleType, allocator<cIGZFontSys::tOutputStyleType> >	1
+sc3u_demo.x86	vector<cIGZGameCommandFactory *, allocator<cIGZGameCommandFactory *> >	1
+sc3u_demo.x86	vector<cIGZGraphEdge *, allocator<cIGZGraphEdge *> >	1
+sc3u_demo.x86	vector<cIGZRadioStation *, allocator<cIGZRadioStation *> >	1
+sc3u_demo.x86	vector<cISC3CityChangeReceiver *, allocator<cISC3CityChangeReceiver *> >	1
+sc3u_demo.x86	vector<cISC3CityLayerManipulator *, allocator<cISC3CityLayerManipulator *> >	1
+sc3u_demo.x86	vector<cISC3ListItem::cListItemColInfo, allocator<cISC3ListItem::cListItemColInfo> >	1
+sc3u_demo.x86	vector<cISC3OccAttribOverRide *, allocator<cISC3OccAttribOverRide *> >	1
+sc3u_demo.x86	vector<CookieData, allocator<CookieData> >	1
+sc3u_demo.x86	vector<cPersistantTilingFamily *, allocator<cPersistantTilingFamily *> >	1
+sc3u_demo.x86	vector<cRZ2DPointFloat32, allocator<cRZ2DPointFloat32> >	2
+sc3u_demo.x86	vector<cRZAutoRefCount<cIGZMessageTarget2>, allocator<cRZAutoRefCount<cIGZMessageTarget2> > >	1
+sc3u_demo.x86	vector<cRZCOMDllDirector *, allocator<cRZCOMDllDirector *> >	1
+sc3u_demo.x86	vector<cRZDBSegmentCompressed::_compressedSeg, allocator<cRZDBSegmentCompressed::_compressedSeg> >	1
+sc3u_demo.x86	vector<cRZNetStreamSocket *, allocator<cRZNetStreamSocket *> >	1
+sc3u_demo.x86	vector<cRZPoint, allocator<cRZPoint> >	2
+sc3u_demo.x86	vector<cRZPOPClient::MessageInfo, allocator<cRZPOPClient::MessageInfo> >	1
+sc3u_demo.x86	vector<cRZSize, allocator<cRZSize> >	1
+sc3u_demo.x86	vector<cRZSMTPClient::MessageInfo, allocator<cRZSMTPClient::MessageInfo> >	1
+sc3u_demo.x86	vector<cRZString, allocator<cRZString> >	3
+sc3u_demo.x86	vector<cSC3CityCoord, allocator<cSC3CityCoord> >	1
+sc3u_demo.x86	vector<cSC3OccPersistInfo::_autoToken, allocator<cSC3OccPersistInfo::_autoToken> >	1
+sc3u_demo.x86	vector<cTileIdentity, allocator<cTileIdentity> >	2
+sc3u_demo.x86	vector<cTileRule, allocator<cTileRule> >	2
+sc3u_demo.x86	vector<cTilingSet, allocator<cTilingSet> >	1
+sc3u_demo.x86	vector<float, allocator<float> >	3
+sc3u_demo.x86	vector<_Hashtable_node<cIGZWin *> *, allocator<cIGZWin *> >	1
+sc3u_demo.x86	vector<_Hashtable_node<OccupantInfo> *, allocator<OccupantInfo> >	1
+sc3u_demo.x86	vector<_Hashtable_node<pair<cGZResourceKey const, cGZDBSegmentIndexedFile::RecordInfo> > *, allocator<cGZDBSegmentIndexedFile::RecordInfo> >	1
+sc3u_demo.x86	vector<_Hashtable_node<pair<cRZString const, NetworkFileCacheInfo> > *, allocator<NetworkFileCacheInfo> >	1
+sc3u_demo.x86	vector<_Hashtable_node<pair<int const, cIGZBuffer *> > *, allocator<cIGZBuffer *> >	1
+sc3u_demo.x86	vector<_Hashtable_node<pair<int const, cIGZFont *> > *, allocator<cIGZFont *> >	1
+sc3u_demo.x86	vector<_Hashtable_node<pair<int const, cIGZPalette *> > *, allocator<cIGZPalette *> >	1
+sc3u_demo.x86	vector<_Hashtable_node<pair<int const, cIGZSnd *> > *, allocator<cIGZSnd *> >	1
+sc3u_demo.x86	vector<_Hashtable_node<pair<int const, cIGZString *> > *, allocator<cIGZString *> >	1
+sc3u_demo.x86	vector<_Hashtable_node<pair<int const, unsigned int> > *, allocator<unsigned int> >	1
+sc3u_demo.x86	vector<_Hashtable_node<pair<unsigned int const, cIGZMessageTarget *> > *, allocator<cIGZMessageTarget *> >	1
+sc3u_demo.x86	vector<_Hashtable_node<pair<unsigned int const, list<cIGZMessageTarget *, allocator<cIGZMessageTarget *> > *> > *, allocator<list<cIGZMessageTarget *, allocator<cIGZMessageTarget *> > *> >	1
+sc3u_demo.x86	vector<_Hashtable_node<pair<unsigned int const, list<cRZAutoRefCount<cIGZMessageTarget2>, allocator<cRZAutoRefCount<cIGZMessageTarget2> > > *> > *, allocator<list<cRZAutoRefCount<cIGZMessageTarget2>, allocator<cRZAutoRefCount<cIGZMessageTarget2> > > *> >	1
+sc3u_demo.x86	vector<_Hashtable_node<unsigned int> *, allocator<unsigned int> >	1
+sc3u_demo.x86	vector<int, allocator<int> >	1
+sc3u_demo.x86	vector<IRCChannelInfo, allocator<IRCChannelInfo> >	2
+sc3u_demo.x86	vector<LineGraphSeriesInfo, allocator<LineGraphSeriesInfo> >	2
+sc3u_demo.x86	vector<OccupantInfo, allocator<OccupantInfo> >	1
+sc3u_demo.x86	vector<pair<basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >, basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > >, allocator<pair<basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> >, basic_string<char, string_char_traits<char>, __default_alloc_template<true, 0> > > > >	2
+sc3u_demo.x86	vector<pair<cRZString, cRZString>, allocator<pair<cRZString, cRZString> > >	1
+sc3u_demo.x86	vector<pair<unsigned char *, unsigned int>, allocator<pair<unsigned char *, unsigned int> > >	1
+sc3u_demo.x86	vector<pair<unsigned int, unsigned char *>, allocator<pair<unsigned int, unsigned char *> > >	1
+sc3u_demo.x86	vector<PieGraphSeriesInfo, allocator<PieGraphSeriesInfo> >	2
+sc3u_demo.x86	vector<ScatterGraphSeriesInfo, allocator<ScatterGraphSeriesInfo> >	2
+sc3u_demo.x86	vector<SurfaceInformation, allocator<SurfaceInformation> >	1
+sc3u_demo.x86	vector<tFontAttributes, allocator<tFontAttributes> >	1
+sc3u_demo.x86	vector<tTickerKey, allocator<tTickerKey> >	1
+sc3u_demo.x86	vector<unsigned char, allocator<unsigned char> >	1
+sc3u_demo.x86	vector<unsigned int, allocator<unsigned int> >	2
+sc3u_demo.x86	vector<unsigned short, allocator<unsigned short> >	1
+sc3u_demo.x86	vector<vector<cRZ2DPointFloat32, allocator<cRZ2DPointFloat32> >, allocator<vector<cRZ2DPointFloat32, allocator<cRZ2DPointFloat32> > > >	2
+sc3u_demo.x86	vector<vector<float, allocator<float> >, allocator<vector<float, allocator<float> > > >	2
+sc3u_demo.x86	VideoDriverInformation	3

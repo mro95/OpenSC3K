@@ -1,0 +1,25 @@
+rva	demangled	mangled	source	method
+001c62	cGZRealtimeDebugDisplay::cGZRealtimeDebugDisplay(void)	__23cGZRealtimeDebugDisplay	libGZToolsD.so	tokens:13.0
+001ccf	virtual function thunk (delta:-4) for cGZRealtimeDebugDisplay::~cGZRealtimeDebugDisplay(void)	__thunk_4__._23cGZRealtimeDebugDisplay	libGZToolsD.so	caller
+001cef	cGZRealtimeDebugDisplay::~cGZRealtimeDebugDisplay(void)	_._23cGZRealtimeDebugDisplay	libGZToolsD.so	vtable-user:__vt_23cGZRealtimeDebugDisplay.10cRZUnknown
+002893	cGZCmdActivateTestWin::Execute(void)	Execute__21cGZCmdActivateTestWin	libGZToolsD.so	tokens:13.0
+002a3c	cRZCOMDllDirector::OnUnload(void)	OnUnload__17cRZCOMDllDirector	libGZToolsD.so	vtable:__vt_19cGZToolsCOMDirector
+002a3f	cGZToolsCOMDirector::GetDirectorID(void) const	GetDirectorID__C19cGZToolsCOMDirector	libGZToolsD.so	tokens:6.7
+002aac	cGZToolsCOMDirector::~cGZToolsCOMDirector(void)	_._19cGZToolsCOMDirector	libGZToolsD.so	vtable:__vt_19cGZToolsCOMDirector
+002ad7	cGZToolsCOMDirector::OnStart(cIGZCOM *)	OnStart__19cGZToolsCOMDirectorP7cIGZCOM	libGZToolsD.so	vtable:__vt_19cGZToolsCOMDirector
+002beb	cGZToolsCOMDirector::PreFrameWorkInit(void)	PreFrameWorkInit__19cGZToolsCOMDirector	libGZToolsD.so	tokens:13.5
+002c41	virtual function thunk (delta:-4) for cRZCOMDllDirector::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__17cRZCOMDllDirectorUiPPv	libGZToolsD.so	caller
+003b7b	cGZWinDebugDisplay::Init(void)	Init__18cGZWinDebugDisplay	libGZToolsD.so	tokens:17.4
+00727d	cRZCOMDllDirector::QueryInterface(unsigned int, void **)	QueryInterface__17cRZCOMDllDirectorUiPPv	libGZToolsD.so	tokens:13.5
+0072be	cRZCOMDllDirector::FrameWork(void)	FrameWork__17cRZCOMDllDirector	libGZToolsD.so	vtable:__vt_19cGZToolsCOMDirector
+0072ce	cRZCOMDllDirector::RemoveRef(void)	RemoveRef__17cRZCOMDllDirector	libGZToolsD.so	vtable:__vt_19cGZToolsCOMDirector
+0072dd	cRZCOMDllDirector::RefCount(void)	RefCount__17cRZCOMDllDirector	libGZToolsD.so	vtable:__vt_19cGZToolsCOMDirector
+0072e1	cRZCOMDllDirector::InitializeCOM(cIGZCOM *, cIGZString &)	InitializeCOM__17cRZCOMDllDirectorP7cIGZCOMR10cIGZString	libGZToolsD.so	vtable:__vt_19cGZToolsCOMDirector
+0073af	cRZCOMDllDirector::GetClassObject(unsigned int, unsigned int, void **)	GetClassObject__17cRZCOMDllDirectorUiUiPPv	libGZToolsD.so	vtable:__vt_19cGZToolsCOMDirector
+007430	cRZCOMDllDirector::EnumClassObjects(void (*)(unsigned int, unsigned int, void *), void *)	EnumClassObjects__17cRZCOMDllDirectorPFUiUiPv_vPv	libGZToolsD.so	vtable:__vt_19cGZToolsCOMDirector
+007484	cRZCOMDllDirector::ModuleName(cIGZString &)	ModuleName__17cRZCOMDllDirectorR10cIGZString	libGZToolsD.so	vtable:__vt_19cGZToolsCOMDirector
+007498	cRZCOMDllDirector::AddDirector(cRZCOMDllDirector *)	AddDirector__17cRZCOMDllDirectorP17cRZCOMDllDirector	libGZToolsD.so	vtable:__vt_19cGZToolsCOMDirector
+0074e2	cRZCOMDllDirector::CanUnloadNow(void)	CanUnloadNow__17cRZCOMDllDirector	libGZToolsD.so	vtable:__vt_19cGZToolsCOMDirector
+007539	cRZCOMDllDirector::AppRegister(cIGZRegistry *)	AppRegister__17cRZCOMDllDirectorP12cIGZRegistry	libGZToolsD.so	vtable:__vt_19cGZToolsCOMDirector
+007566	cRZCOMDllDirector::GZCOM(void)	GZCOM__17cRZCOMDllDirector	libGZToolsD.so	vtable:__vt_19cGZToolsCOMDirector
+0075d5	cRZCOMDllDirector::OnStart(cIGZCOM *)	OnStart__17cRZCOMDllDirectorP7cIGZCOM	libGZToolsD.so	tokens:13.5

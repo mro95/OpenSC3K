@@ -1,0 +1,262 @@
+rva	demangled	mangled	source	method
+00106e	cSparseSfx::AddRef(void)	AddRef__10cSparseSfx	libAudio.so	vtable-thunk:__vt_10cSparseSfx
+001099	RZGetCOMDllDirector_Audio(void)	RZGetCOMDllDirector_Audio__Fv	libAudio.so	tokens:75.0
+001186	cSfx::StopAllInstances(void)	StopAllInstances__4cSfx	libAudio.so	vtable:__vt_10cFadingSfx
+001189	cAudioCOMDirector::GetDirectorID(void) const	GetDirectorID__C17cAudioCOMDirector	libAudio.so	tokens:7.7
+00118f	cAudioCOMDirector::AppRegister(cIGZRegistry *)	AppRegister__17cAudioCOMDirectorP12cIGZRegistry	libAudio.so	tokens:7.7
+0015d1	cSC3CmdSoundFactory::~cSC3CmdSoundFactory(void)	_._19cSC3CmdSoundFactory	libAudio.so	vtable:__vt_19cSC3CmdSoundFactory
+00162a	cAudioCOMDirector::~cAudioCOMDirector(void)	_._17cAudioCOMDirector	libAudio.so	vtable:__vt_17cAudioCOMDirector
+001da9	virtual function thunk (delta:-4) for cRZCOMDllDirector::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__17cRZCOMDllDirectorUiPPv	libAudio.so	vtable:__vt_17cRZCOMDllDirector.18cIGZFrameWorkHooks
+001db1	virtual function thunk (delta:-4) for cRZCOMDllDirector::AddRef(void)	__thunk_4_AddRef__17cRZCOMDllDirector	libAudio.so	vtable:__vt_17cRZCOMDllDirector.18cIGZFrameWorkHooks
+001db9	virtual function thunk (delta:-4) for cRZCOMDllDirector::Release(void)	__thunk_4_Release__17cRZCOMDllDirector	libAudio.so	vtable:__vt_17cRZCOMDllDirector.18cIGZFrameWorkHooks
+001eae	cAudioFactory::QueryInterface(unsigned int, void **)	QueryInterface__13cAudioFactoryUiPPv	libAudio.so	vtable:__vt_13cAudioFactory
+001ed9	cAudioFactory::Release(void)	Release__13cAudioFactory	libAudio.so	vtable:__vt_13cAudioFactory
+001f0e	cAudioFactory::Create1ShotSfx(cISfx **)	Create1ShotSfx__13cAudioFactoryPP5cISfx	libAudio.so	vtable:__vt_13cAudioFactory
+00520c	cBoxX::~cBoxX(void)	_._5cBoxX	libAudio.so	vtable:__vt_5cBoxX
+00525b	cBoxX::QueryInterface(unsigned int, void **)	QueryInterface__5cBoxXUiPPv	libAudio.so	vtable:__vt_5cBoxX
+005279	cBoxX::Release(void)	Release__5cBoxX	libAudio.so	vtable:__vt_5cBoxX
+0052a9	cBoxX::Update(unsigned int)	Update__5cBoxXUi	libAudio.so	vtable:__vt_5cBoxX
+0053be	cRZLock::~cRZLock(void)	_._7cRZLock	libAudio.so	vtable:__vt_7cRZLock
+00865b	cBoxX::Shutdown(void)	Shutdown__5cBoxX	libAudio.so	vtable:__vt_5cBoxX
+008d77	cBoxX::Event(cIBoxX::EventNum, int, int, int, int)	Event__5cBoxXQ26cIBoxX8EventNumiiii	libAudio.so	vtable:__vt_5cBoxX
+009890	cBoxX::UpdateAmbiences(void)	UpdateAmbiences__5cBoxX	libAudio.so	tokens:7.7
+00a459	cBoxX::UpdateCityViewInfo(cISC3CityViewInfoIso *)	UpdateCityViewInfo__5cBoxXP20cISC3CityViewInfoIso	libAudio.so	caller
+00a757	cBoxX::UpdateGeiger(void)	UpdateGeiger__5cBoxX	libAudio.so	tokens:7.7
+00aeee	cBoxX::UpdateListedSfxVolumes(void)	UpdateListedSfxVolumes__5cBoxX	libAudio.so	tokens:30.6
+00b73f	virtual function thunk (delta:-4) for cBoxX::DoMessage(cGZMessage &)	__thunk_4_DoMessage__5cBoxXR10cGZMessage	libAudio.so	vtable:__vt_5cBoxX.17cIGZMessageTarget
+00ba42	virtual function thunk (delta:-4) for cBoxX::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__5cBoxXUiPPv	libAudio.so	caller
+00ba4a	virtual function thunk (delta:-4) for cBoxX::AddRef(void)	__thunk_4_AddRef__5cBoxX	libAudio.so	vtable:__vt_5cBoxX.17cIGZMessageTarget
+00ba52	virtual function thunk (delta:-4) for cBoxX::Release(void)	__thunk_4_Release__5cBoxX	libAudio.so	caller
+00bb00	cC2HCache::cC2HCache(void)	__9cC2HCache	libAudio.so	vtable-user:__vt_9cC2HCache
+00bb77	cC2HCache::GetCacheRootPath(void)	GetCacheRootPath__9cC2HCache	libAudio.so	vtable:__vt_9cC2HCache
+00bb7b	cC2HCache::~cC2HCache(void)	_._9cC2HCache	libAudio.so	caller
+00bbea	cC2HCache::Init(void)	Init__9cC2HCache	libAudio.so	vtable:__vt_9cC2HCache
+00bc5d	cC2HCache::Shutdown(void)	Shutdown__9cC2HCache	libAudio.so	vtable:__vt_9cC2HCache
+00bcce	cC2HCache::SetCacheRootPath(cRZString const &)	SetCacheRootPath__9cC2HCacheRC9cRZString	libAudio.so	vtable:__vt_9cC2HCache
+00bcdd	cC2HCache::GetCachePath(cRZString const &)	GetCachePath__9cC2HCacheRC9cRZString	libAudio.so	vtable:__vt_9cC2HCache
+00be0b	cC2HCache::SetCacheMaxSizeInBytes(int)	SetCacheMaxSizeInBytes__9cC2HCachei	libAudio.so	vtable:__vt_9cC2HCache
+00be15	cC2HCache::AddFileToCache(cRZString const &)	AddFileToCache__9cC2HCacheRC9cRZString	libAudio.so	vtable:__vt_9cC2HCache
+00bf01	cC2HCache::RemoveFileFromCache(cRZString const &)	RemoveFileFromCache__9cC2HCacheRC9cRZString	libAudio.so	vtable:__vt_9cC2HCache
+00bfef	cC2HCache::Update(void)	Update__9cC2HCache	libAudio.so	vtable:__vt_9cC2HCache
+00c085	cC2HCache::ClearCache(void)	ClearCache__9cC2HCache	libAudio.so	vtable:__vt_9cC2HCache
+00c17b	cC2HCache::ProcessRequests(void)	ProcessRequests__9cC2HCache	libAudio.so	vtable:__vt_9cC2HCache
+00c308	cC2HCache::DeleteUnreferencedFiles(void)	DeleteUnreferencedFiles__9cC2HCache	libAudio.so	vtable:__vt_9cC2HCache
+00c42d	cC2HCache::CopyFileToHD(cCachedFile *)	CopyFileToHD__9cC2HCacheP11cCachedFile	libAudio.so	vtable:__vt_9cC2HCache
+00c58a	cC2HCache::GetCurrentCacheSizeInBytes(void)	GetCurrentCacheSizeInBytes__9cC2HCache	libAudio.so	vtable:__vt_9cC2HCache
+00c5aa	cC2HCache::FileIsInCache(cRZString const &)	FileIsInCache__9cC2HCacheRC9cRZString	libAudio.so	vtable:__vt_9cC2HCache
+00cc02	cFreshPlayer::IsPlaying(void)	IsPlaying__12cFreshPlayer	libAudio.so	vtable:__vt_12cFreshPlayer
+00cc06	cFreshPlayer::GetYPos(void)	GetYPos__12cFreshPlayer	libAudio.so	vtable:__vt_12cFreshPlayer
+00cc0a	cFreshPlayer::GetXPos(void)	GetXPos__12cFreshPlayer	libAudio.so	vtable:__vt_12cFreshPlayer
+00cc0e	cFreshPlayer::SetStressLevel(int)	SetStressLevel__12cFreshPlayeri	libAudio.so	vtable:__vt_12cFreshPlayer
+00cc1b	cFreshPlayer::SetPause(bool)	SetPause__12cFreshPlayerb	libAudio.so	vtable:__vt_12cFreshPlayer
+00cc28	cFreshPlayer::~cFreshPlayer(void)	_._12cFreshPlayer	libAudio.so	vtable:__vt_12cFreshPlayer
+00cc64	cFreshPlayer::QueryInterface(unsigned int, void **)	QueryInterface__12cFreshPlayerUiPPv	libAudio.so	tokens:7.7
+00cc82	cFreshPlayer::AddRef(void)	AddRef__12cFreshPlayer	libAudio.so	vtable:__vt_12cFreshPlayer
+00cc89	cFreshPlayer::Release(void)	Release__12cFreshPlayer	libAudio.so	vtable:__vt_12cFreshPlayer
+00ce96	cFreshPlayer::Init(cRZString const &, cRZString const &, cFreshTimer *, cC2HCache *)	Init__12cFreshPlayerRC9cRZStringT1P11cFreshTimerP9cC2HCache	libAudio.so	tokens:7.7
+00d0f3	cFreshPlayer::Shutdown(void)	Shutdown__12cFreshPlayer	libAudio.so	vtable:__vt_12cFreshPlayer
+00d2ca	cFreshPlayer::Stop(void)	Stop__12cFreshPlayer	libAudio.so	vtable:__vt_12cFreshPlayer
+00d323	cFreshPlayer::StopNoLock(void)	StopNoLock__12cFreshPlayer	libAudio.so	vtable:__vt_12cFreshPlayer
+00d3c1	cFreshPlayer::StopFade(void)	StopFade__12cFreshPlayer	libAudio.so	vtable:__vt_12cFreshPlayer
+00d418	cFreshPlayer::Update(void)	Update__12cFreshPlayer	libAudio.so	vtable:__vt_12cFreshPlayer
+00d82a	cFreshPlayer::ProbOfCellStarting(int, int, int)	ProbOfCellStarting__12cFreshPlayeriii	libAudio.so	vtable:__vt_12cFreshPlayer
+00d9d0	cFreshPlayer::CellIsInSelectionArea(int, int)	CellIsInSelectionArea__12cFreshPlayerii	libAudio.so	vtable:__vt_12cFreshPlayer
+00da02	cFreshPlayer::GetCellToAdd(int &, int &, int)	GetCellToAdd__12cFreshPlayerRiT1i	libAudio.so	vtable:__vt_12cFreshPlayer
+00dc63	cFreshPlayer::ToggleCell(int, int)	ToggleCell__12cFreshPlayerii	libAudio.so	vtable:__vt_12cFreshPlayer
+00dca1	cFreshPlayer::GetCellToSubtract(int &, int &)	GetCellToSubtract__12cFreshPlayerRiT1	libAudio.so	vtable:__vt_12cFreshPlayer
+00df8e	cFreshPlayer::SubtractCell(int, int)	SubtractCell__12cFreshPlayerii	libAudio.so	vtable:__vt_12cFreshPlayer
+00dfb6	cFreshPlayer::SetVolume(int)	SetVolume__12cFreshPlayeri	libAudio.so	vtable:__vt_12cFreshPlayer
+00e011	cFreshPlayer::SetVolumeNoLock(int)	SetVolumeNoLock__12cFreshPlayeri	libAudio.so	vtable:__vt_12cFreshPlayer
+00e089	cFreshPlayer::FadeVolume(int, int, bool)	FadeVolume__12cFreshPlayeriib	libAudio.so	vtable:__vt_12cFreshPlayer
+00e1b1	cFreshPlayer::SetTempo(int)	SetTempo__12cFreshPlayeri	libAudio.so	vtable:__vt_12cFreshPlayer
+00e251	cFreshPlayer::BeatTime(int)	BeatTime__12cFreshPlayeri	libAudio.so	tokens:7.7
+00e308	cFreshPlayer::SetXPos(int)	SetXPos__12cFreshPlayeri	libAudio.so	vtable:__vt_12cFreshPlayer
+00e370	cFreshPlayer::SetYPos(int)	SetYPos__12cFreshPlayeri	libAudio.so	vtable:__vt_12cFreshPlayer
+00e481	cFreshPlayer::SetZoom(int)	SetZoom__12cFreshPlayeri	libAudio.so	vtable:__vt_12cFreshPlayer
+00e493	cFreshPlayer::SetPlayPercent(int)	SetPlayPercent__12cFreshPlayeri	libAudio.so	vtable:__vt_12cFreshPlayer
+00e4a8	cFreshPlayer::SetManual(bool)	SetManual__12cFreshPlayerb	libAudio.so	vtable:__vt_12cFreshPlayer
+00e4ba	cFreshPlayer::NumCellsBusy(void)	NumCellsBusy__12cFreshPlayer	libAudio.so	vtable:__vt_12cFreshPlayer
+00e4f8	cFreshPlayer::NumCellsDying(void)	NumCellsDying__12cFreshPlayer	libAudio.so	vtable:__vt_12cFreshPlayer
+00e536	cFreshPlayer::NumCellsPlaying(void)	NumCellsPlaying__12cFreshPlayer	libAudio.so	vtable:__vt_12cFreshPlayer
+00e574	cFreshPlayer::ShowUsage(void)	ShowUsage__12cFreshPlayer	libAudio.so	vtable:__vt_12cFreshPlayer
+00e59f	cFreshPlayer::SetSelectionAreaMaxDistances(int, int)	SetSelectionAreaMaxDistances__12cFreshPlayerii	libAudio.so	vtable:__vt_12cFreshPlayer
+00e5b2	cFreshPlayer::GetSelectionAreaMaxDistances(int &, int &)	GetSelectionAreaMaxDistances__12cFreshPlayerRiT1	libAudio.so	vtable:__vt_12cFreshPlayer
+00e5c9	cFreshPlayer::GetDataDir(cRZString &)	GetDataDir__12cFreshPlayerR9cRZString	libAudio.so	vtable:__vt_12cFreshPlayer
+00e5de	cFreshPlayer::UpdateListener(int, int)	UpdateListener__12cFreshPlayerii	libAudio.so	vtable:__vt_12cFreshPlayer
+00e5f5	cFreshPlayer::GetMinCellsPlaying(void)	GetMinCellsPlaying__12cFreshPlayer	libAudio.so	vtable:__vt_12cFreshPlayer
+00e64c	cFreshPlayer::GetMaxCellsPlaying(void)	GetMaxCellsPlaying__12cFreshPlayer	libAudio.so	vtable:__vt_12cFreshPlayer
+00e757	FreshnessRadioStation::IsOnTheAir(void)	IsOnTheAir__21FreshnessRadioStation	libAudio.so	vtable:__vt_21FreshnessRadioStation
+00e75d	FreshnessRadioStation::~FreshnessRadioStation(void)	_._21FreshnessRadioStation	libAudio.so	vtable:__vt_21FreshnessRadioStation
+00e780	FreshnessRadioStation::Init(void)	Init__21FreshnessRadioStation	libAudio.so	vtable:__vt_21FreshnessRadioStation
+00e7ec	FreshnessRadioStation::Shutdown(void)	Shutdown__21FreshnessRadioStation	libAudio.so	vtable:__vt_21FreshnessRadioStation
+00e803	FreshnessRadioStation::SetRadio(cIGZRadio *)	SetRadio__21FreshnessRadioStationP9cIGZRadio	libAudio.so	vtable:__vt_21FreshnessRadioStation
+00e82c	FreshnessRadioStation::GetStationCallSign(char *)	GetStationCallSign__21FreshnessRadioStationPc	libAudio.so	vtable:__vt_21FreshnessRadioStation
+00e842	FreshnessRadioStation::GetStationDescription(cIGZString *)	GetStationDescription__21FreshnessRadioStationP10cIGZString	libAudio.so	tokens:7.7
+00e853	FreshnessRadioStation::QueryInterface(unsigned int, void **)	QueryInterface__21FreshnessRadioStationUiPPv	libAudio.so	vtable:__vt_21FreshnessRadioStation
+00e875	FreshnessRadioStation::Release(void)	Release__21FreshnessRadioStation	libAudio.so	vtable:__vt_21FreshnessRadioStation
+00e883	FreshnessRadioStation::FinalRelease(void)	FinalRelease__21FreshnessRadioStation	libAudio.so	vtable:__vt_21FreshnessRadioStation
+00ea5e	cFreshScore::SaveScore(cRZString)	SaveScore__11cFreshScoreG9cRZString	libAudio.so	tokens:23.0
+00fcca	cFreshCellPlayer::UpdatePan(void)	UpdatePan__16cFreshCellPlayer	libAudio.so	tokens:7.7
+0106bf	cFreshMusicSource::Dump(void)	Dump__17cFreshMusicSource	libAudio.so	vtable:__vt_17cFreshMusicSource
+01087a	cMusicSource::SetEnabledFlag(bool)	SetEnabledFlag__12cMusicSourceb	libAudio.so	vtable:__vt_17cFreshMusicSource
+010884	cMusicSource::IsEnabled(void)	IsEnabled__12cMusicSource	libAudio.so	vtable:__vt_17cFreshMusicSource
+010888	cMusicSource::IsInitted(void)	IsInitted__12cMusicSource	libAudio.so	vtable:__vt_17cFreshMusicSource
+01088c	cMusicSource::IsInSongList(void)	IsInSongList__12cMusicSource	libAudio.so	vtable:__vt_17cFreshMusicSource
+010890	cMusicSource::GetName(cRZString &)	GetName__12cMusicSourceR9cRZString	libAudio.so	vtable:__vt_17cFreshMusicSource
+0108a2	cFreshPlayer::GetZoom(void)	GetZoom__12cFreshPlayer	libAudio.so	vtable:__vt_12cFreshPlayer
+0108a6	cMusicSource::StartFastForward(void)	StartFastForward__12cMusicSource	libAudio.so	vtable:__vt_17cFreshMusicSource
+0108af	cMusicSource::EndFastForward(void)	EndFastForward__12cMusicSource	libAudio.so	vtable:__vt_17cFreshMusicSource
+0108b4	cMusicSource::StartRewind(void)	StartRewind__12cMusicSource	libAudio.so	vtable:__vt_17cFreshMusicSource
+0108bd	cMusicSource::EndRewind(void)	EndRewind__12cMusicSource	libAudio.so	vtable:__vt_17cFreshMusicSource
+0108c2	cMusicSource::LastPlayNum(void)	LastPlayNum__12cMusicSource	libAudio.so	vtable:__vt_17cFreshMusicSource
+0108c6	cMusicSource::SetPlayNum(int)	SetPlayNum__12cMusicSourcei	libAudio.so	vtable:__vt_17cFreshMusicSource
+0109c6	cFreshMusicSource::Destroy(void)	Destroy__17cFreshMusicSource	libAudio.so	vtable:__vt_17cFreshMusicSource
+0109d2	cSampleFileMusicSource::~cSampleFileMusicSource(void)	_._22cSampleFileMusicSource	libAudio.so	vtable:__vt_22cSampleFileMusicSource
+010a3a	cSampleFileMusicSource::Init(unsigned int, cRZString &, cRZString &, cRZString &, bool, bool, cMusicPlayer *)	Init__22cSampleFileMusicSourceUiR9cRZStringN22bT5P12cMusicPlayer	libAudio.so	vtable:__vt_22cSampleFileMusicSource
+010ac7	cSampleFileMusicSource::Shutdown(void)	Shutdown__22cSampleFileMusicSource	libAudio.so	vtable:__vt_22cSampleFileMusicSource
+010acf	cSampleFileMusicSource::Update(void)	Update__22cSampleFileMusicSource	libAudio.so	vtable:__vt_22cSampleFileMusicSource
+010af7	cSampleFileMusicSource::Play(int)	Play__22cSampleFileMusicSourcei	libAudio.so	vtable:__vt_22cSampleFileMusicSource
+010bc5	cSampleFileMusicSource::Stop(void)	Stop__22cSampleFileMusicSource	libAudio.so	vtable:__vt_22cSampleFileMusicSource
+010bea	cSampleFileMusicSource::Kill(void)	Kill__22cSampleFileMusicSource	libAudio.so	vtable:__vt_22cSampleFileMusicSource
+010c09	cSampleFileMusicSource::IsPlaying(void)	IsPlaying__22cSampleFileMusicSource	libAudio.so	vtable:__vt_22cSampleFileMusicSource
+010c18	cSampleFileMusicSource::SetVolume(int)	SetVolume__22cSampleFileMusicSourcei	libAudio.so	vtable:__vt_22cSampleFileMusicSource
+010c2f	cSampleFileMusicSource::Dump(void)	Dump__22cSampleFileMusicSource	libAudio.so	vtable:__vt_22cSampleFileMusicSource
+010c95	cFreshMusicSource::~cFreshMusicSource(void)	_._17cFreshMusicSource	libAudio.so	vtable:__vt_17cFreshMusicSource
+010d2c	cFreshMusicSource::Init(unsigned int, cRZString &, cRZString &, cRZString &, bool, bool, cMusicPlayer *)	Init__17cFreshMusicSourceUiR9cRZStringN22bT5P12cMusicPlayer	libAudio.so	vtable:__vt_17cFreshMusicSource
+010e2e	cFreshMusicSource::Shutdown(void)	Shutdown__17cFreshMusicSource	libAudio.so	vtable:__vt_17cFreshMusicSource
+010e53	cFreshMusicSource::Update(void)	Update__17cFreshMusicSource	libAudio.so	vtable:__vt_17cFreshMusicSource
+010fe8	cFreshMusicSource::Play(int)	Play__17cFreshMusicSourcei	libAudio.so	vtable:__vt_17cFreshMusicSource
+011077	cFreshMusicSource::Stop(void)	Stop__17cFreshMusicSource	libAudio.so	vtable:__vt_17cFreshMusicSource
+01107c	cFreshMusicSource::Kill(void)	Kill__17cFreshMusicSource	libAudio.so	vtable:__vt_17cFreshMusicSource
+01108b	cFreshMusicSource::IsPlaying(void)	IsPlaying__17cFreshMusicSource	libAudio.so	vtable:__vt_17cFreshMusicSource
+01109a	cFreshMusicSource::SetVolume(int)	SetVolume__17cFreshMusicSourcei	libAudio.so	vtable:__vt_17cFreshMusicSource
+0110b3	cFreshMusicSource::SetXPos(int)	SetXPos__17cFreshMusicSourcei	libAudio.so	vtable:__vt_17cFreshMusicSource
+0110ca	cFreshMusicSource::SetYPos(int)	SetYPos__17cFreshMusicSourcei	libAudio.so	vtable:__vt_17cFreshMusicSource
+0110e1	cFreshMusicSource::UpdateListener(int, int)	UpdateListener__17cFreshMusicSourceii	libAudio.so	vtable:__vt_17cFreshMusicSource
+01122d	cSC3AudioInfo::~cSC3AudioInfo(void)	_._13cSC3AudioInfo	libAudio.so	vtable:__vt_13cSC3AudioInfo
+011250	cSC3AudioInfo::QueryInterface(unsigned int, void **)	QueryInterface__13cSC3AudioInfoUiPPv	libAudio.so	vtable:__vt_13cSC3AudioInfo
+011277	cSC3AudioInfo::AddRef(void)	AddRef__13cSC3AudioInfo	libAudio.so	vtable:__vt_13cSC3AudioInfo
+01127e	cSC3AudioInfo::Release(void)	Release__13cSC3AudioInfo	libAudio.so	vtable:__vt_13cSC3AudioInfo
+0112a1	cSC3AudioInfo::CellCountX(void)	CellCountX__13cSC3AudioInfo	libAudio.so	vtable:__vt_13cSC3AudioInfo
+0114f9	cSC3AudioInfo::Shutdown(void)	Shutdown__13cSC3AudioInfo	libAudio.so	vtable:__vt_13cSC3AudioInfo
+01160c	cSC3AudioInfo::GetTrafficDensity(int, int)	GetTrafficDensity__13cSC3AudioInfoii	libAudio.so	vtable:__vt_13cSC3AudioInfo
+01162b	cSC3AudioInfo::CellHasTree(int, int)	CellHasTree__13cSC3AudioInfoii	libAudio.so	vtable:__vt_13cSC3AudioInfo
+011687	cSC3AudioInfo::CellIsGarbage(int, int)	CellIsGarbage__13cSC3AudioInfoii	libAudio.so	vtable:__vt_13cSC3AudioInfo
+0116be	cSC3AudioInfo::CellHasSpriteInSurfaceView(int, int)	CellHasSpriteInSurfaceView__13cSC3AudioInfoii	libAudio.so	vtable:__vt_13cSC3AudioInfo
+011715	cSC3AudioInfo::CellHasSpriteInPipeView(int, int)	CellHasSpriteInPipeView__13cSC3AudioInfoii	libAudio.so	vtable:__vt_13cSC3AudioInfo
+01176c	cSC3AudioInfo::CellHasSpriteInSubwayView(int, int)	CellHasSpriteInSubwayView__13cSC3AudioInfoii	libAudio.so	vtable:__vt_13cSC3AudioInfo
+0117c3	cSC3AudioInfo::CellHasOccupant(int, int)	CellHasOccupant__13cSC3AudioInfoii	libAudio.so	vtable:__vt_13cSC3AudioInfo
+01180a	cSC3AudioInfo::CellIsDestroyed(int, int)	CellIsDestroyed__13cSC3AudioInfoii	libAudio.so	vtable:__vt_13cSC3AudioInfo
+011893	cSC3AudioInfo::CellIsAbandoned(int, int)	CellIsAbandoned__13cSC3AudioInfoii	libAudio.so	vtable:__vt_13cSC3AudioInfo
+011921	cSC3AudioInfo::CellIsWater(int, int)	CellIsWater__13cSC3AudioInfoii	libAudio.so	vtable:__vt_13cSC3AudioInfo
+011934	cSC3AudioInfo::CellHasRoad(int, int)	CellHasRoad__13cSC3AudioInfoii	libAudio.so	vtable:__vt_13cSC3AudioInfo
+011960	cSC3AudioInfo::CellHasHighway(int, int)	CellHasHighway__13cSC3AudioInfoii	libAudio.so	vtable:__vt_13cSC3AudioInfo
+01198c	cSC3AudioInfo::CellHasRail(int, int)	CellHasRail__13cSC3AudioInfoii	libAudio.so	vtable:__vt_13cSC3AudioInfo
+0119b8	cSC3AudioInfo::CellHasSubway(int, int)	CellHasSubway__13cSC3AudioInfoii	libAudio.so	vtable:__vt_13cSC3AudioInfo
+0119e4	cSC3AudioInfo::CellHasPipe(int, int)	CellHasPipe__13cSC3AudioInfoii	libAudio.so	vtable:__vt_13cSC3AudioInfo
+011a10	cSC3AudioInfo::CellHasPower(int, int)	CellHasPower__13cSC3AudioInfoii	libAudio.so	vtable:__vt_13cSC3AudioInfo
+011a3c	cSC3AudioInfo::CellHasTunnel(int, int)	CellHasTunnel__13cSC3AudioInfoii	libAudio.so	vtable:__vt_13cSC3AudioInfo
+011a68	cSC3AudioInfo::GetCellPopulation(int, int)	GetCellPopulation__13cSC3AudioInfoii	libAudio.so	vtable:__vt_13cSC3AudioInfo
+011df0	cSC3AudioInfo::GetCellLandValue(int, int)	GetCellLandValue__13cSC3AudioInfoii	libAudio.so	vtable:__vt_13cSC3AudioInfo
+011e0d	cSC3AudioInfo::GetCellCrimeValue(int, int)	GetCellCrimeValue__13cSC3AudioInfoii	libAudio.so	vtable:__vt_13cSC3AudioInfo
+011e2f	cSC3AudioInfo::GetCellRadiationValue(int, int)	GetCellRadiationValue__13cSC3AudioInfoii	libAudio.so	vtable:__vt_13cSC3AudioInfo
+011e45	cSC3AudioInfo::GetCityMayoralRating(void)	GetCityMayoralRating__13cSC3AudioInfo	libAudio.so	vtable:__vt_13cSC3AudioInfo
+011e49	cSC3AudioInfo::GetCityPopulation(void)	GetCityPopulation__13cSC3AudioInfo	libAudio.so	vtable:__vt_13cSC3AudioInfo
+011e4c	cSC3AudioInfo::GetCellAura(int, int)	GetCellAura__13cSC3AudioInfoii	libAudio.so	vtable:__vt_13cSC3AudioInfo
+011e69	cSC3AudioInfo::GetCellSpriteHeight(int, int)	GetCellSpriteHeight__13cSC3AudioInfoii	libAudio.so	vtable:__vt_13cSC3AudioInfo
+011eb6	cSC3AudioInfo::CellIsPowered(int, int)	CellIsPowered__13cSC3AudioInfoii	libAudio.so	vtable:__vt_13cSC3AudioInfo
+011ed7	cSC3AudioInfo::CellIsUnpoweredBuilding(int, int)	CellIsUnpoweredBuilding__13cSC3AudioInfoii	libAudio.so	vtable:__vt_13cSC3AudioInfo
+011f43	cSC3AudioInfo::GetBuildingSoundId(int, int)	GetBuildingSoundId__13cSC3AudioInfoii	libAudio.so	vtable:__vt_13cSC3AudioInfo
+011f92	cSC3AudioInfo::GetCellInterfaceSoundId(int, int)	GetCellInterfaceSoundId__13cSC3AudioInfoii	libAudio.so	vtable:__vt_13cSC3AudioInfo
+011ff4	cSC3AudioInfo::GetDetailedCellZoneType(int, int)	GetDetailedCellZoneType__13cSC3AudioInfoii	libAudio.so	vtable:__vt_13cSC3AudioInfo
+012011	cSC3AudioInfo::GetCellZoneType(int, int)	GetCellZoneType__13cSC3AudioInfoii	libAudio.so	vtable:__vt_13cSC3AudioInfo
+0121fd	cSC3AudioInfo::DoMessage(cGZMessage &)	DoMessage__13cSC3AudioInfoR10cGZMessage	libAudio.so	vtable:__vt_13cSC3AudioInfo
+01226b	cSC3AudioInfo::IsInEditModeCity(void)	IsInEditModeCity__13cSC3AudioInfo	libAudio.so	vtable:__vt_13cSC3AudioInfo
+01227b	cSC3AudioInfo::DisasterCount(void)	DisasterCount__13cSC3AudioInfo	libAudio.so	vtable:__vt_13cSC3AudioInfo
+012283	cSC3AudioInfo::TerrainHeight(int, int)	TerrainHeight__13cSC3AudioInfoii	libAudio.so	vtable:__vt_13cSC3AudioInfo
+0122ab	cSC3AudioInfo::GetCityDate(unsigned int &, unsigned int &, unsigned int &)	GetCityDate__13cSC3AudioInfoRUiN21	libAudio.so	vtable:__vt_13cSC3AudioInfo
+0122d5	cSC3AudioInfo::CurrentFloraSet(void)	CurrentFloraSet__13cSC3AudioInfo	libAudio.so	vtable:__vt_13cSC3AudioInfo
+0122f2	cSC3AudioInfo::CurrentBuildingSet(void)	CurrentBuildingSet__13cSC3AudioInfo	libAudio.so	vtable:__vt_13cSC3AudioInfo
+01230f	cSC3AudioInfo::CurrentLandScape(void)	CurrentLandScape__13cSC3AudioInfo	libAudio.so	vtable:__vt_13cSC3AudioInfo
+012376	cSC3CmdSoundFactory::CreateCommand(unsigned int, unsigned int, void **)	CreateCommand__19cSC3CmdSoundFactoryUiUiPPv	libAudio.so	tokens:7.7
+0123ec	cSC3CmdSound::cSC3CmdSound(void)	__12cSC3CmdSound	libAudio.so	tokens:15.3
+01243e	virtual function thunk (delta:-4) for cSC3CmdSound::~cSC3CmdSound(void)	__thunk_4__._12cSC3CmdSound	libAudio.so	vtable:__vt_12cSC3CmdSound.11cRZRefCount
+012658	cSfx::SetVolume(int, int)	SetVolume__4cSfxii	libAudio.so	vtable:__vt_10cFadingSfx
+012664	cSfx::SetPosition(int, int, int, int)	SetPosition__4cSfxiiii	libAudio.so	vtable:__vt_10cFadingSfx
+012667	cSfx::Special1(int, int)	Special1__4cSfxii	libAudio.so	vtable:__vt_11c3D1ShotSfx
+01266c	cSfx::IsLoaded(void)	IsLoaded__4cSfx	libAudio.so	vtable:__vt_10cFadingSfx
+012670	cSfx::GetInstance(cSfxInstance *, int)	GetInstance__4cSfxP12cSfxInstancei	libAudio.so	vtable:__vt_10cFadingSfx
+012788	c1ShotSfx::~c1ShotSfx(void)	_._9c1ShotSfx	libAudio.so	vtable:__vt_9c1ShotSfx
+0129a9	c1ShotSfx::Shutdown(void)	Shutdown__9c1ShotSfx	libAudio.so	vtable:__vt_9c1ShotSfx
+0129d2	c1ShotSfx::Play(int)	Play__9c1ShotSfxi	libAudio.so	vtable:__vt_9c1ShotSfx
+012a03	c3D1ShotSfx::IsPlaying(int)	IsPlaying__11c3D1ShotSfxi	libAudio.so	vtable:__vt_11c3D1ShotSfx
+012a0e	c3D1ShotSfx::Unload(void)	Unload__11c3D1ShotSfx	libAudio.so	vtable:__vt_11c3D1ShotSfx
+012aa4	c3D1ShotSfx::Kill(int)	Kill__11c3D1ShotSfxi	libAudio.so	vtable:__vt_11c3D1ShotSfx
+012aa9	c3D1ShotSfx::~c3D1ShotSfx(void)	_._11c3D1ShotSfx	libAudio.so	vtable:__vt_11c3D1ShotSfx
+012c18	c3D1ShotSfx::Shutdown(void)	Shutdown__11c3D1ShotSfx	libAudio.so	vtable:__vt_11c3D1ShotSfx
+012c3d	c3D1ShotSfx::Play(int)	Play__11c3D1ShotSfxi	libAudio.so	vtable:__vt_11c3D1ShotSfx
+012c42	c3D1ShotSfx::Load(void)	Load__11c3D1ShotSfx	libAudio.so	vtable:__vt_11c3D1ShotSfx
+012d7b	cActorSfx::~cActorSfx(void)	_._9cActorSfx	libAudio.so	vtable:__vt_9cActorSfx
+01339e	cActorSfx::Shutdown(void)	Shutdown__9cActorSfx	libAudio.so	vtable:__vt_9cActorSfx
+013409	cActorSfx::Refresh(void)	Refresh__9cActorSfx	libAudio.so	vtable:__vt_9cActorSfx
+0134fb	cActorSfx::SetPosition(int, int, int, int)	SetPosition__9cActorSfxiiii	libAudio.so	vtable:__vt_9cActorSfx
+013730	cActorSfx::Update(void)	Update__9cActorSfx	libAudio.so	vtable:__vt_9cActorSfx
+01385c	cActorSfx::Play(int)	Play__9cActorSfxi	libAudio.so	vtable:__vt_9cActorSfx
+013868	cActorSfx::IsPlaying(int)	IsPlaying__9cActorSfxi	libAudio.so	vtable:__vt_9cActorSfx
+013873	cActorSfx::Stop(int)	Stop__9cActorSfxi	libAudio.so	vtable:__vt_9cActorSfx
+0138a8	cActorSfx::Special1(int, int)	Special1__9cActorSfxii	libAudio.so	vtable:__vt_9cActorSfx
+013977	cActorSfx::Special2(int, int)	Special2__9cActorSfxii	libAudio.so	vtable:__vt_9cActorSfx
+013b5a	cActorSfx::Kill(int)	Kill__9cActorSfxi	libAudio.so	vtable:__vt_9cActorSfx
+013b98	cActorSfx::Load(void)	Load__9cActorSfx	libAudio.so	vtable:__vt_9cActorSfx
+013ba3	cActorSfx::Unload(void)	Unload__9cActorSfx	libAudio.so	vtable:__vt_9cActorSfx
+013c39	cFadingSfx::Destroy(void)	Destroy__10cFadingSfx	libAudio.so	vtable:__vt_10cFadingSfx
+013c45	cDisasterSfx::~cDisasterSfx(void)	_._12cDisasterSfx	libAudio.so	vtable:__vt_12cDisasterSfx
+013d33	cFadingSfx::Release(void)	Release__10cFadingSfx	libAudio.so	vtable:__vt_10cFadingSfx
+013e64	cDisasterSfx::Shutdown(void)	Shutdown__12cDisasterSfx	libAudio.so	vtable:__vt_12cDisasterSfx
+013e8c	cDisasterSfx::Play(int)	Play__12cDisasterSfxi	libAudio.so	vtable:__vt_12cDisasterSfx
+013ef0	cDisasterSfx::IsPlaying(int)	IsPlaying__12cDisasterSfxi	libAudio.so	vtable:__vt_12cDisasterSfx
+013ef6	cDisasterSfx::Refresh(void)	Refresh__12cDisasterSfx	libAudio.so	vtable:__vt_12cDisasterSfx
+013f02	cDisasterSfx::GetVolume(void)	GetVolume__12cDisasterSfx	libAudio.so	vtable:__vt_12cDisasterSfx
+013f7a	cDisasterSfx::UpdateVolume(void)	UpdateVolume__12cDisasterSfx	libAudio.so	vtable:__vt_12cDisasterSfx
+013fe2	cDisasterSfx::Special1(int, int)	Special1__12cDisasterSfxii	libAudio.so	vtable:__vt_12cDisasterSfx
+013ffb	cDisasterSfx::Special2(int, int)	Special2__12cDisasterSfxii	libAudio.so	vtable:__vt_12cDisasterSfx
+01401a	cDisasterSfx::Stop(int)	Stop__12cDisasterSfxi	libAudio.so	vtable:__vt_12cDisasterSfx
+0140b7	cDisasterSfx::Kill(int)	Kill__12cDisasterSfxi	libAudio.so	vtable:__vt_12cDisasterSfx
+0140e9	cDisasterSfx::SetVolume(int, int)	SetVolume__12cDisasterSfxii	libAudio.so	vtable:__vt_12cDisasterSfx
+01420c	cSparseSfx::Load(void)	Load__10cSparseSfx	libAudio.so	vtable:__vt_10cSparseSfx
+01420f	cSparseSfx::~cSparseSfx(void)	_._10cSparseSfx	libAudio.so	vtable:__vt_10cSparseSfx
+014367	cFadingSfx::AddRef(void)	AddRef__10cFadingSfx	libAudio.so	vtable:__vt_10cFadingSfx
+01438e	cSparseSfx::Shutdown(void)	Shutdown__10cSparseSfx	libAudio.so	vtable:__vt_10cSparseSfx
+0143c8	cSparseSfx::Update(void)	Update__10cSparseSfx	libAudio.so	vtable:__vt_10cSparseSfx
+014652	cSparseSfx::Play(int)	Play__10cSparseSfxi	libAudio.so	vtable:__vt_10cSparseSfx
+01465e	cSparseSfx::Special1(int, int)	Special1__10cSparseSfxii	libAudio.so	vtable:__vt_10cSparseSfx
+01477b	cSparseSfx::IsPlaying(int)	IsPlaying__10cSparseSfxi	libAudio.so	vtable:__vt_10cSparseSfx
+014784	cSparseSfx::Stop(int)	Stop__10cSparseSfxi	libAudio.so	vtable:__vt_10cSparseSfx
+014790	cSparseSfx::Kill(int)	Kill__10cSparseSfxi	libAudio.so	vtable:__vt_10cSparseSfx
+0147d0	cFadingSfx::~cFadingSfx(void)	_._10cFadingSfx	libAudio.so	vtable:__vt_10cFadingSfx
+014908	cFadingSfx::QueryInterface(unsigned int, void **)	QueryInterface__10cFadingSfxUiPPv	libAudio.so	vtable:__vt_10cFadingSfx
+014b45	cFadingSfx::Shutdown(void)	Shutdown__10cFadingSfx	libAudio.so	vtable:__vt_10cFadingSfx
+014ba6	cFadingSfx::Play(int)	Play__10cFadingSfxi	libAudio.so	vtable:__vt_10cFadingSfx
+014bf2	cFadingSfx::IsPlaying(int)	IsPlaying__10cFadingSfxi	libAudio.so	vtable:__vt_10cFadingSfx
+014bfd	cFadingSfx::Special1(int, int)	Special1__10cFadingSfxii	libAudio.so	vtable:__vt_10cFadingSfx
+014c1b	cFadingSfx::Special2(int, int)	Special2__10cFadingSfxii	libAudio.so	vtable:__vt_10cFadingSfx
+014c39	cFadingSfx::Stop(int)	Stop__10cFadingSfxi	libAudio.so	vtable:__vt_10cFadingSfx
+014c43	cFadingSfx::Kill(int)	Kill__10cFadingSfxi	libAudio.so	vtable:__vt_10cFadingSfx
+014c6c	cFadingSfx::Update(void)	Update__10cFadingSfx	libAudio.so	vtable:__vt_10cFadingSfx
+01507c	cSfx::Refresh(void)	Refresh__4cSfx	libAudio.so	vtable:__vt_10cFadingSfx
+015c94	cRZCOMDllDirector::QueryInterface(unsigned int, void **)	QueryInterface__17cRZCOMDllDirectorUiPPv	libAudio.so	tokens:15.3
+015cd5	cRZCOMDllDirector::FrameWork(void)	FrameWork__17cRZCOMDllDirector	libAudio.so	vtable:__vt_17cAudioCOMDirector
+015cde	cRZCOMDllDirector::RemoveRef(void)	RemoveRef__17cRZCOMDllDirector	libAudio.so	vtable:__vt_17cAudioCOMDirector
+015ced	cRZCOMDllDirector::RefCount(void)	RefCount__17cRZCOMDllDirector	libAudio.so	vtable:__vt_17cAudioCOMDirector
+015cf1	cRZCOMDllDirector::InitializeCOM(cIGZCOM *, cIGZString &)	InitializeCOM__17cRZCOMDllDirectorP7cIGZCOMR10cIGZString	libAudio.so	vtable:__vt_17cAudioCOMDirector
+015d7a	cRZCOMDllDirector::OnStart(cIGZCOM *)	OnStart__17cRZCOMDllDirectorP7cIGZCOM	libAudio.so	vtable:__vt_17cAudioCOMDirector
+015dbf	cRZCOMDllDirector::GetClassObject(unsigned int, unsigned int, void **)	GetClassObject__17cRZCOMDllDirectorUiUiPPv	libAudio.so	vtable:__vt_17cAudioCOMDirector
+015e40	cRZCOMDllDirector::EnumClassObjects(void (*)(unsigned int, unsigned int, void *), void *)	EnumClassObjects__17cRZCOMDllDirectorPFUiUiPv_vPv	libAudio.so	vtable:__vt_17cAudioCOMDirector
+015e94	cRZCOMDllDirector::ModuleName(cIGZString &)	ModuleName__17cRZCOMDllDirectorR10cIGZString	libAudio.so	vtable:__vt_17cAudioCOMDirector
+015ea8	cRZCOMDllDirector::AddDirector(cRZCOMDllDirector *)	AddDirector__17cRZCOMDllDirectorP17cRZCOMDllDirector	libAudio.so	vtable:__vt_17cAudioCOMDirector
+015ef2	cRZCOMDllDirector::CanUnloadNow(void)	CanUnloadNow__17cRZCOMDllDirector	libAudio.so	vtable:__vt_17cAudioCOMDirector
+015f76	virtual function thunk (delta:-4) for cRZCOMDllDirector::PreFrameWorkInit(void)	__thunk_4_PreFrameWorkInit__17cRZCOMDllDirector	libAudio.so	vtable:__vt_17cRZCOMDllDirector.18cIGZFrameWorkHooks
+015f79	cRZCOMDllDirector::GZCOM(void)	GZCOM__17cRZCOMDllDirector	libAudio.so	vtable:__vt_17cAudioCOMDirector
+016f8e	cAudioFactory::AddRef(void)	AddRef__13cAudioFactory	libAudio.so	vtable:__vt_13cAudioFactory
+01b6e9	cC2HCache::GetCacheMaxSizeInBytes(void)	GetCacheMaxSizeInBytes__9cC2HCache	libAudio.so	vtable:__vt_9cC2HCache
+01b6ed	cSfx::NumInstances(void)	NumInstances__4cSfx	libAudio.so	vtable:__vt_10cFadingSfx

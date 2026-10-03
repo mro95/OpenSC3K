@@ -1,0 +1,313 @@
+rva	demangled	mangled	source	method
+00102b	RZGetCOMDllDirector_SimAdv(void)	RZGetCOMDllDirector_SimAdv__Fv	libSimAdv.so	tokens:61.7
+0010f4	cSACOMDirector::GetDirectorID(void) const	GetDirectorID__C14cSACOMDirector	libSimAdv.so	tokens:8.0
+0012e1	cSACOMDirector::~cSACOMDirector(void)	_._14cSACOMDirector	libSimAdv.so	vtable:__vt_14cSACOMDirector
+001319	virtual function thunk (delta:-4) for cRZCOMDllDirector::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__17cRZCOMDllDirectorUiPPv	libSimAdv.so	vtable:__vt_17cRZCOMDllDirector.18cIGZFrameWorkHooks
+001321	virtual function thunk (delta:-4) for cRZCOMDllDirector::AddRef(void)	__thunk_4_AddRef__17cRZCOMDllDirector	libSimAdv.so	vtable:__vt_17cRZCOMDllDirector.18cIGZFrameWorkHooks
+001329	virtual function thunk (delta:-4) for cRZCOMDllDirector::Release(void)	__thunk_4_Release__17cRZCOMDllDirector	libSimAdv.so	vtable:__vt_17cRZCOMDllDirector.18cIGZFrameWorkHooks
+001331	cRZCOMDllDirector::OnUnload(void)	OnUnload__17cRZCOMDllDirector	libSimAdv.so	vtable:__vt_14cSACOMDirector
+001424	cSC3AdviceQueue::SetAdviceType(unsigned char)	SetAdviceType__15cSC3AdviceQueueUc	libSimAdv.so	tokens:38.9
+0014fa	cRZLock::~cRZLock(void)	_._7cRZLock	libSimAdv.so	vtable:__vt_7cRZLock
+004044	cSC3BaseAdvisor::GetOutdatedResponseID(void)	GetOutdatedResponseID__15cSC3BaseAdvisor	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.15cSC3BaseAdvisor
+00404b	virtual function thunk (delta:-4) for cSC3AdvisorForBudget::GetAdvisorID(void)	__thunk_4_GetAdvisorID__20cSC3AdvisorForBudget	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.15cSC3BaseAdvisor
+004051	cSC3AdvisorForBudget::AddRef(void)	AddRef__20cSC3AdvisorForBudget	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget
+004059	cSC3AdvisorForBudget::Release(void)	Release__20cSC3AdvisorForBudget	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget
+0040e7	virtual function thunk (delta:-20) for cSC3AdvisorForBudget::GetLayerType(void)	__thunk_20_GetLayerType__20cSC3AdvisorForBudget	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.14cISC3CityLayer
+0040ed	cSC3AdvisorForBudget::Init(cISC3City *)	Init__20cSC3AdvisorForBudgetP9cISC3City	libSimAdv.so	caller
+0043de	virtual function thunk (delta:-20) for cSC3AdvisorForBudget::SimulationBegin(void)	__thunk_20_SimulationBegin__20cSC3AdvisorForBudget	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.14cISC3CityLayer
+00444e	virtual function thunk (delta:-20) for cSC3AdvisorForBudget::SimulationEnd(void)	__thunk_20_SimulationEnd__20cSC3AdvisorForBudget	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.14cISC3CityLayer
+00447d	virtual function thunk (delta:-20) for cSC3AdvisorForBudget::Shutdown(void)	__thunk_20_Shutdown__20cSC3AdvisorForBudget	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.14cISC3CityLayer
+004652	cSC3AdvisorForBudget::LoadAdvisorINI(void)	LoadAdvisorINI__20cSC3AdvisorForBudget	libSimAdv.so	tokens:8.0
+004d2c	cSC3AdvisorForBudget::QueryInterface(unsigned int, void **)	QueryInterface__20cSC3AdvisorForBudgetUiPPv	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget
+004dcc	cSC3AdvisorForBudget::DoAdvisorSimulation(void)	DoAdvisorSimulation__20cSC3AdvisorForBudget	libSimAdv.so	tokens:12.3
+004e80	virtual function thunk (delta:-4) for cSC3AdvisorForBudget::GetSimulationData(void)	__thunk_4_GetSimulationData__20cSC3AdvisorForBudget	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.15cSC3BaseAdvisor
+005052	cSC3AdvisorForBudget::CheckOnAdvice(void)	CheckOnAdvice__20cSC3AdvisorForBudget	libSimAdv.so	tokens:82.7
+005c77	cSC3AdvisorForBudget::OfferBusinessDeal(unsigned int)	OfferBusinessDeal__20cSC3AdvisorForBudgetUi	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget
+005ea8	cSC3AdvisorForBudget::IsBusinessDealActive(unsigned int)	IsBusinessDealActive__20cSC3AdvisorForBudgetUi	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget
+005eea	cSC3AdvisorForBudget::SetDealEnabled(unsigned int, bool)	SetDealEnabled__20cSC3AdvisorForBudgetUib	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget
+00607e	cSC3AdvisorForBudget::ActivateBusinessDeal(unsigned int, cISC3Building *)	ActivateBusinessDeal__20cSC3AdvisorForBudgetUiP13cISC3Building	libSimAdv.so	tokens:8.0
+0060ea	cSC3AdvisorForBudget::RemoveBusinessDeal(unsigned int)	RemoveBusinessDeal__20cSC3AdvisorForBudgetUi	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget
+0061c8	cSC3AdvisorForBudget::DoMessage(cGZMessage &)	DoMessage__20cSC3AdvisorForBudgetR10cGZMessage	libSimAdv.so	tokens:26.4
+006277	cSC3AdvisorForBudget::GetTotalMonthlyBusinessDealIncome(void)	GetTotalMonthlyBusinessDealIncome__20cSC3AdvisorForBudget	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget
+0062f1	cSC3AdvisorForBudget::GetBusinessDealIncomeForBuildingType(unsigned int)	GetBusinessDealIncomeForBuildingType__20cSC3AdvisorForBudgetUi	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget
+00632e	cSC3AdvisorForBudget::DoQueryInfo(cGZMessage &, cIGZUnknown *)	DoQueryInfo__20cSC3AdvisorForBudgetR10cGZMessageP11cIGZUnknown	libSimAdv.so	tokens:21.2
+006383	cSC3AdvisorForBudget::LoadBusinessDeals(cISC3Catalog *)	LoadBusinessDeals__20cSC3AdvisorForBudgetP12cISC3Catalog	libSimAdv.so	tokens:28.7
+00648a	virtual function thunk (delta:-4) for cSC3PetitionerManager::IsAgentLocking(void)	__thunk_4_IsAgentLocking__21cSC3PetitionerManager	libSimAdv.so	vtable:__vt_21cSC3PetitionerManager.14cISC3CityAgent
+0064db	cSC3BusinessDealRecord::QueryInterface(unsigned int, void **)	QueryInterface__22cSC3BusinessDealRecordUiPPv	libSimAdv.so	vtable:__vt_22cSC3BusinessDealRecord
+0064fd	cSC3BusinessDealRecord::AddRef(void)	AddRef__22cSC3BusinessDealRecord	libSimAdv.so	vtable:__vt_22cSC3BusinessDealRecord
+006504	cSC3BusinessDealRecord::Release(void)	Release__22cSC3BusinessDealRecord	libSimAdv.so	vtable:__vt_22cSC3BusinessDealRecord
+00652f	cSC3BusinessDealRecord::BuildingID(void)	BuildingID__22cSC3BusinessDealRecord	libSimAdv.so	vtable:__vt_22cSC3BusinessDealRecord
+006533	cSC3BusinessDealRecord::DateAvailable(void)	DateAvailable__22cSC3BusinessDealRecord	libSimAdv.so	vtable:__vt_22cSC3BusinessDealRecord
+006537	cSC3BusinessDealRecord::Contribution(void)	Contribution__22cSC3BusinessDealRecord	libSimAdv.so	vtable:__vt_22cSC3BusinessDealRecord
+00653b	cSC3BusinessDealRecord::InUse(void)	InUse__22cSC3BusinessDealRecord	libSimAdv.so	vtable:__vt_22cSC3BusinessDealRecord
+00653f	cSC3BusinessDealRecord::GetNameString(void)	GetNameString__22cSC3BusinessDealRecord	libSimAdv.so	vtable:__vt_22cSC3BusinessDealRecord
+006543	cSC3BusinessDealRecord::SetNameString(cIGZString &)	SetNameString__22cSC3BusinessDealRecordR10cIGZString	libSimAdv.so	vtable:__vt_22cSC3BusinessDealRecord
+00655e	cSC3BusinessDealRecord::GetBuilding(void)	GetBuilding__22cSC3BusinessDealRecord	libSimAdv.so	vtable:__vt_22cSC3BusinessDealRecord
+006562	cSC3BusinessDealRecord::SetBuilding(cISC3BusinessDealBuilding *)	SetBuilding__22cSC3BusinessDealRecordP25cISC3BusinessDealBuilding	libSimAdv.so	vtable:__vt_22cSC3BusinessDealRecord
+0065c1	cSC3BusinessDealRecord::Enabled(void)	Enabled__22cSC3BusinessDealRecord	libSimAdv.so	vtable:__vt_22cSC3BusinessDealRecord
+00660e	virtual function thunk (delta:-4) for cSC3AdvisorForBudget::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__20cSC3AdvisorForBudgetUiPPv	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.15cSC3BaseAdvisor
+00661e	virtual function thunk (delta:-20) for cSC3AdvisorForBudget::QueryInterface(unsigned int, void **)	__thunk_20_QueryInterface__20cSC3AdvisorForBudgetUiPPv	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.14cISC3CityLayer
+006626	virtual function thunk (delta:-20) for cSC3AdvisorForBudget::DoMessage(cGZMessage &)	__thunk_20_DoMessage__20cSC3AdvisorForBudgetR10cGZMessage	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.14cISC3CityLayer
+00662e	virtual function thunk (delta:-20) for cSC3AdvisorForBudget::DoQueryInfo(cGZMessage &, cIGZUnknown *)	__thunk_20_DoQueryInfo__20cSC3AdvisorForBudgetR10cGZMessageP11cIGZUnknown	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.14cISC3CityLayer
+006b9c	virtual function thunk (delta:-8) for cSC3AdvisorForUtilities::Simulate(int)	__thunk_8_Simulate__23cSC3AdvisorForUtilitiesi	libSimAdv.so	vtable:__vt_23cSC3AdvisorForUtilities.17cSC3BaseCityAgent
+006ba8	virtual function thunk (delta:-8) for cSC3AdvisorForUtilities::SetAgentType(cISC3CityAgentType *)	__thunk_8_SetAgentType__23cSC3AdvisorForUtilitiesP18cISC3CityAgentType	libSimAdv.so	vtable:__vt_23cSC3AdvisorForUtilities.17cSC3BaseCityAgent
+006bb4	virtual function thunk (delta:-8) for cSC3AdvisorForCityPlanning::~cSC3AdvisorForCityPlanning(void)	__thunk_8__._26cSC3AdvisorForCityPlanning	libSimAdv.so	vtable:__vt_26cSC3AdvisorForCityPlanning.17cSC3BaseCityAgent
+006c6d	cSC3AdvisorForUtilities::AsISC3CityAgent(void)	AsISC3CityAgent__23cSC3AdvisorForUtilities	libSimAdv.so	vtable:__vt_23cSC3AdvisorForUtilities
+006c79	virtual function thunk (delta:-20) for cSC3AdvisorForCityPlanning::GetLayerType(void)	__thunk_20_GetLayerType__26cSC3AdvisorForCityPlanning	libSimAdv.so	vtable:__vt_26cSC3AdvisorForCityPlanning.14cISC3CityLayer
+006c7f	cSC3AdvisorForCityPlanning::Init(cISC3City *)	Init__26cSC3AdvisorForCityPlanningP9cISC3City	libSimAdv.so	tokens:229.0
+0073b3	virtual function thunk (delta:-20) for cSC3AdvisorForCityPlanning::Save(cISC3City *, cIGZDBSegment *)	__thunk_20_Save__26cSC3AdvisorForCityPlanningP9cISC3CityP13cIGZDBSegment	libSimAdv.so	vtable:__vt_26cSC3AdvisorForCityPlanning.14cISC3CityLayer
+00759d	virtual function thunk (delta:-20) for cSC3AdvisorForCityPlanning::SimulationBegin(void)	__thunk_20_SimulationBegin__26cSC3AdvisorForCityPlanning	libSimAdv.so	vtable:__vt_26cSC3AdvisorForCityPlanning.14cISC3CityLayer
+007652	virtual function thunk (delta:-20) for cSC3AdvisorForCityPlanning::SimulationEnd(void)	__thunk_20_SimulationEnd__26cSC3AdvisorForCityPlanning	libSimAdv.so	vtable:__vt_26cSC3AdvisorForCityPlanning.14cISC3CityLayer
+0076b1	virtual function thunk (delta:-20) for cSC3AdvisorForCityPlanning::Shutdown(void)	__thunk_20_Shutdown__26cSC3AdvisorForCityPlanning	libSimAdv.so	vtable:__vt_26cSC3AdvisorForCityPlanning.14cISC3CityLayer
+007989	cSC3AdvisorForCityPlanning::LoadAdvisorINI(void)	LoadAdvisorINI__26cSC3AdvisorForCityPlanning	libSimAdv.so	tokens:8.0
+009342	cSC3AdvisorForCityPlanning::QueryInterface(unsigned int, void **)	QueryInterface__26cSC3AdvisorForCityPlanningUiPPv	libSimAdv.so	vtable:__vt_26cSC3AdvisorForCityPlanning
+009453	cSC3AdvisorForCityPlanning::DoAdvisorSimulation(void)	DoAdvisorSimulation__26cSC3AdvisorForCityPlanning	libSimAdv.so	tokens:12.3
+009ea8	cSC3AdvisorForCityPlanning::CheckOnAdvice(void)	CheckOnAdvice__26cSC3AdvisorForCityPlanning	libSimAdv.so	tokens:16.0
+00ad4d	cSC3AdvisorForCityPlanning::AddBusinessDealBuildingToRewardList(unsigned int)	AddBusinessDealBuildingToRewardList__26cSC3AdvisorForCityPlanningUi	libSimAdv.so	vtable:__vt_26cSC3AdvisorForCityPlanning
+00adc3	cSC3AdvisorForCityPlanning::IsBusinessDealBuildingInRewardList(unsigned int)	IsBusinessDealBuildingInRewardList__26cSC3AdvisorForCityPlanningUi	libSimAdv.so	vtable:__vt_26cSC3AdvisorForCityPlanning
+00ae49	cSC3AdvisorForCityPlanning::RemoveBusinessDealBuildingFromRewardList(unsigned int)	RemoveBusinessDealBuildingFromRewardList__26cSC3AdvisorForCityPlanningUi	libSimAdv.so	vtable:__vt_26cSC3AdvisorForCityPlanning
+00aebe	cSC3AdvisorForCityPlanning::DoMessage(cGZMessage &)	DoMessage__26cSC3AdvisorForCityPlanningR10cGZMessage	libSimAdv.so	vtable-thunk:__vt_26cSC3AdvisorForCityPlanning.14cISC3CityLayer
+00b067	cSC3AdvisorForCityPlanning::DoQueryInfo(cGZMessage &, cIGZUnknown *)	DoQueryInfo__26cSC3AdvisorForCityPlanningR10cGZMessageP11cIGZUnknown	libSimAdv.so	tokens:29.2
+00b5e4	cSC3SpecialBuildingRecord::QueryInterface(unsigned int, void **)	QueryInterface__25cSC3SpecialBuildingRecordUiPPv	libSimAdv.so	vtable:__vt_25cSC3SpecialBuildingRecord
+00b606	cSC3SpecialBuildingRecord::AddRef(void)	AddRef__25cSC3SpecialBuildingRecord	libSimAdv.so	vtable:__vt_25cSC3SpecialBuildingRecord
+00b60d	cSC3SpecialBuildingRecord::Release(void)	Release__25cSC3SpecialBuildingRecord	libSimAdv.so	vtable:__vt_25cSC3SpecialBuildingRecord
+00b62d	cSC3SpecialBuildingRecord::GetNameString(void)	GetNameString__25cSC3SpecialBuildingRecord	libSimAdv.so	vtable:__vt_25cSC3SpecialBuildingRecord
+00b68b	cSC3SpecialBuildingRecord::SetOccAttribKey(cGZResourceKey const &)	SetOccAttribKey__25cSC3SpecialBuildingRecordRC14cGZResourceKey	libSimAdv.so	vtable:__vt_25cSC3SpecialBuildingRecord
+00b6a3	cSC3SpecialBuildingRecord::GetOccupantAttrib(void)	GetOccupantAttrib__25cSC3SpecialBuildingRecord	libSimAdv.so	vtable:__vt_25cSC3SpecialBuildingRecord
+00b6d8	cSC3SpecialBuildingRecord::PopAvailable(void)	PopAvailable__25cSC3SpecialBuildingRecord	libSimAdv.so	vtable:__vt_25cSC3SpecialBuildingRecord
+00b6dc	cSC3SpecialBuildingRecord::YearAvailable(void)	YearAvailable__25cSC3SpecialBuildingRecord	libSimAdv.so	vtable:__vt_25cSC3SpecialBuildingRecord
+00b6e0	cSC3SpecialBuildingRecord::PetitionerStringID(void)	PetitionerStringID__25cSC3SpecialBuildingRecord	libSimAdv.so	vtable:__vt_25cSC3SpecialBuildingRecord
+00b6e4	cSC3SpecialBuildingRecord::Built(void)	Built__25cSC3SpecialBuildingRecord	libSimAdv.so	vtable:__vt_25cSC3SpecialBuildingRecord
+00b6e8	cSC3SpecialBuildingRecord::SpecialCase(void)	SpecialCase__25cSC3SpecialBuildingRecord	libSimAdv.so	vtable:__vt_25cSC3SpecialBuildingRecord
+00b6ec	cSC3SpecialBuildingRecord::RecordType(void)	RecordType__25cSC3SpecialBuildingRecord	libSimAdv.so	vtable:__vt_25cSC3SpecialBuildingRecord
+00b760	cSC3SpecialBuildingRecord::GetOccAttribKey(void)	GetOccAttribKey__25cSC3SpecialBuildingRecord	libSimAdv.so	vtable:__vt_25cSC3SpecialBuildingRecord
+00b764	cSC3SpecialBuildingRecord::~cSC3SpecialBuildingRecord(void)	_._25cSC3SpecialBuildingRecord	libSimAdv.so	vtable:__vt_25cSC3SpecialBuildingRecord
+00c63c	virtual function thunk (delta:-4) for cSC3AdvisorForCityPlanning::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__26cSC3AdvisorForCityPlanningUiPPv	libSimAdv.so	vtable:__vt_26cSC3AdvisorForCityPlanning.15cSC3BaseAdvisor
+00c644	virtual function thunk (delta:-8) for cSC3AdvisorForCityPlanning::QueryInterface(unsigned int, void **)	__thunk_8_QueryInterface__26cSC3AdvisorForCityPlanningUiPPv	libSimAdv.so	caller
+00c64c	virtual function thunk (delta:-20) for cSC3AdvisorForCityPlanning::QueryInterface(unsigned int, void **)	__thunk_20_QueryInterface__26cSC3AdvisorForCityPlanningUiPPv	libSimAdv.so	vtable:__vt_26cSC3AdvisorForCityPlanning.14cISC3CityLayer
+00c654	virtual function thunk (delta:-20) for cSC3AdvisorForCityPlanning::DoMessage(cGZMessage &)	__thunk_20_DoMessage__26cSC3AdvisorForCityPlanningR10cGZMessage	libSimAdv.so	vtable:__vt_26cSC3AdvisorForCityPlanning.14cISC3CityLayer
+00c65c	virtual function thunk (delta:-20) for cSC3AdvisorForCityPlanning::DoQueryInfo(cGZMessage &, cIGZUnknown *)	__thunk_20_DoQueryInfo__26cSC3AdvisorForCityPlanningR10cGZMessageP11cIGZUnknown	libSimAdv.so	vtable:__vt_26cSC3AdvisorForCityPlanning.14cISC3CityLayer
+00c719	virtual function thunk (delta:-4) for cSC3AdvisorForDemographics::GetAdvisorID(void)	__thunk_4_GetAdvisorID__26cSC3AdvisorForDemographics	libSimAdv.so	vtable:__vt_26cSC3AdvisorForDemographics.15cSC3BaseAdvisor
+00ce35	virtual function thunk (delta:-20) for cSC3AdvisorForDemographics::GetLayerType(void)	__thunk_20_GetLayerType__26cSC3AdvisorForDemographics	libSimAdv.so	vtable:__vt_26cSC3AdvisorForDemographics.14cISC3CityLayer
+00d290	virtual function thunk (delta:-20) for cSC3AdvisorForDemographics::SimulationBegin(void)	__thunk_20_SimulationBegin__26cSC3AdvisorForDemographics	libSimAdv.so	vtable:__vt_26cSC3AdvisorForDemographics.14cISC3CityLayer
+00d2bf	virtual function thunk (delta:-20) for cSC3AdvisorForDemographics::SimulationEnd(void)	__thunk_20_SimulationEnd__26cSC3AdvisorForDemographics	libSimAdv.so	vtable:__vt_26cSC3AdvisorForDemographics.14cISC3CityLayer
+00d2ee	virtual function thunk (delta:-20) for cSC3AdvisorForDemographics::Shutdown(void)	__thunk_20_Shutdown__26cSC3AdvisorForDemographics	libSimAdv.so	vtable:__vt_26cSC3AdvisorForDemographics.14cISC3CityLayer
+00d44f	cSC3AdvisorForDemographics::LoadAdvisorINI(void)	LoadAdvisorINI__26cSC3AdvisorForDemographics	libSimAdv.so	tokens:8.0
+00e3fb	cSC3AdvisorForDemographics::QueryInterface(unsigned int, void **)	QueryInterface__26cSC3AdvisorForDemographicsUiPPv	libSimAdv.so	vtable-thunk:__vt_26cSC3AdvisorForDemographics.15cSC3BaseAdvisor
+00e477	cSC3AdvisorForDemographics::DoAdvisorSimulation(void)	DoAdvisorSimulation__26cSC3AdvisorForDemographics	libSimAdv.so	tokens:12.4
+00e4f8	cSC3AdvisorForDemographics::GetSimulationData(void)	GetSimulationData__26cSC3AdvisorForDemographics	libSimAdv.so	tokens:47.6
+00e748	cSC3AdvisorForDemographics::CheckOnAdvice(void)	CheckOnAdvice__26cSC3AdvisorForDemographics	libSimAdv.so	tokens:30.6
+00eb8a	cSC3AdvisorForDemographics::CheckForPetitioners(void)	CheckForPetitioners__26cSC3AdvisorForDemographics	libSimAdv.so	tokens:16.0
+00ef50	virtual function thunk (delta:-4) for cSC3AdvisorForDemographics::DoMessage(cGZMessage &)	__thunk_4_DoMessage__26cSC3AdvisorForDemographicsR10cGZMessage	libSimAdv.so	vtable:__vt_26cSC3AdvisorForDemographics.15cSC3BaseAdvisor
+00f093	virtual function thunk (delta:-4) for cSC3AdvisorForDemographics::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__26cSC3AdvisorForDemographicsUiPPv	libSimAdv.so	vtable:__vt_26cSC3AdvisorForDemographics.15cSC3BaseAdvisor
+00f09b	virtual function thunk (delta:-8) for cSC3AdvisorForDemographics::QueryInterface(unsigned int, void **)	__thunk_8_QueryInterface__26cSC3AdvisorForDemographicsUiPPv	libSimAdv.so	caller
+00f0a3	virtual function thunk (delta:-20) for cSC3AdvisorForDemographics::QueryInterface(unsigned int, void **)	__thunk_20_QueryInterface__26cSC3AdvisorForDemographicsUiPPv	libSimAdv.so	vtable:__vt_26cSC3AdvisorForDemographics.14cISC3CityLayer
+00f0ab	virtual function thunk (delta:-20) for cSC3AdvisorForDemographics::DoMessage(cGZMessage &)	__thunk_20_DoMessage__26cSC3AdvisorForDemographicsR10cGZMessage	libSimAdv.so	vtable:__vt_26cSC3AdvisorForDemographics.14cISC3CityLayer
+00f0b3	virtual function thunk (delta:-16) for cSC3BaseAdvisor::DoQueryInfo(cGZMessage &, cIGZUnknown *)	__thunk_16_DoQueryInfo__15cSC3BaseAdvisorR10cGZMessageP11cIGZUnknown	libSimAdv.so	vtable:__vt_26cSC3AdvisorForPublicSafety.14cISC3CityLayer
+00f5b0	virtual function thunk (delta:-4) for cSC3AdvisorForEnvironment::GetAdvisorID(void)	__thunk_4_GetAdvisorID__25cSC3AdvisorForEnvironment	libSimAdv.so	vtable:__vt_25cSC3AdvisorForEnvironment.15cSC3BaseAdvisor
+00f637	virtual function thunk (delta:-20) for cSC3AdvisorForEnvironment::GetLayerType(void)	__thunk_20_GetLayerType__25cSC3AdvisorForEnvironment	libSimAdv.so	vtable:__vt_25cSC3AdvisorForEnvironment.14cISC3CityLayer
+00fa3c	virtual function thunk (delta:-20) for cSC3AdvisorForBudget::Save(cISC3City *, cIGZDBSegment *)	__thunk_20_Save__20cSC3AdvisorForBudgetP9cISC3CityP13cIGZDBSegment	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.14cISC3CityLayer
+00fa4c	virtual function thunk (delta:-20) for cSC3AdvisorForEnvironment::SimulationBegin(void)	__thunk_20_SimulationBegin__25cSC3AdvisorForEnvironment	libSimAdv.so	vtable:__vt_25cSC3AdvisorForEnvironment.14cISC3CityLayer
+00fa83	virtual function thunk (delta:-20) for cSC3AdvisorForEnvironment::SimulationEnd(void)	__thunk_20_SimulationEnd__25cSC3AdvisorForEnvironment	libSimAdv.so	vtable:__vt_25cSC3AdvisorForEnvironment.14cISC3CityLayer
+00fab2	virtual function thunk (delta:-20) for cSC3AdvisorForEnvironment::Shutdown(void)	__thunk_20_Shutdown__25cSC3AdvisorForEnvironment	libSimAdv.so	vtable:__vt_25cSC3AdvisorForEnvironment.14cISC3CityLayer
+010734	cSC3AdvisorForEnvironment::QueryInterface(unsigned int, void **)	QueryInterface__25cSC3AdvisorForEnvironmentUiPPv	libSimAdv.so	vtable:__vt_25cSC3AdvisorForEnvironment
+0107c8	cSC3AdvisorForEnvironment::DoAdvisorSimulation(void)	DoAdvisorSimulation__25cSC3AdvisorForEnvironment	libSimAdv.so	tokens:12.7
+010853	cSC3AdvisorForEnvironment::GetSimulationData(void)	GetSimulationData__25cSC3AdvisorForEnvironment	libSimAdv.so	tokens:56.9
+010b87	cSC3AdvisorForEnvironment::CheckOnAdvice(void)	CheckOnAdvice__25cSC3AdvisorForEnvironment	libSimAdv.so	tokens:67.5
+010f37	cSC3AdvisorForEnvironment::SimulationBegin(void)	SimulationBegin__25cSC3AdvisorForEnvironment	libSimAdv.so	callee
+010f8c	cSC3AdvisorForUtilities::CheckPowerBuildingAvailibility(unsigned int)	CheckPowerBuildingAvailibility__23cSC3AdvisorForUtilitiesUi	libSimAdv.so	vtable:__vt_23cSC3AdvisorForUtilities
+01140c	cSC3AdvisorForEnvironment::DoMessage(cGZMessage &)	DoMessage__25cSC3AdvisorForEnvironmentR10cGZMessage	libSimAdv.so	vtable-thunk:__vt_25cSC3AdvisorForEnvironment.14cISC3CityLayer
+01153b	cSC3AdvisorForEnvironment::DoQueryInfo(cGZMessage &, cIGZUnknown *)	DoQueryInfo__25cSC3AdvisorForEnvironmentR10cGZMessageP11cIGZUnknown	libSimAdv.so	tokens:21.2
+011702	cSC3GarbageBuildingRecord::AddRef(void)	AddRef__25cSC3GarbageBuildingRecord	libSimAdv.so	vtable:__vt_25cSC3GarbageBuildingRecord
+011709	cSC3GarbageBuildingRecord::Release(void)	Release__25cSC3GarbageBuildingRecord	libSimAdv.so	vtable:__vt_25cSC3GarbageBuildingRecord
+011734	cSC3GarbageBuildingRecord::SetCostString(cIGZString &)	SetCostString__25cSC3GarbageBuildingRecordR10cIGZString	libSimAdv.so	vtable:__vt_25cSC3GarbageBuildingRecord
+01174f	cSC3GarbageBuildingRecord::SetRatingString(cIGZString &)	SetRatingString__25cSC3GarbageBuildingRecordR10cIGZString	libSimAdv.so	vtable:__vt_25cSC3GarbageBuildingRecord
+01176a	cSC3GarbageBuildingRecord::GetNameString(void)	GetNameString__25cSC3GarbageBuildingRecord	libSimAdv.so	vtable:__vt_25cSC3GarbageBuildingRecord
+0117c8	cSC3GarbageBuildingRecord::GetOccupantAttrib(void)	GetOccupantAttrib__25cSC3GarbageBuildingRecord	libSimAdv.so	vtable:__vt_25cSC3GarbageBuildingRecord
+0117fd	cSC3GarbageBuildingRecord::SetOccAttribKey(cGZResourceKey const &)	SetOccAttribKey__25cSC3GarbageBuildingRecordRC14cGZResourceKey	libSimAdv.so	vtable:__vt_25cSC3GarbageBuildingRecord
+011815	cSC3GarbageBuildingRecord::Available(void)	Available__25cSC3GarbageBuildingRecord	libSimAdv.so	vtable:__vt_25cSC3GarbageBuildingRecord
+011925	virtual function thunk (delta:-4) for cSC3AdvisorForEnvironment::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__25cSC3AdvisorForEnvironmentUiPPv	libSimAdv.so	vtable:__vt_25cSC3AdvisorForEnvironment.15cSC3BaseAdvisor
+01192d	virtual function thunk (delta:-8) for cSC3AdvisorForEnvironment::QueryInterface(unsigned int, void **)	__thunk_8_QueryInterface__25cSC3AdvisorForEnvironmentUiPPv	libSimAdv.so	caller
+011935	virtual function thunk (delta:-20) for cSC3AdvisorForEnvironment::QueryInterface(unsigned int, void **)	__thunk_20_QueryInterface__25cSC3AdvisorForEnvironmentUiPPv	libSimAdv.so	vtable:__vt_25cSC3AdvisorForEnvironment.14cISC3CityLayer
+01193d	virtual function thunk (delta:-20) for cSC3AdvisorForEnvironment::DoMessage(cGZMessage &)	__thunk_20_DoMessage__25cSC3AdvisorForEnvironmentR10cGZMessage	libSimAdv.so	vtable:__vt_25cSC3AdvisorForEnvironment.14cISC3CityLayer
+011945	virtual function thunk (delta:-20) for cSC3AdvisorForEnvironment::DoQueryInfo(cGZMessage &, cIGZUnknown *)	__thunk_20_DoQueryInfo__25cSC3AdvisorForEnvironmentR10cGZMessageP11cIGZUnknown	libSimAdv.so	vtable:__vt_25cSC3AdvisorForEnvironment.14cISC3CityLayer
+0120ab	virtual function thunk (delta:-4) for cSC3AdvisorForPublicSafety::GetAdvisorID(void)	__thunk_4_GetAdvisorID__26cSC3AdvisorForPublicSafety	libSimAdv.so	vtable:__vt_26cSC3AdvisorForPublicSafety.15cSC3BaseAdvisor
+0120c1	virtual function thunk (delta:-20) for cSC3AdvisorForPublicSafety::Save(cISC3City *, cIGZDBSegment *)	__thunk_20_Save__26cSC3AdvisorForPublicSafetyP9cISC3CityP13cIGZDBSegment	libSimAdv.so	vtable:__vt_26cSC3AdvisorForPublicSafety.14cISC3CityLayer
+012157	virtual function thunk (delta:-20) for cSC3AdvisorForPublicSafety::GetLayerType(void)	__thunk_20_GetLayerType__26cSC3AdvisorForPublicSafety	libSimAdv.so	vtable:__vt_26cSC3AdvisorForPublicSafety.14cISC3CityLayer
+01215d	cSC3AdvisorForPublicSafety::Init(cISC3City *)	Init__26cSC3AdvisorForPublicSafetyP9cISC3City	libSimAdv.so	tokens:122.9
+0126f0	virtual function thunk (delta:-20) for cSC3AdvisorForPublicSafety::SimulationBegin(void)	__thunk_20_SimulationBegin__26cSC3AdvisorForPublicSafety	libSimAdv.so	vtable:__vt_26cSC3AdvisorForPublicSafety.14cISC3CityLayer
+01271f	virtual function thunk (delta:-20) for cSC3AdvisorForPublicSafety::SimulationEnd(void)	__thunk_20_SimulationEnd__26cSC3AdvisorForPublicSafety	libSimAdv.so	vtable:__vt_26cSC3AdvisorForPublicSafety.14cISC3CityLayer
+01274e	virtual function thunk (delta:-20) for cSC3AdvisorForPublicSafety::Shutdown(void)	__thunk_20_Shutdown__26cSC3AdvisorForPublicSafety	libSimAdv.so	vtable:__vt_26cSC3AdvisorForPublicSafety.14cISC3CityLayer
+0129ff	cSC3AdvisorForPublicSafety::LoadAdvisorINI(void)	LoadAdvisorINI__26cSC3AdvisorForPublicSafety	libSimAdv.so	tokens:8.0
+01313d	cSC3AdvisorForPublicSafety::QueryInterface(unsigned int, void **)	QueryInterface__26cSC3AdvisorForPublicSafetyUiPPv	libSimAdv.so	vtable:__vt_26cSC3AdvisorForPublicSafety
+0131e9	cSC3AdvisorForPublicSafety::DoAdvisorSimulation(void)	DoAdvisorSimulation__26cSC3AdvisorForPublicSafety	libSimAdv.so	tokens:12.4
+0132ce	cSC3AdvisorForPublicSafety::DisasterStarted(cISC3DisasterInstance *)	DisasterStarted__26cSC3AdvisorForPublicSafetyP21cISC3DisasterInstance	libSimAdv.so	tokens:169.4
+0136db	cSC3AdvisorForPublicSafety::DisasterEnded(cISC3DisasterInstance *)	DisasterEnded__26cSC3AdvisorForPublicSafetyP21cISC3DisasterInstance	libSimAdv.so	vtable:__vt_26cSC3AdvisorForPublicSafety
+0140c4	cSC3AdvisorForPublicSafety::GetSimulationData(void)	GetSimulationData__26cSC3AdvisorForPublicSafety	libSimAdv.so	tokens:37.8
+014314	cSC3AdvisorForPublicSafety::CheckOnAdvice(void)	CheckOnAdvice__26cSC3AdvisorForPublicSafety	libSimAdv.so	tokens:62.6
+0145ef	cSC3AdvisorForPublicSafety::CheckForPetitioners(void)	CheckForPetitioners__26cSC3AdvisorForPublicSafety	libSimAdv.so	tokens:29.6
+0149f5	cSC3AdvisorForPublicSafety::DoMessage(cGZMessage &)	DoMessage__26cSC3AdvisorForPublicSafetyR10cGZMessage	libSimAdv.so	tokens:68.6
+014e85	_Rb_tree<unsigned int, pair<unsigned int const, cISC3SpecialBuildingRecord *>, _Select1st<pair<unsigned int const, cISC3SpecialBuildingRecord *> >, less<unsigned int>, allocator<cISC3SpecialBuildingRecord *> >::find(unsigned int const &)	find__t8_Rb_tree5ZUiZt4pair2ZCUiZP26cISC3SpecialBuildingRecordZt10_Select1st1Zt4pair2ZCUiZP26cISC3SpecialBuildingRecordZt4less1ZUiZt9allocator1ZP26cISC3SpecialBuildingRecordRCUi	libSimAdv.so	callee
+014fff	virtual function thunk (delta:-4) for cSC3AdvisorForPublicSafety::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__26cSC3AdvisorForPublicSafetyUiPPv	libSimAdv.so	vtable:__vt_26cSC3AdvisorForPublicSafety.15cSC3BaseAdvisor
+015007	virtual function thunk (delta:-4) for cSC3AdvisorForBudget::AddRef(void)	__thunk_4_AddRef__20cSC3AdvisorForBudget	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.15cSC3BaseAdvisor
+01500f	virtual function thunk (delta:-4) for cSC3AdvisorForBudget::Release(void)	__thunk_4_Release__20cSC3AdvisorForBudget	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.15cSC3BaseAdvisor
+015017	virtual function thunk (delta:-8) for cSC3AdvisorForPublicSafety::QueryInterface(unsigned int, void **)	__thunk_8_QueryInterface__26cSC3AdvisorForPublicSafetyUiPPv	libSimAdv.so	caller
+01501f	virtual function thunk (delta:-8) for cSC3AdvisorForBudget::AddRef(void)	__thunk_8_AddRef__20cSC3AdvisorForBudget	libSimAdv.so	caller
+015027	virtual function thunk (delta:-20) for cSC3AdvisorForPublicSafety::QueryInterface(unsigned int, void **)	__thunk_20_QueryInterface__26cSC3AdvisorForPublicSafetyUiPPv	libSimAdv.so	vtable:__vt_26cSC3AdvisorForPublicSafety.14cISC3CityLayer
+01502f	virtual function thunk (delta:-20) for cSC3AdvisorForPublicSafety::DoMessage(cGZMessage &)	__thunk_20_DoMessage__26cSC3AdvisorForPublicSafetyR10cGZMessage	libSimAdv.so	vtable:__vt_26cSC3AdvisorForPublicSafety.14cISC3CityLayer
+015884	virtual function thunk (delta:-20) for cSC3AdvisorForTransportation::GetLayerType(void)	__thunk_20_GetLayerType__28cSC3AdvisorForTransportation	libSimAdv.so	vtable:__vt_28cSC3AdvisorForTransportation.14cISC3CityLayer
+015d51	virtual function thunk (delta:-20) for cSC3AdvisorForTransportation::SimulationBegin(void)	__thunk_20_SimulationBegin__28cSC3AdvisorForTransportation	libSimAdv.so	vtable:__vt_28cSC3AdvisorForTransportation.14cISC3CityLayer
+015db5	virtual function thunk (delta:-20) for cSC3AdvisorForTransportation::SimulationEnd(void)	__thunk_20_SimulationEnd__28cSC3AdvisorForTransportation	libSimAdv.so	vtable:__vt_28cSC3AdvisorForTransportation.14cISC3CityLayer
+016ce7	cSC3AdvisorForTransportation::QueryInterface(unsigned int, void **)	QueryInterface__28cSC3AdvisorForTransportationUiPPv	libSimAdv.so	vtable-thunk:__vt_28cSC3AdvisorForTransportation.14cISC3CityLayer
+016d13	cSC3AdvisorForTransportation::LoadHelpAdvice(void)	LoadHelpAdvice__28cSC3AdvisorForTransportation	libSimAdv.so	tokens:8.0
+016d57	cSC3AdvisorForTransportation::DoAdvisorSimulation(void)	DoAdvisorSimulation__28cSC3AdvisorForTransportation	libSimAdv.so	tokens:12.4
+016de2	cSC3AdvisorForTransportation::GetSimulationData(void)	GetSimulationData__28cSC3AdvisorForTransportation	libSimAdv.so	tokens:53.2
+017002	cSC3AdvisorForTransportation::CheckOnAdvice(void)	CheckOnAdvice__28cSC3AdvisorForTransportation	libSimAdv.so	tokens:46.2
+0176a7	cSC3AdvisorForTransportation::CheckForPetitioners(void)	CheckForPetitioners__28cSC3AdvisorForTransportation	libSimAdv.so	tokens:15.1
+01796b	cSC3AdvisorForTransportation::DoMessage(cGZMessage &)	DoMessage__28cSC3AdvisorForTransportationR10cGZMessage	libSimAdv.so	tokens:56.0
+017a4f	cSC3AdvisorForTransportation::InventionAvailable(unsigned int) const	InventionAvailable__C28cSC3AdvisorForTransportationUi	libSimAdv.so	vtable:__vt_28cSC3AdvisorForTransportation
+017b11	virtual function thunk (delta:-4) for cSC3AdvisorForTransportation::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__28cSC3AdvisorForTransportationUiPPv	libSimAdv.so	vtable:__vt_28cSC3AdvisorForTransportation.15cSC3BaseAdvisor
+017b19	virtual function thunk (delta:-8) for cSC3AdvisorForTransportation::QueryInterface(unsigned int, void **)	__thunk_8_QueryInterface__28cSC3AdvisorForTransportationUiPPv	libSimAdv.so	caller
+017b21	virtual function thunk (delta:-8) for cSC3AdvisorForBudget::Release(void)	__thunk_8_Release__20cSC3AdvisorForBudget	libSimAdv.so	caller
+017b29	virtual function thunk (delta:-20) for cSC3AdvisorForTransportation::QueryInterface(unsigned int, void **)	__thunk_20_QueryInterface__28cSC3AdvisorForTransportationUiPPv	libSimAdv.so	vtable:__vt_28cSC3AdvisorForTransportation.14cISC3CityLayer
+017b31	virtual function thunk (delta:-20) for cSC3AdvisorForBudget::AddRef(void)	__thunk_20_AddRef__20cSC3AdvisorForBudget	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.14cISC3CityLayer
+017b39	virtual function thunk (delta:-20) for cSC3AdvisorForBudget::Release(void)	__thunk_20_Release__20cSC3AdvisorForBudget	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.14cISC3CityLayer
+017b41	virtual function thunk (delta:-20) for cSC3AdvisorForTransportation::DoMessage(cGZMessage &)	__thunk_20_DoMessage__28cSC3AdvisorForTransportationR10cGZMessage	libSimAdv.so	vtable:__vt_28cSC3AdvisorForTransportation.14cISC3CityLayer
+0180bd	virtual function thunk (delta:-4) for cSC3AdvisorForUtilities::GetAdvisorID(void)	__thunk_4_GetAdvisorID__23cSC3AdvisorForUtilities	libSimAdv.so	vtable:__vt_23cSC3AdvisorForUtilities.15cSC3BaseAdvisor
+0180c3	cSC3AdvisorForUtilities::GetPowerFundingPercentage(void)	GetPowerFundingPercentage__23cSC3AdvisorForUtilities	libSimAdv.so	vtable:__vt_23cSC3AdvisorForUtilities
+0180ca	virtual function thunk (delta:-8) for cSC3AdvisorForUtilities::~cSC3AdvisorForUtilities(void)	__thunk_8__._23cSC3AdvisorForUtilities	libSimAdv.so	vtable:__vt_23cSC3AdvisorForUtilities.17cSC3BaseCityAgent
+01862c	virtual function thunk (delta:-20) for cSC3AdvisorForUtilities::Save(cISC3City *, cIGZDBSegment *)	__thunk_20_Save__23cSC3AdvisorForUtilitiesP9cISC3CityP13cIGZDBSegment	libSimAdv.so	vtable:__vt_23cSC3AdvisorForUtilities.14cISC3CityLayer
+0186ea	virtual function thunk (delta:-20) for cSC3AdvisorForUtilities::SimulationBegin(void)	__thunk_20_SimulationBegin__23cSC3AdvisorForUtilities	libSimAdv.so	vtable:__vt_23cSC3AdvisorForUtilities.14cISC3CityLayer
+018785	virtual function thunk (delta:-20) for cSC3AdvisorForUtilities::SimulationEnd(void)	__thunk_20_SimulationEnd__23cSC3AdvisorForUtilities	libSimAdv.so	vtable:__vt_23cSC3AdvisorForUtilities.14cISC3CityLayer
+0187b4	virtual function thunk (delta:-20) for cSC3AdvisorForUtilities::Shutdown(void)	__thunk_20_Shutdown__23cSC3AdvisorForUtilities	libSimAdv.so	vtable:__vt_23cSC3AdvisorForUtilities.14cISC3CityLayer
+019a12	cSC3AdvisorForUtilities::QueryInterface(unsigned int, void **)	QueryInterface__23cSC3AdvisorForUtilitiesUiPPv	libSimAdv.so	vtable:__vt_23cSC3AdvisorForUtilities
+019a3e	cSC3AdvisorForUtilities::AddRef(void)	AddRef__23cSC3AdvisorForUtilities	libSimAdv.so	vtable:__vt_23cSC3AdvisorForUtilities
+019a46	cSC3AdvisorForUtilities::Release(void)	Release__23cSC3AdvisorForUtilities	libSimAdv.so	vtable:__vt_23cSC3AdvisorForUtilities
+019ae6	virtual function thunk (delta:-4) for cSC3AdvisorForUtilities::DoAdvisorSimulation(void)	__thunk_4_DoAdvisorSimulation__23cSC3AdvisorForUtilities	libSimAdv.so	vtable:__vt_23cSC3AdvisorForUtilities.15cSC3BaseAdvisor
+019b78	cSC3AdvisorForUtilities::GetSimulationData(void)	GetSimulationData__23cSC3AdvisorForUtilities	libSimAdv.so	tokens:43.9
+019f09	cSC3AdvisorForUtilities::CheckOnAdvice(void)	CheckOnAdvice__23cSC3AdvisorForUtilities	libSimAdv.so	tokens:40.0
+01a471	cSC3AdvisorForUtilities::CheckWaterBuildingAvailibility(unsigned int)	CheckWaterBuildingAvailibility__23cSC3AdvisorForUtilitiesUi	libSimAdv.so	vtable:__vt_23cSC3AdvisorForUtilities
+01a581	cSC3AdvisorForUtilities::CheckForPetitioners(void)	CheckForPetitioners__23cSC3AdvisorForUtilities	libSimAdv.so	tokens:21.6
+01a85f	cSC3AdvisorForUtilities::CheckForNeighborDeals(void)	CheckForNeighborDeals__23cSC3AdvisorForUtilities	libSimAdv.so	tokens:62.2
+01c134	cSC3AdvisorForUtilities::DisableNewDealsOfType(int)	DisableNewDealsOfType__23cSC3AdvisorForUtilitiesi	libSimAdv.so	vtable:__vt_23cSC3AdvisorForUtilities
+01c161	cSC3AdvisorForUtilities::EnableNewDealsOfType(int)	EnableNewDealsOfType__23cSC3AdvisorForUtilitiesi	libSimAdv.so	vtable:__vt_23cSC3AdvisorForUtilities
+01c507	cSC3AdvisorForUtilities::DoMessage(cGZMessage &)	DoMessage__23cSC3AdvisorForUtilitiesR10cGZMessage	libSimAdv.so	tokens:67.0
+01c61e	cSC3AdvisorForUtilities::DoQueryInfo(cGZMessage &, cIGZUnknown *)	DoQueryInfo__23cSC3AdvisorForUtilitiesR10cGZMessageP11cIGZUnknown	libSimAdv.so	tokens:29.2
+01c69c	cSC3AdvisorForUtilities::LoadPowerPlantWindowList(cISC3Catalog *)	LoadPowerPlantWindowList__23cSC3AdvisorForUtilitiesP12cISC3Catalog	libSimAdv.so	tokens:58.8
+01c975	cSC3GarbageBuildingRecord::QueryInterface(unsigned int, void **)	QueryInterface__25cSC3GarbageBuildingRecordUiPPv	libSimAdv.so	vtable:__vt_25cSC3GarbageBuildingRecord
+01c97a	cSC3UtilityBuildingRecord::AddRef(void)	AddRef__25cSC3UtilityBuildingRecord	libSimAdv.so	vtable:__vt_25cSC3UtilityBuildingRecord
+01c981	cSC3UtilityBuildingRecord::Release(void)	Release__25cSC3UtilityBuildingRecord	libSimAdv.so	vtable:__vt_25cSC3UtilityBuildingRecord
+01c9ac	cSC3GarbageBuildingRecord::GetRatingString(void)	GetRatingString__25cSC3GarbageBuildingRecord	libSimAdv.so	vtable:__vt_25cSC3GarbageBuildingRecord
+01c9b0	cSC3UtilityBuildingRecord::GetNameString(void)	GetNameString__25cSC3UtilityBuildingRecord	libSimAdv.so	vtable:__vt_25cSC3UtilityBuildingRecord
+01ca0e	cSC3GarbageBuildingRecord::SetDescriptionString(cIGZString &)	SetDescriptionString__25cSC3GarbageBuildingRecordR10cIGZString	libSimAdv.so	vtable:__vt_25cSC3GarbageBuildingRecord
+01ca29	cSC3GarbageBuildingRecord::GetDescriptionString(void)	GetDescriptionString__25cSC3GarbageBuildingRecord	libSimAdv.so	vtable:__vt_25cSC3GarbageBuildingRecord
+01ca2d	cSC3GarbageBuildingRecord::DateAvailable(void)	DateAvailable__25cSC3GarbageBuildingRecord	libSimAdv.so	vtable:__vt_25cSC3GarbageBuildingRecord
+01ca31	cSC3GarbageBuildingRecord::MessageID(void)	MessageID__25cSC3GarbageBuildingRecord	libSimAdv.so	vtable:__vt_25cSC3GarbageBuildingRecord
+01ca35	cSC3UtilityBuildingRecord::BuildingType(void)	BuildingType__25cSC3UtilityBuildingRecord	libSimAdv.so	vtable:__vt_25cSC3UtilityBuildingRecord
+01ca39	cSC3GarbageBuildingRecord::BuildingType(void)	BuildingType__25cSC3GarbageBuildingRecord	libSimAdv.so	vtable:__vt_25cSC3GarbageBuildingRecord
+01ca98	cSC3GarbageBuildingRecord::GetOccAttribKey(void)	GetOccAttribKey__25cSC3GarbageBuildingRecord	libSimAdv.so	vtable:__vt_25cSC3GarbageBuildingRecord
+01cba4	virtual function thunk (delta:-4) for cSC3AdvisorForUtilities::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__23cSC3AdvisorForUtilitiesUiPPv	libSimAdv.so	vtable:__vt_23cSC3AdvisorForUtilities.15cSC3BaseAdvisor
+01cbac	virtual function thunk (delta:-4) for cSC3AdvisorForUtilities::AddRef(void)	__thunk_4_AddRef__23cSC3AdvisorForUtilities	libSimAdv.so	vtable:__vt_23cSC3AdvisorForUtilities.15cSC3BaseAdvisor
+01cbb4	virtual function thunk (delta:-4) for cSC3AdvisorForUtilities::Release(void)	__thunk_4_Release__23cSC3AdvisorForUtilities	libSimAdv.so	vtable:__vt_23cSC3AdvisorForUtilities.15cSC3BaseAdvisor
+01cbbc	virtual function thunk (delta:-4) for cSC3AdvisorForUtilities::AsISC3CityAgent(void)	__thunk_4_AsISC3CityAgent__23cSC3AdvisorForUtilities	libSimAdv.so	vtable:__vt_23cSC3AdvisorForUtilities.15cSC3BaseAdvisor
+01cbc4	virtual function thunk (delta:-8) for cSC3AdvisorForUtilities::QueryInterface(unsigned int, void **)	__thunk_8_QueryInterface__23cSC3AdvisorForUtilitiesUiPPv	libSimAdv.so	vtable:__vt_23cSC3AdvisorForUtilities.17cSC3BaseCityAgent
+01cbcc	virtual function thunk (delta:-8) for cSC3AdvisorForUtilities::AddRef(void)	__thunk_8_AddRef__23cSC3AdvisorForUtilities	libSimAdv.so	vtable:__vt_23cSC3AdvisorForUtilities.17cSC3BaseCityAgent
+01cbd4	virtual function thunk (delta:-8) for cSC3AdvisorForUtilities::Release(void)	__thunk_8_Release__23cSC3AdvisorForUtilities	libSimAdv.so	vtable:__vt_23cSC3AdvisorForUtilities.17cSC3BaseCityAgent
+01cbdc	virtual function thunk (delta:-20) for cSC3AdvisorForUtilities::QueryInterface(unsigned int, void **)	__thunk_20_QueryInterface__23cSC3AdvisorForUtilitiesUiPPv	libSimAdv.so	vtable:__vt_23cSC3AdvisorForUtilities.14cISC3CityLayer
+01cbe4	virtual function thunk (delta:-20) for cSC3AdvisorForCityPlanning::AddRef(void)	__thunk_20_AddRef__26cSC3AdvisorForCityPlanning	libSimAdv.so	vtable:__vt_26cSC3AdvisorForCityPlanning.14cISC3CityLayer
+01cbec	virtual function thunk (delta:-20) for cSC3AdvisorForCityPlanning::Release(void)	__thunk_20_Release__26cSC3AdvisorForCityPlanning	libSimAdv.so	vtable:__vt_26cSC3AdvisorForCityPlanning.14cISC3CityLayer
+01cbf4	virtual function thunk (delta:-4) for cSC3AdvisorForUtilities::DoMessage(cGZMessage &)	__thunk_4_DoMessage__23cSC3AdvisorForUtilitiesR10cGZMessage	libSimAdv.so	caller
+01cbfc	virtual function thunk (delta:-20) for cSC3AdvisorForUtilities::DoQueryInfo(cGZMessage &, cIGZUnknown *)	__thunk_20_DoQueryInfo__23cSC3AdvisorForUtilitiesR10cGZMessageP11cIGZUnknown	libSimAdv.so	vtable:__vt_23cSC3AdvisorForUtilities.14cISC3CityLayer
+01d21a	cSC3BaseAdvisor::AsISC3CityAgent(void)	AsISC3CityAgent__15cSC3BaseAdvisor	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.15cSC3BaseAdvisor
+01d226	virtual function thunk (delta:-16) for cSC3BaseAdvisor::StaticInit(cISC3CityDefinition *)	__thunk_16_StaticInit__15cSC3BaseAdvisorP19cISC3CityDefinition	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.14cISC3CityLayer
+01d310	cSC3AdvisorForBudget::Save(cISC3City *, cIGZDBSegment *)	Save__20cSC3AdvisorForBudgetP9cISC3CityP13cIGZDBSegment	libSimAdv.so	vtable-thunk:__vt_20cSC3AdvisorForBudget.14cISC3CityLayer
+01d3df	virtual function thunk (delta:-16) for cSC3BaseAdvisor::GetManipulator(cISC3CityAgentType const &, cISC3CityLayerManipulator **, int &)	__thunk_16_GetManipulator__15cSC3BaseAdvisorRC18cISC3CityAgentTypePP25cISC3CityLayerManipulatorRi	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.14cISC3CityLayer
+01d3e4	cSC3AdvisorForPublicSafety::SimulationBegin(void)	SimulationBegin__26cSC3AdvisorForPublicSafety	libSimAdv.so	callee
+01d401	cSC3BaseAdvisor::QueryInterface(unsigned int, void **)	QueryInterface__15cSC3BaseAdvisorUiPPv	libSimAdv.so	tokens:20.4
+01d453	cSC3BaseAdvisor::SetName(cIGZString &)	SetName__15cSC3BaseAdvisorR10cIGZString	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.15cSC3BaseAdvisor
+01d45f	cSC3BaseAdvisor::GetName(cIGZString &)	GetName__15cSC3BaseAdvisorR10cIGZString	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.15cSC3BaseAdvisor
+01d46b	cSC3BaseAdvisor::GetNameAdvice(cIGZString &)	GetNameAdvice__15cSC3BaseAdvisorR10cIGZString	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.15cSC3BaseAdvisor
+01d540	cSC3BaseAdvisor::SetNameAdvice(cIGZString &)	SetNameAdvice__15cSC3BaseAdvisorR10cIGZString	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.15cSC3BaseAdvisor
+01d55d	cSC3BaseAdvisor::GetNameOrdinance(cIGZString &)	GetNameOrdinance__15cSC3BaseAdvisorR10cIGZString	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.15cSC3BaseAdvisor
+01d632	cSC3BaseAdvisor::SetNameOrdinance(cIGZString &)	SetNameOrdinance__15cSC3BaseAdvisorR10cIGZString	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.15cSC3BaseAdvisor
+01d64f	cSC3BaseAdvisor::GetNameBriefings(cIGZString &)	GetNameBriefings__15cSC3BaseAdvisorR10cIGZString	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.15cSC3BaseAdvisor
+01d724	cSC3BaseAdvisor::SetNameBriefings(cIGZString &)	SetNameBriefings__15cSC3BaseAdvisorR10cIGZString	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.15cSC3BaseAdvisor
+01d741	cSC3BaseAdvisor::SetPersonalName(cIGZString &)	SetPersonalName__15cSC3BaseAdvisorR10cIGZString	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.15cSC3BaseAdvisor
+01d75e	cSC3BaseAdvisor::GetPersonalName(cIGZString &)	GetPersonalName__15cSC3BaseAdvisorR10cIGZString	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.15cSC3BaseAdvisor
+01d833	cSC3BaseAdvisor::GetSmallAdvisorPicture(void)	GetSmallAdvisorPicture__15cSC3BaseAdvisor	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.15cSC3BaseAdvisor
+01d840	cSC3BaseAdvisor::GetLargeAdvisorPicture(void)	GetLargeAdvisorPicture__15cSC3BaseAdvisor	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.15cSC3BaseAdvisor
+01d84d	cSC3BaseAdvisor::SetSmallAdvisorPicture(cGZResourceKey const &)	SetSmallAdvisorPicture__15cSC3BaseAdvisorRC14cGZResourceKey	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.15cSC3BaseAdvisor
+01d867	cSC3BaseAdvisor::SetLargeAdvisorPicture(cGZResourceKey const &)	SetLargeAdvisorPicture__15cSC3BaseAdvisorRC14cGZResourceKey	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.15cSC3BaseAdvisor
+01d8e9	cSC3BaseAdvisor::GetOrdinanceQueueSize(void)	GetOrdinanceQueueSize__15cSC3BaseAdvisor	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.15cSC3BaseAdvisor
+01d8fe	cSC3BaseAdvisor::GetOrdinanceHeaders(unsigned int &, cISC3AdvisorHeaderRecord **)	GetOrdinanceHeaders__15cSC3BaseAdvisorRUiPP24cISC3AdvisorHeaderRecord	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.15cSC3BaseAdvisor
+01d91e	cSC3BaseAdvisor::GetOrdinanceTitleFromID(unsigned int, cIGZString &)	GetOrdinanceTitleFromID__15cSC3BaseAdvisorUiR10cIGZString	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.15cSC3BaseAdvisor
+01d93c	cSC3BaseAdvisor::GetOrdinanceMessageFromID(unsigned int, cIGZString &)	GetOrdinanceMessageFromID__15cSC3BaseAdvisorUiR10cIGZString	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.15cSC3BaseAdvisor
+01d9c5	cSC3BaseAdvisor::GetHelpQueueSize(void)	GetHelpQueueSize__15cSC3BaseAdvisor	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.15cSC3BaseAdvisor
+01d9da	cSC3BaseAdvisor::GetHelpHeaders(unsigned int &, cISC3AdvisorHeaderRecord **)	GetHelpHeaders__15cSC3BaseAdvisorRUiPP24cISC3AdvisorHeaderRecord	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.15cSC3BaseAdvisor
+01d9fa	cSC3BaseAdvisor::GetHelpTitleFromID(unsigned int, cIGZString &)	GetHelpTitleFromID__15cSC3BaseAdvisorUiR10cIGZString	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.15cSC3BaseAdvisor
+01da18	cSC3BaseAdvisor::GetHelpMessageFromID(unsigned int, cIGZString &)	GetHelpMessageFromID__15cSC3BaseAdvisorUiR10cIGZString	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.15cSC3BaseAdvisor
+01dbf1	cSC3BaseAdvisor::GetAdviceQueueSize(void)	GetAdviceQueueSize__15cSC3BaseAdvisor	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.15cSC3BaseAdvisor
+01dc06	cSC3BaseAdvisor::GetAdviceHeaders(unsigned int &, cISC3AdvisorHeaderRecord **)	GetAdviceHeaders__15cSC3BaseAdvisorRUiPP24cISC3AdvisorHeaderRecord	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.15cSC3BaseAdvisor
+01dc26	cSC3BaseAdvisor::GetAdviceMessageFromID(unsigned int, cIGZString &)	GetAdviceMessageFromID__15cSC3BaseAdvisorUiR10cIGZString	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.15cSC3BaseAdvisor
+01dc51	cSC3BaseAdvisor::GetAdviceStructureFromID(unsigned int, cISC3AdvisorMessageRecord **)	GetAdviceStructureFromID__15cSC3BaseAdvisorUiPP25cISC3AdvisorMessageRecord	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.15cSC3BaseAdvisor
+01dcb2	cSC3BaseAdvisor::GetAdvisorAverageMood(void)	GetAdvisorAverageMood__15cSC3BaseAdvisor	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.15cSC3BaseAdvisor
+01df75	virtual function thunk (delta:-8) for cSC3AdvisorForBudget::DebugClassTag(cIGZString &)	__thunk_8_DebugClassTag__20cSC3AdvisorForBudgetR10cIGZString	libSimAdv.so	caller
+01e140	cSC3AdvisorMessageRecord::~cSC3AdvisorMessageRecord(void)	_._24cSC3AdvisorMessageRecord	libSimAdv.so	vtable:__vt_24cSC3AdvisorMessageRecord
+01e25c	cSC3AdvisorMessageRecord::QueryInterface(unsigned int, void **)	QueryInterface__24cSC3AdvisorMessageRecordUiPPv	libSimAdv.so	tokens:8.0
+01e281	cSC3AdvisorMessageRecord::AddRef(void)	AddRef__24cSC3AdvisorMessageRecord	libSimAdv.so	vtable:__vt_24cSC3AdvisorMessageRecord
+01e298	cSC3AdvisorMessageRecord::Release(void)	Release__24cSC3AdvisorMessageRecord	libSimAdv.so	vtable:__vt_24cSC3AdvisorMessageRecord
+01e2c6	cSC3AdvisorMessageRecord::GetMessageMood(void) const	GetMessageMood__C24cSC3AdvisorMessageRecord	libSimAdv.so	vtable:__vt_24cSC3AdvisorMessageRecord
+01e2cb	cSC3AdvisorMessageRecord::GetGraphicsKey(void) const	GetGraphicsKey__C24cSC3AdvisorMessageRecord	libSimAdv.so	vtable:__vt_24cSC3AdvisorMessageRecord
+01e4a2	virtual function thunk (delta:-20) for cSC3AdvisorForBudget::DebugClassTag(cIGZString &)	__thunk_20_DebugClassTag__20cSC3AdvisorForBudgetR10cIGZString	libSimAdv.so	vtable:__vt_20cSC3AdvisorForBudget.14cISC3CityLayer
+01e61a	cSC3PetitionerManager::~cSC3PetitionerManager(void)	_._21cSC3PetitionerManager	libSimAdv.so	vtable:__vt_21cSC3PetitionerManager
+01e6af	cSC3PetitionerManager::Init(cISC3City *)	Init__21cSC3PetitionerManagerP9cISC3City	libSimAdv.so	caller
+01e98d	virtual function thunk (delta:-8) for cSC3PetitionerManager::Save(cISC3City *, cIGZDBSegment *)	__thunk_8_Save__21cSC3PetitionerManagerP9cISC3CityP13cIGZDBSegment	libSimAdv.so	vtable:__vt_21cSC3PetitionerManager.14cISC3CityLayer
+01ea4e	virtual function thunk (delta:-8) for cSC3PetitionerManager::Shutdown(void)	__thunk_8_Shutdown__21cSC3PetitionerManager	libSimAdv.so	vtable:__vt_21cSC3PetitionerManager.14cISC3CityLayer
+01eb90	virtual function thunk (delta:-8) for cSC3PetitionerManager::SimulationBegin(void)	__thunk_8_SimulationBegin__21cSC3PetitionerManager	libSimAdv.so	vtable:__vt_21cSC3PetitionerManager.14cISC3CityLayer
+01ebc2	virtual function thunk (delta:-8) for cSC3PetitionerManager::SimulationEnd(void)	__thunk_8_SimulationEnd__21cSC3PetitionerManager	libSimAdv.so	vtable:__vt_21cSC3PetitionerManager.14cISC3CityLayer
+01ebe9	virtual function thunk (delta:-4) for cSC3PetitionerManager::TypeId(void) const	__thunk_4_TypeId__C21cSC3PetitionerManager	libSimAdv.so	vtable:__vt_21cSC3PetitionerManager.14cISC3CityAgent
+01ebef	cSC3PetitionerManager::QueryInterface(unsigned int, void **)	QueryInterface__21cSC3PetitionerManagerUiPPv	libSimAdv.so	tokens:28.6
+01ec4a	cSC3PetitionerManager::AddRef(void)	AddRef__21cSC3PetitionerManager	libSimAdv.so	vtable:__vt_21cSC3PetitionerManager
+01ec67	cSC3PetitionerManager::Release(void)	Release__21cSC3PetitionerManager	libSimAdv.so	vtable:__vt_21cSC3PetitionerManager
+01ecad	cSC3PetitionerManager::LoadPetitionerINI(void)	LoadPetitionerINI__21cSC3PetitionerManager	libSimAdv.so	tokens:8.0
+01fdec	cSC3PetitionerManager::GetPetitionerStringGroup(cISC3PetitionerManager::tPetitionerStringType, unsigned int)	GetPetitionerStringGroup__21cSC3PetitionerManagerQ222cISC3PetitionerManager21tPetitionerStringTypeUi	libSimAdv.so	vtable:__vt_21cSC3PetitionerManager
+01fed4	virtual function thunk (delta:-4) for cSC3PetitionerManager::Simulate(int)	__thunk_4_Simulate__21cSC3PetitionerManageri	libSimAdv.so	vtable:__vt_21cSC3PetitionerManager.14cISC3CityAgent
+01fef8	virtual function thunk (delta:-4) for cSC3PetitionerManager::AgentType(void)	__thunk_4_AgentType__21cSC3PetitionerManager	libSimAdv.so	vtable:__vt_21cSC3PetitionerManager.14cISC3CityAgent
+01fefb	cSC3AdvisorForBudget::DebugClassTag(cIGZString &)	DebugClassTag__20cSC3AdvisorForBudgetR10cIGZString	libSimAdv.so	vtable-thunk:__vt_20cSC3AdvisorForBudget.14cISC3CityLayer
+01ff00	virtual function thunk (delta:-4) for cSC3PetitionerManager::MinimumExecutionInterval(void)	__thunk_4_MinimumExecutionInterval__21cSC3PetitionerManager	libSimAdv.so	vtable:__vt_21cSC3PetitionerManager.14cISC3CityAgent
+01ff04	cSC3PetitionerManager::DoAdvisorSimulation(void)	DoAdvisorSimulation__21cSC3PetitionerManager	libSimAdv.so	tokens:15.1
+01ff6d	cSC3PetitionerManager::Simulate(int)	Simulate__21cSC3PetitionerManageri	libSimAdv.so	callee
+01ff77	cSC3PetitionerManager::SimulationBegin(void)	SimulationBegin__21cSC3PetitionerManager	libSimAdv.so	callee
+02096a	cSC3PetitionerManager::PetitionerButtonPressed(unsigned int, unsigned int)	PetitionerButtonPressed__21cSC3PetitionerManagerUiUi	libSimAdv.so	vtable:__vt_21cSC3PetitionerManager
+021393	cSC3PetitionerManager::GetNeighborDealPetitioner(unsigned char, cISC3PetitionerManager::tPetitionerRecord *)	GetNeighborDealPetitioner__21cSC3PetitionerManagerUcPQ222cISC3PetitionerManager17tPetitionerRecord	libSimAdv.so	vtable:__vt_21cSC3PetitionerManager
+021a27	virtual function thunk (delta:-8) for cSC3PetitionerManager::DoMessage(cGZMessage &)	__thunk_8_DoMessage__21cSC3PetitionerManagerR10cGZMessage	libSimAdv.so	vtable:__vt_21cSC3PetitionerManager.14cISC3CityLayer
+021b51	cSC3PetitionerManager::GetPetitionerQueueSize(void)	GetPetitionerQueueSize__21cSC3PetitionerManager	libSimAdv.so	vtable:__vt_21cSC3PetitionerManager
+021b63	cSC3PetitionerManager::GetPetitionerHeaders(cISC3PetitionerManager::tHeaderRecord **)	GetPetitionerHeaders__21cSC3PetitionerManagerPPQ222cISC3PetitionerManager13tHeaderRecord	libSimAdv.so	vtable:__vt_21cSC3PetitionerManager
+021b7c	cSC3PetitionerManager::GetPetitionerStructureFromID(unsigned int, cISC3PetitionerManager::tPetitionerRecord *)	GetPetitionerStructureFromID__21cSC3PetitionerManagerUiPQ222cISC3PetitionerManager17tPetitionerRecord	libSimAdv.so	vtable:__vt_21cSC3PetitionerManager
+021b97	cSC3PetitionerManager::GetPetitionerStructure(unsigned int, cISC3PetitionerManager::tPetitionerRecord *)	GetPetitionerStructure__21cSC3PetitionerManagerUiPQ222cISC3PetitionerManager17tPetitionerRecord	libSimAdv.so	vtable:__vt_21cSC3PetitionerManager
+022b79	virtual function thunk (delta:-4) for cSC3PetitionerManager::QueryInterface(unsigned int, void **)	__thunk_4_QueryInterface__21cSC3PetitionerManagerUiPPv	libSimAdv.so	vtable:__vt_21cSC3PetitionerManager.14cISC3CityAgent
+022b81	virtual function thunk (delta:-4) for cSC3PetitionerManager::AddRef(void)	__thunk_4_AddRef__21cSC3PetitionerManager	libSimAdv.so	vtable:__vt_21cSC3PetitionerManager.14cISC3CityAgent
+022b89	virtual function thunk (delta:-4) for cSC3PetitionerManager::Release(void)	__thunk_4_Release__21cSC3PetitionerManager	libSimAdv.so	vtable:__vt_21cSC3PetitionerManager.14cISC3CityAgent
+022b91	virtual function thunk (delta:-8) for cSC3PetitionerManager::QueryInterface(unsigned int, void **)	__thunk_8_QueryInterface__21cSC3PetitionerManagerUiPPv	libSimAdv.so	vtable:__vt_21cSC3PetitionerManager.14cISC3CityLayer
+022b99	virtual function thunk (delta:-8) for cSC3PetitionerManager::AddRef(void)	__thunk_8_AddRef__21cSC3PetitionerManager	libSimAdv.so	vtable:__vt_21cSC3PetitionerManager.14cISC3CityLayer
+022ba1	virtual function thunk (delta:-8) for cSC3PetitionerManager::Release(void)	__thunk_8_Release__21cSC3PetitionerManager	libSimAdv.so	vtable:__vt_21cSC3PetitionerManager.14cISC3CityLayer
+022ba9	virtual function thunk (delta:-8) for cSC3PetitionerManager::DebugClassTag(cIGZString &)	__thunk_8_DebugClassTag__21cSC3PetitionerManagerR10cIGZString	libSimAdv.so	vtable:__vt_21cSC3PetitionerManager.14cISC3CityLayer
+024914	cRZCOMDllDirector::QueryInterface(unsigned int, void **)	QueryInterface__17cRZCOMDllDirectorUiPPv	libSimAdv.so	tokens:16.0
+024955	cRZCOMDllDirector::FrameWork(void)	FrameWork__17cRZCOMDllDirector	libSimAdv.so	vtable:__vt_14cSACOMDirector
+02495e	cRZCOMDllDirector::RemoveRef(void)	RemoveRef__17cRZCOMDllDirector	libSimAdv.so	vtable:__vt_14cSACOMDirector
+02496d	cRZCOMDllDirector::RefCount(void)	RefCount__17cRZCOMDllDirector	libSimAdv.so	vtable:__vt_14cSACOMDirector
+024971	cRZCOMDllDirector::InitializeCOM(cIGZCOM *, cIGZString &)	InitializeCOM__17cRZCOMDllDirectorP7cIGZCOMR10cIGZString	libSimAdv.so	vtable:__vt_14cSACOMDirector
+024a3f	cRZCOMDllDirector::GetClassObject(unsigned int, unsigned int, void **)	GetClassObject__17cRZCOMDllDirectorUiUiPPv	libSimAdv.so	vtable:__vt_14cSACOMDirector
+024ac0	cRZCOMDllDirector::EnumClassObjects(void (*)(unsigned int, unsigned int, void *), void *)	EnumClassObjects__17cRZCOMDllDirectorPFUiUiPv_vPv	libSimAdv.so	vtable:__vt_14cSACOMDirector
+024b14	cRZCOMDllDirector::ModuleName(cIGZString &)	ModuleName__17cRZCOMDllDirectorR10cIGZString	libSimAdv.so	vtable:__vt_14cSACOMDirector
+024b28	cRZCOMDllDirector::AddDirector(cRZCOMDllDirector *)	AddDirector__17cRZCOMDllDirectorP17cRZCOMDllDirector	libSimAdv.so	vtable:__vt_14cSACOMDirector
+024b72	cRZCOMDllDirector::CanUnloadNow(void)	CanUnloadNow__17cRZCOMDllDirector	libSimAdv.so	vtable:__vt_14cSACOMDirector
+024bc9	cRZCOMDllDirector::AppRegister(cIGZRegistry *)	AppRegister__17cRZCOMDllDirectorP12cIGZRegistry	libSimAdv.so	vtable:__vt_14cSACOMDirector
+024bf6	cRZCOMDllDirector::GZCOM(void)	GZCOM__17cRZCOMDllDirector	libSimAdv.so	vtable:__vt_14cSACOMDirector
+024c65	cRZCOMDllDirector::OnStart(cIGZCOM *)	OnStart__17cRZCOMDllDirectorP7cIGZCOM	libSimAdv.so	tokens:16.0
+028be4	cSC3BusinessDealRecord::DealID(void)	DealID__22cSC3BusinessDealRecord	libSimAdv.so	vtable:__vt_22cSC3BusinessDealRecord
+02ba7c	cSC3AdvisorForEnvironment::AddRef(void)	AddRef__25cSC3AdvisorForEnvironment	libSimAdv.so	vtable-thunk:__vt_25cSC3AdvisorForEnvironment
+02bad4	cSC3AdvisorMessageRecord::GetMessageID(void) const	GetMessageID__C24cSC3AdvisorMessageRecord	libSimAdv.so	vtable:__vt_24cSC3AdvisorMessageRecord
+02bad8	virtual function thunk (delta:-4) for cRZCOMDllDirector::PreFrameWorkInit(void)	__thunk_4_PreFrameWorkInit__17cRZCOMDllDirector	libSimAdv.so	vtable:__vt_17cRZCOMDllDirector.18cIGZFrameWorkHooks
+02bb4e	cSC3AdvisorForUtilities::SetAgentType(cISC3CityAgentType *)	SetAgentType__23cSC3AdvisorForUtilitiesP18cISC3CityAgentType	libSimAdv.so	vtable-thunk:__vt_23cSC3AdvisorForUtilities.17cSC3BaseCityAgent
+02bb6f	cSC3AdvisorForUtilities::Simulate(int)	Simulate__23cSC3AdvisorForUtilitiesi	libSimAdv.so	vtable-thunk:__vt_23cSC3AdvisorForUtilities.17cSC3BaseCityAgent
