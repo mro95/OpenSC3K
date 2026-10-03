@@ -11,4 +11,4 @@ sc3k-assets = { path = "../../crates/sc3k-assets" }
 sc3k-formats = { path = "../../crates/sc3k-formats" }
 sc3k-render = { path = "../../crates/sc3k-render" }
 sc3k-ui = { path = "../../crates/sc3k-ui" }
-sc3k-sim = { path = "../../crates/sc3k-sim" }
+sc3k-sim = { path = "../../crates/sc3k-sim", features = ["trace"] }

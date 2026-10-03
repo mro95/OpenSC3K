@@ -147,6 +147,18 @@ struct Generator {
 
 /// `Init(size, size)`, `SetDifficulty(difficulty)`, `GenerateRandom(params)` and `ReflectMap`.
 pub fn generate(size: u32, difficulty: i32, params: Params) -> Terrain {
+    run(size, difficulty, params, false).0
+}
+
+/// [`generate`], plus every outermost `cRZRandom` call it made, for `tools/diffcheck`.
+#[cfg(feature = "trace")]
+pub fn generate_traced(size: u32, difficulty: i32, params: Params) -> (Terrain, Vec<crate::rng::Call>) {
+    let (terrain, mut rng) = run(size, difficulty, params, true);
+    (terrain, rng.take_trace())
+}
+
+#[allow(unused_variables)]
+fn run(size: u32, difficulty: i32, params: Params, trace: bool) -> (Terrain, Random) {
     let v = size + 1;
     let mut g = Generator {
         rng: Random::new(0),
@@ -159,15 +171,20 @@ pub fn generate(size: u32, difficulty: i32, params: Params) -> Terrain {
         salt: CellMap::new(v, v, false),
         difficulty,
     };
+    #[cfg(feature = "trace")]
+    if trace {
+        g.rng.start_trace();
+    }
     g.generate_random(params);
-    Terrain {
+    let terrain = Terrain {
         size,
         sea_level: g.sea,
         altitude: g.alt,
         water: g.water,
         salt: g.salt,
         flora: g.flora,
-    }
+    };
+    (terrain, g.rng)
 }
 
 /// Unnamed (0x10017A09). A value between two neighbours, spread by `jitter`, clamped to

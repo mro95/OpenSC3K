@@ -6,3 +6,7 @@ license.workspace = true
 publish.workspace = true
 
 [dependencies]
+
+[features]
+# Log every outermost `Random` call, for `tools/diffcheck`. Off for the game.
+trace = []
