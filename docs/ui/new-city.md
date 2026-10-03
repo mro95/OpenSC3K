@@ -183,8 +183,11 @@ vertically (FUN_1005e570).
 - Escape cancels (`cSC3WinGen::GZOnKeyDown`).
 
 ## Result
-The OK handler collects the settings below. The remake prints them and returns to the menu,
-because starting a city is not implemented.
+The OK handler collects the settings below and, in new-city mode, generates the terrain
+(`docs/sim/new-city.md`, `docs/sim/terrain-gen.md`). The remake does the same, then builds
+the city model, prints it, and opens the city scene. That scene draws the terrain isometrically
+(`docs/render/terrain.md`); Escape returns to the menu. `--seed N` fixes the terrain seed, which otherwise
+comes from the clock.
 - City name and mayor name.
 - Difficulty, starting funds, and whether the funds are a loan.
 - Start year.

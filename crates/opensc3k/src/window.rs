@@ -10,7 +10,7 @@ use std::rc::Rc;
 use std::time::{Duration, Instant};
 use winit::application::ApplicationHandler;
 use winit::dpi::LogicalSize;
-use winit::event::{ElementState, MouseButton, WindowEvent};
+use winit::event::{ElementState, MouseButton, MouseScrollDelta, WindowEvent};
 use winit::event_loop::{ActiveEventLoop, ControlFlow, EventLoop};
 use winit::keyboard::{Key as WKey, NamedKey};
 use winit::window::{Window, WindowId};
@@ -163,6 +163,24 @@ impl ApplicationHandler for App {
                     });
                 }
             }
+            // Held arrow keys would keep scrolling without their release.
+            WindowEvent::Focused(false) => {
+                for k in [Key::Up, Key::Down, Key::Left, Key::Right] {
+                    self.game.handle(Event::KeyUp(k));
+                }
+            }
+            WindowEvent::MouseWheel { delta, .. } => {
+                let y = match delta {
+                    MouseScrollDelta::LineDelta(_, y) => y,
+                    MouseScrollDelta::PixelDelta(p) => p.y as f32,
+                };
+                if y != 0.0 {
+                    self.game.handle(Event::Wheel(y.signum() as i32));
+                }
+            }
+            WindowEvent::KeyboardInput { event, .. } if event.state == ElementState::Released => {
+                self.game.handle(Event::KeyUp(map_key(&event.logical_key)));
+            }
             WindowEvent::KeyboardInput { event, .. } if event.state == ElementState::Pressed => {
                 self.game.handle(Event::Key(map_key(&event.logical_key)));
                 for c in event.text.iter().flat_map(|t| t.chars()).filter(|c| !c.is_control()) {
@@ -194,6 +212,10 @@ fn map_key(key: &WKey) -> Key {
     match key {
         WKey::Named(NamedKey::ArrowLeft) => Key::Left,
         WKey::Named(NamedKey::ArrowRight) => Key::Right,
+        WKey::Named(NamedKey::ArrowUp) => Key::Up,
+        WKey::Named(NamedKey::ArrowDown) => Key::Down,
+        WKey::Named(NamedKey::PageUp) => Key::PageUp,
+        WKey::Named(NamedKey::PageDown) => Key::PageDown,
         WKey::Named(NamedKey::Home) => Key::Home,
         WKey::Named(NamedKey::End) => Key::End,
         WKey::Named(NamedKey::Backspace) => Key::Backspace,

@@ -18,7 +18,11 @@ cargo run --release -p opensc3k                       # splash, then the main me
 cargo run --release -p opensc3k -- --res 1024x768     # other screen sizes; the window scales
 cargo run --release -p opensc3k -- --screenshot menu.png --hover 251,297 --time 400
 cargo run --release -p opensc3k -- --scene newcity --res 640x480 --click 200,150 --type "Jr." --screenshot nc.png
+cargo run --release -p opensc3k -- --scene city --seed 1 --zoom 2 --rotate 1   # straight into a new city
 ```
+
+In a city, the arrow keys and the screen edges scroll. PageUp/PageDown, `+`/`-` and the mouse
+wheel zoom, `,` and `.` rotate, and Escape returns to the menu.
 
 ## Tools
 
@@ -27,6 +31,8 @@ cargo run -p sc3k-dump -- list "$SC3K_DATA/Apps/Res/BUILDFAM.IXF"   # TGI index 
 cargo run -p sc3k-dump -- extract "$SC3K_DATA/Cities/Madison, WI.sc3" out/madison
 cargo run -p sc3k-dump -- census                                    # TypeID histogram of the install
 cargo run -p sc3k-dump -- images "$SC3K_DATA/Apps/Res/UI/Shared/MAIN.IXF" out/main   # UI images to PNG
+cargo run -p sc3k-dump -- terrain 1 256 out/terrain.png                # new-city terrain, top-down
+cargo run -p sc3k-dump -- iso 1 128 0 out/iso.png                      # the same, isometric, whole map
 tools/ghidra/import.sh                                              # headless Ghidra import + symbol export
 tools/loki/fetch.sh && tools/loki/symbols.sh                         # Linux port symbols (C++ names)
 tools/ghidra/import.sh loki                                         # import Linux ELFs for name matching
@@ -42,6 +48,8 @@ analyzeHeadless ghidra-project SC3U -process SC3U.exe -readOnly -noanalysis \
 | `crates/sc3k-formats` | Parsers for original file formats |
 | `crates/sc3k-assets` | Mounts the install; resources by (type, id), strings, fonts |
 | `crates/sc3k-ui` | Software-drawn UI like the original GZ windows: title screens, main menu, New City dialog |
+| `crates/sc3k-sim` | Deterministic simulation: the `cRZRandom` RNG, cell maps, the new-city model and the terrain generator |
+| `crates/sc3k-render` | Software isometric city view: land, water, shore and edge clods, palettes, vertex light |
 | `crates/opensc3k` | The game binary (winit + softbuffer window) |
 | `tools/sc3k-dump` | CLI for inspecting and extracting data files |
 | `tools/ghidra` | Ghidra headless import/export scripts, text symbol exports |
@@ -51,6 +59,7 @@ analyzeHeadless ghidra-project SC3U -process SC3U.exe -readOnly -noanalysis \
 | `docs/ui` | Recovered UI screens: layout, behaviour, source addresses |
 | `docs/re-notes` | Binary/subsystem notes |
 | `docs/sim` | Recovered simulation algorithms (with source addresses) |
+| `docs/render` | Recovered rendering: terrain geometry, colours and lighting |
 
 ## Roadmap
 

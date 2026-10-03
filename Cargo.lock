@@ -1237,6 +1237,8 @@ dependencies = [
  "sc3k-assets",
  "sc3k-audio",
  "sc3k-formats",
+ "sc3k-render",
+ "sc3k-sim",
  "sc3k-ui",
  "softbuffer",
  "winit",
@@ -1495,11 +1497,29 @@ name = "sc3k-dump"
 version = "0.1.0"
 dependencies = [
  "png",
+ "sc3k-assets",
  "sc3k-formats",
+ "sc3k-render",
+ "sc3k-sim",
+ "sc3k-ui",
 ]
 
 [[package]]
 name = "sc3k-formats"
+version = "0.1.0"
+
+[[package]]
+name = "sc3k-render"
+version = "0.1.0"
+dependencies = [
+ "sc3k-assets",
+ "sc3k-formats",
+ "sc3k-sim",
+ "sc3k-ui",
+]
+
+[[package]]
+name = "sc3k-sim"
 version = "0.1.0"
 
 [[package]]
@@ -1508,6 +1528,7 @@ version = "0.1.0"
 dependencies = [
  "sc3k-assets",
  "sc3k-formats",
+ "sc3k-sim",
 ]
 
 [[package]]

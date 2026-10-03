@@ -107,6 +107,10 @@ impl Strip {
 pub enum Key {
     Left,
     Right,
+    Up,
+    Down,
+    PageUp,
+    PageDown,
     Home,
     End,
     Backspace,

@@ -176,11 +176,23 @@ impl Assets {
     /// A loose file under `Apps`, e.g. `Res/Sound/Music/3kloop.wav`. Each path component is
     /// matched case-insensitively; `\` separators (as in the game's own paths) work too.
     pub fn file(&self, path: &str) -> Result<Vec<u8>> {
+        let p = self.resolve(path)?;
+        std::fs::read(&p).map_err(|err| Error::Io { path: p, err })
+    }
+
+    /// An IXF archive under `Apps` that is not mounted, e.g.
+    /// `Res/Dirt/PALETTE/455A72B1_LandPalettes.IXF`. Paths work as in [`Assets::file`].
+    pub fn archive(&self, path: &str) -> Result<Archive> {
+        let p = self.resolve(path)?;
+        Archive::open(&p).map_err(|err| Error::Ixf { path: p, err })
+    }
+
+    fn resolve(&self, path: &str) -> Result<PathBuf> {
         let mut p = self.apps.clone();
         for part in path.split(['/', '\\']).filter(|s| !s.is_empty()) {
             p = find_ci(&p, part)?;
         }
-        std::fs::read(&p).map_err(|err| Error::Io { path: p, err })
+        Ok(p)
     }
 
     /// A bitmap font from `Apps/Res/Text/<language>/<file>` (name matched case-insensitively).

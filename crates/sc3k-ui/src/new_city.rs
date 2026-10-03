@@ -8,6 +8,7 @@ use sc3k_assets::Assets;
 use sc3k_formats::fbf::Font;
 use sc3k_formats::ini::{parse_u32, parse_u32_list};
 use sc3k_formats::sprite::{self, AlphaMask};
+use sc3k_sim::city::NewCityInfo;
 use std::rc::Rc;
 
 /// Group of the framework's system images in `Res/UI/Shared/SYS.IXF`.
@@ -125,6 +126,28 @@ pub struct Settings {
     pub landscape: u32,
     pub flora: u32,
     pub buildings: u32,
+}
+
+impl Settings {
+    /// `cSC3CmdNewCity::Execute` (Loki libSimInit 0x4A834) copies the dialog into a
+    /// `cSC3NewCityInfo` in this order: name, mayor, funds, debt, difficulty, size, year,
+    /// auto budget, disasters, dirt generator. The original cuts names to 127 characters.
+    /// The schemes go to `cSC3CitySchemeMgr` instead.
+    pub fn new_city_info(&self) -> NewCityInfo {
+        let mut info = NewCityInfo {
+            city_name: self.city_name.iter().copied().take(0x7F).collect(),
+            mayor_name: self.mayor_name.iter().copied().take(0x7F).collect(),
+            funds: self.funds as i64,
+            funds_are_debt: self.loan,
+            difficulty: self.difficulty as i32,
+            start_year: self.start_year,
+            auto_budget: self.auto_budget,
+            disasters: self.disasters,
+            ..NewCityInfo::default()
+        };
+        info.set_city_size(self.size);
+        info
+    }
 }
 
 /// How the dialog closed.
@@ -595,5 +618,28 @@ mod tests {
     fn format_s_fills_the_first_placeholder() {
         assert_eq!(format_s(b"Hard  (%s Loan)", b"x"), b"Hard  (x Loan)");
         assert_eq!(format_s(b"none", b"x"), b"none");
+    }
+
+    #[test]
+    fn default_settings_to_info() {
+        let settings = Settings {
+            city_name: b"New City".to_vec(),
+            mayor_name: b"Defacto".to_vec(),
+            difficulty: 1,
+            funds: FUNDS[0],
+            loan: false,
+            start_year: 1900,
+            size: 0x100,
+            disasters: false,
+            auto_budget: false,
+            landscape: 0,
+            flora: 0,
+            buildings: 0,
+        };
+        let info = settings.new_city_info();
+        assert_eq!((info.funds, info.funds_are_debt, info.difficulty), (50_000, false, 1));
+        assert_eq!((info.x_size, info.y_size, info.z_size), (0x100, 0x100, 0x100));
+        assert_eq!((info.start_year, info.city_type), (1900, 7));
+        assert_eq!(info.city_name, b"New City");
     }
 }

@@ -1,5 +1,5 @@
 [package]
-name = "sc3k-ui"
+name = "sc3k-render"
 version = "0.1.0"
 edition.workspace = true
 license.workspace = true
@@ -9,3 +9,4 @@ publish.workspace = true
 sc3k-assets = { path = "../sc3k-assets" }
 sc3k-formats = { path = "../sc3k-formats" }
 sc3k-sim = { path = "../sc3k-sim" }
+sc3k-ui = { path = "../sc3k-ui" }

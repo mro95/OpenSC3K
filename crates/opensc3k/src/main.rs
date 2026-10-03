@@ -17,8 +17,12 @@ usage: opensc3k [options]
   --lang NAME          text language directory under Apps/Res/Text (default ENGLISH)
   --music-volume N     0 (off) to 1024 (default 1024)
   --screenshot FILE    render one frame to a PNG instead of opening a window
-  --scene splash|menu|newcity
-                       scene for --screenshot (default menu)
+  --scene splash|menu|newcity|city
+                       scene for --screenshot (default menu); city starts one with the
+                       New City dialog's defaults
+  --seed N             terrain seed for new cities (default: from the clock)
+  --zoom N             city view zoom, 0 (farthest) to 4 (closest, default)
+  --rotate N           city view rotation, 0 (default) to 3
   --click X,Y          click (press and release) here before --screenshot; repeatable
   --type TEXT          type TEXT (after the clicks) before --screenshot
   --hover X,Y          pointer position for --screenshot
@@ -37,6 +41,9 @@ struct Options {
     typed: String,
     hover: Option<(i32, i32)>,
     time_ms: u64,
+    seed: Option<u32>,
+    zoom: u32,
+    rotation: u32,
 }
 
 fn parse_args() -> Result<Options, String> {
@@ -51,6 +58,9 @@ fn parse_args() -> Result<Options, String> {
         typed: String::new(),
         hover: None,
         time_ms: 0,
+        seed: None,
+        zoom: 4,
+        rotation: 0,
     };
     let mut args = std::env::args().skip(1);
     while let Some(a) = args.next() {
@@ -70,12 +80,16 @@ fn parse_args() -> Result<Options, String> {
                     "splash" => Scene::Splash { since_ms: 0 },
                     "menu" => Scene::MainMenu,
                     "newcity" => Scene::NewCity,
+                    "city" => Scene::City,
                     other => return Err(format!("unknown scene {other}")),
                 }
             }
             "--hover" => o.hover = Some(parse_point(&value()?)?),
             "--click" => o.clicks.push(parse_point(&value()?)?),
             "--type" => o.typed = value()?,
+            "--zoom" => o.zoom = value()?.parse().map_err(|_| "bad --zoom".to_string())?,
+            "--rotate" => o.rotation = value()?.parse().map_err(|_| "bad --rotate".to_string())?,
+            "--seed" => o.seed = Some(value()?.parse().map_err(|_| "bad --seed".to_string())?),
             "--time" => o.time_ms = value()?.parse().map_err(|_| "bad --time".to_string())?,
             "-h" | "--help" => return Err(USAGE.to_string()),
             other => return Err(format!("unknown option {other}\n\n{USAGE}")),
@@ -104,6 +118,9 @@ fn run() -> Result<(), String> {
     let o = parse_args()?;
     let assets = Assets::from_env(&o.lang).map_err(|e| e.to_string())?;
     let mut game = Game::new(&assets, o.width, o.height).map_err(|e| e.to_string())?;
+    game.set_seed(o.seed);
+    game.set_zoom(o.zoom);
+    game.set_rotation(o.rotation);
     match &o.screenshot {
         Some(path) => screenshot(&mut game, &o, path),
         None => window::run(game, open_sound(&assets, o.music_volume)),

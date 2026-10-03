@@ -1,5 +1,6 @@
 //! Parsers for SimCity 3000 Unlimited data files.
 
+pub mod bmp;
 pub mod fbf;
 pub mod image;
 pub mod ini;

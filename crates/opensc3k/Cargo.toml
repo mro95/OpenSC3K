@@ -10,6 +10,8 @@ png = "0.18"
 sc3k-assets = { path = "../sc3k-assets" }
 sc3k-audio = { version = "0.1.0", path = "../sc3k-audio" }
 sc3k-formats = { version = "0.1.0", path = "../sc3k-formats" }
+sc3k-render = { path = "../sc3k-render" }
+sc3k-sim = { path = "../sc3k-sim" }
 sc3k-ui = { path = "../sc3k-ui" }
 softbuffer = "0.4"
 winit = "0.30"

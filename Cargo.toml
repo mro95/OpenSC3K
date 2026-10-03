@@ -1,6 +1,6 @@
 [workspace]
 resolver = "2"
-members = ["crates/sc3k-formats", "crates/sc3k-assets", "crates/sc3k-ui", "crates/sc3k-audio", "crates/opensc3k", "tools/sc3k-dump"]
+members = ["crates/sc3k-formats", "crates/sc3k-assets", "crates/sc3k-ui", "crates/sc3k-audio", "crates/sc3k-sim", "crates/sc3k-render", "crates/opensc3k", "tools/sc3k-dump"]
 
 [workspace.package]
 edition = "2021"

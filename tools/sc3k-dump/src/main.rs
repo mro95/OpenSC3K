@@ -14,7 +14,13 @@ usage:
   sc3k-dump images <file> <outdir>   decode each image entry to <outdir>/<T>-<G>-<I>.png
   sc3k-dump sprites <file> <outdir>  decode each sprite of a sprite .DAT to <outdir>/<G>-<I>.png
   sc3k-dump census [root]            group histogram over every container under root
-                                     (root defaults to $SC3K_DATA)";
+                                     (root defaults to $SC3K_DATA)
+  sc3k-dump terrain <seed> <size> <out.png> [difficulty]
+                                     generate new-city terrain and write a top-down map
+                                     (size 64..256 cells, difficulty 1..3, default 1)
+  sc3k-dump iso <seed> <size> <zoom> <out.png>
+                                     the same terrain drawn isometrically, whole map, at
+                                     zoom 0..4, rotation 0, landscape 0 (needs $SC3K_DATA)";
 
 fn main() -> ExitCode {
     let args: Vec<String> = std::env::args().skip(1).collect();
@@ -28,6 +34,9 @@ fn main() -> ExitCode {
             None => Err(format!("{} not set and no root given", sc3k_formats::DATA_ENV)),
         },
         ["census", root] => census(Path::new(root)),
+        ["iso", seed, size, zoom, out] => iso(seed, size, zoom, Path::new(out)),
+        ["terrain", seed, size, out] => terrain(seed, size, "1", Path::new(out)),
+        ["terrain", seed, size, out, difficulty] => terrain(seed, size, difficulty, Path::new(out)),
         _ => Err(USAGE.to_string()),
     };
     match result {
@@ -101,6 +110,80 @@ fn sprites(path: &Path, out: &Path) -> Result<(), String> {
         written += 1;
     }
     println!("wrote {written} sprites to {}", out.display());
+    Ok(())
+}
+
+fn terrain(seed: &str, size: &str, difficulty: &str, out: &Path) -> Result<(), String> {
+    use sc3k_sim::dirt::{generate, Params};
+    let num = |s: &str| -> Result<u32, String> {
+        let r = match s.strip_prefix("0x") {
+            Some(hex) => u32::from_str_radix(hex, 16),
+            None => s.parse(),
+        };
+        r.map_err(|e| format!("{s}: {e}"))
+    };
+    let (seed, size, difficulty) = (num(seed)?, num(size)?, num(difficulty)?);
+    if !(1..=256).contains(&size) {
+        return Err(format!("size {size} outside 1..=256"));
+    }
+    let t = generate(size, difficulty as i32, Params::new_city(seed));
+    let v = t.vertices();
+    let mut rgba = Vec::with_capacity((v * v * 4) as usize);
+    let (mut water, mut trees) = (0, 0);
+    // Row y, column x: y = 0 at the top.
+    for y in 0..v {
+        for x in 0..v {
+            if t.is_water(x, y) {
+                water += 1;
+            } else if t.flora.get(x, y) > 0 {
+                trees += 1;
+            }
+            let [r, g, b] = t.preview_rgb(x, y);
+            rgba.extend_from_slice(&[r, g, b, 255]);
+        }
+    }
+    write_png(out, v, v, &rgba).map_err(|e| format!("{}: {e}", out.display()))?;
+    let (lo, hi) = (0..v)
+        .flat_map(|x| (0..v).map(move |y| (x, y)))
+        .map(|(x, y)| t.altitude.get(x, y))
+        .fold((255u8, 0u8), |(lo, hi), a| (lo.min(a), hi.max(a)));
+    println!(
+        "seed {seed:#010x}, {size}x{size} cells, sea level {}, altitude {lo}..={hi}, \
+         {water} water and {trees} flora vertices of {}; wrote {}",
+        t.sea_level,
+        v * v,
+        out.display()
+    );
+    Ok(())
+}
+
+fn iso(seed: &str, size: &str, zoom: &str, out: &Path) -> Result<(), String> {
+    use sc3k_render::palette::{load_land_palettes, DirtPalettes};
+    use sc3k_render::terrain::{TerrainScene, View, MAX_ZOOM};
+    use sc3k_sim::dirt::{generate, Params};
+    let num = |s: &str| s.parse::<u32>().map_err(|e| format!("{s}: {e}"));
+    let (seed, size, zoom) = (num(seed)?, num(size)?, num(zoom)?);
+    if !(1..=256).contains(&size) || zoom > MAX_ZOOM {
+        return Err(format!("size {size} or zoom {zoom} out of range"));
+    }
+    let assets = sc3k_assets::Assets::from_env("ENGLISH").map_err(|e| e.to_string())?;
+    let land = load_land_palettes(&assets)?;
+    let land = land.get(&0).ok_or("no landscape 0")?;
+    let dirt = DirtPalettes::load(&assets)?;
+    let terrain = generate(size, 1, Params::new_city(seed));
+    let mut view = View { zoom, rotation: 0, origin_x: 0, origin_y: 0 };
+    // The map spans size cells either way from the top corner, plus room for the relief
+    // above and the edge skirts below.
+    let (w, h) = (size as i32 * view.cell_width(), size as i32 * view.cell_height() + 300 * view.altitude_step());
+    view.origin_x = w / 2;
+    view.origin_y = 256 * view.altitude_step();
+    let scene = TerrainScene::new(terrain, land, &dirt, seed);
+    let mut screen = sc3k_ui::Surface::new(w, h);
+    screen.fill(0);
+    scene.draw(&mut screen, &view);
+    let rgba: Vec<u8> = screen.pixels.iter().flat_map(|&p| [(p >> 16) as u8, (p >> 8) as u8, p as u8, 255]).collect();
+    write_png(out, w as u32, h as u32, &rgba).map_err(|e| format!("{}: {e}", out.display()))?;
+    println!("{w}x{h}, wrote {}", out.display());
     Ok(())
 }
 
