@@ -4,3 +4,4 @@
 *.wav
 /ghidra-project
 __pycache__/
+!docs/screenshots/*.png

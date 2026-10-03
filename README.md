@@ -1,8 +1,47 @@
 # OpenSC3K
 
-An educational reverse-engineering and clean-room remake of SimCity 3000 Unlimited, written in Rust.
-The original game's data is loaded at runtime from your own install. No original assets or
-binaries are stored in this repository.
+An educational reverse-engineering project and clean-room remake of **SimCity 3000 Unlimited**,
+written in Rust.
+
+The original game is studied with Ghidra and documented in `docs/`. That understanding is
+reimplemented as a new engine that reads the game data at runtime from your own install. The
+aim is to be faithful: the same file formats, random numbers, terrain generator and drawing
+rules. Every recovered fact cites the address of the function it came from.
+
+<p align="center">
+  <img src="docs/screenshots/whole-map.png" width="720" alt="A generated 128×128 map drawn isometrically, with river, lakes, coast and soil edges">
+</p>
+
+## Screenshots
+
+| Main menu | New City Options |
+|---|---|
+| ![Main menu with the hovered Start New City item](docs/screenshots/main-menu.png) | ![New City Options dialog](docs/screenshots/new-city.png) |
+
+| City view, zoom 2 | City view, zoom 4 |
+|---|---|
+| ![Generated terrain at zoom 2: river and shores](docs/screenshots/city-zoom2.png) | ![Generated terrain at the closest zoom](docs/screenshots/city-zoom4.png) |
+
+| Four rotations | Map edge and `BACK4.BMP` background |
+|---|---|
+| ![The same spot in rotations 0 to 3](docs/screenshots/rotations.png) | ![Scrolled to the map edge at zoom 4, showing the tiled background](docs/screenshots/city-edge.png) |
+
+## What works
+
+- **Data:**
+  - Archives: IXF/TGI containers, QFS compression, SYS.PAK.
+  - Content: UI images, strings, bitmap fonts, sprites and BMP palettes.
+- **Startup flow:** the copyright splash, the animated main menu, and the menu music.
+- **New City Options dialog:** every control works. OK builds the city model.
+- **Terrain generator:** ported from `SIMDIRT.DLL`, using a bit-exact `cRZRandom`. It makes hills,
+  sea, rivers, lakes, salt water and flora.
+- **Isometric city view, drawn in software:**
+  - Land, water, shore and map-edge clods.
+  - Per-vertex light, bump noise and zoom haze.
+  - Landscape palettes, with `BACK<zoom>.BMP` behind the map.
+- **Camera:** five zooms and four rotations. Arrow keys and the screen edges scroll it.
+
+Not yet: trees on the map, buildings, zoning, the simulation tick, loading and saving.
 
 ## Setup
 
@@ -12,6 +51,8 @@ cargo test                                            # install-wide tests skip 
 ```
 
 ## Run
+
+The game needs your own copy of SimCity 3000 Unlimited; set `SC3K_DATA` as above.
 
 ```bash
 cargo run --release -p opensc3k                       # splash, then the main menu
@@ -61,11 +102,18 @@ analyzeHeadless ghidra-project SC3U -process SC3U.exe -readOnly -noanalysis \
 | `docs/sim` | Recovered simulation algorithms (with source addresses) |
 | `docs/render` | Recovered rendering: terrain geometry, colours and lighting |
 
+## Legal
+
+This is a non-commercial, educational project. It contains no original binaries or data files.
+The screenshots in `docs/screenshots` are frames rendered by the remake from a local install. The
+UI art in them is the original game's. SimCity is a trademark of Electronic Arts; this project is
+not affiliated with or endorsed by EA or Maxis.
+
 ## Roadmap
 
 0. RE infrastructure: Ghidra project, Linux-symbol name porting, GZCOM types, runtime tracing under wine
 1. File formats: IXF ✔, QFS ✔, UI images ✔, strings ✔, fonts ✔, sprites ✔, SYS.PAK ✔, TGI type registry, attribute tables, terrain, saves, audio, tiling rules
-2. Asset DB and wgpu isometric renderer, plus a static `.sc3` city viewer
-3. Simulation: networks, zoning/growth, utilities, RCI/economy, traffic, services, advisors, disasters
+2. Asset DB ✔ and isometric renderer (terrain ✔, camera ✔, background ✔), flora and building sprites, a static `.sc3` city viewer
+3. Simulation: RNG ✔, terrain generator ✔, new-city model ✔, networks, zoning/growth, utilities, RCI/economy, traffic, services, advisors, disasters
 4. UI (copyright splash ✔, main menu ✔, New City dialog ✔), audio (menu music ✔), game loop, save compatibility
 5. Scenarios, Building Architect, localisation, mods
