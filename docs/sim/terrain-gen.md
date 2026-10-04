@@ -226,8 +226,8 @@ offsets):
 | `0x8C` | `(x, y, water level, salt bit)`, for every vertex |
 | `0x90` | `(x, y, flora)`, for every vertex |
 
-The remake returns these maps as `Terrain`. The dirt bag itself (altitude scale, how flora
-becomes trees) is not ported yet.
+The remake returns these maps as `Terrain`. How flora becomes trees is in `docs/sim/flora.md`;
+the rest of the dirt bag (altitude scale) is not ported yet.
 
 ## Precision
 The original computes the band targets, the Bézier curve and the flora angles on the x87 stack

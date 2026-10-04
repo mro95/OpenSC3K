@@ -59,8 +59,10 @@ tools/diffcheck/run.py all --report docs/accuracy.md --image docs/screenshots/ac
   - Per-vertex light, bump noise and zoom haze.
   - Landscape palettes, with `BACK<zoom>.BMP` behind the map.
 - **Camera:** five zooms and four rotations. Arrow keys and the screen edges scroll it.
+- **Trees:** the generator's flora becomes tree occupants, picked by height and drawn with the
+  chosen flora set's sprites.
 
-Not yet: trees on the map, buildings, zoning, the simulation tick, loading and saving.
+Not yet: buildings, zoning, the simulation tick, loading and saving.
 
 ## Setup
 
@@ -134,7 +136,7 @@ not affiliated with or endorsed by EA or Maxis.
 
 0. RE infrastructure: Ghidra project, Linux-symbol name porting, GZCOM types, runtime tracing under wine
 1. File formats: IXF ✔, QFS ✔, UI images ✔, strings ✔, fonts ✔, sprites ✔, SYS.PAK ✔, TGI type registry, attribute tables, terrain, saves, audio, tiling rules
-2. Asset DB ✔ and isometric renderer (terrain ✔, camera ✔, background ✔), flora and building sprites, a static `.sc3` city viewer
+2. Asset DB ✔ and isometric renderer (terrain ✔, camera ✔, background ✔), flora sprites ✔, building sprites, a static `.sc3` city viewer
 3. Simulation: RNG ✔, terrain generator ✔, new-city model ✔, networks, zoning/growth, utilities, RCI/economy, traffic, services, advisors, disasters
 4. UI (copyright splash ✔, main menu ✔, New City dialog ✔), audio (menu music ✔), game loop, save compatibility
 5. Scenarios, Building Architect, localisation, mods

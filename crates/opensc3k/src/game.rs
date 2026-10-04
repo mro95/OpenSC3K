@@ -6,8 +6,11 @@ use sc3k_sim::city::City;
 use sc3k_render::palette::{load_land_palettes, ColorTable, DirtPalettes};
 use sc3k_render::background::Background;
 use sc3k_render::camera::{Camera, Scroll};
+use sc3k_render::flora::{self as flora_draw, FloraSprites};
 use sc3k_render::terrain::{TerrainScene, MAX_ZOOM};
+use sc3k_sim::cellmap::CellMap;
 use sc3k_sim::dirt;
+use sc3k_sim::flora::{self, Flora};
 use std::collections::HashMap;
 use sc3k_ui::main_menu::{Choice, MainMenu};
 use sc3k_ui::controls::Key;
@@ -72,6 +75,10 @@ pub struct Game {
     background: Background,
     /// The city view: the terrain and the camera on it.
     view: Option<(TerrainScene, Camera)>,
+    /// Tree sprites by `FloraSets` scheme key.
+    flora_sprites: HashMap<u32, FloraSprites>,
+    /// The trees of the city view: its flora set and one entry per cell.
+    trees: Option<(u32, CellMap<Option<Flora>>)>,
     /// Zoom and rotation of new city views.
     zoom: u32,
     rotation: u32,
@@ -102,6 +109,8 @@ impl Game {
             dirt_palettes: DirtPalettes::load(assets)?,
             background: Background::load(assets)?,
             view: None,
+            flora_sprites: flora_draw::load_all(assets)?,
+            trees: None,
             zoom: MAX_ZOOM,
             rotation: 0,
             scroll_keys: Scroll::default(),
@@ -231,6 +240,7 @@ impl Game {
     fn leave_city(&mut self) {
         self.city = None;
         self.view = None;
+        self.trees = None;
         self.scroll_keys = Scroll::default();
         self.scroll_edge = Scroll::default();
         self.show_menu();
@@ -282,7 +292,15 @@ impl Game {
                 match &self.view {
                     Some((scene, camera)) => {
                         self.background.draw(&mut self.screen, &camera.view);
-                        scene.draw(&mut self.screen, &camera.view);
+                        let trees = self.trees.as_ref().and_then(|(set, t)| Some((self.flora_sprites.get(set)?, t)));
+                        match trees {
+                            Some((sprites, t)) => scene.draw_with(
+                                &mut self.screen,
+                                &camera.view,
+                                flora_draw::draw_cell(sprites, t, &camera.view),
+                            ),
+                            None => scene.draw(&mut self.screen, &camera.view),
+                        }
                     }
                     None => self.screen.fill(0),
                 }
@@ -333,6 +351,10 @@ impl Game {
             }
             _ => None,
         };
+        // The trees grow when the simulation begins (`cSC3DirtBag::SimulationBegin`). An
+        // unknown set falls back to the default one, as the scheme manager does.
+        let set = if self.flora_sprites.contains_key(&settings.flora) { settings.flora } else { 0 };
+        self.trees = city.terrain.as_ref().map(|t| (set, flora::place(t, seed)));
         self.city = Some(city);
         self.scene = Scene::City;
     }

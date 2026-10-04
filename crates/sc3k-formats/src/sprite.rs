@@ -100,6 +100,28 @@ impl SpanSprite {
     }
 }
 
+/// The [`TYPE_INFO`] record of a sprite: four `i16`, copied into `cSC3ImageInfo` +0x10..+0x16
+/// by `cSC3DBSegmentSprite::LoadImageInfo` (libSimSpr Ghidra 0xB260C).
+/// `cSC3CitySpriteAttrib::SprAttDraw` (0x7C724) draws a sprite anchored at (x, y) into the
+/// rectangle (x − left, y − up) .. (x + right, y + down), so `right + left` is the width and
+/// `up + down` the height.
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+pub struct ImageInfo {
+    pub left: i16,
+    pub up: i16,
+    pub right: i16,
+    pub down: i16,
+}
+
+impl ImageInfo {
+    pub fn parse(data: &[u8]) -> Result<ImageInfo, Error> {
+        let v = |i: usize| -> Result<i16, Error> {
+            Ok(i16::from_le_bytes(data.get(i * 2..i * 2 + 2).ok_or(Error::Truncated)?.try_into().unwrap()))
+        };
+        Ok(ImageInfo { left: v(0)?, up: v(1)?, right: v(2)?, down: v(3)? })
+    }
+}
+
 /// An alpha mask: one value per pixel, 0 (transparent) ..= 31 (opaque).
 #[derive(Clone, Debug)]
 pub struct AlphaMask {

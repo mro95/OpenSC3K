@@ -102,6 +102,20 @@ impl Sprite {
         Rect::new(0, 0, self.width, self.height)
     }
 
+    /// The sprite scaled by `num / den`, nearest pixel.
+    pub fn scaled(&self, num: i32, den: i32) -> Sprite {
+        let (w, h) = ((self.width * num / den).max(1), (self.height * num / den).max(1));
+        let mut pixels = Vec::with_capacity((w * h) as usize);
+        for y in 0..h {
+            let sy = (y * den / num).min(self.height - 1);
+            for x in 0..w {
+                let sx = (x * den / num).min(self.width - 1);
+                pixels.push(self.pixels[(sy * self.width + sx) as usize]);
+            }
+        }
+        Sprite { width: w, height: h, pixels }
+    }
+
     /// True if (x, y) is outside the sprite or a colour-keyed pixel.
     pub fn is_transparent(&self, x: i32, y: i32) -> bool {
         if x < 0 || y < 0 || x >= self.width || y >= self.height {

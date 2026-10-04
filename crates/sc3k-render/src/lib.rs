@@ -3,6 +3,7 @@
 
 pub mod background;
 pub mod camera;
+pub mod flora;
 pub mod light;
 pub mod palette;
 pub mod terrain;

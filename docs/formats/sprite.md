@@ -9,7 +9,7 @@ Each sprite is two records with the same (group, instance):
 | Type | Contents |
 |---|---|
 | `00000000` | the pixels, described below |
-| `00000001` | an 8-byte image-info block (not decoded yet) |
+| `00000001` | an 8-byte image-info block, below |
 
 The `.SII` text files next to some archives hold registration points and spans; they are not
 parsed yet.
@@ -54,6 +54,14 @@ is not solid, pixels equal to the key are transparent too.
 `width * height` bytes, one per pixel, 0 (transparent) to 31 (opaque). A mask pairs with the
 colour sprite of the same size: the colour sprite has instance `…0000`, the mask `…0001`. The
 New City preview blends flora and building sets this way (`docs/ui/new-city.md`).
+
+## Image info
+Four `i16`: `left, up, right, down`. `cSC3DBSegmentSprite::LoadImageInfo` (libSimSpr Ghidra
+0xB260C) copies them into `cSC3ImageInfo` +0x10..+0x16. `cSC3CitySpriteAttrib::SprAttDraw`
+(0x7C724) draws a sprite anchored at (x, y) into the rectangle `(x − left, y − up)` to
+`(x + right, y + down)`.
+- `left + right` is the width and `up + down` the height, for every flora sprite.
+- `left` is usually negative: the picture starts to the right of the anchor.
 
 ## UI sprites
 `GAME_UI.DAT` holds the sprites the UI draws directly, such as the New City scheme previews.

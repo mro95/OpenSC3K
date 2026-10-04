@@ -123,13 +123,27 @@ impl TerrainScene {
     /// Draw the cells back to front (rows of increasing draw-grid `i + j`; the original's
     /// order is not traced), then the skirts along the two front edges of the map.
     pub fn draw(&self, screen: &mut Surface, view: &View) {
+        self.draw_with(screen, view, |_, _, _| {});
+    }
+
+    /// [`draw`](Self::draw), calling `on_cell(screen, draw cell, map cell)` right after each
+    /// cell's clod, so that what stands on a cell is painted in the same back-to-front order
+    /// (the cell map keeps a cell's terrain and occupant sprites in one record).
+    pub fn draw_with(
+        &self,
+        screen: &mut Surface,
+        view: &View,
+        mut on_cell: impl FnMut(&mut Surface, (u32, u32), (u32, u32)),
+    ) {
         let size = self.terrain.size;
         let clip = screen.area();
         for diagonal in 0..2 * size - 1 {
             let first = diagonal.saturating_sub(size - 1);
             let last = diagonal.min(size - 1);
             for i in first..=last {
-                self.draw_cell(screen, clip, view, i, diagonal - i);
+                let j = diagonal - i;
+                self.draw_cell(screen, clip, view, i, j);
+                on_cell(screen, (i, j), map_cell(size, view.rotation, i, j));
             }
         }
         for k in 0..size {

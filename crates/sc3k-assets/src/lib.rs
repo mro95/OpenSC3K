@@ -187,6 +187,20 @@ impl Assets {
         Archive::open(&p).map_err(|err| Error::Ixf { path: p, err })
     }
 
+    /// Every IXF archive directly in the directory `dir` under `Apps`, by file name, e.g.
+    /// the one `.dat` of a flora set in `Res/Sprites/FloraSets/c55a6d84`. Paths work as in
+    /// [`Assets::file`].
+    pub fn archives_in(&self, dir: &str) -> Result<Vec<Archive>> {
+        let mut out = Vec::new();
+        for p in sorted_files(&self.resolve(dir)?)? {
+            let data = std::fs::read(&p).map_err(|err| Error::Io { path: p.clone(), err })?;
+            if sc3k_formats::ixf::is_ixf(&data) {
+                out.push(Archive::from_bytes(data).map_err(|err| Error::Ixf { path: p, err })?);
+            }
+        }
+        Ok(out)
+    }
+
     fn resolve(&self, path: &str) -> Result<PathBuf> {
         let mut p = self.apps.clone();
         for part in path.split(['/', '\\']).filter(|s| !s.is_empty()) {

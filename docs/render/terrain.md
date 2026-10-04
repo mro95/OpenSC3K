@@ -300,10 +300,8 @@ Draw fills two quads:
   so it is not decompiled.
 
 ## Flora
-`ReflectMap` sends the generator's flora value through `InitFloraLevel` (dirt bag 0x357F4). In a
-running city, a value of 0x20 or more places a flora occupant at cell (x, y) with level
-`value >> 5` (1–7), through city vtable `0x150`. This feeds step 8 of the plan; the flora sprites
-are not traced yet.
+Trees are occupants, placed when the simulation begins (`docs/sim/flora.md`) and drawn with the
+sprites of the chosen flora set (`docs/render/flora.md`).
 
 ## Background (`BACK0.BMP` .. `BACK4.BMP`)
 - **Which file:** `cSC3CityViewIso::SetBackgroundBitmapForZoom(zoom)` (libSimSpr Ghidra

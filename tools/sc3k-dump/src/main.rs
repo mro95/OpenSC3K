@@ -18,9 +18,11 @@ usage:
   sc3k-dump terrain <seed> <size> <out.png> [difficulty]
                                      generate new-city terrain and write a top-down map
                                      (size 64..256 cells, difficulty 1..3, default 1)
-  sc3k-dump iso <seed> <size> <zoom> <out.png>
+  sc3k-dump iso <seed> <size> <zoom> <out.png> [flora set]
                                      the same terrain drawn isometrically, whole map, at
-                                     zoom 0..4, rotation 0, landscape 0 (needs $SC3K_DATA)
+                                     zoom 0..4, rotation 0, landscape 0, flora set 0 or the
+                                     given FloraSets key, e.g. 0xc55a6d84
+                                     (needs $SC3K_DATA)
   sc3k-dump diffref rng <script.txt> <out.txt>
   sc3k-dump diffref dirt <seed> <size> <difficulty> <hills> <water> <trees> <flags> <out.bin>
   sc3k-dump diffref qfs <dir>
@@ -39,7 +41,8 @@ fn main() -> ExitCode {
             None => Err(format!("{} not set and no root given", sc3k_formats::DATA_ENV)),
         },
         ["census", root] => census(Path::new(root)),
-        ["iso", seed, size, zoom, out] => iso(seed, size, zoom, Path::new(out)),
+        ["iso", seed, size, zoom, out] => iso(seed, size, zoom, Path::new(out), "0"),
+        ["iso", seed, size, zoom, out, set] => iso(seed, size, zoom, Path::new(out), set),
         ["terrain", seed, size, out] => terrain(seed, size, "1", Path::new(out)),
         ["terrain", seed, size, out, difficulty] => terrain(seed, size, difficulty, Path::new(out)),
         ["diffref", "rng", script, out] => diffref_rng(Path::new(script), Path::new(out)),
@@ -172,7 +175,7 @@ fn terrain(seed: &str, size: &str, difficulty: &str, out: &Path) -> Result<(), S
     Ok(())
 }
 
-fn iso(seed: &str, size: &str, zoom: &str, out: &Path) -> Result<(), String> {
+fn iso(seed: &str, size: &str, zoom: &str, out: &Path, set: &str) -> Result<(), String> {
     use sc3k_render::palette::{load_land_palettes, DirtPalettes};
     use sc3k_render::terrain::{TerrainScene, View, MAX_ZOOM};
     use sc3k_sim::dirt::{generate, Params};
@@ -192,10 +195,15 @@ fn iso(seed: &str, size: &str, zoom: &str, out: &Path) -> Result<(), String> {
     let (w, h) = (size as i32 * view.cell_width(), size as i32 * view.cell_height() + 300 * view.altitude_step());
     view.origin_x = w / 2;
     view.origin_y = 256 * view.altitude_step();
+    let trees = sc3k_sim::flora::place(&terrain, seed);
+    let set = sc3k_formats::ini::parse_u32(set).ok_or_else(|| format!("flora set {set}"))?;
+    let sprites = sc3k_render::flora::FloraSprites::load(&assets, set)?;
     let scene = TerrainScene::new(terrain, land, &dirt, seed);
     let mut screen = sc3k_ui::Surface::new(w, h);
     screen.fill(0);
-    scene.draw(&mut screen, &view);
+    scene.draw_with(&mut screen, &view, sc3k_render::flora::draw_cell(&sprites, &trees, &view));
+    let n = (0..size).flat_map(|x| (0..size).map(move |y| (x, y))).filter(|&(x, y)| trees.get(x, y).is_some()).count();
+    println!("{n} trees");
     let rgba: Vec<u8> = screen.pixels.iter().flat_map(|&p| [(p >> 16) as u8, (p >> 8) as u8, p as u8, 255]).collect();
     write_png(out, w as u32, h as u32, &rgba).map_err(|e| format!("{}: {e}", out.display()))?;
     println!("{w}x{h}, wrote {}", out.display());
