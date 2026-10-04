@@ -138,17 +138,12 @@ def trace_rng(emu, target):
     calls = []
     lo, hi = target.rng_code
     entries = {**{a: op for op, a in target.rng.items()}, **target.rng_thunks}
-    last = [None]
 
     def make(op):
         def on_entry(e):
-            esp = e.reg(UC_X86_REG_ESP)
-            caller = e.u32(esp)
+            caller = e.u32(e.reg(UC_X86_REG_ESP))
             if lo <= caller < hi:
-                return                      # nested inside another RNG method
-            if last[0] == (esp, caller):
-                return                      # a thunk that jumped here, already logged
-            last[0] = (esp, caller)
+                return                      # nested in another RNG method, or from a thunk
             kinds = RNG_ARGS[op]
             words = [e.arg(i) for i in range(2 * len(kinds))]
             if kinds == "dd":

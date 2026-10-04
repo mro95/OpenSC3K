@@ -23,11 +23,11 @@ from unicorn.x86_const import (UC_X86_REG_CS, UC_X86_REG_DS, UC_X86_REG_EAX,
 PAGE = 0x1000
 STACK_TOP, STACK_SIZE = 0x00F0_0000, 0x0010_0000   # 1 MiB below 15 MiB
 HEAP_BASE, HEAP_SIZE = 0x0100_0000, 0x0400_0000    # 64 MiB bump heap
-STUB_BASE, STUB_SIZE = 0x7F00_0000, 0x0001_0000    # one 16-byte stub per import
+STUB_BASE, STUB_SIZE = 0x7F00_0000, 0x0001_0000    # one 32-byte stub per import
 SCRATCH = 0x7F01_0000                              # doubles passed to and from stubs
 RETURN = 0x7F01_1000                               # return address of every call: stops the run
 TEB, GDT = 0x7FFD_E000, 0x7FFC_0000
-STUB_STRIDE = 16
+STUB_STRIDE = 32
 
 # x87 control word of a Windows process: 53-bit precision, round to nearest, all exceptions
 # masked (what the MSVC runtime sets up). Direct3D would switch to 24-bit.
@@ -78,6 +78,19 @@ class Stub:
 
     def hook_offset(self):
         return 6 * self.x87_args
+
+
+class NativeStub:
+    """An import implemented as x86 code run by the emulator, for helpers that rearrange the
+    caller's stack frame and cannot be written as a call-and-return Python function."""
+
+    fn = None
+
+    def __init__(self, code):
+        self._code = code
+
+    def code(self):
+        return self._code
 
 
 class Emu:
@@ -262,6 +275,8 @@ class Emu:
             return
         dll, name = self.stubs[stub_at]
         stub = STUBS.get(name)
+        if isinstance(stub, NativeStub):
+            return
         if address != stub_at + (stub.hook_offset() if stub else 0):
             return
         caller = self.u32(self.reg(UC_X86_REG_ESP))
@@ -359,11 +374,41 @@ def _cipow(e):
     e.ret_double(math.pow(x, y))
 
 
+def _abs(e):
+    v = e.arg(0)
+    e.ret_int(-(v - (1 << 32)) if v & 0x80000000 else v)
+
+
+def _strlen(e):
+    at, n = e.arg(0), 0
+    while e.u8(at + n):
+        n += 1
+    e.ret_int(n)
+
+
 def _time(e):
     e.ret_int(0)
 
 
+# MSVC's _EH_prolog: EAX holds the frame's handler. Pushes the C++ exception registration
+# (state -1, handler, previous fs:[0]), links it into fs:[0] and sets up EBP the way the
+# function's own prologue would have.
+_EH_PROLOG = bytes.fromhex(
+    "6aff"              # push -1
+    "50"                # push eax
+    "64a100000000"      # mov eax, fs:[0]
+    "50"                # push eax
+    "64892500000000"    # mov fs:[0], esp
+    "8b44240c"          # mov eax, [esp+0Ch]   ; return address
+    "896c240c"          # mov [esp+0Ch], ebp
+    "8d6c240c"          # lea ebp, [esp+0Ch]
+    "50"                # push eax
+    "c3")               # ret
+
+
 STUBS = {
+    # C++ exception frames.
+    "_EH_prolog": NativeStub(_EH_PROLOG),
     # Heap. operator new / new[] / delete / delete[] (MSVC mangled names) and the C heap.
     "??2@YAPAXI@Z": Stub(_new),
     "??_U@YAPAXI@Z": Stub(_new),
@@ -376,12 +421,15 @@ STUBS = {
     "memset": Stub(_memset),
     "memcpy": Stub(_memcpy),
     "memmove": Stub(_memcpy),
+    "strlen": Stub(_strlen),
+    "abs": Stub(_abs),
     # Floating point. Python's math matches a correctly rounded x87 result in 53-bit mode for
     # sqrt; sin/cos/pow go through the host libm, like the Rust port does.
     "_ftol": Stub(_ftol, x87_args=1),
     "sqrt": Stub(_math1(math.sqrt), returns="double"),
     "sin": Stub(_math1(math.sin), returns="double"),
     "cos": Stub(_math1(math.cos), returns="double"),
+    "acos": Stub(_math1(math.acos), returns="double"),
     "floor": Stub(_math1(math.floor), returns="double"),
     "ceil": Stub(_math1(math.ceil), returns="double"),
     "_CIsqrt": Stub(_ci1(math.sqrt), returns="double", x87_args=1),
