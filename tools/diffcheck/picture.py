@@ -63,8 +63,9 @@ def diff_image(want, got):
     return img.resize((want.vx * SCALE, want.vy * SCALE), Image.NEAREST)
 
 
-def render(path, sample, rows, footer):
-    """`sample` is a DirtCase with both terrains; `rows` is [(section, label, rate, detail)]."""
+def render(path, sample, rows, footer, dll_rows=None):
+    """`sample` is a DirtCase with both terrains; `rows` is [(section, label, rate, detail)];
+    `dll_rows` the per-binary coverage rows (coverage.Row), drawn in a compact table below."""
     panels = [("Original SIMDIRT.DLL (emulated)", terrain_image(sample.original)),
               ("OpenSC3K port", terrain_image(sample.port)),
               ("Difference", diff_image(sample.original, sample.port))]
@@ -73,8 +74,11 @@ def render(path, sample, rows, footer):
     row_h, section_h = 22, 30
     sections = len({r[0] for r in rows})
     width = PAD * 2 + pw * 3 + GAP * 2
+    dll_h = 18
     height = (PAD + 34 + 20 + 20 + ph + 28 + sections * section_h + len(rows) * row_h
               + 30 + PAD)
+    if dll_rows:
+        height += section_h + 20 + len(dll_rows) * dll_h + 10
     img = Image.new("RGB", (width, height), BG)
     d = ImageDraw.Draw(img)
     y = PAD
@@ -104,6 +108,25 @@ def render(path, sample, rows, footer):
         d.text((bar_x + bar_w + 10, y + 3), f"{rate * 100:.2f}%", font=body_f, fill=colour)
         d.text((bar_x + bar_w + 80, y + 4), detail, font=small_f, fill=MUTED)
         y += row_h
+    if dll_rows:
+        y += 10
+        d.text((PAD, y + 6), "Accuracy per binary", font=label_f, fill=INK)
+        d.line([PAD, y + section_h - 4, width - PAD, y + section_h - 4], fill=RULE)
+        y += section_h
+        d.text((PAD + 8, y), "match rate of its checks x share of its functions that are "
+               "ported and checked; 0% = not implemented yet", font=small_f, fill=MUTED)
+        y += 20
+        from run import dll_detail
+        for r in dll_rows:
+            acc = r.accuracy()
+            colour = BAD if acc == 0 else GOOD if r.match == 1.0 else PARTIAL
+            d.text((PAD + 8, y + 2), r.binary, font=small_f, fill=INK)
+            d.rectangle([bar_x, y + 5, bar_x + bar_w, y + 13], fill=RULE)
+            if acc:
+                d.rectangle([bar_x, y + 5, bar_x + max(2, int(bar_w * acc)), y + 13], fill=colour)
+            d.text((bar_x + bar_w + 10, y + 2), f"{acc * 100:.2f}%", font=small_f, fill=colour)
+            d.text((bar_x + bar_w + 80, y + 2), dll_detail(r), font=small_f, fill=MUTED)
+            y += dll_h
     y += 10
     stamp = datetime.date.today().isoformat()
     d.text((PAD, y), f"{footer} · {stamp} · tools/diffcheck/run.py", font=small_f, fill=MUTED)

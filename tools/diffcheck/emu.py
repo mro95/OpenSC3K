@@ -23,9 +23,9 @@ from unicorn.x86_const import (UC_X86_REG_CS, UC_X86_REG_DS, UC_X86_REG_EAX,
 PAGE = 0x1000
 STACK_TOP, STACK_SIZE = 0x00F0_0000, 0x0010_0000   # 1 MiB below 15 MiB
 HEAP_BASE, HEAP_SIZE = 0x0100_0000, 0x0400_0000    # 64 MiB bump heap
-STUB_BASE, STUB_SIZE = 0x7F00_0000, 0x0001_0000    # one 32-byte stub per import
-SCRATCH = 0x7F01_0000                              # doubles passed to and from stubs
-RETURN = 0x7F01_1000                               # return address of every call: stops the run
+STUB_BASE, STUB_SIZE = 0x7F00_0000, 0x0004_0000    # one 32-byte stub per import
+SCRATCH = 0x7F04_0000                              # doubles passed to and from stubs
+RETURN = 0x7F04_1000                               # return address of every call: stops the run
 TEB, GDT = 0x7FFD_E000, 0x7FFC_0000
 STUB_STRIDE = 32
 
@@ -221,6 +221,17 @@ class Emu:
             self.hooks[address] = []
             self.uc.hook_add(UC_HOOK_CODE, self._on_hooked, begin=address, end=address)
         self.hooks[address].append(callback)
+
+    def once(self, address, callback):
+        """Calls `callback(address)` the first time execution reaches `address`, then removes
+        the hook, so watching a hot function costs one callback."""
+        handle = []
+
+        def hit(uc, at, size, _):
+            if handle:
+                callback(at)
+                uc.hook_del(handle.pop())
+        handle.append(self.uc.hook_add(UC_HOOK_CODE, hit, begin=address, end=address))
 
     def arg(self, i):
         """The i-th 32-bit stack argument at a function's entry (after the return address)."""

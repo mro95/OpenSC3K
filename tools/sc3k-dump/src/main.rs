@@ -23,6 +23,8 @@ usage:
                                      zoom 0..4, rotation 0, landscape 0 (needs $SC3K_DATA)
   sc3k-dump diffref rng <script.txt> <out.txt>
   sc3k-dump diffref dirt <seed> <size> <difficulty> <hills> <water> <trees> <flags> <out.bin>
+  sc3k-dump diffref qfs <dir>
+  sc3k-dump diffref qfs-samples <root> <outdir> <limit>
                                      reference output of the port for tools/diffcheck";
 
 fn main() -> ExitCode {
@@ -43,6 +45,10 @@ fn main() -> ExitCode {
         ["diffref", "rng", script, out] => diffref_rng(Path::new(script), Path::new(out)),
         ["diffref", "dirt", seed, size, difficulty, hills, water, trees, flags, out] => {
             diffref_dirt([seed, size, difficulty, hills, water, trees, flags], Path::new(out))
+        }
+        ["diffref", "qfs", dir] => diffref_qfs(Path::new(dir)),
+        ["diffref", "qfs-samples", root, out, limit] => {
+            diffref_qfs_samples(Path::new(root), Path::new(out), limit)
         }
         _ => Err(USAGE.to_string()),
     };
@@ -339,4 +345,72 @@ fn diffref_dirt(args: [&&str; 7], out: &Path) -> Result<(), String> {
         b.extend_from_slice(&c.double_state.to_le_bytes());
     }
     std::fs::write(out, b).map_err(|e| format!("{}: {e}", out.display()))
+}
+
+/// Decompresses every `<name>.qfs` in `dir` for `tools/diffcheck/run.py qfs`: writes
+/// `<name>.out` with the decompressed bytes, or `<name>.err` with the error.
+fn diffref_qfs(dir: &Path) -> Result<(), String> {
+    use sc3k_formats::qfs;
+    let entries = std::fs::read_dir(dir).map_err(|e| format!("{}: {e}", dir.display()))?;
+    for e in entries {
+        let path = e.map_err(|e| e.to_string())?.path();
+        if path.extension().and_then(|x| x.to_str()) != Some("qfs") {
+            continue;
+        }
+        let data = std::fs::read(&path).map_err(|e| format!("{}: {e}", path.display()))?;
+        let (dest, bytes) = match qfs::decompress(&data) {
+            Ok(out) => (path.with_extension("out"), out),
+            Err(err) => (path.with_extension("err"), err.to_string().into_bytes()),
+        };
+        std::fs::write(&dest, bytes).map_err(|e| format!("{}: {e}", dest.display()))?;
+    }
+    Ok(())
+}
+
+/// Copies up to `limit` QFS streams from the containers under `root`, spread evenly over all
+/// of them, to `<outdir>/<n>.qfs`, with `<outdir>/index.tsv` naming each one's record. A
+/// stream is a whole record, the pixels of an image record or those of a sprite record.
+fn diffref_qfs_samples(root: &Path, out: &Path, limit: &str) -> Result<(), String> {
+    use sc3k_formats::qfs::is_qfs;
+    let limit = num(limit)? as usize;
+    let mut files = Vec::new();
+    walk(root, &mut files).map_err(|e| format!("{}: {e}", root.display()))?;
+    files.sort();
+    let mut found = Vec::new();
+    for path in &files {
+        let Ok(data) = std::fs::read(path) else { continue };
+        if !is_ixf(&data) {
+            continue;
+        }
+        let Ok(a) = Archive::from_bytes(data) else { continue };
+        let rel = path.strip_prefix(root).unwrap_or(path).display().to_string();
+        for e in a.entries() {
+            let d = a.data(e);
+            // Whole record, image pixels (24-byte header), sprite pixels (16 + 4 bytes).
+            let at = if is_qfs(d) {
+                0
+            } else if Image::sniff(d) {
+                24
+            } else if d.len() > 20 && is_qfs(&d[20..]) {
+                20
+            } else {
+                continue;
+            };
+            found.push((rel.clone(), e.tgi, d[at..].to_vec()));
+        }
+    }
+    std::fs::create_dir_all(out).map_err(|e| format!("{}: {e}", out.display()))?;
+    let step = (found.len() as f64 / limit.max(1) as f64).max(1.0);
+    let mut index = String::new();
+    let mut n = 0;
+    while n < limit && ((n as f64 * step) as usize) < found.len() {
+        let (file, tgi, stream) = &found[(n as f64 * step) as usize];
+        let dest = out.join(format!("{n:05}.qfs"));
+        std::fs::write(&dest, stream).map_err(|e| format!("{}: {e}", dest.display()))?;
+        index += &format!("{n:05}\t{file}\t{tgi}\n");
+        n += 1;
+    }
+    std::fs::write(out.join("index.tsv"), index).map_err(|e| e.to_string())?;
+    println!("{n} of {} QFS streams written to {}", found.len(), out.display());
+    Ok(())
 }

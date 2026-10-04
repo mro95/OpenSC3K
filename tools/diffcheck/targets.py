@@ -1,5 +1,5 @@
-"""Addresses of the original functions under test, from docs/sim/random.md and
-docs/sim/terrain-gen.md. A check only uses what is listed here."""
+"""Addresses of the original functions under test, from docs/sim/random.md,
+docs/sim/terrain-gen.md and tools/match/names. A check only uses what is listed here."""
 
 from dataclasses import dataclass, field
 
@@ -16,19 +16,24 @@ RNG_DOUBLE_RESULT = {"double", "double_range"}
 class Target:
     dll: str
     # cRZRandom method entry points, by op name.
-    rng: dict
+    rng: dict = field(default_factory=dict)
     # [start, end) of the cRZRandom code: a call from inside it is nested, not logged.
-    rng_code: tuple
+    rng_code: tuple = (0, 0)
     # Thunks that jump to an RNG method (address -> op name).
     rng_thunks: dict = field(default_factory=dict)
     # cSC3DirtGenerator. The vtable is found at run time from these slots.
     generator: dict = field(default_factory=dict)
     # Named stages of GenerateRandom, for saying where a trace diverged (address -> name).
     stages: dict = field(default_factory=dict)
+    # cRZFastCompression3 (QFS). The vtable is found at run time from its first three slots.
+    qfs: dict = field(default_factory=dict)
+    # Checks that run against this DLL (run.py subcommands).
+    checks: tuple = ()
 
 
 SIMDIRT = Target(
     dll="SIMDIRT.DLL",
+    checks=("rng", "dirt"),
     rng={
         "seed": 0x1001BB50,
         "next_u32": 0x1001BB6B,
@@ -70,3 +75,27 @@ SIMDIRT = Target(
         0x10017A69: "blend of 4 values",
     },
 )
+
+
+# cRZFastCompression3, named by tools/match from the Loki demo's symbols (sc3u_demo.x86).
+SIMBABLD = Target(
+    dll="SIMBABLD.DLL",
+    checks=("qfs",),
+    qfs={
+        # Vtable: QueryInterface, AddRef, Release, ...
+        "QueryInterface": 0x12059E3F,
+        "AddRef": 0x12059E64,
+        "Release": 0x12059E6B,
+        "CompressData": 0x12059E86,
+        "DecompressData": 0x12059EBE,
+        "GetMaxLengthRequiredForCompressedData": 0x12059F0F,
+        "GetLengthOfDecompressedData": 0x12059F30,
+        "size": 0x40,
+    },
+    stages={
+        0x12059E86: "cRZFastCompression3::CompressData",
+        0x12059EBE: "cRZFastCompression3::DecompressData",
+    },
+)
+
+TARGETS = [SIMDIRT, SIMBABLD]
