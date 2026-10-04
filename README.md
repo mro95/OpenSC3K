@@ -26,6 +26,23 @@ rules. Every recovered fact cites the address of the function it came from.
 |---|---|
 | ![The same spot in rotations 0 to 3](docs/screenshots/rotations.png) | ![Scrolled to the map edge at zoom 4, showing the tiled background](docs/screenshots/city-edge.png) |
 
+## Accuracy
+
+<p align="center">
+  <img src="docs/screenshots/accuracy.png" width="720" alt="Terrain from the original SIMDIRT.DLL and from the port side by side, their difference, and match rates per check">
+</p>
+
+`tools/diffcheck` runs the original `SIMDIRT.DLL` from your install in an x86 emulator. It
+feeds the original and the port the same inputs and compares the results: every `cRZRandom`
+method, and whole generated terrains vertex by vertex, together with the order of every
+random-number call. The full results are in [`docs/accuracy.md`](docs/accuracy.md); the method is
+in [`docs/re-notes/diffcheck.md`](docs/re-notes/diffcheck.md). To regenerate both:
+
+```bash
+pip install -r tools/diffcheck/requirements.txt
+tools/diffcheck/run.py all --report docs/accuracy.md --image docs/screenshots/accuracy.png
+```
+
 ## What works
 
 - **Data:**
@@ -78,6 +95,7 @@ tools/ghidra/import.sh                                              # headless G
 tools/loki/fetch.sh && tools/loki/symbols.sh                         # Linux port symbols (C++ names)
 tools/ghidra/import.sh loki                                         # import Linux ELFs for name matching
 tools/match/export.sh && tools/match/match.py                       # port Linux names to Windows functions
+tools/diffcheck/run.py all                                          # compare the port with the original DLL code
 analyzeHeadless ghidra-project SC3U -process SC3U.exe -readOnly -noanalysis \
   -scriptPath tools/ghidra -postScript Decompile.java out.c cSC3MainMenu:: @0x4faa28   # decompile by name/address/xref
 ```
@@ -96,6 +114,7 @@ analyzeHeadless ghidra-project SC3U -process SC3U.exe -readOnly -noanalysis \
 | `tools/ghidra` | Ghidra headless import/export scripts, text symbol exports |
 | `tools/loki` | Loki Linux demo fetch + demangled symbol tables (class/method names) |
 | `tools/match` | Linux→Windows function matching; `names/` holds the ported names |
+| `tools/diffcheck` | Accuracy checks: original DLL code (emulated) vs. the port |
 | `docs/formats` | File format specs |
 | `docs/ui` | Recovered UI screens: layout, behaviour, source addresses |
 | `docs/re-notes` | Binary/subsystem notes |

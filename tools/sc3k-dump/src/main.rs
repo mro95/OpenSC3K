@@ -20,7 +20,10 @@ usage:
                                      (size 64..256 cells, difficulty 1..3, default 1)
   sc3k-dump iso <seed> <size> <zoom> <out.png>
                                      the same terrain drawn isometrically, whole map, at
-                                     zoom 0..4, rotation 0, landscape 0 (needs $SC3K_DATA)";
+                                     zoom 0..4, rotation 0, landscape 0 (needs $SC3K_DATA)
+  sc3k-dump diffref rng <script.txt> <out.txt>
+  sc3k-dump diffref dirt <seed> <size> <difficulty> <hills> <water> <trees> <flags> <out.bin>
+                                     reference output of the port for tools/diffcheck";
 
 fn main() -> ExitCode {
     let args: Vec<String> = std::env::args().skip(1).collect();
@@ -37,6 +40,10 @@ fn main() -> ExitCode {
         ["iso", seed, size, zoom, out] => iso(seed, size, zoom, Path::new(out)),
         ["terrain", seed, size, out] => terrain(seed, size, "1", Path::new(out)),
         ["terrain", seed, size, out, difficulty] => terrain(seed, size, difficulty, Path::new(out)),
+        ["diffref", "rng", script, out] => diffref_rng(Path::new(script), Path::new(out)),
+        ["diffref", "dirt", seed, size, difficulty, hills, water, trees, flags, out] => {
+            diffref_dirt([seed, size, difficulty, hills, water, trees, flags], Path::new(out))
+        }
         _ => Err(USAGE.to_string()),
     };
     match result {
@@ -113,15 +120,17 @@ fn sprites(path: &Path, out: &Path) -> Result<(), String> {
     Ok(())
 }
 
+/// A decimal or `0x` hexadecimal number.
+fn num(s: &str) -> Result<u32, String> {
+    let r = match s.strip_prefix("0x") {
+        Some(hex) => u32::from_str_radix(hex, 16),
+        None => s.parse(),
+    };
+    r.map_err(|e| format!("{s}: {e}"))
+}
+
 fn terrain(seed: &str, size: &str, difficulty: &str, out: &Path) -> Result<(), String> {
     use sc3k_sim::dirt::{generate, Params};
-    let num = |s: &str| -> Result<u32, String> {
-        let r = match s.strip_prefix("0x") {
-            Some(hex) => u32::from_str_radix(hex, 16),
-            None => s.parse(),
-        };
-        r.map_err(|e| format!("{s}: {e}"))
-    };
     let (seed, size, difficulty) = (num(seed)?, num(size)?, num(difficulty)?);
     if !(1..=256).contains(&size) {
         return Err(format!("size {size} outside 1..=256"));
@@ -249,4 +258,85 @@ fn walk(dir: &Path, out: &mut Vec<PathBuf>) -> std::io::Result<()> {
         }
     }
     Ok(())
+}
+
+/// Replays a `cRZRandom` call script for `tools/diffcheck/run.py rng`. Each script line is
+/// `seed <s>`, `next_u32`, `uniform <n>`, `range <lo> <hi>`, `gaussian_fast <lo> <hi>`,
+/// `range_min_of_two <lo> <hi>`, `double` or `double_range <lo> <hi>`; integers are `u32` in
+/// hex (two's complement for negative values), doubles are their bits in hex. Each output line
+/// is the result (in the same encoding) of the matching script line.
+fn diffref_rng(script: &Path, out: &Path) -> Result<(), String> {
+    use sc3k_sim::rng::Random;
+    let text = std::fs::read_to_string(script).map_err(|e| format!("{}: {e}", script.display()))?;
+    let mut rng = Random::new(0);
+    let mut lines = Vec::new();
+    for (n, line) in text.lines().enumerate() {
+        let words: Vec<&str> = line.split_whitespace().collect();
+        let hex = |i: usize| -> Result<u64, String> {
+            let w = words.get(i).ok_or(format!("line {}: missing argument", n + 1))?;
+            u64::from_str_radix(w, 16).map_err(|e| format!("line {}: {w}: {e}", n + 1))
+        };
+        let int = |i| hex(i).map(|v| v as u32 as i32);
+        let real = |i| hex(i).map(f64::from_bits);
+        let result: u64 = match words.first().copied() {
+            None => continue,
+            Some("seed") => {
+                rng.seed(hex(1)? as u32);
+                0
+            }
+            Some("next_u32") => rng.next_u32() as u64,
+            Some("uniform") => rng.uniform(hex(1)? as u32) as u64,
+            Some("range") => rng.range(int(1)?, int(2)?) as u32 as u64,
+            Some("gaussian_fast") => rng.gaussian_fast(int(1)?, int(2)?) as u32 as u64,
+            Some("range_min_of_two") => rng.range_min_of_two(int(1)?, int(2)?) as u32 as u64,
+            Some("double") => rng.double().to_bits(),
+            Some("double_range") => rng.double_range(real(1)?, real(2)?).to_bits(),
+            Some(op) => return Err(format!("line {}: unknown call {op}", n + 1)),
+        };
+        lines.push(format!("{result:x}\n"));
+    }
+    std::fs::write(out, lines.concat()).map_err(|e| format!("{}: {e}", out.display()))
+}
+
+/// The port's terrain and `cRZRandom` call trace for `tools/diffcheck/run.py dirt`.
+///
+/// Layout, little-endian: `b"SC3KDREF"`, u32 version (1), u32 vertices X, u32 vertices Y,
+/// u32 sea level; then the altitude, water, flora and salt (0 or 1) maps as one byte per
+/// vertex, column by column (`x * Y + y`, like `cRZCellMap`); then u32 call count and per call
+/// u32 op (`sc3k_sim::rng::Op`), u64 a, u64 b, u32 state, u32 double state.
+fn diffref_dirt(args: [&&str; 7], out: &Path) -> Result<(), String> {
+    use sc3k_sim::dirt::{generate_traced, Params};
+    let [seed, size, difficulty, hills, water, trees, flags] = args.map(|s| num(s));
+    let size = size?;
+    if !(1..=256).contains(&size) {
+        return Err(format!("size {size} outside 1..=256"));
+    }
+    let byte = |v: Result<u32, String>| v.map(|v| v as u8);
+    let params = Params {
+        seed: seed?,
+        hills: byte(hills)?,
+        water: byte(water)?,
+        trees: byte(trees)?,
+        flags: byte(flags)?,
+    };
+    let (t, calls) = generate_traced(size, difficulty? as i32, params);
+    let v = t.vertices();
+    let mut b = b"SC3KDREF".to_vec();
+    for n in [1, v, v, t.sea_level as u32] {
+        b.extend_from_slice(&n.to_le_bytes());
+    }
+    let cells = || (0..v).flat_map(|x| (0..v).map(move |y| (x, y)));
+    b.extend(cells().map(|(x, y)| t.altitude.get(x, y)));
+    b.extend(cells().map(|(x, y)| t.water.get(x, y)));
+    b.extend(cells().map(|(x, y)| t.flora.get(x, y)));
+    b.extend(cells().map(|(x, y)| t.salt.get(x, y) as u8));
+    b.extend_from_slice(&(calls.len() as u32).to_le_bytes());
+    for c in calls {
+        b.extend_from_slice(&(c.op as u32).to_le_bytes());
+        b.extend_from_slice(&c.a.to_le_bytes());
+        b.extend_from_slice(&c.b.to_le_bytes());
+        b.extend_from_slice(&c.state.to_le_bytes());
+        b.extend_from_slice(&c.double_state.to_le_bytes());
+    }
+    std::fs::write(out, b).map_err(|e| format!("{}: {e}", out.display()))
 }
