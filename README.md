@@ -32,11 +32,13 @@ rules. Every recovered fact cites the address of the function it came from.
   <img src="docs/screenshots/accuracy.png" width="720" alt="Terrain from the original SIMDIRT.DLL and from the port side by side, their difference, and match rates per check">
 </p>
 
-`tools/diffcheck` runs the original `SIMDIRT.DLL` from your install in an x86 emulator. It
-feeds the original and the port the same inputs and compares the results: every `cRZRandom`
-method, and whole generated terrains vertex by vertex, together with the order of every
-random-number call. The full results are in [`docs/accuracy.md`](docs/accuracy.md); the method is
-in [`docs/re-notes/diffcheck.md`](docs/re-notes/diffcheck.md). To regenerate both:
+`tools/diffcheck` runs original game DLLs from your install in an x86 emulator. It feeds the
+original and the port the same inputs and compares the results: every `cRZRandom` method,
+whole generated terrains vertex by vertex together with the order of every random-number call
+(`SIMDIRT.DLL`), and QFS decompression (`SIMBABLD.DLL`). It also lists every binary of the game
+with how many of its functions are ported and checked; one nothing has been ported from yet is
+at 0%. The full results are in [`docs/accuracy.md`](docs/accuracy.md); the method is in
+[`docs/re-notes/diffcheck.md`](docs/re-notes/diffcheck.md). To regenerate both:
 
 ```bash
 pip install -r tools/diffcheck/requirements.txt

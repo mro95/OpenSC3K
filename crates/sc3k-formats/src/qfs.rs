@@ -34,7 +34,8 @@ pub fn is_qfs(data: &[u8]) -> bool {
     data.len() >= 5 && data[1] == 0xFB && data[0] & 0x3E == 0x10
 }
 
-/// Size of the decompressed data announced in the header.
+/// Size of the decompressed data announced in the header, as
+/// `cRZFastCompression3::GetLengthOfDecompressedData` (SIMBABLD.DLL 0x12059F30).
 pub fn decompressed_len(data: &[u8]) -> Result<usize, Error> {
     header(data).map(|(len, _)| len)
 }
@@ -54,6 +55,8 @@ fn header(data: &[u8]) -> Result<(usize, usize), Error> {
     Ok((len, pos))
 }
 
+/// The decoder of `cRZFastCompression3::DecompressData` (SIMBABLD.DLL 0x12059EBE), checked
+/// against it by `tools/diffcheck/run.py qfs`.
 pub fn decompress(data: &[u8]) -> Result<Vec<u8>, Error> {
     let (len, mut pos) = header(data)?;
     let mut out = Vec::with_capacity(len);

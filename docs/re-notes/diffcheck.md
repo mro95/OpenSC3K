@@ -3,21 +3,28 @@
 Code: `tools/diffcheck/`. Rust side: `sc3k-dump diffref` and the `trace` feature of `sc3k-sim`.
 
 The tool runs functions of the original Windows DLLs from your install and the same inputs
-through the Rust port. It then reports how often they agree and where they first differ.
-Nothing runs under wine and the game never starts.
+through the Rust port. It then reports how often they agree and where they first differ, and
+for every binary of the game how much of it is ported and checked. Nothing runs under wine and
+the game never starts.
 
 ```bash
 pip install -r tools/diffcheck/requirements.txt
 tools/diffcheck/run.py all                    # needs $SC3K_DATA; exit status 1 on any difference
 tools/diffcheck/run.py rng --seeds 50         # only cRZRandom
 tools/diffcheck/run.py dirt --sizes 128       # only the terrain generator
+tools/diffcheck/run.py qfs                    # only QFS decompression (SIMBABLD.DLL)
+tools/diffcheck/run.py coverage               # the per-binary table; needs no install
+tools/diffcheck/run.py all --apps /path/to/Apps   # DLLs from somewhere else
 tools/diffcheck/run.py all --report docs/accuracy.md --image docs/screenshots/accuracy.png
 tools/diffcheck/selftest.py                   # tests the checker itself, no game needed
 ```
 
 ## How it works
-- **Emulator** (`emu.py`): Unicorn, 32-bit x86. `SIMDIRT.DLL` is mapped at its preferred
-  base 0x10000000, so the addresses in `docs/` apply unchanged.
+- **Emulator** (`emu.py`): Unicorn, 32-bit x86. Each DLL is mapped at its preferred base
+  (0x10000000, `SIMBABLD.DLL` 0x12000000), so the addresses in `docs/` apply unchanged.
+  - A DLL missing from `--apps` (default `$SC3K_DATA/Apps`) skips its checks with a note.
+  - A check that stops (a missing stub, a bad memory access) becomes a failed row with the
+    error; the other DLLs still run.
   - DllMain and the C runtime start-up never run. A check builds the objects it needs and
     calls the function directly.
   - Imports point at small stubs (`STUBS` in `emu.py`): `operator new`, `memset`, `_ftol`,
@@ -28,7 +35,8 @@ tools/diffcheck/selftest.py                   # tests the checker itself, no gam
 - **Port** (`rust.py`): `sc3k-dump diffref` replays the same calls. The `trace` feature of
   `sc3k-sim` logs every outermost `cRZRandom` call. It is off unless `Random::start_trace` is
   called, so the game never logs.
-- **Addresses** (`targets.py`): copied from `docs/sim/random.md` and `docs/sim/terrain-gen.md`.
+- **Addresses** (`targets.py`): copied from `docs/sim/random.md`, `docs/sim/terrain-gen.md`
+  and `tools/match/names`. `TARGETS` lists each DLL with its checks.
 
 ## Checks
 ### `rng`: cRZRandom
@@ -52,13 +60,60 @@ tools/diffcheck/selftest.py                   # tests the checker itself, no gam
     and trees.
   - The New City defaults (`0x40, 0x40, 0x40, 0x24`) at every size and difficulty.
 
-## Assumptions to confirm on the first real run
-- The salt bit map stores a pointer at `+0x10` to one array of words per column, and bit
-  `y % 32` of word `y / 32` is vertex y. If only the salt map differs, check this first.
-- `GenerateRandom` reaches no import beyond the stubs. A missing one fails with its name and
-  caller; add a stub to `STUBS`.
-- `sin`, `cos` and `pow` stubs use the host libm, like the port. A stub that differs from MSVCRT
-  in the last bit would show up in `CreateFlora` positions, not in the RNG trace.
+### `qfs`: cRZFastCompression3 (`SIMBABLD.DLL`)
+- The class is the QFS/RefPack codec. Its methods are named by `tools/match` from the Loki demo
+  (`sc3u_demo.x86`); the vtable is found from its first three slots (QueryInterface, AddRef,
+  Release) and put on a zeroed object.
+- `GetLengthOfDecompressedData`, then `DecompressData(src, len, dst, &dst_len)` with `dst_len`
+  set to that length. The port's side is `sc3k-dump diffref qfs`.
+- Three sources, one row each. A stream matches when both decoders give the same bytes, or
+  both reject it.
+  - **Install**: up to `--qfs-streams` (500) streams from the containers under `$SC3K_DATA`,
+    spread over all of them (`sc3k-dump diffref qfs-samples`): whole records, image pixels
+    and sprite pixels.
+  - **Round trip**: zeros, text, noise with repeats and a 200 KB buffer with far repeats,
+    compressed by the original `CompressData`, so the game's own encoder picks the opcodes.
+  - **Edge cases**: streams assembled in `qfs.py` with every opcode form, overlapping copies,
+    the farthest offsets and longest copies, and the header variants (compressed-size field,
+    4-byte sizes). These test the decoder beyond what the game's files use.
+
+### `coverage`: every binary
+- **Functions**: the `func` rows of `tools/ghidra/exports/<binary>.tsv` plus the vtable-only
+  functions in `tools/match/names`, without the `Unwind@` / `Catch@` funclets.
+- **Ported**: functions the Rust code cites in its doc comments (`coverage.py` reads them).
+  - A Windows address (`SIMDIRT.DLL 0x1001BB50`, `SC3U.exe+0x3a8b9`) counts when it is a
+    function start, so cited tables and constants do not.
+  - A Loki address (`libSimDirt 0x4142C`, or bare in a file that names its library) is looked
+    up in `tools/loki/symbols`; when a function name is quoted just before it, the symbol must
+    have that name. Its Windows address comes from `tools/match/names` by C++ name. Without
+    one it still counts as ported, but cannot be checked.
+  - Cite new ported code the same way, or it is not counted.
+- **Checked**: ported functions at a known address that ran during the checks (one-shot hooks,
+  `Emu.once`).
+- **Accuracy** = mean match rate of the binary's checks × checked / functions. A binary nothing
+  has been ported from yet is at 0% and marked "not implemented yet"; it is listed in the
+  report and the image but does not fail the run.
+
+## Confirmed on the real `SIMDIRT.DLL`
+- The salt bit map layout above (bit `y % 32` of word `y / 32`, least significant bit first).
+- `GenerateRandom` needs `_EH_prolog` (native code, it rewrites the caller's frame), `abs`,
+  `acos` and `strlen` beyond the first stubs.
+- All checks match with the 53-bit control word 0x027F.
+- `sin`, `cos`, `acos` and `pow` stubs use the host libm, like the port. A stub that differed
+  from MSVCRT in the last bit would show up in `CreateFlora` positions, not in the RNG trace.
+
+## To confirm on the first real `SIMBABLD.DLL` run
+- `DecompressData` takes the output capacity in `dst_len` and returns a bool in AL. If every
+  stream is rejected by the original, check this first.
+- `CompressData` and `DecompressData` reach no import beyond the stubs; a missing one stops the
+  QFS check with its name.
+
+## Not checked yet
+- The per-vertex light (`crates/sc3k-render/src/light.rs`). Windows `SIMDIRT.DLL` has the same
+  calculation at 0x100071A0–0x10007376 (`docs/render/terrain.md`), inside `FUN_10007010`, but
+  its entry, arguments and object layout have not been read from the disassembly yet.
+- Everything ported from Loki addresses with no Windows match (`SIMINIT`, `SIMCITY`, most of
+  the render code): `run.py coverage` lists them as ported, not checked.
 
 ## Adding a check
 1. Add the addresses to `targets.py`, with the docs as the source.
@@ -67,10 +122,13 @@ tools/diffcheck/selftest.py                   # tests the checker itself, no gam
 3. In `checks.py`, build the object, `emu.call` the function and compare. Use `emu.hook` to
    watch calls in between.
 4. Add its rows in `run.py` (`rows_for`), so the report and the README image include it.
+5. For a new DLL, add a `Target` to `TARGETS` with its `checks` and run them from
+   `run_target`. `qfs` in `SIMBABLD.DLL` is the smallest example.
 
 ## Self-test
-`selftest.py` uses clang, lld-link and llvm-dlltool to build `fixture/fixture.c`, a
-`cRZRandom` written from `docs/sim/random.md`, as a 32-bit Windows DLL. The correct build must
-match the port on every call. A build with a deliberate bug in `GaussianFast` must be caught.
-The self-test also covers the import stubs, x87 results, `fs:`, the trace hooks, the report
-and the image.
+`selftest.py` uses clang, lld-link and llvm-dlltool to build `fixture/fixture.c` as a 32-bit
+Windows DLL: a `cRZRandom` written from `docs/sim/random.md`, and a `cRZFastCompression3`
+look-alike with a QFS decoder written from `docs/formats/qfs.md`. The correct build must match
+the port on every call and stream. A build with deliberate bugs in `GaussianFast` and in the
+`C0–DF` offset must be caught. The self-test also covers the import stubs, x87 results, `fs:`,
+the trace hooks, the coverage table, the report and the image.

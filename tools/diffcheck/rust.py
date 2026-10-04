@@ -87,3 +87,17 @@ def dirt(exe, seed, size, difficulty, hills, water, trees, flags):
     for op, a, b, state, dstate in struct.iter_unpack("<IQQII", data[at:at + 28 * count]):
         trace.append(Call(RNG_OPS[op], a, b, state, dstate))
     return Terrain(vx, vy, sea, *maps, trace)
+
+
+def qfs(exe, streams):
+    """`sc3k_formats::qfs::decompress` of each stream: (True, bytes) or (False, error)."""
+    with tempfile.TemporaryDirectory() as d:
+        for i, s in enumerate(streams):
+            (Path(d) / f"{i:05}.qfs").write_bytes(s)
+        subprocess.run([str(exe), "diffref", "qfs", d], check=True)
+        out = []
+        for i in range(len(streams)):
+            ok = Path(d) / f"{i:05}.out"
+            out.append((True, ok.read_bytes()) if ok.exists()
+                       else (False, (Path(d) / f"{i:05}.err").read_text()))
+        return out

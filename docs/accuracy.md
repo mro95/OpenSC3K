@@ -5,6 +5,54 @@ compared with the port on the same inputs. See `docs/re-notes/diffcheck.md`.
 
 5 seeds, 2000 cRZRandom calls, 110 terrains, x87 control word 0x027f.
 
+The per-binary table below comes from `run.py coverage` only: it counts functions and
+ported functions, but the checks were not run with it, so nothing is counted as checked
+yet. A full `run.py all` on an install fills in the checked column and the QFS rows.
+
+## Per binary
+
+Accuracy = match rate of the binary's checks × checked functions / all its
+functions. A binary nothing has been ported from yet is at 0%.
+
+All binaries: 41 of 46771 functions ported, 0 checked.
+
+| Binary | Functions | Ported | Checked | Checked code matches | Accuracy | Status |
+|---|---:|---:|---:|---:|---:|---|
+| SIMDIRT.DLL | 750 | 27 | 0 | – | 0.00% | not run: coverage only |
+| SC3U.exe | 6698 | 4 | 0 | – | 0.00% | ported, not checked |
+| SIMSPR.DLL | 2922 | 4 | 0 | – | 0.00% | ported, not checked |
+| SIMBABLD.DLL | 2347 | 2 | 0 | – | 0.00% | not run: coverage only |
+| SIMINIT.DLL | 1508 | 2 | 0 | – | 0.00% | ported, not checked |
+| SIMCITY.DLL | 836 | 1 | 0 | – | 0.00% | ported, not checked |
+| SIMMISC.DLL | 1613 | 1 | 0 | – | 0.00% | ported, not checked |
+| AUDIO.DLL | 950 | 0 | 0 | – | 0.00% | not implemented yet |
+| Baapp.exe | 3117 | 0 | 0 | – | 0.00% | not implemented yet |
+| GIMEX.DLL | 518 | 0 | 0 | – | 0.00% | not implemented yet |
+| GZGraphicD.dll | 833 | 0 | 0 | – | 0.00% | not implemented yet |
+| GZResourceD.dll | 1302 | 0 | 0 | – | 0.00% | not implemented yet |
+| GZServiceD.dll | 678 | 0 | 0 | – | 0.00% | not implemented yet |
+| GZSOUNDD.DLL | 488 | 0 | 0 | – | 0.00% | not implemented yet |
+| GZTOOLSD.DLL | 416 | 0 | 0 | – | 0.00% | not implemented yet |
+| GZWIND.DLL | 1749 | 0 | 0 | – | 0.00% | not implemented yet |
+| GZWWWD.DLL | 866 | 0 | 0 | – | 0.00% | not implemented yet |
+| MaxisAddOn.dll | 83 | 0 | 0 | – | 0.00% | not implemented yet |
+| SCENARIO.DLL | 843 | 0 | 0 | – | 0.00% | not implemented yet |
+| SIMADV.DLL | 1104 | 0 | 0 | – | 0.00% | not implemented yet |
+| SIMDSTR.DLL | 1657 | 0 | 0 | – | 0.00% | not implemented yet |
+| SIMECO.DLL | 1007 | 0 | 0 | – | 0.00% | not implemented yet |
+| SIMGEOM.DLL | 1771 | 0 | 0 | – | 0.00% | not implemented yet |
+| SIMNTWRK.DLL | 1181 | 0 | 0 | – | 0.00% | not implemented yet |
+| SIMRCI.DLL | 2085 | 0 | 0 | – | 0.00% | not implemented yet |
+| SIMSERV.DLL | 1083 | 0 | 0 | – | 0.00% | not implemented yet |
+| SimTransit.dll | 843 | 0 | 0 | – | 0.00% | not implemented yet |
+| SIMUI.DLL | 4098 | 0 | 0 | – | 0.00% | not implemented yet |
+| SIMUTIL.DLL | 1143 | 0 | 0 | – | 0.00% | not implemented yet |
+| simvariables.dll | 459 | 0 | 0 | – | 0.00% | not implemented yet |
+| STRTSIM.DLL | 1564 | 0 | 0 | – | 0.00% | not implemented yet |
+| UV.DLL | 259 | 0 | 0 | – | 0.00% | not implemented yet |
+
+## Checks
+
 | Check | | Match | |
 |---|---|---:|---|
 | cRZRandom | RandomUint32Uniform() | 100.00% | 288 calls |
