@@ -11,6 +11,7 @@ use sc3k_render::terrain::{TerrainScene, MAX_ZOOM};
 use sc3k_sim::cellmap::CellMap;
 use sc3k_sim::dirt;
 use sc3k_sim::flora::{self, Flora};
+use sc3k_sim::load;
 use std::collections::HashMap;
 use sc3k_ui::main_menu::{Choice, MainMenu};
 use sc3k_ui::controls::Key;
@@ -338,10 +339,35 @@ impl Game {
             settings.buildings,
             city.terrain.as_ref().map_or(0, |t| t.sea_level),
         );
+        // The trees grow when the simulation begins (`cSC3DirtBag::SimulationBegin`).
+        let trees = city.terrain.as_ref().map(|t| flora::place(t, seed));
+        self.open_city(city, settings.landscape, settings.flora, trees, seed);
+    }
+
+    /// Open a saved city (`.sc3`) or terrain (`.sct`) and show its ground and trees. The
+    /// rest of the save is not read yet: the city takes the New City dialog's settings, and
+    /// the default landscape and flora set.
+    pub fn load_city(&mut self, path: &std::path::Path) -> Result<(), String> {
+        let at = |e: &dyn std::fmt::Display| format!("{}: {e}", path.display());
+        let archive = sc3k_formats::ixf::Archive::open(path).map_err(|e| at(&e))?;
+        let ground = load::read_ground(&archive).map_err(|e| at(&e))?;
+        let seed = self.seed.unwrap_or_else(clock_seed);
+        let t = &ground.terrain;
+        eprintln!("{}: {}x{} cells, sea level {}", path.display(), t.size, t.size, t.sea_level);
+        let trees = flora::from_layer(t, &ground.flora_layer, seed);
+        let mut info = self.new_city.settings().new_city_info();
+        (info.x_size, info.y_size) = (t.size, t.size);
+        info.terrain = Some(ground.terrain);
+        self.open_city(City::new(&info), 0, 0, Some(trees), seed);
+        Ok(())
+    }
+
+    /// Show `city` in the city view with the given landscape and flora set.
+    fn open_city(&mut self, city: City, landscape: u32, flora_set: u32, trees: Option<CellMap<Option<Flora>>>, seed: u32) {
         // The landscape scheme picks the land palette (`SetAltitudePalette`).
         let palette = self
             .land_palettes
-            .get(&settings.landscape)
+            .get(&landscape)
             .or_else(|| self.land_palettes.get(&0))
             .or_else(|| self.land_palettes.values().next());
         self.view = match (&city.terrain, palette) {
@@ -351,10 +377,9 @@ impl Game {
             }
             _ => None,
         };
-        // The trees grow when the simulation begins (`cSC3DirtBag::SimulationBegin`). An
-        // unknown set falls back to the default one, as the scheme manager does.
-        let set = if self.flora_sprites.contains_key(&settings.flora) { settings.flora } else { 0 };
-        self.trees = city.terrain.as_ref().map(|t| (set, flora::place(t, seed)));
+        // An unknown set falls back to the default one, as the scheme manager does.
+        let set = if self.flora_sprites.contains_key(&flora_set) { flora_set } else { 0 };
+        self.trees = trees.map(|t| (set, t));
         self.city = Some(city);
         self.scene = Scene::City;
     }

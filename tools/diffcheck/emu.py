@@ -28,6 +28,7 @@ SCRATCH = 0x7F04_0000                              # doubles passed to and from 
 RETURN = 0x7F04_1000                               # return address of every call: stops the run
 TEB, GDT = 0x7FFD_E000, 0x7FFC_0000
 STUB_STRIDE = 32
+FAKE_BASE, FAKE_SIZE = 0x7F10_0000, 0x0001_0000    # methods of fake objects, 4 bytes each
 
 # x87 control word of a Windows process: 53-bit precision, round to nearest, all exceptions
 # masked (what the MSVC runtime sets up). Direct3D would switch to 24-bit.
@@ -103,15 +104,20 @@ class Emu:
         self.hooks = {}          # address -> [callback(emu)]
         self.stubs = {}          # stub address -> (dll, name)
         self.stub_error = None
+        self.fakes = {}          # fake method address -> (object name, slot, fn)
+        self.fake_next = FAKE_BASE
         self._map(STACK_TOP - STACK_SIZE, STACK_SIZE)
         self._map(HEAP_BASE, HEAP_SIZE)
         self._map(STUB_BASE, STUB_SIZE + 2 * PAGE)   # stubs, SCRATCH, RETURN
+        self._map(FAKE_BASE, FAKE_SIZE)
         self._load(path)
         self.uc.mem_write(RETURN, b"\xF4")       # hlt; never executed, the run stops before
         self._fs()
         # Range-limited code hooks only: a hook on every instruction would be far too slow.
         self.uc.hook_add(UC_HOOK_CODE, self._on_stub, begin=STUB_BASE,
                          end=STUB_BASE + STUB_SIZE - 1)
+        self.uc.hook_add(UC_HOOK_CODE, self._on_fake, begin=FAKE_BASE,
+                         end=FAKE_BASE + FAKE_SIZE - 1)
         self.uc.hook_add(UC_HOOK_MEM_INVALID, self._on_bad_memory)
 
     # Loading -------------------------------------------------------------------------------
@@ -213,6 +219,28 @@ class Emu:
                     hits.append(start + 4 * i)
         return hits
 
+    def fake_object(self, name, methods, slots=128, size=16):
+        """An object of `size` bytes whose vtable calls back into Python, standing in for an
+        interface the code under test uses (a city, a DB segment, a record). `methods` maps a
+        vtable offset to (argument count, fn); `fn(emu, this)` reads its arguments with
+        `emu.arg` and returns EAX (None for 0). Methods are thiscall and pop their arguments.
+        Any other slot stops the run, naming the object and the slot. The vtable has at least
+        `slots` entries and always reaches past the highest method."""
+        slots = max([slots] + [off // 4 + 64 for off in methods])
+        vtable = self.alloc(4 * slots)
+        for i in range(slots):
+            at = self.fake_next
+            self.fake_next += 4
+            if self.fake_next > FAKE_BASE + FAKE_SIZE:
+                raise EmuError("too many fake methods")
+            nargs, fn = methods.get(4 * i, (0, None))
+            self.write(at, b"\x90\xC2" + struct.pack("<H", 4 * nargs))     # nop; ret 4n
+            self.fakes[at] = (name, 4 * i, fn)
+            self.w32(vtable + 4 * i, at)
+        obj = self.alloc(size)
+        self.w32(obj, vtable)
+        return obj
+
     # Calling -------------------------------------------------------------------------------
 
     def hook(self, address, callback):
@@ -302,6 +330,22 @@ class Emu:
             self.stub_error = f"{dll}!{name} called from {caller:#010x}: {e}"
             uc.emu_stop()
 
+    def _on_fake(self, uc, address, size, _):
+        if address not in self.fakes:
+            return
+        name, slot, fn = self.fakes[address]
+        caller = self.u32(self.reg(UC_X86_REG_ESP))
+        if fn is None:
+            self.stub_error = (f"{name} vtable slot {slot:#x} called from {caller:#010x}, "
+                               f"which the fake does not implement")
+            uc.emu_stop()
+            return
+        try:
+            self.ret_int(fn(self, self.reg(UC_X86_REG_ECX)) or 0)
+        except Exception as e:  # noqa: BLE001 - surfaced as an EmuError
+            self.stub_error = f"{name} slot {slot:#x} called from {caller:#010x}: {e}"
+            uc.emu_stop()
+
     def _on_bad_memory(self, uc, access, address, size, value, _):
         self.stub_error = (f"bad memory access at {address:#010x} (size {size}) from "
                            f"{self.reg(UC_X86_REG_EIP):#010x}")
@@ -347,6 +391,17 @@ def _realloc(e):
 
 def _nothing(e):
     e.ret_int(0)
+
+
+def _interlocked(op):
+    """`Interlocked*` (stdcall): the new value for Increment/Decrement, the old for Exchange."""
+    def run(e):
+        at = e.arg(0)
+        old = e.u32(at)
+        new = {"inc": old + 1, "dec": old - 1, "xchg": e.arg(1) if op == "xchg" else 0}[op]
+        e.w32(at, new)
+        e.ret_int(old if op == "xchg" else new)
+    return run
 
 
 def _memset(e):
@@ -448,6 +503,9 @@ STUBS = {
     "_CIcos": Stub(_ci1(math.cos), returns="double", x87_args=1),
     "_CIpow": Stub(_cipow, returns="double", x87_args=2),
     # Clock. Only reached with the "seed from the clock" seed 0xFFFFFFFF, which checks avoid.
+    "InterlockedIncrement": Stub(_interlocked("inc"), pops=4),
+    "InterlockedDecrement": Stub(_interlocked("dec"), pops=4),
+    "InterlockedExchange": Stub(_interlocked("xchg"), pops=8),
     "timeGetTime": Stub(_time),
     "GetTickCount": Stub(_time),
 }

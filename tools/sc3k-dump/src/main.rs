@@ -23,9 +23,13 @@ usage:
                                      zoom 0..4, rotation 0, landscape 0, flora set 0 or the
                                      given FloraSets key, e.g. 0xc55a6d84
                                      (needs $SC3K_DATA)
+  sc3k-dump iso-file <file> <zoom> <out.png> [flora set]
+                                     the ground of a saved city (.sc3) or terrain (.sct)
+                                     drawn the same way, trees from its flora layer
   sc3k-dump diffref rng <script.txt> <out.txt>
   sc3k-dump diffref dirt <seed> <size> <difficulty> <hills> <water> <trees> <flags> <out.bin>
   sc3k-dump diffref qfs <dir>
+  sc3k-dump diffref ground <file.sct|file.sc3> <outdir>
   sc3k-dump diffref qfs-samples <root> <outdir> <limit>
                                      reference output of the port for tools/diffcheck";
 
@@ -43,6 +47,8 @@ fn main() -> ExitCode {
         ["census", root] => census(Path::new(root)),
         ["iso", seed, size, zoom, out] => iso(seed, size, zoom, Path::new(out), "0"),
         ["iso", seed, size, zoom, out, set] => iso(seed, size, zoom, Path::new(out), set),
+        ["iso-file", file, zoom, out] => iso_file(Path::new(file), zoom, Path::new(out), "0"),
+        ["iso-file", file, zoom, out, set] => iso_file(Path::new(file), zoom, Path::new(out), set),
         ["terrain", seed, size, out] => terrain(seed, size, "1", Path::new(out)),
         ["terrain", seed, size, out, difficulty] => terrain(seed, size, difficulty, Path::new(out)),
         ["diffref", "rng", script, out] => diffref_rng(Path::new(script), Path::new(out)),
@@ -50,6 +56,7 @@ fn main() -> ExitCode {
             diffref_dirt([seed, size, difficulty, hills, water, trees, flags], Path::new(out))
         }
         ["diffref", "qfs", dir] => diffref_qfs(Path::new(dir)),
+        ["diffref", "ground", file, outdir] => diffref_ground(Path::new(file), Path::new(outdir)),
         ["diffref", "qfs-samples", root, out, limit] => {
             diffref_qfs_samples(Path::new(root), Path::new(out), limit)
         }
@@ -176,32 +183,58 @@ fn terrain(seed: &str, size: &str, difficulty: &str, out: &Path) -> Result<(), S
 }
 
 fn iso(seed: &str, size: &str, zoom: &str, out: &Path, set: &str) -> Result<(), String> {
-    use sc3k_render::palette::{load_land_palettes, DirtPalettes};
-    use sc3k_render::terrain::{TerrainScene, View, MAX_ZOOM};
     use sc3k_sim::dirt::{generate, Params};
     let num = |s: &str| s.parse::<u32>().map_err(|e| format!("{s}: {e}"));
-    let (seed, size, zoom) = (num(seed)?, num(size)?, num(zoom)?);
-    if !(1..=256).contains(&size) || zoom > MAX_ZOOM {
-        return Err(format!("size {size} or zoom {zoom} out of range"));
+    let (seed, size) = (num(seed)?, num(size)?);
+    if !(1..=256).contains(&size) {
+        return Err(format!("size {size} out of range"));
     }
+    let terrain = generate(size, 1, Params::new_city(seed));
+    let trees = sc3k_sim::flora::place(&terrain, seed);
+    draw_iso(terrain, &trees, seed, zoom, out, set)
+}
+
+/// A saved city or terrain drawn like `iso`; the trees come from its flora layer.
+fn iso_file(file: &Path, zoom: &str, out: &Path, set: &str) -> Result<(), String> {
+    let archive = Archive::open(file).map_err(|e| format!("{}: {e}", file.display()))?;
+    let ground = sc3k_sim::load::read_ground(&archive).map_err(|e| format!("{}: {e}", file.display()))?;
+    let t = &ground.terrain;
+    println!("{}x{} cells, sea level {}", t.size, t.size, t.sea_level);
+    let trees = sc3k_sim::flora::from_layer(t, &ground.flora_layer, 1);
+    draw_iso(ground.terrain, &trees, 1, zoom, out, set)
+}
+
+fn draw_iso(
+    terrain: sc3k_sim::dirt::Terrain,
+    trees: &sc3k_sim::cellmap::CellMap<Option<sc3k_sim::flora::Flora>>,
+    seed: u32,
+    zoom: &str,
+    out: &Path,
+    set: &str,
+) -> Result<(), String> {
+    use sc3k_render::palette::{load_land_palettes, DirtPalettes};
+    use sc3k_render::terrain::{TerrainScene, View, MAX_ZOOM};
+    let zoom = zoom.parse::<u32>().map_err(|e| format!("{zoom}: {e}"))?;
+    if zoom > MAX_ZOOM {
+        return Err(format!("zoom {zoom} out of range"));
+    }
+    let size = terrain.size;
     let assets = sc3k_assets::Assets::from_env("ENGLISH").map_err(|e| e.to_string())?;
     let land = load_land_palettes(&assets)?;
     let land = land.get(&0).ok_or("no landscape 0")?;
     let dirt = DirtPalettes::load(&assets)?;
-    let terrain = generate(size, 1, Params::new_city(seed));
     let mut view = View { zoom, rotation: 0, origin_x: 0, origin_y: 0 };
     // The map spans size cells either way from the top corner, plus room for the relief
     // above and the edge skirts below.
     let (w, h) = (size as i32 * view.cell_width(), size as i32 * view.cell_height() + 300 * view.altitude_step());
     view.origin_x = w / 2;
     view.origin_y = 256 * view.altitude_step();
-    let trees = sc3k_sim::flora::place(&terrain, seed);
     let set = sc3k_formats::ini::parse_u32(set).ok_or_else(|| format!("flora set {set}"))?;
     let sprites = sc3k_render::flora::FloraSprites::load(&assets, set)?;
     let scene = TerrainScene::new(terrain, land, &dirt, seed);
     let mut screen = sc3k_ui::Surface::new(w, h);
     screen.fill(0);
-    scene.draw_with(&mut screen, &view, sc3k_render::flora::draw_cell(&sprites, &trees, &view));
+    scene.draw_with(&mut screen, &view, sc3k_render::flora::draw_cell(&sprites, trees, &view));
     let n = (0..size).flat_map(|x| (0..size).map(move |y| (x, y))).filter(|&(x, y)| trees.get(x, y).is_some()).count();
     println!("{n} trees");
     let rgba: Vec<u8> = screen.pixels.iter().flat_map(|&p| [(p >> 16) as u8, (p >> 8) as u8, p as u8, 255]).collect();
@@ -353,6 +386,37 @@ fn diffref_dirt(args: [&&str; 7], out: &Path) -> Result<(), String> {
         b.extend_from_slice(&c.double_state.to_le_bytes());
     }
     std::fs::write(out, b).map_err(|e| format!("{}: {e}", out.display()))
+}
+
+/// The saved terrain of a `.sct`/`.sc3` for `tools/diffcheck/run.py ground`: writes the dirt
+/// bag's record as stored (`<outdir>/record.bin`, the original's input) and the port's reading
+/// of it (`<outdir>/port.bin`): "SC3KGREF", u32 version 1, vertices X, vertices Y, sea level;
+/// then the altitude, water and vertex light maps, one byte per vertex, column by column
+/// (`x * Y + y`).
+fn diffref_ground(file: &Path, outdir: &Path) -> Result<(), String> {
+    use sc3k_sim::load::{read_dirt_bag, KEY_DIRT_BAG};
+    let at = |e: &dyn std::fmt::Display| format!("{}: {e}", file.display());
+    let archive = Archive::open(file).map_err(|e| at(&e))?;
+    let seg = sc3k_formats::segment::Segment::open(&archive).map_err(|e| at(&e))?;
+    let record = seg.get(KEY_DIRT_BAG).ok_or_else(|| at(&"no dirt bag record"))?;
+    std::fs::create_dir_all(outdir).map_err(|e| format!("{}: {e}", outdir.display()))?;
+    let write = |name: &str, b: &[u8]| {
+        let p = outdir.join(name);
+        std::fs::write(&p, b).map_err(|e| format!("{}: {e}", p.display()))
+    };
+    write("record.bin", record)?;
+    let t = read_dirt_bag(record).map_err(|e| at(&e))?;
+    let light = sc3k_render::light::vertex_light(&t);
+    let v = t.vertices();
+    let mut b = b"SC3KGREF".to_vec();
+    for n in [1, v, v, t.sea_level as u32] {
+        b.extend_from_slice(&n.to_le_bytes());
+    }
+    let cells = || (0..v).flat_map(|x| (0..v).map(move |y| (x, y)));
+    b.extend(cells().map(|(x, y)| t.altitude.get(x, y)));
+    b.extend(cells().map(|(x, y)| t.water.get(x, y)));
+    b.extend(cells().map(|(x, y)| light.get(x, y)));
+    write("port.bin", &b)
 }
 
 /// Decompresses every `<name>.qfs` in `dir` for `tools/diffcheck/run.py qfs`: writes

@@ -1,4 +1,4 @@
-# Flora on a new map
+# Flora on new maps and saved cities
 
 The generator leaves a flora value per vertex (`terrain-gen.md`, `CreateFlora`). This page
 covers how those values become tree occupants. Addresses are Loki Ghidra addresses: libSimDirt
@@ -56,6 +56,13 @@ The vtable slots below include the two-word header, as the calls use them.
 | 0x5C | `IsWater` (0x359A0) | some corner has water ≥ dirt |
 | 0x64 | `IsRealWater` (0x35B10) | some corner has water > dirt |
 | 0x68 | `GetGlobalSeaLevel` | |
+
+## Trees of a saved city
+`cSC3FloraLayer::Init(cISC3City*, cIGZDBSegment*)` (Ghidra 0x5BA84) reads the flora layer
+record (`docs/formats/save.md`). Each non-zero cell goes straight to
+`CreateOccupant(value >> 4, value & 0xF)`: there is no height rule and no water test. The
+port is `flora::from_layer`. A type or density outside the occupant table places nothing in
+the port; the original would read past the table.
 
 ## Random numbers
 - `cSC3FloraLayer::StaticInit` (0x5B614) makes the layer's `cRZRandom` once per run, with

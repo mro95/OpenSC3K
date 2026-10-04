@@ -64,16 +64,40 @@ pub fn place(t: &Terrain, seed: u32) -> CellMap<Option<Flora>> {
     out
 }
 
+/// The trees of a loaded city, from its flora layer (`load::read_flora_layer`): each
+/// non-zero cell becomes `CreateOccupant(value >> 4, value & 0xF)`, on water too
+/// (`cSC3FloraLayer::Init(cISC3City*, cIGZDBSegment*)`, libSimGeom Ghidra 0x5BA84). The seed
+/// stands in for the layer's clock-seeded `cRZRandom`, as in [`place`].
+pub fn from_layer(t: &Terrain, layer: &CellMap<u8>, seed: u32) -> CellMap<Option<Flora>> {
+    let mut rng = Random::new(seed);
+    let mut out = CellMap::new(t.size, t.size, None);
+    for x in 0..t.size {
+        for y in 0..t.size {
+            let v = layer.get(x, y);
+            if v != 0 {
+                out.set(x, y, create_occupant(t, &mut rng, x, y, v as usize >> 4, v as usize & 0xF));
+            }
+        }
+    }
+    out
+}
+
 /// `cSC3FloraLayer::SetFloraDensity` (libSimGeom 0x5C4B4) on an empty cell: nothing on
-/// water, else `SelectFloraType` and `CreateOccupant(type, density)` (0x5D5F4), which adds a
-/// random variant.
+/// water, else `SelectFloraType` and `CreateOccupant(type, density)`.
 fn set_flora_density(t: &Terrain, rng: &mut Random, x: u32, y: u32, density: u8) -> Option<Flora> {
     if is_water(t, x, y) {
         return None;
     }
     let kind = select_flora_type(t, rng, x, y);
+    create_occupant(t, rng, x, y, kind, density as usize)
+}
+
+/// `cSC3FloraLayer::CreateOccupant(type, density)` (0x5D5F4): the occupant of a random
+/// variant, at the cell's vertex altitude. A type or density outside the table, which only
+/// a damaged save holds, places nothing; the original would read past the table.
+fn create_occupant(t: &Terrain, rng: &mut Random, x: u32, y: u32, kind: usize, density: usize) -> Option<Flora> {
     let variant = (rng.uniform(2) != 0) as usize;
-    let occupant = OCCUPANTS[kind][density as usize * 2 + variant];
+    let occupant = *OCCUPANTS.get(kind)?.get(density * 2 + variant)?;
     Some(Flora { occupant, altitude: vertex_altitude(t, x, y) })
 }
 

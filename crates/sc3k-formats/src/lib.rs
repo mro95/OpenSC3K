@@ -9,6 +9,8 @@ pub mod ixf;
 pub mod occupant;
 pub mod pak;
 pub mod qfs;
+pub mod segment;
+pub mod serial;
 pub mod sprite;
 pub mod text;
 pub mod wav;

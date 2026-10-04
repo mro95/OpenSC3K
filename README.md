@@ -61,8 +61,11 @@ tools/diffcheck/run.py all --report docs/accuracy.md --image docs/screenshots/ac
 - **Camera:** five zooms and four rotations. Arrow keys and the screen edges scroll it.
 - **Trees:** the generator's flora becomes tree occupants, picked by height and drawn with the
   chosen flora set's sprites.
+- **Saved terrains:** `--load` opens a `.sct` terrain or the ground of a `.sc3` city, with its
+  trees. The terrain reader and the vertex light match the original `SIMDIRT.DLL` on every file
+  in the install (`tools/diffcheck/run.py ground`).
 
-Not yet: buildings, zoning, the simulation tick, loading and saving.
+Not yet: buildings, zoning, the simulation tick, the rest of a save, and saving.
 
 ## Setup
 
@@ -81,6 +84,7 @@ cargo run --release -p opensc3k -- --res 1024x768     # other screen sizes; the 
 cargo run --release -p opensc3k -- --screenshot menu.png --hover 251,297 --time 400
 cargo run --release -p opensc3k -- --scene newcity --res 640x480 --click 200,150 --type "Jr." --screenshot nc.png
 cargo run --release -p opensc3k -- --scene city --seed 1 --zoom 2 --rotate 1   # straight into a new city
+cargo run --release -p opensc3k -- --load "$SC3K_DATA/Cities/Terrains/Boston, MA.sct"   # a saved terrain
 ```
 
 In a city, the arrow keys and the screen edges scroll. PageUp/PageDown, `+`/`-` and the mouse
@@ -95,6 +99,7 @@ cargo run -p sc3k-dump -- census                                    # TypeID his
 cargo run -p sc3k-dump -- images "$SC3K_DATA/Apps/Res/UI/Shared/MAIN.IXF" out/main   # UI images to PNG
 cargo run -p sc3k-dump -- terrain 1 256 out/terrain.png                # new-city terrain, top-down
 cargo run -p sc3k-dump -- iso 1 128 0 out/iso.png                      # the same, isometric, whole map
+cargo run -p sc3k-dump -- iso-file "$SC3K_DATA/Cities/Madison, WI.sc3" 1 out/madison.png   # a saved city's ground
 tools/ghidra/import.sh                                              # headless Ghidra import + symbol export
 tools/loki/fetch.sh && tools/loki/symbols.sh                         # Linux port symbols (C++ names)
 tools/ghidra/import.sh loki                                         # import Linux ELFs for name matching
@@ -111,7 +116,7 @@ analyzeHeadless ghidra-project SC3U -process SC3U.exe -readOnly -noanalysis \
 | `crates/sc3k-formats` | Parsers for original file formats |
 | `crates/sc3k-assets` | Mounts the install; resources by (type, id), strings, fonts |
 | `crates/sc3k-ui` | Software-drawn UI like the original GZ windows: title screens, main menu, New City dialog |
-| `crates/sc3k-sim` | Deterministic simulation: the `cRZRandom` RNG, cell maps, the new-city model and the terrain generator |
+| `crates/sc3k-sim` | Deterministic simulation: the `cRZRandom` RNG, cell maps, the new-city model, the terrain generator, trees and saved layers |
 | `crates/sc3k-render` | Software isometric city view: land, water, shore and edge clods, palettes, vertex light |
 | `crates/opensc3k` | The game binary (winit + softbuffer window) |
 | `tools/sc3k-dump` | CLI for inspecting and extracting data files |
@@ -135,7 +140,7 @@ not affiliated with or endorsed by EA or Maxis.
 ## Roadmap
 
 0. RE infrastructure: Ghidra project, Linux-symbol name porting, GZCOM types, runtime tracing under wine
-1. File formats: IXF ✔, QFS ✔, UI images ✔, strings ✔, fonts ✔, sprites ✔, SYS.PAK ✔, TGI type registry, attribute tables, terrain, saves, audio, tiling rules
+1. File formats: IXF ✔, QFS ✔, UI images ✔, strings ✔, fonts ✔, sprites ✔, SYS.PAK ✔, TGI type registry, attribute tables, terrain ✔, saves (container ✔, ground ✔, the rest), audio, tiling rules
 2. Asset DB ✔ and isometric renderer (terrain ✔, camera ✔, background ✔), flora sprites ✔, building sprites, a static `.sc3` city viewer
 3. Simulation: RNG ✔, terrain generator ✔, new-city model ✔, networks, zoning/growth, utilities, RCI/economy, traffic, services, advisors, disasters
 4. UI (copyright splash ✔, main menu ✔, New City dialog ✔), audio (menu music ✔), game loop, save compatibility

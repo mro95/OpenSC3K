@@ -61,6 +61,7 @@ so payloads start at 20484 in small archives.
 | `530E2EE6`, `730E2EE6`, `035F62A4`, … | Save-game chunks | `Cities/*.sc3` |
 
 ## Save chunks (`.sc3`)
-Many save payloads start with `u16 version, u16 ?, u32 0xDEADBEEF` (e.g. `01 00 02 00 EF BE AD DE`);
-the `0xDEADBEEF` is a serialization guard. The large `035F62A4` instance-1 chunk (~500 KB in
-`Madison, WI.sc3`) is likely the tile map. To be specified in `docs/formats/sc3.md`.
+Saves and terrains keep most of their records QFS-packed inside the `035F62A4` records: a
+compressed DB segment, specified in [`save.md`](save.md). Many save payloads start with the
+version header `u16 version, u8 flags, [u8], u32 0xDEADBEEF` (e.g. `01 00 02 00 EF BE AD DE`);
+the `0xDEADBEEF` is a serialization guard.

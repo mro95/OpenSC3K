@@ -6,6 +6,7 @@ license.workspace = true
 publish.workspace = true
 
 [dependencies]
+sc3k-formats = { path = "../sc3k-formats" }
 
 [features]
 # Log every outermost `Random` call, for `tools/diffcheck`. Off for the game.

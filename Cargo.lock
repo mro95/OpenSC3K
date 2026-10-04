@@ -1521,6 +1521,9 @@ dependencies = [
 [[package]]
 name = "sc3k-sim"
 version = "0.1.0"
+dependencies = [
+ "sc3k-formats",
+]
 
 [[package]]
 name = "sc3k-ui"

@@ -13,6 +13,7 @@ tools/diffcheck/run.py all                    # needs $SC3K_DATA; exit status 1 
 tools/diffcheck/run.py rng --seeds 50         # only cRZRandom
 tools/diffcheck/run.py dirt --sizes 128       # only the terrain generator
 tools/diffcheck/run.py qfs                    # only QFS decompression (SIMBABLD.DLL)
+tools/diffcheck/run.py ground                 # only saved terrains and their vertex light
 tools/diffcheck/run.py coverage               # the per-binary table; needs no install
 tools/diffcheck/run.py all --apps /path/to/Apps   # DLLs from somewhere else
 tools/diffcheck/run.py all --report docs/accuracy.md --image docs/screenshots/accuracy.png
@@ -28,7 +29,11 @@ tools/diffcheck/selftest.py                   # tests the checker itself, no gam
   - DllMain and the C runtime start-up never run. A check builds the objects it needs and
     calls the function directly.
   - Imports point at small stubs (`STUBS` in `emu.py`): `operator new`, `memset`, `_ftol`,
-    `sqrt`, `_CIcos` and similar. An import without a stub stops the run and names itself.
+    `sqrt`, `_CIcos`, `Interlocked*` and similar. An import without a stub stops the run and
+    names itself.
+  - Interfaces from other DLLs (a city, a DB segment, a record) are fake objects
+    (`Emu.fake_object`): a vtable whose slots call Python. A slot the fake does not implement
+    stops the run, naming the object and the slot, so a missing method is never silent.
   - `fs:` points at a zeroed TEB, for MSVC's exception frames.
   - The x87 control word is reset before every call to 0x027F: 53-bit precision, as in a
     Windows process. `--fpcw 0x007F` tries the 24-bit precision that Direct3D would set.
@@ -82,6 +87,28 @@ tools/diffcheck/selftest.py                   # tests the checker itself, no gam
     block, prefix included. `DecompressData` and `GetLengthOfDecompressedData` skip it and
     `CompressData` writes it; `qfs.py` adds and strips it, so the port sees bare streams.
 
+### `ground`: cSC3DirtBag::Init(city, segment)
+- Every `.sct` in `$SC3K_DATA/Cities/Terrains` and every `.sc3` in `$SC3K_DATA/Cities`.
+  `sc3k-dump diffref ground` writes the dirt bag's record as stored and the port's reading.
+- **The object:** the check builds the dirt bag the way `Init(cISC3City*)` (0x10003E50)
+  leaves it:
+  - the real vtable;
+  - the altitude, light and water cell maps;
+  - the blocked-cell words;
+  - the ready flag;
+  - a fake `cSC3CityChangeSender`.
+  The static `cRZCriticalSection` gets a fake vtable, since static construction never ran.
+  Addresses and offsets are in `targets.py` (`dirt_bag`).
+- **The call:** `Init` at 0x10004A00 gets a fake city (cell counts, version) and a fake
+  segment. The segment's `OpenRecord` checks the key and returns a fake serial record, which
+  serves the fields from the record bytes in the order the original asks for them; marker
+  strings are skipped. `Init` then computes the vertex light (0x10007010).
+- **Compared:**
+  - the altitude, water and light maps, vertex by vertex;
+  - the sea level;
+  - whether the original read the whole record.
+- Windows slot numbers of the interfaces are in `docs/formats/save.md`.
+
 ### `coverage`: every binary
 - **Functions**: the `func` rows of `tools/ghidra/exports/<binary>.tsv` plus the vtable-only
   functions in `tools/match/names`, without the `Unwind@` / `Catch@` funclets.
@@ -113,10 +140,16 @@ tools/diffcheck/selftest.py                   # tests the checker itself, no gam
 - `CompressData` and `DecompressData` reach no import beyond the stubs; a missing one stops the
   QFS check with its name.
 
+## Confirmed by the `ground` check
+- The dirt bag record layout in `docs/formats/save.md`, on all 35 saved terrains.
+- The vertex light, once the port used the float π and the original's float rounding
+  (`docs/render/terrain.md`).
+
 ## Not checked yet
-- The per-vertex light (`crates/sc3k-render/src/light.rs`). Windows `SIMDIRT.DLL` has the same
-  calculation at 0x100071A0–0x10007376 (`docs/render/terrain.md`), inside `FUN_10007010`, but
-  its entry, arguments and object layout have not been read from the disassembly yet.
+- The compressed segment reader (`sc3k_formats::segment`). Its Windows code is in
+  `GZResourceD.dll` but not located function by function; the `ground` check starts from the
+  record bytes the port extracts.
+- The flora layer record (`cSC3FloraLayer::Init`, SIMGEOM.DLL, not located on Windows).
 - Everything ported from Loki addresses with no Windows match (`SIMINIT`, `SIMCITY`, most of
   the render code): `run.py coverage` lists them as ported, not checked.
 
@@ -137,3 +170,4 @@ look-alike with a QFS decoder written from `docs/formats/qfs.md`. The correct bu
 the port on every call and stream. A build with deliberate bugs in `GaussianFast` and in the
 `C0–DF` offset must be caught. The self-test also covers the import stubs, x87 results, `fs:`,
 the trace hooks, the coverage table, the report and the image.
+`Emu.fake_object` and the `ground` check are not covered by the self-test yet.

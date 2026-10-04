@@ -27,13 +27,15 @@ class Target:
     stages: dict = field(default_factory=dict)
     # cRZFastCompression3 (QFS). The vtable is found at run time from its first three slots.
     qfs: dict = field(default_factory=dict)
+    # cSC3DirtBag: loading a saved terrain, object layout and the fakes' vtable slots.
+    dirt_bag: dict = field(default_factory=dict)
     # Checks that run against this DLL (run.py subcommands).
     checks: tuple = ()
 
 
 SIMDIRT = Target(
     dll="SIMDIRT.DLL",
-    checks=("rng", "dirt"),
+    checks=("rng", "dirt", "ground"),
     rng={
         "seed": 0x1001BB50,
         "next_u32": 0x1001BB6B,
@@ -73,6 +75,27 @@ SIMDIRT = Target(
         0x10018C30: "Bezier2D4Controls",
         0x10017A09: "blend of 2 values",
         0x10017A69: "blend of 4 values",
+    },
+    # Found from the vtable that holds the named Init(cISC3City*, cISC2Importer*) and Save;
+    # layout from Init(cISC3City*) at 0x10003E50 (docs/formats/save.md).
+    dirt_bag={
+        "Init": 0x10004A00,                 # Init(cISC3City*, cIGZDBSegment*)
+        "calculateAndSetVertexLight": 0x10007010,
+        "vtable": 0x1002046C,
+        "key": (0x206C6E7C, 0x21737DE5, 0),
+        "size": 0x80,
+        "ready": 0x24,                      # set by Init(cISC3City*); the accessors check it
+        "altitude": 0x30,
+        "light": 0x34,
+        "water": 0x38,
+        "sea": 0x3C,
+        "cell_bits": (0x50, 0x54, 0x58, 0x5C),
+        "city": 0x64,
+        "lock": 0x100249F0,                 # static cRZCriticalSection
+        "lock_updates": 0x1C,               # cSC3CityChangeSender slot
+        "city_cells_x": 0xCC,               # cISC3City slots
+        "city_cells_z": 0xD0,
+        "city_version": 0x260,
     },
 )
 

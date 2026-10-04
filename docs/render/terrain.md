@@ -262,7 +262,28 @@ The light map is `cSC3DirtBag` field `+0x34`, one byte per vertex.
    - `d = max(dot(unit normal, −unit light), 0)`;
    - `index = trunc(acos(d) / step)`, where `step = (π · 0.5) / 31`
      (`cSC3DirtClodColorLightTable::GetLightStep`, 0x5ECD4; `mkLightIndexMax` = 31).
+   - π is a float (3.1415927410125732, SIMDIRT.DLL 0x10020F38), so `acos(0) / step` is
+     30.99999914: a light at a right angle to the normal gives 30, never 31.
 4. The stored value is the **larger** of the two indices.
+
+**Rounding (Windows, SIMDIRT.DLL 0x10007010).** The x87 runs at 53-bit precision. Each
+expression is computed in double and rounded to float only where a float is stored:
+- **The normal** (0x100073B0):
+  - Δ up, right and down are stored as floats.
+  - Δ left stays in a register, and the x sum uses it both rounded and unrounded.
+  - The components are `x = (−16Δr − 16Δr + 16·float(Δl) + 16Δl) / 4` and
+    `z = (−16Δu + 16Δd + 16Δd − 16Δu) / 4`, summed in that order. y is 256.
+- **The unit vector** (`vecUnit`, 0x1000FD40): the length is computed in double; each
+  component is divided in double, then stored as a float. A zero length leaves the output
+  untouched.
+- **The dot product** (`vecDotProduct`, 0x1000FD10): `z·z' + y·y' + x·x'` in double,
+  stored as a float.
+- **Clamping:** the dot product is clamped below at 0 only. A value rounded above 1 would
+  make `acos` NaN, and `_ftol` would give index 0.
+
+`tools/diffcheck/run.py ground` runs this code on the terrain of every saved city in the
+install. The port matches on every vertex. Before the float π and the rounding were ported,
+it gave 31 instead of 30 on up to 0.22% of the vertices in 7 of the 35 files.
 
 The land clod uses `light >> 1`, so only palette entries 0–15 are reached.
 
@@ -394,7 +415,8 @@ The Windows slot numbers differ from Loki's because MSVC orders overloads differ
   - `sc3k-dump iso` draws a whole map.
 - **Background:** `BACK<zoom>.BMP`, tiled from the view origin, under the terrain.
 - **Land palette:** chosen by the dialog's `LandScapes` key through `SC3CityScheme.ini`.
-- **Light:** follows "Vertex light" literally, including the open question about flat ground.
+- **Light:** follows "Vertex light" literally, including the open question about flat ground;
+  the light values themselves match the original exactly (`run.py ground`).
 - **Bump noise:** both maps come from the terrain seed instead of the clock.
 - **Rasterizer:** a generic scanline fill of each piece:
   - it intersects the piece's edges with each row instead of walking the original's left and
