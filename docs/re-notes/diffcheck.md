@@ -74,8 +74,13 @@ tools/diffcheck/selftest.py                   # tests the checker itself, no gam
   - **Round trip**: zeros, text, noise with repeats and a 200 KB buffer with far repeats,
     compressed by the original `CompressData`, so the game's own encoder picks the opcodes.
   - **Edge cases**: streams assembled in `qfs.py` with every opcode form, overlapping copies,
-    the farthest offsets and longest copies, and the header variants (compressed-size field,
-    4-byte sizes). These test the decoder beyond what the game's files use.
+    the farthest offsets and longest copies, and the compressed-size header field. These
+    test the decoder beyond what the game's files use. They leave out 4-byte sizes (flag
+    0x80): the original decoder (0x1205A012) ignores the flag, always reads a 3-byte size and
+    runs off the buffer.
+  - `cRZFastCompression3` keeps each stream behind a 4-byte little-endian size of the whole
+    block, prefix included. `DecompressData` and `GetLengthOfDecompressedData` skip it and
+    `CompressData` writes it; `qfs.py` adds and strips it, so the port sees bare streams.
 
 ### `coverage`: every binary
 - **Functions**: the `func` rows of `tools/ghidra/exports/<binary>.tsv` plus the vtable-only

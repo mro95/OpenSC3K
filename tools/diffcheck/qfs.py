@@ -5,7 +5,8 @@ Three sources of streams, each its own row:
 - round trip: data compressed by the original `CompressData`, so every opcode the game's own
   encoder emits is covered;
 - edge cases: streams assembled here, with every opcode form, overlapping copies, the largest
-  offsets and lengths, and the header variants (compressed-size field, 4-byte sizes).
+  offsets and lengths, and the compressed-size header field. No 4-byte sizes (flag 0x80): the
+  original decoder ignores that flag and always reads 3 bytes, so it would run off the buffer.
 A stream matches when both decoders produce the same bytes, or both reject it.
 """
 
@@ -97,7 +98,9 @@ class Assembler:
 def edge_streams(r):
     """[(label, stream)]: random op mixes per form and header, plus the extremes."""
     out = []
-    for flags in (0x10, 0x11, 0x90, 0x91):
+    # Not 0x80 (4-byte sizes): cRZFastCompression3's decoder (0x1205A012) only tests bit 0 and
+    # always reads a 3-byte size, so such a stream is misread rather than rejected.
+    for flags in (0x10, 0x11):
         for n in range(40):
             a = Assembler()
             a.literal(bytes(r.randrange(256) for _ in range(r.randrange(1, 40))))
@@ -153,6 +156,19 @@ def roundtrip_inputs(r):
 
 # The original -------------------------------------------------------------------------------
 
+def frame(stream):
+    """cRZFastCompression3 keeps a QFS stream behind a 4-byte little-endian size of the whole
+    block, prefix included: DecompressData and GetLengthOfDecompressedData skip those 4 bytes
+    and CompressData writes them."""
+    return (len(stream) + 4).to_bytes(4, "little") + stream
+
+
+def unframe(block):
+    if int.from_bytes(block[:4], "little") != len(block):
+        raise RuntimeError(f"CompressData: size prefix {block[:4].hex()} for {len(block)} bytes")
+    return block[4:]
+
+
 class Original:
     """cRZFastCompression3 on a hand-built object in a fresh emulator, renewed as the bump heap
     fills."""
@@ -179,13 +195,18 @@ class Original:
         """(True, bytes) or (False, None) when DecompressData returns false."""
         self._room(len(stream) + 3 * (1 << 20))
         e, q = self.emu, self.q
-        src = e.alloc(len(stream) + 8)
-        e.write(src, stream)
+        framed = frame(stream)
+        src = e.alloc(len(framed) + 8)
+        e.write(src, framed)
         n = e.call(q["GetLengthOfDecompressedData"], [src], this=self.this)
         self._room(n)
         dst, out_len = e.alloc(n + 16), e.alloc(4)
         e.w32(out_len, n)
-        ok = e.call(q["DecompressData"], [src, len(stream), dst, out_len], this=self.this) & 0xFF
+        ok = e.call(q["DecompressData"], [src, len(framed), dst, out_len], this=self.this) & 0xFF
+        # DecompressData returns whether the decoder wrote any bytes, so false is also how it
+        # reports an empty stream.
+        if not ok and n == 0:
+            return True, b""
         if not ok:
             return False, None
         return True, e.read(dst, min(e.u32(out_len), n + 16))
@@ -198,7 +219,7 @@ class Original:
         e.write(src, data)
         e.w32(out_len, cap)
         ok = e.call(q["CompressData"], [src, len(data), dst, out_len], this=self.this) & 0xFF
-        return e.read(dst, e.u32(out_len)) if ok else None
+        return unframe(e.read(dst, e.u32(out_len))) if ok else None
 
 
 # The check ----------------------------------------------------------------------------------
