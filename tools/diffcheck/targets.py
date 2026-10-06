@@ -31,6 +31,8 @@ class Target:
     dirt_bag: dict = field(default_factory=dict)
     # The main UI's layout functions and the window slots their fakes answer.
     ui: dict = field(default_factory=dict)
+    # The tiling rule readers of cSTTransitLayer, and the cRZFile slots their fake answers.
+    tiling: dict = field(default_factory=dict)
     # Checks that run against this DLL (run.py subcommands).
     checks: tuple = ()
 
@@ -151,4 +153,26 @@ SIMUI = Target(
 )
 
 
-TARGETS = [SIMDIRT, SIMBABLD, SIMUI]
+SIMNTWRK = Target(
+    dll="SIMNTWRK.DLL",
+    checks=("tiling",),
+    tiling={
+        # Static, stdcall: (cRZFile*, char* buffer, vector<cGZResourceKey>*), ret 0xC, bool in AL.
+        "GrokFileTileSet": 0x1001746E,
+        "buffer_size": 0x20000,         # zeroes [1, 0x1FFFF] before and after
+        # cRZFile slots, called by the read helper at 0x10017596 (the Loki slots minus 8).
+        "file_check": 0x54,             # no arguments, bool; false fails the read
+        "file_open": 0x0C,              # (1, 2, 1)
+        "file_read": 0x3C,              # (buffer, &length); length goes in as 0x1FFFF
+        "file_close": 0x14,
+        # vector: begin, end, capacity; 12-byte cGZResourceKey (type, group, instance).
+        "vec_begin": 0x0,
+        "vec_end": 0x4,
+        "vec_cap": 0x8,
+        "key_size": 0xC,
+        "key_type": 0xE223741F,         # the occupant key every entry gets
+        "key_group": 0xA317745F,
+    },
+)
+
+TARGETS = [SIMDIRT, SIMBABLD, SIMUI, SIMNTWRK]

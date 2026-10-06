@@ -7,6 +7,7 @@ import struct
 from dataclasses import dataclass, field
 from pathlib import Path
 
+import pool
 import rust
 from emu import UC_X86_REG_ECX, UC_X86_REG_ESP
 from targets import RNG_ARGS, RNG_DOUBLE_RESULT, RNG_OPS
@@ -293,14 +294,17 @@ def check_dirt(make_emu, target, exe, cases, progress=None):
     emu = make_emu()
     vtable = find_vtable(emu, target)
     names = Names(target, emu.base)
-    out = []
-    for i, args in enumerate(cases):
+
+    def one(i):
         # A fresh emulator per case keeps the bump heap small and the globals clean.
-        emu = emu if i == 0 else make_emu()
+        emu = make_emu()
         calls = trace_rng(emu, target)
-        want = dirt_original(emu, target, vtable, calls, *args)
-        got = rust.dirt(exe, *args)
-        case = compare_dirt(DirtCase(*args), want, got, names)
+        want = dirt_original(emu, target, vtable, calls, *cases[i])
+        got = rust.dirt(exe, *cases[i])
+        return compare_dirt(DirtCase(*cases[i]), want, got, names)
+
+    out = []
+    for i, case in enumerate(pool.ordered(one, len(cases), getattr(make_emu, "seen", None))):
         if progress:
             progress(i, len(cases), case)
         out.append(case)

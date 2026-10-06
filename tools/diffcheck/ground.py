@@ -15,6 +15,7 @@ import tempfile
 from dataclasses import dataclass, field
 from pathlib import Path
 
+import pool
 from checks import read_cellmap
 
 SERIAL_IID = 0x00199627     # cIGZDBSerialRecord
@@ -185,12 +186,14 @@ def check_ground(make_emu, target, exe, root, progress=None):
     paths = files(root) if root else []
     out = []
     with tempfile.TemporaryDirectory() as d:
-        for i, path in enumerate(paths):
-            outdir = Path(d) / str(i)
-            record, got = port(exe, path, outdir)
+        def one(i):
+            record, got = port(exe, paths[i], Path(d) / str(i))
             want, unread = original(make_emu(), target, record, got.vx - 1)
-            case = compare(GroundCase(path.name), want, got)
+            case = compare(GroundCase(paths[i].name), want, got)
             case.unread = unread
+            return case
+
+        for i, case in enumerate(pool.ordered(one, len(paths), getattr(make_emu, "seen", None))):
             if progress:
                 progress(i, len(paths), case)
             out.append(case)

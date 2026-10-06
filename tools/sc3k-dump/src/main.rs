@@ -31,6 +31,7 @@ usage:
   sc3k-dump diffref qfs <dir>
   sc3k-dump diffref ui <script.txt> <out.txt>
   sc3k-dump diffref ground <file.sct|file.sc3> <outdir>
+  sc3k-dump diffref tiling <list.txt> <out.txt>
   sc3k-dump diffref qfs-samples <root> <outdir> <limit>
                                      reference output of the port for tools/diffcheck";
 
@@ -59,6 +60,7 @@ fn main() -> ExitCode {
         ["diffref", "qfs", dir] => diffref_qfs(Path::new(dir)),
         ["diffref", "ui", script, out] => diffref_ui(Path::new(script), Path::new(out)),
         ["diffref", "ground", file, outdir] => diffref_ground(Path::new(file), Path::new(outdir)),
+        ["diffref", "tiling", list, out] => diffref_tiling(Path::new(list), Path::new(out)),
         ["diffref", "qfs-samples", root, out, limit] => {
             diffref_qfs_samples(Path::new(root), Path::new(out), limit)
         }
@@ -391,6 +393,20 @@ fn diffref_ui(script: &Path, out: &Path) -> Result<(), String> {
             Some(q) => return Err(format!("line {}: unknown query {q}", n + 1)),
         };
         lines.push(answer + "\n");
+    }
+    std::fs::write(out, lines.concat()).map_err(|e| format!("{}: {e}", out.display()))
+}
+
+/// The port's tile sets for `tools/diffcheck/run.py tiling`. `list` names one file per line;
+/// each gets a line of its tile ids in file order, space-separated, or `-` for none.
+fn diffref_tiling(list: &Path, out: &Path) -> Result<(), String> {
+    use sc3k_formats::tiling::parse_tile_set;
+    let text = std::fs::read_to_string(list).map_err(|e| format!("{}: {e}", list.display()))?;
+    let mut lines = Vec::new();
+    for name in text.lines().filter(|l| !l.is_empty()) {
+        let buf = std::fs::read(name).map_err(|e| format!("{name}: {e}"))?;
+        let ids: Vec<String> = parse_tile_set(&buf).iter().map(u32::to_string).collect();
+        lines.push(if ids.is_empty() { "-".to_string() } else { ids.join(" ") } + "\n");
     }
     std::fs::write(out, lines.concat()).map_err(|e| format!("{}: {e}", out.display()))
 }

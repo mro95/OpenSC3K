@@ -23,11 +23,11 @@ from unicorn.x86_const import (UC_X86_REG_CS, UC_X86_REG_DS, UC_X86_REG_EAX,
 PAGE = 0x1000
 STACK_TOP, STACK_SIZE = 0x00F0_0000, 0x0010_0000   # 1 MiB below 15 MiB
 HEAP_BASE, HEAP_SIZE = 0x0100_0000, 0x0400_0000    # 64 MiB bump heap
-STUB_BASE, STUB_SIZE = 0x7F00_0000, 0x0004_0000    # one 32-byte stub per import
+STUB_BASE, STUB_SIZE = 0x7F00_0000, 0x0004_0000    # one 64-byte stub per import
 SCRATCH = 0x7F04_0000                              # doubles passed to and from stubs
 RETURN = 0x7F04_1000                               # return address of every call: stops the run
 TEB, GDT = 0x7FFD_E000, 0x7FFC_0000
-STUB_STRIDE = 32
+STUB_STRIDE = 64
 FAKE_BASE, FAKE_SIZE = 0x7F10_0000, 0x0001_0000    # methods of fake objects, 4 bytes each
 
 # x87 control word of a Windows process: 53-bit precision, round to nearest, all exceptions
@@ -82,8 +82,9 @@ class Stub:
 
 
 class NativeStub:
-    """An import implemented as x86 code run by the emulator, for helpers that rearrange the
-    caller's stack frame and cannot be written as a call-and-return Python function."""
+    """An import implemented as x86 code run by the emulator: helpers that rearrange the
+    caller's stack frame and cannot be written as a call-and-return Python function, and hot
+    ones (`abs`, `_ftol`, `isdigit`) where a Python callback per call would dominate the run."""
 
     fn = None
 
@@ -114,8 +115,7 @@ class Emu:
         self.uc.mem_write(RETURN, b"\xF4")       # hlt; never executed, the run stops before
         self._fs()
         # Range-limited code hooks only: a hook on every instruction would be far too slow.
-        self.uc.hook_add(UC_HOOK_CODE, self._on_stub, begin=STUB_BASE,
-                         end=STUB_BASE + STUB_SIZE - 1)
+        # Stubs hook only their hook point (see `_load`).
         self.uc.hook_add(UC_HOOK_CODE, self._on_fake, begin=FAKE_BASE,
                          end=FAKE_BASE + FAKE_SIZE - 1)
         self.uc.hook_add(UC_HOOK_MEM_INVALID, self._on_bad_memory)
@@ -151,6 +151,9 @@ class Emu:
                 code = STUBS[name].code() if name in STUBS else b"\x90\xC3"
                 assert len(code) <= STUB_STRIDE
                 self.uc.mem_write(stub, code)
+                if not isinstance(STUBS.get(name), NativeStub):
+                    at = stub + (STUBS[name].hook_offset() if name in STUBS else 0)
+                    self.uc.hook_add(UC_HOOK_CODE, self._on_stub, begin=at, end=at)
 
     def _fs(self):
         """A flat FS segment over a zeroed TEB, for MSVC's `fs:[0]` exception frames."""
@@ -416,10 +419,42 @@ def _memcpy(e):
     e.ret_int(dst)
 
 
-def _ftol(e):
-    # _ftol truncates ST0 toward zero into EDX:EAX. Ints from the generator fit in a double.
-    v = e.x87_in(0)
-    e.ret_int64(int(v) & 0xFFFFFFFFFFFFFFFF)
+# MSVC's _ftol: pops ST0 and truncates it toward zero into EDX:EAX, by switching the x87
+# rounding mode to chop around a fistp.
+_FTOL = bytes.fromhex(
+    "55"                # push ebp
+    "8bec"              # mov ebp, esp
+    "83c4f4"            # add esp, -12
+    "d97dfe"            # fnstcw [ebp-2]
+    "668b45fe"          # mov ax, [ebp-2]
+    "80cc0c"            # or ah, 0Ch          ; round toward zero
+    "668945fc"          # mov [ebp-4], ax
+    "d96dfc"            # fldcw [ebp-4]
+    "df7df4"            # fistp qword [ebp-12]
+    "d96dfe"            # fldcw [ebp-2]
+    "8b45f4"            # mov eax, [ebp-12]
+    "8b55f8"            # mov edx, [ebp-8]
+    "c9"                # leave
+    "c3")               # ret
+
+_ABS = bytes.fromhex(
+    "8b442404"          # mov eax, [esp+4]
+    "99"                # cdq
+    "31d0"              # xor eax, edx
+    "29d0"              # sub eax, edx
+    "c3")               # ret
+
+# "C" locale. The callers pass a sign-extended char, so bytes from 0x80 arrive negative;
+# MSVCRT would index its table out of range for them, taken here as "not a digit".
+_ISDIGIT = bytes.fromhex(
+    "8b442404"          # mov eax, [esp+4]
+    "83e830"            # sub eax, '0'
+    "83f809"            # cmp eax, 9
+    "7706"              # ja not_digit         ; also every negative c
+    "b804000000"        # mov eax, 4           ; _DIGIT
+    "c3"                # ret
+    "31c0"              # not_digit: xor eax, eax
+    "c3")               # ret
 
 
 def _math1(f):
@@ -440,11 +475,6 @@ def _cipow(e):
     e.ret_double(math.pow(x, y))
 
 
-def _abs(e):
-    v = e.arg(0)
-    e.ret_int(-(v - (1 << 32)) if v & 0x80000000 else v)
-
-
 def _strlen(e):
     at, n = e.arg(0), 0
     while e.u8(at + n):
@@ -454,6 +484,61 @@ def _strlen(e):
 
 def _time(e):
     e.ret_int(0)
+
+
+def _cstr(e, at, stop=b""):
+    """The bytes from `at` up to the first NUL or byte of `stop`, read 64 bytes at a time: one
+    memory read per byte would dominate a check that tokenizes whole files."""
+    out = b""
+    while True:
+        try:
+            chunk = e.read(at + len(out), 64)
+        except UcError:
+            chunk = e.read(at + len(out), 1)
+        for i, b in enumerate(chunk):
+            if b == 0 or b in stop:
+                return out + chunk[:i]
+        out += chunk
+
+
+def _strcpy(e):
+    dst, src = e.arg(0), e.arg(1)
+    e.write(dst, _cstr(e, src) + b"\0")
+    e.ret_int(dst)
+
+
+def _strtok(e):
+    # MSVCRT strtok: one saved position per process, kept on the emulator.
+    at = e.arg(0) or getattr(e, "strtok_next", 0)
+    delims = _cstr(e, e.arg(1))
+    if at:
+        rest = bytes(range(1, 256)).translate(None, delims)     # every byte but NUL and delims
+        at += len(_cstr(e, at, rest))
+    token = _cstr(e, at, delims) if at else b""
+    if not token:
+        e.strtok_next = at
+        e.ret_int(0)
+        return
+    end = at + len(token)
+    if e.u8(end):
+        e.write(end, b"\0")
+        end += 1
+    e.strtok_next = end
+    e.ret_int(at)
+
+
+def _atoi(e):
+    # MSVCRT atoi (atox.c): no overflow check, the total wraps at 32 bits.
+    text = _cstr(e, e.arg(0)).lstrip(b" \t\n\v\f\r")
+    sign = text[:1]
+    if sign in (b"+", b"-"):
+        text = text[1:]
+    total = 0
+    for b in text:
+        if not 0x30 <= b <= 0x39:
+            break
+        total = (10 * total + b - 0x30) & 0xFFFFFFFF
+    e.ret_int(-total if sign == b"-" else total)
 
 
 # MSVC's _EH_prolog: EAX holds the frame's handler. Pushes the C++ exception registration
@@ -488,10 +573,14 @@ STUBS = {
     "memcpy": Stub(_memcpy),
     "memmove": Stub(_memcpy),
     "strlen": Stub(_strlen),
-    "abs": Stub(_abs),
+    "strcpy": Stub(_strcpy),
+    "strtok": Stub(_strtok),
+    "isdigit": NativeStub(_ISDIGIT),
+    "atoi": Stub(_atoi),
+    "abs": NativeStub(_ABS),
     # Floating point. Python's math matches a correctly rounded x87 result in 53-bit mode for
     # sqrt; sin/cos/pow go through the host libm, like the Rust port does.
-    "_ftol": Stub(_ftol, x87_args=1),
+    "_ftol": NativeStub(_FTOL),
     "sqrt": Stub(_math1(math.sqrt), returns="double"),
     "sin": Stub(_math1(math.sin), returns="double"),
     "cos": Stub(_math1(math.cos), returns="double"),

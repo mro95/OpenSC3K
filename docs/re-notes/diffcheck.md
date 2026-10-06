@@ -15,8 +15,10 @@ tools/diffcheck/run.py dirt --sizes 128       # only the terrain generator
 tools/diffcheck/run.py qfs                    # only QFS decompression (SIMBABLD.DLL)
 tools/diffcheck/run.py ground                 # only saved terrains and their vertex light
 tools/diffcheck/run.py ui                     # only the main UI layout (SIMUI.DLL)
+tools/diffcheck/run.py tiling                 # only the tile set reader (SIMNTWRK.DLL)
 tools/diffcheck/run.py coverage               # the per-binary table; needs no install
 tools/diffcheck/run.py all --apps /path/to/Apps   # DLLs from somewhere else
+tools/diffcheck/run.py all --jobs 1          # one process: the cases run in order
 tools/diffcheck/run.py all --report docs/accuracy.md --image docs/screenshots/accuracy.png
 tools/diffcheck/selftest.py                   # tests the checker itself, no game needed
 ```
@@ -32,6 +34,12 @@ tools/diffcheck/selftest.py                   # tests the checker itself, no gam
   - Imports point at small stubs (`STUBS` in `emu.py`): `operator new`, `memset`, `_ftol`,
     `sqrt`, `_CIcos`, `Interlocked*` and similar. An import without a stub stops the run and
     names itself.
+    - Most stubs are Python, called from a code hook on the stub's own hook point.
+    - The hot ones are x86 code that runs in the emulator, so no Python runs per call:
+      `_ftol` (a `fistp` with the rounding mode set to chop, as MSVC's), `abs` and `isdigit`.
+      The saved-terrain check calls `_ftol` once per vertex, and the terrain generator calls
+      `abs` about 175,000 times for a 128-cell terrain.
+    - The string stubs (`strtok`, `strcpy`, `atoi`) read memory 64 bytes at a time.
   - Interfaces from other DLLs (a city, a DB segment, a record) are fake objects
     (`Emu.fake_object`): a vtable whose slots call Python. A slot the fake does not implement
     stops the run, naming the object and the slot, so a missing method is never silent.
@@ -43,6 +51,18 @@ tools/diffcheck/selftest.py                   # tests the checker itself, no gam
   called, so the game never logs.
 - **Addresses** (`targets.py`): copied from `docs/sim/random.md`, `docs/sim/terrain-gen.md`
   and `tools/match/names`. `TARGETS` lists each DLL with its checks.
+
+## Speed
+`run.py all` takes about a minute and a half on 32 cores.
+- **Cases in parallel** (`pool.py`): the terrain cases, the saved terrains and the tiling
+  files are independent, so they run in forked worker processes, one emulator per case (one
+  per worker for tiling). `--jobs` sets the number of workers; the default is all cores.
+  - Workers send back the addresses their emulators ran, so the coverage table counts the
+    same functions as a run with `--jobs 1`.
+  - Results come back in case order, so the output and the report do not depend on `--jobs`.
+- **Measured costs before this:** the saved terrains took 171 s, almost all of it in the
+  Python `_ftol` and `acos` stubs. The tiling check took 48 s in `isdigit` and byte-by-byte
+  memory reads. Profile with `python -m cProfile -s tottime tools/diffcheck/run.py <check>`.
 
 ## Checks
 ### `rng`: cRZRandom
@@ -131,6 +151,30 @@ tools/diffcheck/selftest.py                   # tests the checker itself, no gam
   when both answers are equal, including both refusing.
 - Window slots are in `targets.py` (`ui`). Windows `cIGZWin` slots are the Loki ones minus 8
   from 0x80 on.
+
+### `tiling`: the tile set reader (`SIMNTWRK.DLL`)
+- **`cSTTransitLayer::GrokFileTileSet`** (0x1001746E): static stdcall
+  `(cRZFile*, char* buffer, vector<cGZResourceKey>*)`, returning a bool in AL.
+  - **Fake file:** a `cRZFile` that serves the input bytes. The read helper at 0x10017596
+    calls slot 0x54 (no arguments), `0x0C(1, 2, 1)`, `0x3C(buffer, &length)` with the length
+    going in as 0x1FFFF, and `0x14`. These are the Loki slots minus 8.
+  - **Read back:** the vector's begin and end at +0 and +4. Each 12-byte key must be
+    `E223741F-A317745F-<id>`.
+  - **Inputs:** every file under `TilingRules`, including the rule, convert and protected
+    files, and hand-made edge cases: braces, signs, NUL, `\v`/`\f`/`\r`, bytes from 0x80,
+    numbers past 2^31, and texts longer than the 0x1FFFF-byte buffer.
+- **Imports:** `strtok`, `isdigit`, `atoi` and `strcpy` from `MSVCRT.DLL` are stubs.
+  - `isdigit` gets a sign-extended `char`. MSVCRT would read outside its table for bytes from
+    0x80, and the stub treats them as not digits.
+  - `atoi` follows MSVCRT's `atox.c`: there is no overflow check, so the total wraps at
+    32 bits. The Loki build reads with `strtol`, which clamps instead. The two builds give
+    different ids for numbers past 2^31; `ROAD_Exits.txt` has one.
+- `sc3k-dump diffref tiling` reads the same files with `parse_tile_set`. A file matches when
+  both give the same ids in the same order.
+- The convert, protected and rule readers are not checked yet: their Windows addresses are
+  not known.
+- **Sensitivity:** changing one constant in each of the three port functions makes its row
+  fail.
 
 ### `coverage`: every binary
 - **Functions**: the `func` rows of `tools/ghidra/exports/<binary>.tsv` plus the vtable-only

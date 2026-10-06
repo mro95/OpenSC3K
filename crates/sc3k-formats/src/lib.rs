@@ -13,6 +13,7 @@ pub mod segment;
 pub mod serial;
 pub mod sprite;
 pub mod text;
+pub mod tiling;
 pub mod wav;
 
 use std::path::PathBuf;
