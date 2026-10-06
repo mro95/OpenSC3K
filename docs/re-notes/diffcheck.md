@@ -14,6 +14,7 @@ tools/diffcheck/run.py rng --seeds 50         # only cRZRandom
 tools/diffcheck/run.py dirt --sizes 128       # only the terrain generator
 tools/diffcheck/run.py qfs                    # only QFS decompression (SIMBABLD.DLL)
 tools/diffcheck/run.py ground                 # only saved terrains and their vertex light
+tools/diffcheck/run.py ui                     # only the main UI layout (SIMUI.DLL)
 tools/diffcheck/run.py coverage               # the per-binary table; needs no install
 tools/diffcheck/run.py all --apps /path/to/Apps   # DLLs from somewhere else
 tools/diffcheck/run.py all --report docs/accuracy.md --image docs/screenshots/accuracy.png
@@ -109,6 +110,28 @@ tools/diffcheck/selftest.py                   # tests the checker itself, no gam
   - whether the original read the whole record.
 - Windows slot numbers of the interfaces are in `docs/formats/save.md`.
 
+### `ui`: the main UI layout (`SIMUI.DLL`)
+- Three functions from `docs/ui/main-ui.md`, on one emulator. Fakes are made once and their
+  answers set per query, since the fake-method region holds about 128 objects.
+  - **`cSC3MainUIMgr::place_windows`** (0x100148D1):
+    - **Fakes:** a main window that reports its area and finds its four children by ID, and
+      four child windows that report their size and record the `Move` and `SetArea` calls.
+      The window manager it asks first is a fake put in its cached global (0x100BFABC).
+    - **Inputs:** 11 screen sizes, from 640x480 to 2560x1440, with the port's window sizes
+      for each. Each size runs with all four windows, then with each one missing.
+  - **`cSC3WinMenuBtnMain::get_menu_btn_info_main`** (0x1004C3E9): button IDs 0x1000..0x100A
+    at 14 screen heights, including 479, 599 and 601. The fake button reports its ID and a
+    parent with the height.
+    - **Compared:** the area, the hover image and its group, the hover-while-open image, the
+      submenu image, its group and its offset.
+    - **Ignored:** the offset of a button without a submenu image, since it is never used.
+  - **`cSC3WinDateCashTitle::get_layout_info`** (0x100270E5): the art group for 16 screen
+    widths. The text field positions are not compared yet, since the port does not use them.
+- `sc3k-dump diffref ui` answers the same queries from `sc3k_ui::main_ui`. A query matches
+  when both answers are equal, including both refusing.
+- Window slots are in `targets.py` (`ui`). Windows `cIGZWin` slots are the Loki ones minus 8
+  from 0x80 on.
+
 ### `coverage`: every binary
 - **Functions**: the `func` rows of `tools/ghidra/exports/<binary>.tsv` plus the vtable-only
   functions in `tools/match/names`, without the `Unwind@` / `Catch@` funclets.
@@ -145,7 +168,13 @@ tools/diffcheck/selftest.py                   # tests the checker itself, no gam
 - The vertex light, once the port used the float π and the original's float rounding
   (`docs/render/terrain.md`).
 
+## Confirmed by the `ui` check
+- The window placement, the main button table and the bar's art group in
+  `docs/ui/main-ui.md`, at every screen size tried.
+
 ## Not checked yet
+- `cSC3WinMenuPanelMain::SetArea` and `Init`, the panel's pieces and their placement: their
+  Windows addresses are not located. Also the `MenuItem.INI` parsers.
 - The compressed segment reader (`sc3k_formats::segment`). Its Windows code is in
   `GZResourceD.dll` but not located function by function; the `ground` check starts from the
   record bytes the port extracts.
@@ -170,4 +199,4 @@ look-alike with a QFS decoder written from `docs/formats/qfs.md`. The correct bu
 the port on every call and stream. A build with deliberate bugs in `GaussianFast` and in the
 `C0–DF` offset must be caught. The self-test also covers the import stubs, x87 results, `fs:`,
 the trace hooks, the coverage table, the report and the image.
-`Emu.fake_object` and the `ground` check are not covered by the self-test yet.
+`Emu.fake_object`, the `ground` check and the `ui` check are not covered by the self-test yet.

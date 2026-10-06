@@ -14,6 +14,7 @@ use sc3k_sim::flora::{self, Flora};
 use sc3k_sim::load;
 use std::collections::HashMap;
 use sc3k_ui::main_menu::{Choice, MainMenu};
+use sc3k_ui::main_ui::{Action, MainUi};
 use sc3k_ui::controls::Key;
 use sc3k_ui::new_city::{NewCity, Outcome, Settings};
 use sc3k_ui::title::{Splash, TitleBackground};
@@ -80,6 +81,8 @@ pub struct Game {
     flora_sprites: HashMap<u32, FloraSprites>,
     /// The trees of the city view: its flora set and one entry per cell.
     trees: Option<(u32, CellMap<Option<Flora>>)>,
+    /// The city view's menu panel, navigator, RCI meter and date bar.
+    main_ui: MainUi,
     /// Zoom and rotation of new city views.
     zoom: u32,
     rotation: u32,
@@ -112,6 +115,7 @@ impl Game {
             view: None,
             flora_sprites: flora_draw::load_all(assets)?,
             trees: None,
+            main_ui: MainUi::load(assets, width, height).map_err(e)?,
             zoom: MAX_ZOOM,
             rotation: 0,
             scroll_keys: Scroll::default(),
@@ -232,8 +236,24 @@ impl Game {
             Event::Wheel(n) if n < 0 => camera.zoom_out(t),
             Event::Text(',' | '<') => camera.rotate_ccw(t),
             Event::Text('.' | '>') => camera.rotate_cw(t),
-            Event::MouseMove(x, y) => self.scroll_edge = Scroll::from_edge(x, y, w, h),
-            Event::MouseLeft => self.scroll_edge = Scroll::default(),
+            // The screen edges scroll over the interface too: at 800x600 the panel and the
+            // navigator cover the whole right edge.
+            Event::MouseMove(x, y) => {
+                self.main_ui.mouse_move(x, y);
+                self.scroll_edge = Scroll::from_edge(x, y, w, h);
+            }
+            Event::MouseLeft => {
+                self.main_ui.mouse_left();
+                self.scroll_edge = Scroll::default();
+            }
+            Event::MouseDown(x, y) => {
+                self.main_ui.mouse_down(x, y);
+            }
+            Event::MouseUp(x, y) => {
+                if let Some(Action::Item(item)) = self.main_ui.mouse_up(x, y) {
+                    eprintln!("menu item {item:08X} is not implemented yet");
+                }
+            }
             _ => {}
         }
     }
@@ -242,6 +262,7 @@ impl Game {
         self.city = None;
         self.view = None;
         self.trees = None;
+        self.main_ui.reset();
         self.scroll_keys = Scroll::default();
         self.scroll_edge = Scroll::default();
         self.show_menu();
@@ -305,6 +326,7 @@ impl Game {
                     }
                     None => self.screen.fill(0),
                 }
+                self.main_ui.draw(&mut self.screen);
             }
         }
     }

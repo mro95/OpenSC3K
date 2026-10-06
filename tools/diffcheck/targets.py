@@ -29,6 +29,8 @@ class Target:
     qfs: dict = field(default_factory=dict)
     # cSC3DirtBag: loading a saved terrain, object layout and the fakes' vtable slots.
     dirt_bag: dict = field(default_factory=dict)
+    # The main UI's layout functions and the window slots their fakes answer.
+    ui: dict = field(default_factory=dict)
     # Checks that run against this DLL (run.py subcommands).
     checks: tuple = ()
 
@@ -121,4 +123,32 @@ SIMBABLD = Target(
     },
 )
 
-TARGETS = [SIMDIRT, SIMBABLD]
+# The main UI's layout (docs/ui/main-ui.md). Windows cIGZWin slots are the Loki ones minus 8
+# from 0x80 on (GetChildWindowFromID 0x78, GetArea 0xAC, ...).
+SIMUI = Target(
+    dll="SIMUI.DLL",
+    checks=("ui",),
+    ui={
+        "place_windows": 0x100148D1,            # cSC3MainUIMgr::place_windows
+        "get_menu_btn_info_main": 0x1004C3E9,   # cSC3WinMenuBtnMain
+        "get_layout_info": 0x100270E5,          # cSC3WinDateCashTitle
+        "wm_global": 0x100BFABC,                # cached cRZWinManager, read by 0x10085091
+        "wm_is_window": 0x2C,                   # IsWindowValid(cIGZWin*)
+        "mgr_root": 0x1C,                       # cSC3MainUIMgr: the main window
+        "get_area": 0xAC,                       # cIGZWin slots
+        "get_child": 0x78,
+        "win_width": 0x90,
+        "win_height": 0x94,
+        "btn_parent": 0x20,                     # GetParentWin
+        "btn_id": 0xE8,                         # GetID
+        "dct_parent": 0x10,                     # get_layout_info's way up to the screen
+        "dct_parent_up": 0x0C,
+        "id_panel": 0x42FB7DEC,
+        "id_nav": 0x42FB7DED,
+        "id_rci": 0x42FB7DEA,
+        "id_bar": 0x42FB7DEB,
+    },
+)
+
+
+TARGETS = [SIMDIRT, SIMBABLD, SIMUI]

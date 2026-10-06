@@ -29,6 +29,7 @@ usage:
   sc3k-dump diffref rng <script.txt> <out.txt>
   sc3k-dump diffref dirt <seed> <size> <difficulty> <hills> <water> <trees> <flags> <out.bin>
   sc3k-dump diffref qfs <dir>
+  sc3k-dump diffref ui <script.txt> <out.txt>
   sc3k-dump diffref ground <file.sct|file.sc3> <outdir>
   sc3k-dump diffref qfs-samples <root> <outdir> <limit>
                                      reference output of the port for tools/diffcheck";
@@ -56,6 +57,7 @@ fn main() -> ExitCode {
             diffref_dirt([seed, size, difficulty, hills, water, trees, flags], Path::new(out))
         }
         ["diffref", "qfs", dir] => diffref_qfs(Path::new(dir)),
+        ["diffref", "ui", script, out] => diffref_ui(Path::new(script), Path::new(out)),
         ["diffref", "ground", file, outdir] => diffref_ground(Path::new(file), Path::new(outdir)),
         ["diffref", "qfs-samples", root, out, limit] => {
             diffref_qfs_samples(Path::new(root), Path::new(out), limit)
@@ -341,6 +343,54 @@ fn diffref_rng(script: &Path, out: &Path) -> Result<(), String> {
             Some(op) => return Err(format!("line {}: unknown call {op}", n + 1)),
         };
         lines.push(format!("{result:x}\n"));
+    }
+    std::fs::write(out, lines.concat()).map_err(|e| format!("{}: {e}", out.display()))
+}
+
+/// The port's main UI layout for `tools/diffcheck/run.py ui`. Each script line is a query,
+/// answered by one output line, all numbers decimal:
+/// - `place W H` and (w h) of the panel, navigator, RCI meter and bar, `0 0` for a missing
+///   one: `place_windows`'s areas as `x y w h` per window in that order, `- - - -` if none;
+/// - `button ID H`: `get_menu_btn_info_main` for a screen `H` high, as `x y w h
+///   hover_group hover hover_open submenu_group submenu_image submenu_x submenu_y` (0 where
+///   absent), or `none`;
+/// - `bar W`: `get_layout_info`'s art group for a screen `W` wide, or `none`.
+fn diffref_ui(script: &Path, out: &Path) -> Result<(), String> {
+    use sc3k_ui::main_ui::{bar_group, main_button_info, place_windows, Sizes, GROUP_800};
+    use sc3k_ui::Rect;
+    let text = std::fs::read_to_string(script).map_err(|e| format!("{}: {e}", script.display()))?;
+    let mut lines = Vec::new();
+    for (n, line) in text.lines().enumerate() {
+        let words: Vec<&str> = line.split_whitespace().collect();
+        let int = |i: usize| -> Result<i32, String> {
+            let w = words.get(i).ok_or(format!("line {}: missing argument", n + 1))?;
+            w.parse().map_err(|e| format!("line {}: {w}: {e}", n + 1))
+        };
+        let size = |i: usize| -> Result<Option<(i32, i32)>, String> {
+            let (w, h) = (int(i)?, int(i + 1)?);
+            Ok(((w, h) != (0, 0)).then_some((w, h)))
+        };
+        let answer = match words.first().copied() {
+            None => continue,
+            Some("place") => {
+                let sizes = Sizes { panel: size(3)?, nav: size(5)?, rci: size(7)?, bar: size(9)? };
+                let l = place_windows(Rect::new(0, 0, int(1)?, int(2)?), &sizes);
+                let rect = |r: Option<Rect>| r.map_or("- - - -".to_string(), |r| format!("{} {} {} {}", r.x, r.y, r.w, r.h));
+                [l.panel, l.nav, l.rci, l.bar].map(rect).join(" ")
+            }
+            Some("button") => match main_button_info(int(1)? as u32, int(2)?) {
+                None => "none".to_string(),
+                Some(b) => {
+                    let ((g, i), (dx, dy)) = b.submenu.unwrap_or(((0, 0), (0, 0)));
+                    let a = b.area;
+                    let open = b.hover_open.unwrap_or(0);
+                    format!("{} {} {} {} {GROUP_800} {} {open} {g} {i} {dx} {dy}", a.x, a.y, a.w, a.h, b.hover)
+                }
+            },
+            Some("bar") => bar_group(int(1)?).map_or("none".to_string(), |g| g.to_string()),
+            Some(q) => return Err(format!("line {}: unknown query {q}", n + 1)),
+        };
+        lines.push(answer + "\n");
     }
     std::fs::write(out, lines.concat()).map_err(|e| format!("{}: {e}", out.display()))
 }

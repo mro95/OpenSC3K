@@ -2,6 +2,8 @@
 
 pub mod controls;
 pub mod main_menu;
+pub mod main_ui;
+pub mod menu;
 pub mod new_city;
 pub mod surface;
 pub mod text;

@@ -64,8 +64,14 @@ tools/diffcheck/run.py all --report docs/accuracy.md --image docs/screenshots/ac
 - **Saved terrains:** `--load` opens a `.sct` terrain or the ground of a `.sc3` city, with its
   trees. The terrain reader and the vertex light match the original `SIMDIRT.DLL` on every file
   in the install (`tools/diffcheck/run.py ground`).
+- **Main city interface (first part):**
+  - The menu panel, navigator, RCI meter and date bar are laid out and drawn from the
+    original art, at 640x480, 800x600, 1024x768 and larger.
+  - The main buttons light up on hover and open their submenu panels.
+  - Menus are read from `MenuItem.INI`.
+  - The layout matches the original `SIMUI.DLL` (`tools/diffcheck/run.py ui`).
 
-Not yet: buildings, zoning, the simulation tick, the rest of a save, and saving.
+Not yet: the submenu buttons and tools, buildings, zoning, the simulation tick, the rest of a save, and saving.
 
 ## Setup
 
@@ -115,7 +121,7 @@ analyzeHeadless ghidra-project SC3U -process SC3U.exe -readOnly -noanalysis \
 |---|---|
 | `crates/sc3k-formats` | Parsers for original file formats |
 | `crates/sc3k-assets` | Mounts the install; resources by (type, id), strings, fonts |
-| `crates/sc3k-ui` | Software-drawn UI like the original GZ windows: title screens, main menu, New City dialog |
+| `crates/sc3k-ui` | Software-drawn UI like the original GZ windows: title screens, main menu, New City dialog, the city interface |
 | `crates/sc3k-sim` | Deterministic simulation: the `cRZRandom` RNG, cell maps, the new-city model, the terrain generator, trees and saved layers |
 | `crates/sc3k-render` | Software isometric city view: land, water, shore and edge clods, palettes, vertex light |
 | `crates/opensc3k` | The game binary (winit + softbuffer window) |
@@ -143,5 +149,5 @@ not affiliated with or endorsed by EA or Maxis.
 1. File formats: IXF ✔, QFS ✔, UI images ✔, strings ✔, fonts ✔, sprites ✔, SYS.PAK ✔, TGI type registry, attribute tables, terrain ✔, saves (container ✔, ground ✔, the rest), audio, tiling rules
 2. Asset DB ✔ and isometric renderer (terrain ✔, camera ✔, background ✔), flora sprites ✔, building sprites, a static `.sc3` city viewer
 3. Simulation: RNG ✔, terrain generator ✔, new-city model ✔, networks, zoning/growth, utilities, RCI/economy, traffic, services, advisors, disasters
-4. UI (copyright splash ✔, main menu ✔, New City dialog ✔), audio (menu music ✔), game loop, save compatibility
+4. UI (copyright splash ✔, main menu ✔, New City dialog ✔, city interface layout ✔, submenus, tools), audio (menu music ✔), game loop, save compatibility
 5. Scenarios, Building Architect, localisation, mods
