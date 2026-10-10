@@ -11,11 +11,11 @@ Accuracy = match rate of the binary's checks × checked functions / all its
 functions. A binary nothing has been ported from yet is at 0%. Exempt: ported
 functions whose doc comment gives a reason no check runs them (`Unchecked:`).
 
-All binaries: 133 of 46771 functions ported, 79 checked, 54 exempt.
+All binaries: 151 of 46771 functions ported, 102 checked, 49 exempt.
 
 | Binary | Functions | Ported | Checked | Exempt | Checked code matches | Accuracy | Status |
 |---|---:|---:|---:|---:|---:|---:|---|
-| SIMDIRT.DLL | 750 | 83 | 73 | 10 | 100.00% | 9.73% | checked |
+| SIMDIRT.DLL | 750 | 101 | 96 | 5 | 100.00% | 12.80% | checked |
 | SIMBABLD.DLL | 2347 | 2 | 2 | 0 | 100.00% | 0.09% | checked |
 | SIMNTWRK.DLL | 1181 | 5 | 1 | 4 | 100.00% | 0.08% | checked |
 | SIMUI.DLL | 4098 | 8 | 3 | 5 | 100.00% | 0.07% | checked |
@@ -102,6 +102,7 @@ All binaries: 133 of 46771 functions ported, 79 checked, 54 exempt.
 | Saved terrain | Dirt bag query IsRealWater | 100.00% | 525312 calls |
 | Saved terrain | Dirt bag query CellWaterVertCount | 100.00% | 525312 calls |
 | Saved terrain | Dirt bag query AltitudeScale | 100.00% | 35 calls |
+| Saved terrain | Dirt bag query GetDirtClod | 100.00% | 295488 calls |
 | Saved terrain | Dirt bag query IsCellBlocked | 100.00% | 525661 calls |
 | Saved terrain | Terraforming CanRaiseTerrain | 100.00% | 245 operations |
 | Saved terrain | Terraforming RaiseTerrain | 100.00% | 350 operations |
@@ -110,6 +111,8 @@ All binaries: 133 of 46771 functions ported, 79 checked, 54 exempt.
 | Saved terrain | Terraforming GetOptimalLevel | 100.00% | 210 operations |
 | Saved terrain | Terraforming CanLevelTerrain | 100.00% | 735 operations |
 | Saved terrain | Terraforming LevelTerrain | 100.00% | 350 operations |
+| Saved terrain | Dirt clods (land, shore, water, edge) | 100.00% | 10572 clods |
+| Saved terrain | Dirt clod pixels | 100.00% | 111177388 pixels |
 | Saved terrain | Altitude per vertex after terraforming | 100.00% | all vertices |
 | Saved terrain | Water per vertex after terraforming | 100.00% | all vertices |
 | Saved terrain | Vertex light (calculateAndSetVertexLight) after terraforming | 100.00% | all vertices |

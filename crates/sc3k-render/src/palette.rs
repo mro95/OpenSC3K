@@ -37,6 +37,11 @@ impl ColorTable {
         ColorTable { width: bmp.width, rows }
     }
 
+    /// Entries per row: the light levels.
+    pub fn width(&self) -> u32 {
+        self.width
+    }
+
     pub fn row_count(&self) -> usize {
         self.rows.len() / self.width as usize
     }

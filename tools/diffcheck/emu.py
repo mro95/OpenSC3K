@@ -396,6 +396,10 @@ def _nothing(e):
     e.ret_int(0)
 
 
+def _first_arg(e):
+    e.ret_int(e.arg(0))
+
+
 def _interlocked(op):
     """`Interlocked*` (stdcall): the new value for Increment/Decrement, the old for Exchange."""
     def run(e):
@@ -596,6 +600,8 @@ STUBS = {
     "InterlockedDecrement": Stub(_interlocked("dec"), pops=4),
     "InterlockedExchange": Stub(_interlocked("xchg"), pops=8),
     "timeGetTime": Stub(_time),
+    # Exit handlers never run: registering one just hands it back.
+    "__dllonexit": Stub(_first_arg),
     # One thread: locks always succeed.
     "EnterCriticalSection": Stub(_nothing, pops=4),
     "LeaveCriticalSection": Stub(_nothing, pops=4),

@@ -526,6 +526,7 @@ fn diffref_dirt(args: [&&str; 7], out: &Path) -> Result<(), String> {
 fn diffref_ground(file: &Path, outdir: &Path) -> Result<(), String> {
     let mut t = write_ground(file, outdir)?;
     write_in(outdir, "queries.txt", dirt_bag_queries(&t).as_bytes())?;
+    write_in(outdir, "clods.bin", &clod_cases(&t)?)?;
     write_in(outdir, "ops.txt", terraform_ops(&mut t).as_bytes())?;
     write_maps(&t, outdir, "after.bin")
 }
@@ -639,6 +640,113 @@ fn terraform_ops(t: &mut sc3k_sim::dirt::Terrain) -> String {
     out
 }
 
+/// The dirt clods for `tools/diffcheck/run.py ground`: "SC3KCLOD", u32 version 3, the land,
+/// water, light edge and dark edge palettes (each u32 entries per row, u32 rows, then RGB565
+/// row by row), u32 case count, and per case u32 kind (land 0, shore 1, water 2, edge 3, edge
+/// of the other side 4), x, z, zoom, rotation, grid, px, py, width, height and the port's
+/// pixels, RGB565 row by row in a buffer of that size first filled with `CLOD_BACKGROUND` and
+/// clipped to it.
+fn clod_cases(t: &sc3k_sim::dirt::Terrain) -> Result<Vec<u8>, String> {
+    use sc3k_render::clod::{
+        cell_width, dirt_clod, edge_ramps, pack, Area, Buffer16, Bumps, Clod, EdgeClod, Palettes,
+    };
+    let assets = sc3k_assets::Assets::from_env("ENGLISH").map_err(|e| e.to_string())?;
+    let land_palettes = sc3k_render::palette::load_land_palettes(&assets)?;
+    let dirt = sc3k_render::palette::DirtPalettes::load(&assets)?;
+    let pal = Palettes { land: &land_palettes[&0], water: &dirt.water };
+    let light = sc3k_render::light::vertex_light(t);
+    let (land_bump, water_bump) = sc3k_render::terrain::bump_maps(0);
+    let bumps = Bumps { land: &land_bump, water: &water_bump };
+    let mut b = b"SC3KCLOD".to_vec();
+    let u32s = |b: &mut Vec<u8>, v: &[u32]| v.iter().for_each(|v| b.extend(v.to_le_bytes()));
+    let corners = |x: u32, z: u32| [(x, z), (x + 1, z), (x, z + 1), (x + 1, z + 1)];
+    // A buffer filled with the background, and the clip to it.
+    let blank = |w: i32, h: i32| {
+        let pixels = vec![CLOD_BACKGROUND; (w * h) as usize];
+        (Buffer16 { width: w, height: h, pixels }, Some(Area { x1: 0, y1: 0, x2: w, y2: h }))
+    };
+    u32s(&mut b, &[3]);
+    for table in [pal.land, pal.water, &dirt.edge_light, &dirt.edge_dark] {
+        u32s(&mut b, &[table.width(), table.row_count() as u32]);
+        for row in 0..table.row_count() {
+            for light in 0..table.width() as usize {
+                let [r, g, bl] = table.get(row, light);
+                b.extend(pack(r as u32, g as u32, bl as u32).to_le_bytes());
+            }
+        }
+    }
+    // Per zoom and rotation and kind, one cell for each spread of its corner altitudes (0, 1,
+    // 2, 3 and more) and the first folded one, from cells spread over the map; every other
+    // one with the grid. Different types, from flat to steep.
+    let mut cases = Vec::new();
+    for zoom in 0..5 {
+        for rot in 0..4 {
+            let mut taken = [[false; 5]; 3];
+            for k in 0..t.size * t.size {
+                let x = (k * 37 + zoom * 11 + rot * 5) % t.size;
+                let z = (k * 53 + zoom * 7 + rot * 3) % t.size;
+                let kind = dirt_clod(t, x, z, false).0;
+                let clod = Clod::new(t, kind, x, z, zoom, rot);
+                if clod.ty == 0 {
+                    continue;
+                }
+                let alts = corners(x, z).map(|(x, z)| t.altitude.get(x, z));
+                let (hi, lo) = (alts.iter().max().unwrap(), alts.iter().min().unwrap());
+                let spread = (hi - lo).min(3) as usize;
+                let slot = &mut taken[kind as usize][if clod.ty > 27 { 4 } else { spread }];
+                if *slot {
+                    continue;
+                }
+                *slot = true;
+                let grid = cases.len() as u32 % 2;
+                let a = clod.area_from_pt(zoom, rot, 8, 0);
+                let (px, py) = (8, 8 - a.y1);
+                let (w, h) = (cell_width(zoom) + 16, a.y2 - a.y1 + 16);
+                let (mut buf, clip) = blank(w, h);
+                let (cell, view) = ((x, z), (zoom, rot));
+                clod.draw(&mut buf, t, &light, &pal, &bumps, cell, view, (px, py), clip, grid == 1);
+                cases.push((kind as u32, x, z, zoom, rot, grid, px, py, w, h, buf.pixels));
+                if taken.iter().flatten().all(|&t| t) {
+                    break;
+                }
+            }
+        }
+    }
+    // Edges of both sides: along the far x and z borders, and the first cell with water above
+    // the dirt at a corner, so the water part draws too.
+    let n = t.size;
+    let wet = (0..n * n).map(|k| (k % n, k / n)).find(|&(x, z)| {
+        corners(x, z).iter().any(|&(x, z)| t.water.get(x, z) > t.altitude.get(x, z))
+    });
+    for zoom in 0..5 {
+        let ramps = edge_ramps(&dirt.edge_light, &dirt.edge_dark, zoom);
+        for rot in 0..4 {
+            for side in [false, true] {
+                let border = [(n - 1, (n / 2 + rot * 7) % n), ((n / 3 + zoom * 5) % n, n - 1)];
+                for (x, z) in border.into_iter().chain(wet) {
+                    let edge = EdgeClod::new(t, x, z, side, false, zoom, rot);
+                    let a = edge.area_from_pt(zoom, rot, 0, 0);
+                    let (px, py) = (8 - a.x1, 8 - a.y1);
+                    let (w, h) = (a.x2 - a.x1 + 16, a.y2 - a.y1 + 16);
+                    let (mut buf, clip) = blank(w, h);
+                    let view = (zoom, rot);
+                    edge.draw(&mut buf, t, &ramps, &water_bump, (x, z), view, (px, py), clip);
+                    cases.push((3 + side as u32, x, z, zoom, rot, 0, px, py, w, h, buf.pixels));
+                }
+            }
+        }
+    }
+    u32s(&mut b, &[cases.len() as u32]);
+    for (kind, x, z, zoom, rot, grid, px, py, w, h, pixels) in cases {
+        u32s(&mut b, &[kind, x, z, zoom, rot, grid, px as u32, py as u32, w as u32, h as u32]);
+        pixels.iter().for_each(|p| b.extend(p.to_le_bytes()));
+    }
+    Ok(b)
+}
+
+/// What the clod buffers hold before drawing: a colour no clod produces exactly by chance.
+const CLOD_BACKGROUND: u16 = 0xF81F;
+
 /// FNV-1a over the change bits as `cSC3DirtBag` +0x40 holds them: per x, the cells along z in
 /// little-endian 32-bit words.
 fn change_hash(tf: &sc3k_sim::terraform::Terraformer) -> u32 {
@@ -725,6 +833,18 @@ fn dirt_bag_queries(t: &sc3k_sim::dirt::Terrain) -> String {
         }
     }
     line("AltitudeScale", &[], bag::altitude_scale(t).to_bits());
+    // The clod kind (land 0, shore 1, water 2) times 256 plus the cell altitude.
+    for x in (0..c).step_by(8) {
+        for z in 0..c {
+            for force in [false, true] {
+                if force && z % 8 != 0 {
+                    continue;
+                }
+                let (kind, alt) = sc3k_render::clod::dirt_clod(t, x, z, force);
+                line("GetDirtClod", &[x, z, force as u32], (kind as u32) << 8 | alt as u32);
+            }
+        }
+    }
     // Every 4th column, and every blocked cell off it.
     for x in 0..c {
         for z in 0..c {

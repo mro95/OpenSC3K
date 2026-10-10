@@ -118,6 +118,7 @@ SIMDIRT = Target(
             "GetPathGranularity": (0x1000E460, "u32"),
             "AltitudeScale": (0x10006EC0, "f32"),
             "IsCellBlocked": (0x1000E4C0, "bool"),
+            "GetDirtClod": (0x10005B10, "clod"),
         },
         # cSC3DirtClodX::GenerateBumpMaps (static) and the tables it fills.
         "GenerateBumpMaps": 0x100128E1,
@@ -157,6 +158,20 @@ SIMDIRT = Target(
         "app": (0x10025CBD, 0x10025CC4),    # static app: constructed flag, pointer
         "app_city": 0x18,                   # its slot for the city (Bounds asks it)
         "notifyCellUpdate": 0x10006370,     # only posts messages; returns at once in the check
+        # Dirt clods: the factory (a static pointer), its statics and the clod vtables by kind.
+        "factory": 0x10025BAC,
+        "factory_size": 0x30,
+        "SetDirtBag": 0x10016798,
+        "clod_pool_init": 0x1001285A,       # static construction of the clods' allocator
+        "cell_sizes": (0x100252BC, 0x10025720, 0x10025B88, 0x10025B64),  # width, half, height, step
+        "clod_vtables": {0x1002098C: 0, 0x10020A7C: 1, 0x10020A08: 2, 0x10020B64: 3},
+        "GetDirtClodEdge": 0x10005D80,      # dirt bag slot 0x74 (x, z, side, dry, &clod, &alt)
+        "edge_ramps_zoom": 0x10024780,      # the zoom the static edge ramps were built for
+        "clod_draw": 0x40,                  # cSC3DirtClodX::Draw(buffer, x, y, zoom, rot, clip)
+        "land_palette": 4,
+        "clod_palettes": (4, 6, 7, 8),      # landscape, water, light and dark edge
+        "city_pollution": 0x16C,            # cISC3City slot: the layer water clods ask
+        "polluted": 0x68,                   # its test of a cell; false in the check
     },
 )
 

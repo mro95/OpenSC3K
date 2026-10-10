@@ -156,7 +156,17 @@ tools/diffcheck/selftest.py                   # tests the checker itself, no gam
   - The rectangle of all but the border only estimates: an edit there has the original
     relight the whole map, which takes the check from 20 seconds to minutes. Its level to
     255 is where `GrowAndFix` gives up on the 256 maps.
-  With the queries and the operations, the `ground` check takes 22 seconds.
+- **Dirt clods:** `clods.bin` lists about 320 clods per map, drawn by the port into small
+  buffers: per zoom and rotation, land, shore and water cells of each corner spread (flat to
+  steep) and folded, every other one with the grid, and edge skirts of both sides along the
+  borders and at a wet cell. The check gives the dirt bag a clod factory (the static pointer
+  0x10025BAC) with the same palettes, the cell sizes, a colour cache, and `SetDirtBag`, which
+  makes the bump maps from a clock of 0. It runs the static construction of the clods'
+  allocator (0x1001285A). Each clod comes from `GetDirtClod` (or `GetDirtClodEdge`) and is
+  drawn with `cSC3DirtClodX::Draw` into a fake 16-bit `cIGZBuffer` whose packer and unpacker
+  are machine code (`PACK`, `UNPACK` in `ground.py`), then compared pixel by pixel.
+  `GetDirtClod`'s kind and cell altitude are also queries, every 8th column.
+  With the queries, the operations and the clods, the `ground` check takes 30 seconds.
 - **Bump maps:** `GenerateBumpMaps` (0x100128E1) runs once and fills the two 1024-byte tables
   at 0x100252D0 (land) and 0x10025740 (water), against `sc3k-dump diffref bump 0`. Its
   `cRZRandom` is seeded with the clock, and the `timeGetTime` stub returns 0.
@@ -266,6 +276,10 @@ tools/diffcheck/selftest.py                   # tests the checker itself, no gam
   light covers it.
 - Terraforming (`docs/sim/terraform.md`): the contour, the costs, the change bits and the
   water reset, including the contour giving up (261 times over the saved terrains).
+- The dirt clods (`docs/render/terrain.md`): all four kinds, pixel for pixel, at every zoom
+  and rotation, with and without the grid. Two rasterizer details came out of it: the shore
+  grid is not widened to the last row's, and the edge rasterizer adds its noise as a packed
+  16-bit value.
 
 ## Confirmed by the `ui` check
 - The window placement, the main button table and the bar's art group in
@@ -283,9 +297,9 @@ tools/diffcheck/selftest.py                   # tests the checker itself, no gam
   light stale, which the port, computing the light from the altitudes, does not model.
 - The flora layer record (`cSC3FloraLayer::Init`, SIMGEOM.DLL, not located on Windows), and
   `cSC3DirtBag::SimulationBegin` (0x10005230), which fills it.
-- The dirt clods: `GetDirtClod` (0x10005B10) and `cSC3DirtClodLand::getColor` (0x1001309E)
-  need a `cSC3DirtClodFactory` with its palettes; `Init_FromBuffer` (0x10012342) needs a
-  fake `cIGZBuffer`.
+- `Init_FromBuffer` (0x10012342), which loads the palettes: the check hands the factory the
+  port's palettes instead. Also the clods' pollution tint, the underground view and the
+  cursor clod.
 - Everything ported from Loki addresses with no Windows match (`SIMINIT`, `SIMCITY`, most of
   the render code): `run.py coverage` lists them as ported, not checked.
 

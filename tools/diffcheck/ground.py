@@ -47,6 +47,7 @@ class GroundCase:
     equal: dict = field(default_factory=dict)       # map -> fraction of equal vertices
     queries: dict = field(default_factory=dict)     # query -> [equal answers, answers]
     ops: dict = field(default_factory=dict)         # terraforming op -> [equal answers, ops]
+    clods: list = field(default_factory=lambda: [0, 0, 0, 0])  # equal clods, clods, pixels
     after: dict = field(default_factory=dict)       # map -> fraction equal after the ops
     first: str = ""
     unread: int = 0                                 # record bytes the original left unread
@@ -54,7 +55,8 @@ class GroundCase:
     def ok(self):
         return self.sea[0] == self.sea[1] and not self.unread \
             and all(v == 1.0 for v in [*self.equal.values(), *self.after.values()]) \
-            and all(e == n for e, n in [*self.queries.values(), *self.ops.values()])
+            and all(e == n for e, n in [*self.queries.values(), *self.ops.values()]) \
+            and self.clods[0] == self.clods[1]
 
 
 def read_maps(path):
@@ -87,7 +89,7 @@ def port(exe, path, outdir):
     costs, *ops = (outdir / "ops.txt").read_text().splitlines()
     costs = dict(zip((8, 9, 10), map(int, costs.split()[1:])))
     return (outdir / "record.bin").read_bytes(), read_maps(outdir / "port.bin"), queries, \
-        costs, read_calls(ops), read_maps(outdir / "after.bin")
+        costs, read_calls(ops), read_maps(outdir / "after.bin"), read_clods(outdir / "clods.bin")
 
 
 class Record:
@@ -125,12 +127,132 @@ def ask(emu, target, obj, name, args):
         out = emu.alloc(4)
         emu.call(address, args + [out], this=obj)
         return emu.u8(out)
+    if kind == "clod":
+        g = target.dirt_bag
+        out, alt = emu.alloc(4), emu.alloc(4)
+        emu.call(address, [g["land_palette"], *args, out, alt, 0], this=obj)
+        return g["clod_vtables"][emu.u32(emu.u32(out))] << 8 | emu.u8(alt)
     if kind == "f32":
         (bits,) = struct.unpack("<I", struct.pack("<f", emu.call(address, args, this=obj,
                                                                  returns="double")))
         return bits
     r = emu.call(address, args, this=obj)
     return r if kind == "u32" else r & 0xFF if kind == "u8" else int(r & 0xFF != 0)
+
+
+CLOD_BACKGROUND = 0xF81F    # what the clod buffers hold before drawing (sc3k-dump)
+
+# The 16-bit buffer's packer and unpacker as machine code, called per pixel (cdecl):
+# pack(u16 *out, r, g, b) keeps the low byte of each channel, truncated to 5, 6, 5 bits;
+# unpack(u16 p, u8 *r, u8 *g, u8 *b) widens them again, repeating the top bits
+# (`sc3k_render::clod::pack` and `unpack`).
+PACK = bytes.fromhex(
+    "8b442408" "25f8000000" "c1e008"            # eax = (r & 0xF8) << 8
+    "8b4c240c" "81e1fc000000" "c1e103" "09c8"   # | (g & 0xFC) << 3
+    "8b4c2410" "81e1f8000000" "c1e903" "09c8"   # | (b & 0xF8) >> 3
+    "8b4c2404" "668901" "c3")                   # *out = ax
+UNPACK = bytes.fromhex(
+    "8b442404" "0fb7c0"
+    "89c1" "c1e90b" "89ca" "c1e103" "c1ea02" "09d1" "8b542408" "880a"           # r
+    "89c1" "c1e905" "83e13f" "89ca" "c1e102" "c1ea04" "09d1" "8b54240c" "880a"  # g
+    "89c1" "83e11f" "89ca" "c1e103" "c1ea02" "09d1" "8b542410" "880a"           # b
+    "c3")
+
+
+CLOD_KINDS = ["land", "shore", "water", "edge", "other side's edge"]
+
+
+def read_clods(path):
+    """clods.bin: ([land, water, light edge, dark edge palette] as (width, rows, RGB565 bytes),
+    [(kind, x, z, zoom, rot, grid, px, py, w, h, port pixels)])."""
+    data = path.read_bytes()
+    if data[:8] != b"SC3KCLOD" or struct.unpack_from("<I", data, 8)[0] != 3:
+        raise ValueError("not a diffref clods file, version 3")
+    at, palettes = 12, []
+    for _ in range(4):
+        width, rows = struct.unpack_from("<2I", data, at)
+        palettes.append((width, rows, data[at + 8:at + 8 + 2 * width * rows]))
+        at += 8 + 2 * width * rows
+    (n,) = struct.unpack_from("<I", data, at)
+    at += 4
+    cases = []
+    for _ in range(n):
+        head = struct.unpack_from("<6I2i2I", data, at)
+        at += 40
+        size = 2 * head[8] * head[9]
+        cases.append((*head, data[at:at + size]))
+        at += size
+    return palettes, cases
+
+
+def factory(emu, target, obj, palettes):
+    """The dirt clod factory with the land, water and edge palettes, given the loaded dirt
+    bag (`SetDirtBag` also makes the bump maps, from a clock of 0)."""
+    g = target.dirt_bag
+    for i, at in enumerate(g["cell_sizes"]):
+        for zoom in range(5):
+            emu.w32(at + 4 * zoom, [8 << zoom, 4 << zoom, 4 << zoom, 1 << zoom][i])
+    fac = emu.alloc(g["factory_size"])
+    emu.w32(g["factory"], fac)
+    emu.write(fac + 8, b"\x01")
+    tables = emu.alloc(9 * 8)
+    emu.w32(fac + 0xC, tables)
+    for index, (width, rows, data) in zip(g["clod_palettes"], palettes):
+        row_ptrs = emu.alloc(4 * rows)
+        for r in range(rows):
+            row = emu.alloc(2 * width)
+            emu.write(row, data[2 * width * r:2 * width * (r + 1)])
+            emu.w32(row_ptrs + 4 * r, row)
+        entry = tables + 8 * index
+        emu.write(entry, b"\x01")
+        emu.write(entry + 2, struct.pack("<H", rows - 1))
+        emu.w32(entry + 4, row_ptrs)
+    emu.w32(fac + 0x2C, emu.alloc(0x20402))
+    emu.call(g["clod_pool_init"])
+    emu.w32(g["edge_ramps_zoom"], 0xFFFFFFFF)
+    emu.call(g["SetDirtBag"], [obj], this=fac)
+    return fac
+
+
+def clod_buffer(emu):
+    """A fake 16-bit `cIGZBuffer` and its state: [bits, pitch in bytes]. Its packer and
+    unpacker are machine code."""
+    code = []
+    for c in (PACK, UNPACK):
+        code.append(emu.alloc(len(c)))
+        emu.write(code[-1], c)
+    state = [0, 0]
+    buffer = emu.fake_object("cIGZBuffer", {
+        0x1A0: (0, lambda e, this: code[0]), 0x1A4: (0, lambda e, this: code[1]),
+        0x1A8: (0, lambda e, this: state[0]), 0x1AC: (0, lambda e, this: state[1])})
+    return buffer, state
+
+
+def draw_clod(emu, target, obj, fac, case, buffer):
+    """One clod drawn by the original into a buffer like the port's: its pixels."""
+    g = target.dirt_bag
+    kind, x, z, zoom, rot, grid, px, py, w, h, _ = case
+    buffer, state = buffer
+    bits = emu.alloc(2 * w * h)
+    emu.write(bits, struct.pack("<H", CLOD_BACKGROUND) * (w * h))
+    state[:] = [bits, 2 * w]
+    emu.write(fac + 9, bytes([grid]))
+    out, alt = emu.alloc(4), emu.alloc(4)
+    if kind >= 3:
+        emu.call(g["GetDirtClodEdge"], [x, z, kind - 3, 0, out, alt], this=obj)
+    else:
+        emu.call(g["queries"]["GetDirtClod"][0], [g["land_palette"], x, z, 0, out, alt, 0],
+                 this=obj)
+    clod = emu.u32(out)
+    theirs = g["clod_vtables"][emu.u32(clod)]
+    if theirs != min(kind, 3):
+        raise RuntimeError(f"cell ({x}, {z}) gives a {CLOD_KINDS[theirs]} clod, the port a "
+                           f"{CLOD_KINDS[kind]} one")
+    clip = emu.alloc(16)
+    for i, v in enumerate((0, 0, w, h)):
+        emu.w32(clip + 4 * i, v)
+    emu.call(emu.u32(emu.u32(clod) + g["clod_draw"]), [buffer, px, py, zoom, rot, clip], this=clod)
+    return emu.read(bits, 2 * w * h)
 
 
 def fnv(data):
@@ -173,9 +295,9 @@ def native(emu, obj, slot, code):
     emu.w32(emu.u32(obj) + slot, at)
 
 
-def original(emu, target, record, size, queries, costs, ops):
-    """`Init(city, segment)` on a dirt bag of `size` cells per side, then `queries`, then the
-    terraforming `ops`."""
+def original(emu, target, record, size, queries, costs, ops, clods):
+    """`Init(city, segment)` on a dirt bag of `size` cells per side, then `queries`, the
+    dirt `clods`, and the terraforming `ops`."""
     g = target.dirt_bag
     rec = Record(record)
     ok = lambda e, this: 1  # noqa: E731
@@ -217,9 +339,11 @@ def original(emu, target, record, size, queries, costs, ops):
     segment = emu.fake_object("cIGZDBSegment", {
         0x04: (0, ok), 0x08: (0, ok), 0x20: (2, open_record), 0x24: (1, ok)})
     sim = emu.fake_object("cISC3Simulator", {g["sim_value"]: (1, lambda e, this: costs[e.arg(0)])})
+    clean = emu.fake_object("pollution layer", {g["polluted"]: (2, lambda e, this: 0)})
     city = emu.fake_object("cISC3City", {
         0x04: (0, ok), 0x08: (0, ok),
-        g["city_version"]: (1, lambda e, this: 0), g["city_sim"]: (0, lambda e, this: sim)})
+        g["city_version"]: (1, lambda e, this: 0), g["city_sim"]: (0, lambda e, this: sim),
+        g["city_pollution"]: (0, lambda e, this: clean)})
     for slot in (g["city_cells_x"], g["city_cells_z"]):
         native(emu, city, slot, b"\xB8" + struct.pack("<I", size) + b"\xC3")     # mov eax; ret
 
@@ -271,12 +395,15 @@ def original(emu, target, record, size, queries, costs, ops):
         raise RuntimeError(f"Init refused the record after {rec.pos} of {len(record)} bytes")
     maps = {k: read_cellmap(emu, emu.u32(obj + g[k])) for k in MAPS}
     vx, vy, _ = maps["altitude"]
+    fac = factory(emu, target, obj, clods[0])
     answers = [ask(emu, target, obj, name, args) for name, args, _ in queries]
+    buffer = clod_buffer(emu)
+    drawn = [draw_clod(emu, target, obj, fac, case, buffer) for case in clods[1]]
     loaded = Ground(vx, vy, emu.u8(obj + g["sea"]), *(maps[k][2] for k in MAPS))
     results = [terraform(emu, target, obj, size, name, args) for name, args, _ in ops]
     maps = {k: read_cellmap(emu, emu.u32(obj + g[k])) for k in MAPS}
     after = Ground(vx, vy, loaded.sea, *(maps[k][2] for k in MAPS))
-    return loaded, len(record) - rec.pos, answers, results, after
+    return loaded, len(record) - rec.pos, answers, results, after, drawn
 
 
 def compare_maps(case, equal, want, got, when=""):
@@ -302,9 +429,28 @@ def compare_calls(case, tally, calls, answers):
             case.first = f"{name}({', '.join(map(str, args))}): original {theirs}, port {mine}"
 
 
+def compare_clods(case, clods, drawn):
+    """case.clods: equal clods, clods, equal pixels, pixels."""
+    for (kind, x, z, zoom, rot, grid, px, py, w, h, mine), theirs in zip(clods, drawn):
+        n = w * h
+        equal = sum(mine[2 * i:2 * i + 2] == theirs[2 * i:2 * i + 2] for i in range(n)) \
+            if mine != theirs else n
+        case.clods[0] += equal == n
+        case.clods[1] += 1
+        case.clods[2] += equal
+        case.clods[3] += n
+        if equal != n and not case.first:
+            i = next(i for i in range(n) if mine[2 * i:2 * i + 2] != theirs[2 * i:2 * i + 2])
+            m, t = (struct.unpack_from("<H", b, 2 * i)[0] for b in (mine, theirs))
+            case.first = (f"{CLOD_KINDS[kind]} clod ({x}, {z}) zoom {zoom} rotation {rot} "
+                          f"grid {grid}: pixel "
+                          f"({i % w}, {i // w}) original {t:#06x}, port {m:#06x}")
+
+
 def compare(case, want, got, queries, answers, ops=(), results=(), want_after=None,
-            got_after=None):
+            got_after=None, clods=(), drawn=()):
     case.sea = (want.sea, got.sea)
+    compare_clods(case, clods, drawn)
     compare_maps(case, case.equal, want, got)
     compare_calls(case, case.queries, queries, answers)
     compare_calls(case, case.ops, ops, results)
@@ -323,11 +469,12 @@ def check_ground(make_emu, target, exe, root, progress=None):
     out = []
     with tempfile.TemporaryDirectory() as d:
         def one(i):
-            record, got, queries, costs, ops, got_after = port(exe, paths[i], Path(d) / str(i))
-            want, unread, answers, results, want_after = original(
-                make_emu(), target, record, got.vx - 1, queries, costs, ops)
+            record, got, queries, costs, ops, got_after, clods = port(exe, paths[i],
+                                                                     Path(d) / str(i))
+            want, unread, answers, results, want_after, drawn = original(
+                make_emu(), target, record, got.vx - 1, queries, costs, ops, clods)
             case = compare(GroundCase(paths[i].name), want, got, queries, answers, ops,
-                           results, want_after, got_after)
+                           results, want_after, got_after, clods[1], drawn)
             case.unread = unread
             return case
 

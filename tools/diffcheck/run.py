@@ -115,6 +115,12 @@ def rows_for(rng_stats, dirt_cases, qfs_stats=None, failed=None, ground_cases=No
                     t[0], t[1] = t[0] + e, t[1] + k
             rows += [(GROUND_SECTION, f"{label} {q}", e / k, f"{k} {unit}")
                      for q, (e, k) in tally.items()]
+        clods = [sum(c.clods[k] for c in ground_cases) for k in range(4)]
+        if clods[1]:
+            rows += [(GROUND_SECTION, "Dirt clods (land, shore, water, edge)", clods[0] / clods[1],
+                      f"{clods[1]} clods"),
+                     (GROUND_SECTION, "Dirt clod pixels", clods[2] / clods[3],
+                      f"{clods[3]} pixels")]
         rows += [(GROUND_SECTION, f"{label} after terraforming",
                   sum(c.after.get(m, 0) for c in ground_cases) / n, "all vertices")
                  for m, label in GROUND_NAMES.items()]
@@ -269,6 +275,7 @@ def run_target(target, selected, path, args, exe, seeds, executed, located):
             for label, calls in (("queries", c.queries), ("ops", c.ops)):
                 rate = sum(e for e, _ in calls.values()) / sum(k for _, k in calls.values())
                 eq += f"  {label} {rate * 100:6.2f}%"
+            eq += f"  clods {c.clods[0] / max(c.clods[1], 1) * 100:6.2f}%"
             mark = "ok  " if c.ok() else "DIFF"
             print(f"[{i + 1:3}/{n}] {mark} {c.file:32} sea {c.sea[0]}/{c.sea[1]}  {eq}"
                   + (f"  {c.unread} bytes unread" if c.unread else ""))

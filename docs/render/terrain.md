@@ -134,12 +134,20 @@ The rows follow one rule:
 
 `GetW` is the cell width; for edge clods it is the half width.
 
-## Rasterizer (0x463D0)
+## Rasterizer (0x463D0, SIMDIRT.DLL 0x10013556)
 Scanline fill of each piece:
-1. The left and right chains are walked top to bottom.
-2. Per scanline, the R, G and B of the two edges are interpolated linearly (in `float`) between
-   the corner colours.
-3. Each pixel is packed with the buffer's own 16-bit packer (`cIGZBuffer` vtable `0x1A8`).
+1. The left and right chains are walked top to bottom. A chain moves to its next corner on
+   the first row at or below the current corner's end.
+2. On each chain change, `1 / height` is computed in double and kept on the x87 stack; the x
+   and colour steps are `dx · inv` and `dc · inv`, rounded to float. The edges then step by
+   float additions, one row at a time.
+3. A row spans from `round(left x)` to `round(right x)`, right excluded, if
+   `right x − left x + 1 > 0` (in double). The colour steps by `(right − left) / that` along
+   the row, again rounded to float.
+4. Rounding adds 2^52 + 2^31 as a double and keeps the low word: to nearest, ties to even.
+5. Each pixel is packed with the buffer's own 16-bit packer (Windows `cIGZBuffer` vtable
+   `0x1A0`; `0x1A4` unpacks, `0x1A8` gives the bits and `0x1AC` the pitch). The packer
+   takes the low byte of each channel.
 
 Per-pixel additions:
 - **Bump noise.** The clod passes a 1024-byte table of offsets, added to the colour bytes
@@ -147,8 +155,10 @@ Per-pixel additions:
   - The start index is `(x · 0x6B9 + y · 0x757) & 0x3FF` for cell (x, y), plus `row · 0x8F`
     for each scanline.
   - Land uses three successive entries for R, G and B. Water uses one entry for all three.
-- **Grid** (when on): a darkening of −16 (−8 at zooms 0 and 1). It applies to the first pixels
-  of the left edges and to the scanline through the top point.
+- **Grid** (when on): a darkening of −16 (−8 at zooms 0 and 1), clamped to 0..255. It applies
+  to the first `|round(left x step)| + 1` pixels of each row along the left edges (in the
+  second piece not along the edge from the top corner), widened to the last row's width, and
+  to the scanline through the top point.
 
 ### Bump maps (`GenerateBumpMaps`, 0x48814)
 Built once, from a `cRZRandom` seeded with `0xFFFFFFFF` (the clock), so they differ every run:
@@ -192,12 +202,14 @@ If a city layer (city vtable `0x174`, then `0x70`) flags cell (x − 1, y − 1)
      | `d` | Pixel |
      |---|---|
      | ≥ `0x400` | the colour plus land noise |
-     | `0x100` < `d` < `0x400` | `round((water · (0x400 − d) + colour · (d − 0x100)) / 0x300)` plus land noise |
+     | `0x100` < `d` < `0x400` | `trunc((water · (0x400 − d) + colour · (d − 0x100)) · f32(1 / 0x300))` plus land noise |
      | ≤ `0x100` | the water colour plus one water-noise byte (at the advanced index) |
 
   - The water colour is `palwater` row 0 (depth 0), hazed. It is mixed 50% with the pollution
     tint, as for water.
   - If the second threshold is not above the first, the rasterizer falls back to 0x463D0.
+  - With the grid on, the grid pixels skip the noise, and their width is the row's own, not
+    widened to the last row's as in 0x463D0.
 
 The waterline therefore runs through the cell where the blend from land colour to grey crosses
 the thresholds, with a short blend band in front of it.
@@ -317,8 +329,17 @@ Draw fills two quads:
 - The ramp is picked by `(rotation if flag 0x80 else ~rotation) & 1`. In rotation 0 the
   draw-grid row `i = size` (left front side) uses the light ramp, and the column `j = size`
   (right front side) the dark one.
-- Draw hands the quads to a third rasterizer at 0x48238. Ghidra does not mark it as a function,
-  so it is not decompiled.
+- Draw hands the quads to a third rasterizer (0x48238, SIMDIRT.DLL 0x10015F44). It walks the
+  chains like 0x463D0 but interpolates the one index:
+  - The pixel is the ramp entry at the index's low 16 bits, as stored, without unpacking.
+  - Without noise the index steps along a row in double precision (it stays on the x87
+    stack); with noise in float.
+  - Noise is one byte per pixel from the cell's start index on, through all rows and both
+    quads, without the per-row step. A non-zero byte adds the packed (8, 8, 8), 0x0841, to the
+    16-bit pixel, so channels can carry into each other.
+- The ramps are built once per zoom, into statics at 0x10024AA4 and 0x10024EA4.
+- The quads are classified by 0x10016389 (types 3–15, by how the two top and the two bottom
+  corners compare), not moved to an anchor; `GetAllSpans` (0x1001598F) places the skirt.
 
 ## Flora
 Trees are occupants, placed when the simulation begins (`docs/sim/flora.md`) and drawn with the
@@ -394,14 +415,18 @@ sprites of the chosen flora set (`docs/render/flora.md`).
 The Windows slot numbers differ from Loki's because MSVC orders overloads differently.
 
 ## In the remake
-- **Clod kinds:** `TerrainScene` draws land, water and shore clods by the corner-count rule.
-  - Each kind has its own pixel step (`Mode` in `terrain.rs`), following 0x463D0 and 0x47088
-    above.
-  - The pollution tint is left out; there are no city layers yet.
-- **Edge skirts:** drawn under the two front sides after all cells.
-  - The undecompiled rasterizer 0x48238 is modelled as the same scanline fill, interpolating
-    the ramp row instead of RGB.
-  - The soil part gets one water-noise byte per pixel.
+- **Clods:** `sc3k_render::clod` ports the land, water, shore and edge clods, their
+  classifier and type table, the three rasterizers and `GetDirtClod`.
+  `tools/diffcheck/run.py ground` draws about 320 clods of every saved terrain with the
+  original and compares every pixel; they all match.
+  - The pollution tint is left out; there are no city layers yet. The check's city reports no
+    pollution.
+  - The underground view (palette 5 and its mix) is not ported.
+  - The factory's colour cache is not kept: the colours are those of a fresh cache, as the
+    original has right after it makes a clod.
+- **Placement:** `TerrainScene` puts each clod where the sprite cell map would: at the cell's
+  left corner, at the altitude `GetDirtClod` gives the cell. Edge skirts go under the two
+  front sides, the left one with flag 0x80. The sprite cell map itself is not ported.
 - **View:** `Camera` in `camera.rs`.
   - It starts on the map's middle cell at zoom 4 and rotation 0; `--zoom` and `--rotate` change
     these.
@@ -418,13 +443,7 @@ The Windows slot numbers differ from Loki's because MSVC orders overloads differ
 - **Light:** follows "Vertex light" literally, including the open question about flat ground;
   the light values themselves match the original exactly (`run.py ground`).
 - **Bump noise:** both maps come from the terrain seed instead of the clock.
-- **Rasterizer:** a generic scanline fill of each piece:
-  - it intersects the piece's edges with each row instead of walking the original's left and
-    right chains;
-  - rows run from the top corner to the bottom corner, bottom excluded;
-  - spans run from the rounded left edge to the rounded right edge, right excluded;
-  - colours step by `(right − left) / (width + 1)`, as in the original.
-  - Pixels can differ where the original starts a chain on a horizontal edge.
 - **Output:** every pixel is reduced to RGB565, as the 16-bit back buffer would hold it.
 - **Draw order:** back to front by draw-grid diagonal, then the skirts.
-- **Not checked:** a side-by-side comparison with the original under wine.
+- **Not checked:** the placement and draw order, which the sprite cell map decides, and a
+  side-by-side comparison with the original under wine.
