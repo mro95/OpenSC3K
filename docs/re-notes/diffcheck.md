@@ -140,9 +140,23 @@ tools/diffcheck/selftest.py                   # tests the checker itself, no gam
   - `IsCellBlocked` every 4th column, and on every cell the port has blocked. The saved cities
     have up to 99 blocked cells.
   `AltitudeScale` returns ST0; the check compares its float bits.
-  Every column would take the check from 8 to over 20 seconds; with these it takes 17.
+  Every column would take the check from 8 to over 20 seconds.
   A new query is a line in `dirt_bag_queries` (`tools/sc3k-dump`) and an entry in
   `targets.py`.
+- **Terraforming:** after the queries, `ops.txt` lists raise, lower and level operations and
+  their estimates (`sc3k_sim::terraform`, `docs/sim/terraform.md`) on seven rectangles per
+  map, about 60 a map, which the check runs on the same dirt bag in the same order. Per
+  operation it compares the result, the cost, the bounds and a hash of the change bits; at
+  the end the altitude, water and light maps (`after.bin`). For this the dirt bag also gets
+  its change bits (+0x40) and an empty filter list (+0x2C), the city a fake simulator for
+  the cost values, and the static app the city (`Bounds` asks it). `notifyCellUpdate`
+  (0x10006370) only posts messages; the check patches it to return at once. The city's cell
+  counts and the change sender's `updates on` are machine code, not Python callbacks: a
+  large estimate asks them hundreds of thousands of times.
+  - The rectangle of all but the border only estimates: an edit there has the original
+    relight the whole map, which takes the check from 20 seconds to minutes. Its level to
+    255 is where `GrowAndFix` gives up on the 256 maps.
+  With the queries and the operations, the `ground` check takes 22 seconds.
 - **Bump maps:** `GenerateBumpMaps` (0x100128E1) runs once and fills the two 1024-byte tables
   at 0x100252D0 (land) and 0x10025740 (water), against `sc3k-dump diffref bump 0`. Its
   `cRZRandom` is seeded with the clock, and the `timeGetTime` stub returns 0.
@@ -250,6 +264,8 @@ tools/diffcheck/selftest.py                   # tests the checker itself, no gam
   `x + z·X`, as `docs/formats/save.md` has it.
 - Windows inlines `getVertAltForLightCalc` into `calculateAndSetVertexLight`, so the vertex
   light covers it.
+- Terraforming (`docs/sim/terraform.md`): the contour, the costs, the change bits and the
+  water reset, including the contour giving up (261 times over the saved terrains).
 
 ## Confirmed by the `ui` check
 - The window placement, the main button table and the bar's art group in
@@ -262,6 +278,9 @@ tools/diffcheck/selftest.py                   # tests the checker itself, no gam
   `GZResourceD.dll` but not located function by function; the `ground` check starts from the
   record bytes the port extracts.
 - The dirt bag queries that need the seaport map: `IsDeepWaterPresent` and `Distance`.
+- Terraforming's failure path: the estimates fail when the rectangle's edge is steeper than
+  4, which no saved terrain has. And an edit of a single vertex: the original leaves its
+  light stale, which the port, computing the light from the altitudes, does not model.
 - The flora layer record (`cSC3FloraLayer::Init`, SIMGEOM.DLL, not located on Windows), and
   `cSC3DirtBag::SimulationBegin` (0x10005230), which fills it.
 - The dirt clods: `GetDirtClod` (0x10005B10) and `cSC3DirtClodLand::getColor` (0x1001309E)

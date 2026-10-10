@@ -520,21 +520,40 @@ fn diffref_dirt(args: [&&str; 7], out: &Path) -> Result<(), String> {
 /// then the altitude, water and vertex light maps, one byte per vertex, column by column
 /// (`x * Y + y`). `<outdir>/queries.txt` holds the port's answers to the dirt bag's queries
 /// (`sc3k_sim::dirt_bag`), one `Name arg... = answer` per line, in decimal. The vertex and
-/// cell queries cover every 16th column, the water ones every 4th.
+/// cell queries cover every 16th column, the water ones every 4th. `<outdir>/ops.txt` lists
+/// terraforming operations and the port's answers (`terraform_ops`), and `<outdir>/after.bin`
+/// the maps after them, as port.bin.
 fn diffref_ground(file: &Path, outdir: &Path) -> Result<(), String> {
+    let mut t = write_ground(file, outdir)?;
+    write_in(outdir, "queries.txt", dirt_bag_queries(&t).as_bytes())?;
+    write_in(outdir, "ops.txt", terraform_ops(&mut t).as_bytes())?;
+    write_maps(&t, outdir, "after.bin")
+}
+
+/// The saved terrain's dirt bag record and the map as `tools/diffcheck/run.py ground` reads
+/// them back: record.bin, and port.bin with the altitude, water and light per vertex.
+fn write_ground(file: &Path, outdir: &Path) -> Result<sc3k_sim::dirt::Terrain, String> {
     use sc3k_sim::load::{read_dirt_bag, KEY_DIRT_BAG};
     let at = |e: &dyn std::fmt::Display| format!("{}: {e}", file.display());
     let archive = Archive::open(file).map_err(|e| at(&e))?;
     let seg = sc3k_formats::segment::Segment::open(&archive).map_err(|e| at(&e))?;
     let record = seg.get(KEY_DIRT_BAG).ok_or_else(|| at(&"no dirt bag record"))?;
     std::fs::create_dir_all(outdir).map_err(|e| format!("{}: {e}", outdir.display()))?;
-    let write = |name: &str, b: &[u8]| {
-        let p = outdir.join(name);
-        std::fs::write(&p, b).map_err(|e| format!("{}: {e}", p.display()))
-    };
-    write("record.bin", record)?;
+    write_in(outdir, "record.bin", record)?;
     let t = read_dirt_bag(record).map_err(|e| at(&e))?;
-    let light = sc3k_render::light::vertex_light(&t);
+    write_maps(&t, outdir, "port.bin")?;
+    Ok(t)
+}
+
+fn write_in(outdir: &Path, name: &str, b: &[u8]) -> Result<(), String> {
+    let p = outdir.join(name);
+    std::fs::write(&p, b).map_err(|e| format!("{}: {e}", p.display()))
+}
+
+/// "SC3KGREF", u32 version 3, vertices x and z, the sea level, then the altitude, water and
+/// light maps one column per x.
+fn write_maps(t: &sc3k_sim::dirt::Terrain, outdir: &Path, name: &str) -> Result<(), String> {
+    let light = sc3k_render::light::vertex_light(t);
     let v = t.vertices();
     let mut b = b"SC3KGREF".to_vec();
     for n in [3, v, v, t.sea_level as u32] {
@@ -544,8 +563,98 @@ fn diffref_ground(file: &Path, outdir: &Path) -> Result<(), String> {
     b.extend(cells().map(|(x, y)| t.altitude.get(x, y)));
     b.extend(cells().map(|(x, y)| t.water.get(x, y)));
     b.extend(cells().map(|(x, y)| light.get(x, y)));
-    write("port.bin", &b)?;
-    write("queries.txt", dirt_bag_queries(&t).as_bytes())
+    write_in(outdir, name, &b)
+}
+
+/// The lines of `ops.txt` for [`diffref_ground`], terraforming `t` as it goes: a
+/// `Costs level raise lower` line, then one operation per line,
+/// `Name x1 z1 x2 z2 [level] = answer...`. The answer is ok, the cost, the bounds (u32::MAX
+/// each when none) and FNV-1a of the change bits as the original stores them (one row of
+/// words per x); for `GetOptimalLevel` the level comes first.
+fn terraform_ops(t: &mut sc3k_sim::dirt::Terrain) -> String {
+    use sc3k_sim::terraform::{Bounds, Costs, Outcome, Terraformer};
+    let costs = Costs { level: 37, raise: 101, lower: 59 };
+    let mut tf = Terraformer::new(t.size);
+    let mut out = format!("Costs {} {} {}\n", costs.level, costs.raise, costs.lower);
+    let c = t.size;
+    // Small, middle, against both far edges and in the corner at 0, edited. Then estimates
+    // only: a single vertex, which has no edge and no contour (an edit there leaves its light
+    // stale in the original: it relights around the empty contour's bounds at 0, 0), and all
+    // but the border, where levelling to 255 outgrows the contour on the largest maps (each
+    // edit there has the original relight the whole map: minutes more for the check).
+    let rects = [
+        ([c / 4, c / 4, c / 4 + 1, c / 4 + 1], true),
+        ([c / 2 - 4, c / 2 - 3, c / 2 + 5, c / 2 + 3], true),
+        ([0, 0, 3, 2], true),
+        ([c - 3, c - 5, c, c], true),
+        ([c / 8, 3 * c / 4, c / 8 + 12, 3 * c / 4 + 6], true),
+        ([c / 3, c / 3, c / 3, c / 3], false),
+        ([4, 4, c - 4, c - 4], false),
+    ];
+    let sea = t.sea_level;
+    for (r, edit) in rects {
+        let b = Bounds { x1: r[0], z1: r[1], x2: r[2], z2: r[3] };
+        let mut line = |name: &str,
+                        level: Option<u8>,
+                        o: Outcome,
+                        tf: &Terraformer,
+                        first: &[u32]| {
+            let words = |v: &[u32]| v.iter().map(|a| format!(" {a}")).collect::<String>();
+            let mut args = r.to_vec();
+            args.extend(level.map(|l| l as u32));
+            let mut answer = first.to_vec();
+            answer.extend([o.ok as u32, o.cost]);
+            answer.extend(o.bounds.map_or([u32::MAX; 4], |b| [b.x1, b.z1, b.x2, b.z2]));
+            answer.push(change_hash(tf));
+            out += &format!("{name}{} ={}\n", words(&args), words(&answer));
+        };
+        let o = tf.can_raise(t, b, costs);
+        line("CanRaiseTerrain", None, o, &tf, &[]);
+        if edit {
+            for _ in 0..2 {
+                let o = tf.raise(t, b, costs);
+                line("RaiseTerrain", None, o, &tf, &[]);
+            }
+        }
+        let o = tf.can_lower(t, b, costs);
+        line("CanLowerTerrain", None, o, &tf, &[]);
+        if edit {
+            let o = tf.lower(t, b, costs);
+            line("LowerTerrain", None, o, &tf, &[]);
+        }
+        if let Some((level, o)) = tf.optimal_level(t, b, costs) {
+            line("GetOptimalLevel", None, o, &tf, &[level as u32]);
+        }
+        for level in [sea.saturating_add(24), 0xFF, 0] {
+            let o = tf.can_level(t, b, level, costs);
+            line("CanLevelTerrain", Some(level), o, &tf, &[]);
+        }
+        if edit {
+            for level in [sea.saturating_add(24), sea.saturating_sub(6)] {
+                let o = tf.level(t, b, level, costs);
+                line("LevelTerrain", Some(level), o, &tf, &[]);
+            }
+        }
+    }
+    out
+}
+
+/// FNV-1a over the change bits as `cSC3DirtBag` +0x40 holds them: per x, the cells along z in
+/// little-endian 32-bit words.
+fn change_hash(tf: &sc3k_sim::terraform::Terraformer) -> u32 {
+    let (w, h) = (tf.changed.width(), tf.changed.height());
+    let mut hash = 0x811C_9DC5u32;
+    for x in 0..w {
+        for word in 0..h.div_ceil(32) {
+            let bits = (0..32)
+                .filter(|b| word * 32 + b < h && tf.changed.get(x, word * 32 + b))
+                .fold(0u32, |acc, b| acc | 1 << b);
+            for byte in bits.to_le_bytes() {
+                hash = (hash ^ byte as u32).wrapping_mul(0x0100_0193);
+            }
+        }
+    }
+    hash
 }
 
 /// The lines of `queries.txt` for [`diffref_ground`].

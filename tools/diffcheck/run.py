@@ -106,13 +106,18 @@ def rows_for(rng_stats, dirt_cases, qfs_stats=None, failed=None, ground_cases=No
         ]
         rows += [(GROUND_SECTION, label, sum(c.equal[m] for c in ground_cases) / n,
                   "all vertices") for m, label in GROUND_NAMES.items()]
-        tally = {}
-        for c in ground_cases:
-            for q, (e, k) in c.queries.items():
-                t = tally.setdefault(q, [0, 0])
-                t[0], t[1] = t[0] + e, t[1] + k
-        rows += [(GROUND_SECTION, f"Dirt bag query {q}", e / k, f"{k} calls")
-                 for q, (e, k) in tally.items()]
+        for kind, label, unit in [("queries", "Dirt bag query", "calls"),
+                                  ("ops", "Terraforming", "operations")]:
+            tally = {}
+            for c in ground_cases:
+                for q, (e, k) in getattr(c, kind).items():
+                    t = tally.setdefault(q, [0, 0])
+                    t[0], t[1] = t[0] + e, t[1] + k
+            rows += [(GROUND_SECTION, f"{label} {q}", e / k, f"{k} {unit}")
+                     for q, (e, k) in tally.items()]
+        rows += [(GROUND_SECTION, f"{label} after terraforming",
+                  sum(c.after.get(m, 0) for c in ground_cases) / n, "all vertices")
+                 for m, label in GROUND_NAMES.items()]
     if bump:
         rows += [(GROUND_SECTION, BUMP_NAMES[m], bump.equal[m], "1024 bytes")
                  for m in BUMP_NAMES]
@@ -193,13 +198,14 @@ def report(path, rows, rng_stats, dirt_cases, footer, dll_rows=None, qfs_stats=N
     bad = [c for c in ground_cases or [] if not c.ok()]
     if bad:
         out += ["", f"## Saved terrains that differ ({len(bad)} of {len(ground_cases)})", "",
-                "| File | Sea level | Altitude | Water | Light | Queries | Bytes unread "
-                "| First difference |",
-                "|---|---|---:|---:|---:|---:|---:|---|"]
+                "| File | Sea level | Altitude | Water | Light | Queries | Terraforming "
+                "| Bytes unread | First difference |",
+                "|---|---|---:|---:|---:|---:|---:|---:|---|"]
         for c in bad:
             eq = " | ".join(f"{c.equal[m] * 100:.2f}%" for m in GROUND_NAMES)
-            asked = sum(k for _, k in c.queries.values())
-            eq += f" | {sum(e for e, _ in c.queries.values()) / asked * 100:.2f}%"
+            for calls in (c.queries, c.ops):
+                rate = sum(e for e, _ in calls.values()) / sum(k for _, k in calls.values())
+                eq += f" | {rate * 100:.2f}%"
             out.append(f"| {c.file} | {c.sea[0]} / {c.sea[1]} | {eq} | {c.unread} | {c.first} |")
     Path(path).write_text("\n".join(out) + "\n")
 
@@ -260,8 +266,9 @@ def run_target(target, selected, path, args, exe, seeds, executed, located):
 
         def progress(i, n, c):
             eq = " ".join(f"{m} {c.equal[m] * 100:6.2f}%" for m in ground.MAPS)
-            asked = sum(k for _, k in c.queries.values())
-            eq += f"  queries {sum(e for e, _ in c.queries.values()) / asked * 100:6.2f}%"
+            for label, calls in (("queries", c.queries), ("ops", c.ops)):
+                rate = sum(e for e, _ in calls.values()) / sum(k for _, k in calls.values())
+                eq += f"  {label} {rate * 100:6.2f}%"
             mark = "ok  " if c.ok() else "DIFF"
             print(f"[{i + 1:3}/{n}] {mark} {c.file:32} sea {c.sea[0]}/{c.sea[1]}  {eq}"
                   + (f"  {c.unread} bytes unread" if c.unread else ""))

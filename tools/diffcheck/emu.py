@@ -596,5 +596,8 @@ STUBS = {
     "InterlockedDecrement": Stub(_interlocked("dec"), pops=4),
     "InterlockedExchange": Stub(_interlocked("xchg"), pops=8),
     "timeGetTime": Stub(_time),
+    # One thread: locks always succeed.
+    "EnterCriticalSection": Stub(_nothing, pops=4),
+    "LeaveCriticalSection": Stub(_nothing, pops=4),
     "GetTickCount": Stub(_time),
 }

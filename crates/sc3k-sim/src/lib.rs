@@ -8,4 +8,5 @@ pub mod dirt_bag;
 pub mod flora;
 pub mod load;
 pub mod rng;
+pub mod terraform;
 pub mod transit;

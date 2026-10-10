@@ -139,6 +139,24 @@ SIMDIRT = Target(
         "city_cells_x": 0xCC,               # cISC3City slots
         "city_cells_z": 0xD0,
         "city_version": 0x260,
+        # Terraforming: the operations diffref ground lists in ops.txt, and what they need.
+        "terraform": {
+            "CanRaiseTerrain": 0x10009CD0,
+            "CanLowerTerrain": 0x1000A210,
+            "CanLevelTerrain": 0x1000A750,
+            "GetOptimalLevel": 0x1000AC50,
+            "RaiseTerrain": 0x1000BC90,
+            "LowerTerrain": 0x1000C130,
+            "LevelTerrain": 0x1000C5D0,
+        },
+        "changes": 0x40,                    # change bits: vtable, X, Z, words per x, rows
+        "filters": 0x2C,                    # std::list of function filters, its head node
+        "updates_on": 0x20,                 # cSC3CityChangeSender slot
+        "city_sim": 0x15C,                  # cISC3City slot: the simulator the costs come from
+        "sim_value": 0x58,                  # its GetValue(i)
+        "app": (0x10025CBD, 0x10025CC4),    # static app: constructed flag, pointer
+        "app_city": 0x18,                   # its slot for the city (Bounds asks it)
+        "notifyCellUpdate": 0x10006370,     # only posts messages; returns at once in the check
     },
 )
 

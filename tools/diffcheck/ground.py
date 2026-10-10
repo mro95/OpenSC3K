@@ -3,7 +3,9 @@ against `sc3k_sim::load::read_dirt_bag`, and the vertex light it computes at the
 (`calculateAndSetVertexLight`) against `sc3k_render::light::vertex_light`. On the loaded dirt
 bag it then asks the queries `diffref ground` lists in `queries.txt` (`sc3k_sim::dirt_bag`)
 and compares the answers. The port picks the arguments: the per-vertex and per-cell queries
-cover some columns only, since all of them would triple the check's time.
+cover some columns only, since all of them would triple the check's time. Then it runs the
+terraforming operations `ops.txt` lists (`sc3k_sim::terraform`) and compares their answers
+and the maps after them.
 
 Every `.sct` terrain and `.sc3` city under $SC3K_DATA/Cities. `sc3k-dump diffref ground`
 copies the dirt bag's record out of the file and gives the port's reading of it. The original
@@ -44,31 +46,48 @@ class GroundCase:
     sea: tuple = (0, 0)
     equal: dict = field(default_factory=dict)       # map -> fraction of equal vertices
     queries: dict = field(default_factory=dict)     # query -> [equal answers, answers]
+    ops: dict = field(default_factory=dict)         # terraforming op -> [equal answers, ops]
+    after: dict = field(default_factory=dict)       # map -> fraction equal after the ops
     first: str = ""
     unread: int = 0                                 # record bytes the original left unread
 
     def ok(self):
-        return self.sea[0] == self.sea[1] and all(v == 1.0 for v in self.equal.values()) \
-            and all(e == n for e, n in self.queries.values()) and not self.unread
+        return self.sea[0] == self.sea[1] and not self.unread \
+            and all(v == 1.0 for v in [*self.equal.values(), *self.after.values()]) \
+            and all(e == n for e, n in [*self.queries.values(), *self.ops.values()])
 
 
-def port(exe, path, outdir):
-    """(record bytes, port's Ground, port's queries as [(name, args, answer)])."""
-    subprocess.run([str(exe), "diffref", "ground", str(path), str(outdir)], check=True)
-    data = (outdir / "port.bin").read_bytes()
+def read_maps(path):
+    data = path.read_bytes()
     if data[:8] != b"SC3KGREF":
         raise ValueError("not a diffref ground file")
     version, vx, vy, sea = struct.unpack_from("<4I", data, 8)
     if version != 3:
         raise ValueError(f"diffref ground version {version}, expected 3")
     n, at = vx * vy, 24
-    maps = [data[at + i * n:at + (i + 1) * n] for i in range(3)]
-    queries = []
-    for line in (outdir / "queries.txt").read_text().splitlines():
-        call, answer = line.split(" = ")
+    return Ground(vx, vy, sea, *(data[at + i * n:at + (i + 1) * n] for i in range(3)))
+
+
+def read_calls(lines):
+    """`Name arg... = answer...` lines as [(name, [args], [answers])]."""
+    out = []
+    for line in lines:
+        call, answer = line.split(" =")
         name, *args = call.split()
-        queries.append((name, [int(a) for a in args], int(answer)))
-    return (outdir / "record.bin").read_bytes(), Ground(vx, vy, sea, *maps), queries
+        out.append((name, [int(a) for a in args], [int(a) for a in answer.split()]))
+    return out
+
+
+def port(exe, path, outdir):
+    """(record bytes, port's Ground, queries as [(name, args, answer)], the terraforming
+    costs, ops as [(name, args, answers)], Ground after the ops)."""
+    subprocess.run([str(exe), "diffref", "ground", str(path), str(outdir)], check=True)
+    queries = [(n, a, r[0]) for n, a, r in
+               read_calls((outdir / "queries.txt").read_text().splitlines())]
+    costs, *ops = (outdir / "ops.txt").read_text().splitlines()
+    costs = dict(zip((8, 9, 10), map(int, costs.split()[1:])))
+    return (outdir / "record.bin").read_bytes(), read_maps(outdir / "port.bin"), queries, \
+        costs, read_calls(ops), read_maps(outdir / "after.bin")
 
 
 class Record:
@@ -114,8 +133,49 @@ def ask(emu, target, obj, name, args):
     return r if kind == "u32" else r & 0xFF if kind == "u8" else int(r & 0xFF != 0)
 
 
-def original(emu, target, record, size, queries):
-    """`Init(city, segment)` on a dirt bag of `size` cells per side, then `queries`."""
+def fnv(data):
+    h = 0x811C9DC5
+    for b in data:
+        h = ((h ^ b) * 0x01000193) & 0xFFFFFFFF
+    return h
+
+
+def terraform(emu, target, obj, size, name, args):
+    """One terraforming op, its answers as the port writes them."""
+    g = target.dirt_bag
+    x1, z1, x2, z2, *level = args
+    bounds = emu.alloc(24)
+    for i, v in enumerate((x1 << 8, z1 << 8, 0, x2 << 8, z2 << 8, 0)):
+        emu.w32(bounds + 4 * i, v)
+    out, cost, at = emu.alloc(24), emu.alloc(4), emu.alloc(4)
+    emu.write(out, b"\xFF" * 24)
+    emu.w32(cost, 0)
+    address = g["terraform"][name]
+    if name == "GetOptimalLevel":
+        call = [bounds, at, out, cost]
+    else:
+        call = [bounds, *level, out, cost] + ([] if name.startswith("Can") else [1])
+    ok = emu.call(address, call, this=obj) & 0xFF != 0
+    raw = [emu.u32(out + 4 * i) for i in (0, 1, 3, 4)]
+    box = [0xFFFFFFFF] * 4 if raw == [0xFFFFFFFF] * 4 else [r >> 8 for r in raw]
+    bits = emu.u32(obj + g["changes"])
+    words, rows = emu.u32(bits + 0xC), emu.u32(bits + 0x10)
+    changes = b"".join(emu.read(emu.u32(rows + 4 * x), 4 * words) for x in range(size))
+    first = [emu.u8(at)] if name == "GetOptimalLevel" else []
+    return first + [int(ok), emu.u32(cost), *box, fnv(changes)]
+
+
+def native(emu, obj, slot, code):
+    """Points a fake object's vtable slot at machine code: for methods the code under test
+    calls so often that a Python callback each time would slow the check down."""
+    at = emu.alloc(len(code))
+    emu.write(at, code)
+    emu.w32(emu.u32(obj) + slot, at)
+
+
+def original(emu, target, record, size, queries, costs, ops):
+    """`Init(city, segment)` on a dirt bag of `size` cells per side, then `queries`, then the
+    terraforming `ops`."""
     g = target.dirt_bag
     rec = Record(record)
     ok = lambda e, this: 1  # noqa: E731
@@ -156,15 +216,31 @@ def original(emu, target, record, size, queries):
 
     segment = emu.fake_object("cIGZDBSegment", {
         0x04: (0, ok), 0x08: (0, ok), 0x20: (2, open_record), 0x24: (1, ok)})
+    sim = emu.fake_object("cISC3Simulator", {g["sim_value"]: (1, lambda e, this: costs[e.arg(0)])})
     city = emu.fake_object("cISC3City", {
         0x04: (0, ok), 0x08: (0, ok),
-        g["city_cells_x"]: (0, lambda e, this: size), g["city_cells_z"]: (0, lambda e, this: size),
-        g["city_version"]: (1, lambda e, this: 0)})
+        g["city_version"]: (1, lambda e, this: 0), g["city_sim"]: (0, lambda e, this: sim)})
+    for slot in (g["city_cells_x"], g["city_cells_z"]):
+        native(emu, city, slot, b"\xB8" + struct.pack("<I", size) + b"\xC3")     # mov eax; ret
 
-    # The global critical section (static construction never ran) and the change sender.
+    # The statics (static construction never ran): the critical section and the app that
+    # hands out the city. Then the change sender.
     lock = emu.fake_object("cRZCriticalSection", {0x04: (0, ok), 0x08: (0, ok)})
     emu.w32(g["lock"], emu.u32(lock))
-    sender = emu.fake_object("cSC3CityChangeSender", {g["lock_updates"]: (1, ok)})
+    app = emu.fake_object("cISC3App", {g["app_city"]: (0, lambda e, this: city)})
+    made, at = g["app"]
+    emu.write(made, bytes([emu.u8(made) | 1]))
+    emu.w32(at, app)
+    emu.write(g["notifyCellUpdate"], b"\xC2\x14\x00")          # ret 0x14
+    updates = emu.alloc(4)
+    emu.w32(updates, 1)
+
+    def set_updates(e, this):
+        e.w32(updates, int(e.arg(0) & 0xFF != 0))
+        return 1
+
+    sender = emu.fake_object("cSC3CityChangeSender", {g["lock_updates"]: (1, set_updates)})
+    native(emu, sender, g["updates_on"], b"\xA1" + struct.pack("<I", updates) + b"\xC3")
 
     # The dirt bag as Init(cISC3City*) leaves it (SIMDIRT.DLL 0x10003E50).
     v = size + 1
@@ -179,35 +255,61 @@ def original(emu, target, record, size, queries):
     for off in g["cell_bits"]:
         emu.w32(obj + off, emu.alloc(4 * (size * size >> 5)))
     emu.w32(obj + g["city"], city)
+    head = emu.alloc(16)
+    emu.w32(head, head)
+    emu.w32(head + 4, head)
+    emu.w32(obj + g["filters"], head)
+    words, rows = (size + 31) // 32, emu.alloc(4 * size)
+    for x in range(size):
+        emu.w32(rows + 4 * x, emu.alloc(4 * words))
+    bits = emu.alloc(20)
+    for i, val in enumerate((0, size, size, words, rows)):
+        emu.w32(bits + 4 * i, val)
+    emu.w32(obj + g["changes"], bits)
 
     if not emu.call(g["Init"], [city, segment], this=obj) & 0xFF:
         raise RuntimeError(f"Init refused the record after {rec.pos} of {len(record)} bytes")
     maps = {k: read_cellmap(emu, emu.u32(obj + g[k])) for k in MAPS}
     vx, vy, _ = maps["altitude"]
     answers = [ask(emu, target, obj, name, args) for name, args, _ in queries]
-    return Ground(vx, vy, emu.u8(obj + g["sea"]), *(maps[k][2] for k in MAPS)), \
-        len(record) - rec.pos, answers
+    loaded = Ground(vx, vy, emu.u8(obj + g["sea"]), *(maps[k][2] for k in MAPS))
+    results = [terraform(emu, target, obj, size, name, args) for name, args, _ in ops]
+    maps = {k: read_cellmap(emu, emu.u32(obj + g[k])) for k in MAPS}
+    after = Ground(vx, vy, loaded.sea, *(maps[k][2] for k in MAPS))
+    return loaded, len(record) - rec.pos, answers, results, after
 
 
-def compare(case, want, got, queries, answers):
-    case.sea = (want.sea, got.sea)
+def compare_maps(case, equal, want, got, when=""):
     if (want.vx, want.vy) != (got.vx, got.vy):
         raise RuntimeError(f"{case.file}: original is {want.vx}x{want.vy} vertices, port "
                            f"{got.vx}x{got.vy}")
     n = want.vx * want.vy
     for m in MAPS:
         a, b = getattr(want, m), getattr(got, m)
-        case.equal[m] = sum(x == y for x, y in zip(a, b)) / n
+        equal[m] = sum(x == y for x, y in zip(a, b)) / n
         diff = next((i for i in range(n) if a[i] != b[i]), None)
         if diff is not None and not case.first:
             x, y = divmod(diff, want.vy)
-            case.first = f"{m} at ({x}, {y}): original {a[diff]}, port {b[diff]}"
-    for (name, args, mine), theirs in zip(queries, answers):
-        tally = case.queries.setdefault(name, [0, 0])
-        tally[0] += mine == theirs
-        tally[1] += 1
+            case.first = f"{m}{when} at ({x}, {y}): original {a[diff]}, port {b[diff]}"
+
+
+def compare_calls(case, tally, calls, answers):
+    for (name, args, mine), theirs in zip(calls, answers):
+        t = tally.setdefault(name, [0, 0])
+        t[0] += mine == theirs
+        t[1] += 1
         if mine != theirs and not case.first:
             case.first = f"{name}({', '.join(map(str, args))}): original {theirs}, port {mine}"
+
+
+def compare(case, want, got, queries, answers, ops=(), results=(), want_after=None,
+            got_after=None):
+    case.sea = (want.sea, got.sea)
+    compare_maps(case, case.equal, want, got)
+    compare_calls(case, case.queries, queries, answers)
+    compare_calls(case, case.ops, ops, results)
+    if want_after:
+        compare_maps(case, case.after, want_after, got_after, " after terraforming")
     return case
 
 
@@ -221,9 +323,11 @@ def check_ground(make_emu, target, exe, root, progress=None):
     out = []
     with tempfile.TemporaryDirectory() as d:
         def one(i):
-            record, got, queries = port(exe, paths[i], Path(d) / str(i))
-            want, unread, answers = original(make_emu(), target, record, got.vx - 1, queries)
-            case = compare(GroundCase(paths[i].name), want, got, queries, answers)
+            record, got, queries, costs, ops, got_after = port(exe, paths[i], Path(d) / str(i))
+            want, unread, answers, results, want_after = original(
+                make_emu(), target, record, got.vx - 1, queries, costs, ops)
+            case = compare(GroundCase(paths[i].name), want, got, queries, answers, ops,
+                           results, want_after, got_after)
             case.unread = unread
             return case
 
