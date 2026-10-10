@@ -7,7 +7,12 @@
   0x4142C`, or a bare one in a file that names its library) is looked up in
   tools/loki/symbols and carried over to Windows through tools/match/names by its C++ name;
   without a match it still counts as ported, at an unknown Windows address;
-- checked: ported functions at a known address that a check executed in the emulator.
+- checked: ported functions at a known address that a check executed in the emulator;
+- exempt: ported functions whose doc comment says why no check runs them (`Unchecked:` and a
+  reason, anywhere in the same doc comment block as the citation).
+
+After a full run, a ported function that is neither checked nor exempt is an error
+(`unchecked`), so new code gets a check or a stated reason.
 
 `accuracy` = match rate of the binary's checks × checked / functions, so a binary nothing
 has been ported from is at 0%.
@@ -101,6 +106,7 @@ HEX = re.compile(r"\b0x([0-9A-Fa-f_]+)\b")
 WORD = re.compile(r"\b([A-Za-z][A-Za-z0-9]*)(?:\.(?:DLL|dll|exe|so))?\b")
 TICKED = re.compile(r"`([^`]+)`")
 DATA = re.compile(r"\b(rodata|\.?data|table|tables|bytes|row|rows)\b")
+MARKER = re.compile(r"\bUnchecked:\s*(\S.*)")
 
 
 @dataclass
@@ -110,6 +116,8 @@ class Cite:
     address: int      # absolute Windows address, or Loki Ghidra address
     binary: str       # Windows name ("SIMDIRT.DLL") or Loki library ("libSimDirt.so")
     hint: str = ""    # the function name quoted just before, if any
+    exempt: str = ""  # the reason after `Unchecked:` in the same doc comment block, if any
+    marker: str = ""  # "file:line" of that marker
 
 
 def _binary_name(word, windows, loki):
@@ -136,19 +144,26 @@ def _hint(before):
 
 def citations(crates=REPO / "crates"):
     """Every function address in the doc comments of `crates`. The binary is the one named in
-    the same parentheses, else the last one the file named."""
+    the same parentheses, else the last one the file named. A citation is exempt when its doc
+    comment block (consecutive `///` or `//!` lines) has an `Unchecked:` marker."""
     windows = binaries()
     _, to_win = pairs()
     loki = sorted(to_win)
     bases = {}
     out = []
     for path in sorted(crates.rglob("*.rs")):
-        rel = str(path.relative_to(REPO))
+        rel = str(path.relative_to(crates.parent))
         default = None
-        for n, line in enumerate(path.read_text().splitlines(), 1):
+        block, reason, marker = len(out), "", ""
+        for n, line in enumerate(path.read_text().splitlines() + [""], 1):
             text = line.strip()
             if not text.startswith(("///", "//!")):
+                for c in out[block:]:
+                    c.exempt, c.marker = reason, marker
+                block, reason, marker = len(out), "", ""
                 continue
+            if m := MARKER.search(text):
+                reason, marker = m.group(1).strip(), f"{rel}:{n}"
             for m in RVA.finditer(text):
                 b = _binary_name(m.group(1), windows, loki)
                 if b in windows:
@@ -187,6 +202,8 @@ class Ported:
     located: set = field(default_factory=set)       # absolute Windows addresses
     unlocated: set = field(default_factory=set)     # C++ names with no Windows address
     sources: dict = field(default_factory=dict)     # address or name -> "file:line"
+    exempt: dict = field(default_factory=dict)      # address or name -> reason it is unchecked
+    markers: dict = field(default_factory=dict)     # marker "file:line" -> addresses and names
 
     def count(self):
         return len(self.located) + len(self.unlocated)
@@ -221,6 +238,9 @@ def ported_functions(cites=None):
             if c.address in starts[win]:
                 out[win].located.add(c.address)
                 out[win].sources.setdefault(c.address, f"{c.file}:{c.line}")
+                if c.exempt:
+                    out[win].exempt.setdefault(c.address, c.exempt)
+                    out[win].markers.setdefault(c.marker, set()).add(c.address)
                 windows_lines.add((c.file, c.line))
         elif c.address >= LOKI_GHIDRA_BASE:
             loki_cites.append(c)
@@ -244,14 +264,16 @@ def ported_functions(cites=None):
         candidates = [w for w, libs in to_loki.items() if lib in libs]
         for w in candidates:
             if name in bins[w].names:
-                a = bins[w].names[name]
-                out[w].located.add(a)
-                out[w].sources.setdefault(a, where)
+                key = bins[w].names[name]
+                out[w].located.add(key)
                 break
         else:
-            w = candidates[0]
+            w, key = candidates[0], name
             out[w].unlocated.add(name)
-            out[w].sources.setdefault(name, where)
+        out[w].sources.setdefault(key, where)
+        if c.exempt:
+            out[w].exempt.setdefault(key, c.exempt)
+            out[w].markers.setdefault(c.marker, set()).add(key)
     return bins, out
 
 
@@ -263,6 +285,27 @@ def watch(emu, addresses, executed):
     return emu
 
 
+# The ratchet --------------------------------------------------------------------------------
+
+def unchecked(ported, executed, skip=()):
+    """(unchecked, stale) after a full run. unchecked: (binary, function, "file:line") of the
+    ported functions no check ran and with no `Unchecked:` reason. stale: "file:line" of the
+    markers all of whose functions a check ran, so the marker can go. Binaries in `skip` (their
+    checks did not run) are left out."""
+    bad, covers = [], {}
+    for name, p in ported.items():
+        ran = executed.get(name, set())
+        for marker, keys in p.markers.items():
+            covers.setdefault(marker, []).append(name not in skip and keys <= ran)
+        if name in skip:
+            continue
+        for key in sorted(p.located) + sorted(p.unlocated):
+            if key not in ran and key not in p.exempt:
+                what = f"{key:#010x}" if isinstance(key, int) else key
+                bad.append((name, what, p.sources[key]))
+    return bad, sorted(m for m, done in covers.items() if all(done))
+
+
 # The per-binary table -----------------------------------------------------------------------
 
 @dataclass
@@ -272,6 +315,7 @@ class Row:
     ported: int
     unlocated: int
     checked: int
+    exempt: int = 0
     match: float = None     # mean match rate of the binary's checks, None when none ran
     note: str = ""
 
@@ -296,8 +340,8 @@ def table(bins, ported, executed, matches, notes):
     rows = []
     for name, b in bins.items():
         p = ported[name]
-        checked = len(p.located & executed.get(name, set()))
-        rows.append(Row(name, len(b.starts), p.count(), len(p.unlocated), checked,
-                        matches.get(name), notes.get(name, "")))
+        ran = p.located & executed.get(name, set())
+        rows.append(Row(name, len(b.starts), p.count(), len(p.unlocated), len(ran),
+                        len(p.exempt.keys() - ran), matches.get(name), notes.get(name, "")))
     rows.sort(key=lambda r: (-r.accuracy(), -r.ported, r.binary.upper()))
     return rows

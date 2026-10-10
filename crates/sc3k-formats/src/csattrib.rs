@@ -3,6 +3,7 @@
 //!
 //! Base records are in `Res/Sprites/CSATTRIB.IXF`; flora and building sets carry their own.
 //! Only the binary form (`BIN\r`, `SerialReadBinary`, libSimSpr Ghidra 0x7B738) occurs.
+//! Unchecked: no check runs the SIMSPR.DLL readers yet.
 
 use std::fmt;
 

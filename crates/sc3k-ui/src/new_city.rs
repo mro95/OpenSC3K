@@ -133,6 +133,7 @@ impl Settings {
     /// `cSC3NewCityInfo` in this order: name, mayor, funds, debt, difficulty, size, year,
     /// auto budget, disasters, dirt generator. The original cuts names to 127 characters.
     /// The schemes go to `cSC3CitySchemeMgr` instead.
+    /// Unchecked: no Windows address known yet.
     pub fn new_city_info(&self) -> NewCityInfo {
         let mut info = NewCityInfo {
             city_name: self.city_name.iter().copied().take(0x7F).collect(),

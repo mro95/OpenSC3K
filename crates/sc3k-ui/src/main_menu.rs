@@ -6,6 +6,7 @@
 //! The menu is a 640x480 window centred over the title background. Each entry is an
 //! animated button (an 8-frame sprite sheet, 4 columns x 2 rows) with a text label centred
 //! on a fixed offset from the button's origin.
+//! Unchecked: no check runs SC3U.exe yet.
 
 use crate::surface::{Rect, Sprite, Surface};
 use crate::text::{draw_text, TextColors};
@@ -78,6 +79,7 @@ struct ButtonDef {
     window_id: u32,
     choice: Choice,
     /// Instance in `MAIN.IXF` (from `get_main_menu_buffer_info`, `SC3U.exe+0x3a31e`).
+    /// Unchecked: no check runs SC3U.exe yet.
     image: u32,
     click_image: Option<u32>,
     origin: (i32, i32),

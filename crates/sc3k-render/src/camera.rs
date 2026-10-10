@@ -28,6 +28,7 @@ impl Scroll {
 
     /// The step `paintScroll` (libSimSpr 0x10392C) takes: one flag scrolls straight, two
     /// adjacent flags diagonally; anything else (opposites, three or four) does not move.
+    /// Unchecked: no Windows address known yet.
     pub fn step(&self) -> Option<(i32, i32)> {
         let s = SCROLL_STEP;
         match (self.up, self.down, self.right, self.left) {
@@ -83,6 +84,7 @@ impl Camera {
 
     /// `Translate` (Ghidra 0xB071C): move by (dx, dy) screen pixels if the middle of
     /// the screen still lands on the map; that cell becomes the focus.
+    /// Unchecked: no check runs the city view camera yet.
     pub fn translate(&mut self, t: &Terrain, dx: i32, dy: i32) -> bool {
         let mut v = self.view;
         v.origin_x -= dx;
@@ -140,6 +142,7 @@ impl Camera {
 }
 
 /// `ActualGridToDrawGrid` (0x99990): the draw-grid cell of map cell (x, y).
+/// Unchecked: no Windows address known yet.
 fn draw_cell(size: u32, rotation: u32, (x, y): (u32, u32)) -> (u32, u32) {
     match rotation & 3 {
         0 => (x, y),

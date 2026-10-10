@@ -105,6 +105,8 @@ impl SpanSprite {
 /// `cSC3CitySpriteAttrib::SprAttDraw` (0x7C724) draws a sprite anchored at (x, y) into the
 /// rectangle (x − left, y − up) .. (x + right, y + down), so `right + left` is the width and
 /// `up + down` the height.
+/// Unchecked: no check runs the SIMSPR.DLL readers yet; SprAttDraw has no Windows address
+/// known yet.
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub struct ImageInfo {
     pub left: i16,

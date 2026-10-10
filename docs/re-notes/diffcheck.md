@@ -10,6 +10,7 @@ the game never starts.
 ```bash
 pip install -r tools/diffcheck/requirements.txt
 tools/diffcheck/run.py all                    # needs $SC3K_DATA; exit status 1 on any difference
+                                              # or on a ported function no check runs
 tools/diffcheck/run.py rng --seeds 50         # only cRZRandom
 tools/diffcheck/run.py dirt --sizes 128       # only the terrain generator
 tools/diffcheck/run.py qfs                    # only QFS decompression (SIMBABLD.DLL)
@@ -189,6 +190,16 @@ tools/diffcheck/selftest.py                   # tests the checker itself, no gam
   - Cite new ported code the same way, or it is not counted.
 - **Checked**: ported functions at a known address that ran during the checks (one-shot hooks,
   `Emu.once`).
+- **Exempt**: ported functions no check runs, whose doc comment says why: `Unchecked:` and a
+  reason, anywhere in the doc comment block (consecutive `///` or `//!` lines) that cites them.
+  The marker covers every citation in its block. `Unchecked:` with no reason does not count.
+- **The ratchet**: after `run.py all`, a ported function that is neither checked nor exempt
+  fails the run, with its `file:line`. Give it a check, or an `Unchecked:` reason.
+  - Binaries whose DLL was not found are skipped, since none of their checks ran. Partial runs
+    (`run.py dirt`, ...) and `run.py coverage` do not apply it.
+  - A marker all of whose functions a check now runs is reported as one that can go; it does
+    not fail the run.
+  - `grep -rn 'Unchecked:' crates` lists what is still open.
 - **Accuracy** = mean match rate of the binary's checks × checked / functions. A binary nothing
   has been ported from yet is at 0% and marked "not implemented yet"; it is listed in the
   report and the image but does not fail the run.
@@ -243,4 +254,6 @@ look-alike with a QFS decoder written from `docs/formats/qfs.md`. The correct bu
 the port on every call and stream. A build with deliberate bugs in `GaussianFast` and in the
 `C0–DF` offset must be caught. The self-test also covers the import stubs, x87 results, `fs:`,
 the trace hooks, the coverage table, the report and the image.
+The self-test also runs the ratchet on a small crate it writes: a function without a reason
+fails, one with a reason passes, and a marker over checked functions is reported.
 `Emu.fake_object`, the `ground` check and the `ui` check are not covered by the self-test yet.

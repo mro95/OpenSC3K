@@ -62,6 +62,7 @@ impl FloraSprites {
     /// height of its top corner, raised by the occupant's altitude
     /// (`GetCityPixelRectForSpriteDrawGrid`, libSimSpr 0x9AE80); `SprAttDraw` (0x7C724)
     /// then places the image by its [`ImageInfo`].
+    /// Unchecked: no Windows address known yet.
     pub fn draw(&self, screen: &mut Surface, view: &View, (i, j): (u32, u32), flora: Flora) {
         let Some(images) = self.images.get(&flora.occupant) else { return };
         let k = view.zoom as usize * ROTATIONS + view.rotation as usize;

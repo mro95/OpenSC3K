@@ -30,6 +30,7 @@ pub struct NewCityInfo {
 
 impl Default for NewCityInfo {
     /// `cSC3NewCityInfo::cSC3NewCityInfo` (Loki libSimInit 0x4B364).
+    /// Unchecked: no Windows address known yet.
     fn default() -> NewCityInfo {
         NewCityInfo {
             city_name: b"New City".to_vec(),
@@ -119,6 +120,7 @@ impl City {
     ///    through the dirt generator.
     /// 4. Name, mayor, difficulty, disasters and auto budget.
     /// 5. Funds. With debt the treasury is set to 0 and the funds come from `IssueBond`.
+    /// Unchecked: no Windows address known yet.
     pub fn new(info: &NewCityInfo) -> City {
         let mut city = City {
             name: info.city_name.clone(),
@@ -155,6 +157,7 @@ impl City {
     ///   it is not checked.
     ///
     /// On success the amount is deposited.
+    /// Unchecked: no check runs SIMMISC.DLL yet.
     pub fn issue_bond(&mut self, amount: u32) -> bool {
         let amount = amount / 5000 * 5000;
         if self.bonds.len() >= MAX_BONDS || amount == 0 || amount > MAX_BOND_AMOUNT {

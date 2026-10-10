@@ -95,6 +95,7 @@ impl RoadTile {
     /// include it, else 0. `cSC3CitySpriteInstSloped<dh, r1, r2>::Draw` (libSimSpr Ghidra
     /// 0x13E094) moves the image rectangle this way through its `GetAllSpans` (0x13D7A0),
     /// which adds `dh << zoom` to the image info's `up` and takes it from `down`.
+    /// Unchecked: no Windows address known yet.
     pub fn slope_shift(&self, zoom: u32, rotation: u8) -> i32 {
         match slope(self.class) {
             Some((dh, rotations)) if rotations.contains(&(rotation & 3)) => -(dh << zoom),

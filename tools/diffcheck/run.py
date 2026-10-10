@@ -132,16 +132,20 @@ def report(path, rows, rng_stats, dirt_cases, footer, dll_rows=None, qfs_stats=N
         total = sum(r.functions for r in dll_rows)
         checked = sum(r.checked for r in dll_rows)
         ported = sum(r.ported for r in dll_rows)
+        exempt = sum(r.exempt for r in dll_rows)
         out += ["## Per binary", "",
                 "Accuracy = match rate of the binary's checks × checked functions / all its",
-                "functions. A binary nothing has been ported from yet is at 0%.", "",
-                f"All binaries: {ported} of {total} functions ported, {checked} checked.", "",
-                "| Binary | Functions | Ported | Checked | Checked code matches | Accuracy | Status |",
-                "|---|---:|---:|---:|---:|---:|---|"]
+                "functions. A binary nothing has been ported from yet is at 0%. Exempt: ported",
+                "functions whose doc comment gives a reason no check runs them (`Unchecked:`).", "",
+                f"All binaries: {ported} of {total} functions ported, {checked} checked, "
+                f"{exempt} exempt.", "",
+                "| Binary | Functions | Ported | Checked | Exempt | Checked code matches | Accuracy "
+                "| Status |",
+                "|---|---:|---:|---:|---:|---:|---:|---|"]
         for r in dll_rows:
             match = f"{r.match * 100:.2f}%" if r.match is not None else "–"
-            out.append(f"| {r.binary} | {r.functions} | {r.ported} | {r.checked} | {match} | "
-                       f"{r.accuracy() * 100:.2f}% | {r.status()} |")
+            out.append(f"| {r.binary} | {r.functions} | {r.ported} | {r.checked} | {r.exempt} | "
+                       f"{match} | {r.accuracy() * 100:.2f}% | {r.status()} |")
         out.append("")
     if rows:
         out += ["## Checks", "", "| Check | | Match | |", "|---|---|---:|---|"]
@@ -343,9 +347,10 @@ def main():
                     tiling_stats)
     dll_rows = coverage.table(bins, ported, executed, matches, notes)
     if args.what in ("coverage", "all"):
-        print(f"\n{'binary':18} {'functions':>9} {'ported':>6} {'checked':>7} {'accuracy':>9}  status")
+        print(f"\n{'binary':18} {'functions':>9} {'ported':>6} {'checked':>7} {'exempt':>6} "
+              f"{'accuracy':>9}  status")
         for r in dll_rows:
-            print(f"{r.binary:18} {r.functions:9} {r.ported:6} {r.checked:7} "
+            print(f"{r.binary:18} {r.functions:9} {r.ported:6} {r.checked:7} {r.exempt:6} "
                   f"{r.accuracy() * 100:8.2f}%  {r.status()}")
 
     parts = [f"{args.seeds} seeds"] if rng_stats or dirt_cases else []
@@ -377,7 +382,22 @@ def main():
     bad = [r for r in rows if r[2] != 1.0]
     print("no checks ran" if not rows else "all checks match" if not bad
           else f"{len(bad)} checks differ")
-    return 1 if bad else 0
+    unchecked = ratchet(ported, executed, notes) if args.what == "all" else []
+    return 1 if bad or unchecked else 0
+
+
+def ratchet(ported, executed, notes):
+    """After `all`: every ported function must be checked or say why not. Binaries whose
+    checks did not run are skipped, since nothing of theirs could have been executed."""
+    unchecked, stale = coverage.unchecked(ported, executed, skip=notes)
+    for where in stale:
+        print(f"{where}: every function under this Unchecked: marker is checked now; it can go")
+    if unchecked:
+        print(f"\n{len(unchecked)} ported functions no check runs. Add a check, or say why not "
+              f"with `Unchecked: <reason>` in the doc comment:")
+        for binary, function, where in unchecked:
+            print(f"  {where}: {binary} {function}")
+    return unchecked
 
 
 if __name__ == "__main__":

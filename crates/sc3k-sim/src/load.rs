@@ -102,6 +102,7 @@ pub fn read_ground(archive: &sc3k_formats::ixf::Archive) -> Result<Ground, Error
 /// the square size that fits the record's length. Salt water is not saved: the original
 /// recomputes it (`RecalcSaltWater`), which is not ported, so every vertex reads fresh. The
 /// generator's flora map is not saved either; the trees are in the flora layer.
+/// Unchecked: BlockCell has no Windows address known yet.
 pub fn read_dirt_bag(record: &[u8]) -> Result<Terrain, Error> {
     let mut r = Reader::new(record);
     let v = Version::read(&mut r);
@@ -150,6 +151,7 @@ pub fn read_dirt_bag(record: &[u8]) -> Result<Terrain, Error> {
 /// u8[X][Z]       one column per x, from x = X − 1 down to 0
 /// string         "Flora Layer End"          only with markers
 /// ```
+/// Unchecked: no Windows address known yet.
 pub fn read_flora_layer(record: &[u8], size: u32) -> Result<CellMap<u8>, Error> {
     let mut r = Reader::new(record);
     let v = Version::read(&mut r);
@@ -169,6 +171,7 @@ pub fn read_flora_layer(record: &[u8], size: u32) -> Result<CellMap<u8>, Error> 
 /// `cSTTransitLayer::Init(cISC3City*, cIGZDBSegment*)` (libSimNtwrk Ghidra 0x68980).
 ///
 /// `get` looks up a record of the city's segment, as `Segment::get` does.
+/// Unchecked: no check reads the network layer record yet.
 pub fn read_network_layer<'a>(get: impl Fn(Tgi) -> Option<&'a [u8]>, size: u32) -> Result<Networks, Error> {
     let key = KEY_NETWORK_LAYER;
     let header = get(key).ok_or(Error::Missing(key))?;

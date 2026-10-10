@@ -8,44 +8,45 @@ compared with the port on the same inputs. See `docs/re-notes/diffcheck.md`.
 ## Per binary
 
 Accuracy = match rate of the binary's checks × checked functions / all its
-functions. A binary nothing has been ported from yet is at 0%.
+functions. A binary nothing has been ported from yet is at 0%. Exempt: ported
+functions whose doc comment gives a reason no check runs them (`Unchecked:`).
 
-All binaries: 67 of 46771 functions ported, 31 checked.
+All binaries: 70 of 46771 functions ported, 31 checked, 39 exempt.
 
-| Binary | Functions | Ported | Checked | Checked code matches | Accuracy | Status |
-|---|---:|---:|---:|---:|---:|---|
-| SIMDIRT.DLL | 750 | 35 | 25 | 100.00% | 3.33% | checked |
-| SIMBABLD.DLL | 2347 | 2 | 2 | 100.00% | 0.09% | checked |
-| SIMNTWRK.DLL | 1181 | 1 | 1 | 100.00% | 0.08% | checked |
-| SIMUI.DLL | 4098 | 8 | 3 | 100.00% | 0.07% | checked |
-| SIMSPR.DLL | 2922 | 8 | 0 | – | 0.00% | ported, not checked |
-| SIMGEOM.DLL | 1771 | 5 | 0 | – | 0.00% | ported, not checked |
-| SC3U.exe | 6698 | 4 | 0 | – | 0.00% | ported, not checked |
-| SIMINIT.DLL | 1508 | 2 | 0 | – | 0.00% | ported, not checked |
-| SIMCITY.DLL | 836 | 1 | 0 | – | 0.00% | ported, not checked |
-| SIMMISC.DLL | 1613 | 1 | 0 | – | 0.00% | ported, not checked |
-| AUDIO.DLL | 950 | 0 | 0 | – | 0.00% | not implemented yet |
-| Baapp.exe | 3117 | 0 | 0 | – | 0.00% | not implemented yet |
-| GIMEX.DLL | 518 | 0 | 0 | – | 0.00% | not implemented yet |
-| GZGraphicD.dll | 833 | 0 | 0 | – | 0.00% | not implemented yet |
-| GZResourceD.dll | 1302 | 0 | 0 | – | 0.00% | not implemented yet |
-| GZServiceD.dll | 678 | 0 | 0 | – | 0.00% | not implemented yet |
-| GZSOUNDD.DLL | 488 | 0 | 0 | – | 0.00% | not implemented yet |
-| GZTOOLSD.DLL | 416 | 0 | 0 | – | 0.00% | not implemented yet |
-| GZWIND.DLL | 1749 | 0 | 0 | – | 0.00% | not implemented yet |
-| GZWWWD.DLL | 866 | 0 | 0 | – | 0.00% | not implemented yet |
-| MaxisAddOn.dll | 83 | 0 | 0 | – | 0.00% | not implemented yet |
-| SCENARIO.DLL | 843 | 0 | 0 | – | 0.00% | not implemented yet |
-| SIMADV.DLL | 1104 | 0 | 0 | – | 0.00% | not implemented yet |
-| SIMDSTR.DLL | 1657 | 0 | 0 | – | 0.00% | not implemented yet |
-| SIMECO.DLL | 1007 | 0 | 0 | – | 0.00% | not implemented yet |
-| SIMRCI.DLL | 2085 | 0 | 0 | – | 0.00% | not implemented yet |
-| SIMSERV.DLL | 1083 | 0 | 0 | – | 0.00% | not implemented yet |
-| SimTransit.dll | 843 | 0 | 0 | – | 0.00% | not implemented yet |
-| SIMUTIL.DLL | 1143 | 0 | 0 | – | 0.00% | not implemented yet |
-| simvariables.dll | 459 | 0 | 0 | – | 0.00% | not implemented yet |
-| STRTSIM.DLL | 1564 | 0 | 0 | – | 0.00% | not implemented yet |
-| UV.DLL | 259 | 0 | 0 | – | 0.00% | not implemented yet |
+| Binary | Functions | Ported | Checked | Exempt | Checked code matches | Accuracy | Status |
+|---|---:|---:|---:|---:|---:|---:|---|
+| SIMDIRT.DLL | 750 | 35 | 25 | 10 | 100.00% | 3.33% | checked |
+| SIMBABLD.DLL | 2347 | 2 | 2 | 0 | 100.00% | 0.09% | checked |
+| SIMNTWRK.DLL | 1181 | 3 | 1 | 2 | 100.00% | 0.08% | checked |
+| SIMUI.DLL | 4098 | 8 | 3 | 5 | 100.00% | 0.07% | checked |
+| SIMSPR.DLL | 2922 | 9 | 0 | 9 | – | 0.00% | ported, not checked |
+| SIMGEOM.DLL | 1771 | 5 | 0 | 5 | – | 0.00% | ported, not checked |
+| SC3U.exe | 6698 | 4 | 0 | 4 | – | 0.00% | ported, not checked |
+| SIMINIT.DLL | 1508 | 2 | 0 | 2 | – | 0.00% | ported, not checked |
+| SIMCITY.DLL | 836 | 1 | 0 | 1 | – | 0.00% | ported, not checked |
+| SIMMISC.DLL | 1613 | 1 | 0 | 1 | – | 0.00% | ported, not checked |
+| AUDIO.DLL | 950 | 0 | 0 | 0 | – | 0.00% | not implemented yet |
+| Baapp.exe | 3117 | 0 | 0 | 0 | – | 0.00% | not implemented yet |
+| GIMEX.DLL | 518 | 0 | 0 | 0 | – | 0.00% | not implemented yet |
+| GZGraphicD.dll | 833 | 0 | 0 | 0 | – | 0.00% | not implemented yet |
+| GZResourceD.dll | 1302 | 0 | 0 | 0 | – | 0.00% | not implemented yet |
+| GZServiceD.dll | 678 | 0 | 0 | 0 | – | 0.00% | not implemented yet |
+| GZSOUNDD.DLL | 488 | 0 | 0 | 0 | – | 0.00% | not implemented yet |
+| GZTOOLSD.DLL | 416 | 0 | 0 | 0 | – | 0.00% | not implemented yet |
+| GZWIND.DLL | 1749 | 0 | 0 | 0 | – | 0.00% | not implemented yet |
+| GZWWWD.DLL | 866 | 0 | 0 | 0 | – | 0.00% | not implemented yet |
+| MaxisAddOn.dll | 83 | 0 | 0 | 0 | – | 0.00% | not implemented yet |
+| SCENARIO.DLL | 843 | 0 | 0 | 0 | – | 0.00% | not implemented yet |
+| SIMADV.DLL | 1104 | 0 | 0 | 0 | – | 0.00% | not implemented yet |
+| SIMDSTR.DLL | 1657 | 0 | 0 | 0 | – | 0.00% | not implemented yet |
+| SIMECO.DLL | 1007 | 0 | 0 | 0 | – | 0.00% | not implemented yet |
+| SIMRCI.DLL | 2085 | 0 | 0 | 0 | – | 0.00% | not implemented yet |
+| SIMSERV.DLL | 1083 | 0 | 0 | 0 | – | 0.00% | not implemented yet |
+| SimTransit.dll | 843 | 0 | 0 | 0 | – | 0.00% | not implemented yet |
+| SIMUTIL.DLL | 1143 | 0 | 0 | 0 | – | 0.00% | not implemented yet |
+| simvariables.dll | 459 | 0 | 0 | 0 | – | 0.00% | not implemented yet |
+| STRTSIM.DLL | 1564 | 0 | 0 | 0 | – | 0.00% | not implemented yet |
+| UV.DLL | 259 | 0 | 0 | 0 | – | 0.00% | not implemented yet |
 
 ## Checks
 

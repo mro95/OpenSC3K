@@ -4,6 +4,7 @@
 //! walks the flora map the generator left in the dirt bag, cell x outer, y inner. Each value
 //! of 0x20 or more becomes `SetFloraDensity(cell, value >> 5)` on the flora layer, which picks
 //! a tree type from the height and places one flora occupant.
+//! Unchecked: no Windows address known yet.
 
 use crate::cellmap::CellMap;
 use crate::dirt::Terrain;
@@ -50,6 +51,7 @@ pub struct Flora {
 /// `cSC3FloraLayer::StaticInit` (libSimGeom 0x5B614) creates the layer's `cRZRandom` once
 /// per run with seed `0xFFFFFFFF`, which means "from the clock"; a second city continues
 /// the sequence. Here the caller passes the seed, and each city starts afresh.
+/// Unchecked: no check runs the flora layer yet.
 pub fn place(t: &Terrain, seed: u32) -> CellMap<Option<Flora>> {
     let mut rng = Random::new(seed);
     let mut out = CellMap::new(t.size, t.size, None);
@@ -84,6 +86,7 @@ pub fn from_layer(t: &Terrain, layer: &CellMap<u8>, seed: u32) -> CellMap<Option
 
 /// `cSC3FloraLayer::SetFloraDensity` (libSimGeom 0x5C4B4) on an empty cell: nothing on
 /// water, else `SelectFloraType` and `CreateOccupant(type, density)`.
+/// Unchecked: no check runs the flora layer yet.
 fn set_flora_density(t: &Terrain, rng: &mut Random, x: u32, y: u32, density: u8) -> Option<Flora> {
     if is_water(t, x, y) {
         return None;
@@ -95,6 +98,7 @@ fn set_flora_density(t: &Terrain, rng: &mut Random, x: u32, y: u32, density: u8)
 /// `cSC3FloraLayer::CreateOccupant(type, density)` (0x5D5F4): the occupant of a random
 /// variant, at the cell's vertex altitude. A type or density outside the table, which only
 /// a damaged save holds, places nothing; the original would read past the table.
+/// Unchecked: no check runs the flora layer yet.
 fn create_occupant(t: &Terrain, rng: &mut Random, x: u32, y: u32, kind: usize, density: usize) -> Option<Flora> {
     let variant = (rng.uniform(2) != 0) as usize;
     let occupant = *OCCUPANTS.get(kind)?.get(density * 2 + variant)?;
@@ -107,6 +111,7 @@ fn create_occupant(t: &Terrain, rng: &mut Random, x: u32, y: u32, kind: usize, d
 /// - h 1..=2: 2; h 3..=4: 2 or 3 at random;
 /// - h 5..=7: 3; h 8..=126: 3 or 4 at random;
 /// - anything else: 3.
+/// Unchecked: no Windows address known yet.
 fn select_flora_type(t: &Terrain, rng: &mut Random, x: u32, y: u32) -> usize {
     let h = vertex_altitude(t, x, y).wrapping_sub(t.sea_level);
     let wet = is_water(t, x, y) && !is_real_water(t, x, y);
@@ -139,6 +144,7 @@ fn select_flora_type(t: &Terrain, rng: &mut Random, x: u32, y: u32) -> usize {
 }
 
 /// `cSC3DirtBag::GetVertexAltitude` (libSimDirt 0x4099C): the higher of dirt and water.
+/// Unchecked: no Windows address known yet.
 fn vertex_altitude(t: &Terrain, x: u32, y: u32) -> u8 {
     t.altitude.get(x, y).max(t.water.get(x, y))
 }
@@ -148,11 +154,13 @@ fn corners(x: u32, y: u32) -> [(u32, u32); 4] {
 }
 
 /// `cSC3DirtBag::IsWater` (0x359A0): some corner's water reaches its dirt.
+/// Unchecked: no Windows address known yet.
 fn is_water(t: &Terrain, x: u32, y: u32) -> bool {
     corners(x, y).iter().any(|&(cx, cy)| t.water.get(cx, cy) >= t.altitude.get(cx, cy))
 }
 
 /// `cSC3DirtBag::IsRealWater` (0x35B10): some corner's water is above its dirt.
+/// Unchecked: no Windows address known yet.
 fn is_real_water(t: &Terrain, x: u32, y: u32) -> bool {
     corners(x, y).iter().any(|&(cx, cy)| t.water.get(cx, cy) > t.altitude.get(cx, cy))
 }

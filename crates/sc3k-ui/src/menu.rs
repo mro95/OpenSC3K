@@ -11,6 +11,7 @@
 //!
 //! Every value is a comma-separated field list closed by `END`; the text after `END` is a
 //! comment.
+//! Unchecked: no Windows address known yet.
 
 use std::collections::HashMap;
 use std::fmt;

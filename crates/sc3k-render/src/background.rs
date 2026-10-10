@@ -3,6 +3,7 @@
 //! by replacing the `n` of `res/sprites/backn.bmp` with the zoom digit).
 //! `cSC3CitySpriteCellMap::DrawBackground` (0x8BF7C) tiles it, offset by the view origin so
 //! that it scrolls with the map.
+//! Unchecked: no Windows address known yet.
 
 use crate::terrain::{View, MAX_ZOOM};
 use sc3k_assets::Assets;

@@ -150,6 +150,27 @@ def main():
         expect(r.accuracy() == len(dirt.located) / r.functions and r.status() == "checked",
                f"SIMDIRT accuracy is checked functions / all: {r.accuracy() * 100:.2f}%")
 
+        # The ratchet: a ported function no check runs needs an `Unchecked:` reason in its doc
+        # comment block. 0x1001BB50 runs, the others do not.
+        crates = Path(tmp) / "crates"
+        (crates / "a/src").mkdir(parents=True)
+        (crates / "a/src/lib.rs").write_text(
+            "/// Runs (SIMDIRT.DLL 0x1001BB50).\nfn a() {}\n"
+            "/// Bare (SIMDIRT.DLL 0x10017C2D).\nfn b() {}\n"
+            "/// Exempt (SIMDIRT.DLL 0x10006710),\n/// Unchecked: a reason.\nfn c() {}\n"
+            "/// No reason (SIMDIRT.DLL 0x10006830).\n/// Unchecked:\nfn d() {}\n"
+            "/// Runs too (SIMDIRT.DLL 0x1001BB50).\n/// Unchecked: stale.\nfn e() {}\n"
+            "/// Skipped binary (SIMBABLD.DLL 0x12059EBE).\nfn f() {}\n")
+        bins, ported = coverage.ported_functions(coverage.citations(crates))
+        bad, stale = coverage.unchecked(ported, {"SIMDIRT.DLL": {0x1001BB50}},
+                                        skip={"SIMBABLD.DLL"})
+        expect([f for _, f, _ in bad] == ["0x10006830", "0x10017c2d"],
+               f"the ratchet catches unchecked functions without a reason: {bad}")
+        expect(stale == ["crates/a/src/lib.rs:12"], f"a marker over checked functions is stale: {stale}")
+        rows = {r.binary: r for r in coverage.table(bins, ported, {"SIMDIRT.DLL": {0x1001BB50}},
+                                                    {}, {})}
+        expect(rows["SIMDIRT.DLL"].exempt == 1, "exempt counts unchecked functions with a reason")
+
         # Report and image, from two port terrains where one is altered.
         want = rust.dirt(exe, 1, 128, 1, 0x40, 0x40, 0x40, 0x24)
         got = rust.dirt(exe, 1, 128, 1, 0x40, 0x40, 0x40, 0x24)
@@ -170,7 +191,7 @@ def main():
         text = report.read_text()
         expect("| Terrain generator | Altitude per vertex |" in text
                and "| QFS decompression | Hand-made edge cases | 100.00% |" in text, "report written")
-        expect("| SIMECO.DLL | 1007 | 0 | 0 | – | 0.00% | not implemented yet |" in text,
+        expect("| SIMECO.DLL | 1007 | 0 | 0 | 0 | – | 0.00% | not implemented yet |" in text,
                "report lists unported binaries at 0%")
         expect(image.stat().st_size > 10_000, "image written")
         if len(sys.argv) > 1:

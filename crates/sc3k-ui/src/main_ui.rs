@@ -25,6 +25,7 @@ pub const ID_RCI: u32 = 0x42FB_7DEA;
 pub const ID_BAR: u32 = 0x42FB_7DEB;
 
 /// `cSC3WinNav::SetArea` (libSimUI Ghidra 0x16B9C0) fixes the navigator's size.
+/// Unchecked: no Windows address known yet.
 pub const NAV_SIZE: (i32, i32) = (0xA0, 0xA4);
 
 /// The windows' areas after `cSC3MainUIMgr::place_windows`
@@ -82,6 +83,7 @@ pub fn place_windows(screen: Rect, sizes: &Sizes) -> Layout {
 /// Which of the panel's pieces exist, from the screen height
 /// (`cSC3WinMenuPanelMain::Init`, libSimUI Ghidra 0x164124). Each is (group, instance) of an
 /// image.
+/// Unchecked: no Windows address known yet.
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub struct PanelPieces {
     pub top: Option<(u32, u32)>,
@@ -110,6 +112,7 @@ impl PanelPieces {
 
 /// Where the panel's pieces go, relative to the panel
 /// (`cSC3WinMenuPanelMain::SetArea`, libSimUI Ghidra 0x163E78).
+/// Unchecked: no Windows address known yet.
 #[derive(Clone, Copy, Debug, Default, PartialEq, Eq)]
 pub struct PanelArea {
     /// The panel's final area.
@@ -419,6 +422,7 @@ impl MainUi {
 
     /// `cSC3WinMenuPanelMain::GZPaint` (libSimUI Ghidra 0x1647CC): top, main, filler, bottom,
     /// then the open submenu's image; then each button's `GZPaint`.
+    /// Unchecked: no Windows address known yet.
     fn draw_panel(&self, s: &mut Surface, p: &Panel) {
         let (ox, oy) = p.origin;
         let clip = p.area.area;

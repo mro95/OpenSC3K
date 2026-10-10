@@ -13,6 +13,7 @@ pub const GROUP_OCCUPANT: u32 = 0x80F4_8961;
 
 /// Network tile occupants (`cSTNetworkOcc::AsSC3ResourceKey`, libSimNtwrk Ghidra 0x5BFC4): the
 /// instance is the tile id. Their records are in `OccupantAttribs.IXF` too.
+/// Unchecked: no Windows address known yet.
 pub const TYPE_NETWORK_OCCUPANT: u32 = 0xE223_741F;
 pub const GROUP_NETWORK_OCCUPANT: u32 = 0xA317_745F;
 

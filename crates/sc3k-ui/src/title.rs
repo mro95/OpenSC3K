@@ -9,6 +9,7 @@
 //!
 //! Localised builds can override both through the `SPLASHBMP` / `WINSC3BMP` settings; the
 //! defaults below are what the English Unlimited release uses.
+//! Unchecked: no check runs SC3U.exe yet.
 
 use crate::main_menu::MAIN_GROUP;
 use crate::surface::{Sprite, Surface};

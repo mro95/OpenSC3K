@@ -88,6 +88,7 @@ pub struct TerrainScene {
     terrain: Terrain,
     /// Land colour per vertex, `x · vertices + y`. `cSC3DirtClodLand::getColor` (0x49060)
     /// caches the same per vertex.
+    /// Unchecked: no Windows address known yet.
     land: Vec<[u8; 3]>,
     dirt: DirtPalettes,
     land_bump: [u8; BUMP_LEN],
@@ -159,6 +160,7 @@ impl TerrainScene {
 
     /// One clod. `cSC3DirtBag::GetDirtClod` (0x40AE4) picks the kind by how many corners are
     /// at or below the water: none land, all four water, otherwise shore.
+    /// Unchecked: no Windows address known yet.
     fn draw_cell(&self, screen: &mut Surface, clip: Rect, view: &View, i: u32, j: u32) {
         let t = &self.terrain;
         let v = t.vertices();
@@ -312,6 +314,7 @@ fn haze(c: [u8; 3], zoom: u32) -> [u8; 3] {
 /// `GenerateBumpMaps` (0x48814), from one `cRZRandom`:
 /// - land: each byte −8, 0 or +8;
 /// - water: runs of 1–8 bytes of +8 or −9, each followed by 1–8 zero bytes.
+/// Unchecked: no Windows address known yet.
 fn bump_maps(seed: u32) -> ([u8; BUMP_LEN], [u8; BUMP_LEN]) {
     let mut rng = Random::new(seed);
     let mut land = [0u8; BUMP_LEN];
