@@ -79,7 +79,8 @@ EXPORT u32 probe_trace(Rng *r) {
     return (u32)g + (d > 1.5);
 }
 
-/* cRZFastCompression3. The compressor only writes literals: enough for a round trip. */
+/* cRZFastCompression3. The compressor only writes literals: enough for a round trip. Each
+   stream sits behind a 4-byte little-endian size of the whole block, prefix included. */
 typedef unsigned char u8;
 typedef struct { void **vtable; u32 refs; } Qfs;
 
@@ -87,16 +88,17 @@ EXPORT u32 __thiscall qfs_query_interface(Qfs *q, u32 iid, void **out) { *out = 
 EXPORT u32 __thiscall qfs_add_ref(Qfs *q) { return ++q->refs; }
 EXPORT u32 __thiscall qfs_release(Qfs *q) { return --q->refs; }
 
-EXPORT u32 __thiscall qfs_max_length(Qfs *q, u32 n) { return n + n / 112 + 16; }
+EXPORT u32 __thiscall qfs_max_length(Qfs *q, u32 n) { return n + n / 112 + 20; }
 
 EXPORT u32 __thiscall qfs_length(Qfs *q, const u8 *s) {
+    s += 4;
     u32 width = (s[0] & 0x80) ? 4 : 3, at = 2 + ((s[0] & 1) ? width : 0), n = 0;
     for (u32 i = 0; i < width; i++) n = n << 8 | s[at + i];
     return n;
 }
 
 EXPORT u32 __thiscall qfs_compress(Qfs *q, const u8 *src, u32 n, u8 *dst, u32 *out_len) {
-    u32 o = 0, i = 0;
+    u32 o = 4, i = 0;
     dst[o++] = 0x10; dst[o++] = 0xFB;
     dst[o++] = (u8)(n >> 16); dst[o++] = (u8)(n >> 8); dst[o++] = (u8)n;
     while (n - i >= 4) {
@@ -107,11 +109,14 @@ EXPORT u32 __thiscall qfs_compress(Qfs *q, const u8 *src, u32 n, u8 *dst, u32 *o
     }
     dst[o++] = (u8)(0xFC | (n - i));
     while (i < n) dst[o++] = src[i++];
+    for (u32 j = 0; j < 4; j++) dst[j] = (u8)(o >> 8 * j);
     *out_len = o;
     return 1;
 }
 
 EXPORT u32 __thiscall qfs_decompress(Qfs *q, const u8 *s, u32 len, u8 *dst, u32 *out_len) {
+    if (len < 4) return 0;
+    s += 4; len -= 4;
     u32 width = (s[0] & 0x80) ? 4 : 3, at = 2 + ((s[0] & 1) ? width : 0) + width;
     u32 cap = *out_len, o = 0;
     if (len < 5 || s[1] != 0xFB) return 0;
