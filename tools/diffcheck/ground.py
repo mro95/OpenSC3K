@@ -1,12 +1,18 @@
 """The saved-terrain check: `cSC3DirtBag::Init(cISC3City*, cIGZDBSegment*)` in SIMDIRT.DLL
 against `sc3k_sim::load::read_dirt_bag`, and the vertex light it computes at the end
-(`calculateAndSetVertexLight`) against `sc3k_render::light::vertex_light`.
+(`calculateAndSetVertexLight`) against `sc3k_render::light::vertex_light`. On the loaded dirt
+bag it then asks `GetVertexAltitude`, `IsWater` and `IsRealWater` for every vertex or cell
+of every `STRIDE`th column, against `sc3k_sim::flora` (all columns would triple the check's
+time).
 
 Every `.sct` terrain and `.sc3` city under $SC3K_DATA/Cities. `sc3k-dump diffref ground`
 copies the dirt bag's record out of the file and gives the port's reading of it. The original
 reads the same bytes: the check builds a dirt bag the way `Init(cISC3City*)` leaves it and
 hands `Init` a fake city, DB segment and serial record (`Emu.fake_object`). The serial record
 serves the fields from the record's bytes in the order the original asks for them.
+
+`GenerateBumpMaps` runs once, against `sc3k_render::terrain::bump_maps`. It seeds its
+`cRZRandom` with the clock, and the emulator's `timeGetTime` returns 0.
 """
 
 import struct
@@ -19,7 +25,10 @@ import pool
 from checks import read_cellmap
 
 SERIAL_IID = 0x00199627     # cIGZDBSerialRecord
-MAPS = ["altitude", "water", "light"]
+MAPS = ["altitude", "water", "light"]              # what Init leaves, one byte per vertex
+QUERIES = ["vertex_altitude", "is_water", "is_real_water"]
+CELL_MAPS = {"is_water", "is_real_water"}           # one byte per cell
+STRIDE = 4                                          # columns between queried ones
 
 
 @dataclass
@@ -30,6 +39,9 @@ class Ground:
     altitude: bytes
     water: bytes
     light: bytes
+    vertex_altitude: bytes
+    is_water: bytes
+    is_real_water: bytes
 
 
 @dataclass
@@ -52,11 +64,16 @@ def port(exe, path, outdir):
     if data[:8] != b"SC3KGREF":
         raise ValueError("not a diffref ground file")
     version, vx, vy, sea = struct.unpack_from("<4I", data, 8)
-    if version != 1:
-        raise ValueError(f"diffref ground version {version}, expected 1")
+    if version != 2:
+        raise ValueError(f"diffref ground version {version}, expected 2")
     n, at = vx * vy, 24
-    maps = [data[at + i * n:at + (i + 1) * n] for i in range(3)]
-    return (outdir / "record.bin").read_bytes(), Ground(vx, vy, sea, *maps)
+    maps = [data[at + i * n:at + (i + 1) * n] for i in range(4)]
+    cells = data[at + 4 * n:]
+    c = vy - 1
+    maps[3] = b"".join(maps[3][x * vy:(x + 1) * vy] for x in range(0, vx, STRIDE))
+    cells = b"".join(cells[x * c:(x + 1) * c] for x in range(0, vx - 1, STRIDE))
+    return (outdir / "record.bin").read_bytes(), Ground(
+        vx, vy, sea, *maps, bytes(c & 1 for c in cells), bytes(c >> 1 & 1 for c in cells))
 
 
 class Record:
@@ -157,7 +174,19 @@ def original(emu, target, record, size):
         raise RuntimeError(f"Init refused the record after {rec.pos} of {len(record)} bytes")
     maps = {k: read_cellmap(emu, emu.u32(obj + g[k])) for k in MAPS}
     vx, vy, _ = maps["altitude"]
-    return Ground(vx, vy, emu.u8(obj + g["sea"]), *(maps[k][2] for k in MAPS)), \
+    out = emu.alloc(4)
+
+    def vertex_altitude(x, y):
+        emu.call(g["GetVertexAltitude"], [x, y, out], this=obj)
+        return emu.u8(out)
+
+    ask = lambda f, x, y: emu.call(g[f], [x, y], this=obj) & 0xFF != 0  # noqa: E731
+    vertices = [(x, y) for x in range(0, vx, STRIDE) for y in range(vy)]
+    cells = [(x, y) for x in range(0, vx - 1, STRIDE) for y in range(vy - 1)]
+    return Ground(vx, vy, emu.u8(obj + g["sea"]), *(maps[k][2] for k in MAPS),
+                  bytes(vertex_altitude(x, y) for x, y in vertices),
+                  bytes(ask("IsWater", x, y) for x, y in cells),
+                  bytes(ask("IsRealWater", x, y) for x, y in cells)), \
         len(record) - rec.pos
 
 
@@ -166,13 +195,14 @@ def compare(case, want, got):
     if (want.vx, want.vy) != (got.vx, got.vy):
         raise RuntimeError(f"{case.file}: original is {want.vx}x{want.vy} vertices, port "
                            f"{got.vx}x{got.vy}")
-    n = want.vx * want.vy
-    for m in MAPS:
+    for m in MAPS + QUERIES:
         a, b = getattr(want, m), getattr(got, m)
-        case.equal[m] = sum(x == y for x, y in zip(a, b)) / n
-        diff = next((i for i in range(n) if a[i] != b[i]), None)
+        height = want.vy - 1 if m in CELL_MAPS else want.vy
+        case.equal[m] = sum(x == y for x, y in zip(a, b)) / len(a)
+        diff = next((i for i in range(len(a)) if a[i] != b[i]), None)
         if diff is not None and not case.first:
-            x, y = divmod(diff, want.vy)
+            x, y = divmod(diff, height)
+            x *= STRIDE if m in QUERIES else 1
             case.first = f"{m} at ({x}, {y}): original {a[diff]}, port {b[diff]}"
     return case
 
@@ -198,3 +228,33 @@ def check_ground(make_emu, target, exe, root, progress=None):
                 progress(i, len(paths), case)
             out.append(case)
     return out
+
+
+@dataclass
+class BumpCase:
+    equal: dict = field(default_factory=dict)       # "land"/"water" -> fraction of equal bytes
+    first: str = ""
+
+    def ok(self):
+        return all(v == 1.0 for v in self.equal.values())
+
+
+def check_bump(emu, target, exe):
+    """`GenerateBumpMaps` against the port's, both from a clock of 0."""
+    g = target.dirt_bag
+    with tempfile.TemporaryDirectory() as d:
+        out = Path(d) / "bump.bin"
+        subprocess.run([str(exe), "diffref", "bump", "0", str(out)], check=True)
+        data = out.read_bytes()
+    if data[:8] != b"SC3KBUMP" or struct.unpack_from("<I", data, 8)[0] != 1:
+        raise ValueError("not a diffref bump file, version 1")
+    n = g["bump_len"]
+    emu.call(g["GenerateBumpMaps"], [])
+    case = BumpCase()
+    for i, m in enumerate(["land", "water"]):
+        a, b = emu.read(g[f"{m}_bump"], n), data[12 + i * n:12 + (i + 1) * n]
+        case.equal[m] = sum(x == y for x, y in zip(a, b)) / n
+        diff = next((k for k in range(n) if a[k] != b[k]), None)
+        if diff is not None and not case.first:
+            case.first = f"{m} byte {diff}: original {a[diff]:#04x}, port {b[diff]:#04x}"
+    return case

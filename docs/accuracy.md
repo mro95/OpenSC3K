@@ -11,11 +11,11 @@ Accuracy = match rate of the binary's checks × checked functions / all its
 functions. A binary nothing has been ported from yet is at 0%. Exempt: ported
 functions whose doc comment gives a reason no check runs them (`Unchecked:`).
 
-All binaries: 85 of 46771 functions ported, 31 checked, 54 exempt.
+All binaries: 88 of 46771 functions ported, 35 checked, 53 exempt.
 
 | Binary | Functions | Ported | Checked | Exempt | Checked code matches | Accuracy | Status |
 |---|---:|---:|---:|---:|---:|---:|---|
-| SIMDIRT.DLL | 750 | 35 | 25 | 10 | 100.00% | 3.33% | checked |
+| SIMDIRT.DLL | 750 | 38 | 29 | 9 | 100.00% | 3.87% | checked |
 | SIMBABLD.DLL | 2347 | 2 | 2 | 0 | 100.00% | 0.09% | checked |
 | SIMNTWRK.DLL | 1181 | 5 | 1 | 4 | 100.00% | 0.08% | checked |
 | SIMUI.DLL | 4098 | 8 | 3 | 5 | 100.00% | 0.07% | checked |
@@ -75,6 +75,11 @@ All binaries: 85 of 46771 functions ported, 31 checked, 54 exempt.
 | Saved terrain | Altitude per vertex | 100.00% | all vertices |
 | Saved terrain | Water per vertex | 100.00% | all vertices |
 | Saved terrain | Vertex light (calculateAndSetVertexLight) | 100.00% | all vertices |
+| Saved terrain | GetVertexAltitude per vertex | 100.00% | vertices of every 4th column |
+| Saved terrain | IsWater per cell | 100.00% | cells of every 4th column |
+| Saved terrain | IsRealWater per cell | 100.00% | cells of every 4th column |
+| Saved terrain | Land bump map (GenerateBumpMaps) | 100.00% | 1024 bytes |
+| Saved terrain | Water bump map (GenerateBumpMaps) | 100.00% | 1024 bytes |
 | Main UI layout | Window placement (place_windows) | 100.00% | 55 queries |
 | Main UI layout | Main buttons (get_menu_btn_info_main) | 100.00% | 154 queries |
 | Main UI layout | Date bar art (get_layout_info) | 100.00% | 14 queries |

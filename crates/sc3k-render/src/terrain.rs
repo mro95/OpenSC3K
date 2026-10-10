@@ -11,7 +11,7 @@ use sc3k_ui::Surface;
 /// Closest zoom level. Zooms run 0..=4.
 pub const MAX_ZOOM: u32 = 4;
 /// Length of the bump-noise tables (`GenerateBumpMaps`).
-const BUMP_LEN: usize = 0x400;
+pub const BUMP_LEN: usize = 0x400;
 
 /// Camera: zoom, rotation and where draw-grid vertex (0, 0) at altitude 0 lands on screen.
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
@@ -86,16 +86,18 @@ pub(crate) fn map_cell(size: u32, rotation: u32, i: u32, j: u32) -> (u32, u32) {
 /// water palettes and the bump noise.
 pub struct TerrainScene {
     terrain: Terrain,
-    /// Land colour per vertex, `x · vertices + y`. `cSC3DirtClodLand::getColor` (0x49060)
-    /// caches the same per vertex.
-    /// Unchecked: no Windows address known yet.
+    /// Land colour per vertex, `x · vertices + y`. `cSC3DirtClodLand::getColor` (0x49060,
+    /// SIMDIRT.DLL 0x1001309E) caches the same per vertex.
+    /// Unchecked: no check builds a dirt clod factory yet.
     land: Vec<[u8; 3]>,
     dirt: DirtPalettes,
     land_bump: [u8; BUMP_LEN],
     water_bump: [u8; BUMP_LEN],
 }
 
-/// Grey that marks a wet shore corner (`cSC3DirtClodShore::getColor`, 0x4A318).
+/// Grey that marks a wet shore corner (`cSC3DirtClodShore::getColor`, 0x4A318,
+/// SIMDIRT.DLL 0x100144FF).
+/// Unchecked: no check builds a dirt clod factory yet.
 const SHORE_WET: [u8; 3] = [0xA0, 0xA0, 0xA0];
 /// Squared colour distances from `SHORE_WET` at which a shore pixel turns from water to land
 /// (`Draw__C17cSC3DirtClodShore` passes them to the rasterizer at 0x47088).
@@ -158,9 +160,10 @@ impl TerrainScene {
         map_vertex(self.terrain.size, view.rotation, i, j)
     }
 
-    /// One clod. `cSC3DirtBag::GetDirtClod` (0x40AE4) picks the kind by how many corners are
-    /// at or below the water: none land, all four water, otherwise shore.
-    /// Unchecked: no Windows address known yet.
+    /// One clod. `cSC3DirtBag::GetDirtClod` (0x40AE4, SIMDIRT.DLL 0x10005B10) picks the kind
+    /// by how many corners are at or below the water: none land, all four water, otherwise
+    /// shore.
+    /// Unchecked: no check builds a dirt clod factory yet.
     fn draw_cell(&self, screen: &mut Surface, clip: Rect, view: &View, i: u32, j: u32) {
         let t = &self.terrain;
         let v = t.vertices();
@@ -230,11 +233,13 @@ impl TerrainScene {
     }
 
     /// One `cSC3DirtClodEdge` skirt under the map edge between draw-grid vertices `a` and `b`
-    /// (`pregetPoints` 0x4BBB4, `Draw` 0x4B360). The water part runs from the water surface
+    /// (`pregetPoints` 0x4BBB4, SIMDIRT.DLL 0x100163C7; `Draw` 0x4B360, SIMDIRT.DLL
+    /// 0x10015ACF). The water part runs from the water surface
     /// down to the dirt, indexed by depth below the water. The soil part runs from the dirt
     /// down to altitude −4, indexed `0x100` at the surface to `0x104 + dirt` at the bottom.
     /// The rasterizer it uses (0x48238) is not decompiled; this fills the index like the
     /// colours of the other clods and adds the water bump noise to the soil only.
+    /// Unchecked: no check builds a dirt clod factory yet.
     fn draw_edge(&self, screen: &mut Surface, clip: Rect, view: &View, a: (u32, u32), b: (u32, u32), ramp: &ColorTable) {
         let t = &self.terrain;
         let va = self.vertex(view, a.0, a.1);
@@ -311,11 +316,12 @@ fn haze(c: [u8; 3], zoom: u32) -> [u8; 3] {
     })
 }
 
-/// `GenerateBumpMaps` (0x48814), from one `cRZRandom`:
+/// `GenerateBumpMaps` (0x48814, SIMDIRT.DLL 0x100128E1), from one `cRZRandom`:
 /// - land: each byte −8, 0 or +8;
 /// - water: runs of 1–8 bytes of +8 or −9, each followed by 1–8 zero bytes.
-/// Unchecked: no Windows address known yet.
-fn bump_maps(seed: u32) -> ([u8; BUMP_LEN], [u8; BUMP_LEN]) {
+///
+/// The original seeds it with the clock; `seed` stands in for the clock's value.
+pub fn bump_maps(seed: u32) -> ([u8; BUMP_LEN], [u8; BUMP_LEN]) {
     let mut rng = Random::new(seed);
     let mut land = [0u8; BUMP_LEN];
     for b in land.iter_mut() {

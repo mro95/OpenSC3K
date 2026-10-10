@@ -43,7 +43,8 @@ fn unit(v: Vec3) -> Vec3 {
 
 /// `getVertAltForLightCalc` (libSimDirt 0x4156C): the vertex and its neighbours at (x, y+1), (x+1, y),
 /// (x, y−1) and (x−1, y). A neighbour off the map is `2 · centre − opposite`, clamped.
-/// Unchecked: no Windows address known yet (the ground check runs it only inside the vertex light).
+/// Unchecked: Windows inlines it into `calculateAndSetVertexLight` (SIMDIRT.DLL 0x10007010),
+/// which the ground check runs.
 fn neighbours(alt: &CellMap<u8>, x: u32, y: u32) -> [u8; 5] {
     let (vx, vy) = (alt.width(), alt.height());
     let mirror = |c: u8, o: u8| (2 * c as i32 - o as i32).clamp(0, 255) as u8;

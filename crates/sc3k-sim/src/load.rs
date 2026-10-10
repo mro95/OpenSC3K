@@ -94,7 +94,8 @@ pub fn read_ground(archive: &sc3k_formats::ixf::Archive) -> Result<Ground, Error
 /// u8[X+1][Z+1]   vertex altitude, one column per x, from x = X down to 0
 /// u8             sea level
 /// u8[X+1][Z+1]   water level per vertex, the same way
-/// u32[X·Z/32]    blocked cells, bit (x + z·X) (`BlockCell`, Ghidra 0x4204C)
+/// u32[X·Z/32]    blocked cells, bit (x + z·X) (`BlockCell`, Ghidra 0x4204C,
+///                SIMDIRT.DLL 0x1000E470)
 /// string         "DirtBag End"              only with markers
 /// ```
 ///
@@ -102,7 +103,7 @@ pub fn read_ground(archive: &sc3k_formats::ixf::Archive) -> Result<Ground, Error
 /// the square size that fits the record's length. Salt water is not saved: the original
 /// recomputes it (`RecalcSaltWater`), which is not ported, so every vertex reads fresh. The
 /// generator's flora map is not saved either; the trees are in the flora layer.
-/// Unchecked: BlockCell has no Windows address known yet.
+/// Unchecked: the reader skips the blocked cells, and no check calls `BlockCell`.
 pub fn read_dirt_bag(record: &[u8]) -> Result<Terrain, Error> {
     let mut r = Reader::new(record);
     let v = Version::read(&mut r);

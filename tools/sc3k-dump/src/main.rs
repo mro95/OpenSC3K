@@ -39,6 +39,7 @@ usage:
   sc3k-dump diffref qfs <dir>
   sc3k-dump diffref ui <script.txt> <out.txt>
   sc3k-dump diffref ground <file.sct|file.sc3> <outdir>
+  sc3k-dump diffref bump <seed> <out.bin>
   sc3k-dump diffref tiling <list.txt> <out.txt>
   sc3k-dump diffref qfs-samples <root> <outdir> <limit>
                                      reference output of the port for tools/diffcheck";
@@ -69,6 +70,7 @@ fn main() -> ExitCode {
         ["diffref", "qfs", dir] => diffref_qfs(Path::new(dir)),
         ["diffref", "ui", script, out] => diffref_ui(Path::new(script), Path::new(out)),
         ["diffref", "ground", file, outdir] => diffref_ground(Path::new(file), Path::new(outdir)),
+        ["diffref", "bump", seed, out] => diffref_bump(seed, Path::new(out)),
         ["diffref", "tiling", list, out] => diffref_tiling(Path::new(list), Path::new(out)),
         ["diffref", "qfs-samples", root, out, limit] => {
             diffref_qfs_samples(Path::new(root), Path::new(out), limit)
@@ -514,10 +516,12 @@ fn diffref_dirt(args: [&&str; 7], out: &Path) -> Result<(), String> {
 
 /// The saved terrain of a `.sct`/`.sc3` for `tools/diffcheck/run.py ground`: writes the dirt
 /// bag's record as stored (`<outdir>/record.bin`, the original's input) and the port's reading
-/// of it (`<outdir>/port.bin`): "SC3KGREF", u32 version 1, vertices X, vertices Y, sea level;
-/// then the altitude, water and vertex light maps, one byte per vertex, column by column
-/// (`x * Y + y`).
+/// of it (`<outdir>/port.bin`): "SC3KGREF", u32 version 2, vertices X, vertices Y, sea level;
+/// then the altitude, water, vertex light and `GetVertexAltitude` maps, one byte per vertex,
+/// column by column (`x * Y + y`); then one byte per cell, the same way: bit 0 `IsWater`,
+/// bit 1 `IsRealWater`.
 fn diffref_ground(file: &Path, outdir: &Path) -> Result<(), String> {
+    use sc3k_sim::flora;
     use sc3k_sim::load::{read_dirt_bag, KEY_DIRT_BAG};
     let at = |e: &dyn std::fmt::Display| format!("{}: {e}", file.display());
     let archive = Archive::open(file).map_err(|e| at(&e))?;
@@ -533,14 +537,30 @@ fn diffref_ground(file: &Path, outdir: &Path) -> Result<(), String> {
     let light = sc3k_render::light::vertex_light(&t);
     let v = t.vertices();
     let mut b = b"SC3KGREF".to_vec();
-    for n in [1, v, v, t.sea_level as u32] {
+    for n in [2, v, v, t.sea_level as u32] {
         b.extend_from_slice(&n.to_le_bytes());
     }
     let cells = || (0..v).flat_map(|x| (0..v).map(move |y| (x, y)));
     b.extend(cells().map(|(x, y)| t.altitude.get(x, y)));
     b.extend(cells().map(|(x, y)| t.water.get(x, y)));
     b.extend(cells().map(|(x, y)| light.get(x, y)));
+    b.extend(cells().map(|(x, y)| flora::vertex_altitude(&t, x, y)));
+    let c = t.size;
+    b.extend((0..c).flat_map(|x| (0..c).map(move |y| (x, y))).map(|(x, y)| {
+        flora::is_water(&t, x, y) as u8 | (flora::is_real_water(&t, x, y) as u8) << 1
+    }));
     write("port.bin", &b)
+}
+
+/// The bump maps for `tools/diffcheck/run.py ground`, with `seed` in place of the clock:
+/// "SC3KBUMP", u32 version 1, then the land and the water map.
+fn diffref_bump(seed: &str, out: &Path) -> Result<(), String> {
+    let (land, water) = sc3k_render::terrain::bump_maps(num(seed)?);
+    let mut b = b"SC3KBUMP".to_vec();
+    b.extend_from_slice(&1u32.to_le_bytes());
+    b.extend_from_slice(&land);
+    b.extend_from_slice(&water);
+    std::fs::write(out, b).map_err(|e| format!("{}: {e}", out.display()))
 }
 
 /// Decompresses every `<name>.qfs` in `dir` for `tools/diffcheck/run.py qfs`: writes

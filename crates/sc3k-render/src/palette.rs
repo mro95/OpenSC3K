@@ -22,8 +22,9 @@ pub struct ColorTable {
 }
 
 impl ColorTable {
-    /// `Init_FromBuffer` (libSimDirt 0x44DB8): pixel (x, y) becomes row y, entry x.
-    /// Unchecked: no Windows address known yet.
+    /// `Init_FromBuffer` (libSimDirt 0x44DB8, SIMDIRT.DLL 0x10012342): pixel (x, y) becomes
+    /// row y, entry x.
+    /// Unchecked: no check feeds it a buffer yet.
     pub fn from_bmp(bmp: &Bmp) -> ColorTable {
         let rows = bmp
             .pixels

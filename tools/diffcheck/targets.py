@@ -85,6 +85,15 @@ SIMDIRT = Target(
     dirt_bag={
         "Init": 0x10004A00,                 # Init(cISC3City*, cIGZDBSegment*)
         "calculateAndSetVertexLight": 0x10007010,
+        # Vertex and cell queries: vtable slots 20, 23 and 25, as on Loki.
+        "GetVertexAltitude": 0x10005A70,
+        "IsWater": 0x100065F0,
+        "IsRealWater": 0x10006710,
+        # cSC3DirtClodX::GenerateBumpMaps (static) and the tables it fills.
+        "GenerateBumpMaps": 0x100128E1,
+        "land_bump": 0x100252D0,
+        "water_bump": 0x10025740,
+        "bump_len": 0x400,
         "vtable": 0x1002046C,
         "key": (0x206C6E7C, 0x21737DE5, 0),
         "size": 0x80,

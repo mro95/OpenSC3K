@@ -14,7 +14,8 @@ tools/diffcheck/run.py all                    # needs $SC3K_DATA; exit status 1 
 tools/diffcheck/run.py rng --seeds 50         # only cRZRandom
 tools/diffcheck/run.py dirt --sizes 128       # only the terrain generator
 tools/diffcheck/run.py qfs                    # only QFS decompression (SIMBABLD.DLL)
-tools/diffcheck/run.py ground                 # only saved terrains and their vertex light
+tools/diffcheck/run.py ground                 # only saved terrains, their vertex light,
+                                              # the dirt bag's queries and the bump maps
 tools/diffcheck/run.py ui                     # only the main UI layout (SIMUI.DLL)
 tools/diffcheck/run.py tiling                 # only the tile set reader (SIMNTWRK.DLL)
 tools/diffcheck/run.py coverage               # the per-binary table; needs no install
@@ -129,7 +130,16 @@ tools/diffcheck/selftest.py                   # tests the checker itself, no gam
   - the altitude, water and light maps, vertex by vertex;
   - the sea level;
   - whether the original read the whole record.
-- Windows slot numbers of the interfaces are in `docs/formats/save.md`.
+- **Queries:** on the loaded dirt bag, `GetVertexAltitude` (0x10005A70) for every vertex and
+  `IsWater` (0x100065F0) and `IsRealWater` (0x10006710) for every cell, in every fourth
+  column (`ground.STRIDE`), against `sc3k_sim::flora`. Every column would take the check
+  from 8 to 23 seconds. `diffref ground` writes the port's answers for all of them.
+- **Bump maps:** `GenerateBumpMaps` (0x100128E1) runs once and fills the two 1024-byte tables
+  at 0x100252D0 (land) and 0x10025740 (water), against `sc3k-dump diffref bump 0`. Its
+  `cRZRandom` is seeded with the clock, and the `timeGetTime` stub returns 0.
+- Windows slot numbers of the interfaces are in `docs/formats/save.md`. The dirt bag's
+  vtable (0x1002046C) has the Loki slots in the Loki order, except that overloads come in
+  another order (`Init`, `SetVertexAltitude`, `SetWaterTable`, `InCellBounds`, ...).
 
 ### `ui`: the main UI layout (`SIMUI.DLL`)
 - Three functions from `docs/ui/main-ui.md`, on one emulator. Fakes are made once and their
@@ -225,6 +235,10 @@ tools/diffcheck/selftest.py                   # tests the checker itself, no gam
 - The dirt bag record layout in `docs/formats/save.md`, on all 35 saved terrains.
 - The vertex light, once the port used the float π and the original's float rounding
   (`docs/render/terrain.md`).
+- `GetVertexAltitude`, `IsWater` and `IsRealWater` (`sc3k_sim::flora`), and the bump maps
+  (`docs/render/terrain.md`).
+- Windows inlines `getVertAltForLightCalc` into `calculateAndSetVertexLight`, so the vertex
+  light covers it.
 
 ## Confirmed by the `ui` check
 - The window placement, the main button table and the bar's art group in
@@ -236,7 +250,11 @@ tools/diffcheck/selftest.py                   # tests the checker itself, no gam
 - The compressed segment reader (`sc3k_formats::segment`). Its Windows code is in
   `GZResourceD.dll` but not located function by function; the `ground` check starts from the
   record bytes the port extracts.
-- The flora layer record (`cSC3FloraLayer::Init`, SIMGEOM.DLL, not located on Windows).
+- The flora layer record (`cSC3FloraLayer::Init`, SIMGEOM.DLL, not located on Windows), and
+  `cSC3DirtBag::SimulationBegin` (0x10005230), which fills it.
+- The dirt clods: `GetDirtClod` (0x10005B10) and `cSC3DirtClodLand::getColor` (0x1001309E)
+  need a `cSC3DirtClodFactory` with its palettes; `Init_FromBuffer` (0x10012342) needs a
+  fake `cIGZBuffer`.
 - Everything ported from Loki addresses with no Windows match (`SIMINIT`, `SIMCITY`, most of
   the render code): `run.py coverage` lists them as ported, not checked.
 

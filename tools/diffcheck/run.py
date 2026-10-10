@@ -54,7 +54,11 @@ RNG_NAMES = {
 QFS_SECTION = "QFS decompression"
 GROUND_SECTION = "Saved terrain"
 GROUND_NAMES = {"altitude": "Altitude per vertex", "water": "Water per vertex",
-                "light": "Vertex light (calculateAndSetVertexLight)"}
+                "light": "Vertex light (calculateAndSetVertexLight)",
+                "vertex_altitude": "GetVertexAltitude per vertex",
+                "is_water": "IsWater per cell", "is_real_water": "IsRealWater per cell"}
+BUMP_NAMES = {"land": "Land bump map (GenerateBumpMaps)",
+              "water": "Water bump map (GenerateBumpMaps)"}
 UI_SECTION = "Main UI layout"
 UI_NAMES = {"place_windows": "Window placement (place_windows)",
             "get_menu_btn_info_main": "Main buttons (get_menu_btn_info_main)",
@@ -67,7 +71,7 @@ QFS_NAMES = {"install": "Streams from the install", "round trip": "Original comp
 
 
 def rows_for(rng_stats, dirt_cases, qfs_stats=None, failed=None, ground_cases=None,
-             ui_stats=None, tiling_stats=None):
+             ui_stats=None, tiling_stats=None, bump=None):
     """[(section, label, rate, detail)]. `failed`: section -> error, for a check that stopped."""
     rows = []
     if rng_stats:
@@ -103,7 +107,13 @@ def rows_for(rng_stats, dirt_cases, qfs_stats=None, failed=None, ground_cases=No
              detail),
         ]
         rows += [(GROUND_SECTION, label, sum(c.equal[m] for c in ground_cases) / n,
-                  "all vertices") for m, label in GROUND_NAMES.items()]
+                  f"cells of every {ground.STRIDE}th column" if m in ground.CELL_MAPS
+                  else f"vertices of every {ground.STRIDE}th column" if m in ground.QUERIES
+                  else "all vertices")
+                 for m, label in GROUND_NAMES.items()]
+    if bump:
+        rows += [(GROUND_SECTION, BUMP_NAMES[m], bump.equal[m], "1024 bytes")
+                 for m in BUMP_NAMES]
     for f, s in (ui_stats or {}).items():
         rows.append((UI_SECTION, UI_NAMES[f], s.rate(), f"{s.queries} queries"))
     for src, s in (tiling_stats or {}).items():
@@ -181,18 +191,19 @@ def report(path, rows, rng_stats, dirt_cases, footer, dll_rows=None, qfs_stats=N
     bad = [c for c in ground_cases or [] if not c.ok()]
     if bad:
         out += ["", f"## Saved terrains that differ ({len(bad)} of {len(ground_cases)})", "",
-                "| File | Sea level | Altitude | Water | Light | Bytes unread | First difference |",
-                "|---|---|---:|---:|---:|---:|---|"]
+                "| File | Sea level | Altitude | Water | Light | GetVertexAltitude | IsWater "
+                "| IsRealWater | Bytes unread | First difference |",
+                "|---|---|---:|---:|---:|---:|---:|---:|---:|---|"]
         for c in bad:
-            eq = " | ".join(f"{c.equal[m] * 100:.2f}%" for m in ground.MAPS)
+            eq = " | ".join(f"{c.equal[m] * 100:.2f}%" for m in GROUND_NAMES)
             out.append(f"| {c.file} | {c.sea[0]} / {c.sea[1]} | {eq} | {c.unread} | {c.first} |")
     Path(path).write_text("\n".join(out) + "\n")
 
 
 def run_target(target, selected, path, args, exe, seeds, executed, located):
     """Runs the selected checks of one DLL:
-    (rng_stats, dirt_cases, qfs_stats, failed, ground_cases, ui_stats, tiling_stats)."""
-    rng_stats = dirt_cases = qfs_stats = ground_cases = ui_stats = tiling_stats = None
+    (rng_stats, dirt_cases, qfs_stats, failed, ground_cases, ui_stats, tiling_stats, bump)."""
+    rng_stats = dirt_cases = qfs_stats = ground_cases = ui_stats = tiling_stats = bump = None
     failed = {}
     def make_emu():
         return coverage.watch(Emu(path, fpcw=args.fpcw), located, executed)
@@ -245,6 +256,8 @@ def run_target(target, selected, path, args, exe, seeds, executed, located):
 
         def progress(i, n, c):
             eq = " ".join(f"{m} {c.equal[m] * 100:6.2f}%" for m in ground.MAPS)
+            if any(c.equal[m] != 1.0 for m in ground.QUERIES):
+                eq += "  " + " ".join(f"{m} {c.equal[m] * 100:6.2f}%" for m in ground.QUERIES)
             mark = "ok  " if c.ok() else "DIFF"
             print(f"[{i + 1:3}/{n}] {mark} {c.file:32} sea {c.sea[0]}/{c.sea[1]}  {eq}"
                   + (f"  {c.unread} bytes unread" if c.unread else ""))
@@ -253,8 +266,14 @@ def run_target(target, selected, path, args, exe, seeds, executed, located):
 
         try:
             ground_cases = ground.check_ground(make_emu, target, exe, root, progress)
+            bump = ground.check_bump(make_emu(), target, exe)
         except (EmuError, RuntimeError) as e:
             failed[GROUND_SECTION] = str(e)
+        if bump:
+            print(f"bump maps (GenerateBumpMaps): land {bump.equal['land'] * 100:.2f}%, "
+                  f"water {bump.equal['water'] * 100:.2f}%")
+            if bump.first:
+                print(f"    first difference: {bump.first}")
     if "ui" in selected:
         try:
             ui_stats = ui.check_ui(make_emu, target, exe)
@@ -277,7 +296,7 @@ def run_target(target, selected, path, args, exe, seeds, executed, located):
                 print(f"    first difference: {s.first}")
     for section, error in failed.items():
         print(f"{section}: check stopped: {error}")
-    return rng_stats, dirt_cases, qfs_stats, failed, ground_cases, ui_stats, tiling_stats
+    return rng_stats, dirt_cases, qfs_stats, failed, ground_cases, ui_stats, tiling_stats, bump
 
 
 def main():
@@ -314,7 +333,7 @@ def main():
     if args.what == "coverage":
         notes.update({t.dll: "not run: coverage only" for t in TARGETS})
     executed = {name: set() for name in bins}
-    rng_stats = dirt_cases = qfs_stats = ground_cases = ui_stats = tiling_stats = None
+    rng_stats = dirt_cases = qfs_stats = ground_cases = ui_stats = tiling_stats = bump = None
     failed = {}
     exe = None
     seeds = [1 + 0x9E3779B9 * i & 0x7FFFFFFF for i in range(args.seeds)]
@@ -333,18 +352,18 @@ def main():
             print("building sc3k-dump ...", file=sys.stderr)
             exe = rust.build()
         print(f"== {target.dll}")
-        r, d, q, f, g, u, t = run_target(target, mine, path, args, exe, seeds,
-                                      executed[target.dll], ported[target.dll].located)
+        r, d, q, f, g, u, t, b = run_target(target, mine, path, args, exe, seeds,
+                                         executed[target.dll], ported[target.dll].located)
         rng_stats, dirt_cases, qfs_stats = r or rng_stats, d or dirt_cases, q or qfs_stats
         ground_cases, ui_stats = g or ground_cases, u or ui_stats
-        tiling_stats = t or tiling_stats
+        tiling_stats, bump = t or tiling_stats, b or bump
         failed.update(f)
-        own = rows_for(r, d, q, f, g, u, t)
+        own = rows_for(r, d, q, f, g, u, t, b)
         if own:
             matches[target.dll] = sum(row[2] for row in own) / len(own)
 
     rows = rows_for(rng_stats, dirt_cases, qfs_stats, failed, ground_cases, ui_stats,
-                    tiling_stats)
+                    tiling_stats, bump)
     dll_rows = coverage.table(bins, ported, executed, matches, notes)
     if args.what in ("coverage", "all"):
         print(f"\n{'binary':18} {'functions':>9} {'ported':>6} {'checked':>7} {'exempt':>6} "
