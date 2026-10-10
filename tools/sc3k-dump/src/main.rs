@@ -3,9 +3,11 @@
 use sc3k_formats::image::Image;
 use sc3k_formats::ixf::{is_ixf, Archive, Tgi};
 use sc3k_formats::sprite::{Sprite, TYPE_DATA};
+use sc3k_render::roads::RoadTile;
 use std::collections::BTreeMap;
 use std::path::{Path, PathBuf};
 use std::process::ExitCode;
+use sc3k_render::terrain::{TerrainScene, View, MAX_ZOOM};
 
 const USAGE: &str = "\
 usage:
@@ -26,6 +28,9 @@ usage:
   sc3k-dump iso-file <file> <zoom> <out.png> [flora set]
                                      the ground of a saved city (.sc3) or terrain (.sct)
                                      drawn the same way, trees from its flora layer
+  sc3k-dump road-tile <id> <zoom> <out.png>
+                                     one network tile's sprites at zoom 0..4, the four
+                                     rotations side by side, layer 0 only (needs $SC3K_DATA)
   sc3k-dump diffref rng <script.txt> <out.txt>
   sc3k-dump diffref dirt <seed> <size> <difficulty> <hills> <water> <trees> <flags> <out.bin>
   sc3k-dump diffref qfs <dir>
@@ -51,6 +56,7 @@ fn main() -> ExitCode {
         ["iso", seed, size, zoom, out, set] => iso(seed, size, zoom, Path::new(out), set),
         ["iso-file", file, zoom, out] => iso_file(Path::new(file), zoom, Path::new(out), "0"),
         ["iso-file", file, zoom, out, set] => iso_file(Path::new(file), zoom, Path::new(out), set),
+        ["road-tile", id, zoom, out] => road_tile(id, zoom, Path::new(out)),
         ["terrain", seed, size, out] => terrain(seed, size, "1", Path::new(out)),
         ["terrain", seed, size, out, difficulty] => terrain(seed, size, difficulty, Path::new(out)),
         ["diffref", "rng", script, out] => diffref_rng(Path::new(script), Path::new(out)),
@@ -208,6 +214,42 @@ fn iso_file(file: &Path, zoom: &str, out: &Path, set: &str) -> Result<(), String
     draw_iso(ground.terrain, &trees, 1, zoom, out, set)
 }
 
+fn road_tile(id: &str, zoom: &str, out: &Path) -> Result<(), String> {
+    const MARGIN: i32 = 8;
+    let zoom = zoom.parse::<u32>().map_err(|e| format!("{zoom}: {e}"))?;
+    if zoom > MAX_ZOOM {
+        return Err(format!("zoom {zoom} out of range"));
+    }
+    let id = id.parse::<u32>().map_err(|e| format!("{id}: {e}"))?;
+
+    let assets = sc3k_assets::Assets::from_env("ENGLISH").map_err(|e| e.to_string())?;
+    let tile = RoadTile::load(&assets, id)?;
+
+    // One box per rotation, side by side, each as wide as its frame.
+    let mut infos = Vec::with_capacity(4);
+    for rotation in 0..4 {
+        infos.push(
+            tile.info(zoom, rotation)
+                .ok_or_else(|| format!("tile {id}: no frame for zoom {zoom}, rotation {rotation}"))?,
+        );
+    }
+    let w = MARGIN + infos.iter().map(|i| i.left as i32 + i.right as i32 + MARGIN).sum::<i32>();
+    let h = 2 * MARGIN + infos.iter().map(|i| i.up as i32 + i.down as i32).max().unwrap_or(0);
+
+    let mut screen = sc3k_ui::Surface::new(w, h);
+    screen.fill(0xFF00FF);
+    let mut x = MARGIN;
+    for (rotation, info) in (0..4).zip(&infos) {
+        tile.draw(&mut screen, (x + info.left as i32, MARGIN + info.up as i32), zoom, rotation);
+        x += info.left as i32 + info.right as i32 + MARGIN;
+    }
+
+    let rgba: Vec<u8> = screen.pixels.iter().flat_map(|&p| [(p >> 16) as u8, (p >> 8) as u8, p as u8, 255]).collect();
+    write_png(out, w as u32, h as u32, &rgba).map_err(|e| format!("{}: {e}", out.display()))?;
+    println!("tile {id}: {} frames, {w}x{h}, wrote {}", tile.frame_count(), out.display());
+    Ok(())
+}
+
 fn draw_iso(
     terrain: sc3k_sim::dirt::Terrain,
     trees: &sc3k_sim::cellmap::CellMap<Option<sc3k_sim::flora::Flora>>,
@@ -217,7 +259,6 @@ fn draw_iso(
     set: &str,
 ) -> Result<(), String> {
     use sc3k_render::palette::{load_land_palettes, DirtPalettes};
-    use sc3k_render::terrain::{TerrainScene, View, MAX_ZOOM};
     let zoom = zoom.parse::<u32>().map_err(|e| format!("{zoom}: {e}"))?;
     if zoom > MAX_ZOOM {
         return Err(format!("zoom {zoom} out of range"));

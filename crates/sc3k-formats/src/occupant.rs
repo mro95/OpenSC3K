@@ -10,6 +10,12 @@ use std::fmt;
 
 pub const TYPE_OCCUPANT: u32 = 0xFFD3_0C03;
 pub const GROUP_OCCUPANT: u32 = 0x80F4_8961;
+
+/// Network tile occupants (`cSTNetworkOcc::AsSC3ResourceKey`, libSimNtwrk Ghidra 0x5BFC4): the
+/// instance is the tile id. Their records are in `OccupantAttribs.IXF` too.
+pub const TYPE_NETWORK_OCCUPANT: u32 = 0xE223_741F;
+pub const GROUP_NETWORK_OCCUPANT: u32 = 0xA317_745F;
+
 const MAGIC: &[u8; 4] = b"TKB1";
 
 /// The name, a string.

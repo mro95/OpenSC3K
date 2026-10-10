@@ -9,15 +9,13 @@
 //!
 //! Set 0, the default, registers no directory and uses the base files alone.
 
+use crate::occupants::{Image, load_occupant};
 use crate::terrain::View;
 use sc3k_assets::Assets;
-use sc3k_formats::csattrib::{SpriteAttrib, TYPE_SPRITE_ATTRIB};
 use sc3k_formats::ixf::Tgi;
-use sc3k_formats::occupant::{Occupant, GROUP_OCCUPANT, PROP_SPRITE_ATTRIB, TYPE_OCCUPANT};
-use sc3k_formats::sprite::{self, ImageInfo};
+use sc3k_formats::occupant::{GROUP_OCCUPANT, TYPE_OCCUPANT};
 use sc3k_sim::cellmap::CellMap;
 use sc3k_sim::flora::{Flora, OCCUPANTS};
-use sc3k_ui::surface::Sprite;
 use sc3k_ui::Surface;
 use std::collections::HashMap;
 
@@ -27,10 +25,6 @@ const BASE: [&str; 3] =
 /// Sprites per zoom in a flora attribute record: one per rotation.
 const ROTATIONS: usize = 4;
 
-struct Image {
-    sprite: Sprite,
-    info: ImageInfo,
-}
 
 /// The sprites of every flora occupant of one flora set.
 pub struct FloraSprites {
@@ -56,7 +50,8 @@ impl FloraSprites {
             if images.contains_key(&id) {
                 continue;
             }
-            images.insert(id, load_occupant(&find, id)?);
+            let key = Tgi { type_id: TYPE_OCCUPANT, group_id: GROUP_OCCUPANT, instance_id: id as u32 };
+            images.insert(id, load_occupant(&find, key)?);
         }
         Ok(FloraSprites { images })
     }
@@ -104,49 +99,6 @@ pub fn draw_cell<'a>(
         if let Some(f) = flora.get(x, y) {
             sprites.draw(screen, &view, draw, f);
         }
-    }
-}
-
-fn load_occupant<'a>(find: &impl Fn(Tgi) -> Option<&'a [u8]>, id: u16) -> Result<Vec<Option<Image>>, String> {
-    let key = Tgi { type_id: TYPE_OCCUPANT, group_id: GROUP_OCCUPANT, instance_id: id as u32 };
-    let occupant = Occupant::parse(find(key).ok_or_else(|| format!("flora occupant {key}"))?)
-        .map_err(|e| format!("occupant {key}: {e}"))?;
-    let attrib_key = occupant.key(PROP_SPRITE_ATTRIB).ok_or_else(|| format!("occupant {key}: no sprite key"))?;
-    if attrib_key.type_id != TYPE_SPRITE_ATTRIB {
-        return Err(format!("occupant {key}: sprite key {attrib_key}"));
-    }
-    let attrib = SpriteAttrib::parse(find(attrib_key).ok_or_else(|| format!("sprite attributes {attrib_key}"))?)
-        .map_err(|e| format!("sprite attributes {attrib_key}: {e}"))?;
-    let mut out = Vec::with_capacity(attrib.entries.len());
-    for e in &attrib.entries {
-        let tgi = |type_id| Tgi { type_id, group_id: e.group, instance_id: e.instance };
-        let (Some(data), Some(info)) = (find(tgi(sprite::TYPE_DATA)), find(tgi(sprite::TYPE_INFO))) else {
-            out.push(None);
-            continue;
-        };
-        let sprite = match sprite::Sprite::parse(data).map_err(|err| format!("sprite {}: {err}", tgi(0)))? {
-            sprite::Sprite::Span(s) => Sprite::from_span(&s),
-            sprite::Sprite::Alpha(_) => return Err(format!("sprite {} is an alpha mask", tgi(0))),
-        };
-        let info = ImageInfo::parse(info).map_err(|err| format!("image info {}: {err}", tgi(1)))?;
-        out.push(Some(scale(Image { sprite, info }, e.scale)));
-    }
-    Ok(out)
-}
-
-/// `SprAttDraw`'s scale byte: positive multiplies the image info and the picture, negative
-/// divides them.
-fn scale(img: Image, s: i8) -> Image {
-    let (num, den) = match s {
-        0 => return img,
-        s if s > 0 => (s as i32, 1),
-        s => (1, -(s as i32)),
-    };
-    let f = |v: i16| (v as i32 * num / den) as i16;
-    let i = img.info;
-    Image {
-        sprite: img.sprite.scaled(num, den),
-        info: ImageInfo { left: f(i.left), up: f(i.up), right: f(i.right), down: f(i.down) },
     }
 }
 

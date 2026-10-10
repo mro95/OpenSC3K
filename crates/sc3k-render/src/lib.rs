@@ -5,5 +5,7 @@ pub mod background;
 pub mod camera;
 pub mod flora;
 pub mod light;
+pub mod occupants;
 pub mod palette;
+pub mod roads;
 pub mod terrain;
