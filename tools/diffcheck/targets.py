@@ -85,10 +85,37 @@ SIMDIRT = Target(
     dirt_bag={
         "Init": 0x10004A00,                 # Init(cISC3City*, cIGZDBSegment*)
         "calculateAndSetVertexLight": 0x10007010,
-        # Vertex and cell queries: vtable slots 20, 23 and 25, as on Loki.
-        "GetVertexAltitude": 0x10005A70,
-        "IsWater": 0x100065F0,
-        "IsRealWater": 0x10006710,
+        # The queries diffref ground lists, from the vtable (the Loki slots in the Loki
+        # order; overloads in another order): address and how the answer comes back, "out8"
+        # a byte through a pointer after the arguments, "bool" AL, "u8" AL, "u32" EAX.
+        "queries": {
+            "GetVertexAltitude": (0x10005A70, "out8"),
+            "GetVertexAltitudeDirt": (0x10005AB0, "out8"),
+            "GetVertexAltitudeWater": (0x10005AD0, "out8"),
+            "GetVertexLight": (0x10005AF0, "out8"),
+            "IsWater": (0x100065F0, "bool"),
+            "CellWaterVertCount": (0x10006830, "u8"),
+            "IsRealWater": (0x10006710, "bool"),
+            "GetGlobalSeaLevel": (0x10006950, "u8"),
+            "CellCountX": (0x10006DF0, "u32"),
+            "CellCountZ": (0x10006E10, "u32"),
+            "VertexCountX": (0x10006E30, "u32"),
+            "VertexCountZ": (0x10006E50, "u32"),
+            "AltitudeMax": (0x10006E70, "u8"),
+            "AltitudeMin": (0x10006E80, "u8"),
+            "MaxAltitudeAllowed": (0x10006E90, "u8"),
+            "MinAltitudeAllowed": (0x10006EA0, "u8"),
+            "MaxAltitudeDeltaAllowed": (0x10006EB0, "u8"),
+            "GetAverageAltitude": (0x1000EAB0, "u8"),
+            "InCellBounds": (0x10006EE0, "bool"),
+            "InCellRectBounds": (0x10006F10, "bool"),
+            "InVertexBounds": (0x10006F60, "bool"),
+            "InVertexRectBounds": (0x10006F90, "bool"),
+            "IsValidVertexAltitude": (0x10006FE0, "bool"),
+            "IsValidVertexLight": (0x10006FF0, "bool"),
+            "MaxAltitudeDelta": (0x1000F6E0, "u8"),
+            "GetPathGranularity": (0x1000E460, "u32"),
+        },
         # cSC3DirtClodX::GenerateBumpMaps (static) and the tables it fills.
         "GenerateBumpMaps": 0x100128E1,
         "land_bump": 0x100252D0,

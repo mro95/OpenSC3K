@@ -516,12 +516,12 @@ fn diffref_dirt(args: [&&str; 7], out: &Path) -> Result<(), String> {
 
 /// The saved terrain of a `.sct`/`.sc3` for `tools/diffcheck/run.py ground`: writes the dirt
 /// bag's record as stored (`<outdir>/record.bin`, the original's input) and the port's reading
-/// of it (`<outdir>/port.bin`): "SC3KGREF", u32 version 2, vertices X, vertices Y, sea level;
-/// then the altitude, water, vertex light and `GetVertexAltitude` maps, one byte per vertex,
-/// column by column (`x * Y + y`); then one byte per cell, the same way: bit 0 `IsWater`,
-/// bit 1 `IsRealWater`.
+/// of it (`<outdir>/port.bin`): "SC3KGREF", u32 version 3, vertices X, vertices Y, sea level;
+/// then the altitude, water and vertex light maps, one byte per vertex, column by column
+/// (`x * Y + y`). `<outdir>/queries.txt` holds the port's answers to the dirt bag's queries
+/// (`sc3k_sim::dirt_bag`), one `Name arg... = answer` per line, in decimal. The vertex and
+/// cell queries cover every 16th column, the water ones every 4th.
 fn diffref_ground(file: &Path, outdir: &Path) -> Result<(), String> {
-    use sc3k_sim::flora;
     use sc3k_sim::load::{read_dirt_bag, KEY_DIRT_BAG};
     let at = |e: &dyn std::fmt::Display| format!("{}: {e}", file.display());
     let archive = Archive::open(file).map_err(|e| at(&e))?;
@@ -537,19 +537,85 @@ fn diffref_ground(file: &Path, outdir: &Path) -> Result<(), String> {
     let light = sc3k_render::light::vertex_light(&t);
     let v = t.vertices();
     let mut b = b"SC3KGREF".to_vec();
-    for n in [2, v, v, t.sea_level as u32] {
+    for n in [3, v, v, t.sea_level as u32] {
         b.extend_from_slice(&n.to_le_bytes());
     }
     let cells = || (0..v).flat_map(|x| (0..v).map(move |y| (x, y)));
     b.extend(cells().map(|(x, y)| t.altitude.get(x, y)));
     b.extend(cells().map(|(x, y)| t.water.get(x, y)));
     b.extend(cells().map(|(x, y)| light.get(x, y)));
-    b.extend(cells().map(|(x, y)| flora::vertex_altitude(&t, x, y)));
-    let c = t.size;
-    b.extend((0..c).flat_map(|x| (0..c).map(move |y| (x, y))).map(|(x, y)| {
-        flora::is_water(&t, x, y) as u8 | (flora::is_real_water(&t, x, y) as u8) << 1
-    }));
-    write("port.bin", &b)
+    write("port.bin", &b)?;
+    write("queries.txt", dirt_bag_queries(&t).as_bytes())
+}
+
+/// The lines of `queries.txt` for [`diffref_ground`].
+fn dirt_bag_queries(t: &sc3k_sim::dirt::Terrain) -> String {
+    use sc3k_sim::dirt_bag as bag;
+    let mut out = String::new();
+    let mut line = |name: &str, args: &[u32], answer: u32| {
+        let args: String = args.iter().map(|a| format!(" {a}")).collect();
+        out += &format!("{name}{args} = {answer}\n");
+    };
+    line("GetGlobalSeaLevel", &[], bag::global_sea_level(t) as u32);
+    line("CellCountX", &[], bag::cell_count_x(t));
+    line("CellCountZ", &[], bag::cell_count_z(t));
+    line("VertexCountX", &[], bag::vertex_count_x(t));
+    line("VertexCountZ", &[], bag::vertex_count_z(t));
+    line("MinAltitudeAllowed", &[], bag::MIN_ALTITUDE_ALLOWED as u32);
+    line("MaxAltitudeAllowed", &[], bag::MAX_ALTITUDE_ALLOWED as u32);
+    line("AltitudeMin", &[], bag::MIN_ALTITUDE_ALLOWED as u32);
+    line("AltitudeMax", &[], bag::MAX_ALTITUDE_ALLOWED as u32);
+    line("MaxAltitudeDeltaAllowed", &[], bag::MAX_ALTITUDE_DELTA_ALLOWED as u32);
+    line("MaxAltitudeDelta", &[], bag::MAX_ALTITUDE_DELTA_ALLOWED as u32);
+    line("GetPathGranularity", &[], bag::PATH_GRANULARITY);
+    line("GetAverageAltitude", &[], bag::average_altitude(t) as u32);
+    for b in [0u32, 1, 0x1F, 0x20, 0xFF] {
+        line("IsValidVertexAltitude", &[b], bag::is_valid_vertex_altitude(b as u8) as u32);
+        line("IsValidVertexLight", &[b], bag::is_valid_vertex_light(b as u8) as u32);
+    }
+    // Bounds around both edges, and a coordinate that wrapped below zero.
+    let (c, v) = (bag::cell_count_x(t), bag::vertex_count_x(t));
+    let edges = [0, 1, c - 1, c, v, u32::MAX];
+    for &x in &edges {
+        for &z in &edges {
+            line("InCellBounds", &[x, z], bag::in_cell_bounds(t, x, z) as u32);
+            line("InVertexBounds", &[x, z], bag::in_vertex_bounds(t, x, z) as u32);
+        }
+    }
+    let corners = [0, c - 1, c, v];
+    for &x1 in &corners {
+        for &z1 in &corners {
+            for &x2 in &corners {
+                for &z2 in &corners {
+                    let r = [x1, z1, x2, z2];
+                    let cell = bag::in_cell_rect_bounds(t, x1, z1, x2, z2);
+                    let vertex = bag::in_vertex_rect_bounds(t, x1, z1, x2, z2);
+                    line("InCellRectBounds", &r, cell as u32);
+                    line("InVertexRectBounds", &r, vertex as u32);
+                }
+            }
+        }
+    }
+    for x in (0..v).step_by(16) {
+        for z in 0..v {
+            line("GetVertexAltitudeDirt", &[x, z], bag::vertex_altitude_dirt(t, x, z) as u32);
+            line("GetVertexAltitudeWater", &[x, z], bag::vertex_altitude_water(t, x, z) as u32);
+            line("GetVertexLight", &[x, z], bag::vertex_light(t, x, z) as u32);
+        }
+    }
+    for x in (0..v).step_by(4) {
+        for z in 0..v {
+            line("GetVertexAltitude", &[x, z], bag::vertex_altitude(t, x, z) as u32);
+        }
+    }
+    for x in (0..c).step_by(4) {
+        for z in 0..c {
+            line("IsWater", &[x, z], bag::is_water(t, x, z) as u32);
+            line("IsRealWater", &[x, z], bag::is_real_water(t, x, z) as u32);
+            line("CellWaterVertCount", &[x, z], bag::cell_water_vert_count(t, x, z) as u32);
+        }
+    }
+    out
 }
 
 /// The bump maps for `tools/diffcheck/run.py ground`, with `seed` in place of the clock:

@@ -11,11 +11,11 @@ Accuracy = match rate of the binary's checks × checked functions / all its
 functions. A binary nothing has been ported from yet is at 0%. Exempt: ported
 functions whose doc comment gives a reason no check runs them (`Unchecked:`).
 
-All binaries: 88 of 46771 functions ported, 35 checked, 53 exempt.
+All binaries: 112 of 46771 functions ported, 59 checked, 53 exempt.
 
 | Binary | Functions | Ported | Checked | Exempt | Checked code matches | Accuracy | Status |
 |---|---:|---:|---:|---:|---:|---:|---|
-| SIMDIRT.DLL | 750 | 38 | 29 | 9 | 100.00% | 3.87% | checked |
+| SIMDIRT.DLL | 750 | 62 | 53 | 9 | 100.00% | 7.07% | checked |
 | SIMBABLD.DLL | 2347 | 2 | 2 | 0 | 100.00% | 0.09% | checked |
 | SIMNTWRK.DLL | 1181 | 5 | 1 | 4 | 100.00% | 0.08% | checked |
 | SIMUI.DLL | 4098 | 8 | 3 | 5 | 100.00% | 0.07% | checked |
@@ -75,9 +75,32 @@ All binaries: 88 of 46771 functions ported, 35 checked, 53 exempt.
 | Saved terrain | Altitude per vertex | 100.00% | all vertices |
 | Saved terrain | Water per vertex | 100.00% | all vertices |
 | Saved terrain | Vertex light (calculateAndSetVertexLight) | 100.00% | all vertices |
-| Saved terrain | GetVertexAltitude per vertex | 100.00% | vertices of every 4th column |
-| Saved terrain | IsWater per cell | 100.00% | cells of every 4th column |
-| Saved terrain | IsRealWater per cell | 100.00% | cells of every 4th column |
+| Saved terrain | Dirt bag query GetGlobalSeaLevel | 100.00% | 35 calls |
+| Saved terrain | Dirt bag query CellCountX | 100.00% | 35 calls |
+| Saved terrain | Dirt bag query CellCountZ | 100.00% | 35 calls |
+| Saved terrain | Dirt bag query VertexCountX | 100.00% | 35 calls |
+| Saved terrain | Dirt bag query VertexCountZ | 100.00% | 35 calls |
+| Saved terrain | Dirt bag query MinAltitudeAllowed | 100.00% | 35 calls |
+| Saved terrain | Dirt bag query MaxAltitudeAllowed | 100.00% | 35 calls |
+| Saved terrain | Dirt bag query AltitudeMin | 100.00% | 35 calls |
+| Saved terrain | Dirt bag query AltitudeMax | 100.00% | 35 calls |
+| Saved terrain | Dirt bag query MaxAltitudeDeltaAllowed | 100.00% | 35 calls |
+| Saved terrain | Dirt bag query MaxAltitudeDelta | 100.00% | 35 calls |
+| Saved terrain | Dirt bag query GetPathGranularity | 100.00% | 35 calls |
+| Saved terrain | Dirt bag query GetAverageAltitude | 100.00% | 35 calls |
+| Saved terrain | Dirt bag query IsValidVertexAltitude | 100.00% | 175 calls |
+| Saved terrain | Dirt bag query IsValidVertexLight | 100.00% | 175 calls |
+| Saved terrain | Dirt bag query InCellBounds | 100.00% | 1260 calls |
+| Saved terrain | Dirt bag query InVertexBounds | 100.00% | 1260 calls |
+| Saved terrain | Dirt bag query InCellRectBounds | 100.00% | 8960 calls |
+| Saved terrain | Dirt bag query InVertexRectBounds | 100.00% | 8960 calls |
+| Saved terrain | Dirt bag query GetVertexAltitudeDirt | 100.00% | 140407 calls |
+| Saved terrain | Dirt bag query GetVertexAltitudeWater | 100.00% | 140407 calls |
+| Saved terrain | Dirt bag query GetVertexLight | 100.00% | 140407 calls |
+| Saved terrain | Dirt bag query GetVertexAltitude | 100.00% | 535987 calls |
+| Saved terrain | Dirt bag query IsWater | 100.00% | 525312 calls |
+| Saved terrain | Dirt bag query IsRealWater | 100.00% | 525312 calls |
+| Saved terrain | Dirt bag query CellWaterVertCount | 100.00% | 525312 calls |
 | Saved terrain | Land bump map (GenerateBumpMaps) | 100.00% | 1024 bytes |
 | Saved terrain | Water bump map (GenerateBumpMaps) | 100.00% | 1024 bytes |
 | Main UI layout | Window placement (place_windows) | 100.00% | 55 queries |

@@ -130,10 +130,16 @@ tools/diffcheck/selftest.py                   # tests the checker itself, no gam
   - the altitude, water and light maps, vertex by vertex;
   - the sea level;
   - whether the original read the whole record.
-- **Queries:** on the loaded dirt bag, `GetVertexAltitude` (0x10005A70) for every vertex and
-  `IsWater` (0x100065F0) and `IsRealWater` (0x10006710) for every cell, in every fourth
-  column (`ground.STRIDE`), against `sc3k_sim::flora`. Every column would take the check
-  from 8 to 23 seconds. `diffref ground` writes the port's answers for all of them.
+- **Queries:** `diffref ground` also writes `queries.txt`, one `Name arg... = answer` per
+  line from `sc3k_sim::dirt_bag`. The check asks the loaded dirt bag the same (addresses and
+  return kinds in `targets.py`, `dirt_bag["queries"]`):
+  - the constants and counts once;
+  - the bounds tests on coordinates around both edges and `0xFFFFFFFF`;
+  - the plain vertex reads every 16th column;
+  - `GetVertexAltitude`, `IsWater`, `IsRealWater` and `CellWaterVertCount` every 4th column.
+  Every column would take the check from 8 to over 20 seconds; with these it takes 15.
+  A new query is a line in `dirt_bag_queries` (`tools/sc3k-dump`) and an entry in
+  `targets.py`.
 - **Bump maps:** `GenerateBumpMaps` (0x100128E1) runs once and fills the two 1024-byte tables
   at 0x100252D0 (land) and 0x10025740 (water), against `sc3k-dump diffref bump 0`. Its
   `cRZRandom` is seeded with the clock, and the `timeGetTime` stub returns 0.
@@ -235,8 +241,9 @@ tools/diffcheck/selftest.py                   # tests the checker itself, no gam
 - The dirt bag record layout in `docs/formats/save.md`, on all 35 saved terrains.
 - The vertex light, once the port used the float π and the original's float rounding
   (`docs/render/terrain.md`).
-- `GetVertexAltitude`, `IsWater` and `IsRealWater` (`sc3k_sim::flora`), and the bump maps
-  (`docs/render/terrain.md`).
+- The dirt bag's queries (`sc3k_sim::dirt_bag`) and the bump maps (`docs/render/terrain.md`).
+  `GetVertexLight` returns the dirt altitude, not the light, in both builds; `AltitudeMin`
+  and `AltitudeMax` are the allowed range (0, 0xFF), not the map's.
 - Windows inlines `getVertAltForLightCalc` into `calculateAndSetVertexLight`, so the vertex
   light covers it.
 
@@ -250,6 +257,9 @@ tools/diffcheck/selftest.py                   # tests the checker itself, no gam
 - The compressed segment reader (`sc3k_formats::segment`). Its Windows code is in
   `GZResourceD.dll` but not located function by function; the `ground` check starts from the
   record bytes the port extracts.
+- The dirt bag queries that need more of the object: `AltitudeScale` and `IsCellBlocked`
+  (the reader drops the scale and the blocked cells), `IsDeepWaterPresent` and `Distance`
+  (the seaport map).
 - The flora layer record (`cSC3FloraLayer::Init`, SIMGEOM.DLL, not located on Windows), and
   `cSC3DirtBag::SimulationBegin` (0x10005230), which fills it.
 - The dirt clods: `GetDirtClod` (0x10005B10) and `cSC3DirtClodLand::getColor` (0x1001309E)

@@ -8,6 +8,7 @@
 
 use crate::cellmap::CellMap;
 use crate::dirt::Terrain;
+use crate::dirt_bag::{is_real_water, is_water, vertex_altitude};
 use crate::rng::Random;
 
 /// Flora occupant IDs by type, density and variant (libSimGeom data 0x83F80, 100 `u16`,
@@ -141,28 +142,6 @@ fn select_flora_type(t: &Terrain, rng: &mut Random, x: u32, y: u32) -> usize {
     } else {
         4
     }
-}
-
-/// `cSC3DirtBag::GetVertexAltitude` (libSimDirt 0x4099C, SIMDIRT.DLL 0x10005A70): the higher
-/// of dirt and water.
-pub fn vertex_altitude(t: &Terrain, x: u32, y: u32) -> u8 {
-    t.altitude.get(x, y).max(t.water.get(x, y))
-}
-
-fn corners(x: u32, y: u32) -> [(u32, u32); 4] {
-    [(x, y), (x + 1, y), (x + 1, y + 1), (x, y + 1)]
-}
-
-/// `cSC3DirtBag::IsWater` (libSimDirt 0x359A0, SIMDIRT.DLL 0x100065F0): some corner's water
-/// reaches its dirt.
-pub fn is_water(t: &Terrain, x: u32, y: u32) -> bool {
-    corners(x, y).iter().any(|&(cx, cy)| t.water.get(cx, cy) >= t.altitude.get(cx, cy))
-}
-
-/// `cSC3DirtBag::IsRealWater` (libSimDirt 0x35B10, SIMDIRT.DLL 0x10006710): some corner's
-/// water is above its dirt.
-pub fn is_real_water(t: &Terrain, x: u32, y: u32) -> bool {
-    corners(x, y).iter().any(|&(cx, cy)| t.water.get(cx, cy) > t.altitude.get(cx, cy))
 }
 
 #[cfg(test)]

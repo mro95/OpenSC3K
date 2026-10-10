@@ -4,6 +4,7 @@
 pub mod cellmap;
 pub mod city;
 pub mod dirt;
+pub mod dirt_bag;
 pub mod flora;
 pub mod load;
 pub mod rng;

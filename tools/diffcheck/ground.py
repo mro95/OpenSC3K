@@ -1,9 +1,9 @@
 """The saved-terrain check: `cSC3DirtBag::Init(cISC3City*, cIGZDBSegment*)` in SIMDIRT.DLL
 against `sc3k_sim::load::read_dirt_bag`, and the vertex light it computes at the end
 (`calculateAndSetVertexLight`) against `sc3k_render::light::vertex_light`. On the loaded dirt
-bag it then asks `GetVertexAltitude`, `IsWater` and `IsRealWater` for every vertex or cell
-of every `STRIDE`th column, against `sc3k_sim::flora` (all columns would triple the check's
-time).
+bag it then asks the queries `diffref ground` lists in `queries.txt` (`sc3k_sim::dirt_bag`)
+and compares the answers. The port picks the arguments: the per-vertex and per-cell queries
+cover some columns only, since all of them would triple the check's time.
 
 Every `.sct` terrain and `.sc3` city under $SC3K_DATA/Cities. `sc3k-dump diffref ground`
 copies the dirt bag's record out of the file and gives the port's reading of it. The original
@@ -26,9 +26,6 @@ from checks import read_cellmap
 
 SERIAL_IID = 0x00199627     # cIGZDBSerialRecord
 MAPS = ["altitude", "water", "light"]              # what Init leaves, one byte per vertex
-QUERIES = ["vertex_altitude", "is_water", "is_real_water"]
-CELL_MAPS = {"is_water", "is_real_water"}           # one byte per cell
-STRIDE = 4                                          # columns between queried ones
 
 
 @dataclass
@@ -39,9 +36,6 @@ class Ground:
     altitude: bytes
     water: bytes
     light: bytes
-    vertex_altitude: bytes
-    is_water: bytes
-    is_real_water: bytes
 
 
 @dataclass
@@ -49,31 +43,32 @@ class GroundCase:
     file: str
     sea: tuple = (0, 0)
     equal: dict = field(default_factory=dict)       # map -> fraction of equal vertices
+    queries: dict = field(default_factory=dict)     # query -> [equal answers, answers]
     first: str = ""
     unread: int = 0                                 # record bytes the original left unread
 
     def ok(self):
         return self.sea[0] == self.sea[1] and all(v == 1.0 for v in self.equal.values()) \
-            and not self.unread
+            and all(e == n for e, n in self.queries.values()) and not self.unread
 
 
 def port(exe, path, outdir):
-    """(record bytes, port's Ground)."""
+    """(record bytes, port's Ground, port's queries as [(name, args, answer)])."""
     subprocess.run([str(exe), "diffref", "ground", str(path), str(outdir)], check=True)
     data = (outdir / "port.bin").read_bytes()
     if data[:8] != b"SC3KGREF":
         raise ValueError("not a diffref ground file")
     version, vx, vy, sea = struct.unpack_from("<4I", data, 8)
-    if version != 2:
-        raise ValueError(f"diffref ground version {version}, expected 2")
+    if version != 3:
+        raise ValueError(f"diffref ground version {version}, expected 3")
     n, at = vx * vy, 24
-    maps = [data[at + i * n:at + (i + 1) * n] for i in range(4)]
-    cells = data[at + 4 * n:]
-    c = vy - 1
-    maps[3] = b"".join(maps[3][x * vy:(x + 1) * vy] for x in range(0, vx, STRIDE))
-    cells = b"".join(cells[x * c:(x + 1) * c] for x in range(0, vx - 1, STRIDE))
-    return (outdir / "record.bin").read_bytes(), Ground(
-        vx, vy, sea, *maps, bytes(c & 1 for c in cells), bytes(c >> 1 & 1 for c in cells))
+    maps = [data[at + i * n:at + (i + 1) * n] for i in range(3)]
+    queries = []
+    for line in (outdir / "queries.txt").read_text().splitlines():
+        call, answer = line.split(" = ")
+        name, *args = call.split()
+        queries.append((name, [int(a) for a in args], int(answer)))
+    return (outdir / "record.bin").read_bytes(), Ground(vx, vy, sea, *maps), queries
 
 
 class Record:
@@ -104,8 +99,19 @@ def cellmap(emu, width, height, fill):
     return m
 
 
-def original(emu, target, record, size):
-    """`Init(city, segment)` on a dirt bag of `size` cells per side."""
+def ask(emu, target, obj, name, args):
+    """One dirt bag query, its answer as the port writes it."""
+    address, kind = target.dirt_bag["queries"][name]
+    if kind == "out8":
+        out = emu.alloc(4)
+        emu.call(address, args + [out], this=obj)
+        return emu.u8(out)
+    r = emu.call(address, args, this=obj)
+    return r if kind == "u32" else r & 0xFF if kind == "u8" else int(r & 0xFF != 0)
+
+
+def original(emu, target, record, size, queries):
+    """`Init(city, segment)` on a dirt bag of `size` cells per side, then `queries`."""
     g = target.dirt_bag
     rec = Record(record)
     ok = lambda e, this: 1  # noqa: E731
@@ -174,36 +180,30 @@ def original(emu, target, record, size):
         raise RuntimeError(f"Init refused the record after {rec.pos} of {len(record)} bytes")
     maps = {k: read_cellmap(emu, emu.u32(obj + g[k])) for k in MAPS}
     vx, vy, _ = maps["altitude"]
-    out = emu.alloc(4)
-
-    def vertex_altitude(x, y):
-        emu.call(g["GetVertexAltitude"], [x, y, out], this=obj)
-        return emu.u8(out)
-
-    ask = lambda f, x, y: emu.call(g[f], [x, y], this=obj) & 0xFF != 0  # noqa: E731
-    vertices = [(x, y) for x in range(0, vx, STRIDE) for y in range(vy)]
-    cells = [(x, y) for x in range(0, vx - 1, STRIDE) for y in range(vy - 1)]
-    return Ground(vx, vy, emu.u8(obj + g["sea"]), *(maps[k][2] for k in MAPS),
-                  bytes(vertex_altitude(x, y) for x, y in vertices),
-                  bytes(ask("IsWater", x, y) for x, y in cells),
-                  bytes(ask("IsRealWater", x, y) for x, y in cells)), \
-        len(record) - rec.pos
+    answers = [ask(emu, target, obj, name, args) for name, args, _ in queries]
+    return Ground(vx, vy, emu.u8(obj + g["sea"]), *(maps[k][2] for k in MAPS)), \
+        len(record) - rec.pos, answers
 
 
-def compare(case, want, got):
+def compare(case, want, got, queries, answers):
     case.sea = (want.sea, got.sea)
     if (want.vx, want.vy) != (got.vx, got.vy):
         raise RuntimeError(f"{case.file}: original is {want.vx}x{want.vy} vertices, port "
                            f"{got.vx}x{got.vy}")
-    for m in MAPS + QUERIES:
+    n = want.vx * want.vy
+    for m in MAPS:
         a, b = getattr(want, m), getattr(got, m)
-        height = want.vy - 1 if m in CELL_MAPS else want.vy
-        case.equal[m] = sum(x == y for x, y in zip(a, b)) / len(a)
-        diff = next((i for i in range(len(a)) if a[i] != b[i]), None)
+        case.equal[m] = sum(x == y for x, y in zip(a, b)) / n
+        diff = next((i for i in range(n) if a[i] != b[i]), None)
         if diff is not None and not case.first:
-            x, y = divmod(diff, height)
-            x *= STRIDE if m in QUERIES else 1
+            x, y = divmod(diff, want.vy)
             case.first = f"{m} at ({x}, {y}): original {a[diff]}, port {b[diff]}"
+    for (name, args, mine), theirs in zip(queries, answers):
+        tally = case.queries.setdefault(name, [0, 0])
+        tally[0] += mine == theirs
+        tally[1] += 1
+        if mine != theirs and not case.first:
+            case.first = f"{name}({', '.join(map(str, args))}): original {theirs}, port {mine}"
     return case
 
 
@@ -217,9 +217,9 @@ def check_ground(make_emu, target, exe, root, progress=None):
     out = []
     with tempfile.TemporaryDirectory() as d:
         def one(i):
-            record, got = port(exe, paths[i], Path(d) / str(i))
-            want, unread = original(make_emu(), target, record, got.vx - 1)
-            case = compare(GroundCase(paths[i].name), want, got)
+            record, got, queries = port(exe, paths[i], Path(d) / str(i))
+            want, unread, answers = original(make_emu(), target, record, got.vx - 1, queries)
+            case = compare(GroundCase(paths[i].name), want, got, queries, answers)
             case.unread = unread
             return case
 
