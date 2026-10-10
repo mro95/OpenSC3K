@@ -30,6 +30,8 @@ const BASE: [&str; 4] = [
 
 /// The frames of one network tile, indexed `layer · 20 + zoom · 4 + rotation`.
 pub struct RoadTile {
+    /// The sprite attributes' class; see [`slope`].
+    class: u32,
     images: Vec<Option<Image>>,
 }
 
@@ -67,8 +69,9 @@ impl RoadSprites {
         let Some(road_tile) = self.sprites.get(&network_tile.tile_id) else { return };
         let (top_x, top_y) = view.project(i as i32, j as i32, network_tile.altitude);
         let x = top_x - view.cell_width() / 2;
+        let y = top_y + road_tile.slope_shift(view.zoom, network_tile.rotation);
         let rotation = (network_tile.rotation as u32 + view.rotation) & 3;
-        road_tile.draw(screen, (x, top_y), view.zoom, rotation);
+        road_tile.draw(screen, (x, y), view.zoom, rotation);
     }
 }
 
@@ -83,7 +86,20 @@ impl RoadTile {
     fn load_from(archives: &[Archive], tile: u32) -> Result<Self, String> {
         let find = |tgi: Tgi| archives.iter().find_map(|a| a.get(tgi));
         let key = Tgi { type_id: TYPE_NETWORK_OCCUPANT, group_id: GROUP_NETWORK_OCCUPANT, instance_id: tile };
-        Ok(Self { images: load_occupant(&find, key)? })
+        let sprites = load_occupant(&find, key)?;
+        Ok(Self { class: sprites.class, images: sprites.images })
+    }
+
+    /// Pixels to move the anchor down for a tile with rotation `rotation` (the tile's own,
+    /// without the view's) at `zoom`: `-(dh << zoom)` for a [`slope`] class whose rotations
+    /// include it, else 0. `cSC3CitySpriteInstSloped<dh, r1, r2>::Draw` (libSimSpr Ghidra
+    /// 0x13E094) moves the image rectangle this way through its `GetAllSpans` (0x13D7A0),
+    /// which adds `dh << zoom` to the image info's `up` and takes it from `down`.
+    pub fn slope_shift(&self, zoom: u32, rotation: u8) -> i32 {
+        match slope(self.class) {
+            Some((dh, rotations)) if rotations.contains(&(rotation & 3)) => -(dh << zoom),
+            _ => 0,
+        }
     }
 
     /// Draw layer 0 of the frame for `zoom` and `rotation`, anchored at `(x, y)`: the left of
@@ -132,6 +148,21 @@ pub fn draw_cell<'a>(
         if let Some(tile) = tiles.get(x, y) {
             sprites.draw(screen, &view, draw, tile);
         }
+    }
+}
+
+/// The template arguments `(dh, [r1, r2])` of the `cSC3CitySpriteInstSloped<dh, r1, r2>` that
+/// `cSC3CitySpriteInstSpecialFactory` creates for sprite class `class` (libSimSpr Ghidra
+/// 0xA41D4 to 0xA4354): at tile rotation r1 or r2 the picture moves `dh` altitude units up.
+/// The Low classes move the picture of a descending slope onto its lowest corner, the High
+/// classes that of a rising one onto its highest; the tile's altitude is its corner (x, y).
+fn slope(class: u32) -> Option<(i32, [u8; 2])> {
+    match class {
+        0x59D => Some((-1, [0, 1])), // SlopedOneLow: 11202
+        0x59E => Some((1, [2, 3])),  // SlopedOneHigh: 11201
+        0x59F => Some((-2, [0, 1])), // SlopedTwoLow: 32
+        0x5A0 => Some((2, [2, 3])),  // SlopedTwoHigh: 31
+        _ => None,
     }
 }
 
@@ -193,6 +224,29 @@ mod tests {
         let mut expected = Surface::new(256, 256);
         sprites.sprites[&29].draw(&mut expected, (top_x - view.cell_width() / 2, top_y), 2, 1);
 
+        assert!(drawn.pixels.iter().any(|&p| p != 0), "nothing drawn");
+        assert!(drawn.pixels == expected.pixels);
+    }
+
+    #[test]
+    fn sloped_tiles_shift_by_their_class() {
+        let Ok(assets) = Assets::from_env("ENGLISH") else { return };
+        let sprites = RoadSprites::load(&assets, &[29, 31, 32, 11201, 11202]).unwrap();
+        let shift = |id: u16, rotation| sprites.sprites[&id].slope_shift(2, rotation);
+        // Altitude step 4 at zoom 2; positive is down.
+        assert_eq!([0, 1, 2, 3].map(|r| shift(29, r)), [0, 0, 0, 0]);
+        assert_eq!([0, 1, 2, 3].map(|r| shift(32, r)), [8, 8, 0, 0]);
+        assert_eq!([0, 1, 2, 3].map(|r| shift(11202, r)), [4, 4, 0, 0]);
+        assert_eq!([0, 1, 2, 3].map(|r| shift(31, r)), [0, 0, -8, -8]);
+        assert_eq!([0, 1, 2, 3].map(|r| shift(11201, r)), [0, 0, -4, -4]);
+
+        // Tile 32 at rotation 0 draws two altitude units below a flat tile's anchor.
+        let view = view(0);
+        let mut drawn = Surface::new(256, 256);
+        sprites.draw(&mut drawn, &view, (1, 1), road(32, 0, 3));
+        let (top_x, top_y) = view.project(1, 1, 3);
+        let mut expected = Surface::new(256, 256);
+        sprites.sprites[&32].draw(&mut expected, (top_x - view.cell_width() / 2, top_y + 8), 2, 0);
         assert!(drawn.pixels.iter().any(|&p| p != 0), "nothing drawn");
         assert!(drawn.pixels == expected.pixels);
     }

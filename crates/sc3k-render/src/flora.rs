@@ -51,7 +51,7 @@ impl FloraSprites {
                 continue;
             }
             let key = Tgi { type_id: TYPE_OCCUPANT, group_id: GROUP_OCCUPANT, instance_id: id as u32 };
-            images.insert(id, load_occupant(&find, key)?);
+            images.insert(id, load_occupant(&find, key)?.images);
         }
         Ok(FloraSprites { images })
     }

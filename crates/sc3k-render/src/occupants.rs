@@ -23,10 +23,18 @@ pub(crate) struct Image {
     pub(crate) info: ImageInfo,
 }
 
+/// An occupant's pictures and the sprite class that draws them.
+pub(crate) struct OccupantSprites {
+    /// The sprite attributes' GZCOM class (`+0x1C`).
+    pub(crate) class: u32,
+    /// One entry per frame; `None` where the sprite archive lacks the picture.
+    pub(crate) images: Vec<Option<Image>>,
+}
+
 pub(crate) fn load_occupant<'a>(
     find: &impl Fn(Tgi) -> Option<&'a [u8]>,
     key: Tgi,
-) -> Result<Vec<Option<Image>>, String> {
+) -> Result<OccupantSprites, String> {
     let occupant = Occupant::parse(find(key).ok_or_else(|| format!("occupant {key}"))?)
         .map_err(|e| format!("occupant {key}: {e}"))?;
     let attrib_key = occupant
@@ -60,7 +68,7 @@ pub(crate) fn load_occupant<'a>(
         let info = ImageInfo::parse(info).map_err(|err| format!("image info {}: {err}", tgi(1)))?;
         out.push(Some(scale(Image { sprite, info }, e.scale)));
     }
-    Ok(out)
+    Ok(OccupantSprites { class: attrib.class, images: out })
 }
 
 /// `SprAttDraw`'s scale byte: positive multiplies the image info and the picture, negative

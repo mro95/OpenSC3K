@@ -78,8 +78,31 @@ factories:
 | 0x59F | `…SpecialFactory::SlopedTwoLow` | 32 |
 | 0x5A0 | `…SpecialFactory::SlopedTwoHigh` | 31 |
 
-The classes 0x672 and 0x59D–0x5A0 involve the terrain under the tile and are not traced
-(`cSC3CitySpriteInstUseCSMTerrain`, `cSC3CitySpriteInstUseCSMTerrainSloped<…>`).
+Class 0x672 (`cSC3CitySpriteInstUseCSMTerrain`) involves the terrain under the tile and is not
+traced.
+
+### Sloped tiles (0x59D–0x5A0)
+Each factory (libSimSpr Ghidra 0xA41D4 to 0xA4354) creates a
+`cSC3CitySpriteInstSloped<dh, r1, r2>`:
+
+| Class | Factory | Template | Tile |
+|---|---|---|---|
+| 0x59D | `SlopedOneLow` | `<-1, 0, 1>` | 11202 |
+| 0x59E | `SlopedOneHigh` | `<1, 2, 3>` | 11201 |
+| 0x59F | `SlopedTwoLow` | `<-2, 0, 1>` | 32 |
+| 0x5A0 | `SlopedTwoHigh` | `<2, 2, 3>` | 31 |
+
+- **Draw** (`<-1, 0, 1>` at 0x13E094) reads the rotation offset, the top two bits of +7 that
+  `cSC3CitySpriteInst::SetRotationOffset` (exe 0x0821DA8C) sets: the tile's own rotation, not
+  the view's.
+- If it is r1 or r2, the image rectangle comes from `GetAreaFromPt`, whose `GetAllSpans`
+  (0x13D7A0) adds `dh << zoom` to the image info's `up` and takes it from `down`. The picture
+  moves `dh` altitude units up and keeps its size.
+- At any other rotation the class draws as `cSC3CitySpriteInst` does.
+
+In every install city these tiles have rotation 0 or 2, and the tile's altitude is that of its
+corner (x, y). The shift puts the anchor of a Low tile on the cell's lowest corner and that of a
+High tile on its highest.
 
 ## Layers (the 40-entry records)
 The header bytes after the class are, in file order (`SerialReadBinary`, 0x7B738, and the
@@ -144,12 +167,15 @@ is assumed, not traced (see Open questions).
   the left of the cell's bounding box and the height of its top corner. The altitude is the
   tile's own (`docs/formats/save.md`, Networks), not the terrain's, so bridges stand higher.
 - **Frame:** layer 0, `zoom · 4 + ((tile rotation + view rotation) & 3)` (see Rotation).
+- **Sloped tiles:** the anchor moves down by `-(dh << zoom)` pixels at the tile rotations of
+  their class (see Sloped tiles). Without it, a slope next to a bridge leaves a gap.
 - **Ids without sprites** (the eight without an occupant record) draw nothing.
 
 ## Open questions
 - **When layer 1 draws.** The cell map gets the chained instance; where it puts layer 1 in the
   draw order (after vehicles?) is not traced.
-- **The terrain classes** 0x672 and 0x59D–0x5A0: what they take from the terrain.
+- **The terrain classes** 0x672 and the `UseCityCSMTerrainSloped…` factories: what they take
+  from the terrain, and which records use the latter.
 - **Placement on the cell and draw order** relative to the terrain clod and trees. The port
   assumes the tree anchor ("Drawing in the city").
 - **The other networks.** Only `ROAD_GRND_Set.txt` was checked against the records.
