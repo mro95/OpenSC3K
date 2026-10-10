@@ -3,6 +3,7 @@
 //!
 //! Fields are little-endian and unaligned. A layer's record starts with the version header
 //! that `cSLAutoSaveRecordVersionInfo` reads (sc3u_demo 0x0823D924).
+//! Unchecked: no Windows address known yet.
 
 use std::fmt;
 

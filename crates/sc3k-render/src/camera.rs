@@ -47,6 +47,8 @@ impl Scroll {
     /// Edge scrolling (`UpdateScroll`, 0x1034D0, with the regions of `updateScrollRegions`,
     /// 0x1258D8): 64 pixels at the left and right, 48 at the top and bottom of the view.
     /// Inside the inner rectangle nothing scrolls.
+    /// Unchecked: no check runs the city view camera yet; updateScrollRegions has no Windows
+    /// address known yet.
     pub fn from_edge(x: i32, y: i32, width: i32, height: i32) -> Scroll {
         let inner = x >= 64 && y >= 48 && x < width - 64 && y < height - 48;
         if inner {

@@ -8,6 +8,7 @@
 //! 3. in a sprite archive (`00000009_Landscape.DAT`).
 //!
 //! Set 0, the default, registers no directory and uses the base files alone.
+//! Unchecked: no check runs SIMINIT.DLL yet.
 
 use crate::occupants::{Image, load_occupant};
 use crate::terrain::View;

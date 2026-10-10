@@ -74,8 +74,10 @@ pub fn parse_tile_set(buf: &[u8]) -> Vec<u32> {
     out
 }
 
-/// `GrokFileProtectedSets`: a count, then plain tile ids. Also reads the bridge sets and
-/// `Collapse.txt`. The count only has to be non-zero; it does not limit the loop.
+/// `GrokFileProtectedSets` (libSimNtwrk Ghidra 0x9003C): a count, then plain tile ids. Also
+/// reads the bridge sets and `Collapse.txt`. The count only has to be non-zero; it does not
+/// limit the loop.
+/// Unchecked: no Windows address known yet.
 pub fn parse_protected_set(buf: &[u8]) -> Vec<u32> {
     let mut out = Vec::new();
     let mut has_count = false;
@@ -90,8 +92,9 @@ pub fn parse_protected_set(buf: &[u8]) -> Vec<u32> {
     out
 }
 
-/// `GrokFileConvertSets`: a count, then packed `from to` pairs. A `from` whose id is 0 leaves
-/// the slot empty, so the next token is read as `from` again.
+/// `GrokFileConvertSets` (libSimNtwrk Ghidra 0x8FBE4): a count, then packed `from to` pairs.
+/// A `from` whose id is 0 leaves the slot empty, so the next token is read as `from` again.
+/// Unchecked: no Windows address known yet.
 pub fn parse_convert_set(buf: &[u8]) -> Vec<TileConvert> {
     let mut out = Vec::new();
     let mut has_count = false;
@@ -115,7 +118,9 @@ pub fn parse_convert_set(buf: &[u8]) -> Vec<TileConvert> {
     out
 }
 
-/// `cPersistantTilingFamily::Read` and `parseToken`. Each rule becomes its own set.
+/// `cPersistantTilingFamily::Read` (sc3u_demo 0x0823EEC0) and `parseToken` (0x0823F194).
+/// Each rule becomes its own set.
+/// Unchecked: no Windows address known yet.
 pub fn parse_family(buf: &[u8]) -> TilingFamily {
     let mut sets = Vec::new();
     let mut state = ParserState::Tag;

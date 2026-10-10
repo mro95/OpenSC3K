@@ -187,6 +187,9 @@ tools/diffcheck/selftest.py                   # tests the checker itself, no gam
     up in `tools/loki/symbols`; when a function name is quoted just before it, the symbol must
     have that name. Its Windows address comes from `tools/match/names` by C++ name. Without
     one it still counts as ported, but cannot be checked.
+  - Loki addresses are Ghidra's: a library's is its `tools/loki/symbols` address + 0x10000,
+    the executable's (`sc3u_demo`) is the same as there.
+  - A citation's parentheses may run over several doc comment lines.
   - Cite new ported code the same way, or it is not counted.
 - **Checked**: ported functions at a known address that ran during the checks (one-shot hooks,
   `Emu.once`).

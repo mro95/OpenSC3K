@@ -86,6 +86,11 @@ def load_binary(name):
     return b
 
 
+def ghidra_offset(lib):
+    """Ghidra address - ELF address: 0x10000 for a Loki library, 0 for the executable."""
+    return 0 if lib.endswith(".x86") else LOKI_GHIDRA_BASE
+
+
 def load_loki(lib):
     """ELF address -> demangled name, as sorted lists."""
     path = LOKI / f"{lib}.tsv"
@@ -103,7 +108,7 @@ def load_loki(lib):
 GROUP = re.compile(r"(?<![\w`])\(([^()]*\b0x[0-9A-Fa-f]+[^()]*)\)")
 RVA = re.compile(r"\b([A-Za-z][\w]*\.(?:DLL|dll|exe))\+0x([0-9A-Fa-f]+)")
 HEX = re.compile(r"\b0x([0-9A-Fa-f_]+)\b")
-WORD = re.compile(r"\b([A-Za-z][A-Za-z0-9]*)(?:\.(?:DLL|dll|exe|so))?\b")
+WORD = re.compile(r"\b([A-Za-z][A-Za-z0-9_]*)(?:\.(?:DLL|dll|exe|so))?\b")
 TICKED = re.compile(r"`([^`]+)`")
 DATA = re.compile(r"\b(rodata|\.?data|table|tables|bytes|row|rows)\b")
 MARKER = re.compile(r"\bUnchecked:\s*(\S.*)")
@@ -144,8 +149,9 @@ def _hint(before):
 
 def citations(crates=REPO / "crates"):
     """Every function address in the doc comments of `crates`. The binary is the one named in
-    the same parentheses, else the last one the file named. A citation is exempt when its doc
-    comment block (consecutive `///` or `//!` lines) has an `Unchecked:` marker."""
+    the same parentheses, else the last one the file named. Parentheses may run over several
+    doc comment lines. A citation is exempt when its doc comment block (consecutive `///` or
+    `//!` lines) has an `Unchecked:` marker."""
     windows = binaries()
     _, to_win = pairs()
     loki = sorted(to_win)
@@ -155,15 +161,24 @@ def citations(crates=REPO / "crates"):
         rel = str(path.relative_to(crates.parent))
         default = None
         block, reason, marker = len(out), "", ""
-        for n, line in enumerate(path.read_text().splitlines() + [""], 1):
-            text = line.strip()
-            if not text.startswith(("///", "//!")):
+        lines = [line.strip() for line in path.read_text().splitlines()] + [""]
+        is_doc = [line.startswith(("///", "//!")) for line in lines]
+        joined = None       # (first line number, text) of a doc line whose "(" is still open
+        for n, text in enumerate(lines, 1):
+            if not is_doc[n - 1]:
                 for c in out[block:]:
                     c.exempt, c.marker = reason, marker
                 block, reason, marker = len(out), "", ""
                 continue
             if m := MARKER.search(text):
                 reason, marker = m.group(1).strip(), f"{rel}:{n}"
+            more = is_doc[n]        # the next line continues this doc comment block
+            if joined:
+                n, text = joined[0], joined[1] + " " + text[3:].strip()
+                joined = None
+            if text.count("(") > text.count(")") and more:
+                joined = n, text
+                continue
             for m in RVA.finditer(text):
                 b = _binary_name(m.group(1), windows, loki)
                 if b in windows:
@@ -221,8 +236,9 @@ def ported_functions(cites=None):
         if lib not in lokis:
             lokis[lib] = load_loki(lib)
         addrs, names = lokis[lib]
-        i = bisect.bisect_left(addrs, address - LOKI_GHIDRA_BASE)
-        if i == len(addrs) or addrs[i] != address - LOKI_GHIDRA_BASE:
+        elf = address - ghidra_offset(lib)
+        i = bisect.bisect_left(addrs, elf)
+        if i == len(addrs) or addrs[i] != elf:
             return None
         name = names[i]
         method = name.split("(")[0].split("::")[-1]

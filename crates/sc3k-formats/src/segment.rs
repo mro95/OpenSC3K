@@ -6,6 +6,7 @@
 //! records, QFS-compressed. A record is looked up in the container first, then in the
 //! packed segments in the order the description lists them (`DoOpenRecord`,
 //! sc3u_demo 0x0833E290). The Windows copy of the class is in `GZResourceD.dll`.
+//! Unchecked: no Windows address known yet.
 
 use crate::ixf::{Archive, Tgi};
 use crate::qfs;
@@ -101,6 +102,7 @@ impl<'a> Segment<'a> {
 
 /// `readCompressDescRecord` (sc3u_demo 0x0833FBB0): method, count, then the packed records'
 /// keys.
+/// Unchecked: no Windows address known yet.
 fn read_desc(data: &[u8]) -> Result<Vec<Tgi>, Error> {
     let mut r = Reader::new(data);
     let method = r.u32()?;
@@ -125,6 +127,7 @@ fn read_desc(data: &[u8]) -> Result<Vec<Tgi>, Error> {
 /// The unpacked segment starts with `u32 count, u32 directory offset`; the directory holds
 /// `count` entries of `{type, group, instance, offset}`. Entries whose offset is not below
 /// the directory are skipped.
+/// Unchecked: no Windows address known yet.
 fn unpack(data: &[u8]) -> Result<Packed, Error> {
     let mut r = Reader::new(data);
     let method = r.u32()?;

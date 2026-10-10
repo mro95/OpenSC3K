@@ -92,8 +92,9 @@ impl RoadTile {
 
     /// Pixels to move the anchor down for a tile with rotation `rotation` (the tile's own,
     /// without the view's) at `zoom`: `-(dh << zoom)` for a [`slope`] class whose rotations
-    /// include it, else 0. `cSC3CitySpriteInstSloped<dh, r1, r2>::Draw` (libSimSpr Ghidra
-    /// 0x13E094) moves the image rectangle this way through its `GetAllSpans` (0x13D7A0),
+    /// include it, else 0.
+    /// `cSC3CitySpriteInstSloped<dh, r1, r2>::Draw` (libSimSpr Ghidra 0x13E094)
+    /// moves the image rectangle this way through its `GetAllSpans` (0x13D7A0),
     /// which adds `dh << zoom` to the image info's `up` and takes it from `down`.
     /// Unchecked: no Windows address known yet.
     pub fn slope_shift(&self, zoom: u32, rotation: u8) -> i32 {
@@ -167,7 +168,9 @@ fn slope(class: u32) -> Option<(i32, [u8; 2])> {
     }
 }
 
-/// The layer-0 frame index (`cSC3CitySpriteInst::zoom_and_compass_to_frame_no`, exe 0x0821DCF8).
+/// The layer-0 frame index (`cSC3CitySpriteInst::zoom_and_compass_to_frame_no`,
+/// sc3u_demo 0x0821DCF8).
+/// Unchecked: no Windows address known yet.
 fn frame(zoom: u32, rotation: u32) -> usize {
     const ROTATIONS: usize = 4;
     zoom as usize * ROTATIONS + rotation as usize

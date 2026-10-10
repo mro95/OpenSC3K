@@ -11,18 +11,18 @@ Accuracy = match rate of the binary's checks × checked functions / all its
 functions. A binary nothing has been ported from yet is at 0%. Exempt: ported
 functions whose doc comment gives a reason no check runs them (`Unchecked:`).
 
-All binaries: 70 of 46771 functions ported, 31 checked, 39 exempt.
+All binaries: 85 of 46771 functions ported, 31 checked, 54 exempt.
 
 | Binary | Functions | Ported | Checked | Exempt | Checked code matches | Accuracy | Status |
 |---|---:|---:|---:|---:|---:|---:|---|
 | SIMDIRT.DLL | 750 | 35 | 25 | 10 | 100.00% | 3.33% | checked |
 | SIMBABLD.DLL | 2347 | 2 | 2 | 0 | 100.00% | 0.09% | checked |
-| SIMNTWRK.DLL | 1181 | 3 | 1 | 2 | 100.00% | 0.08% | checked |
+| SIMNTWRK.DLL | 1181 | 5 | 1 | 4 | 100.00% | 0.08% | checked |
 | SIMUI.DLL | 4098 | 8 | 3 | 5 | 100.00% | 0.07% | checked |
-| SIMSPR.DLL | 2922 | 9 | 0 | 9 | – | 0.00% | ported, not checked |
+| SIMSPR.DLL | 2922 | 13 | 0 | 13 | – | 0.00% | ported, not checked |
+| SC3U.exe | 6698 | 12 | 0 | 12 | – | 0.00% | ported, not checked |
 | SIMGEOM.DLL | 1771 | 5 | 0 | 5 | – | 0.00% | ported, not checked |
-| SC3U.exe | 6698 | 4 | 0 | 4 | – | 0.00% | ported, not checked |
-| SIMINIT.DLL | 1508 | 2 | 0 | 2 | – | 0.00% | ported, not checked |
+| SIMINIT.DLL | 1508 | 3 | 0 | 3 | – | 0.00% | ported, not checked |
 | SIMCITY.DLL | 836 | 1 | 0 | 1 | – | 0.00% | ported, not checked |
 | SIMMISC.DLL | 1613 | 1 | 0 | 1 | – | 0.00% | ported, not checked |
 | AUDIO.DLL | 950 | 0 | 0 | 0 | – | 0.00% | not implemented yet |

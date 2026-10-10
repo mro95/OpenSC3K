@@ -160,11 +160,12 @@ def main():
             "/// Exempt (SIMDIRT.DLL 0x10006710),\n/// Unchecked: a reason.\nfn c() {}\n"
             "/// No reason (SIMDIRT.DLL 0x10006830).\n/// Unchecked:\nfn d() {}\n"
             "/// Runs too (SIMDIRT.DLL 0x1001BB50).\n/// Unchecked: stale.\nfn e() {}\n"
-            "/// Skipped binary (SIMBABLD.DLL 0x12059EBE).\nfn f() {}\n")
+            "/// Skipped binary (SIMBABLD.DLL 0x12059EBE).\nfn f() {}\n"
+            "/// Over two lines (SIMDIRT.DLL\n/// 0x10006950).\nfn g() {}\n")
         bins, ported = coverage.ported_functions(coverage.citations(crates))
         bad, stale = coverage.unchecked(ported, {"SIMDIRT.DLL": {0x1001BB50}},
                                         skip={"SIMBABLD.DLL"})
-        expect([f for _, f, _ in bad] == ["0x10006830", "0x10017c2d"],
+        expect([f for _, f, _ in bad] == ["0x10006830", "0x10006950", "0x10017c2d"],
                f"the ratchet catches unchecked functions without a reason: {bad}")
         expect(stale == ["crates/a/src/lib.rs:12"], f"a marker over checked functions is stale: {stale}")
         rows = {r.binary: r for r in coverage.table(bins, ported, {"SIMDIRT.DLL": {0x1001BB50}},
