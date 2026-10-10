@@ -6,6 +6,7 @@
 
 use crate::cellmap::CellMap;
 use crate::dirt::Terrain;
+use crate::transit::{NetworkTile, Networks};
 use sc3k_formats::ixf::Tgi;
 use sc3k_formats::serial::{self, Reader, Version};
 use std::fmt;
@@ -14,6 +15,9 @@ use std::fmt;
 pub const KEY_DIRT_BAG: Tgi = Tgi { type_id: 0x206C_6E7C, group_id: 0x2173_7DE5, instance_id: 0 };
 /// `cSC3FloraLayer`'s record.
 pub const KEY_FLORA_LAYER: Tgi = Tgi { type_id: 0x406B_1196, group_id: 0x80AB_8AB0, instance_id: 0 };
+
+/// `cSTTransitLayer`'s header record; instances 1 to 3 hold the occupants of each manager.
+pub const KEY_NETWORK_LAYER: Tgi = Tgi { type_id: 0x206C_6E7C, group_id: 0x2147_C2DD, instance_id: 0 };
 
 /// The largest city the reader accepts, in cells per side.
 const MAX_SIZE: u32 = 1024;
@@ -27,6 +31,8 @@ pub enum Error {
     UnknownSize { len: usize },
     BadMarker { want: &'static str },
     SizeMismatch { layer: &'static str, size: (u32, u32), city: u32 },
+    /// The network header's persist version is not 1.
+    PersistVersion { found: u32 },
 }
 
 impl fmt::Display for Error {
@@ -40,6 +46,7 @@ impl fmt::Display for Error {
             Error::SizeMismatch { layer, size, city } => {
                 write!(f, "{layer} is {}x{} cells, the city {city}x{city}", size.0, size.1)
             }
+            Error::PersistVersion { found } => write!(f, "network persist version {found}, expected 1"),
         }
     }
 }
@@ -153,6 +160,56 @@ pub fn read_flora_layer(record: &[u8], size: u32) -> Result<CellMap<u8>, Error> 
     Ok(read_columns(&mut r, x, z)?)
 }
 
+/// `cSTTransitLayer::Init(cISC3City*, cIGZDBSegment*)` (libSimNtwrk Ghidra 0x68980).
+///
+/// `get` looks up a record of the city's segment, as `Segment::get` does.
+pub fn read_network_layer<'a>(get: impl Fn(Tgi) -> Option<&'a [u8]>, size: u32) -> Result<Networks, Error> {
+    let key = KEY_NETWORK_LAYER;
+    let header = get(key).ok_or(Error::Missing(key))?;
+    let mut r = Reader::new(header);
+    let version = Version::read(&mut r);
+    if version.version != 4 {
+        return Ok(Networks::new(size));
+    }
+    let counts = [r.u32()?, r.u32()?, r.u32()?];
+    let persist_version = r.u32()?;
+    if persist_version != 1 {
+        return Err(Error::PersistVersion { found: persist_version });
+    }
+
+    let mut networks = Networks::new(size);
+    for i in 1..4usize {
+        if counts[i - 1] == 0 {
+            continue;
+        }
+        let key = Tgi { instance_id: i as u32, ..KEY_NETWORK_LAYER };
+        let record = get(key).ok_or(Error::Missing(key))?;
+        let mut r = Reader::new(record);
+        Version::read(&mut r);
+        let map = match i {
+            1 => &mut networks.surface,
+            2 => &mut networks.plumbing,
+            3 => &mut networks.subway,
+            _ => unreachable!(),
+        };
+        for _ in 0..counts[i - 1] {
+            let w0 = r.u32()?;
+            let w1 = r.u32()?;
+            let x = w0 & 0x7FF;
+            let y = w0 >> 11 & 0x7FF;
+            let altitude = (w0 >> 22 & 0xFF) as u8;
+            let rotation = (w0 >> 30) as u8;
+            let tile_id = (w1 & 0xFFFF) as u16;
+            if x >= size || y >= size {
+                continue;
+            }
+            map.set(x, y, Some(NetworkTile { tile_id, rotation, altitude }));
+        }
+    }
+
+    Ok(networks)
+}
+
 /// A `cRZCellMap<u8>` as the layers write it: column x = width − 1 first.
 fn read_columns(r: &mut Reader, width: u32, height: u32) -> Result<CellMap<u8>, serial::Error> {
     let mut map = CellMap::new(width, height, 0);
@@ -212,6 +269,109 @@ mod tests {
         let m = read_flora_layer(&d, 2).unwrap();
         assert_eq!(m.get(0, 0), 0x37);
         assert!(read_flora_layer(&d, 4).is_err());
+    }
+
+    /// A network record: the version header, then `body`.
+    fn network_record(body: &[u32]) -> Vec<u8> {
+        let mut d = vec![4, 0, 2, 0, 0xEF, 0xBE, 0xAD, 0xDE];
+        d.extend(body.iter().flat_map(|w| w.to_le_bytes()));
+        d
+    }
+
+    /// A tile's two words, packed as `cSC3TransitBlockPersistInfo` stores them.
+    fn network_tile(x: u32, y: u32, altitude: u32, rotation: u32, tile: u32) -> [u32; 2] {
+        [x | y << 11 | altitude << 22 | rotation << 30, 0x3000_0000 | tile]
+    }
+
+    fn network_key(instance_id: u32) -> Tgi {
+        Tgi { instance_id, ..KEY_NETWORK_LAYER }
+    }
+
+    #[test]
+    fn reads_network_layer() {
+        let header = network_record(&[2, 0, 1, 1]);
+        let surface =
+            network_record(&[network_tile(3, 5, 31, 2, 29), network_tile(64, 0, 31, 0, 44)].concat());
+        let subway = network_record(&network_tile(63, 63, 200, 3, 0x2D5D));
+        let records = [(network_key(0), header), (network_key(1), surface), (network_key(3), subway)];
+        let get = |key| records.iter().find(|(k, _)| *k == key).map(|(_, d)| d.as_slice());
+        let n = read_network_layer(get, 64).unwrap();
+        assert_eq!(n.surface.get(3, 5), Some(NetworkTile { tile_id: 29, rotation: 2, altitude: 31 }));
+        assert_eq!(n.subway.get(63, 63), Some(NetworkTile { tile_id: 0x2D5D, rotation: 3, altitude: 200 }));
+        // The tile at x = 64 lies off the map and is skipped; record 2 is not read.
+        let tiles = |m: &CellMap<Option<NetworkTile>>| {
+            (0..64).flat_map(|x| (0..64).map(move |y| (x, y))).filter(|&(x, y)| m.get(x, y).is_some()).count()
+        };
+        assert_eq!((tiles(&n.surface), tiles(&n.plumbing), tiles(&n.subway)), (1, 0, 1));
+    }
+
+    #[test]
+    fn network_layer_errors() {
+        let read = |header: &[u32], surface: Option<Vec<u8>>| {
+            let header = network_record(header);
+            read_network_layer(
+                |key| match key.instance_id {
+                    0 => Some(header.as_slice()),
+                    1 => surface.as_deref(),
+                    _ => None,
+                },
+                64,
+            )
+        };
+        assert!(matches!(read(&[1, 0, 0, 2], None), Err(Error::PersistVersion { found: 2 })));
+        assert!(matches!(read(&[1, 0, 0, 1], None), Err(Error::Missing(key)) if key == network_key(1)));
+        assert!(matches!(
+            read(&[2, 0, 0, 1], Some(network_record(&network_tile(0, 0, 0, 0, 29)))),
+            Err(Error::Serial(_))
+        ));
+        assert!(
+            matches!(read_network_layer(|_| None, 64), Err(Error::Missing(key)) if key == KEY_NETWORK_LAYER)
+        );
+        // Another version holds nothing the reader knows: no networks, and no error.
+        let old = [3, 0, 0, 0, 0xEF, 0xBE, 0xAD, 0xDE, 1, 0, 0, 0];
+        let n = read_network_layer(|key| (key == KEY_NETWORK_LAYER).then_some(&old[..]), 64).unwrap();
+        assert_eq!(n.surface.get(0, 0), None);
+    }
+
+    #[test]
+    fn reads_network_files() {
+        let Some(root) = sc3k_formats::data_dir() else {
+            eprintln!("SC3K_DATA not set; skipping");
+            return;
+        };
+        let cities = root.join("Cities");
+        let mut files: Vec<_> = std::fs::read_dir(&cities).unwrap().map(|e| e.unwrap().path()).collect();
+        files.retain(|p| p.extension().is_some_and(|e| e.eq_ignore_ascii_case("sc3")));
+        assert!(files.len() >= 14, "{} saves in {}", files.len(), cities.display());
+        for path in files {
+            let archive = sc3k_formats::ixf::Archive::open(&path).unwrap();
+            let seg = sc3k_formats::segment::Segment::open(&archive).unwrap();
+            let size = read_ground(&archive).unwrap().terrain.size;
+            let n = read_network_layer(|key| seg.get(key), size).unwrap();
+            // No save has two tiles on one cell, so every counted tile lands on its own cell.
+            let mut header = Reader::new(seg.get(KEY_NETWORK_LAYER).unwrap());
+            Version::read(&mut header);
+            let counts = [header.u32().unwrap(), header.u32().unwrap(), header.u32().unwrap()];
+            let tiles = |m: &CellMap<Option<NetworkTile>>| {
+                (0..size)
+                    .flat_map(|x| (0..size).map(move |y| (x, y)))
+                    .filter(|&(x, y)| m.get(x, y).is_some())
+                    .count() as u32
+            };
+            assert_eq!(
+                [tiles(&n.surface), tiles(&n.plumbing), tiles(&n.subway)],
+                counts,
+                "{}",
+                path.display()
+            );
+            if path.ends_with("Madison, WI.sc3") {
+                assert_eq!(counts, [7026, 3516, 0]);
+                assert_eq!(
+                    n.surface.get(0, 87),
+                    Some(NetworkTile { tile_id: 44, rotation: 0, altitude: 31 })
+                );
+            }
+        }
     }
 
     #[test]
