@@ -1,8 +1,13 @@
 # Drawing roads
 
-Port so far: `crates/sc3k-render/src/roads.rs` loads one tile and draws layer 0 of a frame;
-`sc3k-dump road-tile <id> <zoom> <out.png>` shows a tile's four rotations. Drawing roads in the
-city is not ported yet.
+Port so far: `crates/sc3k-render/src/roads.rs`.
+- `RoadTile` loads one tile and draws layer 0 of a frame; `sc3k-dump road-tile <id> <zoom>
+  <out.png>` shows a tile's four rotations.
+- `RoadSprites` loads the tiles of a list of ids, opening the archives once, and skips ids
+  without records. Its `draw` draws a `NetworkTile` on a cell (see "Drawing in the city").
+- `draw_cell` draws a network cell map as a `TerrainScene::draw_with` hook.
+- `sc3k-dump iso-file` draws a saved city's surface network (roads, rail, highways, power
+  lines) with its terrain and trees.
 
 This page traces how a network tile id becomes a picture; the tile ids come
 from the tiling rules (`docs/formats/tiling.md`), and the network occupant from
@@ -132,9 +137,19 @@ Then the `u32` flags (+0x28).
 | 40 | 0xB | 14 |
 | 20 | 0xB | 7 |
 
+## Drawing in the city
+The port draws a network tile the way it draws a tree (`docs/render/flora.md`). This placement
+is assumed, not traced (see Open questions).
+- **Anchor:** `project(i, j, altitude)` of the draw-grid cell, moved half a cell to the left:
+  the left of the cell's bounding box and the height of its top corner. The altitude is the
+  tile's own (`docs/formats/save.md`, Networks), not the terrain's, so bridges stand higher.
+- **Frame:** layer 0, `zoom · 4 + ((tile rotation + view rotation) & 3)` (see Rotation).
+- **Ids without sprites** (the eight without an occupant record) draw nothing.
+
 ## Open questions
 - **When layer 1 draws.** The cell map gets the chained instance; where it puts layer 1 in the
   draw order (after vehicles?) is not traced.
 - **The terrain classes** 0x672 and 0x59D–0x5A0: what they take from the terrain.
-- **Placement on the cell and draw order** relative to the terrain clod and trees.
+- **Placement on the cell and draw order** relative to the terrain clod and trees. The port
+  assumes the tree anchor ("Drawing in the city").
 - **The other networks.** Only `ROAD_GRND_Set.txt` was checked against the records.

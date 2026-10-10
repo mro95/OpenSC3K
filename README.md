@@ -105,7 +105,7 @@ cargo run -p sc3k-dump -- census                                    # TypeID his
 cargo run -p sc3k-dump -- images "$SC3K_DATA/Apps/Res/UI/Shared/MAIN.IXF" out/main   # UI images to PNG
 cargo run -p sc3k-dump -- terrain 1 256 out/terrain.png                # new-city terrain, top-down
 cargo run -p sc3k-dump -- iso 1 128 0 out/iso.png                      # the same, isometric, whole map
-cargo run -p sc3k-dump -- iso-file "$SC3K_DATA/Cities/Madison, WI.sc3" 1 out/madison.png   # a saved city's ground
+cargo run -p sc3k-dump -- iso-file "$SC3K_DATA/Cities/Madison, WI.sc3" 1 out/madison.png   # a saved city's ground and roads
 tools/ghidra/import.sh                                              # headless Ghidra import + symbol export
 tools/loki/fetch.sh && tools/loki/symbols.sh                         # Linux port symbols (C++ names)
 tools/ghidra/import.sh loki                                         # import Linux ELFs for name matching

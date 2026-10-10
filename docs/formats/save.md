@@ -149,7 +149,8 @@ are in `../sim/transit.md`.
 
 - **Port:** `read_network_layer` reads the three records into `transit::Networks`, one
   `CellMap<Option<NetworkTile>>` per manager. It keeps the tile id, the rotation and the
-  altitude, and drops the flags.
+  altitude, and drops the flags. `read_ground` calls it and gives empty networks when there
+  is no header record, as in a terrain (`.sct`).
 - **Skipped tiles:** a tile outside the city is skipped.
 - **Not ported:** the occupant classes.
 

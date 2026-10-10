@@ -64,9 +64,11 @@ pub struct Ground {
     pub terrain: Terrain,
     /// Flora type and density per cell (`read_flora_layer`); all 0 without a flora layer.
     pub flora_layer: CellMap<u8>,
+    /// Network tiles per manager (`read_network_layer`); empty without a network layer.
+    pub networks: Networks,
 }
 
-/// Read the terrain and the flora layer from a `.sct`/`.sc3` container.
+/// Read the terrain, the flora layer and the networks from a `.sct`/`.sc3` container.
 pub fn read_ground(archive: &sc3k_formats::ixf::Archive) -> Result<Ground, Error> {
     let seg = sc3k_formats::segment::Segment::open(archive).map_err(Error::Segment)?;
     let terrain = read_dirt_bag(seg.get(KEY_DIRT_BAG).ok_or(Error::Missing(KEY_DIRT_BAG))?)?;
@@ -74,7 +76,11 @@ pub fn read_ground(archive: &sc3k_formats::ixf::Archive) -> Result<Ground, Error
         Some(rec) => read_flora_layer(rec, terrain.size)?,
         None => CellMap::new(terrain.size, terrain.size, 0),
     };
-    Ok(Ground { terrain, flora_layer })
+    let networks = match seg.get(KEY_NETWORK_LAYER) {
+        Some(_) => read_network_layer(|key| seg.get(key), terrain.size)?,
+        None => Networks::new(terrain.size),
+    };
+    Ok(Ground { terrain, flora_layer, networks })
 }
 
 /// `cSC3DirtBag::Init(cISC3City*, cIGZDBSegment*)`

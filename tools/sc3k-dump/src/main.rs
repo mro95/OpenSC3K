@@ -3,11 +3,12 @@
 use sc3k_formats::image::Image;
 use sc3k_formats::ixf::{is_ixf, Archive, Tgi};
 use sc3k_formats::sprite::{Sprite, TYPE_DATA};
-use sc3k_render::roads::RoadTile;
+use sc3k_render::roads::{RoadSprites, RoadTile};
 use std::collections::BTreeMap;
 use std::path::{Path, PathBuf};
-use std::process::ExitCode;
 use sc3k_render::terrain::{TerrainScene, View, MAX_ZOOM};
+use sc3k_sim::transit::Networks;
+use std::process::ExitCode;
 
 const USAGE: &str = "\
 usage:
@@ -27,7 +28,9 @@ usage:
                                      (needs $SC3K_DATA)
   sc3k-dump iso-file <file> <zoom> <out.png> [flora set]
                                      the ground of a saved city (.sc3) or terrain (.sct)
-                                     drawn the same way, trees from its flora layer
+                                     drawn the same way, trees from its flora layer and
+                                     roads, rail, highways and power lines from its
+                                     surface network
   sc3k-dump road-tile <id> <zoom> <out.png>
                                      one network tile's sprites at zoom 0..4, the four
                                      rotations side by side, layer 0 only (needs $SC3K_DATA)
@@ -201,17 +204,18 @@ fn iso(seed: &str, size: &str, zoom: &str, out: &Path, set: &str) -> Result<(), 
     }
     let terrain = generate(size, 1, Params::new_city(seed));
     let trees = sc3k_sim::flora::place(&terrain, seed);
-    draw_iso(terrain, &trees, seed, zoom, out, set)
+    draw_iso(terrain, &trees, &Networks::new(size), seed, zoom, out, set)
 }
 
-/// A saved city or terrain drawn like `iso`; the trees come from its flora layer.
+/// A saved city or terrain drawn like `iso`; the trees come from its flora layer and the
+/// network tiles from its surface network.
 fn iso_file(file: &Path, zoom: &str, out: &Path, set: &str) -> Result<(), String> {
     let archive = Archive::open(file).map_err(|e| format!("{}: {e}", file.display()))?;
     let ground = sc3k_sim::load::read_ground(&archive).map_err(|e| format!("{}: {e}", file.display()))?;
     let t = &ground.terrain;
     println!("{}x{} cells, sea level {}", t.size, t.size, t.sea_level);
     let trees = sc3k_sim::flora::from_layer(t, &ground.flora_layer, 1);
-    draw_iso(ground.terrain, &trees, 1, zoom, out, set)
+    draw_iso(ground.terrain, &trees, &ground.networks, 1, zoom, out, set)
 }
 
 fn road_tile(id: &str, zoom: &str, out: &Path) -> Result<(), String> {
@@ -253,6 +257,7 @@ fn road_tile(id: &str, zoom: &str, out: &Path) -> Result<(), String> {
 fn draw_iso(
     terrain: sc3k_sim::dirt::Terrain,
     trees: &sc3k_sim::cellmap::CellMap<Option<sc3k_sim::flora::Flora>>,
+    networks: &Networks,
     seed: u32,
     zoom: &str,
     out: &Path,
@@ -279,9 +284,21 @@ fn draw_iso(
     let scene = TerrainScene::new(terrain, land, &dirt, seed);
     let mut screen = sc3k_ui::Surface::new(w, h);
     screen.fill(0);
-    scene.draw_with(&mut screen, &view, sc3k_render::flora::draw_cell(&sprites, trees, &view));
+    // One id per network cell; `RoadSprites::load` skips the repeats.
+    let road_ids: Vec<u16> = (0..size)
+        .flat_map(|x| (0..size).map(move |y| (x, y)))
+        .filter_map(|(x, y)| networks.surface.get(x, y))
+        .map(|tile| tile.tile_id)
+        .collect();
+    let road_sprites = RoadSprites::load(&assets, &road_ids)?;
+    let roads = sc3k_render::roads::draw_cell(&road_sprites, &networks.surface, &view);
+    let flora = sc3k_render::flora::draw_cell(&sprites, trees, &view);
+    scene.draw_with(&mut screen, &view, |screen, draw, map| {
+        roads(screen, draw, map);
+        flora(screen, draw, map);
+    });
     let n = (0..size).flat_map(|x| (0..size).map(move |y| (x, y))).filter(|&(x, y)| trees.get(x, y).is_some()).count();
-    println!("{n} trees");
+    println!("{n} trees, {} network tiles", road_ids.len());
     let rgba: Vec<u8> = screen.pixels.iter().flat_map(|&p| [(p >> 16) as u8, (p >> 8) as u8, p as u8, 255]).collect();
     write_png(out, w as u32, h as u32, &rgba).map_err(|e| format!("{}: {e}", out.display()))?;
     println!("{w}x{h}, wrote {}", out.display());
