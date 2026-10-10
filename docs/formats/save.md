@@ -117,7 +117,8 @@ string          "DirtBag End"                 with markers
 - **Size:** X and Z are the city's cell counts (`cISC3City` vtable 0xCC/0xD0 on Windows).
   The record does not hold them. The port takes the square size that fits the record's
   length: 64, 128, 192 or 256 in the install.
-- **Blocked cells:** `BlockCell` (Ghidra 0x4204C) and `IsCellBlocked`.
+- **Blocked cells:** `BlockCell` (Ghidra 0x4204C) and `IsCellBlocked` (Ghidra 0x420B8,
+  SIMDIRT.DLL 0x1000E4C0). X is the city's cell count, not the vertex count.
 - **Not saved:**
   - Salt water: `RecalcSaltWater` rebuilds it. Not ported; the port reads it as fresh.
   - The generator's flora map.

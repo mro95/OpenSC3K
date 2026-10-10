@@ -202,6 +202,8 @@ mod tests {
             water: CellMap::new(v, v, 0),
             salt: CellMap::new(v, v, false),
             flora: CellMap::new(v, v, 0),
+            altitude_scale: sc3k_sim::dirt_bag::CITY_ALTITUDE_SCALE,
+            blocked: CellMap::new(size, size, false),
         }
     }
 

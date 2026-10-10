@@ -106,6 +106,10 @@ def ask(emu, target, obj, name, args):
         out = emu.alloc(4)
         emu.call(address, args + [out], this=obj)
         return emu.u8(out)
+    if kind == "f32":
+        (bits,) = struct.unpack("<I", struct.pack("<f", emu.call(address, args, this=obj,
+                                                                 returns="double")))
+        return bits
     r = emu.call(address, args, this=obj)
     return r if kind == "u32" else r & 0xFF if kind == "u8" else int(r & 0xFF != 0)
 

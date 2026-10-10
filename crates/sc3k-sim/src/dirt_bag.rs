@@ -22,6 +22,11 @@ pub const MAX_ALTITUDE_DELTA_ALLOWED: u8 = 4;
 /// `cSC3DirtClodFactory::GetMaxLightIndex` (SIMDIRT.DLL 0x1001684C), the highest light level.
 pub const MAX_LIGHT_INDEX: u8 = 0x1F;
 
+/// World units per altitude step: what the city's `CellSizeInWorldUnitsY` (`cISC3City` vtable
+/// 0xFC on Windows) returns, and `Init(cISC3City*)` copies into the static `mkAltScale`.
+/// Saved terrains hold it too.
+pub const CITY_ALTITUDE_SCALE: f32 = 3.266;
+
 /// `GetPathGranularity` (libSimDirt 0x4203C, SIMDIRT.DLL 0x1000E460).
 pub const PATH_GRANULARITY: u32 = 1;
 
@@ -148,4 +153,16 @@ pub fn average_altitude(t: &Terrain) -> u8 {
     } else {
         (sum / n) as u8
     }
+}
+
+/// `AltitudeScale` (libSimDirt 0x4124C, SIMDIRT.DLL 0x10006EC0): the static `mkAltScale`, which
+/// the last `Init` set, as a float in ST0.
+pub fn altitude_scale(t: &Terrain) -> f32 {
+    t.altitude_scale
+}
+
+/// `IsCellBlocked(x, z)` (libSimDirt 0x420B8, SIMDIRT.DLL 0x1000E4C0): bit `x + z·X` of the
+/// blocked words. The original does not test the bounds; the port takes cells only.
+pub fn is_cell_blocked(t: &Terrain, x: u32, z: u32) -> bool {
+    t.blocked.get(x, z)
 }

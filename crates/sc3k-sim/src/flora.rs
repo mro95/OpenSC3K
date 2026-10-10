@@ -160,6 +160,8 @@ mod tests {
             water: CellMap::new(v, v, 10),
             salt: CellMap::new(v, v, false),
             flora,
+            altitude_scale: crate::dirt_bag::CITY_ALTITUDE_SCALE,
+            blocked: CellMap::new(8, 8, false),
         }
     }
 

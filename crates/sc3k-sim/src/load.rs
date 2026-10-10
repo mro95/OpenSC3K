@@ -103,7 +103,7 @@ pub fn read_ground(archive: &sc3k_formats::ixf::Archive) -> Result<Ground, Error
 /// the square size that fits the record's length. Salt water is not saved: the original
 /// recomputes it (`RecalcSaltWater`), which is not ported, so every vertex reads fresh. The
 /// generator's flora map is not saved either; the trees are in the flora layer.
-/// Unchecked: the reader skips the blocked cells, and no check calls `BlockCell`.
+/// Unchecked: the reader sets the blocked bits itself, and no check calls `BlockCell`.
 pub fn read_dirt_bag(record: &[u8]) -> Result<Terrain, Error> {
     let mut r = Reader::new(record);
     let v = Version::read(&mut r);
@@ -122,11 +122,18 @@ pub fn read_dirt_bag(record: &[u8]) -> Result<Terrain, Error> {
             fixed + 2 * vertices + 4 * ((n * n) >> 5) as usize == body
         })
         .ok_or(Error::UnknownSize { len: record.len() })?;
-    let _alt_scale = r.f32()?;
+    let altitude_scale = r.f32()?;
     let altitude = read_columns(&mut r, size + 1, size + 1)?;
     let sea_level = r.u8()?;
     let water = read_columns(&mut r, size + 1, size + 1)?;
-    let _blocked = r.bytes(4 * ((size * size) >> 5) as usize)?;
+    let mut blocked = CellMap::new(size, size, false);
+    for (i, word) in r.bytes(4 * ((size * size) >> 5) as usize)?.chunks(4).enumerate() {
+        let word = u32::from_le_bytes(word.try_into().unwrap());
+        for bit in (0..32).filter(|b| word >> b & 1 != 0) {
+            let cell = 32 * i as u32 + bit;
+            blocked.set(cell % size, cell / size, true);
+        }
+    }
     if v.markers && r.string()? != b"DirtBag End" {
         return Err(Error::BadMarker { want: "DirtBag End" });
     }
@@ -138,6 +145,8 @@ pub fn read_dirt_bag(record: &[u8]) -> Result<Terrain, Error> {
         water,
         salt: CellMap::new(v, v, false),
         flora: CellMap::new(v, v, 0),
+        altitude_scale,
+        blocked,
     })
 }
 

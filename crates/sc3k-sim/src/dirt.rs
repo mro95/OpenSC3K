@@ -78,7 +78,7 @@ const MID_X_POINTS: [u32; 8] = [0x0F, 0, 0x00F0_0000, 0, 0, 0, 0, 0];
 const MID_Y_POINTS: [u32; 8] = [0, 0x0008_4210, 0, 0x8421, 0, 0, 0, 0];
 
 /// The generator's output, what `ReflectMap` hands to the `cSC3DirtBag`.
-#[derive(Clone, Debug, PartialEq, Eq)]
+#[derive(Clone, Debug, PartialEq)]
 pub struct Terrain {
     /// Map size in cells.
     pub size: u32,
@@ -92,7 +92,14 @@ pub struct Terrain {
     pub salt: CellMap<bool>,
     /// Flora per vertex (vtable 0x90), 0 for none.
     pub flora: CellMap<u8>,
+    /// World units per altitude step (`AltitudeScale`).
+    pub altitude_scale: f32,
+    /// Cells nothing may be built on, one per cell (`BlockCell`, `IsCellBlocked`).
+    pub blocked: CellMap<bool>,
 }
+
+/// The scale is never NaN: it comes from the city or a saved terrain.
+impl Eq for Terrain {}
 
 impl Terrain {
     /// Vertices per side.
@@ -183,6 +190,8 @@ fn run(size: u32, difficulty: i32, params: Params, trace: bool) -> (Terrain, Ran
         water: g.water,
         salt: g.salt,
         flora: g.flora,
+        altitude_scale: crate::dirt_bag::CITY_ALTITUDE_SCALE,
+        blocked: CellMap::new(size, size, false),
     };
     (terrain, g.rng)
 }

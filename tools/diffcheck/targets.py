@@ -87,7 +87,8 @@ SIMDIRT = Target(
         "calculateAndSetVertexLight": 0x10007010,
         # The queries diffref ground lists, from the vtable (the Loki slots in the Loki
         # order; overloads in another order): address and how the answer comes back, "out8"
-        # a byte through a pointer after the arguments, "bool" AL, "u8" AL, "u32" EAX.
+        # a byte through a pointer after the arguments, "bool" AL, "u8" AL, "u32" EAX, "f32"
+        # ST0 as float bits.
         "queries": {
             "GetVertexAltitude": (0x10005A70, "out8"),
             "GetVertexAltitudeDirt": (0x10005AB0, "out8"),
@@ -115,6 +116,8 @@ SIMDIRT = Target(
             "IsValidVertexLight": (0x10006FF0, "bool"),
             "MaxAltitudeDelta": (0x1000F6E0, "u8"),
             "GetPathGranularity": (0x1000E460, "u32"),
+            "AltitudeScale": (0x10006EC0, "f32"),
+            "IsCellBlocked": (0x1000E4C0, "bool"),
         },
         # cSC3DirtClodX::GenerateBumpMaps (static) and the tables it fills.
         "GenerateBumpMaps": 0x100128E1,

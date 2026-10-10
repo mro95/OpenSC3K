@@ -11,11 +11,11 @@ Accuracy = match rate of the binary's checks × checked functions / all its
 functions. A binary nothing has been ported from yet is at 0%. Exempt: ported
 functions whose doc comment gives a reason no check runs them (`Unchecked:`).
 
-All binaries: 112 of 46771 functions ported, 59 checked, 53 exempt.
+All binaries: 114 of 46771 functions ported, 61 checked, 53 exempt.
 
 | Binary | Functions | Ported | Checked | Exempt | Checked code matches | Accuracy | Status |
 |---|---:|---:|---:|---:|---:|---:|---|
-| SIMDIRT.DLL | 750 | 62 | 53 | 9 | 100.00% | 7.07% | checked |
+| SIMDIRT.DLL | 750 | 64 | 55 | 9 | 100.00% | 7.33% | checked |
 | SIMBABLD.DLL | 2347 | 2 | 2 | 0 | 100.00% | 0.09% | checked |
 | SIMNTWRK.DLL | 1181 | 5 | 1 | 4 | 100.00% | 0.08% | checked |
 | SIMUI.DLL | 4098 | 8 | 3 | 5 | 100.00% | 0.07% | checked |
@@ -101,6 +101,8 @@ All binaries: 112 of 46771 functions ported, 59 checked, 53 exempt.
 | Saved terrain | Dirt bag query IsWater | 100.00% | 525312 calls |
 | Saved terrain | Dirt bag query IsRealWater | 100.00% | 525312 calls |
 | Saved terrain | Dirt bag query CellWaterVertCount | 100.00% | 525312 calls |
+| Saved terrain | Dirt bag query AltitudeScale | 100.00% | 35 calls |
+| Saved terrain | Dirt bag query IsCellBlocked | 100.00% | 525661 calls |
 | Saved terrain | Land bump map (GenerateBumpMaps) | 100.00% | 1024 bytes |
 | Saved terrain | Water bump map (GenerateBumpMaps) | 100.00% | 1024 bytes |
 | Main UI layout | Window placement (place_windows) | 100.00% | 55 queries |

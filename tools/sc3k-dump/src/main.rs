@@ -615,6 +615,16 @@ fn dirt_bag_queries(t: &sc3k_sim::dirt::Terrain) -> String {
             line("CellWaterVertCount", &[x, z], bag::cell_water_vert_count(t, x, z) as u32);
         }
     }
+    line("AltitudeScale", &[], bag::altitude_scale(t).to_bits());
+    // Every 4th column, and every blocked cell off it.
+    for x in 0..c {
+        for z in 0..c {
+            let blocked = bag::is_cell_blocked(t, x, z);
+            if x % 4 == 0 || blocked {
+                line("IsCellBlocked", &[x, z], blocked as u32);
+            }
+        }
+    }
     out
 }
 

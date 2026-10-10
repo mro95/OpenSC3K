@@ -136,8 +136,11 @@ tools/diffcheck/selftest.py                   # tests the checker itself, no gam
   - the constants and counts once;
   - the bounds tests on coordinates around both edges and `0xFFFFFFFF`;
   - the plain vertex reads every 16th column;
-  - `GetVertexAltitude`, `IsWater`, `IsRealWater` and `CellWaterVertCount` every 4th column.
-  Every column would take the check from 8 to over 20 seconds; with these it takes 15.
+  - `GetVertexAltitude`, `IsWater`, `IsRealWater` and `CellWaterVertCount` every 4th column;
+  - `IsCellBlocked` every 4th column, and on every cell the port has blocked. The saved cities
+    have up to 99 blocked cells.
+  `AltitudeScale` returns ST0; the check compares its float bits.
+  Every column would take the check from 8 to over 20 seconds; with these it takes 17.
   A new query is a line in `dirt_bag_queries` (`tools/sc3k-dump`) and an entry in
   `targets.py`.
 - **Bump maps:** `GenerateBumpMaps` (0x100128E1) runs once and fills the two 1024-byte tables
@@ -243,7 +246,8 @@ tools/diffcheck/selftest.py                   # tests the checker itself, no gam
   (`docs/render/terrain.md`).
 - The dirt bag's queries (`sc3k_sim::dirt_bag`) and the bump maps (`docs/render/terrain.md`).
   `GetVertexLight` returns the dirt altitude, not the light, in both builds; `AltitudeMin`
-  and `AltitudeMax` are the allowed range (0, 0xFF), not the map's.
+  and `AltitudeMax` are the allowed range (0, 0xFF), not the map's. The blocked cells are bit
+  `x + z·X`, as `docs/formats/save.md` has it.
 - Windows inlines `getVertAltForLightCalc` into `calculateAndSetVertexLight`, so the vertex
   light covers it.
 
@@ -257,9 +261,7 @@ tools/diffcheck/selftest.py                   # tests the checker itself, no gam
 - The compressed segment reader (`sc3k_formats::segment`). Its Windows code is in
   `GZResourceD.dll` but not located function by function; the `ground` check starts from the
   record bytes the port extracts.
-- The dirt bag queries that need more of the object: `AltitudeScale` and `IsCellBlocked`
-  (the reader drops the scale and the blocked cells), `IsDeepWaterPresent` and `Distance`
-  (the seaport map).
+- The dirt bag queries that need the seaport map: `IsDeepWaterPresent` and `Distance`.
 - The flora layer record (`cSC3FloraLayer::Init`, SIMGEOM.DLL, not located on Windows), and
   `cSC3DirtBag::SimulationBegin` (0x10005230), which fills it.
 - The dirt clods: `GetDirtClod` (0x10005B10) and `cSC3DirtClodLand::getColor` (0x1001309E)
