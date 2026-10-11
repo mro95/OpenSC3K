@@ -86,6 +86,8 @@ pub struct Game {
     /// Zoom and rotation of new city views.
     zoom: u32,
     rotation: u32,
+    /// Map cell new city views start on, instead of the middle.
+    focus: Option<(u32, u32)>,
     /// Arrow keys held, and the screen edge the pointer is at.
     scroll_keys: Scroll,
     scroll_edge: Scroll,
@@ -118,6 +120,7 @@ impl Game {
             main_ui: MainUi::load(assets, width, height).map_err(e)?,
             zoom: MAX_ZOOM,
             rotation: 0,
+            focus: None,
             scroll_keys: Scroll::default(),
             scroll_edge: Scroll::default(),
             next_scroll_ms: 0,
@@ -146,6 +149,11 @@ impl Game {
     /// Rotation for city views started from now on, 0..=3.
     pub fn set_rotation(&mut self, rotation: u32) {
         self.rotation = rotation & 3;
+    }
+
+    /// Map cell for city views started from now on; `None` is the middle of the map.
+    pub fn set_focus(&mut self, focus: Option<(u32, u32)>) {
+        self.focus = focus;
     }
 
     pub fn music(&self) -> Music {
@@ -394,7 +402,10 @@ impl Game {
             .or_else(|| self.land_palettes.values().next());
         self.view = match (&city.terrain, palette) {
             (Some(t), Some(p)) => {
-                let camera = Camera::new(t, self.zoom, self.rotation, self.screen.width, self.screen.height);
+                let mut camera = Camera::new(t, self.zoom, self.rotation, self.screen.width, self.screen.height);
+                if let Some(cell) = self.focus {
+                    camera.look_at(t, cell);
+                }
                 Some((TerrainScene::new(t.clone(), p, &self.dirt_palettes, seed), camera))
             }
             _ => None,

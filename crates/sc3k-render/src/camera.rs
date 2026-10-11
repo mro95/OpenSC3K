@@ -101,6 +101,12 @@ impl Camera {
         }
     }
 
+    /// Make map cell (x, y) the focus, clamped to the map, and centre on it.
+    pub fn look_at(&mut self, t: &Terrain, (x, y): (u32, u32)) {
+        self.focus = (x.min(t.size - 1), y.min(t.size - 1));
+        self.centre(t);
+    }
+
     /// `ZoomIn`: up to zoom 4.
     pub fn zoom_in(&mut self, t: &Terrain) {
         if self.view.zoom < MAX_ZOOM {

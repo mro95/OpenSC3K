@@ -91,6 +91,7 @@ cargo run --release -p opensc3k -- --screenshot menu.png --hover 251,297 --time 
 cargo run --release -p opensc3k -- --scene newcity --res 640x480 --click 200,150 --type "Jr." --screenshot nc.png
 cargo run --release -p opensc3k -- --scene city --seed 1 --zoom 2 --rotate 1   # straight into a new city
 cargo run --release -p opensc3k -- --load "$SC3K_DATA/Cities/Terrains/Boston, MA.sct"   # a saved terrain
+cargo run --release -p opensc3k -- --load "$SC3K_DATA/Cities/Berlin, Germany.sc3" --focus 250,8 --zoom 2   # look at one cell
 ```
 
 In a city, the arrow keys and the screen edges scroll. PageUp/PageDown, `+`/`-` and the mouse

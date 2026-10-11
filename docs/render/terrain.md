@@ -427,9 +427,16 @@ The Windows slot numbers differ from Loki's because MSVC orders overloads differ
 - **Placement:** `TerrainScene` puts each clod where the sprite cell map would: at the cell's
   left corner, at the altitude `GetDirtClod` gives the cell. Edge skirts go under the two
   front sides, the left one with flag 0x80. The sprite cell map itself is not ported.
+  - The skirts are dynamic sprites. `cSC3CitySpriteManager::SetEdgeCompass` (libSimSpr
+    0xAA6BC) adds one per border cell with `AddEdgeElement` (0xAAA74). That calls
+    `GetDirtClodEdge` but drops the altitude it returns. It puts the sprite at world (x, z)
+    and altitude 0.
+  - A skirt's corners already hold their altitudes. Its offsets per rotation are relative to
+    the screen point of vertex (x, z), not to the cell's left corner. In draw-grid terms that
+    point is the cell's top, left, bottom or right corner in rotations 0 to 3.
 - **View:** `Camera` in `camera.rs`.
   - It starts on the map's middle cell at zoom 4 and rotation 0; `--zoom` and `--rotate` change
-    these.
+    these. `--focus X,Y` starts it on another cell.
   - Scrolling follows "Camera" above.
   - The game assumes 30 paints a second, so it scrolls 32 pixels every 33 ms.
   - Zoom and rotation re-centre on the focus cell at the cell's mean surface altitude.

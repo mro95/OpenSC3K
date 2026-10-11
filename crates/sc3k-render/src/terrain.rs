@@ -133,6 +133,7 @@ impl TerrainScene {
 
     /// Where the sprite cell map puts the clods of draw cell (i, j): the cell's left corner at
     /// the altitude `GetDirtClod` gives the cell.
+    /// Unchecked: the sprite cell map is not ported and no check runs it.
     fn anchor(&self, view: &View, (i, j): (u32, u32), alt: u8) -> (i32, i32) {
         view.project(i as i32 + 1, j as i32, alt)
     }
@@ -155,14 +156,24 @@ impl TerrainScene {
     }
 
     /// One map-edge skirt under draw cell `cell`: its left side (`side`) or its right one.
-    /// `GetDirtClodEdge` (libSimDirt 0x40F00, SIMDIRT.DLL 0x10005D80) gives the cell the higher
-    /// of the dirt and the water.
+    /// `GetDirtClodEdge` (libSimDirt 0x40F00, SIMDIRT.DLL 0x10005D80) also gives the higher of
+    /// the dirt and the water, but `cSC3CitySpriteManager::AddEdgeElement` (libSimSpr 0xAAA74)
+    /// ignores it and adds a dynamic sprite at world (x, z) and altitude 0: the skirt's
+    /// corners carry their own altitude, and are relative to the screen point of vertex
+    /// (x, z), not to the cell's left corner as a cell's clod is.
+    /// Unchecked: no check runs `AddEdgeElement` or the sprite cell map's placement.
     fn draw_edge(&self, screen: &mut Surface, clip: Area, view: &View, ramps: &[[u16; 0x200]; 2], cell: (u32, u32), side: bool) {
         let t = &self.terrain;
         let (x, z) = map_cell(t.size, view.rotation, cell.0, cell.1);
-        let alt = t.altitude.get(x, z).max(t.water.get(x, z));
         let edge = EdgeClod::new(t, x, z, side, false, view.zoom, view.rotation);
-        let at = self.anchor(view, cell, alt);
+        // Vertex (x, z) in the draw grid: the cell's top, left, bottom or right corner.
+        let (i, j) = (cell.0 as i32, cell.1 as i32);
+        let at = match view.rotation & 3 {
+            0 => view.project(i, j, 0),
+            1 => view.project(i + 1, j, 0),
+            2 => view.project(i + 1, j + 1, 0),
+            _ => view.project(i, j + 1, 0),
+        };
         let v = (view.zoom, view.rotation);
         edge.draw(screen, t, ramps, &self.water_bump, (x, z), v, at, Some(clip));
     }

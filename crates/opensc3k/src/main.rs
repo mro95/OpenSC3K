@@ -26,6 +26,7 @@ usage: opensc3k [options]
                        (default: from the clock)
   --zoom N             city view zoom, 0 (farthest) to 4 (closest, default)
   --rotate N           city view rotation, 0 (default) to 3
+  --focus X,Y          map cell in the middle of the city view (default: the map's middle)
   --click X,Y          click (press and release) here before --screenshot; repeatable
   --type TEXT          type TEXT (after the clicks) before --screenshot
   --hover X,Y          pointer position for --screenshot
@@ -47,6 +48,7 @@ struct Options {
     seed: Option<u32>,
     zoom: u32,
     rotation: u32,
+    focus: Option<(u32, u32)>,
     load: Option<PathBuf>,
 }
 
@@ -65,6 +67,7 @@ fn parse_args() -> Result<Options, String> {
         seed: None,
         zoom: 4,
         rotation: 0,
+        focus: None,
         load: None,
     };
     let mut args = std::env::args().skip(1);
@@ -94,6 +97,10 @@ fn parse_args() -> Result<Options, String> {
             "--type" => o.typed = value()?,
             "--zoom" => o.zoom = value()?.parse().map_err(|_| "bad --zoom".to_string())?,
             "--rotate" => o.rotation = value()?.parse().map_err(|_| "bad --rotate".to_string())?,
+            "--focus" => {
+                let (x, y) = parse_point(&value()?)?;
+                o.focus = Some((x.max(0) as u32, y.max(0) as u32));
+            }
             "--load" => {
                 o.load = Some(PathBuf::from(value()?));
                 o.scene = Scene::City;
@@ -130,6 +137,7 @@ fn run() -> Result<(), String> {
     game.set_seed(o.seed);
     game.set_zoom(o.zoom);
     game.set_rotation(o.rotation);
+    game.set_focus(o.focus);
     if let Some(path) = &o.load {
         game.load_city(path)?;
     }
